@@ -1,0 +1,121 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lattice-commons",
+  "type": "FORUM",
+  "name": "Lattice Commons",
+  "description": "Discussions with pinned announcement cards, vote counts, solved labels and a most-helpful leaderboard.",
+  "modelledOn": "A code hosting platform’s discussions",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "forum",
+    "q-and-a",
+    "developer"
+  ],
+  "thumbnail": "/templates/lattice-commons.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/lc-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "dense",
+    "frontDoor": {
+      "showVotes": true,
+      "badgeStyle": "text",
+      "showSearch": true,
+      "showIdentity": false,
+      "showCategoryBadge": false,
+      "showLeaderboardLink": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "card": {
+              "slots": [
+                "byline",
+                "title",
+                "kicker"
+              ],
+              "byline": {
+                "avatars": true
+              },
+              "kicker": "category",
+              "surface": {
+                "border": "#d1d9e0",
+                "radius": 6,
+                "padding": "20px 16px 16px",
+                "topStrip": {
+                  "fill": "gradient",
+                  "height": 8,
+                  "gradient": [
+                    "#ff7b72",
+                    "#a371f7"
+                  ]
+                },
+                "background": "#ffffff",
+                "backgroundDark": "#0d1117"
+              },
+              "titleSize": "md",
+              "titleWeight": 600
+            },
+            "limit": 3,
+            "filter": {
+              "pinned": true
+            },
+            "layout": "grid",
+            "columns": {
+              "lg": 3,
+              "md": 3,
+              "sm": 1
+            },
+            "layoutSm": "carousel",
+            "emptyText": " "
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "search"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "filters"
+          }
+        },
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "filter": {
+              "pinned": false
+            },
+            "layout": "rows",
+            "heading": "Discussions",
+            "controls": true,
+            "pageSize": 25,
+            "paginate": true
+          }
+        }
+      ]
+    },
+    "hideTitle": true,
+    "width": "list"
+  }
+}

@@ -1,0 +1,836 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Kitebox Forum",
+    "slug": "template-kitebox",
+    "description": "A bright hero with illustrated shapes and a search box, an icon grid of categories and featured topics.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "forum",
+      "community",
+      "colourful",
+      "template"
+    ],
+    "spaceTypes": [
+      "FORUM"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "forum": {
+      "list": {
+        "pin": "word",
+        "tags": "text",
+        "paging": "more",
+        "avatars": "op",
+        "density": "comfortable",
+        "excerpt": "all",
+        "avatarSize": 32,
+        "thumbnails": "none",
+        "titleLines": {
+          "lg": 2,
+          "md": 2,
+          "sm": 3
+        },
+        "statusGlyph": "check",
+        "excerptLines": 2
+      },
+      "look": "cards",
+      "post": {
+        "date": "relative",
+        "menu": [
+          "like",
+          "reply"
+        ],
+        "name": "name",
+        "style": "card",
+        "avatar": {
+          "size": 40,
+          "shape": "circle",
+          "position": "inline",
+          "positionSm": "inline"
+        },
+        "header": "stacked",
+        "opChip": true,
+        "actions": {
+          "align": "start",
+          "style": "text"
+        },
+        "bodySize": 14,
+        "reactions": "like",
+        "gapMarkers": false,
+        "menuHidden": [
+          "quote",
+          "link",
+          "bookmark",
+          "flag"
+        ],
+        "quoteStyle": "card",
+        "bodySurface": "#f5f5f5",
+        "staffAccent": "none",
+        "headingScale": "body",
+        "reactionsRow": "inline",
+        "newMemberChip": false,
+        "bodySurfaceDark": "#2c2c2c"
+      },
+      "dates": {
+        "style": "relative"
+      },
+      "front": {
+        "filters": {
+          "items": [
+            "latest",
+            "solved",
+            "unanswered"
+          ],
+          "links": [],
+          "style": "underline",
+          "newTopic": false
+        }
+      },
+      "topic": {
+        "map": {
+          "show": "never"
+        },
+        "rail": [
+          "related",
+          "solved"
+        ],
+        "share": {
+          "mode": "none"
+        },
+        "header": {
+          "meta": [
+            "replies",
+            "views"
+          ],
+          "tags": "none",
+          "category": "none",
+          "kindChip": false,
+          "solvedPill": {
+            "style": "solid",
+            "placement": "before-title"
+          },
+          "statusGlyph": "pill"
+        },
+        "measure": 740,
+        "composer": {
+          "signedOut": "none"
+        },
+        "replyBar": {
+          "placement": [
+            "after-op",
+            "after-answer",
+            "end"
+          ],
+          "signedOut": "bar"
+        },
+        "timeline": {
+          "phone": "none",
+          "placement": "none"
+        },
+        "replySort": "oldest",
+        "breadcrumb": "trail",
+        "answerStyle": "filled",
+        "sortControl": true,
+        "titlePlacement": "in-first-post-after-author",
+        "answerPlacement": "excerpt"
+      },
+      "profile": {
+        "rail": [
+          "solved",
+          "tags"
+        ]
+      },
+      "sidebar": {
+        "enabled": false
+      },
+      "tagStyle": "outline",
+      "categories": {
+        "icons": true
+      },
+      "categoryPage": {
+        "list": "frontPage",
+        "rail": [
+          "solved",
+          "tags"
+        ],
+        "stats": true,
+        "title": "{category}",
+        "banner": {
+          "style": "color",
+          "width": "full",
+          "search": true,
+          "searchWidth": 400
+        },
+        "subscribe": true,
+        "breadcrumb": "above-banner",
+        "subcategories": "none",
+        "subscribeStyle": "button"
+      },
+      "categoriesPage": {
+        "beside": "none",
+        "fields": [
+          "description",
+          "counts",
+          "logo"
+        ],
+        "layout": "grid",
+        "columns": 3
+      }
+    },
+    "chrome": {
+      "ctas": [
+        {
+          "ink": "#ffffff",
+          "href": "/f/your-org/your-forum#new-topic",
+          "icon": "plus",
+          "label": "Create topic",
+          "style": "solid",
+          "height": 40,
+          "fontSize": 14,
+          "background": "#000000"
+        }
+      ],
+      "align": "left",
+      "header": {
+        "border": "none",
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 500,
+        "linksAlign": "start",
+        "logoHeight": 40,
+        "controlsAlign": "end"
+      },
+      "height": "tall",
+      "search": "icon",
+      "navMenu": {
+        "radius": 8,
+        "shadow": "md",
+        "trigger": "hover"
+      },
+      "ctaStyle": "solid",
+      "showSignIn": true,
+      "footerLinks": [
+        {
+          "href": "/f/your-org/your-forum/about",
+          "label": "Terms & Conditions"
+        },
+        {
+          "href": "/f/your-org/your-forum/about",
+          "label": "Accessibility statement"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "/f/your-org/your-forum/about",
+          "label": "Get Started"
+        },
+        {
+          "href": "/f/your-org/your-forum/categories",
+          "label": "Forum Categories",
+          "children": [
+            {
+              "href": "/f/your-org/your-forum/c/news-and-updates",
+              "label": "News and Updates"
+            },
+            {
+              "href": "/f/your-org/your-forum/c/ask-the-community",
+              "label": "Ask the Community"
+            },
+            {
+              "href": "/f/your-org/your-forum/c/showcase-your-work",
+              "label": "Showcase Your Work"
+            },
+            {
+              "href": "/f/your-org/your-forum/c/suggest-a-feature",
+              "label": "Suggest a Feature"
+            },
+            {
+              "href": "/f/your-org/your-forum/c/report-a-problem",
+              "label": "Report a Problem"
+            },
+            {
+              "href": "/f/your-org/your-forum/c/chat-and-connect",
+              "label": "Chat and Connect"
+            }
+          ]
+        },
+        {
+          "href": "/f/your-org/your-forum/c/news-and-updates",
+          "label": "Product Updates"
+        },
+        {
+          "href": "/f/your-org/your-forum/about",
+          "label": "Help Center"
+        }
+      ],
+      "signInStyle": {
+        "icon": "user",
+        "look": "outline",
+        "label": "Login",
+        "order": "after-ctas",
+        "phone": "bar"
+      },
+      "themeToggle": {
+        "show": false,
+        "position": "footer"
+      }
+    },
+    "layout": {
+      "frame": "wide",
+      "widths": {
+        "max": "1150px",
+        "list": "1150px",
+        "text": "740px",
+        "board": "1150px"
+      },
+      "indexHeader": "hide"
+    },
+    "palette": {
+      "ink": "#1e1e1e",
+      "line": "#e6e6e6",
+      "muted": "#8a8a8a",
+      "heading": "#000000",
+      "success": "#14ae5c",
+      "surface": "#ffffff",
+      "background": "#ffffff",
+      "header_primary": "#000000",
+      "header_background": "#ffffff"
+    },
+    "components": {
+      "input": {
+        "border": "#ffffff",
+        "radius": 8,
+        "background": "#ffffff"
+      },
+      "button": {
+        "radius": 6,
+        "weight": "medium"
+      }
+    },
+    "typography": {
+      "levels": {
+        "topicTitle": {
+          "size": {
+            "lg": 20,
+            "sm": 20
+          }
+        }
+      }
+    },
+    "accentColor": "#14ae5c",
+    "colorScheme": "light",
+    "primaryColor": "#000000",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "FORUM",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "section",
+            "attrs": {
+              "key": "hero",
+              "padding": {
+                "top": 72,
+                "bottom": 72
+              },
+              "fullBleed": true,
+              "minHeight": {
+                "lg": "400px",
+                "sm": "300px"
+              },
+              "background": {
+                "color": "#e8ff8f"
+              },
+              "contentAlign": "center",
+              "verticalAlign": "center"
+            },
+            "content": [
+              {
+                "type": "layer",
+                "attrs": {
+                  "x": 0,
+                  "y": 10,
+                  "z": 0,
+                  "src": "/api/assets/00000000-0000-4000-8000-000000000001",
+                  "kind": "image",
+                  "width": 20,
+                  "hideOn": [
+                    "phone"
+                  ]
+                }
+              },
+              {
+                "type": "layer",
+                "attrs": {
+                  "x": 79,
+                  "y": 25,
+                  "z": 0,
+                  "src": "/api/assets/00000000-0000-4000-8000-000000000002",
+                  "kind": "image",
+                  "width": 21,
+                  "hideOn": [
+                    "phone"
+                  ]
+                }
+              },
+              {
+                "type": "heading",
+                "attrs": {
+                  "size": {
+                    "lg": 76,
+                    "sm": 44
+                  },
+                  "level": 1,
+                  "weight": 500,
+                  "tracking": -0.02,
+                  "textAlign": "center"
+                },
+                "content": [
+                  {
+                    "text": "Kitebox Forum",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "size": 18,
+                  "weight": 500,
+                  "textAlign": "center"
+                },
+                "content": [
+                  {
+                    "text": "Find answers, get advice, help each other.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "spaceBand",
+                "attrs": {
+                  "band": "search",
+                  "searchSize": "lg",
+                  "placeholder": "Search everything Kitebox related…",
+                  "searchWidth": 676,
+                  "shortcutHint": true
+                }
+              }
+            ]
+          },
+          {
+            "type": "spaceCategories",
+            "attrs": {
+              "tile": {
+                "align": "center",
+                "height": "auto",
+                "surface": "none",
+                "logoSize": 80,
+                "nameSize": 18,
+                "nameWeight": 600
+              },
+              "fields": [
+                "logo"
+              ],
+              "layout": "tiles",
+              "showOn": "front",
+              "columns": {
+                "lg": 3,
+                "md": 3,
+                "sm": 1
+              },
+              "moreLink": false
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "image": {
+                  "span": "1/3",
+                  "focus": "start",
+                  "aspect": "16:9",
+                  "radius": 8,
+                  "position": "start"
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "standfirst",
+                  "lastPoster",
+                  "views",
+                  "replies"
+                ],
+                "divider": "below",
+                "statIcons": true,
+                "titleSize": "18px",
+                "metaLayout": "split",
+                "titleWeight": 600,
+                "excerptLines": 2
+              },
+              "limit": 2,
+              "fields": [
+                "title",
+                "excerpt",
+                "cover",
+                "lastPoster",
+                "views",
+                "replies"
+              ],
+              "filter": {
+                "tags": [
+                  "tutorial",
+                  "showcase"
+                ],
+                "pinned": true,
+                "tagMatch": "any"
+              },
+              "layout": "split",
+              "showOn": "front",
+              "heading": "Featured topics",
+              "spaceBefore": {
+                "lg": "64px",
+                "sm": "40px"
+              }
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "13px"
+                },
+                "slots": [
+                  "byline",
+                  "askedIn",
+                  "title",
+                  "standfirst",
+                  "likes",
+                  "views",
+                  "replies",
+                  "lastPoster"
+                ],
+                "byline": {
+                  "role": true,
+                  "avatars": true,
+                  "avatarSize": 32,
+                  "roleSeparator": " · "
+                },
+                "divider": "none",
+                "surface": {
+                  "border": "none",
+                  "padding": "20px 24px"
+                },
+                "statIcons": true,
+                "titleSize": "17px",
+                "excerptSize": "14px",
+                "statusGlyph": true,
+                "titleWeight": 600,
+                "excerptLines": 2,
+                "metaSeparator": " · "
+              },
+              "tabs": {
+                "lanes": [
+                  {
+                    "sort": "latest",
+                    "label": "Recent activity"
+                  },
+                  {
+                    "sort": "latest",
+                    "label": "Help others",
+                    "filter": {
+                      "status": "unanswered"
+                    }
+                  }
+                ],
+                "style": "tabs",
+                "activeColor": "#000000"
+              },
+              "frame": {
+                "rules": true,
+                "border": true,
+                "radius": 12
+              },
+              "fields": [
+                "author",
+                "askedIn",
+                "title",
+                "excerpt",
+                "likes",
+                "views",
+                "replies",
+                "lastPoster"
+              ],
+              "layout": "feed",
+              "rowGap": 0,
+              "showOn": "front",
+              "pageSize": 10,
+              "paginate": "more",
+              "moreButton": {
+                "color": "#000000",
+                "label": "Show more activity",
+                "style": "solid"
+              }
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "13px"
+                },
+                "slots": [
+                  "byline",
+                  "askedIn",
+                  "title",
+                  "standfirst",
+                  "likes",
+                  "views",
+                  "replies",
+                  "lastPoster"
+                ],
+                "byline": {
+                  "role": true,
+                  "avatars": true,
+                  "avatarSize": 32,
+                  "roleSeparator": " · "
+                },
+                "divider": "none",
+                "surface": {
+                  "border": "none",
+                  "padding": "20px 24px"
+                },
+                "statIcons": true,
+                "titleSize": "17px",
+                "excerptSize": "14px",
+                "statusGlyph": true,
+                "titleWeight": 600,
+                "excerptLines": 2,
+                "metaSeparator": " · "
+              },
+              "frame": {
+                "rules": true,
+                "border": true,
+                "radius": 12
+              },
+              "fields": [
+                "author",
+                "askedIn",
+                "title",
+                "excerpt",
+                "likes",
+                "views",
+                "replies",
+                "lastPoster"
+              ],
+              "filter": {
+                "category": "$current"
+              },
+              "layout": "feed",
+              "rowGap": 0,
+              "showOn": "category",
+              "pageSize": 10,
+              "paginate": "more",
+              "moreButton": {
+                "color": "#000000",
+                "label": "Show more activity",
+                "style": "solid"
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3
+            },
+            "content": [
+              {
+                "text": "More resources",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "md"
+            },
+            "content": [
+              {
+                "type": "column",
+                "content": [
+                  {
+                    "type": "image",
+                    "attrs": {
+                      "alt": "Developer documentation",
+                      "src": "/api/assets/00000000-0000-4000-8000-000000000003"
+                    }
+                  },
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 4
+                    },
+                    "content": [
+                      {
+                        "text": "Developer documentation",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "APIs, guides, plugins and more.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "content": [
+                  {
+                    "type": "image",
+                    "attrs": {
+                      "alt": "Kitebox events",
+                      "src": "/api/assets/00000000-0000-4000-8000-000000000004"
+                    }
+                  },
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 4
+                    },
+                    "content": [
+                      {
+                        "text": "Kitebox events",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Find a virtual event that speaks to you.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "content": [
+                  {
+                    "type": "image",
+                    "attrs": {
+                      "alt": "Help Center",
+                      "src": "/api/assets/00000000-0000-4000-8000-000000000005"
+                    }
+                  },
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 4
+                    },
+                    "content": [
+                      {
+                        "text": "Help Center",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Find answers, learn more.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sidebar": {
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "spaceFeed",
+              "attrs": {
+                "card": {
+                  "statusGlyph": true
+                },
+                "limit": 8,
+                "fields": [
+                  "title",
+                  "replies"
+                ],
+                "filter": {
+                  "status": "solved"
+                },
+                "layout": "compact",
+                "heading": "Solved topics"
+              }
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "text": "Trending tags",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "spaceBand",
+              "attrs": {
+                "band": "tags",
+                "style": "pills",
+                "showAll": false
+              }
+            }
+          ]
+        },
+        "phone": "after",
+        "width": "default",
+        "position": "right",
+        "startAfter": 2
+      },
+      "width": 1150,
+      "paddingTop": "none"
+    }
+  ]
+}

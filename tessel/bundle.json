@@ -1,0 +1,333 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Tessel Docs",
+    "slug": "template-tessel",
+    "description": "A dark help centre: Popular and Basics card grids under a quiet title, with collapsible sidebar sections.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "docs",
+      "help-center",
+      "product",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "toc": {
+        "label": false,
+        "phone": "hide",
+        "itemSize": 14,
+        "activeColor": "#f7f8f8",
+        "activeStyle": "bar",
+        "activeColorDark": "#f7f8f8"
+      },
+      "pager": {
+        "style": "cards"
+      },
+      "header": {
+        "layout": "rail-split"
+      },
+      "homeAt": "root",
+      "sidebar": {
+        "item": {
+          "gap": 0,
+          "size": 14,
+          "color": "#d0d6e0",
+          "height": 33,
+          "radius": 6,
+          "weight": 500,
+          "padding": 8,
+          "colorDark": "#d0d6e0"
+        },
+        "icons": {
+          "size": 16,
+          "color": "muted",
+          "colorDark": "#8a8f98"
+        },
+        "width": 280,
+        "active": {
+          "color": "#f7f8f8",
+          "style": "fill",
+          "radius": 6,
+          "weight": 500,
+          "colorDark": "#f7f8f8",
+          "background": "#1c1d21",
+          "backgroundDark": "#1c1d21"
+        },
+        "border": true,
+        "groups": "collapsible",
+        "search": "auto",
+        "chevron": "end",
+        "accordion": true,
+        "footerPin": true,
+        "guideLine": false,
+        "groupLabel": {
+          "case": "none",
+          "size": 14,
+          "color": "#8a8f98",
+          "weight": 500,
+          "colorDark": "#8a8f98"
+        },
+        "borderColor": "#23252a",
+        "footerLinks": [
+          {
+            "href": "/p/your-org/your-docs",
+            "icon": "file-text",
+            "label": "Docs"
+          },
+          {
+            "href": "#",
+            "icon": "square-terminal",
+            "label": "Developers"
+          },
+          {
+            "href": "#",
+            "icon": "play",
+            "label": "Learn"
+          },
+          {
+            "href": "#",
+            "icon": "message-circle",
+            "label": "Contact support"
+          }
+        ],
+        "chevronColor": "muted"
+      },
+      "topRule": false,
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "icon": false,
+        "updated": "hide",
+        "breadcrumb": {
+          "home": true,
+          "show": true,
+          "size": 14,
+          "phone": "hide",
+          "placement": "header",
+          "separator": "/"
+        },
+        "contributors": false
+      },
+      "mobileNav": {
+        "head": true,
+        "side": "start",
+        "label": "space",
+        "style": "drawer",
+        "width": "full"
+      },
+      "pageActions": {
+        "items": [
+          "copy",
+          "markdown",
+          "chatgpt",
+          "claude",
+          "mcp"
+        ],
+        "phone": "hide",
+        "style": "split",
+        "primary": "copy",
+        "placement": "header"
+      },
+      "articleAlign": "start",
+      "articleWidth": "650px"
+    },
+    "chrome": {
+      "cta": {
+        "href": "#",
+        "label": "Sign up",
+        "showOnPhone": true
+      },
+      "header": {
+        "order": [
+          "themeToggle",
+          "actions",
+          "ctas",
+          "menu"
+        ],
+        "border": "line",
+        "height": 64,
+        "navSize": 14,
+        "navWeight": 500,
+        "borderColor": "#23252a"
+      },
+      "search": "icon",
+      "sticky": true,
+      "ctaStyle": "pill",
+      "showSignIn": false,
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "label": "Search docs",
+        "iconFrame": "circle"
+      },
+      "themeToggle": {
+        "show": true,
+        "style": "cycle",
+        "border": true,
+        "radius": 999
+      },
+      "searchHideOn": [
+        "phone"
+      ],
+      "sidebarBrand": "hide",
+      "searchPlacement": "start"
+    },
+    "palette": {
+      "ink": "#d0d6e0",
+      "line": "#23252a",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#141516",
+      "background": "#08090a",
+      "footer_primary": "#8a8f98",
+      "header_primary": "#f7f8f8",
+      "footer_background": "#08090a",
+      "header_background": "#08090a"
+    },
+    "components": {
+      "kbd": {
+        "ink": "#d0d6e0",
+        "font": "body",
+        "border": "#3e3e44",
+        "radius": 5,
+        "background": "#08090a"
+      },
+      "card": {
+        "arrow": "none",
+        "divider": false,
+        "iconSize": 16,
+        "minWidth": 160,
+        "iconAlign": "start",
+        "background": "#141516",
+        "backgroundDark": "#141516"
+      },
+      "code": {
+        "ink": "#d0d6e0",
+        "copy": "icon",
+        "border": "#2a2b30",
+        "inline": {
+          "ink": "#d0d6e0",
+          "border": "#2a2b30",
+          "radius": 4,
+          "background": "#1c1c1f"
+        },
+        "radius": 4,
+        "background": "#1c1c1f"
+      },
+      "hint": {
+        "edge": "none",
+        "icon": "none",
+        "border": "#2a2b30",
+        "radius": 6,
+        "background": "#1c1d21"
+      },
+      "link": {
+        "color": "#f7f8f8",
+        "offset": 3,
+        "colorDark": "#f7f8f8",
+        "underline": "always",
+        "underlineColor": "#8a8f98",
+        "underlineColorDark": "#8a8f98"
+      },
+      "list": {
+        "marker": "disc",
+        "markerColor": "#8a8f98"
+      },
+      "input": {
+        "border": "#23252a",
+        "radius": 8,
+        "background": "#08090a"
+      },
+      "table": {
+        "size": 14,
+        "rules": "rows",
+        "border": "#23252a",
+        "stripe": false,
+        "density": "compact",
+        "headerBackground": "#08090a"
+      },
+      "button": {
+        "ink": "#08090a",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#e5e5e6"
+      },
+      "radius": 8,
+      "expandable": {
+        "pad": 14,
+        "icon": "chevron",
+        "style": "row",
+        "border": "#23252a",
+        "iconPosition": "start"
+      }
+    },
+    "onThisPage": "always",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": 32,
+          "weight": 590,
+          "tracking": -0.022,
+          "lineHeight": 1.125
+        },
+        "h2": {
+          "size": 24,
+          "weight": 590,
+          "tracking": -0.012,
+          "lineHeight": 1.33
+        },
+        "h3": {
+          "size": 20,
+          "weight": 590,
+          "lineHeight": 1.6
+        },
+        "body": {
+          "size": 15,
+          "tracking": -0.011,
+          "lineHeight": 1.6
+        },
+        "code": {
+          "size": 13
+        }
+      },
+      "baseSize": 15
+    },
+    "accentColor": "#7170ff",
+    "colorScheme": "dark",
+    "paletteDark": {
+      "ink": "#d0d6e0",
+      "line": "#23252a",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#141516",
+      "background": "#08090a",
+      "footer_primary": "#8a8f98",
+      "header_primary": "#f7f8f8",
+      "footer_background": "#08090a",
+      "header_background": "#08090a"
+    },
+    "primaryColor": "#e5e5e6",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter"
+  },
+  "components": []
+}

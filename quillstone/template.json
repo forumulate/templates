@@ -1,0 +1,127 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "quillstone",
+  "type": "FORUM",
+  "name": "Quillstone Forum",
+  "description": "A dark forum: categories beside their latest topics, coloured category bars and purple accents.",
+  "modelledOn": "A note-taking app’s community forum",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "forum",
+    "community",
+    "product"
+  ],
+  "thumbnail": "/templates/quillstone.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/quillstone-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/quillstone-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {
+    "preset": "categories",
+    "frontDoor": {
+      "showTags": true,
+      "showVotes": false,
+      "badgeStyle": "square",
+      "showCounts": true,
+      "showSearch": false,
+      "showIdentity": false,
+      "showCategoryBadge": true,
+      "showCategoryCards": true,
+      "showLeaderboardLink": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "filters"
+          }
+        },
+        {
+          "type": "spaceCategories",
+          "attrs": {
+            "table": {
+              "columns": [
+                "category",
+                "perWeek",
+                "latest"
+              ],
+              "headers": true,
+              "descSize": "15px",
+              "titleSize": "17px",
+              "topicColor": "#a88bfa",
+              "latestLimit": 4
+            },
+            "layout": "table",
+            "showOn": "landing",
+            "moreLink": false
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "category"
+          }
+        },
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "fields": [
+              "title",
+              "category",
+              "tags",
+              "posters",
+              "replies",
+              "views",
+              "date"
+            ],
+            "layout": "rows",
+            "showOn": "sorted",
+            "controls": true,
+            "pageSize": 30,
+            "paginate": "more"
+          }
+        },
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "fields": [
+              "title",
+              "category",
+              "tags",
+              "posters",
+              "replies",
+              "views",
+              "date"
+            ],
+            "filter": {
+              "category": "$current"
+            },
+            "layout": "rows",
+            "showOn": "category",
+            "controls": true,
+            "pageSize": 30,
+            "paginate": "more"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Vantor Developer Community",
+    "slug": "template-vantor-dev",
+    "description": "A developer forum with resource links in the sidebar, pinned announcements and a dense topic table.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "forum",
+      "developer",
+      "ai",
+      "template"
+    ],
+    "spaceTypes": [
+      "FORUM"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "forum": {
+      "qa": "off",
+      "list": {
+        "pin": "glyph",
+        "heat": {
+          "views": [
+            1000,
+            5000,
+            20000
+          ],
+          "replies": [
+            10,
+            30,
+            60
+          ]
+        },
+        "tags": "text",
+        "header": {
+          "case": "title",
+          "align": "start",
+          "labels": {
+            "posters": ""
+          }
+        },
+        "avatars": "posters",
+        "columns": [
+          "posters",
+          "replies",
+          "views",
+          "activity"
+        ],
+        "density": "cozy",
+        "excerpt": "pinned",
+        "kindChip": false,
+        "metaSize": "13px",
+        "titleSize": "17px",
+        "avatarSize": 24,
+        "titleLines": {
+          "lg": 2,
+          "md": 2,
+          "sm": 3
+        },
+        "stateGlyphs": true,
+        "statusGlyph": "checkbox",
+        "excerptLines": 3,
+        "tagsPosition": "meta"
+      },
+      "look": "board",
+      "post": {
+        "date": "relative",
+        "menu": [
+          "like",
+          "link",
+          "reply"
+        ],
+        "name": "name",
+        "flair": "avatar-overlay",
+        "quote": {
+          "avatar": true
+        },
+        "style": "rule",
+        "avatar": {
+          "size": "md",
+          "shape": "circle",
+          "position": "gutter",
+          "positionSm": "inline"
+        },
+        "actions": {
+          "align": "end",
+          "style": "icons"
+        },
+        "bodySize": "base",
+        "reactions": "like",
+        "gapMarkers": 7,
+        "menuHidden": [
+          "bookmark",
+          "quote",
+          "flag"
+        ],
+        "quoteStyle": "card",
+        "staffAccent": "brand",
+        "headingScale": "body",
+        "acceptedStyle": "none"
+      },
+      "dates": {
+        "style": "compact"
+      },
+      "front": {
+        "filters": {
+          "items": [
+            "latest",
+            "top",
+            "hot",
+            "categories"
+          ],
+          "links": [],
+          "style": "underline",
+          "pickers": [
+            "category",
+            "tags",
+            "status"
+          ],
+          "newTopic": false
+        }
+      },
+      "topic": {
+        "map": {
+          "show": "auto",
+          "style": "full",
+          "minReplies": 2
+        },
+        "align": "start",
+        "share": {
+          "mode": "none"
+        },
+        "header": {
+          "tags": "chips",
+          "category": "chip",
+          "kindChip": false,
+          "statusGlyph": true
+        },
+        "actions": [],
+        "measure": 690,
+        "timeline": {
+          "phone": "pill",
+          "placement": "beside-column",
+          "minReplies": 2
+        },
+        "breadcrumb": "none",
+        "answerPlacement": "excerpt"
+      },
+      "sidebar": {
+        "icons": true,
+        "phone": "drawer",
+        "width": 240,
+        "custom": [
+          {
+            "href": "/f/your-org/your-forum",
+            "icon": "book",
+            "label": "Documentation"
+          },
+          {
+            "href": "/f/your-org/your-forum",
+            "icon": "code",
+            "label": "API reference"
+          },
+          {
+            "href": "/f/your-org/your-forum",
+            "icon": "message",
+            "label": "Help center"
+          }
+        ],
+        "footer": [
+          "themeToggle"
+        ],
+        "enabled": true,
+        "position": "start",
+        "sections": [
+          "community",
+          "custom",
+          "categories",
+          "tags"
+        ],
+        "collapsible": true,
+        "customTitle": "Resources"
+      },
+      "tagStyle": "plain",
+      "categories": {
+        "icons": true
+      },
+      "categoryPage": {
+        "banner": "none",
+        "subcategories": "chips"
+      },
+      "categoriesPage": {
+        "beside": "latest",
+        "layout": "list"
+      }
+    },
+    "chrome": {
+      "ctas": [
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Sign Up",
+          "phone": "menu",
+          "style": "solid",
+          "action": "signUp",
+          "height": 32,
+          "fontSize": 14
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "icon": "user",
+          "label": "Log In",
+          "phone": "bar",
+          "style": "solid",
+          "action": "signIn",
+          "height": 32,
+          "fontSize": 14
+        }
+      ],
+      "align": "split",
+      "header": {
+        "order": [
+          "links",
+          "ctas",
+          "signIn",
+          "search",
+          "menu"
+        ],
+        "border": "line",
+        "navGap": 22,
+        "navSize": 18,
+        "navWeight": 500,
+        "logoHeight": 30
+      },
+      "height": "standard",
+      "search": "icon",
+      "sticky": true,
+      "ctaStyle": "solid",
+      "showSignIn": false,
+      "footerLinks": [
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Terms & policies"
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Privacy policy"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Docs"
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "API"
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Support"
+        }
+      ],
+      "socialLinks": [
+        {
+          "href": "https://example.com",
+          "platform": "x"
+        },
+        {
+          "href": "https://example.com",
+          "platform": "github"
+        }
+      ],
+      "themeToggle": {
+        "show": false,
+        "style": "cycle",
+        "position": "end"
+      },
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Support"
+            }
+          ],
+          "heading": "Help"
+        },
+        {
+          "links": [
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "API Documentation"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Service status"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Cookbook"
+            }
+          ],
+          "heading": "Developer Resources"
+        }
+      ],
+      "sidebarToggle": {
+        "desktop": "collapse"
+      },
+      "searchPlacement": "end",
+      "footerDescription": "Connect with other developers building with the Vantor Platform."
+    },
+    "layout": {
+      "frame": "full",
+      "widths": {
+        "max": "1440px",
+        "list": "1110px",
+        "text": "1110px"
+      },
+      "indexHeader": "hide"
+    },
+    "palette": {
+      "ink": "#222222",
+      "line": "#e9e9e9",
+      "love": "#e5484d",
+      "muted": "#646464",
+      "heading": "#222222",
+      "success": "#1ca551",
+      "surface": "#ffffff",
+      "background": "#ffffff",
+      "footer_primary": "#555555",
+      "header_primary": "#111111",
+      "footer_background": "#f6f6f6",
+      "header_background": "#ffffff"
+    },
+    "typography": {
+      "levels": {
+        "topicTitle": {
+          "size": {
+            "lg": "24px",
+            "sm": "24px"
+          },
+          "weight": 600,
+          "lineHeight": 1.25
+        }
+      }
+    },
+    "accentColor": "#1ca551",
+    "colorScheme": "system",
+    "paletteDark": {
+      "ink": "#dddddd",
+      "line": "#2e2e2e",
+      "muted": "#a0a0a0",
+      "heading": "#f2f2f2",
+      "surface": "#1a1a1a",
+      "background": "#111111",
+      "footer_primary": "#aaaaaa",
+      "header_primary": "#f2f2f2",
+      "footer_background": "#181818",
+      "header_background": "#111111"
+    },
+    "contentWidth": "wide",
+    "primaryColor": "#5b6cf2",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter"
+  },
+  "components": []
+}

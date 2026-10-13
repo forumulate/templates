@@ -1,0 +1,162 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "kestrel",
+  "type": "BLOG",
+  "name": "Kestrel",
+  "description": "A monochrome developer blog: a dense card grid, tag pills, mega-menu header, six-column footer and a closing call to action under every post.",
+  "modelledOn": "A developer cloud platform’s engineering blog",
+  "features": [
+    "Composed front page (4 sections)",
+    "Header with drop-down menus",
+    "12-column footer",
+    "Index layout: grid",
+    "Post layout: article-meta-rail",
+    "Motion presets",
+    "1 theme component",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "developer",
+    "minimal",
+    "grid"
+  ],
+  "thumbnail": "/templates/kestrel.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark-logomark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/avatar-sam-rivera.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {
+    "preset": "grid",
+    "piecePreset": "article-meta-rail",
+    "frontDoor": {
+      "showRss": false,
+      "showTags": true,
+      "badgeStyle": "pill",
+      "showSearch": false,
+      "showArchive": false,
+      "showSubscribe": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "customers",
+      "label": "Customers"
+    },
+    {
+      "slug": "engineering",
+      "label": "Engineering"
+    },
+    {
+      "slug": "edge",
+      "label": "Edge"
+    },
+    {
+      "slug": "general",
+      "label": "Company News"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Developer Relations",
+      "bio": "Writes about shipping, previews and the edge.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Security Engineer",
+      "bio": "Looks for the bugs before anyone else does.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "shipping-to-production-in-minutes",
+      "title": "How one team ships to production in five minutes",
+      "tags": [
+        "customers"
+      ],
+      "daysAgo": 2,
+      "markdown": "A small finance team we work with deploys dozens of times a day. Most changes start as a draft from an assistant and end as a reviewed pull request with a preview link.\n\n## The loop\n\n1. Open a branch; a preview URL appears within a minute.\n2. Reviewers comment on the running page, not the diff alone.\n3. Merge, and the change is live everywhere shortly after.\n\nThe interesting part is not speed. It is that nobody is afraid of a deploy any more. This is a placeholder customer story.",
+      "excerpt": "Previews for every branch, reviews on the running page, and deploys nobody is afraid of.",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "python-at-the-edge",
+      "title": "Python for edge functions",
+      "tags": [
+        "engineering",
+        "edge"
+      ],
+      "daysAgo": 8,
+      "markdown": "Edge functions now run Python alongside JavaScript. Write a handler, deploy it, and it runs close to every visitor with the same cold-start budget.\n\n```python\ndef handler(request):\n    return {\"hello\": request.geo.city}\n```\n\n## What is supported\n\n- The standard library, minus anything that needs a filesystem.\n- Popular pure-Python packages, bundled at build time.\n- Streaming responses.\n\nReplace this sample with your own changelog-style announcement.",
+      "excerpt": "Write a handler in Python and run it close to every visitor.",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "state-of-preview-deployments",
+      "title": "The state of preview deployments",
+      "tags": [
+        "general"
+      ],
+      "daysAgo": 15,
+      "markdown": "Preview deployments started as a convenience and became the place where most review happens. We looked at how teams use them today.\n\n## What we found\n\nTeams that review on previews merge faster and revert less. The previews themselves are short-lived: most are opened a handful of times and never again, which is exactly what you want from a disposable environment.\n\n> A preview is a conversation, not an artefact.\n\nSample copy for a report-style post.",
+      "excerpt": "Most review now happens on a running page. What that changes.",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "bug-bounty-is-public",
+      "title": "Our bug bounty program is now public",
+      "tags": [
+        "security"
+      ],
+      "daysAgo": 23,
+      "markdown": "After a year as an invite-only program, our bug bounty is open to everyone. Researchers can report issues in any of our public services and receive a response within two business days.\n\n## Scope and rewards\n\n- Everything on our primary domains is in scope.\n- Rewards scale with impact, not with effort.\n- We publish a summary of every fixed issue, with the researcher's permission.\n\nPlaceholder security announcement; replace with your own policy.",
+      "excerpt": "Open to every researcher, with a two-day response promise.",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "disclosing-an-image-decoder-bug",
+      "title": "Reproducing, disclosing and fixing an image decoder bug",
+      "tags": [
+        "security",
+        "engineering"
+      ],
+      "daysAgo": 34,
+      "markdown": "A crafted image could make one of our resize workers read past the end of a buffer. Here is how we reproduced it, worked with the upstream maintainers and shipped a fix.\n\n## Timeline\n\n1. Day 0: a fuzzer found a crashing input.\n2. Day 1: we confirmed it was reachable and disabled the code path.\n3. Day 6: the upstream fix was released and deployed.\n\nNo customer data was exposed. Long-form engineering write-ups fit this template's single-column article layout.",
+      "excerpt": "From a fuzzer crash to an upstream fix in six days.",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Strata Docs",
+    "slug": "template-strata",
+    "description": "Gradient Build and Deploy panels of linked cards, a version picker in the sidebar and an announcement bar.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "developer",
+      "versions",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "api": {
+        "layout": "split",
+        "params": "list",
+        "sdkPanel": "landing",
+        "specLink": true
+      },
+      "ask": {
+        "label": "Ask AI",
+        "shortcut": true,
+        "placement": "header",
+        "searchRow": true
+      },
+      "toc": {
+        "label": "On this page",
+        "phone": "disclosure",
+        "steps": true,
+        "itemSize": 13,
+        "labelCase": "none",
+        "labelIcon": true,
+        "labelSize": 14,
+        "activeColor": "#e5484d",
+        "activeStyle": "bar",
+        "activeColorDark": "#ff6b70"
+      },
+      "pager": {
+        "style": "cards"
+      },
+      "panel": {
+        "inset": 0,
+        "phone": true,
+        "border": true,
+        "radius": 20,
+        "shadow": "sm",
+        "padding": {
+          "lg": 40,
+          "md": 32,
+          "sm": 20
+        },
+        "background": "#ffffff",
+        "borderColor": "#e4e6ea",
+        "backgroundDark": "#121821",
+        "borderColorDark": "#253040"
+      },
+      "sidebar": {
+        "item": {
+          "size": 14,
+          "color": "#2b3340",
+          "height": 30,
+          "radius": 10,
+          "colorDark": "#c8d0da"
+        },
+        "icons": {
+          "size": 16,
+          "color": "ink"
+        },
+        "width": 248,
+        "active": {
+          "color": "ink",
+          "style": "outline",
+          "radius": 10,
+          "weight": 500
+        },
+        "groups": "label",
+        "search": "auto",
+        "chevron": "end",
+        "guideLine": false,
+        "groupLabel": {
+          "case": "none",
+          "size": 12,
+          "color": "muted",
+          "weight": 500,
+          "tracking": 0
+        },
+        "footerLinks": [
+          {
+            "href": "https://example.com/status",
+            "label": "Status"
+          }
+        ]
+      },
+      "topRule": false,
+      "editLink": {
+        "label": "Edit on GitHub",
+        "urlTemplate": "https://github.com/strata-example/docs/edit/main/content/{path}"
+      },
+      "feedback": {
+        "style": "pill",
+        "placement": "foot"
+      },
+      "pageHead": {
+        "icon": false,
+        "updated": "footer",
+        "breadcrumb": {
+          "show": false
+        },
+        "description": "show"
+      },
+      "mobileNav": {
+        "bar": false,
+        "menu": {
+          "cta": "head",
+          "links": "head",
+          "themeToggle": "foot"
+        },
+        "label": "section",
+        "style": "drawer"
+      },
+      "pageActions": {
+        "items": [
+          "markdown",
+          "copy",
+          "chatgpt",
+          "claude",
+          "cursor"
+        ],
+        "phone": "icon",
+        "style": "split",
+        "primary": "markdown",
+        "placement": "title-end"
+      },
+      "articleAlign": "start",
+      "versionSwitcher": {
+        "label": "ORM version",
+        "style": "select",
+        "placement": "sidebar",
+        "labelPlacement": "above"
+      }
+    },
+    "chrome": {
+      "cta": {
+        "href": "https://example.com/login",
+        "label": "Login"
+      },
+      "align": "split",
+      "footer": {
+        "hideOn": [
+          "docs"
+        ]
+      },
+      "header": {
+        "border": "line",
+        "iconSize": 18,
+        "brandSize": 20,
+        "linksAlign": "end",
+        "logoHeight": 26,
+        "sectionCrumb": true,
+        "controlsAlign": "end",
+        "sectionCrumbSeparator": "/"
+      },
+      "height": "standard",
+      "search": "pill",
+      "sticky": true,
+      "ctaStyle": "pill",
+      "brandText": "show",
+      "copyright": "© 2026 Strata Data, Inc. A fictional company.",
+      "logoPhone": "mark",
+      "headerLinks": [
+        {
+          "kbd": "mod-i",
+          "href": "/p/your-org/your-docs/getting-started",
+          "icon": "message",
+          "label": "Ask AI",
+          "phone": "bar",
+          "style": "outline"
+        },
+        {
+          "href": "https://example.com/strata",
+          "icon": "github",
+          "label": "GitHub",
+          "iconOnly": true
+        },
+        {
+          "href": "https://example.com/strata-chat",
+          "icon": "discord",
+          "label": "Discord",
+          "iconOnly": true
+        }
+      ],
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "size": "sm",
+        "label": "Search",
+        "width": 176,
+        "labelPhone": ""
+      },
+      "themeToggle": {
+        "show": true,
+        "style": "icon",
+        "radius": 999,
+        "position": "end",
+        "activeColor": "#e7e9ec"
+      },
+      "sidebarBrand": "hide",
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/getting-started",
+              "label": "Getting started"
+            },
+            {
+              "href": "/p/your-org/your-docs/orm",
+              "label": "Strata ORM"
+            },
+            {
+              "href": "/p/your-org/your-docs/cli-reference",
+              "label": "CLI reference"
+            }
+          ],
+          "heading": "Docs"
+        },
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/compute",
+              "label": "Compute"
+            },
+            {
+              "href": "/p/your-org/your-docs/postgres",
+              "label": "Postgres"
+            },
+            {
+              "href": "/p/your-org/your-docs/storage",
+              "label": "Storage"
+            }
+          ],
+          "heading": "Platform"
+        }
+      ],
+      "searchPlacement": "before-links"
+    },
+    "layout": {
+      "frame": "full",
+      "gutter": {
+        "lg": 24,
+        "sm": 16
+      },
+      "widths": {
+        "max": "2560px"
+      }
+    },
+    "mobile": {},
+    "palette": {
+      "ink": "#2b3340",
+      "line": "#e2e5e9",
+      "muted": "#5b6675",
+      "heading": "#141c28",
+      "surface": "#ffffff",
+      "background": "#f3f3f1",
+      "header_primary": "#141c28",
+      "header_background": "#f3f3f1"
+    },
+    "components": {
+      "kbd": {
+        "radius": 4
+      },
+      "card": {
+        "arrow": "none",
+        "titleSize": 15,
+        "background": "#ffffff",
+        "ctaPlacement": "end",
+        "backgroundDark": "#121821",
+        "descriptionSize": 13
+      },
+      "code": {
+        "ink": "#1f2937",
+        "copy": "icon",
+        "border": "#e2e5e9",
+        "radius": 10,
+        "tabFont": "ui",
+        "background": "#ffffff",
+        "showLanguage": false
+      },
+      "hint": {
+        "edge": "none",
+        "icon": "badge",
+        "radius": 10
+      },
+      "link": {
+        "color": "#141c28",
+        "offset": 4,
+        "weight": 500,
+        "colorDark": "#f1f4f8",
+        "thickness": 2,
+        "underline": "always",
+        "underlineColor": "#14b8a6",
+        "underlineColorDark": "#2dd4bf"
+      },
+      "tabs": {
+        "overflow": "scroll"
+      },
+      "input": {
+        "border": "#dfe2e6",
+        "radius": 999
+      },
+      "table": {
+        "rules": "rows",
+        "stripe": false,
+        "density": "compact"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#141c28"
+      },
+      "radius": 10,
+      "syntax": {
+        "title": "#7048e8",
+        "string": "#0e7c74",
+        "comment": "#7b8794",
+        "keyword": "#d6336c"
+      },
+      "codeDark": {
+        "ink": "#d6dde6",
+        "border": "#253040",
+        "background": "#0f141c"
+      },
+      "buttonDark": {
+        "ink": "#0b0f15",
+        "background": "#f1f4f8"
+      },
+      "syntaxTheme": "one-light"
+    },
+    "onThisPage": "auto",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 40,
+            "sm": 34
+          },
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 26,
+          "weight": 600,
+          "tracking": -0.01
+        },
+        "h3": {
+          "size": 20,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.75
+        },
+        "code": {
+          "size": 14
+        }
+      },
+      "baseSize": 16,
+      "headingWrap": "balance"
+    },
+    "accentColor": "#e5484d",
+    "paletteDark": {
+      "ink": "#c8d0da",
+      "line": "#253040",
+      "muted": "#8a95a3",
+      "heading": "#f1f4f8",
+      "surface": "#121821",
+      "background": "#0b0f15",
+      "header_primary": "#f1f4f8",
+      "header_background": "#0b0f15"
+    },
+    "primaryColor": "#0e9488",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+    "bodyFontFamily": "Inter",
+    "monoFontFamily": "JetBrains Mono",
+    "headingFontFamily": "Plus Jakarta Sans"
+  },
+  "components": []
+}

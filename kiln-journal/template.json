@@ -1,0 +1,232 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "kiln-journal",
+  "type": "BLOG",
+  "name": "Kiln Journal",
+  "description": "A warm, dark studio journal: big cover grid, outlined topic badges, illustrated menu feature and a quiet single-column article page.",
+  "modelledOn": "A design studio’s journal",
+  "features": [
+    "Composed front page (5 sections)",
+    "Header with drop-down menus",
+    "Index layout: grid",
+    "Post layout: article-clean",
+    "Light and dark palettes",
+    "Motion presets",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "journal",
+    "studio",
+    "editorial"
+  ],
+  "thumbnail": "/templates/kiln-journal.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/menu-feature.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/wordmark-ffffff.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/avatar-sam-rivera.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/cover-6.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "grid",
+    "piecePreset": "article-clean",
+    "frontDoor": {
+      "showDate": false,
+      "showTags": true,
+      "badgeStyle": "outline",
+      "showAuthor": false,
+      "showSearch": false,
+      "showReadTime": false,
+      "showSubscribe": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "perspectives",
+      "label": "Perspectives"
+    },
+    {
+      "slug": "spotlight",
+      "label": "Spotlight"
+    },
+    {
+      "slug": "ux",
+      "label": "UX"
+    },
+    {
+      "slug": "typography",
+      "label": "Typography"
+    },
+    {
+      "slug": "guides",
+      "label": "Guides"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "conversations",
+      "label": "Conversations"
+    },
+    {
+      "slug": "illustration",
+      "label": "Illustration"
+    },
+    {
+      "slug": "podcasts",
+      "label": "Podcasts"
+    },
+    {
+      "slug": "systems",
+      "label": "Systems"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Design Director",
+      "bio": "Writes about type and interfaces.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Illustrator",
+      "bio": "Draws the icons.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000005"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "designing-for-every-reader",
+      "title": "Designing for every reader",
+      "tags": [
+        "perspectives",
+        "accessibility"
+      ],
+      "daysAgo": 2,
+      "markdown": "Accessible design is not a checklist at the end. It is a set of decisions made at the start: contrast, size, rhythm and language.\n\nPlaceholder journal essay.",
+      "subtitle": "Contrast, size, rhythm and language, decided early.",
+      "featured": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "designing-warmth",
+      "title": "Designing warmth",
+      "tags": [
+        "perspectives",
+        "ux"
+      ],
+      "daysAgo": 7,
+      "markdown": "Warm interfaces are not about orange. They are about forgiveness: undo, gentle copy and empty states that invite rather than scold.\n\nPlaceholder journal essay.",
+      "subtitle": "Warmth is forgiveness, not a colour.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "type-after-dark",
+      "title": "Type after dark",
+      "tags": [
+        "typography"
+      ],
+      "daysAgo": 12,
+      "markdown": "Letters behave differently on a dark background. Thin strokes glow, tight spacing closes up, and the weight you chose by daylight suddenly feels too heavy.\n\nPlaceholder typography piece.",
+      "subtitle": "Thin strokes glow and spacing closes up.",
+      "featured": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "a-font-that-dances",
+      "title": "A font that dances",
+      "tags": [
+        "guides",
+        "typography"
+      ],
+      "daysAgo": 18,
+      "markdown": "Variable fonts can move. Animate the weight axis on hover and a headline breathes.\n\n```css\nh1:hover { font-variation-settings: \"wght\" 800; transition: font-variation-settings .4s; }\n```\n\nPlaceholder guide.",
+      "subtitle": "Animate the weight axis and a headline breathes.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "a-shared-language",
+      "title": "Unboxing a shared language",
+      "tags": [
+        "conversations",
+        "systems"
+      ],
+      "daysAgo": 25,
+      "markdown": "A design system is a vocabulary before it is a library. We sat down with two designers to talk about naming things.\n\nPlaceholder conversation piece.",
+      "subtitle": "A vocabulary before it is a library.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "giving-icons-a-body",
+      "title": "Giving icons a body",
+      "tags": [
+        "illustration",
+        "guides"
+      ],
+      "daysAgo": 33,
+      "markdown": "Turning flat icons into objects means deciding where the light comes from, how thick things are and what they are made of.\n\nPlaceholder illustration guide.",
+      "subtitle": "The design problems of turning flat icons into objects.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true,
+      "customization": {
+        "theme": {
+          "post": {
+            "authorCard": true
+          }
+        }
+      }
+    }
+  ]
+}

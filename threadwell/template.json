@@ -1,0 +1,47 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "threadwell",
+  "type": "FORUM",
+  "name": "Threadwell Meta",
+  "description": "A classic topic list with excerpts, poster avatars, views and activity, and a categories sidebar.",
+  "modelledOn": "A forum software project’s meta community",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "forum",
+    "community",
+    "classic"
+  ],
+  "thumbnail": "/templates/threadwell.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/tw-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/tw-wordmark-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/tw-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "dense",
+    "frontDoor": {
+      "showTags": true,
+      "badgeStyle": "square",
+      "showCounts": true,
+      "showSearch": false,
+      "showIdentity": false,
+      "showCategoryBadge": true,
+      "showCategoryCards": false,
+      "showLeaderboardLink": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": []
+}

@@ -1,0 +1,407 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "emberline",
+  "type": "DOCS",
+  "name": "Emberline Developer Docs",
+  "description": "Developer docs with a tabbed product panel under the title, an orange accent and a slim header of top-level sections.",
+  "modelledOn": "An edge compute platform’s developer docs",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "docs",
+    "developer",
+    "platform"
+  ],
+  "thumbnail": "/templates/emberline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/em-logo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/em-logo-dark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {},
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "text": "Emberline Developer Docs",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "color": "muted"
+          },
+          "content": [
+            {
+              "text": "Explore guides and tutorials to start building on the Emberline platform.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "attrs": {
+            "href": "/p/your-org/your-docs/getting-started",
+            "label": "Get started",
+            "style": "primary"
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "Powerful primitives, close to every user",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "tabs",
+          "attrs": {
+            "variant": "card",
+            "overflow": "scroll"
+          },
+          "content": [
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Compute"
+              },
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 3
+                  },
+                  "content": [
+                    {
+                      "text": "Deploy with one command",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Build and ship serverless functions and full-stack apps on the Emberline network. No servers to manage, no regions to pick.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "codeBlock",
+                  "attrs": {
+                    "language": "sh"
+                  },
+                  "content": [
+                    {
+                      "text": "npm create ember@latest my-app",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Create your first Ember →",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/cli"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "AI"
+              },
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 3
+                  },
+                  "content": [
+                    {
+                      "text": "Run models next to your users",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Call open models on GPUs in the same location as your code with the Spark AI binding.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "codeBlock",
+                  "attrs": {
+                    "language": "ts"
+                  },
+                  "content": [
+                    {
+                      "text": "const answer = await env.SPARK.run(\"@ember/llama-3-8b\", { prompt });",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Storage"
+              },
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 3
+                  },
+                  "content": [
+                    {
+                      "text": "State without the round trip",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Cinder KV, Hearth SQL and Ash Objects are a binding away.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "codeBlock",
+                  "attrs": {
+                    "language": "ts"
+                  },
+                  "content": [
+                    {
+                      "text": "await env.CACHE.put(\"greeting\", \"hello\");",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "What's new",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "color": "muted"
+          },
+          "content": [
+            {
+              "text": "The latest guides and reference across Emberline.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "card": {
+              "slots": [
+                "kicker",
+                "title",
+                "standfirst",
+                "updated"
+              ],
+              "kicker": "category",
+              "kickerStyle": {
+                "case": "none",
+                "size": 13,
+                "color": "#f05a1a",
+                "weight": 500
+              },
+              "excerptLines": 2
+            },
+            "limit": 6,
+            "width": "column",
+            "fields": [
+              "section",
+              "title",
+              "excerpt",
+              "updated"
+            ],
+            "layout": "grid",
+            "columns": {
+              "lg": 3,
+              "md": 2,
+              "sm": 1
+            },
+            "headGap": "xs",
+            "moreLink": {
+              "href": "/p/your-org/your-docs/overview",
+              "label": "View all docs"
+            }
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "Build on the platform",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "color": "muted"
+          },
+          "content": [
+            {
+              "text": "Everything you need to build, store and observe applications at the edge.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "attrs": {
+            "columns": {
+              "lg": 3,
+              "md": 2,
+              "sm": 1
+            }
+          },
+          "content": [
+            {
+              "type": "card",
+              "attrs": {
+                "cta": "Set up Embers",
+                "href": "/p/your-org/your-docs/overview",
+                "icon": "code",
+                "title": "Embers",
+                "iconStyle": "tile",
+                "description": "Serverless functions that run in 300+ cities."
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "cta": "Set up Cinder KV",
+                "href": "/p/your-org/your-docs/bindings",
+                "icon": "bookmark",
+                "title": "Cinder KV",
+                "iconStyle": "tile",
+                "description": "Key-value storage replicated to every location."
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "cta": "Set up Flue queues",
+                "href": "/p/your-org/your-docs/bindings",
+                "icon": "clock",
+                "title": "Flue queues",
+                "iconStyle": "tile",
+                "description": "Guaranteed delivery with retries and batching."
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "cta": "Set up Observability",
+                "href": "/p/your-org/your-docs/logs",
+                "icon": "chart",
+                "title": "Observability",
+                "iconStyle": "tile",
+                "description": "Logs, traces and metrics for every request."
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "cta": "Set up Limits",
+                "href": "/p/your-org/your-docs/limits",
+                "icon": "shield",
+                "title": "Limits",
+                "iconStyle": "tile",
+                "description": "Know the ceilings before you hit them."
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "cta": "Set up API reference",
+                "href": "/p/your-org/your-docs/api-emberline-api",
+                "icon": "webhook",
+                "title": "API reference",
+                "iconStyle": "tile",
+                "description": "Manage Embers from your own tooling."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "sidebar": {
+      "doc": {
+        "type": "doc",
+        "content": []
+      },
+      "source": "docs-nav",
+      "position": "left"
+    }
+  }
+}

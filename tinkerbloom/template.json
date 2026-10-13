@@ -1,0 +1,226 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "tinkerbloom",
+  "type": "BLOG",
+  "name": "Tinkerbloom",
+  "description": "A friendly, hand-made tutorial blog: sky-and-hills hero, category chips, a “popular content” list and a table-of-contents article page with a playful masthead.",
+  "modelledOn": "An independent front-end tutorial blog",
+  "features": [
+    "Composed front page (4 sections, with a sidebar)",
+    "Header with drop-down menus",
+    "3-column footer",
+    "Newsletter sign-up in the footer",
+    "Index layout: feed",
+    "Post layout: article-toc",
+    "Light and dark palettes",
+    "Motion presets",
+    "Colour-coded tags",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "personal",
+    "tutorial",
+    "playful"
+  ],
+  "thumbnail": "/templates/tinkerbloom.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/masthead.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/hero.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/hero-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/hero-foreground.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/wordmark-16163a.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/avatar-sam-rivera.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000006"
+  },
+  "layout": {
+    "preset": "feed",
+    "piecePreset": "article-toc",
+    "frontDoor": {
+      "showDate": false,
+      "showTags": false,
+      "badgeStyle": "text",
+      "showAuthor": false,
+      "showReadTime": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "css",
+      "label": "CSS",
+      "color": "#c9e9fb",
+      "textColor": "#16163a",
+      "colorDark": "#1d2a5c",
+      "textColorDark": "#cfe6ff"
+    },
+    {
+      "slug": "animation",
+      "label": "Animation",
+      "color": "#c9e9fb",
+      "textColor": "#16163a",
+      "colorDark": "#1d2a5c",
+      "textColorDark": "#cfe6ff"
+    },
+    {
+      "slug": "career",
+      "label": "Career",
+      "color": "#c9e9fb",
+      "textColor": "#16163a",
+      "colorDark": "#1d2a5c",
+      "textColorDark": "#cfe6ff"
+    },
+    {
+      "slug": "general",
+      "label": "General",
+      "color": "#c9e9fb",
+      "textColor": "#16163a",
+      "colorDark": "#1d2a5c",
+      "textColorDark": "#cfe6ff"
+    },
+    {
+      "slug": "svg",
+      "label": "SVG",
+      "color": "#c9e9fb",
+      "textColor": "#16163a",
+      "colorDark": "#1d2a5c",
+      "textColorDark": "#cfe6ff"
+    },
+    {
+      "slug": "javascript",
+      "label": "JavaScript",
+      "color": "#c9e9fb",
+      "textColor": "#16163a"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Author",
+      "bio": "Writes interactive guides to CSS and animation.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000007"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Guest author",
+      "bio": "Writes about SVG.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000008"
+    }
+  ],
+  "forms": [
+    {
+      "id": "00000000-0000-4000-9000-000000000001",
+      "form": {
+        "name": "Newsletter",
+        "fields": [
+          {
+            "name": "email",
+            "type": "email",
+            "label": "Email",
+            "required": true,
+            "placeholder": "you@example.com"
+          }
+        ],
+        "submitLabel": "Subscribe",
+        "successMessage": "You are in! Check your inbox.",
+        "layout": "stacked"
+      }
+    }
+  ],
+  "posts": [
+    {
+      "slug": "tooltips-that-follow",
+      "title": "Tooltips that follow their anchor",
+      "tags": [
+        "css"
+      ],
+      "daysAgo": 3,
+      "markdown": "A tooltip should stay attached to the thing it explains, even when the page scrolls. Modern CSS can do most of this on its own.\n\n## The idea\n\nAnchor the tooltip to its trigger and let the browser keep them together.\n\n```css\n.tip { position-anchor: --trigger; top: anchor(bottom); }\n```\n\nPlaceholder tutorial copy.",
+      "subtitle": "Let the browser keep the two together.",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "shadows-that-feel-real",
+      "title": "Designing shadows that feel real",
+      "tags": [
+        "css"
+      ],
+      "daysAgo": 9,
+      "markdown": "Real shadows are soft, layered and a little coloured. One flat grey box-shadow is none of those things.\n\n## Layer them\n\n```css\nbox-shadow: 0 1px 2px hsl(220 40% 20% / .1), 0 8px 24px hsl(220 40% 20% / .12);\n```\n\nPlaceholder tutorial copy.",
+      "subtitle": "Soft, layered and a little coloured.",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "the-humble-transform-origin",
+      "title": "The humble transform-origin",
+      "tags": [
+        "animation",
+        "css"
+      ],
+      "daysAgo": 16,
+      "markdown": "Every rotation and scale happens around a point. Move the point and the whole animation changes character.\n\nTry a card that grows from its corner instead of its centre: it suddenly feels like it is unfolding.\n\nPlaceholder tutorial copy.",
+      "subtitle": "Move the point and the motion changes character.",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "interactive-guide-to-transitions",
+      "title": "An interactive guide to CSS transitions",
+      "tags": [
+        "animation",
+        "css"
+      ],
+      "daysAgo": 24,
+      "markdown": "Transitions are the smallest piece of animation on the web and the one used most. Duration, easing and delay are all you need to know to start.\n\n## Easing is the personality\n\nLinear feels mechanical. Ease-out feels responsive. A little overshoot feels playful.\n\nPlaceholder tutorial copy.",
+      "subtitle": "Duration, easing and delay are all you need to start.",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "why-z-index-does-not-work",
+      "title": "Why your z-index doesn't work",
+      "tags": [
+        "css"
+      ],
+      "daysAgo": 33,
+      "markdown": "Nine times out of ten, the element is in a different stacking context from the one you think. A transform, an opacity or a filter on a parent quietly starts a new one.\n\nPlaceholder tutorial copy.",
+      "subtitle": "It is almost always a stacking context.",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "gentle-introduction-to-svg-paths",
+      "title": "A gentle introduction to SVG paths",
+      "tags": [
+        "svg"
+      ],
+      "daysAgo": 45,
+      "markdown": "A path is a list of drawing instructions: move here, draw a line there, curve over to this point.\n\n```svg\n<path d=\"M 10 80 Q 95 10 180 80\" />\n```\n\nPlaceholder tutorial copy.",
+      "subtitle": "Move, line, curve: a path is a list of instructions.",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    }
+  ]
+}

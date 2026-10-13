@@ -1,0 +1,483 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Heapfield",
+    "slug": "template-heapfield",
+    "description": "A Q&A forum: vote and answer counts beside each question, tag chips, a left nav and a sidebar of featured posts.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "forum",
+      "q-and-a",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "FORUM"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "forum": {
+      "list": {
+        "pin": "word",
+        "tags": "chips",
+        "stats": {
+          "phone": "strip",
+          "width": 100,
+          "fields": [
+            "votes",
+            "answers",
+            "views"
+          ],
+          "position": "start",
+          "acceptedStyle": "filled"
+        },
+        "byline": "end",
+        "header": {
+          "show": false
+        },
+        "avatars": "none",
+        "columns": [],
+        "density": "cozy",
+        "excerpt": "all",
+        "kindChip": false,
+        "titleSize": "17px",
+        "avatarSize": 16,
+        "titleColor": "#0063bf",
+        "titleLines": {
+          "lg": 2,
+          "md": 2,
+          "sm": 3
+        },
+        "statusGlyph": "none",
+        "excerptLines": 2,
+        "tagsPosition": "after-excerpt",
+        "titleColorDark": "#6cbbf7"
+      },
+      "look": "qa",
+      "post": {
+        "date": "relative",
+        "menu": [
+          "link",
+          "edit",
+          "bookmark",
+          "flag"
+        ],
+        "style": "rule",
+        "avatar": {
+          "position": "none"
+        },
+        "badges": "hover",
+        "byline": "card-end",
+        "opChip": false,
+        "actions": {
+          "align": "start",
+          "style": "text"
+        },
+        "bodySize": 15,
+        "reactions": "palette",
+        "voteStyle": "gutter",
+        "gapMarkers": false,
+        "menuHidden": [
+          "quote",
+          "reply",
+          "history"
+        ],
+        "reputation": true,
+        "staffAccent": "none",
+        "headingScale": "body",
+        "acceptedStyle": "gutter-check"
+      },
+      "dates": {
+        "style": "relative"
+      },
+      "front": {
+        "rail": {
+          "show": true,
+          "items": [
+            {
+              "body": "- [Why your p99 lies to you: tail latency in practice](/f/your-org/your-forum)\n- [We moved 40 TB of logs without downtime](/f/your-org/your-forum)",
+              "kind": "box",
+              "tone": "note",
+              "title": "The Heapfield Blog"
+            },
+            {
+              "body": "- [Updated policy on generated answers](/f/your-org/your-forum)\n- [Tag cleanup: merging `js` into `javascript`](/f/your-org/your-forum)",
+              "kind": "box",
+              "tone": "note",
+              "group": true,
+              "title": "Featured on Meta"
+            },
+            {
+              "kind": "tags",
+              "title": "Watched tags"
+            }
+          ],
+          "width": 300
+        },
+        "align": "start",
+        "filters": {
+          "count": true,
+          "items": [
+            "latest",
+            "hot",
+            "bountied",
+            "unanswered",
+            "top"
+          ],
+          "links": [],
+          "style": "segmented",
+          "newTopic": false,
+          "activeColor": "#3b4045",
+          "activeColorDark": "#f2f2f3"
+        }
+      },
+      "topic": {
+        "map": {
+          "show": "never"
+        },
+        "rail": [
+          {
+            "body": "- [Why your p99 lies to you: tail latency in practice](/f/your-org/your-forum)\n- [We moved 40 TB of logs without downtime](/f/your-org/your-forum)",
+            "kind": "box",
+            "tone": "note",
+            "title": "The Heapfield Blog"
+          },
+          {
+            "body": "- [Updated policy on generated answers](/f/your-org/your-forum)\n- [Tag cleanup: merging `js` into `javascript`](/f/your-org/your-forum)",
+            "kind": "box",
+            "tone": "note",
+            "group": true,
+            "title": "Featured on Meta"
+          },
+          "related"
+        ],
+        "share": {
+          "mode": "none"
+        },
+        "header": {
+          "cta": {
+            "href": "/f/your-org/your-forum/new",
+            "label": "Ask Question",
+            "phone": "inline"
+          },
+          "meta": [
+            "asked",
+            "modified",
+            "views"
+          ],
+          "tags": "chips",
+          "category": "none",
+          "kindChip": false,
+          "statusGlyph": false
+        },
+        "actions": [],
+        "measure": 760,
+        "timeline": {
+          "phone": "none",
+          "placement": "none"
+        },
+        "replySort": "votes",
+        "threading": "comments",
+        "breadcrumb": "none",
+        "sortControl": true,
+        "acceptedBanner": false,
+        "answersHeading": true,
+        "answerPlacement": "pinned-first"
+      },
+      "layout": {
+        "topGap": {
+          "phone": 16
+        }
+      },
+      "sidebar": {
+        "icons": false,
+        "phone": "drawer",
+        "width": 180,
+        "custom": [
+          {
+            "href": "/f/your-org/your-forum/categories",
+            "label": "Home"
+          },
+          {
+            "href": "/f/your-org/your-forum",
+            "label": "Questions"
+          },
+          {
+            "href": "/f/your-org/your-forum/tags",
+            "label": "Tags"
+          },
+          {
+            "href": "/f/your-org/your-forum/u",
+            "label": "Users"
+          },
+          {
+            "href": "/f/your-org/your-forum/leaderboard",
+            "label": "Leaderboard"
+          },
+          {
+            "href": "/f/your-org/your-forum/badges",
+            "label": "Badges"
+          }
+        ],
+        "enabled": true,
+        "sections": [
+          "custom",
+          "tags"
+        ],
+        "activeColor": "#f48225",
+        "customTitle": " "
+      },
+      "tagStyle": "chip",
+      "tagsPage": {
+        "sort": "count",
+        "descriptions": true
+      }
+    },
+    "chrome": {
+      "cta": {
+        "ink": "#ffffff",
+        "href": "/f/your-org/your-forum",
+        "label": "Sign up",
+        "phone": "bar",
+        "background": "#0a95ff",
+        "showOnPhone": true
+      },
+      "header": {
+        "border": "line",
+        "height": 56,
+        "navSize": 13,
+        "accentTop": {
+          "color": "#f48225",
+          "width": 3
+        },
+        "navWeight": 400,
+        "logoHeight": 30,
+        "menuButton": {
+          "phone": "always",
+          "phoneSide": "start"
+        }
+      },
+      "search": "pill",
+      "headerLinks": [
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "About"
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Products",
+          "children": [
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Heapfield for Teams"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Advertising"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Knowledge solutions"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Labs"
+            }
+          ]
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "For Teams"
+        }
+      ],
+      "searchStyle": {
+        "kbd": "slash",
+        "size": "md",
+        "label": "Search…",
+        "width": 540,
+        "labelPhone": ""
+      },
+      "signInStyle": {
+        "look": "outline",
+        "label": "Log in"
+      },
+      "themeToggle": {
+        "show": false
+      },
+      "sidebarToggle": false,
+      "searchPlacement": "center"
+    },
+    "layout": {
+      "widths": {
+        "max": "1264px",
+        "list": "1080px",
+        "text": "880px"
+      }
+    },
+    "palette": {
+      "ink": "#232629",
+      "line": "#e3e6e8",
+      "muted": "#6a737c",
+      "heading": "#232629",
+      "success": "#2f6f44",
+      "surface": "#ffffff",
+      "background": "#ffffff",
+      "footer_primary": "#babfc4",
+      "header_primary": "#525960",
+      "footer_background": "#232629",
+      "header_background": "#ffffff"
+    },
+    "components": {
+      "code": {
+        "ink": "#0c0d0e",
+        "border": "#f6f6f6",
+        "radius": 5,
+        "background": "#f6f6f6"
+      },
+      "link": {
+        "color": "#0074cc",
+        "colorDark": "#4ca8ff",
+        "underline": "hover"
+      },
+      "meta": {
+        "size": "12px",
+        "color": "#6a737c",
+        "colorDark": "#acb2b8"
+      },
+      "input": {
+        "border": "#babfc4",
+        "radius": 6
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 6,
+        "weight": "regular",
+        "background": "#0a95ff"
+      },
+      "radius": 3,
+      "codeDark": {
+        "ink": "#f2f2f3",
+        "border": "#202020",
+        "background": "#202020"
+      }
+    },
+    "typography": {
+      "levels": {
+        "topicTitle": {
+          "size": "clamp(1.35rem, 1.1rem + 0.8vw, 1.7rem)",
+          "weight": 400,
+          "lineHeight": 1.35
+        }
+      },
+      "baseSize": 14
+    },
+    "accentColor": "#2f6f44",
+    "colorScheme": "system",
+    "paletteDark": {
+      "ink": "#f2f2f3",
+      "line": "#4a4e51",
+      "muted": "#acb2b8",
+      "heading": "#f2f2f3",
+      "success": "#5eba7d",
+      "surface": "#393939",
+      "background": "#2d2d2d",
+      "footer_primary": "#babfc4",
+      "header_primary": "#cfd2d6",
+      "footer_background": "#232629",
+      "header_background": "#393939"
+    },
+    "primaryColor": "#0a95ff",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "FORUM",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "md",
+              "valign": "center",
+              "stackOn": "never"
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 75
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "text": "Newest Questions",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "fit": "content",
+                  "align": "end",
+                  "width": 25
+                },
+                "content": [
+                  {
+                    "type": "button",
+                    "attrs": {
+                      "href": "/f/your-org/your-forum#composer",
+                      "label": "Ask Question",
+                      "style": "primary",
+                      "action": "link"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "filters"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "layout": "rows",
+              "controls": true,
+              "pageSize": 15,
+              "paginate": true
+            }
+          }
+        ]
+      },
+      "width": "list",
+      "hideTitle": true
+    }
+  ]
+}

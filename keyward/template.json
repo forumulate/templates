@@ -1,0 +1,35 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "keyward",
+  "type": "DOCS",
+  "name": "Keyward Docs",
+  "description": "A centred welcome, a copy-a-prompt bar, product cards and an explore-by-feature grid, with an SDK picker in the sidebar.",
+  "modelledOn": "An authentication provider’s developer docs",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "docs",
+    "developer",
+    "sdk"
+  ],
+  "thumbnail": "/templates/keyward.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/keyward-word.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/keyward-word-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/keyward-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {},
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": []
+}

@@ -1,0 +1,245 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "tessel-forum",
+  "type": "FORUM",
+  "name": "Tessel Forum",
+  "description": "A warm off-white forum: featured posts, categories with descriptions and the latest topics with avatars.",
+  "modelledOn": "An issue tracker’s community forum",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "forum",
+    "community",
+    "product"
+  ],
+  "thumbnail": "/templates/tessel-forum.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/ts-logo.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "dense",
+    "frontDoor": {
+      "showVotes": false,
+      "badgeStyle": "square",
+      "showSearch": false,
+      "showIdentity": false,
+      "showCategoryBadge": true,
+      "showLeaderboardLink": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "gap": 30,
+            "card": {
+              "image": {
+                "position": "none"
+              },
+              "slots": [
+                "title",
+                "byline"
+              ],
+              "byline": {
+                "size": 13,
+                "weight": 600,
+                "avatars": true,
+                "avatarSize": 28
+              },
+              "surface": {
+                "hover": "border",
+                "border": "panel",
+                "radius": 12,
+                "padding": "16px",
+                "background": "#f7f7f4",
+                "backgroundDark": "#1b1913"
+              },
+              "titleSize": 16,
+              "titleWeight": 600
+            },
+            "sort": "latest",
+            "limit": 3,
+            "fields": [
+              "title",
+              "author"
+            ],
+            "filter": {
+              "featured": true
+            },
+            "layout": "grid",
+            "showOn": "front",
+            "columns": {
+              "lg": 3,
+              "md": 3,
+              "sm": 1
+            },
+            "heading": {
+              "size": 18,
+              "text": "Featured Posts",
+              "weight": 600
+            },
+            "perView": {
+              "lg": 3,
+              "md": 3,
+              "sm": 1.25
+            },
+            "carousel": {
+              "controls": "none",
+              "indicator": "none"
+            },
+            "layoutSm": "carousel"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "filters",
+            "spaceBefore": 8
+          }
+        },
+        {
+          "type": "columns",
+          "attrs": {
+            "gap": "lg",
+            "stackOn": "md"
+          },
+          "content": [
+            {
+              "type": "column",
+              "attrs": {
+                "width": 50
+              },
+              "content": [
+                {
+                  "type": "spaceCategories",
+                  "attrs": {
+                    "fields": [
+                      "color",
+                      "description",
+                      "count",
+                      "perWeek",
+                      "children"
+                    ],
+                    "layout": "rows",
+                    "heading": "Category",
+                    "moreLink": false,
+                    "topTopics": {
+                      "lg": 0,
+                      "md": 0,
+                      "sm": 3
+                    },
+                    "topTopicsRow": {
+                      "ink": "ink",
+                      "meta": [
+                        "age",
+                        "replies"
+                      ],
+                      "size": 17
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 50
+              },
+              "content": [
+                {
+                  "type": "spaceFeed",
+                  "attrs": {
+                    "card": {
+                      "image": {
+                        "size": "46px",
+                        "aspect": "1:1",
+                        "radius": "999px",
+                        "source": "authorAvatar",
+                        "position": "start"
+                      },
+                      "slots": [
+                        "cover",
+                        "title",
+                        "kicker",
+                        "tags"
+                      ],
+                      "stats": {
+                        "heat": true,
+                        "icons": false,
+                        "fields": [
+                          "replies",
+                          "activity"
+                        ],
+                        "position": "end"
+                      },
+                      "kicker": "category",
+                      "divider": "below",
+                      "slotGap": 4,
+                      "metaLine": [
+                        "kicker",
+                        "tags"
+                      ],
+                      "tagStyle": "text",
+                      "statIcons": false,
+                      "titleSize": 17,
+                      "kickerStyle": {
+                        "case": "none",
+                        "font": "body",
+                        "size": 13,
+                        "swatch": true,
+                        "weight": 400,
+                        "tracking": 0
+                      },
+                      "titleWeight": 400
+                    },
+                    "sort": "latest",
+                    "limit": 20,
+                    "fields": [
+                      "avatar",
+                      "title",
+                      "category",
+                      "tags",
+                      "replies",
+                      "activity"
+                    ],
+                    "layout": "rows",
+                    "heading": {
+                      "size": 15,
+                      "text": "Latest",
+                      "color": "muted",
+                      "weight": 400
+                    },
+                    "paginate": "more",
+                    "moreButton": {
+                      "label": "More",
+                      "style": "outline"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hideTitle": true,
+    "width": 1400,
+    "gap": "sm",
+    "paddingTop": 16
+  }
+}

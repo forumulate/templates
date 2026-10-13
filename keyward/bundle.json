@@ -1,0 +1,497 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Keyward Docs",
+    "slug": "template-keyward",
+    "description": "A centred welcome, a copy-a-prompt bar, product cards and an explore-by-feature grid, with an SDK picker in the sidebar.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "developer",
+      "sdk",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "api": {
+        "layout": "split",
+        "params": "list",
+        "sdkPanel": "landing"
+      },
+      "ask": {
+        "placement": "floating",
+        "searchRow": true
+      },
+      "toc": {
+        "label": false,
+        "phone": "disclosure",
+        "steps": true,
+        "itemSize": 13,
+        "activeColor": "#131316",
+        "activeStyle": "text",
+        "activeColorDark": "#fafafa"
+      },
+      "pager": {
+        "style": "links"
+      },
+      "header": {
+        "layout": "sidebar-first"
+      },
+      "homeAt": "root",
+      "sidebar": {
+        "item": {
+          "size": 14,
+          "color": "#52525b",
+          "height": 32,
+          "radius": 8,
+          "colorDark": "#a1a1aa"
+        },
+        "mono": "callable",
+        "icons": {
+          "size": 16,
+          "color": "muted"
+        },
+        "width": 272,
+        "active": {
+          "bar": {
+            "color": "#131316",
+            "width": 2
+          },
+          "color": "ink",
+          "style": "fill",
+          "radius": 8,
+          "weight": 500,
+          "background": "#f4f4f5",
+          "backgroundDark": "#1f1f23"
+        },
+        "border": true,
+        "groups": "label",
+        "search": "auto",
+        "chevron": "end",
+        "background": "#ffffff",
+        "groupLabel": "hide",
+        "borderColor": "#ececef",
+        "backgroundDark": "#121214"
+      },
+      "topRule": false,
+      "editLink": {
+        "label": "Edit on GitHub",
+        "urlTemplate": "https://github.com/keyward-example/docs/edit/main/docs/{path}"
+      },
+      "feedback": {
+        "align": "start",
+        "label": "What did you think of this content?",
+        "style": "labelled",
+        "third": true,
+        "labels": {
+          "no": "It was not helpful",
+          "yes": "It was helpful",
+          "other": "I have feedback"
+        },
+        "comment": "always"
+      },
+      "pageHead": {
+        "updated": "footer",
+        "breadcrumb": {
+          "show": true,
+          "size": 12,
+          "separator": "/"
+        },
+        "description": "show"
+      },
+      "sections": {
+        "items": [
+          {
+            "key": "guides",
+            "icon": "book",
+            "label": "Guides",
+            "collections": [
+              "guides"
+            ]
+          },
+          {
+            "key": "reference",
+            "icon": "code",
+            "label": "Reference",
+            "collections": [
+              "reference"
+            ]
+          }
+        ],
+        "style": "card",
+        "placement": "sidebar"
+      },
+      "mobileNav": {
+        "bar": false,
+        "head": true,
+        "side": "start",
+        "label": "section",
+        "style": "drawer"
+      },
+      "pageActions": {
+        "items": [
+          "copy",
+          "chatgpt",
+          "claude",
+          "cursor",
+          "mcp"
+        ],
+        "phone": "text",
+        "style": "split",
+        "primary": "copy",
+        "placement": "below-title"
+      },
+      "articleAlign": "start",
+      "variantSwitcher": {
+        "show": "always",
+        "label": "Select your SDK",
+        "style": "card",
+        "default": "nextjs",
+        "options": [
+          {
+            "icon": "code-2",
+            "label": "Next.js",
+            "value": "nextjs"
+          },
+          {
+            "icon": "atom",
+            "label": "React",
+            "value": "react"
+          },
+          {
+            "icon": "smartphone",
+            "label": "Expo",
+            "value": "expo"
+          }
+        ],
+        "syncKey": "sdk",
+        "position": "top",
+        "placement": "sidebar",
+        "labelPlacement": "above"
+      },
+      "versionSwitcher": {
+        "label": false,
+        "style": "select",
+        "placement": "brand"
+      }
+    },
+    "chrome": {
+      "cta": {
+        "href": "https://example.com/sign-up",
+        "label": "Sign Up ▸",
+        "phone": "bar",
+        "height": 32,
+        "fontSize": 14
+      },
+      "align": "left",
+      "footer": {
+        "border": true,
+        "linkSize": 13,
+        "columnRule": false,
+        "headingStyle": "plain",
+        "headingWeight": 500,
+        "brandPlacement": "side"
+      },
+      "header": {
+        "border": "line",
+        "iconSize": 18,
+        "linksAlign": "after-search",
+        "logoHeight": 22,
+        "menuButton": {
+          "phoneSide": "start"
+        },
+        "controlsAlign": "end"
+      },
+      "height": "standard",
+      "search": "pill",
+      "sticky": true,
+      "ctaStyle": "solid",
+      "copyright": "© 2026 Keyward, Inc. A fictional company.",
+      "headerLinks": [
+        {
+          "href": "/p/your-org/your-docs/welcome",
+          "label": "Ask AI",
+          "style": "button"
+        }
+      ],
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "size": "sm",
+        "label": "Search documentation",
+        "width": 280,
+        "labelPhone": ""
+      },
+      "themeToggle": {
+        "show": true,
+        "modes": [
+          "system",
+          "light",
+          "dark"
+        ],
+        "style": "icon",
+        "position": "footer"
+      },
+      "sidebarBrand": "show",
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/authentication-overview",
+              "label": "Authentication"
+            },
+            {
+              "href": "/p/your-org/your-docs/teams",
+              "label": "Teams"
+            },
+            {
+              "href": "/p/your-org/your-docs/set-up-application",
+              "label": "Billing"
+            },
+            {
+              "href": "/p/your-org/your-docs/cli",
+              "label": "CLI"
+            }
+          ],
+          "heading": "Product"
+        },
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/quickstart-nextjs",
+              "label": "React"
+            },
+            {
+              "href": "/p/your-org/your-docs/quickstart-nextjs",
+              "label": "Next.js"
+            },
+            {
+              "href": "/p/your-org/your-docs/quickstart-nextjs",
+              "label": "Expo"
+            },
+            {
+              "href": "/p/your-org/your-docs/sdk-reference",
+              "label": "View all"
+            }
+          ],
+          "heading": "SDKs"
+        },
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/welcome",
+              "label": "Documentation"
+            },
+            {
+              "href": "/p/your-org/your-docs/welcome",
+              "label": "Changelog"
+            },
+            {
+              "href": "/p/your-org/your-docs/welcome",
+              "label": "Glossary"
+            }
+          ],
+          "heading": "Resources"
+        },
+        {
+          "links": [
+            {
+              "href": "https://example.com/about",
+              "label": "About"
+            },
+            {
+              "href": "https://example.com/careers",
+              "label": "Careers"
+            },
+            {
+              "href": "https://example.com/blog",
+              "label": "Blog"
+            }
+          ],
+          "heading": "Company"
+        },
+        {
+          "links": [
+            {
+              "href": "https://example.com/terms",
+              "label": "Terms"
+            },
+            {
+              "href": "https://example.com/privacy",
+              "label": "Privacy"
+            },
+            {
+              "href": "https://example.com/security",
+              "label": "Security"
+            }
+          ],
+          "heading": "Legal"
+        }
+      ],
+      "searchPlacement": "start"
+    },
+    "layout": {
+      "frame": "full",
+      "gutter": {
+        "lg": 24,
+        "sm": 24
+      },
+      "widths": {
+        "max": "2560px"
+      }
+    },
+    "palette": {
+      "ink": "#3f3f46",
+      "line": "#ececef",
+      "muted": "#6b6b75",
+      "heading": "#131316",
+      "surface": "#ffffff",
+      "background": "#ffffff",
+      "footer_primary": "#131316",
+      "header_primary": "#131316",
+      "footer_background": "#ffffff",
+      "header_background": "#ffffff"
+    },
+    "components": {
+      "kbd": {
+        "radius": 4
+      },
+      "card": {
+        "arrow": "none"
+      },
+      "code": {
+        "ink": "#131316",
+        "copy": "icon",
+        "border": "#e6e6ea",
+        "radius": 10,
+        "background": "#ffffff",
+        "showLanguage": false
+      },
+      "hint": {
+        "edge": "bar",
+        "icon": "badge",
+        "border": "#ececef",
+        "radius": 8,
+        "background": "#ffffff",
+        "backgroundDark": "#19191c"
+      },
+      "link": {
+        "color": "#131316",
+        "offset": 4,
+        "weight": 500,
+        "colorDark": "#fafafa",
+        "thickness": 1,
+        "underline": "always"
+      },
+      "list": {
+        "marker": "disc"
+      },
+      "tabs": {
+        "overflow": "scroll"
+      },
+      "input": {
+        "border": "#e6e6ea",
+        "radius": 8
+      },
+      "table": {
+        "rules": "rows",
+        "stripe": false,
+        "density": "compact"
+      },
+      "button": {
+        "radius": 8,
+        "shadow": "sm",
+        "weight": "medium"
+      },
+      "radius": 8,
+      "shadow": "sm",
+      "syntax": {
+        "title": "#c2185b",
+        "string": "#0b7a4b",
+        "keyword": "#6c47ff"
+      },
+      "codeDark": {
+        "ink": "#e4e4e7",
+        "border": "#2a2a30",
+        "background": "#19191c"
+      },
+      "buttonDark": {
+        "ink": "#131316",
+        "background": "#fafafa"
+      },
+      "syntaxTheme": "github"
+    },
+    "onThisPage": "auto",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 34,
+            "sm": 36
+          },
+          "weight": 600,
+          "tracking": -0.03,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "size": 26,
+          "weight": 600,
+          "tracking": -0.025
+        },
+        "h3": {
+          "size": 20,
+          "weight": 600,
+          "tracking": -0.015
+        },
+        "body": {
+          "lineHeight": 1.75
+        },
+        "code": {
+          "size": 14
+        },
+        "lede": {
+          "size": 16,
+          "lineHeight": 1.65
+        }
+      },
+      "baseSize": 16
+    },
+    "accentColor": "#6c47ff",
+    "paletteDark": {
+      "ink": "#c9c9d1",
+      "line": "#2a2a30",
+      "muted": "#8e8e99",
+      "heading": "#fafafa",
+      "surface": "#19191c",
+      "background": "#121214",
+      "footer_primary": "#fafafa",
+      "header_primary": "#fafafa",
+      "footer_background": "#121214",
+      "header_background": "#121214"
+    },
+    "primaryColor": "#131316",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "bodyFontFamily": "Geist",
+    "monoFontFamily": "Geist Mono",
+    "primaryColorDark": "#fafafa",
+    "headingFontFamily": "Geist"
+  },
+  "components": []
+}

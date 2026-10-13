@@ -1,0 +1,529 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Ridgeline Docs",
+    "slug": "template-ridgeline",
+    "description": "A big headline beside a tabbed terminal panel, an agent-prompt block and plugin cards.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "developer",
+      "platform",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "api": {
+        "phone": {
+          "frame": false,
+          "samples": "first"
+        },
+        "layout": "split",
+        "params": "list",
+        "examples": {
+          "default": "typescript",
+          "tabStyle": "pill",
+          "languages": [
+            "typescript",
+            "curl",
+            "python"
+          ],
+          "lineNumbers": true
+        },
+        "sdkPanel": "none",
+        "specLink": true,
+        "urlStyle": "plain",
+        "titleSize": 28,
+        "playground": {
+          "display": "simple"
+        },
+        "bodyHeading": "plain"
+      },
+      "toc": {
+        "label": "On this page",
+        "phone": "hide",
+        "steps": true,
+        "onHero": "show",
+        "itemSize": 14,
+        "labelCase": "none",
+        "labelSize": 14,
+        "activeStyle": "text"
+      },
+      "pager": {
+        "style": "links"
+      },
+      "blocks": {
+        "prompt": {
+          "variant": "card"
+        }
+      },
+      "sidebar": {
+        "item": {
+          "size": 14,
+          "color": "ink",
+          "height": 36,
+          "radius": 6,
+          "weight": 500
+        },
+        "width": 300,
+        "active": {
+          "color": "ink",
+          "style": "fill",
+          "radius": 6,
+          "weight": 600,
+          "background": "#ebebeb",
+          "backgroundDark": "#2e2e2e"
+        },
+        "groups": "label",
+        "search": "show",
+        "chevron": "end",
+        "guideLine": false,
+        "searchKbd": "mod-k",
+        "groupLabel": {
+          "case": "none",
+          "size": 13,
+          "color": "muted",
+          "weight": 400
+        },
+        "methodBadges": true,
+        "searchHeight": 40
+      },
+      "topRule": false,
+      "feedback": {
+        "align": "center",
+        "label": "Was this helpful?",
+        "scale": 4,
+        "style": "pill"
+      },
+      "pageHead": {
+        "updated": "hide",
+        "breadcrumb": {
+          "show": false
+        },
+        "description": "show"
+      },
+      "mobileNav": {
+        "bar": false,
+        "label": "section",
+        "style": "drawer"
+      },
+      "pageActions": {
+        "items": [
+          "copy",
+          "markdown",
+          "chatgpt",
+          "claude",
+          "cursor"
+        ],
+        "phone": "bar",
+        "style": "split",
+        "primary": "copy",
+        "phoneToc": "icon",
+        "placement": "title-end"
+      },
+      "articleAlign": "start",
+      "articleWidth": "50rem",
+      "variantSwitcher": {
+        "style": "card",
+        "default": "Next.js (/app)",
+        "options": [
+          {
+            "icon": "/api/assets/00000000-0000-4000-8000-000000000001",
+            "label": "Next.js (/app)",
+            "value": "Next.js (/app)"
+          },
+          {
+            "icon": "/api/assets/00000000-0000-4000-8000-000000000001",
+            "label": "Next.js (/pages)",
+            "value": "Next.js (/pages)"
+          },
+          {
+            "icon": "layers",
+            "label": "Other frameworks",
+            "value": "Other frameworks"
+          }
+        ],
+        "syncKey": "fw",
+        "position": "top",
+        "placement": "rail"
+      }
+    },
+    "chrome": {
+      "ctas": [
+        {
+          "href": "/p/your-org/your-docs/getting-started",
+          "label": "Ask AI",
+          "style": "outline",
+          "border": "#ebebeb",
+          "height": 32,
+          "fontSize": 14
+        },
+        {
+          "href": "https://example.com/login",
+          "label": "Log In",
+          "style": "outline",
+          "border": "#ebebeb",
+          "height": 32,
+          "fontSize": 14
+        },
+        {
+          "ink": "#ffffff",
+          "href": "https://example.com/signup",
+          "label": "Sign Up",
+          "style": "solid",
+          "height": 32,
+          "fontSize": 14,
+          "background": "#171717"
+        }
+      ],
+      "align": "left",
+      "footer": {
+        "columns": 4,
+        "linkSize": 14,
+        "headingSize": 14,
+        "headingStyle": "plain",
+        "headingWeight": 500,
+        "brandPlacement": "side"
+      },
+      "header": {
+        "border": "none",
+        "height": 64,
+        "navGap": 20,
+        "navInk": "#4d4d4d",
+        "navSize": 14,
+        "navWeight": 400,
+        "linksAlign": "start",
+        "logoHeight": 30,
+        "navInkDark": "#a1a1a1",
+        "activeStyle": "text",
+        "controlsAlign": "end"
+      },
+      "search": "none",
+      "sticky": true,
+      "navMenu": {
+        "radius": 10,
+        "shadow": "md",
+        "trigger": "hover",
+        "animation": "fade"
+      },
+      "copyright": "© 2026 Ridgeline, Inc.",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "href": "/p/your-org/your-docs/functions",
+          "label": "Build",
+          "match": {
+            "pathPrefix": [
+              "/p/your-org/your-docs/functions",
+              "/p/your-org/your-docs/routing-middleware",
+              "/p/your-org/your-docs/cron-jobs",
+              "/p/your-org/your-docs/environment-variables"
+            ]
+          },
+          "children": [
+            {
+              "href": "/p/your-org/your-docs/functions",
+              "label": "Functions"
+            },
+            {
+              "href": "/p/your-org/your-docs/routing-middleware",
+              "label": "Routing middleware"
+            },
+            {
+              "href": "/p/your-org/your-docs/cron-jobs",
+              "label": "Cron jobs"
+            },
+            {
+              "href": "/p/your-org/your-docs/environment-variables",
+              "label": "Environment variables"
+            }
+          ]
+        },
+        {
+          "href": "/p/your-org/your-docs/deployments",
+          "label": "Learn",
+          "children": [
+            {
+              "href": "/p/your-org/your-docs/deployments",
+              "label": "Deployments"
+            },
+            {
+              "href": "/p/your-org/your-docs/domains",
+              "label": "Domains"
+            },
+            {
+              "href": "/p/your-org/your-docs/rest-ridgeline-rest-api",
+              "label": "REST API"
+            }
+          ]
+        },
+        {
+          "href": "/p/your-org/your-docs/getting-started",
+          "label": "Getting Started"
+        }
+      ],
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "label": "Search Docs"
+      },
+      "socialLinks": [
+        {
+          "href": "https://example.com/gh",
+          "platform": "github"
+        },
+        {
+          "href": "https://example.com/x",
+          "platform": "x"
+        }
+      ],
+      "themeToggle": {
+        "show": true,
+        "modes": [
+          "system",
+          "light",
+          "dark"
+        ],
+        "style": "icon",
+        "position": "footer"
+      },
+      "sidebarBrand": "hide",
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/getting-started",
+              "label": "Templates"
+            },
+            {
+              "href": "/p/your-org/your-docs/runtimes",
+              "label": "Supported frameworks"
+            },
+            {
+              "href": "/p/your-org/your-docs/import-a-project",
+              "label": "Import a project"
+            }
+          ],
+          "heading": "Get started"
+        },
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/functions",
+              "label": "Functions"
+            },
+            {
+              "href": "/p/your-org/your-docs/cron-jobs",
+              "label": "Cron jobs"
+            },
+            {
+              "href": "/p/your-org/your-docs/routing-middleware",
+              "label": "Middleware"
+            }
+          ],
+          "heading": "Build"
+        },
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/deployments",
+              "label": "Deployments"
+            },
+            {
+              "href": "/p/your-org/your-docs/domains",
+              "label": "Domains"
+            },
+            {
+              "href": "/p/your-org/your-docs/rollbacks",
+              "label": "Rollbacks"
+            }
+          ],
+          "heading": "Deploy"
+        },
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/firewall",
+              "label": "Firewall"
+            },
+            {
+              "href": "/p/your-org/your-docs/deployment-protection",
+              "label": "Protection"
+            }
+          ],
+          "heading": "Secure"
+        }
+      ]
+    },
+    "layout": {
+      "frame": "full",
+      "widths": {
+        "max": "1440px"
+      },
+      "measure": "64rem"
+    },
+    "palette": {
+      "ink": "#171717",
+      "line": "#ebebeb",
+      "muted": "#666666",
+      "heading": "#171717",
+      "surface": "#ffffff",
+      "background": "#fafafa",
+      "footer_primary": "#4d4d4d",
+      "header_primary": "#171717",
+      "footer_background": "#fafafa",
+      "header_background": "#fafafa"
+    },
+    "components": {
+      "card": {
+        "arrow": "none"
+      },
+      "code": {
+        "ink": "#171717",
+        "copy": "icon",
+        "border": "#ebebeb",
+        "radius": 8,
+        "titleFont": "ui",
+        "titleIcon": true,
+        "background": "#ffffff"
+      },
+      "hint": {
+        "edge": "none",
+        "icon": "badge",
+        "radius": 8
+      },
+      "link": {
+        "color": "#171717",
+        "offset": 3,
+        "weight": 500,
+        "colorDark": "#ededed",
+        "thickness": 1,
+        "underline": "always"
+      },
+      "list": {
+        "marker": "disc"
+      },
+      "tabs": {
+        "overflow": "scroll"
+      },
+      "input": {
+        "border": "#ebebeb",
+        "radius": 8,
+        "background": "#ffffff"
+      },
+      "table": {
+        "size": 14,
+        "rules": "rows",
+        "stripe": false,
+        "density": "compact",
+        "cellPadding": {
+          "x": 8,
+          "y": 8
+        },
+        "headerBackground": "#fafafa",
+        "headerBackgroundDark": "#0a0a0a"
+      },
+      "apiRef": {
+        "urlSize": 12,
+        "urlTone": "muted",
+        "urlWeight": 400,
+        "methodStyle": "text"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "border": "#ebebeb",
+        "radius": 6,
+        "weight": "medium",
+        "background": "#171717"
+      },
+      "radius": 6,
+      "shadow": "none",
+      "stepper": {
+        "line": false,
+        "marker": "outline",
+        "titleSize": 18
+      },
+      "codeDark": {
+        "ink": "#ededed",
+        "border": "#2e2e2e",
+        "background": "#0a0a0a"
+      },
+      "syntaxTheme": "github"
+    },
+    "onThisPage": "always",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 36
+          },
+          "weight": 600,
+          "tracking": -0.05,
+          "lineHeight": 1.05
+        },
+        "h2": {
+          "size": {
+            "lg": 28,
+            "sm": 24
+          },
+          "weight": 600,
+          "tracking": -0.035,
+          "lineHeight": 1.25
+        },
+        "h3": {
+          "size": 20,
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.3
+        },
+        "body": {
+          "lineHeight": 1.7
+        },
+        "code": {
+          "size": 13
+        }
+      },
+      "baseSize": 16,
+      "headingWrap": "balance"
+    },
+    "accentColor": "#0070f3",
+    "colorScheme": "system",
+    "paletteDark": {
+      "ink": "#ededed",
+      "line": "#2e2e2e",
+      "muted": "#a1a1a1",
+      "heading": "#ededed",
+      "surface": "#111111",
+      "background": "#0a0a0a",
+      "footer_primary": "#a1a1a1",
+      "header_primary": "#ededed",
+      "footer_background": "#0a0a0a",
+      "header_background": "#0a0a0a"
+    },
+    "primaryColor": "#171717",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "bodyFontFamily": "Geist",
+    "headingAnchors": "hover",
+    "monoFontFamily": "Geist Mono",
+    "headingFontFamily": "Geist"
+  },
+  "components": []
+}

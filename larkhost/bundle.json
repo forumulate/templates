@@ -1,0 +1,338 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Larkhost Community",
+    "slug": "template-larkhost",
+    "description": "A dark header over a boxed topic table with poster avatars, replies, views and activity.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "forum",
+      "community",
+      "hosting",
+      "template"
+    ],
+    "spaceTypes": [
+      "FORUM"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "font": "sans",
+    "forum": {
+      "qa": "off",
+      "list": {
+        "pin": "glyph",
+        "heat": {
+          "likes": [
+            10,
+            25,
+            50
+          ],
+          "views": [
+            1000,
+            2000,
+            5000
+          ],
+          "replies": [
+            20,
+            50,
+            100
+          ]
+        },
+        "tags": "text",
+        "header": {
+          "case": "title",
+          "align": "start"
+        },
+        "avatars": "posters",
+        "columns": [
+          "posters",
+          "replies",
+          "views",
+          "activity"
+        ],
+        "density": "cozy",
+        "excerpt": "pinned",
+        "kindChip": false,
+        "metaSize": "12px",
+        "titleSize": "16px",
+        "avatarSize": 24,
+        "titleLines": {
+          "lg": 2,
+          "md": 2,
+          "sm": 4
+        },
+        "avatarShape": "square",
+        "stateGlyphs": true,
+        "statusGlyph": "checkbox",
+        "excerptLines": 3,
+        "posterOverlap": false
+      },
+      "look": "board",
+      "post": {
+        "date": "relative",
+        "menu": [
+          "like",
+          "link"
+        ],
+        "name": "name",
+        "flair": "chip",
+        "style": "rule",
+        "avatar": {
+          "size": 48,
+          "shape": "rounded",
+          "position": "gutter",
+          "positionSm": "gutter"
+        },
+        "opChip": false,
+        "actions": {
+          "align": "end",
+          "style": "icons"
+        },
+        "bodySize": 15,
+        "reactions": "like",
+        "gapMarkers": false,
+        "menuHidden": [
+          "reply",
+          "quote",
+          "bookmark",
+          "flag"
+        ],
+        "quoteStyle": "card",
+        "staffAccent": "none",
+        "headingScale": "body",
+        "reactionsRow": "inline",
+        "acceptedStyle": "none"
+      },
+      "dates": {
+        "style": "compact"
+      },
+      "front": {
+        "panel": {
+          "page": "#F1F4F9",
+          "scope": [
+            "front",
+            "category",
+            "categories",
+            "topic"
+          ],
+          "width": "frame",
+          "border": "#E6EAF2",
+          "radius": 8,
+          "padding": {
+            "lg": 40,
+            "sm": 4
+          },
+          "maxWidth": 1250,
+          "background": "#FFFFFF"
+        },
+        "filters": {
+          "size": 17,
+          "items": [
+            "latest",
+            "hot",
+            "categories"
+          ],
+          "links": [],
+          "phone": "select",
+          "style": "underline",
+          "pickers": [
+            "category",
+            "tags"
+          ],
+          "newTopic": false,
+          "pickerInk": "#6B46C1",
+          "activeColor": "#6B46C1",
+          "pickerStyle": "crumb",
+          "phonePickers": false
+        }
+      },
+      "topic": {
+        "map": {
+          "show": "always",
+          "style": "strip"
+        },
+        "align": "start",
+        "share": {
+          "mode": "none"
+        },
+        "header": {
+          "meta": [],
+          "tags": "chips",
+          "category": "text",
+          "kindChip": false,
+          "stateChip": false,
+          "statusGlyph": "checkbox"
+        },
+        "actions": [],
+        "measure": 760,
+        "timeline": {
+          "color": "#6B46C1",
+          "phone": "pill",
+          "placement": "beside-column",
+          "minReplies": 2
+        },
+        "breadcrumb": "none",
+        "answerColor": "#3CD050",
+        "answerStyle": "header",
+        "answerPlacement": "excerpt-in-post"
+      },
+      "sidebar": {
+        "enabled": false
+      },
+      "tagStyle": "text",
+      "categories": {
+        "icons": true
+      },
+      "categoriesPage": {
+        "title": false,
+        "beside": "latest",
+        "layout": "table",
+        "filters": true,
+        "nameInk": "ink",
+        "headCase": "none",
+        "nameSize": 16,
+        "besideRow": {
+          "meta": [
+            "category",
+            "tags",
+            "replies",
+            "age"
+          ],
+          "icons": false,
+          "avatarSize": 40,
+          "titleLines": 2,
+          "avatarShape": "square"
+        }
+      }
+    },
+    "chrome": {
+      "cta": {
+        "ink": "#FFFFFF",
+        "href": "/f/your-org/your-forum?signin=1",
+        "icon": "user",
+        "label": "Log In",
+        "phone": "bar",
+        "background": "#6B46C1"
+      },
+      "header": {
+        "order": [
+          "ctas",
+          "search",
+          "menu"
+        ],
+        "border": "none",
+        "height": 70,
+        "brandSize": 24,
+        "logoHeight": 34,
+        "menuButton": {
+          "desktop": true
+        }
+      },
+      "height": "standard",
+      "search": "icon",
+      "ctaStyle": "solid",
+      "mobileNav": "menu",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "href": "/f/your-org/your-forum/c/questions-help",
+          "label": "FAQ",
+          "placement": "menu"
+        },
+        {
+          "href": "/f/your-org/your-forum/c/general",
+          "label": "Guides",
+          "placement": "menu"
+        },
+        {
+          "href": "/f/your-org/your-forum/c/fresh-produce",
+          "label": "Changelog",
+          "placement": "menu"
+        },
+        {
+          "href": "/f/your-org/your-forum/c/show-tell",
+          "label": "Show & Tell",
+          "placement": "menu"
+        }
+      ],
+      "themeToggle": {
+        "show": false
+      }
+    },
+    "layout": {
+      "widths": {
+        "max": "1248px",
+        "list": "1250px",
+        "text": "1250px"
+      },
+      "indexHeader": "hide"
+    },
+    "palette": {
+      "ink": "#2C3854",
+      "line": "#E6EAF2",
+      "muted": "#8294BD",
+      "heading": "#2C3854",
+      "surface": "#FFFFFF",
+      "background": "#FFFFFF",
+      "header_primary": "#FFFFFF",
+      "header_background": "#1E293B"
+    },
+    "components": {
+      "code": {
+        "ink": "#2C3854",
+        "border": "#F1F4F9",
+        "radius": 0,
+        "background": "#F1F4F9"
+      },
+      "button": {
+        "radius": 4,
+        "weight": "regular"
+      },
+      "radius": 4,
+      "syntax": {
+        "attr": "#1F61A0",
+        "title": "#B35A00",
+        "number": "#2563EB",
+        "string": "#16803C",
+        "comment": "#8294BD",
+        "keyword": "#B45309",
+        "built_in": "#1F61A0"
+      }
+    },
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": 30,
+          "weight": 400,
+          "tracking": 0,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "size": 15,
+          "lineHeight": 1.5
+        },
+        "topicTitle": {
+          "size": {
+            "lg": 26,
+            "sm": 21
+          },
+          "weight": 500,
+          "lineHeight": 1.3
+        }
+      },
+      "baseSize": 16
+    },
+    "accentColor": "#6B46C1",
+    "colorScheme": "light",
+    "primaryColor": "#6B46C1"
+  },
+  "components": []
+}

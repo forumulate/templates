@@ -1,0 +1,832 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Emberline Developer Docs",
+    "slug": "template-emberline",
+    "description": "Developer docs with a tabbed product panel under the title, an orange accent and a slim header of top-level sections.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "developer",
+      "platform",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "api": {
+        "layout": "split",
+        "params": "list",
+        "sdkPanel": "landing",
+        "specLink": true
+      },
+      "toc": {
+        "label": "On this page",
+        "phone": "select",
+        "extras": [
+          "feedback",
+          "edit"
+        ],
+        "itemSize": 13,
+        "labelCase": "none",
+        "labelSize": 14,
+        "activeColor": "#f05a1a",
+        "activeStyle": "bar",
+        "activeColorDark": "#ff7a3d"
+      },
+      "pager": {
+        "style": "cards"
+      },
+      "sidebar": {
+        "item": {
+          "size": 14,
+          "color": "ink",
+          "height": 30,
+          "radius": 4,
+          "weight": 400,
+          "padding": 8
+        },
+        "width": 256,
+        "active": {
+          "color": "ink",
+          "style": "fill",
+          "radius": 4,
+          "weight": 500,
+          "background": "#f0f0f0",
+          "backgroundDark": "#262626"
+        },
+        "border": true,
+        "groups": "label",
+        "search": "show",
+        "chevron": "end",
+        "guideLine": true,
+        "searchKbd": "slash",
+        "groupLabel": "hide",
+        "borderColor": "#e5e5e5",
+        "chevronColor": "muted",
+        "methodBadges": true,
+        "borderColorDark": "#2e2e2e"
+      },
+      "topRule": false,
+      "editLink": {
+        "label": "Edit page",
+        "urlTemplate": "https://github.com/emberline/docs/edit/main/{path}"
+      },
+      "feedback": {
+        "align": "start",
+        "label": "Was this helpful?",
+        "style": "buttons",
+        "placement": "rail"
+      },
+      "pageHead": {
+        "rule": true,
+        "updated": "actions",
+        "breadcrumb": {
+          "root": {
+            "href": "/p/your-org/your-docs",
+            "label": "Home"
+          },
+          "show": true,
+          "size": 13,
+          "separator": "/"
+        },
+        "contributors": false,
+        "updatedFormat": "date"
+      },
+      "sections": {
+        "items": [
+          {
+            "key": "embers",
+            "icon": "layout-grid",
+            "label": "Embers",
+            "collections": [
+              "embers"
+            ]
+          },
+          {
+            "key": "api",
+            "icon": "code",
+            "label": "Emberline API",
+            "collections": [
+              "api-reference"
+            ]
+          }
+        ],
+        "style": "dropdown",
+        "default": "embers",
+        "placement": "sidebar"
+      },
+      "issueLink": {
+        "label": "Report issue",
+        "urlTemplate": "https://github.com/emberline/docs/issues/new?title={title}"
+      },
+      "mobileNav": {
+        "head": true,
+        "label": "section",
+        "style": "drawer",
+        "width": "full"
+      },
+      "pageActions": {
+        "items": [
+          "copy",
+          "markdown",
+          "mcp"
+        ],
+        "phone": "text",
+        "style": "text",
+        "primary": "copy",
+        "placement": "below-title"
+      },
+      "articleAlign": "start",
+      "articleWidth": "42rem"
+    },
+    "chrome": {
+      "cta": {
+        "href": "#",
+        "label": "Log in"
+      },
+      "align": "split",
+      "footer": {
+        "columns": 4
+      },
+      "header": {
+        "border": "line",
+        "height": 56,
+        "navGap": 20,
+        "navSize": 14,
+        "navWeight": 400,
+        "linksAlign": "start",
+        "logoHeight": 30
+      },
+      "search": "pill",
+      "sticky": true,
+      "ctaStyle": "pill",
+      "copyright": "© 2026 Emberline, Inc.",
+      "showSignIn": false,
+      "footerLinks": [
+        {
+          "href": "#",
+          "label": "Privacy policy"
+        },
+        {
+          "href": "#",
+          "label": "Terms of use"
+        },
+        {
+          "href": "#",
+          "label": "Trademark"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "#",
+          "label": "Directory"
+        },
+        {
+          "href": "/p/your-org/your-docs/api-emberline-api",
+          "label": "API"
+        },
+        {
+          "href": "#",
+          "label": "SDKs"
+        },
+        {
+          "href": "#",
+          "label": "Changelog"
+        }
+      ],
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "size": "sm",
+        "glyph": true,
+        "label": "Search",
+        "labelPhone": ""
+      },
+      "themeToggle": {
+        "show": true,
+        "style": "cycle"
+      },
+      "sidebarBrand": "hide",
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "#",
+              "label": "Plans"
+            },
+            {
+              "href": "#",
+              "label": "Contact sales"
+            },
+            {
+              "href": "#",
+              "label": "Partners"
+            },
+            {
+              "href": "#",
+              "label": "Startups"
+            }
+          ],
+          "heading": "Getting started"
+        },
+        {
+          "links": [
+            {
+              "href": "#",
+              "label": "Status"
+            },
+            {
+              "href": "#",
+              "label": "Support"
+            },
+            {
+              "href": "#",
+              "label": "Events"
+            },
+            {
+              "href": "#",
+              "label": "Blog"
+            }
+          ],
+          "heading": "Resources"
+        },
+        {
+          "links": [
+            {
+              "href": "#",
+              "label": "About"
+            },
+            {
+              "href": "#",
+              "label": "Careers"
+            },
+            {
+              "href": "#",
+              "label": "Press"
+            }
+          ],
+          "heading": "Company"
+        },
+        {
+          "links": [
+            {
+              "href": "#",
+              "label": "Documentation"
+            },
+            {
+              "href": "#",
+              "label": "Learning center"
+            },
+            {
+              "href": "#",
+              "label": "Community"
+            }
+          ],
+          "heading": "Developers"
+        }
+      ],
+      "searchPlacement": "end"
+    },
+    "palette": {
+      "ink": "#1f1f1f",
+      "line": "#e5e5e5",
+      "muted": "#737373",
+      "heading": "#1a1a1a",
+      "surface": "#ffffff",
+      "background": "#fcfcfc",
+      "footer_primary": "#1f1f1f",
+      "header_primary": "#1f1f1f",
+      "footer_background": "#f7f7f7",
+      "header_background": "#fcfcfc"
+    },
+    "components": {
+      "card": {
+        "arrow": "none",
+        "minWidth": 160
+      },
+      "code": {
+        "copy": "cell",
+        "block": {
+          "ink": "#1f1f1f",
+          "border": "#e5e5e5",
+          "radius": 6,
+          "background": "#ffffff"
+        },
+        "inline": {
+          "ink": "#c2410c",
+          "border": "#e5e5e5",
+          "radius": 4,
+          "weight": 400,
+          "background": "#fafafa"
+        },
+        "radius": 6,
+        "tabStyle": "pill",
+        "showLanguage": true
+      },
+      "hint": {
+        "edge": "bar",
+        "icon": "none",
+        "radius": 4
+      },
+      "link": {
+        "color": "#f05a1a",
+        "offset": 3,
+        "external": "arrow",
+        "colorDark": "#ff7a3d",
+        "underline": "always"
+      },
+      "input": {
+        "border": "#e5e5e5",
+        "radius": 6,
+        "background": "#ffffff"
+      },
+      "table": {
+        "size": 14,
+        "rules": "rows",
+        "border": "#e5e5e5",
+        "stripe": false,
+        "density": "compact",
+        "borderDark": "#2e2e2e"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#f05a1a"
+      },
+      "radius": 6,
+      "stepper": {
+        "line": true,
+        "marker": "number"
+      },
+      "codeDark": {
+        "block": {
+          "ink": "#e5e5e5",
+          "border": "#2e2e2e",
+          "background": "#1a1a1a"
+        },
+        "inline": {
+          "ink": "#ff8a50",
+          "border": "#2e2e2e",
+          "background": "#1f1f1f"
+        }
+      },
+      "inputDark": {
+        "border": "#2e2e2e",
+        "background": "#1a1a1a"
+      },
+      "expandable": {
+        "pad": 12,
+        "icon": "native",
+        "style": "bordered",
+        "border": "#e5e5e5",
+        "radius": 6,
+        "borderDark": "#2e2e2e",
+        "backgroundDark": "#1a1a1a"
+      }
+    },
+    "onThisPage": "always",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": 35,
+          "weight": 600,
+          "tracking": -0.025,
+          "lineHeight": 1.25
+        },
+        "h2": {
+          "size": 21,
+          "weight": 600,
+          "tracking": -0.015,
+          "lineHeight": 1.75
+        },
+        "h3": {
+          "size": 17,
+          "weight": 600,
+          "lineHeight": 1.6
+        },
+        "body": {
+          "size": 16,
+          "lineHeight": 1.75
+        },
+        "code": {
+          "size": 14
+        }
+      },
+      "baseSize": 16
+    },
+    "accentColor": "#f05a1a",
+    "colorScheme": "system",
+    "paletteDark": {
+      "ink": "#e5e5e5",
+      "line": "#2e2e2e",
+      "muted": "#a3a3a3",
+      "heading": "#fafafa",
+      "surface": "#1a1a1a",
+      "background": "#121212",
+      "footer_primary": "#e5e5e5",
+      "header_primary": "#fafafa",
+      "footer_background": "#161616",
+      "header_background": "#121212"
+    },
+    "primaryColor": "#f05a1a",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+    "monoFontFamily": "JetBrains Mono",
+    "customFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "DOCS",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 1
+            },
+            "content": [
+              {
+                "text": "Emberline Developer Docs",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "color": "muted"
+            },
+            "content": [
+              {
+                "text": "Explore guides and tutorials to start building on the Emberline platform.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "button",
+            "attrs": {
+              "href": "/p/your-org/your-docs/getting-started",
+              "label": "Get started",
+              "style": "primary"
+            }
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "Powerful primitives, close to every user",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "tabs",
+            "attrs": {
+              "variant": "card",
+              "overflow": "scroll"
+            },
+            "content": [
+              {
+                "type": "tab",
+                "attrs": {
+                  "title": "Compute"
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Deploy with one command",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Build and ship serverless functions and full-stack apps on the Emberline network. No servers to manage, no regions to pick.",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "codeBlock",
+                    "attrs": {
+                      "language": "sh"
+                    },
+                    "content": [
+                      {
+                        "text": "npm create ember@latest my-app",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Create your first Ember →",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/p/your-org/your-docs/cli"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tab",
+                "attrs": {
+                  "title": "AI"
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Run models next to your users",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Call open models on GPUs in the same location as your code with the Spark AI binding.",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "codeBlock",
+                    "attrs": {
+                      "language": "ts"
+                    },
+                    "content": [
+                      {
+                        "text": "const answer = await env.SPARK.run(\"@ember/llama-3-8b\", { prompt });",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "tab",
+                "attrs": {
+                  "title": "Storage"
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "State without the round trip",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Cinder KV, Hearth SQL and Ash Objects are a binding away.",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "codeBlock",
+                    "attrs": {
+                      "language": "ts"
+                    },
+                    "content": [
+                      {
+                        "text": "await env.CACHE.put(\"greeting\", \"hello\");",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "What's new",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "color": "muted"
+            },
+            "content": [
+              {
+                "text": "The latest guides and reference across Emberline.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "slots": [
+                  "kicker",
+                  "title",
+                  "standfirst",
+                  "updated"
+                ],
+                "kicker": "category",
+                "kickerStyle": {
+                  "case": "none",
+                  "size": 13,
+                  "color": "#f05a1a",
+                  "weight": 500
+                },
+                "excerptLines": 2
+              },
+              "limit": 6,
+              "width": "column",
+              "fields": [
+                "section",
+                "title",
+                "excerpt",
+                "updated"
+              ],
+              "layout": "grid",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "headGap": "xs",
+              "moreLink": {
+                "href": "/p/your-org/your-docs/overview",
+                "label": "View all docs"
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "Build on the platform",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "attrs": {
+              "color": "muted"
+            },
+            "content": [
+              {
+                "text": "Everything you need to build, store and observe applications at the edge.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "cards",
+            "attrs": {
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              }
+            },
+            "content": [
+              {
+                "type": "card",
+                "attrs": {
+                  "cta": "Set up Embers",
+                  "href": "/p/your-org/your-docs/overview",
+                  "icon": "code",
+                  "title": "Embers",
+                  "iconStyle": "tile",
+                  "description": "Serverless functions that run in 300+ cities."
+                }
+              },
+              {
+                "type": "card",
+                "attrs": {
+                  "cta": "Set up Cinder KV",
+                  "href": "/p/your-org/your-docs/bindings",
+                  "icon": "bookmark",
+                  "title": "Cinder KV",
+                  "iconStyle": "tile",
+                  "description": "Key-value storage replicated to every location."
+                }
+              },
+              {
+                "type": "card",
+                "attrs": {
+                  "cta": "Set up Flue queues",
+                  "href": "/p/your-org/your-docs/bindings",
+                  "icon": "clock",
+                  "title": "Flue queues",
+                  "iconStyle": "tile",
+                  "description": "Guaranteed delivery with retries and batching."
+                }
+              },
+              {
+                "type": "card",
+                "attrs": {
+                  "cta": "Set up Observability",
+                  "href": "/p/your-org/your-docs/logs",
+                  "icon": "chart",
+                  "title": "Observability",
+                  "iconStyle": "tile",
+                  "description": "Logs, traces and metrics for every request."
+                }
+              },
+              {
+                "type": "card",
+                "attrs": {
+                  "cta": "Set up Limits",
+                  "href": "/p/your-org/your-docs/limits",
+                  "icon": "shield",
+                  "title": "Limits",
+                  "iconStyle": "tile",
+                  "description": "Know the ceilings before you hit them."
+                }
+              },
+              {
+                "type": "card",
+                "attrs": {
+                  "cta": "Set up API reference",
+                  "href": "/p/your-org/your-docs/api-emberline-api",
+                  "icon": "webhook",
+                  "title": "API reference",
+                  "iconStyle": "tile",
+                  "description": "Manage Embers from your own tooling."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sidebar": {
+        "doc": {
+          "type": "doc",
+          "content": []
+        },
+        "source": "docs-nav",
+        "position": "left"
+      }
+    }
+  ]
+}

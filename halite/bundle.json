@@ -1,0 +1,382 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Halite",
+    "slug": "template-halite",
+    "description": "Framework docs with a version banner, a bold hero beside a dotted illustration and a sidebar switching Tutorial, Guide, Reference and Ecosystem.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "framework",
+      "open-source",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "toc": {
+        "label": "On this page",
+        "phone": "disclosure",
+        "border": true,
+        "levels": {
+          "max": 3,
+          "min": 2
+        },
+        "itemSize": 14,
+        "labelCase": "none",
+        "labelSize": 17,
+        "labelColor": "#17181c",
+        "activeColor": "#3a4bf5",
+        "activeStyle": "text",
+        "borderColor": "#d5d7de",
+        "labelColorDark": "#ffffff",
+        "activeColorDark": "#a5b0ff",
+        "borderColorDark": "#3b3f4a"
+      },
+      "pager": {
+        "style": "cards"
+      },
+      "sidebar": {
+        "item": {
+          "size": 15,
+          "color": "#24272f",
+          "height": 28,
+          "radius": 2,
+          "colorDark": "#c0c2c7"
+        },
+        "width": 300,
+        "active": {
+          "color": "#ffffff",
+          "style": "solid",
+          "radius": 2,
+          "weight": 600,
+          "colorDark": "#17181c",
+          "background": "#3a4bf5",
+          "backgroundDark": "#a5b0ff"
+        },
+        "border": true,
+        "groups": "collapsible",
+        "search": "hide",
+        "chevron": "end",
+        "groupRule": true,
+        "background": "#f6f7f9",
+        "groupLabel": {
+          "case": "none",
+          "size": 17,
+          "color": "ink",
+          "weight": 600
+        },
+        "chevronColor": "#545864",
+        "backgroundDark": "#23262f"
+      },
+      "topRule": false,
+      "editLink": {
+        "label": "Edit page",
+        "urlTemplate": "https://github.com/example/halite-docs/edit/main/src/content/{path}"
+      },
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "rule": "bleed",
+        "updated": "footer",
+        "ruleColor": "#d5d7de",
+        "breadcrumb": {
+          "show": false
+        },
+        "contributors": false,
+        "ruleColorDark": "#3b3f4a"
+      },
+      "sections": {
+        "items": [
+          {
+            "key": "tutorial",
+            "href": "/p/your-org/your-docs/develop-and-build",
+            "icon": "rocket",
+            "label": "Tutorial"
+          },
+          {
+            "key": "guide",
+            "icon": "book-open",
+            "label": "Guide",
+            "collections": [
+              "welcome-world",
+              "start-a-new-project",
+              "configuration",
+              "routing-and-navigation",
+              "build-your-ui",
+              "upgrade"
+            ]
+          },
+          {
+            "key": "reference",
+            "icon": "info",
+            "label": "Reference",
+            "collections": [
+              "reference"
+            ]
+          },
+          {
+            "key": "ecosystem",
+            "href": "https://example.com/integrations",
+            "icon": "puzzle",
+            "label": "Ecosystem"
+          }
+        ],
+        "style": "card",
+        "placement": "sidebar"
+      },
+      "mobileNav": {
+        "head": true,
+        "label": "section",
+        "style": "drawer",
+        "width": "full"
+      },
+      "pageActions": {
+        "placement": "none"
+      },
+      "articleAlign": "start",
+      "articleWidth": "45rem"
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64,
+        "navInk": "#3a4bf5",
+        "ctaDivider": true,
+        "linksAlign": "end",
+        "logoHeight": 30,
+        "navInkDark": "#a5b0ff",
+        "controlsAlign": "end"
+      },
+      "search": "pill",
+      "sticky": true,
+      "copyright": "© 2026 The Halite Project",
+      "showSignIn": false,
+      "footerLinks": [
+        {
+          "href": "https://example.com/contribute",
+          "label": "Contribute"
+        },
+        {
+          "href": "https://example.com/chat",
+          "label": "Community"
+        },
+        {
+          "href": "https://example.com/sponsor",
+          "label": "Sponsor"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "https://github.com/example",
+          "icon": "github",
+          "label": "GitHub",
+          "iconOnly": true
+        },
+        {
+          "href": "https://example.com/chat",
+          "icon": "discord",
+          "label": "Discord",
+          "iconOnly": true
+        }
+      ],
+      "searchStyle": {
+        "kbd": "slash",
+        "open": "modal",
+        "size": "md",
+        "label": "Search",
+        "width": 350
+      },
+      "themeToggle": {
+        "style": "select",
+        "radius": 6
+      },
+      "sidebarBrand": "hide",
+      "searchPlacement": "center"
+    },
+    "palette": {
+      "ink": "#24272f",
+      "line": "#e5e6eb",
+      "muted": "#545864",
+      "heading": "#17181c",
+      "surface": "#f6f7f9",
+      "background": "#ffffff",
+      "header_primary": "#17181c",
+      "header_background": "#f6f7f9"
+    },
+    "components": {
+      "card": {
+        "arrow": "end"
+      },
+      "code": {
+        "ink": "#24272f",
+        "copy": "icon",
+        "border": "#d5d7de",
+        "delete": "#fde0e0",
+        "inline": {
+          "ink": "#24272f",
+          "border": "#d5d7de",
+          "radius": 2,
+          "background": "#eceef2"
+        },
+        "insert": "#d9f6e0",
+        "radius": 0,
+        "terminal": "auto",
+        "background": "#f6f7f9"
+      },
+      "hint": {
+        "edge": "bar",
+        "icon": "badge",
+        "radius": 0,
+        "variants": {
+          "tip": {
+            "icon": "rocket",
+            "barColor": "#8b2fc9",
+            "titleInk": "#6b1fa3",
+            "background": "#f0e3ff",
+            "barColorDark": "#c88bf0",
+            "titleInkDark": "#e2c2fb",
+            "backgroundDark": "#3c1f57"
+          },
+          "note": {
+            "icon": "info",
+            "barColor": "#3a4bf5",
+            "titleInk": "#2533c4",
+            "background": "#e6ebff",
+            "barColorDark": "#a5b0ff",
+            "titleInkDark": "#c9d0ff",
+            "backgroundDark": "#1d2557"
+          },
+          "danger": {
+            "icon": "warning",
+            "barColor": "#d93636",
+            "titleInk": "#a11d1d",
+            "background": "#ffe4e4",
+            "barColorDark": "#ff8a8a",
+            "titleInkDark": "#ffc2c2",
+            "backgroundDark": "#561c1c"
+          },
+          "caution": {
+            "icon": "warning",
+            "barColor": "#d29a00",
+            "titleInk": "#8a5a00",
+            "background": "#fff4d6",
+            "barColorDark": "#f5c451",
+            "titleInkDark": "#fbdc8c",
+            "backgroundDark": "#4a3708"
+          }
+        }
+      },
+      "link": {
+        "offset": 3,
+        "thickness": 1,
+        "underline": "always"
+      },
+      "list": {
+        "marker": "disc"
+      },
+      "tabs": {
+        "overflow": "scroll"
+      },
+      "input": {
+        "border": "#c0c2c7",
+        "radius": 8
+      },
+      "table": {
+        "rules": "rows",
+        "stripe": false
+      },
+      "button": {
+        "radius": 999,
+        "weight": "regular"
+      },
+      "radius": 0,
+      "syntax": {
+        "attr": "#3a4bf5",
+        "title": "#8b2fc9",
+        "string": "#0b6e5e",
+        "comment": "#6a6f7d",
+        "keyword": "#3a4bf5",
+        "built_in": "#a8370b"
+      },
+      "codeDark": {
+        "ink": "#e3e4e8",
+        "border": "#3b3f4a",
+        "inline": {
+          "ink": "#e3e4e8",
+          "border": "#3b3f4a",
+          "background": "#2f333d"
+        },
+        "background": "#23262f"
+      },
+      "syntaxDark": {
+        "attr": "#a5b0ff",
+        "title": "#d9a6ff",
+        "string": "#7ee0c7",
+        "comment": "#8b8f9a",
+        "keyword": "#a5b0ff",
+        "built_in": "#ffb38a"
+      }
+    },
+    "onThisPage": "always",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": 40,
+          "weight": 600,
+          "tracking": -0.01,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "size": 33,
+          "weight": 600,
+          "lineHeight": 1.2
+        },
+        "h3": {
+          "size": 24,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.75
+        },
+        "code": {
+          "size": 14
+        }
+      },
+      "baseSize": 16
+    },
+    "accentColor": "#8b2fc9",
+    "paletteDark": {
+      "ink": "#c0c2c7",
+      "line": "#3b3f4a",
+      "muted": "#9a9da6",
+      "heading": "#ffffff",
+      "surface": "#23262f",
+      "background": "#17181c",
+      "header_primary": "#ffffff",
+      "header_background": "#23262f"
+    },
+    "primaryColor": "#3a4bf5",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "primaryColorDark": "#a5b0ff"
+  },
+  "components": []
+}

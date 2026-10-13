@@ -1,0 +1,267 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "margins",
+  "type": "BLOG",
+  "name": "Margins",
+  "description": "A dark editorial magazine with condensed headlines, colourful collage covers, featured-story menus and a newsletter band — a design publication, not a changelog.",
+  "modelledOn": "A design tool company’s editorial magazine",
+  "features": [
+    "Composed front page (9 sections)",
+    "Header with drop-down menus",
+    "Top bar above the header",
+    "4-column footer",
+    "Index layout: magazine",
+    "Post layout: article-margin",
+    "Light and dark palettes",
+    "Motion presets",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "magazine",
+    "editorial",
+    "design"
+  ],
+  "thumbnail": "/templates/margins.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/menu-feature.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/wordmark-ffffff.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/wordmark-0d0d0d.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/avatar-sam-rivera.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000c": "assets/cover-6.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "logoUrlLight": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000004",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {
+    "preset": "magazine",
+    "piecePreset": "article-margin",
+    "frontDoor": {
+      "showRss": false,
+      "showTags": true,
+      "badgeStyle": "outline",
+      "showSearch": false,
+      "showArchive": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "design-systems",
+      "label": "Design Systems"
+    },
+    {
+      "slug": "ai",
+      "label": "Your Brand Agent"
+    },
+    {
+      "slug": "leadership",
+      "label": "Thought Leadership"
+    },
+    {
+      "slug": "culture",
+      "label": "Culture"
+    },
+    {
+      "slug": "maker-stories",
+      "label": "Maker Stories"
+    },
+    {
+      "slug": "working-well",
+      "label": "Working Well"
+    },
+    {
+      "slug": "insights",
+      "label": "Insights"
+    },
+    {
+      "slug": "profiles",
+      "label": "Profiles"
+    },
+    {
+      "slug": "case-study",
+      "label": "Case Study"
+    },
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "slug": "inside-the-studio",
+      "label": "Inside Your Brand"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Editor",
+      "bio": "Edits the magazine.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000005"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Staff Writer",
+      "bio": "Writes about makers and how they work.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000006"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "team-rituals-for-new-tools",
+      "title": "Four team rituals that help new tools stick",
+      "tags": [
+        "insights",
+        "collaboration"
+      ],
+      "daysAgo": 4,
+      "markdown": "New tools rarely fail because they are bad. They fail because nobody changed the meeting they were supposed to replace.\n\n## The rituals\n\n- **Show, don't tell:** ten minutes a week where someone demos a real piece of work.\n- **One shared file:** a single place for experiments, so nobody works alone.\n- **Office hours:** a standing slot for questions that feel too small to ask.\n- **A retirement list:** what the new tool lets you stop doing.\n\nSample editorial copy. Replace it with your own.",
+      "excerpt": "Tools fail when the meeting they replace survives. Four rituals that help.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "designers-on-speed-and-craft",
+      "title": "Three designers on speed, craft and expression",
+      "tags": [
+        "maker-stories",
+        "profiles"
+      ],
+      "daysAgo": 11,
+      "markdown": "We asked three product designers how their work has changed in the past year. Their answers had little to do with software.\n\n## On speed\n\n\"I sketch more and decide later. Fast is fine when nothing is final.\"\n\n## On craft\n\n\"The details still take the time. They always will.\"\n\n> Tools lowered the floor. The ceiling is still ours to raise.\n\nThis is placeholder interview copy for the magazine layout.",
+      "excerpt": "Fast sketches, slow details, and what has not changed at all.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "lighter-design-system-upkeep",
+      "title": "How to make design system upkeep lighter",
+      "tags": [
+        "working-well",
+        "design-systems",
+        "inside-the-studio"
+      ],
+      "daysAgo": 18,
+      "markdown": "A design system is a garden. The work is not planting; it is weeding.\n\n## Small habits\n\n1. Audit one component a week instead of everything once a year.\n2. Write the reason beside every rule.\n3. Delete variants nobody has used in six months.\n\nTeams that do this spend less time on big migrations because they never let the drift get big. Sample copy, ready to replace.",
+      "excerpt": "Less planting, more weeding: small habits that keep a system healthy.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "staying-in-flow",
+      "title": "Workflow lab: staying in flow",
+      "tags": [
+        "working-well"
+      ],
+      "daysAgo": 27,
+      "markdown": "Flow is fragile. One notification and it is gone for twenty minutes.\n\n## What helped our readers\n\n- Batching feedback into two windows a day.\n- Keeping one file open per task.\n- Writing the next step down before stopping.\n\nNone of this is new. What is new is how much harder it has become to protect. Placeholder copy.",
+      "excerpt": "Flow is fragile. Small defences that keep it intact.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false,
+      "customization": {
+        "theme": {
+          "palette": {
+            "background": "#2a1a5e",
+            "surface": "#3a2a72"
+          },
+          "paletteDark": {
+            "header_background": "#2a1a5e",
+            "background": "#2a1a5e",
+            "surface": "#3a2a72"
+          },
+          "colorScheme": "dark"
+        }
+      }
+    },
+    {
+      "slug": "building-great-products-now",
+      "title": "What it takes to build great products now",
+      "tags": [
+        "insights",
+        "leadership"
+      ],
+      "daysAgo": 35,
+      "markdown": "Ask ten leaders what has changed and you will hear ten answers. Ask what has stayed the same and they mostly agree: taste, judgement and the patience to say no.\n\n## Three constants\n\n- Know who it is for.\n- Ship something small and real.\n- Listen longer than feels comfortable.\n\nSample long-read copy for the magazine's feature slot.",
+      "excerpt": "Everything changed, except taste, judgement and the patience to say no.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false,
+      "customization": {
+        "theme": {
+          "palette": {
+            "background": "#023a14",
+            "surface": "#0b4a20"
+          },
+          "paletteDark": {
+            "header_background": "#023a14",
+            "background": "#023a14",
+            "surface": "#0b4a20"
+          },
+          "colorScheme": "dark"
+        }
+      }
+    },
+    {
+      "slug": "source-material-looking-again",
+      "title": "Source material: the references that taught us to look again",
+      "tags": [
+        "maker-stories",
+        "culture"
+      ],
+      "daysAgo": 44,
+      "markdown": "Every maker has a shelf of things they return to: a book, a poster, a chair. We asked a few of ours.\n\n## The shelf\n\nA worn type specimen, a children's picture book with impossible colours, and a photograph of a staircase taken on a holiday nobody remembers.\n\n> Good references do not tell you what to make. They remind you how to look.\n\nPlaceholder copy for a recurring series.",
+      "excerpt": "A type specimen, a picture book and a staircase: the references makers return to.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000c",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false,
+      "customization": {
+        "theme": {
+          "primaryColor": "#111111",
+          "palette": {
+            "header_background": "#f4efe6",
+            "header_primary": "#111111",
+            "background": "#f4efe6",
+            "surface": "#ffffff"
+          },
+          "colorScheme": "light"
+        }
+      }
+    }
+  ]
+}

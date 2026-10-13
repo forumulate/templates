@@ -1,0 +1,526 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "forgeline",
+  "type": "BLOG",
+  "name": "Forgeline",
+  "description": "A developer-platform blog with a dark header and footer, category mega-menus, featured strip, “popular” sidebar and a table-of-contents article layout.",
+  "modelledOn": "A developer platform company’s engineering blog",
+  "features": [
+    "Composed front page (8 sections)",
+    "4-column footer",
+    "Index layout: magazine",
+    "Post layout: article-toc",
+    "Post-page sidebar",
+    "A band after every post",
+    "Light and dark palettes",
+    "Motion presets",
+    "Colour-coded tags",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "developer",
+    "engineering",
+    "dark-header"
+  ],
+  "thumbnail": "/templates/forgeline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark-logourl.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/wordmark-ffffff.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/avatar-sam-rivera.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/cover-6.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "magazine",
+    "piecePreset": "article-toc",
+    "frontDoor": {
+      "showRss": false,
+      "badgeStyle": "text",
+      "showSearch": false,
+      "showArchive": false
+    }
+  },
+  "piecePage": {
+    "sidebar": {
+      "position": "right",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "slots": [
+                  "title",
+                  "standfirst",
+                  "byline"
+                ],
+                "titleSize": "20px",
+                "titleWeight": 600,
+                "excerptLines": 5
+              },
+              "hook": "more-on",
+              "limit": 2,
+              "filter": {
+                "context": "sameTag"
+              },
+              "layout": "feed",
+              "heading": {
+                "size": "20px",
+                "text": "More on {tag}",
+                "style": "plain"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "section",
+          "attrs": {
+            "key": "explore",
+            "hook": "explore",
+            "padding": {
+              "top": 40,
+              "bottom": 40
+            }
+          },
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "text": "Explore more from Your Brand",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "attrs": {
+                "gap": "md",
+                "cols": 4
+              },
+              "content": [
+                {
+                  "type": "gridItem",
+                  "attrs": {
+                    "pad": "md",
+                    "border": true,
+                    "radius": "sm",
+                    "smSpan": 4,
+                    "colSpan": 1
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Docs",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Everything you need to master Your Brand, all in one place.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "gridItem",
+                  "attrs": {
+                    "pad": "md",
+                    "border": true,
+                    "radius": "sm",
+                    "smSpan": 4,
+                    "colSpan": 1
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Summit",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Two days of talks, workshops and demos in Lisbon.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "gridItem",
+                  "attrs": {
+                    "pad": "md",
+                    "border": true,
+                    "radius": "sm",
+                    "smSpan": 4,
+                    "colSpan": 1
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Customer stories",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Meet the teams building with Your Brand.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "gridItem",
+                  "attrs": {
+                    "pad": "md",
+                    "border": true,
+                    "radius": "sm",
+                    "smSpan": 4,
+                    "colSpan": 1
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Changelog",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Every change we ship, as it ships.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "attrs": {
+            "key": "post-news",
+            "hook": "post-news",
+            "scheme": "dark",
+            "padding": {
+              "top": 56,
+              "bottom": 56
+            },
+            "fullBleed": true,
+            "background": {
+              "gradient": {
+                "type": "linear",
+                "angle": 100,
+                "stops": [
+                  {
+                    "at": 0,
+                    "color": "#0d1117"
+                  },
+                  {
+                    "at": 45,
+                    "color": "#4a2c4f"
+                  },
+                  {
+                    "at": 100,
+                    "color": "#2b4a6b"
+                  }
+                ]
+              }
+            }
+          },
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "text": "We do newsletters, too",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "spaceBand",
+              "attrs": {
+                "band": "subscribe",
+                "body": "Tips, technical guides and best practices, fortnightly. Unsubscribe at any time.",
+                "frame": "none",
+                "layout": "inline-row",
+                "heading": "Your email address",
+                "buttonLabel": "Subscribe"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "engineering",
+      "label": "Engineering",
+      "color": "#e85aad",
+      "gradient": [
+        "#ffa28b",
+        "#f778ba"
+      ]
+    },
+    {
+      "slug": "ai-ml",
+      "label": "AI & ML",
+      "color": "#e85aad",
+      "gradient": [
+        "#a371f7",
+        "#f778ba"
+      ]
+    },
+    {
+      "slug": "security",
+      "label": "Security",
+      "color": "#e85aad",
+      "gradient": [
+        "#f778ba",
+        "#ff7b72"
+      ]
+    },
+    {
+      "slug": "architecture-optimization",
+      "label": "Architecture & optimization",
+      "color": "#e85aad",
+      "gradient": [
+        "#3fb950",
+        "#a371f7"
+      ]
+    },
+    {
+      "slug": "career-growth",
+      "label": "Career growth",
+      "color": "#e85aad",
+      "gradient": [
+        "#d2a8ff",
+        "#f778ba"
+      ]
+    },
+    {
+      "slug": "company-news",
+      "label": "Company news",
+      "color": "#e85aad",
+      "gradient": [
+        "#79c0ff",
+        "#a371f7"
+      ]
+    },
+    {
+      "slug": "developer-skills",
+      "label": "Developer skills",
+      "color": "#e85aad",
+      "gradient": [
+        "#56d4dd",
+        "#a371f7"
+      ]
+    },
+    {
+      "slug": "news-insights",
+      "label": "News & insights",
+      "color": "#e85aad",
+      "gradient": [
+        "#ffa657",
+        "#f778ba"
+      ]
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source",
+      "color": "#e85aad",
+      "gradient": [
+        "#3fb950",
+        "#56d4dd"
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Principal Engineer",
+      "bio": "Works on storage and performance.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Security Researcher",
+      "bio": "Writes about finding bugs before attackers do.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000005"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "game-jams-teach-shipping",
+      "title": "Why game jams are still the best place to learn to ship",
+      "tags": [
+        "developer-skills",
+        "career-growth"
+      ],
+      "daysAgo": 2,
+      "markdown": "Forty-eight hours, one theme, and a hard stop. Nothing teaches scope like a deadline that will not move.\n\n## What a jam teaches\n\n- Cut features early, not late.\n- Playtest before it is pretty.\n- Ship something, even if it is small.\n\nPlaceholder copy for a developer-skills post.",
+      "excerpt": "Nothing teaches scope like a deadline that will not move.",
+      "featured": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "how-researchers-choose-targets",
+      "title": "How one security researcher chooses what to investigate",
+      "tags": [
+        "security"
+      ],
+      "daysAgo": 5,
+      "markdown": "Good researchers do not start with tools. They start with a question: where would a mistake hurt the most?\n\n## Their checklist\n\n1. Follow the data that matters.\n2. Read the code nobody has touched in years.\n3. Look where two systems meet.\n\nPlaceholder security interview.",
+      "excerpt": "Start with where a mistake would hurt most.",
+      "featured": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "secret-scanning-at-scale",
+      "title": "Secret protection has to scale with the software",
+      "tags": [
+        "security",
+        "engineering"
+      ],
+      "daysAgo": 9,
+      "markdown": "Repositories grow, and so do the credentials accidentally committed to them. Scanning once is not enough; scanning on every push is the baseline.\n\n```text\npush -> scan -> block or warn -> rotate\n```\n\nPlaceholder engineering copy.",
+      "excerpt": "Scanning once is not enough. Every push is the baseline.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "rebuilding-storage-for-scale",
+      "title": "Rebuilding our storage layer for the next decade",
+      "tags": [
+        "engineering",
+        "architecture-optimization"
+      ],
+      "daysAgo": 14,
+      "markdown": "Our storage design served us for ten years. Then the number of automated commits grew faster than the number of people.\n\n## What changed\n\n- Writes are batched per repository.\n- Reads are served from replicas close to the request.\n- Large objects moved to their own tier.\n\nPlaceholder architecture deep dive.",
+      "excerpt": "Ten good years, then automation outgrew the design.",
+      "featured": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "an-open-benchmark-for-code-review",
+      "title": "An open benchmark for automated code review",
+      "tags": [
+        "ai-ml",
+        "engineering"
+      ],
+      "daysAgo": 20,
+      "markdown": "Automated reviewers are easy to demo and hard to measure. We are publishing a benchmark of real, anonymised pull requests with the comments a careful human left.\n\n## How to use it\n\nRun your reviewer, compare its comments, and report precision as well as recall. A reviewer that comments on everything is not helpful.\n\nPlaceholder research announcement.",
+      "excerpt": "Easy to demo, hard to measure. A benchmark built from real reviews.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "talks-worth-watching",
+      "title": "Ten talks worth watching from this year’s summit",
+      "tags": [
+        "company-news"
+      ],
+      "daysAgo": 27,
+      "markdown": "The summit recordings are up. Here are the sessions our engineers keep sending each other.\n\n- Designing for failure, from the people on call.\n- Small models, big results.\n- What we learned migrating a monolith slowly.\n\nPlaceholder company-news roundup.",
+      "excerpt": "The sessions our engineers keep sending each other.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    }
+  ]
+}

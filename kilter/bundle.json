@@ -1,0 +1,780 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Kilter",
+    "slug": "template-kilter",
+    "description": "A loud tech-news front page: a vertical masthead, lead story, quick-hit rail, colour-coded sections and a “most popular” sidebar on every story.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "news",
+      "magazine",
+      "bold",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "post": {
+      "rail": {
+        "phone": "after-head"
+      },
+      "cover": {
+        "aspect": "3:2",
+        "radius": 0
+      },
+      "share": {
+        "frame": "circle",
+        "marks": true,
+        "style": "icons",
+        "comments": true,
+        "position": "top"
+      },
+      "split": {
+        "above": [
+          "kicker",
+          "title"
+        ],
+        "ratio": "3/2",
+        "coverSide": "start",
+        "verticalAlign": "spread"
+      },
+      "byline": {
+        "font": "heading",
+        "size": 13,
+        "color": "#5a2bff",
+        "prefix": "by",
+        "weight": 500,
+        "avatars": false
+      },
+      "header": {
+        "order": [
+          "kicker",
+          "title",
+          "cover",
+          "dek",
+          "byline",
+          "date",
+          "share"
+        ],
+        "kicker": "firstTag",
+        "dateTime": true,
+        "dateType": {
+          "case": "none",
+          "font": "heading",
+          "size": 12
+        },
+        "timeZone": "America/New_York",
+        "dateFormat": "medium",
+        "ledePrefix": "/",
+        "kickerStyle": {
+          "case": "upper",
+          "font": "mono",
+          "size": 12,
+          "color": "#5a2bff",
+          "weight": 600,
+          "tracking": 0.06,
+          "separator": "⊕",
+          "separatorAt": "each"
+        },
+        "tagsPlacement": "kicker",
+        "showStandfirst": true,
+        "titleLineHeight": 1.05
+      },
+      "layout": "split-cover",
+      "suggested": {
+        "show": false
+      },
+      "authorCard": {
+        "style": "inline",
+        "placement": "top"
+      },
+      "breadcrumb": "none"
+    },
+    "chrome": {
+      "align": "split",
+      "footer": {
+        "font": "heading",
+        "layout": "rows",
+        "scheme": "dark",
+        "columns": 3,
+        "headingInk": "#3cffd0",
+        "headingFont": "heading",
+        "headingSize": 15,
+        "socialStyle": "circle",
+        "headingStyle": "plain",
+        "linkSeparator": "pipe"
+      },
+      "header": {
+        "group": {
+          "align": "end",
+          "width": "810px"
+        },
+        "border": "strong",
+        "height": 80,
+        "navGap": 12,
+        "navInk": "#131313",
+        "navFont": "heading",
+        "navSize": 19,
+        "navWeight": 500,
+        "borderSpan": "group",
+        "logoHeight": {
+          "lg": 34,
+          "sm": 56
+        },
+        "menuButton": {
+          "desktop": true
+        },
+        "borderColor": "#131313",
+        "phoneLayout": "stacked",
+        "scrollTitle": "site",
+        "navSeparator": "/",
+        "groupOnScroll": "full",
+        "scrollTitleFont": "heading"
+      },
+      "sticky": true,
+      "topBar": {
+        "ink": "#131313",
+        "case": "uppercase",
+        "font": "mono",
+        "align": "end",
+        "links": [
+          {
+            "href": "#subscribe",
+            "label": "Subscribe",
+            "style": "button"
+          },
+          {
+            "href": "/login",
+            "icon": "user",
+            "label": "Sign in",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "icon": "bell",
+            "label": "Notifications",
+            "hideOn": [
+              "desktop"
+            ],
+            "iconOnly": true
+          }
+        ],
+        "phone": "row",
+        "button": {
+          "ink": "#ffffff",
+          "radius": 0,
+          "background": "#5a2bff"
+        },
+        "sticky": false,
+        "tracking": 0.06,
+        "background": "#ffffff"
+      },
+      "ctaStyle": "solid",
+      "copyright": "© 2026 Your Brand.",
+      "showSignIn": false,
+      "footerLinks": [
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Contact"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Tip us"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Community guidelines"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Archives"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "About us"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Ethics statement"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "How we rate and review products"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Cookie settings"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Terms of use"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Privacy notice"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Licensing FAQ"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Accessibility"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Platform status"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "/b/your-org/your-blog/tag/tech",
+          "label": "Tech"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/reviews",
+          "label": "Reviews"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/science",
+          "label": "Science"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/culture",
+          "label": "Culture"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/ai",
+          "label": "AI"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/policy",
+          "label": "Policy"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "icon": "bell",
+          "label": "Notifications",
+          "iconOnly": true
+        }
+      ],
+      "socialLinks": [
+        {
+          "href": "https://example.com",
+          "platform": "threads"
+        },
+        {
+          "href": "https://example.com",
+          "platform": "instagram"
+        },
+        {
+          "href": "https://example.com",
+          "platform": "youtube"
+        },
+        {
+          "href": "https://forumulate.com/b/your-org/your-blog/rss.xml",
+          "platform": "rss"
+        }
+      ],
+      "themeToggle": {
+        "show": false
+      },
+      "footerDescription": "Your Brand covers the collision of technology, science and culture — daily, and loudly."
+    },
+    "layout": {
+      "widths": {
+        "max": "1100px",
+        "board": "81rem"
+      },
+      "measure": "38rem"
+    },
+    "motion": {
+      "hover": {
+        "link": "slide",
+        "image": "zoom"
+      },
+      "ambient": {
+        "scrollProgress": true
+      }
+    },
+    "palette": {
+      "ink": "#131313",
+      "line": "#e1e1e1",
+      "muted": "#4a4a4a",
+      "heading": "#131313",
+      "surface": "#f4f4f4",
+      "highlight": "#3cffd0",
+      "background": "#ffffff",
+      "footer_primary": "#ffffff",
+      "header_primary": "#131313",
+      "footer_background": "#131313",
+      "header_background": "#ffffff"
+    },
+    "components": {
+      "code": {
+        "ink": "#f4f4f4",
+        "border": "#131313",
+        "radius": 0,
+        "background": "#131313"
+      },
+      "link": {
+        "color": "#5a2bff",
+        "offset": 3,
+        "thickness": 2,
+        "underline": "always"
+      },
+      "meta": {
+        "case": "upper",
+        "font": "mono",
+        "scope": "cards",
+        "tracking": 0.1
+      },
+      "image": {
+        "radius": 0
+      },
+      "quote": {
+        "size": 30,
+        "style": "pull"
+      },
+      "button": {
+        "radius": 0,
+        "weight": "semibold"
+      },
+      "byline": {
+        "link": {
+          "color": "#5a2bff",
+          "weight": 700
+        }
+      },
+      "radius": 0,
+      "syntax": {
+        "title": "#b9a6ff",
+        "number": "#ff9ad5",
+        "string": "#ffd84d",
+        "comment": "#8a8a8a",
+        "keyword": "#3cffd0"
+      },
+      "selection": {
+        "ink": "#131313",
+        "background": "#3cffd0"
+      }
+    },
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 44,
+            "sm": 34
+          },
+          "weight": 800,
+          "tracking": -0.025,
+          "lineHeight": 1.05
+        },
+        "h2": {
+          "size": 30,
+          "weight": 800,
+          "tracking": -0.01,
+          "lineHeight": 1.1
+        },
+        "h3": {
+          "size": 22,
+          "weight": 700,
+          "lineHeight": 1.15
+        },
+        "body": {
+          "lineHeight": 1.55
+        },
+        "code": {
+          "size": 15
+        },
+        "lede": {
+          "font": "heading",
+          "size": 28,
+          "color": "#131313",
+          "weight": 400,
+          "lineHeight": 1.2
+        },
+        "small": {
+          "size": 12
+        }
+      },
+      "baseSize": 19,
+      "bodyWrap": "pretty",
+      "headingWrap": "balance"
+    },
+    "accentColor": "#3cffd0",
+    "colorScheme": "light",
+    "contentWidth": "wide",
+    "primaryColor": "#5a2bff",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=Anton&display=swap",
+    "elementStyles": [],
+    "bodyFontFamily": "Newsreader",
+    "monoFontFamily": "IBM Plex Mono",
+    "headingFontFamily": "Archivo"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "columns",
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "hook": "vwm",
+                  "width": 12,
+                  "hideOn": [
+                    "phone"
+                  ]
+                },
+                "content": [
+                  {
+                    "type": "image",
+                    "attrs": {
+                      "alt": "Your Brand",
+                      "src": "https://forumulate.com/api/assets/00000000-0000-4000-8000-000000000001"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 88
+                },
+                "content": [
+                  {
+                    "type": "spaceFeed",
+                    "attrs": {
+                      "card": {
+                        "image": {
+                          "aspect": "16:9"
+                        },
+                        "slots": [
+                          "cover",
+                          "title",
+                          "standfirst",
+                          "byline",
+                          "replies"
+                        ],
+                        "byline": {
+                          "color": "#5a2bff",
+                          "avatars": false
+                        },
+                        "kicker": "none",
+                        "excerptSize": {
+                          "lg": "26px",
+                          "sm": "20px"
+                        },
+                        "titleWeight": 400,
+                        "excerptLines": 0
+                      },
+                      "hook": "hero",
+                      "lead": {
+                        "style": "overlap",
+                        "titleFont": "Anton",
+                        "titleSize": {
+                          "lg": "72px",
+                          "sm": "48px"
+                        },
+                        "titleTracking": 0,
+                        "titleLineHeight": 0.95
+                      },
+                      "limit": 1,
+                      "filter": {
+                        "featured": true
+                      },
+                      "layout": "magazine"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "gap": "48px",
+              "card": {
+                "image": {
+                  "size": 76,
+                  "aspect": "1:1",
+                  "position": "start"
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "byline",
+                  "replies"
+                ],
+                "byline": {
+                  "color": "#5a2bff"
+                },
+                "divider": "below",
+                "titleFont": "heading",
+                "titleSize": "19px",
+                "titleWeight": 800,
+                "titleLineHeight": 1.12
+              },
+              "hook": "toplist",
+              "limit": 4,
+              "dedupe": true,
+              "filter": {
+                "excludeTags": [
+                  "quick"
+                ]
+              },
+              "layout": "grid",
+              "columns": {
+                "lg": 2,
+                "md": 2,
+                "sm": 1
+              },
+              "columnRule": {
+                "color": "#c2c2c2",
+                "style": "solid",
+                "width": "1px"
+              }
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "slots": [
+                  "cover",
+                  "title",
+                  "standfirst",
+                  "byline",
+                  "replies"
+                ],
+                "byline": {
+                  "color": "#5a2bff"
+                },
+                "titleFont": "heading",
+                "titleWeight": 800,
+                "excerptLines": 2,
+                "titleLineHeight": 1.12
+              },
+              "hook": "weekend",
+              "sort": "top",
+              "limit": 4,
+              "dedupe": true,
+              "filter": {
+                "excludeTags": [
+                  "quick"
+                ]
+              },
+              "layout": "cards-mixed",
+              "period": "all",
+              "heading": {
+                "size": {
+                  "lg": "28px",
+                  "sm": "22px"
+                },
+                "text": "Weekend reads",
+                "style": "rule-top",
+                "subtitle": {
+                  "text": "Catch up on our favourite stories.",
+                  "inline": true
+                },
+                "ruleColor": "#5a2bff",
+                "ruleWidth": "4px"
+              }
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "image": {
+                  "aspect": "1:1"
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "byline",
+                  "replies"
+                ],
+                "byline": {
+                  "color": "#5a2bff"
+                },
+                "titleFont": "heading",
+                "titleWeight": 800,
+                "titleLineHeight": 1.12
+              },
+              "hook": "reviews",
+              "limit": 4,
+              "filter": {
+                "tags": [
+                  "reviews"
+                ],
+                "excludeTags": [
+                  "quick"
+                ]
+              },
+              "layout": "grid",
+              "columns": {
+                "lg": 4,
+                "md": 2,
+                "sm": 1
+              },
+              "heading": {
+                "size": {
+                  "lg": "28px",
+                  "sm": "22px"
+                },
+                "text": "Reviews",
+                "style": "rule-top",
+                "subtitle": {
+                  "text": "The gear we tested this week.",
+                  "inline": true
+                },
+                "ruleColor": "#5a2bff",
+                "ruleWidth": "4px"
+              }
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "subscribe",
+              "body": "The day's biggest stories, every weekday morning.",
+              "frame": "none",
+              "layout": "inline-row",
+              "heading": "Your Brand, in your inbox",
+              "inputStyle": "underline",
+              "buttonLabel": "Sign up"
+            }
+          }
+        ]
+      },
+      "sidebar": {
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "spaceFeed",
+              "attrs": {
+                "card": {
+                  "when": [
+                    {
+                      "tag": "quick",
+                      "card": {
+                        "slots": [
+                          "byline",
+                          "date",
+                          "standfirst"
+                        ],
+                        "byline": {
+                          "color": "#5a2bff",
+                          "avatars": true
+                        },
+                        "titleStyle": "run-in",
+                        "excerptLines": 0
+                      }
+                    }
+                  ],
+                  "image": {
+                    "size": 76,
+                    "aspect": "1:1",
+                    "position": "end"
+                  },
+                  "slots": [
+                    "title",
+                    "cover",
+                    "standfirst",
+                    "byline",
+                    "date",
+                    "replies"
+                  ],
+                  "byline": {
+                    "color": "#5a2bff"
+                  },
+                  "divider": "below",
+                  "dateStyle": "mono-caps",
+                  "titleFont": "heading",
+                  "titleSize": "19px",
+                  "dateFormat": "relative",
+                  "titleWeight": 800,
+                  "excerptLines": 3,
+                  "titleLineHeight": 1.12
+                },
+                "hook": "river",
+                "sort": "latest",
+                "tabs": {
+                  "case": "upper",
+                  "font": "mono",
+                  "size": "13px",
+                  "lanes": [
+                    {
+                      "sort": "latest",
+                      "label": "Latest"
+                    },
+                    {
+                      "sort": "top",
+                      "label": "Popular"
+                    }
+                  ],
+                  "style": "segmented",
+                  "weight": 600,
+                  "activeFill": "#5a2bff",
+                  "phoneHoist": true,
+                  "spaceBelow": {
+                    "lg": "20px",
+                    "md": "20px",
+                    "sm": "0px"
+                  },
+                  "trackColor": "#e9e9e9",
+                  "phoneStretch": true,
+                  "activeTextColor": "#ffffff"
+                },
+                "limit": 10,
+                "layout": "feed"
+              }
+            }
+          ]
+        },
+        "gap": "48px",
+        "phone": {
+          "at": 1
+        },
+        "width": "wide",
+        "divider": {
+          "color": "#c2c2c2",
+          "style": "dashed",
+          "width": 1
+        },
+        "position": "right"
+      },
+      "width": "board",
+      "gap": "md",
+      "hideTitle": true,
+      "paddingTop": {
+        "lg": "48px",
+        "sm": "16px"
+      }
+    }
+  ]
+}

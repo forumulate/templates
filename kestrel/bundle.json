@@ -1,0 +1,824 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 2,
+  "meta": {
+    "name": "Kestrel",
+    "slug": "template-kestrel",
+    "description": "A monochrome developer blog: a dense card grid, tag pills, mega-menu header, six-column footer and a closing call to action under every post.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "developer",
+      "minimal",
+      "grid",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "post": {
+      "rail": {
+        "items": [
+          "date",
+          "readTime",
+          "pageActions"
+        ],
+        "phone": "after-head",
+        "start": "body",
+        "width": "205px",
+        "anchor": "edge",
+        "labels": false,
+        "sticky": true,
+        "itemGap": "8px",
+        "dateFormat": "medium",
+        "dateLocale": "en-GB",
+        "phoneLayout": "between"
+      },
+      "after": {
+        "width": "container"
+      },
+      "cover": {
+        "show": false
+      },
+      "share": {
+        "show": false
+      },
+      "byline": {
+        "role": true,
+        "size": 14,
+        "color": "ink",
+        "stack": true,
+        "layout": "inline",
+        "avatars": true,
+        "placement": "inline",
+        "separator": "",
+        "avatarSize": 16
+      },
+      "header": {
+        "gap": 20,
+        "order": [
+          "title",
+          "byline"
+        ],
+        "tagsPlacement": "hidden"
+      },
+      "bodyGap": {
+        "lg": "65px",
+        "sm": "24px"
+      },
+      "suggested": {
+        "show": false
+      },
+      "breadcrumb": "trail",
+      "paddingTop": {
+        "lg": "99px",
+        "sm": "24px"
+      },
+      "pageActions": {
+        "look": "text",
+        "style": "menu"
+      }
+    },
+    "chrome": {
+      "ctas": [
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Get a Demo",
+          "style": "outline",
+          "border": "#ebebeb",
+          "height": 32,
+          "fontSize": 14,
+          "background": "#ffffff"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Log In",
+          "style": "outline",
+          "border": "#ebebeb",
+          "height": 32,
+          "fontSize": 14,
+          "background": "#ffffff"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Sign Up",
+          "style": "solid",
+          "height": 32,
+          "fontSize": 14
+        }
+      ],
+      "align": "left",
+      "footer": {
+        "columns": 6,
+        "headingStyle": "plain",
+        "brandPlacement": "bottom"
+      },
+      "header": {
+        "blur": 8,
+        "border": "none",
+        "height": 64,
+        "navGap": 20,
+        "navInk": "#4d4d4d",
+        "navSize": 14,
+        "opacity": 0.9,
+        "navWeight": 400,
+        "linksAlign": "start",
+        "logoHeight": 24,
+        "menuButton": {
+          "glyph": "two-bar"
+        },
+        "controlsAlign": "end"
+      },
+      "sticky": true,
+      "navMenu": {
+        "width": 280,
+        "radius": 12,
+        "shadow": "md",
+        "trigger": "hover",
+        "animation": "fade"
+      },
+      "ctaStyle": "solid",
+      "copyright": "© 2026 Your Brand, Inc.",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Products",
+          "children": [
+            {
+              "href": "/b/your-org/your-blog/tag/edge",
+              "icon": "code",
+              "label": "Edge Functions",
+              "description": "Run code next to every visitor"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/platform",
+              "icon": "eye",
+              "label": "Preview Deploys",
+              "description": "A URL for every branch"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/engineering",
+              "icon": "chart",
+              "label": "Observability",
+              "description": "Traces, logs and Web Vitals"
+            }
+          ]
+        },
+        {
+          "label": "Resources",
+          "children": [
+            {
+              "href": "/b/your-org/your-blog",
+              "icon": "book",
+              "label": "Blog"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/changelog",
+              "icon": "clock",
+              "label": "Changelog"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/customers",
+              "icon": "star",
+              "label": "Customers"
+            }
+          ]
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/company",
+          "label": "Enterprise"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/company",
+          "label": "Pricing"
+        }
+      ],
+      "socialLinks": [
+        {
+          "href": "https://github.com",
+          "platform": "github"
+        },
+        {
+          "href": "https://x.com",
+          "platform": "x"
+        },
+        {
+          "href": "https://linkedin.com",
+          "platform": "linkedin"
+        },
+        {
+          "href": "https://youtube.com",
+          "platform": "youtube"
+        }
+      ],
+      "themeToggle": {
+        "show": true,
+        "style": "icon",
+        "radius": 999,
+        "position": "footer"
+      },
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Edge Functions"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Preview Deploys"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Image Pipeline"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Cron & Queues"
+            }
+          ],
+          "heading": "Platform"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Firewall"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Bot Shield"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Audit Logs"
+            }
+          ],
+          "heading": "Security"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "React"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Svelte"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Astro"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Python"
+            }
+          ],
+          "heading": "Frameworks"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Docs"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Blog"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Changelog"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Guides"
+            }
+          ],
+          "heading": "Learn"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "About"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Careers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Customers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Contact"
+            }
+          ],
+          "heading": "Company"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Privacy Policy"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Terms of Service"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Status"
+            }
+          ],
+          "heading": "Legal"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Agent SDK"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Gateway"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Sandbox"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Workflows"
+            }
+          ],
+          "heading": "Agent Stack"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Web Apps"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Storefronts"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Marketing Sites"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Platforms"
+            }
+          ],
+          "heading": "Build"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Templates"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Marketplace"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Partners"
+            }
+          ],
+          "heading": "Explore"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "CLI"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Toolbar"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Domains"
+            }
+          ],
+          "heading": "Tools"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Flags SDK"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Queues SDK"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Chat SDK"
+            }
+          ],
+          "heading": "SDKs"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "GitHub"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "X"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "LinkedIn"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "YouTube"
+            }
+          ],
+          "heading": "Social"
+        }
+      ]
+    },
+    "layout": {
+      "gutter": {
+        "sm": 24
+      },
+      "widths": {
+        "media": "62.5rem"
+      },
+      "measure": "42.75rem"
+    },
+    "motion": {
+      "hover": {
+        "card": "none",
+        "link": "fade"
+      },
+      "preset": "none",
+      "pageTransition": "fade"
+    },
+    "palette": {
+      "surface": "#ffffff",
+      "background": "#fafafa",
+      "header_primary": "#171717",
+      "header_background": "#fafafa"
+    },
+    "components": {
+      "code": {
+        "ink": "#171717",
+        "border": "#ebebeb",
+        "radius": 8,
+        "background": "#ffffff"
+      },
+      "link": {
+        "offset": 3,
+        "thickness": 1,
+        "underline": "always"
+      },
+      "list": {
+        "markerColor": "#8f8f8f"
+      },
+      "meta": {
+        "tracking": 0
+      },
+      "focus": {
+        "color": "#0070f3",
+        "width": 2,
+        "offset": 2
+      },
+      "input": {
+        "border": "#ebebeb",
+        "radius": 999,
+        "background": "#ffffff"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "border": "#ebebeb",
+        "radius": 6,
+        "shadow": "none",
+        "weight": "medium",
+        "background": "#171717"
+      },
+      "radius": 6,
+      "syntax": {
+        "tag": "#c41562",
+        "attr": "#0068d6",
+        "meta": "#8f8f8f",
+        "title": "#7d00cc",
+        "number": "#0068d6",
+        "string": "#107d32",
+        "comment": "#8f8f8f",
+        "keyword": "#c41562",
+        "built_in": "#a35200"
+      },
+      "spacing": {
+        "block": 1.7,
+        "section": 2
+      },
+      "selection": {
+        "ink": "#171717",
+        "background": "#cce4ff"
+      }
+    },
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 40
+          },
+          "weight": 450,
+          "tracking": -0.06,
+          "lineHeight": 1.17
+        },
+        "h2": {
+          "size": 32,
+          "weight": 400,
+          "tracking": -0.04,
+          "lineHeight": 1.1
+        },
+        "h3": {
+          "size": 24,
+          "weight": 500,
+          "tracking": -0.04,
+          "lineHeight": 1.33
+        },
+        "body": {
+          "size": {
+            "lg": 18,
+            "sm": 16
+          },
+          "lineHeight": {
+            "lg": 1.56,
+            "sm": 1.5
+          }
+        },
+        "code": {
+          "size": 14
+        },
+        "indexTitle": {
+          "size": {
+            "lg": 48,
+            "sm": 40
+          },
+          "weight": 450,
+          "tracking": -0.06,
+          "lineHeight": 1.17
+        }
+      },
+      "baseSize": 16,
+      "bodyWrap": "pretty",
+      "headingWrap": "balance"
+    },
+    "accentColor": "#0070f3",
+    "colorScheme": "light",
+    "contentWidth": "wide",
+    "primaryColor": "#171717",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap",
+    "monoFontFamily": "Geist Mono",
+    "customFontFamily": "Geist"
+  },
+  "components": [
+    {
+      "format": "forumulate.theme-component",
+      "formatVersion": 1,
+      "meta": {
+        "name": "Closing call to action",
+        "slug": "kestrel-closing-cta",
+        "description": "A full-width call to action after every post.",
+        "author": {
+          "name": "Forumulate",
+          "url": "https://forumulate.com"
+        },
+        "version": "1.0.0",
+        "license": "MIT",
+        "tags": [
+          "cta"
+        ]
+      },
+      "css": ".kcta{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:96px 0 0;padding:48px 0;border-top:1px solid #ebebeb}.kcta h2{margin:0;font-size:40px;letter-spacing:-0.06em;font-weight:500}.kcta-b{display:flex;gap:8px}.kcta a{font-size:14px;font-weight:500;padding:8px 14px;border-radius:999px;text-decoration:none}.kcta a.p{background:#171717;color:#fff}.kcta a.s{background:#fff;color:#171717;border:1px solid #ebebeb}",
+      "outlets": {
+        "blog-post-end": {
+          "html": "<div class=\"kcta\"><h2>Ready to ship?</h2><div class=\"kcta-b\"><a class=\"p\" href=\"/b/your-org/your-blog\">Start deploying</a><a class=\"s\" href=\"/b/your-org/your-blog\">Talk to an engineer</a></div></div>",
+          "position": "after"
+        }
+      }
+    }
+  ],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "title"
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "rss": "icon-round",
+              "band": "tags",
+              "size": "14px",
+              "tags": [
+                "engineering",
+                "general",
+                "customers",
+                "security",
+                "edge"
+              ],
+              "phone": "dropdown",
+              "style": "pills",
+              "height": "36px",
+              "allLabel": "All",
+              "inactive": "text",
+              "phoneFill": "#171717",
+              "showSearch": true,
+              "activeColor": "#f2f2f2",
+              "phoneHeight": "32px",
+              "searchStyle": "icon",
+              "searchWidth": "182px",
+              "spaceBefore": {
+                "sm": "24px"
+              },
+              "inactiveColor": "#171717",
+              "searchIconSize": {
+                "sm": "16px"
+              },
+              "activeTextColor": "#171717",
+              "inactivePadding": "pill",
+              "searchStylePhone": "icon-round"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "14px",
+                  "color": "#666666"
+                },
+                "align": "spread",
+                "slots": [
+                  "date",
+                  "tags",
+                  "title",
+                  "standfirst",
+                  "byline"
+                ],
+                "byline": {
+                  "role": true,
+                  "color": "#171717",
+                  "stack": true,
+                  "avatars": true,
+                  "avatarSize": 16,
+                  "roleSeparator": ""
+                },
+                "kicker": "none",
+                "surface": {
+                  "border": "#ebebeb",
+                  "radius": 0,
+                  "padding": "24px",
+                  "minHeight": "420px",
+                  "background": "#ffffff"
+                },
+                "tagSize": "md",
+                "metaLine": [
+                  "date",
+                  "tags"
+                ],
+                "tagStyle": "text",
+                "dateColor": "#171717",
+                "titleSize": {
+                  "lg": "32px",
+                  "sm": "32px"
+                },
+                "dateFormat": "day-month",
+                "dateLocale": "en-GB",
+                "excerptSize": "14px",
+                "titleWeight": 450,
+                "excerptLines": 3,
+                "metaSeparator": "",
+                "titleTracking": -0.04,
+                "titleLineHeight": 1.25
+              },
+              "hook": "featured",
+              "limit": 3,
+              "layout": "grid",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "spaceAfter": "48px",
+              "spaceBefore": {
+                "lg": "30px",
+                "sm": "32px"
+              }
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "14px",
+                  "color": "#666666"
+                },
+                "slots": [
+                  "date",
+                  "tags",
+                  "title",
+                  "byline"
+                ],
+                "byline": {
+                  "role": true,
+                  "color": "#171717",
+                  "stack": true,
+                  "avatars": true,
+                  "avatarSize": 16,
+                  "roleSeparator": ""
+                },
+                "kicker": "none",
+                "surface": {
+                  "border": "none",
+                  "padding": "24px",
+                  "minHeight": "211px",
+                  "background": "bg"
+                },
+                "tagSize": "md",
+                "metaLine": [
+                  "date",
+                  "tags"
+                ],
+                "tagStyle": "text",
+                "dateColor": "#171717",
+                "titleSize": {
+                  "lg": "24px",
+                  "sm": "24px"
+                },
+                "dateFormat": "day-month",
+                "dateLocale": "en-GB",
+                "titleWeight": 450,
+                "metaSeparator": "",
+                "titleTracking": -0.04,
+                "titleLineHeight": 1.33
+              },
+              "hook": "posts",
+              "dedupe": true,
+              "layout": "grid",
+              "rowGap": "24px",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "pageSize": 12,
+              "paginate": "more",
+              "moreButton": {
+                "label": "Show more posts",
+                "style": "outline",
+                "border": "#ebebeb",
+                "radius": "999px"
+              }
+            }
+          }
+        ]
+      },
+      "width": "full",
+      "gap": "md",
+      "paddingTop": {
+        "lg": "48px",
+        "sm": "32px"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "sprig",
+  "type": "DOCS",
+  "name": "Sprig CSS",
+  "description": "Monospace section labels, numbered install steps with terminal panels and hatched gutters.",
+  "modelledOn": "A utility-first CSS framework’s docs",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "docs",
+    "framework",
+    "code"
+  ],
+  "thumbnail": "/templates/sprig.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/sprig-logo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/sprig-logo-dark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {},
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": []
+}

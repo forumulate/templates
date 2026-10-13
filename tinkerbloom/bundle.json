@@ -1,0 +1,845 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Tinkerbloom",
+    "slug": "template-tinkerbloom",
+    "description": "A friendly, hand-made tutorial blog: sky-and-hills hero, category chips, a “popular content” list and a table-of-contents article page with a playful masthead.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "personal",
+      "tutorial",
+      "playful",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "post": {
+      "toc": {
+        "rule": false,
+        "intro": "Introduction",
+        "offset": "masthead",
+        "itemGap": 3,
+        "itemSize": 16,
+        "itemColor": "#5b6785",
+        "labelCase": "upper",
+        "labelSize": 15,
+        "labelColor": "ink",
+        "lineHeight": 1.5,
+        "activeColor": "#4433dd",
+        "subItemSize": 13
+      },
+      "rail": {
+        "gap": "94px",
+        "items": [
+          "toc"
+        ],
+        "phone": "hidden",
+        "start": "masthead",
+        "width": "15.5rem",
+        "sticky": true
+      },
+      "cover": {
+        "show": false
+      },
+      "share": {
+        "show": false
+      },
+      "header": {
+        "gap": "1.6rem",
+        "order": [
+          "title",
+          "filedUnder"
+        ],
+        "dateStyle": "inline",
+        "filedUnder": "Filed under {tags} on {date}. Last updated on {updated}",
+        "dateFormatSm": "month-year-short",
+        "filedUnderSm": "Filed under {tags} in {date}\nLast updated in {updated}",
+        "showStandfirst": false,
+        "filedUnderStyle": {
+          "size": 16,
+          "labelColor": "muted",
+          "labelStyle": "italic",
+          "lineHeight": 2,
+          "valueColor": "ink",
+          "valueWeight": 500,
+          "tagUnderline": false
+        }
+      },
+      "layout": "rail-right",
+      "masthead": {
+        "above": 140,
+        "height": 400,
+        "layers": [
+          {
+            "y": 100,
+            "size": "cover",
+            "image": "https://forumulate.com/api/assets/00000000-0000-4000-8000-000000000001"
+          }
+        ],
+        "layersDark": [
+          {
+            "gradient": {
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "#0e1840"
+                },
+                {
+                  "at": 80,
+                  "color": "#0e1840"
+                },
+                {
+                  "at": 100,
+                  "color": "bg"
+                }
+              ]
+            }
+          }
+        ],
+        "titleColor": "ink",
+        "heightPhone": 480,
+        "contentAlign": "end",
+        "paddingBottom": {
+          "lg": "216px",
+          "sm": "232px"
+        },
+        "overlapsHeader": true
+      },
+      "breadcrumb": "none",
+      "paddingTop": {
+        "lg": "110px",
+        "sm": "104px"
+      }
+    },
+    "chrome": {
+      "align": "left",
+      "footer": {
+        "background": {
+          "edge": "clouds",
+          "color": "#c4e6fa",
+          "colorDark": "#0e1840"
+        },
+        "newsletter": {
+          "formId": "00000000-0000-4000-9000-000000000001",
+          "heading": "Want to know when I publish new content?"
+        },
+        "headingStyle": "plain"
+      },
+      "header": {
+        "border": "none",
+        "height": 84,
+        "navGap": 40,
+        "navSize": 16,
+        "overlay": true,
+        "iconSize": {
+          "sm": 20
+        },
+        "navWeight": 500,
+        "logoHeight": 36
+      },
+      "search": "icon",
+      "navMenu": {
+        "radius": 12,
+        "shadow": "lg",
+        "trigger": "hover",
+        "animation": "scale"
+      },
+      "copyright": "© 2019–present Your Brand. Made with wobbly hands.",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Categories",
+          "children": [
+            {
+              "href": "/b/your-org/your-blog/tag/css",
+              "label": "CSS"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/animation",
+              "label": "Animation"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/svg",
+              "label": "SVG"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/javascript",
+              "label": "JavaScript"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/career",
+              "label": "Career"
+            }
+          ]
+        },
+        {
+          "href": "/b/your-org/your-blog/archive",
+          "label": "Courses"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/goodies",
+          "label": "Goodies"
+        },
+        {
+          "href": "/b/your-org/your-blog/archive",
+          "label": "About"
+        }
+      ],
+      "socialLinks": [
+        {
+          "href": "https://forumulate.com/b/your-org/your-blog/rss.xml",
+          "platform": "rss"
+        },
+        {
+          "href": "https://bsky.app/profile/example.com",
+          "platform": "bluesky"
+        },
+        {
+          "href": "https://github.com/example",
+          "platform": "github"
+        }
+      ],
+      "themeToggle": {
+        "show": true,
+        "phone": "row",
+        "style": "cycle",
+        "border": false,
+        "hideOn": [
+          "desktop"
+        ],
+        "position": "end"
+      },
+      "searchHideOn": [
+        "desktop"
+      ],
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog/tag/css",
+              "label": "CSS"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/animation",
+              "label": "Animation"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/svg",
+              "label": "SVG"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/career",
+              "label": "Career"
+            }
+          ],
+          "heading": "Browse by category"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog/archive",
+              "label": "Wobbly Motion"
+            },
+            {
+              "href": "/b/your-org/your-blog/tag/css",
+              "label": "Layout Garden"
+            }
+          ],
+          "heading": "Interactive courses"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog/archive",
+              "label": "About"
+            },
+            {
+              "href": "/b/your-org/your-blog/rss.xml",
+              "label": "RSS"
+            }
+          ],
+          "heading": "General"
+        }
+      ],
+      "footerDescription": "Wander in. Poke at things. You belong here."
+    },
+    "layout": {
+      "widths": {
+        "max": "70rem",
+        "list": "68rem",
+        "text": "736px"
+      },
+      "indexHeader": "hide"
+    },
+    "motion": {
+      "hover": {
+        "card": "lift",
+        "link": "none",
+        "image": "none",
+        "button": "lift"
+      },
+      "easing": "spring",
+      "preset": "subtle",
+      "reveal": {
+        "effect": "none"
+      },
+      "ambient": {
+        "smoothScroll": true,
+        "scrollProgress": false
+      },
+      "pageTransition": "fade"
+    },
+    "palette": {
+      "surface": "#eaf3fd",
+      "background": "#ffffff",
+      "footer_primary": "#16163a",
+      "header_primary": "#16163a",
+      "footer_background": "#c4e6fa",
+      "header_background": "#c4e6fa"
+    },
+    "footnotes": {
+      "placement": "margin"
+    },
+    "components": {
+      "code": {
+        "ink": "#1d1b4a",
+        "border": "#e8f0fb",
+        "radius": 8,
+        "background": "#e8f0fb"
+      },
+      "hint": {
+        "edge": "hook",
+        "hang": true,
+        "icon": "badge",
+        "phone": "bleed",
+        "border": "#eaf1fb",
+        "radius": 6,
+        "padding": {
+          "x": 32,
+          "y": 24
+        },
+        "phoneBar": true,
+        "iconStyle": "ring",
+        "background": "#eaf1fb",
+        "hookRadius": 24,
+        "backgroundDark": "#16204a",
+        "codeBackground": "#d0ddf7",
+        "codeBackgroundDark": "#24316a"
+      },
+      "link": {
+        "color": "#4433dd",
+        "offset": 3,
+        "colorDark": "#9fb4ff",
+        "thickness": 2,
+        "underline": "hover"
+      },
+      "list": {
+        "hang": {
+          "scope": "front"
+        }
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 6,
+        "weight": "semibold",
+        "background": "#22223a"
+      },
+      "radius": 8,
+      "syntax": {
+        "tag": "#d10b74",
+        "attr": "#7a1fd6",
+        "title": "#1a5fc4",
+        "number": "#5b3bf2",
+        "string": "#5b3bf2",
+        "comment": "#7b7f99",
+        "keyword": "#d10b74",
+        "built_in": "#1a5fc4"
+      },
+      "spacing": {
+        "pad": 1.5,
+        "block": 1.25,
+        "section": 1.4
+      },
+      "codeDark": {
+        "ink": "#e6e8ff",
+        "border": "#141a38",
+        "background": "#141a38"
+      },
+      "selection": {
+        "ink": "#16163a",
+        "background": "#ffd6e6"
+      },
+      "syntaxDark": {
+        "tag": "#ff6fb5",
+        "attr": "#c79bff",
+        "title": "#7cc4ff",
+        "number": "#ffd166",
+        "string": "#a99bff",
+        "comment": "#8a90b8",
+        "keyword": "#ff6fb5",
+        "built_in": "#7cc4ff"
+      }
+    },
+    "typography": {
+      "fluid": {
+        "minScale": 0.72,
+        "maxViewport": 1280,
+        "minViewport": 360
+      },
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 35,
+            "sm": 38
+          },
+          "weight": 600,
+          "tracking": -0.01,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 32,
+          "color": "#2a1a9e",
+          "weight": 700,
+          "colorDark": "#ffd166",
+          "lineHeight": 1.25
+        },
+        "h3": {
+          "size": 24,
+          "weight": 700,
+          "lineHeight": 1.3
+        },
+        "body": {
+          "lineHeight": 1.5
+        },
+        "code": {
+          "size": 16
+        },
+        "lede": {
+          "size": 20,
+          "lineHeight": 1.5
+        },
+        "eyebrow": {
+          "case": "upper",
+          "size": 15,
+          "color": "#e5175f",
+          "weight": 700,
+          "tracking": 0.12,
+          "colorDark": "#ff6fa5"
+        }
+      },
+      "baseSize": 18,
+      "bodyWrap": "pretty",
+      "headingWrap": "balance"
+    },
+    "accentColor": "#e5175f",
+    "paletteDark": {
+      "surface": "#131a38",
+      "background": "#0a0f24",
+      "footer_primary": "#eef0ff",
+      "header_primary": "#eef0ff",
+      "footer_background": "#0e1840",
+      "header_background": "#0e1840"
+    },
+    "contentWidth": "wide",
+    "primaryColor": "#4433dd",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;600&display=swap",
+    "bodyFontFamily": "Albert Sans",
+    "headingAnchors": "none",
+    "monoFontFamily": "JetBrains Mono",
+    "stringOverrides": {
+      "reader.onThisPage": {
+        "en": "Table of contents"
+      }
+    },
+    "headingFontFamily": "Albert Sans"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "section",
+            "attrs": {
+              "key": "sky",
+              "role": "layout",
+              "padding": {
+                "top": "none",
+                "bottom": "none"
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#c4e6fa",
+                "image": {
+                  "src": "/api/assets/00000000-0000-4000-8000-000000000002",
+                  "size": "cover",
+                  "position": "bottom left"
+                },
+                "colorDark": "#0e1840",
+                "imageDark": {
+                  "src": "/api/assets/00000000-0000-4000-8000-000000000003",
+                  "size": "cover",
+                  "position": "bottom left"
+                }
+              }
+            },
+            "content": [
+              {
+                "type": "layer",
+                "attrs": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                  "kind": "image",
+                  "width": 100,
+                  "hideOn": [
+                    "phone"
+                  ]
+                }
+              },
+              {
+                "type": "spacer",
+                "attrs": {
+                  "height": {
+                    "lg": "30vw",
+                    "md": "30vw",
+                    "sm": "250px"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "spacer",
+            "attrs": {
+              "height": {
+                "lg": "none",
+                "sm": "16px"
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3,
+              "variant": "eyebrow"
+            },
+            "content": [
+              {
+                "text": "Articles and tutorials",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "slots": [
+                  "title",
+                  "subtitle",
+                  "standfirst",
+                  "readMore"
+                ],
+                "slotGap": "16px",
+                "readMore": {
+                  "size": "16px",
+                  "arrow": false,
+                  "color": "ink",
+                  "label": "Read more",
+                  "weight": 700
+                },
+                "titleSize": "22px",
+                "excerptSize": "16px",
+                "titleWeight": 600,
+                "excerptColor": "ink",
+                "excerptLines": 0,
+                "subtitleSize": "17px",
+                "slotGapBefore": {
+                  "readMore": "12px",
+                  "subtitle": "0px"
+                },
+                "subtitleColor": "#5b6785",
+                "subtitleWeight": 500,
+                "titleLineHeight": 1.5,
+                "subtitleLineHeight": 1.5
+              },
+              "sort": "latest",
+              "filter": {},
+              "layout": "feed",
+              "rowGap": "48px",
+              "pageSize": 12,
+              "paginate": "more",
+              "moreButton": {
+                "arrow": true,
+                "color": "#22223a",
+                "style": "solid",
+                "width": "235px",
+                "arrowBox": true,
+                "arrowPosition": "start"
+              }
+            }
+          }
+        ]
+      },
+      "sidebar": {
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "spacer",
+              "attrs": {
+                "height": {
+                  "lg": "0px",
+                  "sm": "none"
+                }
+              }
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3,
+                "variant": "eyebrow"
+              },
+              "content": [
+                {
+                  "text": "Browse by category",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "spaceBand",
+              "attrs": {
+                "band": "tags",
+                "style": "pills-filled",
+                "radius": "4px",
+                "showAll": false,
+                "spaceAfter": {
+                  "lg": "39px"
+                },
+                "spaceBefore": {
+                  "lg": "9px"
+                }
+              }
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3,
+                "variant": "eyebrow"
+              },
+              "content": [
+                {
+                  "text": "Popular content",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "attrs": {
+                "link": "inherit",
+                "size": 19,
+                "color": "ink",
+                "marker": "arrow",
+                "weight": 500,
+                "itemGap": 17,
+                "spaceBefore": "39px"
+              },
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {},
+                      "content": [
+                        {
+                          "text": "An interactive guide to CSS transitions",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog/interactive-guide-to-transitions"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {},
+                      "content": [
+                        {
+                          "text": "Designing shadows that feel real",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog/shadows-that-feel-real"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {},
+                      "content": [
+                        {
+                          "text": "A gentle introduction to SVG paths",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog/gentle-introduction-to-svg-paths"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {},
+                      "content": [
+                        {
+                          "text": "Tooltips that follow their anchor",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog/tooltips-that-follow"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {},
+                      "content": [
+                        {
+                          "text": "The humble transform-origin",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog/the-humble-transform-origin"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {},
+                      "content": [
+                        {
+                          "text": "Why your z-index doesn't work",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog/why-z-index-does-not-work"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {},
+                      "content": [
+                        {
+                          "text": "Browse the archive",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog/archive"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "gap": "95px",
+        "width": "default",
+        "position": "right",
+        "startAfter": 2
+      },
+      "width": "list",
+      "gap": "md",
+      "hideTitle": true
+    }
+  ]
+}

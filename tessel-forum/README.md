@@ -1,0 +1,16 @@
+# Tessel Forum
+
+**An official Forumulate forum template.** Modelled on: an issue tracker’s community forum.
+
+A warm off-white forum: featured posts, categories with descriptions and the latest topics with avatars.
+
+![Tessel Forum on a desktop](screenshots/desktop.png)
+
+## What applying it creates
+
+- **The look** — `bundle.json`, a theme bundle: palette, type, header and footer, the composed front page. Published to the space straight away.
+- **The front page** — `frontPage` in `template.json`, applied after the look.
+- **The layout** — `dense`.
+- **Pictures** — 1 file(s) in `assets/`, copied into your library.
+
+The brand is the replica's own fictional one; rename it in the space's settings.

@@ -1,0 +1,35 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "halite",
+  "type": "DOCS",
+  "name": "Halite",
+  "description": "Framework docs with a version banner, a bold hero beside a dotted illustration and a sidebar switching Tutorial, Guide, Reference and Ecosystem.",
+  "modelledOn": "A web framework’s documentation",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "docs",
+    "framework",
+    "open-source"
+  ],
+  "thumbnail": "/templates/halite.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/halite-logo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/halite-logo-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/halite-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {},
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": []
+}

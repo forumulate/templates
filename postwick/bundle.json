@@ -1,0 +1,482 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Postwick",
+    "slug": "template-postwick",
+    "description": "Compact, tidy API docs with a top tab bar, an on-this-page rail and quickstart cards.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "api",
+      "minimal",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "api": {
+        "url": "path",
+        "phone": {
+          "frame": false
+        },
+        "layout": "split",
+        "params": "list",
+        "examples": {
+          "default": "typescript",
+          "tabStyle": "underline",
+          "languages": [
+            "typescript",
+            "php",
+            "python",
+            "ruby",
+            "go",
+            "curl"
+          ]
+        },
+        "sdkPanel": "none",
+        "urlStyle": "pill",
+        "paramName": {
+          "chip": false
+        },
+        "playground": {
+          "display": "none"
+        },
+        "bodyHeading": "plain"
+      },
+      "toc": {
+        "label": "On this page",
+        "phone": "hide",
+        "itemSize": 14,
+        "labelCase": "none",
+        "labelIcon": true,
+        "labelSize": 14,
+        "labelColor": "#111111",
+        "activeColor": "#111111",
+        "activeStyle": "bar",
+        "labelColorDark": "#fafafa",
+        "activeColorDark": "#fafafa"
+      },
+      "pager": {
+        "style": "cards"
+      },
+      "panel": {
+        "inset": {
+          "top": 0,
+          "left": 0,
+          "right": 8,
+          "bottom": 8
+        },
+        "phone": true,
+        "border": true,
+        "radius": 16,
+        "padding": {
+          "sm": 16
+        },
+        "background": "#ffffff",
+        "borderColor": "#ececec",
+        "includeRail": true,
+        "backgroundDark": "#0a0a0a",
+        "borderColorDark": "#1f1f1f"
+      },
+      "blocks": {
+        "prompt": {
+          "icon": "sparkles",
+          "layout": "stacked",
+          "divider": false,
+          "primary": "copy",
+          "variant": "card",
+          "labelCase": "none",
+          "labelSize": 14,
+          "background": "#f7f7f8",
+          "labelColor": "#18181b",
+          "labelWeight": 400,
+          "actionsAlign": "end",
+          "backgroundDark": "#18181b",
+          "labelColorDark": "#fafafa"
+        }
+      },
+      "header": {
+        "layout": "rail-split",
+        "splitRule": false
+      },
+      "sidebar": {
+        "item": {
+          "size": 14,
+          "color": "#52525b",
+          "height": 33,
+          "radius": 8,
+          "colorDark": "#a1a1aa"
+        },
+        "width": 256,
+        "active": {
+          "color": "ink",
+          "style": "fill",
+          "radius": 8,
+          "weight": 500,
+          "background": "#e9e9e9",
+          "backgroundDark": "#1f1f1f"
+        },
+        "border": false,
+        "groups": "label",
+        "search": "show",
+        "chevron": "end",
+        "guideLine": false,
+        "background": "#f7f7f7",
+        "groupLabel": {
+          "case": "none",
+          "size": 14,
+          "color": "ink",
+          "weight": 600
+        },
+        "chevronColor": "#a1a1aa",
+        "methodBadges": true,
+        "searchHeight": 36,
+        "backgroundDark": "#000000"
+      },
+      "topRule": false,
+      "feedback": {
+        "align": "end",
+        "style": "buttons"
+      },
+      "pageHead": {
+        "updated": "hide",
+        "breadcrumb": {
+          "show": true,
+          "size": 14,
+          "style": "kicker",
+          "separator": "chevron",
+          "kickerCase": "none",
+          "kickerSize": 13,
+          "kickerColor": "#6b6b6b",
+          "kickerColorDark": "#a1a1a1"
+        },
+        "description": "show",
+        "contributors": false
+      },
+      "sections": {
+        "items": [
+          {
+            "key": "docs",
+            "icon": "book",
+            "label": "Documentation",
+            "collections": [
+              "get-started",
+              "learn",
+              "resources"
+            ]
+          },
+          {
+            "key": "api",
+            "icon": "code",
+            "label": "API Reference",
+            "collections": [
+              "api-reference",
+              "emails",
+              "domains",
+              "api-keys"
+            ]
+          }
+        ],
+        "style": "select",
+        "placement": "headerLinks"
+      },
+      "mobileNav": {
+        "bar": true,
+        "head": true,
+        "label": "section",
+        "style": "drawer",
+        "sections": "top"
+      },
+      "pageActions": {
+        "items": [
+          "copy",
+          "markdown",
+          "chatgpt",
+          "claude",
+          "cursor"
+        ],
+        "phone": "icon",
+        "style": "split",
+        "primary": "copy",
+        "placement": "title-end"
+      },
+      "articleAlign": "start",
+      "articleWidth": "36rem"
+    },
+    "chrome": {
+      "ctas": [
+        {
+          "href": "https://example.com/login",
+          "label": "Sign In",
+          "style": "outline",
+          "border": "#e4e4e7",
+          "height": 32,
+          "fontSize": 14
+        },
+        {
+          "ink": "#ffffff",
+          "href": "https://example.com/signup",
+          "label": "Get Started",
+          "style": "solid",
+          "height": 32,
+          "fontSize": 14,
+          "background": "#111111"
+        }
+      ],
+      "header": {
+        "border": "none",
+        "height": 56,
+        "navGap": 24,
+        "navInk": "#52525b",
+        "navSize": 14,
+        "navWeight": 500,
+        "linksAlign": "start",
+        "logoHeight": 22,
+        "navInkDark": "#a1a1aa",
+        "activeStyle": "text",
+        "controlsAlign": "end"
+      },
+      "height": "compact",
+      "search": "icon",
+      "sticky": true,
+      "copyright": "© 2026 Postwick, Inc.",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "href": "/p/your-org/your-docs/introduction",
+          "icon": "book",
+          "label": "Documentation",
+          "match": {
+            "collection": [
+              "36ee8d60-cbc4-48c3-9264-0094c5f7d991",
+              "eb73e71a-2752-479a-9aa4-7f1f20ae0868",
+              "edd0d6b6-10b6-4daf-9a25-2dd594c67edf"
+            ]
+          }
+        },
+        {
+          "href": "/p/your-org/your-docs/sending-examples",
+          "icon": "library",
+          "label": "Guides"
+        },
+        {
+          "href": "/p/your-org/your-docs/api-introduction",
+          "icon": "square-terminal",
+          "label": "API Reference",
+          "match": {
+            "collection": [
+              "04ccd424-854e-4d02-b8bb-1d7dde3f639e",
+              "65b760c7-225e-44a9-914b-895646e36634",
+              "90ffb59f-0462-47ed-ac2f-7de65f12c58c",
+              "f11e3b1c-8ad5-4b58-b1fc-10c57d5c44fc"
+            ]
+          }
+        }
+      ],
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "label": "Search...",
+        "kbdStyle": "plain"
+      },
+      "socialLinks": [
+        {
+          "href": "https://x.com/example",
+          "platform": "x"
+        },
+        {
+          "href": "https://github.com/example",
+          "platform": "github"
+        },
+        {
+          "href": "https://youtube.com/@example",
+          "platform": "youtube"
+        },
+        {
+          "href": "https://example.com",
+          "platform": "website"
+        }
+      ],
+      "themeToggle": {
+        "style": "icon",
+        "radius": 999,
+        "position": "sidebar"
+      },
+      "searchHideOn": [
+        "desktop"
+      ],
+      "sidebarBrand": "hide",
+      "searchPlacement": "end"
+    },
+    "palette": {
+      "ink": "#3f3f46",
+      "line": "#ececec",
+      "muted": "#71717a",
+      "heading": "#111111",
+      "surface": "#ffffff",
+      "background": "#f7f7f7",
+      "header_primary": "#111111",
+      "header_background": "#f7f7f7"
+    },
+    "components": {
+      "card": {
+        "arrow": "corner"
+      },
+      "code": {
+        "copy": "icon",
+        "block": {
+          "border": "#e9e9e9",
+          "radius": 14,
+          "background": "#ffffff"
+        },
+        "border": "#ececec",
+        "inline": {
+          "ink": "#18181b",
+          "border": "#ececec",
+          "radius": 6,
+          "background": "#f4f4f5"
+        },
+        "radius": 14,
+        "tabFont": "ui",
+        "background": "#ffffff",
+        "showLanguage": false
+      },
+      "hint": {
+        "edge": "none",
+        "border": "#ececec",
+        "radius": 14,
+        "background": "#fafafa",
+        "backgroundDark": "#141414"
+      },
+      "link": {
+        "color": "#111111",
+        "offset": 4,
+        "colorDark": "#fafafa",
+        "thickness": 1,
+        "underline": "always"
+      },
+      "list": {
+        "marker": "disc",
+        "markerColor": "#a1a1aa"
+      },
+      "tabs": {
+        "overflow": "scroll"
+      },
+      "input": {
+        "border": "#e4e4e7",
+        "radius": 10
+      },
+      "table": {
+        "rules": "rows",
+        "stripe": false,
+        "density": "compact"
+      },
+      "button": {
+        "radius": 8,
+        "weight": "medium"
+      },
+      "radius": 12,
+      "syntax": {
+        "attr": "#0550ae",
+        "title": "#8250df",
+        "number": "#0550ae",
+        "string": "#0a3069",
+        "comment": "#8c959f",
+        "keyword": "#d6245e",
+        "built_in": "#0550ae"
+      },
+      "stepper": {
+        "line": true,
+        "color": "#a1a1aa",
+        "marker": "outline"
+      },
+      "codeDark": {
+        "ink": "#e4e4e7",
+        "block": {
+          "border": "#262626",
+          "background": "#0a0a0a"
+        },
+        "border": "#262626",
+        "inline": {
+          "ink": "#e4e4e7",
+          "background": "#1c1c1c"
+        },
+        "background": "#0a0a0a"
+      },
+      "inputDark": {
+        "border": "#262626",
+        "background": "#0a0a0a"
+      },
+      "syntaxDark": {
+        "attr": "#79c0ff",
+        "title": "#d2a8ff",
+        "number": "#79c0ff",
+        "string": "#a5d6ff",
+        "comment": "#6e7681",
+        "keyword": "#ff7b9c",
+        "built_in": "#79c0ff"
+      }
+    },
+    "onThisPage": "always",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": 36,
+          "weight": 650,
+          "tracking": -0.025,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 24,
+          "weight": 650,
+          "tracking": -0.015,
+          "lineHeight": 1.3
+        },
+        "h3": {
+          "size": 18,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.75
+        },
+        "code": {
+          "size": 13.5
+        }
+      },
+      "baseSize": 16
+    },
+    "accentColor": "#3b82f6",
+    "paletteDark": {
+      "ink": "#a1a1aa",
+      "line": "#232323",
+      "muted": "#8b8b93",
+      "heading": "#fafafa",
+      "surface": "#111111",
+      "background": "#000000",
+      "header_primary": "#fafafa",
+      "header_background": "#000000"
+    },
+    "primaryColor": "#111111",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+    "monoFontFamily": "JetBrains Mono",
+    "customFontFamily": "Inter",
+    "primaryColorDark": "#fafafa"
+  },
+  "components": []
+}

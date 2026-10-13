@@ -1,0 +1,569 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lattice Commons",
+    "slug": "template-lattice-commons",
+    "description": "Discussions with pinned announcement cards, vote counts, solved labels and a most-helpful leaderboard.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "forum",
+      "q-and-a",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "FORUM"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "forum": {
+      "list": {
+        "pin": "glyph",
+        "meta": [
+          "author",
+          "asked",
+          "category",
+          "state"
+        ],
+        "tags": "chips",
+        "stats": {
+          "phone": "strip",
+          "style": "pill",
+          "fields": [
+            "votes"
+          ],
+          "position": "start",
+          "acceptedStyle": "box"
+        },
+        "header": {
+          "case": "none",
+          "show": false,
+          "align": "start"
+        },
+        "avatars": "posters",
+        "columns": [
+          "posters",
+          "replies"
+        ],
+        "density": "comfortable",
+        "excerpt": "none",
+        "kindChip": false,
+        "titleSize": "16px",
+        "avatarSize": 20,
+        "titleLines": {
+          "lg": 2,
+          "md": 2,
+          "sm": 3
+        },
+        "statusGlyph": "none",
+        "categoryMark": "tile"
+      },
+      "post": {
+        "date": "relative",
+        "menu": [
+          "reply",
+          "quote",
+          "link"
+        ],
+        "style": "card",
+        "avatar": {
+          "size": "sm",
+          "shape": "circle",
+          "position": "inline"
+        },
+        "badges": "hover",
+        "opChip": true,
+        "actions": {
+          "align": "start",
+          "style": "icons"
+        },
+        "bodySize": 14,
+        "reactions": "palette",
+        "voteStyle": "inline",
+        "gapMarkers": false,
+        "menuHidden": [
+          "bookmark",
+          "flag",
+          "edit",
+          "history"
+        ],
+        "quoteStyle": "bar",
+        "staffAccent": "brand",
+        "headingScale": "body"
+      },
+      "dates": {
+        "style": "relative"
+      },
+      "front": {
+        "rail": {
+          "show": true,
+          "items": [
+            {
+              "kind": "leaderboard",
+              "limit": 10,
+              "title": "Most helpful",
+              "period": "month"
+            }
+          ],
+          "width": 300
+        },
+        "filters": {
+          "count": true,
+          "items": [
+            "latest",
+            "top",
+            "solved",
+            "unanswered"
+          ],
+          "links": [],
+          "style": "underline",
+          "pickers": [
+            "category",
+            "tags",
+            "status"
+          ],
+          "newTopic": true,
+          "activeColor": "#1f2328",
+          "activeColorDark": "#f0f6fc"
+        }
+      },
+      "topic": {
+        "map": {
+          "show": "never"
+        },
+        "rail": "meta",
+        "share": {
+          "mode": "none"
+        },
+        "header": {
+          "meta": [
+            "author",
+            "asked",
+            "replies"
+          ],
+          "tags": "chips",
+          "number": true,
+          "category": "chip",
+          "kindChip": false,
+          "metaStyle": "sentence",
+          "solvedPill": {
+            "text": "answeredBy",
+            "placement": "meta-start"
+          },
+          "statusGlyph": false
+        },
+        "actions": [],
+        "measure": 880,
+        "timeline": {
+          "phone": "none",
+          "placement": "none"
+        },
+        "replySort": "oldest",
+        "threading": "nested",
+        "breadcrumb": "none",
+        "answerStyle": "filled",
+        "sortControl": true,
+        "answersHeading": true,
+        "answerPlacement": "excerpt"
+      },
+      "layout": {
+        "topGap": {
+          "phone": 16
+        }
+      },
+      "sidebar": {
+        "icons": true,
+        "pages": [
+          "front",
+          "category",
+          "categories",
+          "profile",
+          "search",
+          "tags"
+        ],
+        "phone": "drawer",
+        "width": 248,
+        "custom": [
+          {
+            "href": "/f/your-org/your-forum/about",
+            "label": "Code of conduct"
+          },
+          {
+            "href": "/f/your-org/your-forum/leaderboard",
+            "label": "Leaderboard"
+          }
+        ],
+        "enabled": true,
+        "sections": [
+          "categories",
+          "custom"
+        ],
+        "activeColor": "#0969da",
+        "collapsible": true,
+        "customTitle": "Community",
+        "activeColorDark": "#4493f8"
+      },
+      "tagStyle": "chip",
+      "categories": {
+        "icons": true
+      }
+    },
+    "chrome": {
+      "cta": {
+        "ink": "#ffffff",
+        "href": "/f/your-org/your-forum",
+        "label": "Sign up",
+        "border": "#ffffff",
+        "background": "#000000",
+        "showOnPhone": true
+      },
+      "header": {
+        "height": 72,
+        "navSize": 16,
+        "brandSize": 18,
+        "navWeight": 500,
+        "logoHeight": 32,
+        "menuButton": {
+          "phone": "always",
+          "phoneSide": "start"
+        }
+      },
+      "search": "pill",
+      "subnav": {
+        "ink": "#1f2328",
+        "links": [
+          {
+            "href": "/f/your-org/your-forum/about",
+            "label": "Overview"
+          },
+          {
+            "href": "/f/your-org/your-forum/categories",
+            "label": "Repositories"
+          },
+          {
+            "href": "/f/your-org/your-forum",
+            "label": "Discussions",
+            "match": {
+              "pathPrefix": [
+                "/f/your-org/your-forum"
+              ]
+            }
+          },
+          {
+            "href": "/f/your-org/your-forum/tags",
+            "label": "Packages"
+          },
+          {
+            "href": "/f/your-org/your-forum/u",
+            "label": "People"
+          }
+        ],
+        "phone": "scroll",
+        "active": {
+          "width": 2,
+          "underline": "#fd8c73"
+        },
+        "border": "line",
+        "inkDark": "#f0f6fc",
+        "navSize": 14,
+        "background": "#f6f8fa",
+        "backgroundDark": "#010409"
+      },
+      "brandText": {
+        "phone": "hide"
+      },
+      "logoPhone": "mark",
+      "headerLinks": [
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Product",
+          "children": [
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Pipelines"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Workspaces"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Pair assistant"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Packages"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Security"
+            }
+          ]
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Solutions",
+          "children": [
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Enterprises"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Startups"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Education"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Nonprofits"
+            }
+          ]
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Resources",
+          "children": [
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Docs"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Changelog"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Learning paths"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Customer stories"
+            }
+          ]
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Open source",
+          "children": [
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Sponsors"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Readme project"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Topics"
+            },
+            {
+              "href": "/f/your-org/your-forum",
+              "label": "Trending"
+            }
+          ]
+        },
+        {
+          "href": "/f/your-org/your-forum",
+          "label": "Pricing"
+        }
+      ],
+      "searchStyle": {
+        "ink": "#c9d1d9",
+        "kbd": "slash",
+        "label": "Search",
+        "width": 180,
+        "background": "#000000",
+        "labelPhone": ""
+      },
+      "signInStyle": {
+        "look": "outline",
+        "label": "Sign in"
+      },
+      "themeToggle": {
+        "show": false
+      }
+    },
+    "layout": {
+      "widths": {
+        "max": "1280px",
+        "list": "1100px",
+        "text": "1012px"
+      }
+    },
+    "palette": {
+      "ink": "#1f2328",
+      "line": "#d1d9e0",
+      "muted": "#59636e",
+      "heading": "#1f2328",
+      "success": "#1a7f37",
+      "surface": "#ffffff",
+      "background": "#ffffff",
+      "footer_primary": "#59636e",
+      "header_primary": "#ffffff",
+      "footer_background": "#f6f8fa",
+      "header_background": "#000000"
+    },
+    "components": {
+      "code": {
+        "ink": "#1f2328",
+        "border": "#d1d9e0",
+        "radius": 6,
+        "background": "#f6f8fa"
+      },
+      "link": {
+        "color": "#0969da",
+        "colorDark": "#4493f8",
+        "underline": "hover"
+      },
+      "meta": {
+        "size": "12px",
+        "color": "#59636e",
+        "colorDark": "#9198a1"
+      },
+      "input": {
+        "border": "#d1d9e0",
+        "radius": 6
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 6,
+        "weight": "medium",
+        "background": "#1f883d"
+      },
+      "radius": 6,
+      "codeDark": {
+        "ink": "#f0f6fc",
+        "border": "#3d444d",
+        "background": "#151b23"
+      }
+    },
+    "typography": {
+      "levels": {
+        "topicTitle": {
+          "size": "clamp(1.5rem, 1.2rem + 1vw, 2rem)",
+          "weight": 400,
+          "lineHeight": 1.25
+        }
+      },
+      "baseSize": 14
+    },
+    "accentColor": "#1f883d",
+    "colorScheme": "system",
+    "paletteDark": {
+      "ink": "#f0f6fc",
+      "line": "#3d444d",
+      "muted": "#9198a1",
+      "heading": "#f0f6fc",
+      "success": "#3fb950",
+      "surface": "#151b23",
+      "background": "#0d1117",
+      "footer_primary": "#9198a1",
+      "header_primary": "#f0f6fc",
+      "footer_background": "#010409",
+      "header_background": "#010409"
+    },
+    "primaryColor": "#0969da",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "FORUM",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "slots": [
+                  "byline",
+                  "title",
+                  "kicker"
+                ],
+                "byline": {
+                  "avatars": true
+                },
+                "kicker": "category",
+                "surface": {
+                  "border": "#d1d9e0",
+                  "radius": 6,
+                  "padding": "20px 16px 16px",
+                  "topStrip": {
+                    "fill": "gradient",
+                    "height": 8,
+                    "gradient": [
+                      "#ff7b72",
+                      "#a371f7"
+                    ]
+                  },
+                  "background": "#ffffff",
+                  "backgroundDark": "#0d1117"
+                },
+                "titleSize": "md",
+                "titleWeight": 600
+              },
+              "limit": 3,
+              "filter": {
+                "pinned": true
+              },
+              "layout": "grid",
+              "columns": {
+                "lg": 3,
+                "md": 3,
+                "sm": 1
+              },
+              "layoutSm": "carousel",
+              "emptyText": " "
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "search"
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "filters"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "filter": {
+                "pinned": false
+              },
+              "layout": "rows",
+              "heading": "Discussions",
+              "controls": true,
+              "pageSize": 25,
+              "paginate": true
+            }
+          }
+        ]
+      },
+      "width": "list",
+      "hideTitle": true
+    }
+  ]
+}

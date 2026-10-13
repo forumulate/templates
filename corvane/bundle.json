@@ -1,0 +1,1266 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Corvane",
+    "slug": "template-corvane",
+    "description": "A bright product blog with a gradient hero band, a lead story, category tabs and a subscribe band after every post. Light, crisp and corporate.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "product",
+      "corporate",
+      "gradient",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "post": {
+      "rail": {
+        "items": [
+          "bylines"
+        ],
+        "phone": "after-head",
+        "start": "body",
+        "width": "13.875rem",
+        "sticky": false
+      },
+      "after": {
+        "width": "frame"
+      },
+      "cover": {
+        "show": false
+      },
+      "share": {
+        "show": false
+      },
+      "byline": {
+        "role": true,
+        "size": 15,
+        "color": "ink",
+        "layout": "stacked",
+        "weight": 600,
+        "avatars": true,
+        "roleSize": 15,
+        "placement": "rail",
+        "avatarSize": 48,
+        "lineHeight": 1.6
+      },
+      "header": {
+        "gap": 32,
+        "order": [
+          "title",
+          "date"
+        ],
+        "dateRule": "bar",
+        "dateStyle": "inline",
+        "titleLineHeight": 1.2
+      },
+      "layout": "rail-left",
+      "suggested": {
+        "show": false
+      },
+      "breadcrumb": "trail",
+      "paddingTop": "24px",
+      "breadcrumbStyle": {
+        "end": {
+          "href": "https://x.com",
+          "label": "Your Brand on X ›"
+        },
+        "gap": "73px",
+        "size": 18,
+        "color": "#5d4ff5",
+        "placement": "grid"
+      }
+    },
+    "chrome": {
+      "cta": {
+        "href": "/b/your-org/your-blog",
+        "label": "Contact sales"
+      },
+      "align": "left",
+      "footer": {
+        "border": false,
+        "columns": 3,
+        "linkGap": 8,
+        "linkInk": "#0a2540",
+        "linkSize": 14,
+        "bottomRule": false,
+        "brandWidth": 25,
+        "headingInk": "#0b2545",
+        "headingStyle": "plain"
+      },
+      "header": {
+        "group": {
+          "align": "center",
+          "width": "1088px"
+        },
+        "border": "none",
+        "height": 76,
+        "navGap": 28,
+        "navInk": "#0a2540",
+        "navSize": 15,
+        "navWeight": 500,
+        "logoHeight": 30,
+        "menuButton": {
+          "ink": "#ffffff",
+          "size": 36,
+          "radius": 4,
+          "background": "#0a2540"
+        },
+        "controlsAlign": "end"
+      },
+      "height": "standard",
+      "navMenu": {
+        "width": 320,
+        "radius": 8,
+        "shadow": "lg",
+        "trigger": "hover",
+        "animation": "fade"
+      },
+      "ctaStyle": "pill",
+      "copyright": "© 2026 Your Brand, Inc.",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Products",
+          "children": [
+            {
+              "href": "/b/your-org/your-blog/tag/Product",
+              "icon": "chart",
+              "label": "Payments",
+              "description": "Accept payments online and in person"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "icon": "clock",
+              "label": "Billing",
+              "description": "Subscriptions and usage-based pricing"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "icon": "share",
+              "label": "Payouts",
+              "description": "Send money to people and businesses"
+            }
+          ]
+        },
+        {
+          "label": "Solutions",
+          "children": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Platforms"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Marketplaces"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Enterprises"
+            }
+          ]
+        },
+        {
+          "label": "Developers",
+          "children": [
+            {
+              "href": "/b/your-org/your-blog",
+              "icon": "book",
+              "label": "Documentation"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "icon": "code",
+              "label": "API reference"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "icon": "check-circle",
+              "label": "API status"
+            }
+          ]
+        },
+        {
+          "label": "Resources",
+          "children": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Blog"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Guides"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Customer stories"
+            }
+          ]
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Pricing"
+        }
+      ],
+      "themeToggle": {
+        "show": false
+      },
+      "secondaryCta": {
+        "ink": "#0b2545",
+        "href": "/b/your-org/your-blog",
+        "label": "Sign in ›",
+        "style": "link",
+        "underline": false
+      },
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Pricing"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Payments"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Billing"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Payouts"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Checkout"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Invoicing"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Tax"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Treasury"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Identity"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Terminal"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Radar-style risk"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Revenue reports"
+            }
+          ],
+          "heading": "Products & pricing"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Enterprises"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Startups"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Platforms"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Marketplaces"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "SaaS"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Ecommerce"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Agentic commerce"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Creator economy"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Fintech"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Nonprofits"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Public sector"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Retail"
+            }
+          ],
+          "heading": "Solutions"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Documentation"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "API reference"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "API status"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "API changelog"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Libraries and SDKs"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Developer blog"
+            }
+          ],
+          "stack": true,
+          "heading": "Developers"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Guides"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Customer stories"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Blog"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Community"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Annual conference"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Privacy & terms"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Sitemap"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Cookie settings"
+            }
+          ],
+          "heading": "Resources"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "About"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Careers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Newsroom"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Contact sales"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Get support"
+            }
+          ],
+          "stack": true,
+          "heading": "Company"
+        }
+      ]
+    },
+    "layout": {
+      "guides": {
+        "color": "#e6ebf1",
+        "outer": "solid",
+        "style": "dashed",
+        "width": "67.5rem",
+        "columns": 4
+      },
+      "gutter": {
+        "lg": 24,
+        "sm": 32
+      },
+      "widths": {
+        "max": "70.5rem",
+        "list": "67.5rem",
+        "text": "50.625rem",
+        "board": "67.5rem",
+        "media": "51rem"
+      },
+      "measure": "50.625rem",
+      "indexHeader": "hide"
+    },
+    "mobile": {
+      "fontScale": 0.86
+    },
+    "motion": {
+      "hover": {
+        "card": "lift",
+        "link": "none"
+      },
+      "preset": "subtle",
+      "reveal": {
+        "effect": "fade-up",
+        "distance": 16
+      }
+    },
+    "palette": {
+      "ink": "#425466",
+      "line": "#e3e8ef",
+      "muted": "#425466",
+      "heading": "#0b2545",
+      "surface": "#ffffff",
+      "background": "#ffffff",
+      "footer_primary": "#0a2540",
+      "header_primary": "#0b2545",
+      "footer_background": "#ffffff",
+      "header_background": "#ffffff"
+    },
+    "components": {
+      "code": {
+        "ink": "#e6ecf5",
+        "border": "#0b2545",
+        "radius": 8,
+        "background": "#0b2545"
+      },
+      "link": {
+        "color": "#5d4ff5",
+        "weight": 500,
+        "underline": "none"
+      },
+      "image": {
+        "radius": 0
+      },
+      "input": {
+        "border": "#e9edf3",
+        "radius": 999,
+        "background": "#e9edf3"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#0b2545"
+      },
+      "radius": 6,
+      "shadow": "lg",
+      "syntax": {
+        "title": "#80c8ff",
+        "number": "#ffb86b",
+        "string": "#7fe0b0",
+        "comment": "#8aa0bf",
+        "keyword": "#c792ff"
+      }
+    },
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 56,
+            "sm": 40
+          },
+          "color": "#0b2545",
+          "weight": 500,
+          "tracking": -0.005,
+          "lineHeight": 1.14
+        },
+        "h2": {
+          "size": 34,
+          "weight": 500,
+          "tracking": -0.006,
+          "lineHeight": 1.4
+        },
+        "h3": {
+          "size": 24,
+          "weight": 500,
+          "lineHeight": 1.4
+        },
+        "h4": {
+          "rule": {
+            "gap": 15,
+            "hang": true,
+            "color": "#635bff",
+            "width": 1,
+            "extent": "first-line",
+            "position": "start"
+          },
+          "size": 16,
+          "weight": 600
+        },
+        "body": {
+          "weight": 400,
+          "lineHeight": 1.56
+        },
+        "lede": {
+          "size": 20,
+          "lineHeight": 1.5
+        },
+        "small": {
+          "size": 15
+        }
+      },
+      "baseSize": 18,
+      "bodyWrap": "pretty",
+      "headingWrap": "balance"
+    },
+    "accentColor": "#0b2545",
+    "colorScheme": "light",
+    "contentWidth": "wide",
+    "primaryColor": "#5d4ff5",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
+    "customFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "section",
+            "attrs": {
+              "key": "hero",
+              "padding": {
+                "x": 0,
+                "top": 0,
+                "bottom": 140
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#f6f9fc",
+                "image": {
+                  "src": "https://forumulate.com/api/assets/00000000-0000-4000-8000-000000000001",
+                  "size": "cover",
+                  "position": "center"
+                }
+              }
+            },
+            "content": [
+              {
+                "type": "columns",
+                "attrs": {
+                  "stackOn": "never"
+                },
+                "content": [
+                  {
+                    "type": "column",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Blog",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "link",
+                                "attrs": {
+                                  "href": "/b/your-org/your-blog"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "column",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": "end"
+                        },
+                        "content": [
+                          {
+                            "text": "Your Brand on X ›",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "link",
+                                "attrs": {
+                                  "href": "https://x.com"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "card": {
+                    "gap": "48px",
+                    "image": {
+                      "span": "1/2",
+                      "bleed": false,
+                      "inset": {
+                        "sm": "16px"
+                      },
+                      "aspect": "4:3",
+                      "radius": 6,
+                      "bleedSm": "gutter",
+                      "position": "end",
+                      "positionSm": "bottom"
+                    },
+                    "slots": [
+                      "kicker",
+                      "title",
+                      "byline",
+                      "standfirst",
+                      "readMore",
+                      "cover"
+                    ],
+                    "byline": {
+                      "role": true,
+                      "size": "15px",
+                      "color": "#0a2540",
+                      "layout": "stacked",
+                      "weight": 600,
+                      "avatars": true,
+                      "roleSize": "15px",
+                      "avatarSize": 48,
+                      "lineHeight": 1.6
+                    },
+                    "kicker": "firstTag",
+                    "slotGap": "20px",
+                    "surface": {
+                      "hover": "none",
+                      "border": "none",
+                      "radius": 6,
+                      "shadow": "lg",
+                      "padding": {
+                        "lg": "16px 16px 16px 40px",
+                        "sm": "16px 16px 16px 32px"
+                      },
+                      "background": "#ffffff"
+                    },
+                    "readMore": {
+                      "label": "Read more"
+                    },
+                    "tagStyle": "eyebrow",
+                    "titleSize": {
+                      "lg": "38px",
+                      "sm": "32px"
+                    },
+                    "excerptSize": {
+                      "lg": "18px",
+                      "sm": "16px"
+                    },
+                    "kickerStyle": {
+                      "case": "none",
+                      "font": "body",
+                      "size": "15px",
+                      "color": "#5d4ff5",
+                      "weight": 500,
+                      "tracking": 0
+                    },
+                    "titleWeight": 500,
+                    "verticalAlign": "center"
+                  },
+                  "limit": 1,
+                  "filter": {
+                    "pinned": true
+                  },
+                  "layout": "split",
+                  "spaceBefore": {
+                    "lg": "44px",
+                    "sm": "44px"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "tags",
+              "style": "pills",
+              "showAll": true,
+              "allLabel": "All",
+              "inactive": "text",
+              "overflow": "scroll",
+              "spaceAfter": {
+                "lg": "78px",
+                "sm": "42px"
+              },
+              "activeColor": "#5d4ff5",
+              "spaceBefore": {
+                "lg": "50px",
+                "sm": "82px"
+              },
+              "inactiveColor": "#0a2540",
+              "inactiveWeight": 425
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "gap": "64px",
+                "meta": {
+                  "size": "15px"
+                },
+                "image": {
+                  "span": "1/2",
+                  "with": [
+                    "date",
+                    "byline"
+                  ],
+                  "aspect": "1:1",
+                  "radius": 6,
+                  "shadow": "lg",
+                  "bleedSm": "media",
+                  "position": "end",
+                  "withRule": "bar",
+                  "withSpan": "1/4",
+                  "withAlign": "start",
+                  "withInset": "16px",
+                  "positionSm": "bottom",
+                  "startAfter": "title",
+                  "withPlacement": "head"
+                },
+                "slots": [
+                  "kicker",
+                  "title",
+                  "standfirst",
+                  "readMore",
+                  "date",
+                  "byline",
+                  "cover"
+                ],
+                "byline": {
+                  "role": true,
+                  "size": "15px",
+                  "color": "#0a2540",
+                  "layout": "stacked",
+                  "weight": 600,
+                  "avatars": true,
+                  "roleSize": "15px",
+                  "avatarSize": 48,
+                  "lineHeight": 1.6
+                },
+                "kicker": "firstTag",
+                "slotsSm": [
+                  "kicker",
+                  "title",
+                  "byline",
+                  "date",
+                  "cover",
+                  "standfirst",
+                  "readMore"
+                ],
+                "surface": {
+                  "hover": "none",
+                  "border": "none",
+                  "shadow": "none",
+                  "padding": {
+                    "lg": "0px 0px 0px 16px",
+                    "sm": "0px"
+                  },
+                  "background": "bg"
+                },
+                "metaJoin": false,
+                "readMore": {
+                  "label": "Read more"
+                },
+                "tagStyle": "eyebrow",
+                "titleSize": {
+                  "lg": "38px",
+                  "sm": "30px"
+                },
+                "dateFormat": "long",
+                "metaLayout": "inline",
+                "excerptSize": {
+                  "lg": "18px",
+                  "sm": "16px"
+                },
+                "kickerStyle": {
+                  "case": "none",
+                  "font": "body",
+                  "rule": "bar",
+                  "size": "15px",
+                  "color": "#5d4ff5",
+                  "weight": 500,
+                  "ruleGap": "16px",
+                  "tracking": 0
+                },
+                "titleWeight": 500,
+                "titleMaxWidth": "600px"
+              },
+              "limit": 3,
+              "dedupe": true,
+              "filter": {
+                "pinned": false
+              },
+              "layout": "split"
+            }
+          },
+          {
+            "type": "section",
+            "attrs": {
+              "key": "highlights",
+              "padding": {
+                "x": 0,
+                "top": 120,
+                "bottom": 120
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#f6f9fc"
+              }
+            },
+            "content": [
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "gap": "26px",
+                  "card": {
+                    "meta": {
+                      "size": "15px",
+                      "color": "#ffffffb3"
+                    },
+                    "when": [
+                      {
+                        "tag": "product",
+                        "card": {
+                          "surface": {
+                            "background": "#00b4f0"
+                          }
+                        }
+                      },
+                      {
+                        "tag": "industry",
+                        "card": {
+                          "surface": {
+                            "background": "#0045b5"
+                          }
+                        }
+                      },
+                      {
+                        "tag": "engineering",
+                        "card": {
+                          "surface": {
+                            "background": "#635bff"
+                          }
+                        }
+                      },
+                      {
+                        "tag": "corporate",
+                        "card": {
+                          "surface": {
+                            "background": "#0a2540"
+                          }
+                        }
+                      }
+                    ],
+                    "slots": [
+                      "title",
+                      "date",
+                      "standfirst",
+                      "readMore"
+                    ],
+                    "surface": {
+                      "hover": "none",
+                      "border": "none",
+                      "radius": 6,
+                      "shadow": "md",
+                      "padding": "16px",
+                      "minHeight": "368px",
+                      "background": "#0073e6"
+                    },
+                    "readMore": {
+                      "color": "#ffffff",
+                      "label": "Learn more ›",
+                      "weight": 600
+                    },
+                    "titleSize": "18px",
+                    "dateFormat": "long",
+                    "titleColor": "#ffffff",
+                    "excerptSize": "15px",
+                    "titleWeight": 600,
+                    "excerptColor": "#ffffff",
+                    "excerptLines": 0
+                  },
+                  "limit": 5,
+                  "layout": "carousel",
+                  "heading": {
+                    "size": "24px",
+                    "text": "Recent highlights",
+                    "color": "#0a2540"
+                  },
+                  "perView": {
+                    "lg": 4,
+                    "md": 2.5,
+                    "sm": 1.15
+                  },
+                  "carousel": {
+                    "bleed": "end",
+                    "controls": "none",
+                    "indicator": "none"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "gap": "64px",
+                "meta": {
+                  "size": "15px"
+                },
+                "image": {
+                  "span": "1/2",
+                  "with": [
+                    "date",
+                    "byline"
+                  ],
+                  "aspect": "1:1",
+                  "radius": 6,
+                  "shadow": "lg",
+                  "bleedSm": "media",
+                  "position": "end",
+                  "withRule": "bar",
+                  "withSpan": "1/4",
+                  "withAlign": "start",
+                  "withInset": "16px",
+                  "positionSm": "bottom",
+                  "startAfter": "title",
+                  "withPlacement": "head"
+                },
+                "slots": [
+                  "kicker",
+                  "title",
+                  "standfirst",
+                  "readMore",
+                  "date",
+                  "byline",
+                  "cover"
+                ],
+                "byline": {
+                  "role": true,
+                  "size": "15px",
+                  "color": "#0a2540",
+                  "layout": "stacked",
+                  "weight": 600,
+                  "avatars": true,
+                  "roleSize": "15px",
+                  "avatarSize": 48,
+                  "lineHeight": 1.6
+                },
+                "kicker": "firstTag",
+                "slotsSm": [
+                  "kicker",
+                  "title",
+                  "byline",
+                  "date",
+                  "cover",
+                  "standfirst",
+                  "readMore"
+                ],
+                "surface": {
+                  "hover": "none",
+                  "border": "none",
+                  "shadow": "none",
+                  "padding": {
+                    "lg": "0px 0px 0px 16px",
+                    "sm": "0px"
+                  },
+                  "background": "bg"
+                },
+                "metaJoin": false,
+                "readMore": {
+                  "label": "Read more"
+                },
+                "tagStyle": "eyebrow",
+                "titleSize": {
+                  "lg": "38px",
+                  "sm": "30px"
+                },
+                "dateFormat": "long",
+                "metaLayout": "inline",
+                "excerptSize": {
+                  "lg": "18px",
+                  "sm": "16px"
+                },
+                "kickerStyle": {
+                  "case": "none",
+                  "font": "body",
+                  "rule": "bar",
+                  "size": "15px",
+                  "color": "#5d4ff5",
+                  "weight": 500,
+                  "ruleGap": "16px",
+                  "tracking": 0
+                },
+                "titleWeight": 500,
+                "titleMaxWidth": "600px"
+              },
+              "limit": 6,
+              "filter": {
+                "pinned": false
+              },
+              "layout": "split",
+              "offset": 3
+            }
+          },
+          {
+            "type": "button",
+            "attrs": {
+              "href": "/b/your-org/your-blog/archive",
+              "label": "View all posts ›",
+              "style": "primary",
+              "action": "link"
+            }
+          },
+          {
+            "type": "section",
+            "attrs": {
+              "key": "subscribe",
+              "padding": {
+                "x": 16,
+                "top": 96,
+                "bottom": 96
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#f6f9fc"
+              }
+            },
+            "content": [
+              {
+                "type": "columns",
+                "attrs": {
+                  "gap": 0
+                },
+                "content": [
+                  {
+                    "type": "column",
+                    "attrs": {
+                      "width": 50
+                    },
+                    "content": [
+                      {
+                        "type": "heading",
+                        "attrs": {
+                          "level": 3
+                        },
+                        "content": [
+                          {
+                            "text": "Subscribe to the Your Brand Blog",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Stay connected with Your Brand and receive new blog posts in your inbox.",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "spaceBand",
+                        "attrs": {
+                          "band": "subscribe",
+                          "body": "",
+                          "note": "Your Brand will handle your data pursuant to its",
+                          "frame": "none",
+                          "layout": "field-row",
+                          "heading": "",
+                          "noteLink": {
+                            "href": "https://forumulate.com/legal",
+                            "label": "Privacy Policy"
+                          },
+                          "buttonInk": "#ffffff",
+                          "buttonColor": "#635bff",
+                          "buttonLabel": "Subscribe ›",
+                          "placeholder": "jane@example.com",
+                          "buttonRadius": "999px"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "column",
+                    "attrs": {
+                      "width": 25
+                    },
+                    "content": [
+                      {
+                        "type": "heading",
+                        "attrs": {
+                          "level": 4
+                        },
+                        "content": [
+                          {
+                            "text": "Like this post? Join our team.",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Your Brand builds financial tools and economic infrastructure for the internet.",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "View roles ›",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "link",
+                                "attrs": {
+                                  "href": "/b/your-org/your-blog"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "column",
+                    "attrs": {
+                      "width": 25
+                    },
+                    "content": [
+                      {
+                        "type": "heading",
+                        "attrs": {
+                          "level": 4
+                        },
+                        "content": [
+                          {
+                            "text": "Have any feedback or questions?",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "We’d love to hear from you.",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Contact us ›",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "link",
+                                "attrs": {
+                                  "href": "/b/your-org/your-blog"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "customization": {
+        "theme": {
+          "palette": {
+            "header_background": "#f6f9fc"
+          }
+        }
+      },
+      "width": "max",
+      "hideTitle": true,
+      "paddingTop": "none"
+    }
+  ]
+}

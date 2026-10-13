@@ -1,0 +1,33 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "tessel",
+  "type": "DOCS",
+  "name": "Tessel Docs",
+  "description": "A dark help centre: Popular and Basics card grids under a quiet title, with collapsible sidebar sections.",
+  "modelledOn": "An issue tracker’s help center",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "docs",
+    "help-center",
+    "product"
+  ],
+  "thumbnail": "/templates/tessel.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/ts-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "guide"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": []
+}

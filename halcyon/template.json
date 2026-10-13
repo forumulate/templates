@@ -1,0 +1,352 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "halcyon",
+  "type": "BLOG",
+  "name": "Halcyon",
+  "description": "A polished newsroom: a thin top bar, large feature tiles with standfirsts, “In the loop” stories and a share-and-download press kit on every article.",
+  "modelledOn": "A consumer electronics company’s newsroom",
+  "features": [
+    "Composed front page (4 sections)",
+    "Top bar above the header",
+    "10-column footer",
+    "Index layout: magazine",
+    "Post layout: article-clean",
+    "A band after every post",
+    "Colour-coded tags",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "newsroom",
+    "press",
+    "minimal"
+  ],
+  "thumbnail": "/templates/halcyon.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/bag.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mark-logomark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/avatar-sam-rivera.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/cover-6.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "magazine",
+    "piecePreset": "article-clean",
+    "frontDoor": {
+      "showRss": false,
+      "badgeStyle": "text",
+      "showAuthor": false,
+      "showSearch": false,
+      "showArchive": false,
+      "showReadTime": false
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "card": {
+              "gap": "20px",
+              "meta": {
+                "size": {
+                  "lg": "17px",
+                  "sm": "14px"
+                },
+                "color": "#6e6e73",
+                "weight": 600,
+                "tracking": -0.016
+              },
+              "image": {
+                "size": 172,
+                "aspect": "16:9",
+                "radius": 12,
+                "position": "start"
+              },
+              "slots": [
+                "cover",
+                "kicker",
+                "title",
+                "date"
+              ],
+              "kicker": "firstTag",
+              "divider": "row",
+              "tagStyle": "eyebrow",
+              "titleSize": "21px",
+              "dateFormat": "long",
+              "kickerStyle": {
+                "case": "upper",
+                "font": "body",
+                "size": "14px",
+                "color": "#6e6e73",
+                "weight": 700,
+                "tracking": -0.016
+              },
+              "titleWeight": 700,
+              "verticalAlign": "center"
+            },
+            "hook": "post-more",
+            "limit": 3,
+            "layout": "grid",
+            "rowGap": "40px",
+            "columns": {
+              "lg": 1,
+              "md": 1,
+              "sm": 1
+            },
+            "heading": {
+              "text": "More from Your Brand Newsroom"
+            }
+          }
+        },
+        {
+          "type": "section",
+          "attrs": {
+            "key": "promo",
+            "hook": "promo",
+            "padding": {
+              "top": 64,
+              "bottom": 64
+            },
+            "fullBleed": true,
+            "background": {
+              "color": "#f5f5f7"
+            },
+            "contentAlign": "center"
+          },
+          "content": [
+            {
+              "type": "image",
+              "attrs": {
+                "alt": "",
+                "src": "/api/assets/00000000-0000-4000-8000-000000000001",
+                "align": "center",
+                "width": "40px"
+              }
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2,
+                "textAlign": "center"
+              },
+              "content": [
+                {
+                  "text": "The latest news and updates,",
+                  "type": "text"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "text": "direct from Your Brand.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "attrs": {
+                "href": "/b/your-org/your-blog",
+                "label": "Read more",
+                "style": "secondary"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "loop",
+      "label": "In the Loop"
+    },
+    {
+      "slug": "update",
+      "label": "Update"
+    },
+    {
+      "slug": "stories",
+      "label": "Stories"
+    },
+    {
+      "slug": "press-release",
+      "label": "Press Release"
+    },
+    {
+      "slug": "feature",
+      "label": "Feature"
+    },
+    {
+      "slug": "photos",
+      "label": "Photos"
+    },
+    {
+      "slug": "quick-read",
+      "label": "Quick Read"
+    },
+    {
+      "slug": "video",
+      "label": "Video"
+    },
+    {
+      "slug": "community",
+      "label": "Community",
+      "color": "#0f7b6c",
+      "textColor": "#ffffff"
+    },
+    {
+      "slug": "creatives",
+      "label": "Creatives",
+      "color": "#661d9d",
+      "textColor": "#ffffff"
+    },
+    {
+      "slug": "developers",
+      "label": "Developers",
+      "color": "#6e6e73",
+      "textColor": "#ffffff"
+    },
+    {
+      "slug": "education",
+      "label": "Education",
+      "color": "#065ec6",
+      "textColor": "#ffffff"
+    },
+    {
+      "slug": "story",
+      "label": "Story"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Newsroom",
+      "bio": "News and updates from the company.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Communications",
+      "bio": "Press and media enquiries.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000005"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "camera-update-variable-focus",
+      "title": "Camera update adds variable focus to the flagship phone",
+      "tags": [
+        "update"
+      ],
+      "daysAgo": 1,
+      "markdown": "A free software update brings variable focus to the flagship phone's camera, so portraits can be refocused after they are taken.\n\n## Available today\n\nThe update is rolling out now and arrives automatically over the next week.\n\nPlaceholder newsroom update.",
+      "subtitle": "Refocus portraits after you take them, with a free update.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "new-laptops-in-stores",
+      "title": "The new laptops arrive in stores today",
+      "tags": [
+        "update"
+      ],
+      "daysAgo": 4,
+      "markdown": "The new lightweight laptop and its larger studio sibling are available in stores and online from today.\n\n- All-day battery on both sizes.\n- A quieter keyboard.\n- A display that adapts to the light in the room.\n\nPlaceholder product news.",
+      "subtitle": "Both sizes are available in stores and online from today.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "riverside-store-opens",
+      "title": "A new riverside store opens its doors",
+      "tags": [
+        "press-release"
+      ],
+      "daysAgo": 9,
+      "markdown": "Our newest store opens this weekend in a restored warehouse by the river, with free sessions on photography, music and coding every day.\n\n> We wanted a store that feels like part of the street, not a box on it.\n\nPlaceholder press release.",
+      "subtitle": "A restored warehouse, with free sessions every day.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "devices-learn-sign-language",
+      "title": "Devices learn to listen for sign language",
+      "tags": [
+        "update",
+        "feature"
+      ],
+      "daysAgo": 14,
+      "markdown": "Accessibility features coming this autumn let devices recognise common signs and turn them into text in real time.\n\n## Built with the community\n\nThe feature was developed with deaf and hard-of-hearing testers from the first prototype. Placeholder feature story.",
+      "subtitle": "Developed with deaf and hard-of-hearing testers from day one.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "watch-reads-recovery",
+      "title": "The watch now reads recovery, not just effort",
+      "tags": [
+        "feature"
+      ],
+      "daysAgo": 20,
+      "markdown": "A new recovery score combines sleep, heart rate and the week's training into one number you can act on in the morning.\n\nPlaceholder product story for the newsroom's feature slot.",
+      "subtitle": "One morning number from sleep, heart rate and training.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "carbon-milestone-early",
+      "title": "Carbon milestone reached four years early",
+      "tags": [
+        "press-release"
+      ],
+      "daysAgo": 30,
+      "markdown": "Our operations are now carbon neutral, four years ahead of the goal we set, and our supply chain is halfway there.\n\n## What comes next\n\nRepair, recycled materials and clean energy for suppliers. Placeholder press release.",
+      "subtitle": "Operations are carbon neutral; the supply chain is halfway there.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "corvane",
+  "type": "BLOG",
+  "name": "Corvane",
+  "description": "A bright product blog with a gradient hero band, a lead story, category tabs and a subscribe band after every post. Light, crisp and corporate.",
+  "modelledOn": "A payments company’s product and engineering blog",
+  "features": [
+    "Composed front page (7 sections)",
+    "Header with drop-down menus",
+    "5-column footer",
+    "Index layout: feed",
+    "Post layout: article-rail",
+    "A band after every post",
+    "Motion presets",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "product",
+    "corporate",
+    "gradient"
+  ],
+  "thumbnail": "/templates/corvane.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/band.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/wordmark-0a2540.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/avatar-sam-rivera.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/cover-5.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {
+    "preset": "feed",
+    "piecePreset": "article-rail",
+    "frontDoor": {
+      "showRss": false,
+      "badgeStyle": "text",
+      "showSearch": false,
+      "showArchive": false,
+      "showReadTime": false
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "section",
+          "attrs": {
+            "key": "subscribe",
+            "padding": {
+              "top": 96,
+              "bottom": 96
+            },
+            "fullBleed": true,
+            "background": {
+              "color": "#f6f9fc"
+            }
+          },
+          "content": [
+            {
+              "type": "columns",
+              "content": [
+                {
+                  "type": "column",
+                  "attrs": {
+                    "width": 50
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Subscribe to the Your Brand Blog",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Stay connected with Your Brand and receive new blog posts in your inbox.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "spaceBand",
+                      "attrs": {
+                        "band": "subscribe",
+                        "body": "",
+                        "note": "Your Brand will handle your data pursuant to its",
+                        "frame": "none",
+                        "layout": "field-row",
+                        "heading": "",
+                        "noteLink": {
+                          "href": "https://forumulate.com/legal",
+                          "label": "Privacy Policy"
+                        },
+                        "buttonInk": "#ffffff",
+                        "buttonColor": "#635bff",
+                        "buttonLabel": "Subscribe ›",
+                        "placeholder": "jane@example.com",
+                        "buttonRadius": "999px"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "attrs": {
+                    "width": 25
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 4
+                      },
+                      "content": [
+                        {
+                          "text": "Like this post? Join our team.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Your Brand builds financial tools and economic infrastructure for the internet.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "View roles ›",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "attrs": {
+                    "width": 25
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 4
+                      },
+                      "content": [
+                        {
+                          "text": "Have any feedback or questions?",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "We’d love to hear from you.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Contact us ›",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/b/your-org/your-blog"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "product",
+      "label": "Product"
+    },
+    {
+      "slug": "industry",
+      "label": "Industry"
+    },
+    {
+      "slug": "corporate",
+      "label": "Corporate"
+    },
+    {
+      "slug": "engineering",
+      "label": "Engineering"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Product Marketing",
+      "bio": "Writes about pricing, payments and the people who use them.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Engineering Lead",
+      "bio": "Builds the systems behind checkout.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000005"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "pricing-that-matches-value",
+      "title": "Pricing that matches the value customers actually get",
+      "tags": [
+        "product"
+      ],
+      "daysAgo": 3,
+      "markdown": "Usage-based pricing is good plumbing and often a bad headline. Customers do not think in API calls; they think in invoices paid, orders shipped and hours saved. This post walks through how we reworked our own plans around the outcome rather than the meter.\n\n## What we changed\n\n- Plans are named after the job they do, not the volume they allow.\n- Overage is shown in the same unit as the plan, so the bill is readable.\n- Every invoice links to the usage behind it.\n\n> The meter belongs in the receipt, not in the pitch.\n\nThe result was fewer billing tickets and, more usefully, fewer surprised customers. Replace this post with your own launch story.",
+      "excerpt": "Usage-based billing is the right plumbing and usually the wrong price tag. Here is how we rebuilt our plans around outcomes.",
+      "pinned": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "faster-payouts-across-borders",
+      "title": "Faster payouts across borders, now on by default",
+      "tags": [
+        "product"
+      ],
+      "daysAgo": 9,
+      "markdown": "Sending money to another country used to mean a wait of several days and a fee nobody could explain. Starting today, cross-border payouts settle the same day in most corridors, with the fee shown before you press send.\n\n## How it works\n\nPayouts are routed through the fastest available rail for each destination. If a rail is slow or down, we fall back automatically and tell you which one was used.\n\n1. Choose the recipient and amount.\n2. See the arrival time and the full fee.\n3. Confirm, and track it to the minute.\n\nThis is sample copy. Swap it for a real announcement when you publish.",
+      "excerpt": "Same-day settlement in most corridors, with the full fee shown up front.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "recovering-failed-renewals",
+      "title": "Smarter retries recover more failed renewals",
+      "tags": [
+        "industry"
+      ],
+      "daysAgo": 17,
+      "markdown": "A failed renewal is rarely a customer who wants to leave. Most are an expired card, a bank's fraud check, or a payment attempted at the wrong hour.\n\n## Timing matters\n\nWe looked at a year of anonymised retry data and found that the hour and day of a retry changed its success rate more than the number of retries. Spreading attempts across paydays and local mornings recovered roughly twice as many renewals as a fixed schedule.\n\n> Retrying is not persistence. It is timing.\n\nIf you run subscriptions, the cheapest growth you have is the revenue you already earned. Replace this with your own research piece.",
+      "excerpt": "Most failed renewals are not churn. When you retry matters more than how often.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "fraud-patterns-in-travel",
+      "title": "What rising fraud attempts tell us about travel bookings",
+      "tags": [
+        "industry"
+      ],
+      "daysAgo": 26,
+      "markdown": "Travel is a magnet for card testing: high ticket values, last-minute purchases and customers who are often abroad. Over the last quarter we saw attempted fraud rise while successful fraud fell.\n\n## Three signals worth watching\n\n- Bursts of small authorisations from one device.\n- Bookings for tonight paid with a card issued far away.\n- Mismatched names across passenger and cardholder fields.\n\nNone of these is proof on its own. Together they are a reason to ask for one more check. This placeholder post shows how an industry report reads in this layout.",
+      "excerpt": "Attempts are up, losses are down. Three signals behind the numbers.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": false
+    },
+    {
+      "slug": "resolving-tax-in-a-millisecond",
+      "title": "How we built it: resolving tax rules in under a millisecond",
+      "tags": [
+        "engineering"
+      ],
+      "daysAgo": 38,
+      "markdown": "Every checkout asks the same question: which tax applies to this address, for this product, today? The answer depends on thousands of overlapping jurisdictions, and it has to come back before the customer notices.\n\n## The approach\n\nWe precompute boundaries into a spatial index, keep the rules versioned by date, and cache the answer per postcode and product class. The slow path still exists; it is just rarely taken.\n\n```text\nlookup(address, product, date) -> rate, jurisdictions[]\n```\n\nEngineering deep dives sit comfortably in this template's long-form layout. Replace this one with yours.",
+      "excerpt": "Thousands of overlapping jurisdictions, one answer before the page finishes loading.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": false
+    }
+  ]
+}

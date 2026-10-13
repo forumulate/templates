@@ -1,0 +1,39 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "ridgeline",
+  "type": "DOCS",
+  "name": "Ridgeline Docs",
+  "description": "A big headline beside a tabbed terminal panel, an agent-prompt block and plugin cards.",
+  "modelledOn": "A frontend cloud platform’s docs",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "docs",
+    "developer",
+    "platform"
+  ],
+  "thumbnail": "/templates/ridgeline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/ring.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/ridge-word.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/ridge-word-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/ridge-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "logoUrlLight": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+  },
+  "layout": {
+    "preset": "guide"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": []
+}

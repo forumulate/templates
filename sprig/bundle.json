@@ -1,0 +1,420 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Sprig CSS",
+    "slug": "template-sprig",
+    "description": "Monospace section labels, numbered install steps with terminal panels and hatched gutters.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "framework",
+      "code",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "toc": {
+        "label": "On this page",
+        "phone": "hide",
+        "itemSize": 14,
+        "labelCase": "upper",
+        "labelFont": "mono",
+        "labelSize": 12,
+        "activeColor": "#030712",
+        "activeStyle": "bar",
+        "activeColorDark": "#ffffff"
+      },
+      "pager": {
+        "style": "links"
+      },
+      "sidebar": {
+        "item": {
+          "size": 14,
+          "color": "#4b5563",
+          "height": 28,
+          "radius": 0,
+          "padding": 12,
+          "colorDark": "#9ca3af"
+        },
+        "width": 272,
+        "active": {
+          "bar": {
+            "color": "ink",
+            "width": 1
+          },
+          "color": "#030712",
+          "style": "bar",
+          "weight": 500,
+          "colorDark": "#ffffff"
+        },
+        "border": true,
+        "groups": "label",
+        "search": "hide",
+        "chevron": "none",
+        "groupRule": true,
+        "guideLine": false,
+        "ruleColor": "#e5e7eb",
+        "groupLabel": {
+          "case": "upper",
+          "font": "mono",
+          "size": 12,
+          "color": "#6b7280",
+          "weight": 500,
+          "tracking": 0.1,
+          "colorDark": "#9ca3af"
+        },
+        "groupsOpen": "all",
+        "borderColor": "#e5e7eb",
+        "ruleColorDark": "#1f2937",
+        "borderColorDark": "#1f2937"
+      },
+      "topRule": false,
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "kicker": "collection",
+        "updated": "hide",
+        "breadcrumb": {
+          "show": false
+        },
+        "description": "hide",
+        "kickerStyle": {
+          "case": "upper",
+          "font": "mono",
+          "size": 12,
+          "color": "#0284c7",
+          "weight": 500,
+          "tracking": 0.15,
+          "colorDark": "#38bdf8"
+        }
+      },
+      "mobileNav": {
+        "bar": true,
+        "label": "section",
+        "style": "drawer",
+        "sections": "top"
+      },
+      "pageActions": {
+        "placement": "none"
+      },
+      "articleAlign": "start"
+    },
+    "chrome": {
+      "footer": {
+        "columnRule": true
+      },
+      "header": {
+        "border": "line",
+        "height": 56,
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 400,
+        "linksAlign": "end",
+        "logoHeight": 24
+      },
+      "search": "pill",
+      "sticky": true,
+      "copyright": "Copyright © 2026 Sprig Labs (fictional)",
+      "showSignIn": false,
+      "footerLinks": [
+        {
+          "href": "https://example.com/trademark",
+          "label": "Trademark policy"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "/p/your-org/your-docs/installation",
+          "label": "Docs"
+        },
+        {
+          "href": "https://example.com/play",
+          "label": "Play"
+        },
+        {
+          "href": "https://example.com/blog",
+          "label": "Blog"
+        },
+        {
+          "href": "https://example.com/showcase",
+          "label": "Showcase"
+        },
+        {
+          "href": "https://github.com/example",
+          "icon": "github",
+          "label": "GitHub",
+          "iconOnly": true
+        }
+      ],
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "size": "sm",
+        "label": "",
+        "width": 120,
+        "kbdStyle": "plain",
+        "labelPhone": ""
+      },
+      "themeToggle": {
+        "show": true,
+        "modes": [
+          "system",
+          "light",
+          "dark"
+        ],
+        "style": "icon",
+        "position": "footer"
+      },
+      "sidebarBrand": "hide",
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/p/your-org/your-docs/installation",
+              "label": "Documentation"
+            },
+            {
+              "href": "https://example.com/play",
+              "label": "Playground"
+            },
+            {
+              "href": "https://example.com/blog",
+              "label": "Blog"
+            }
+          ],
+          "heading": "Sprig CSS"
+        },
+        {
+          "links": [
+            {
+              "href": "https://example.com/patterns",
+              "label": "Patterns"
+            },
+            {
+              "href": "https://example.com/icons",
+              "label": "Icons"
+            }
+          ],
+          "heading": "Resources"
+        },
+        {
+          "links": [
+            {
+              "href": "https://github.com/example",
+              "label": "GitHub"
+            },
+            {
+              "href": "https://example.com/discord",
+              "label": "Discord"
+            }
+          ],
+          "heading": "Community"
+        }
+      ],
+      "searchPlacement": "before-links"
+    },
+    "layout": {
+      "guides": {
+        "gutter": {
+          "inset": 48,
+          "pattern": "stripes"
+        },
+        "placement": "page-edge"
+      },
+      "gutter": {
+        "lg": 24,
+        "sm": 16
+      },
+      "widths": {
+        "max": "1440px"
+      }
+    },
+    "motion": {
+      "ambient": {
+        "scrollProgress": false
+      }
+    },
+    "palette": {
+      "ink": "#374151",
+      "line": "#e5e7eb",
+      "muted": "#6b7280",
+      "heading": "#030712",
+      "surface": "#f9fafb",
+      "background": "#ffffff",
+      "header_primary": "#030712",
+      "header_background": "#ffffff"
+    },
+    "components": {
+      "code": {
+        "copy": "icon",
+        "look": "inset",
+        "block": {
+          "ink": "#e5e7eb",
+          "border": "#030712",
+          "radius": 12,
+          "background": "#0b0f19"
+        },
+        "outer": "#030712",
+        "inline": {
+          "ink": "#0284c7",
+          "weight": 500,
+          "backticks": false,
+          "background": "none"
+        },
+        "highlightBar": "#38bdf8",
+        "showLanguage": false,
+        "highlightBackground": "#0c2a3e"
+      },
+      "hint": {
+        "edge": "none",
+        "icon": "badge",
+        "border": "#e5e7eb",
+        "radius": 12,
+        "variants": {
+          "info": {
+            "edge": "none",
+            "size": 15,
+            "titleInk": "#030712",
+            "titleInkDark": "#ffffff"
+          }
+        },
+        "background": "#ffffff",
+        "backgroundDark": "#030712"
+      },
+      "link": {
+        "color": "#030712",
+        "offset": 3,
+        "weight": 600,
+        "colorDark": "#ffffff",
+        "thickness": 1,
+        "underline": "always"
+      },
+      "list": {
+        "marker": "disc",
+        "markerColor": "#d1d5db"
+      },
+      "tabs": {
+        "active": {
+          "color": "#030712",
+          "colorDark": "#ffffff",
+          "underline": true
+        },
+        "overflow": "scroll"
+      },
+      "table": {
+        "more": {
+          "ink": "#ffffff",
+          "case": "upper",
+          "fade": true,
+          "font": "mono",
+          "align": "center",
+          "style": "solid",
+          "inkDark": "#030712",
+          "background": "#030712",
+          "backgroundDark": "#ffffff"
+        },
+        "size": 13,
+        "rules": "rows",
+        "stripe": false,
+        "codeInk": [
+          "#0284c7",
+          "#7c3aed"
+        ],
+        "density": "compact",
+        "cellPadding": {
+          "x": 8,
+          "y": 8
+        },
+        "codeInkDark": [
+          "#38bdf8",
+          "#c4b5fd"
+        ],
+        "headerBackground": "#ffffff",
+        "headerBackgroundDark": "#030712"
+      },
+      "radius": 12,
+      "preview": {
+        "border": "#e5e7eb",
+        "radius": 12,
+        "background": "#ffffff",
+        "borderDark": "#1f2937",
+        "backgroundDark": "#111827"
+      },
+      "stepper": {
+        "line": false,
+        "marker": "box-mono",
+        "zeroPad": true,
+        "titleSize": 14
+      },
+      "codeDark": {
+        "inline": {
+          "ink": "#38bdf8",
+          "background": "none"
+        }
+      },
+      "syntaxTheme": "github-dark"
+    },
+    "onThisPage": "always",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": 30,
+          "weight": 500,
+          "tracking": -0.025,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "size": 20,
+          "weight": 600,
+          "tracking": -0.01
+        },
+        "h3": {
+          "size": 16,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.75
+        },
+        "code": {
+          "size": 14
+        }
+      },
+      "baseSize": 16
+    },
+    "colorScheme": "system",
+    "paletteDark": {
+      "ink": "#d1d5db",
+      "line": "#1f2937",
+      "muted": "#9ca3af",
+      "heading": "#ffffff",
+      "surface": "#0b1020",
+      "background": "#030712",
+      "header_primary": "#ffffff",
+      "header_background": "#030712"
+    },
+    "primaryColor": "#0ea5a4",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap",
+    "headingAnchors": "hover",
+    "monoFontFamily": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "customFontFamily": "Inter"
+  },
+  "components": []
+}

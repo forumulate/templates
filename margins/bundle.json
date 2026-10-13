@@ -1,0 +1,1193 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Margins",
+    "slug": "template-margins",
+    "description": "A dark editorial magazine with condensed headlines, colourful collage covers, featured-story menus and a newsletter band — a design publication, not a changelog.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "magazine",
+      "editorial",
+      "design",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "post": {
+      "rail": {
+        "items": [
+          "share"
+        ],
+        "start": "body",
+        "sticky": true
+      },
+      "cover": {
+        "show": true,
+        "width": "wide",
+        "aspect": "16:9",
+        "radius": 0
+      },
+      "share": {
+        "show": true,
+        "size": 14,
+        "frame": "square",
+        "marks": true,
+        "style": "icons",
+        "radius": 6,
+        "comments": false,
+        "networks": [
+          "link",
+          "facebook",
+          "x",
+          "linkedin"
+        ],
+        "position": "rail",
+        "borderColor": "ink"
+      },
+      "byline": {
+        "role": true,
+        "size": 18,
+        "color": "ink",
+        "layout": "inline",
+        "avatars": true,
+        "placement": "inline",
+        "separator": "",
+        "avatarSize": 32
+      },
+      "header": {
+        "gap": 64,
+        "order": [
+          "date",
+          "title",
+          "byline",
+          "cover",
+          "dek"
+        ],
+        "width": "wide",
+        "tagBox": {
+          "radius": {
+            "md": 6,
+            "sm": 999
+          },
+          "borderColor": "ink"
+        },
+        "spacing": {
+          "top": "0px",
+          "afterDek": {
+            "lg": "150px",
+            "sm": "48px"
+          },
+          "afterDate": "53px",
+          "afterCover": "0px",
+          "afterByline": "0px",
+          "beforeCover": "43px"
+        },
+        "tagMore": "tag",
+        "tagSize": 14,
+        "dateType": {
+          "case": "upper",
+          "font": "mono",
+          "size": 14,
+          "color": "ink"
+        },
+        "tagColor": "ink",
+        "tagLimit": 3,
+        "tagStyle": "outline-mono",
+        "dateStyle": "mono-caps",
+        "metaRowGap": {
+          "sm": "30px"
+        },
+        "dekPlacement": "body",
+        "tagsPlacement": "byline-end",
+        "showStandfirst": true
+      },
+      "layout": "offset",
+      "offset": {
+        "start": "314px"
+      },
+      "bodyGap": {
+        "lg": "120px",
+        "sm": "48px"
+      },
+      "breadcrumb": "none",
+      "paddingTop": {
+        "lg": "95px",
+        "sm": "37px"
+      }
+    },
+    "chrome": {
+      "align": "split",
+      "footer": {
+        "scheme": "dark",
+        "background": {
+          "color": "#131313",
+          "colorDark": "#131313"
+        },
+        "headingStyle": "label"
+      },
+      "header": {
+        "border": "none",
+        "height": 72,
+        "navGap": 28,
+        "navSize": 18,
+        "navWeight": 330,
+        "logoHeight": 44
+      },
+      "height": "tall",
+      "search": "icon",
+      "sticky": false,
+      "topBar": {
+        "ink": "#111111",
+        "align": "end",
+        "links": [
+          {
+            "href": "/b/your-org/your-blog#subscribe",
+            "label": "Subscribe to the Your Brand newsletter"
+          }
+        ],
+        "phone": "hide",
+        "style": "tab",
+        "height": 28,
+        "background": "#ffffff"
+      },
+      "navMenu": {
+        "ink": "#ffffff",
+        "border": "#333333",
+        "radius": 0,
+        "shadow": "lg",
+        "trigger": "hover",
+        "animation": "slide",
+        "background": "#1e1e1e"
+      },
+      "ctaStyle": "solid",
+      "copyright": "© 2026 Your Brand.",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "href": "/b/your-org/your-blog/tag/maker-stories",
+          "label": "Maker Stories"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/working-well",
+          "label": "Working Well"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/inside-the-studio",
+          "label": "Inside Your Brand"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/insights",
+          "label": "Insights"
+        },
+        {
+          "href": "/b/your-org/your-blog/archive",
+          "label": "Latest"
+        },
+        {
+          "label": "Topics",
+          "panel": {
+            "width": "full",
+            "columns": [
+              {
+                "links": [
+                  {
+                    "href": "/b/your-org/your-blog/tag/typography",
+                    "label": "Typography"
+                  },
+                  {
+                    "href": "/b/your-org/your-blog/tag/design-systems",
+                    "label": "Design systems"
+                  },
+                  {
+                    "href": "/b/your-org/your-blog/tag/motion",
+                    "label": "Motion"
+                  }
+                ],
+                "heading": "Craft"
+              },
+              {
+                "links": [
+                  {
+                    "href": "/b/your-org/your-blog/tag/ai",
+                    "label": "AI"
+                  },
+                  {
+                    "href": "/b/your-org/your-blog/tag/collaboration",
+                    "label": "Collaboration"
+                  },
+                  {
+                    "href": "/b/your-org/your-blog/tag/leadership",
+                    "label": "Leadership"
+                  }
+                ],
+                "heading": "Work"
+              },
+              {
+                "links": [
+                  {
+                    "href": "/b/your-org/your-blog/tag/profiles",
+                    "label": "Profiles & interviews"
+                  },
+                  {
+                    "href": "/b/your-org/your-blog/tag/culture",
+                    "label": "Culture"
+                  },
+                  {
+                    "href": "/b/your-org/your-blog/tag/careers",
+                    "label": "Careers"
+                  }
+                ],
+                "heading": "People"
+              }
+            ],
+            "featured": {
+              "href": "/b/your-org/your-blog/source-material-looking-again",
+              "text": "A weekly series on the references that shaped our favourite makers.",
+              "image": "https://forumulate.com/api/assets/00000000-0000-4000-8000-000000000001",
+              "title": "Source material: the references that taught us to look again"
+            }
+          },
+          "divider": true
+        }
+      ],
+      "socialLinks": [
+        {
+          "href": "https://x.com",
+          "platform": "x"
+        },
+        {
+          "href": "https://youtube.com",
+          "platform": "youtube"
+        },
+        {
+          "href": "https://instagram.com",
+          "platform": "instagram"
+        },
+        {
+          "href": "https://facebook.com",
+          "platform": "facebook"
+        }
+      ],
+      "themeToggle": {
+        "show": false
+      },
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Canvas"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Boards"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Slides"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Dev handoff"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Downloads"
+            }
+          ],
+          "heading": "Product"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "UI design"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Wireframing"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Prototyping"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Brainstorming"
+            }
+          ],
+          "heading": "Use cases"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Best practices"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Colour tools"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Templates"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Support"
+            }
+          ],
+          "heading": "Resources"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Events"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Customers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Careers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Newsroom"
+            }
+          ],
+          "heading": "Company"
+        }
+      ],
+      "footerDescription": "Your Brand is the editorial magazine from Your Brand, about the people and practices behind good design."
+    },
+    "layout": {
+      "widths": {
+        "board": "90rem"
+      },
+      "measure": "42.75rem"
+    },
+    "motion": {
+      "hover": {
+        "card": "none",
+        "image": "zoom",
+        "button": "none"
+      },
+      "preset": "subtle",
+      "reveal": {
+        "effect": "fade-up",
+        "targets": [
+          "cards",
+          "images"
+        ],
+        "distance": 16
+      }
+    },
+    "palette": {
+      "surface": "#1e1e1e",
+      "background": "#131313",
+      "header_primary": "#ffffff",
+      "header_background": "#131313"
+    },
+    "footnotes": {
+      "placement": "margin"
+    },
+    "components": {
+      "code": {
+        "ink": "#f2f2f2",
+        "border": "#333333",
+        "radius": 4,
+        "background": "#1e1e1e"
+      },
+      "link": {
+        "offset": 3,
+        "thickness": 1,
+        "underline": "always"
+      },
+      "meta": {
+        "font": "body"
+      },
+      "image": {
+        "radius": 0
+      },
+      "input": {
+        "ink": "#ffffff",
+        "border": "#ffffff",
+        "radius": 0,
+        "background": "#131313"
+      },
+      "quote": {
+        "size": 36,
+        "align": "start",
+        "style": "pull"
+      },
+      "button": {
+        "ink": "#131313",
+        "border": "#ffffff",
+        "radius": 6,
+        "weight": "regular",
+        "background": "#ffffff"
+      },
+      "radius": 0,
+      "selection": {
+        "ink": "#ffffff",
+        "background": "#0d99ff"
+      }
+    },
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 90,
+            "sm": 52
+          },
+          "weight": 500,
+          "tracking": -0.02,
+          "lineHeight": 0.95
+        },
+        "h2": {
+          "size": {
+            "lg": 48,
+            "sm": 36
+          },
+          "weight": 500,
+          "tracking": -0.02,
+          "lineHeight": 1.05
+        },
+        "h3": {
+          "size": 32,
+          "weight": 500,
+          "tracking": -0.01,
+          "lineHeight": 1.15
+        },
+        "body": {
+          "size": 18,
+          "weight": 330,
+          "lineHeight": 1.4
+        },
+        "lede": {
+          "font": "heading",
+          "size": {
+            "lg": 32,
+            "sm": 24
+          },
+          "weight": 500,
+          "lineHeight": 1.15
+        },
+        "small": {
+          "size": 14
+        },
+        "eyebrow": {
+          "case": "none",
+          "size": 14,
+          "weight": 400,
+          "tracking": 0
+        }
+      },
+      "baseSize": 18,
+      "bodyWrap": "pretty",
+      "headingWrap": "balance"
+    },
+    "accentColor": "#0d99ff",
+    "colorScheme": "dark",
+    "paletteDark": {
+      "surface": "#1e1e1e",
+      "background": "#131313",
+      "header_primary": "#ffffff",
+      "header_background": "#131313"
+    },
+    "contentWidth": "full",
+    "primaryColor": "#ffffff",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Inter:wght@100..900&family=IBM+Plex+Mono:wght@400;500&display=swap",
+    "bodyFontFamily": "Inter",
+    "monoFontFamily": "IBM Plex Mono",
+    "customFontFamily": "Roboto Condensed",
+    "headingFontFamily": "Roboto Condensed"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "18px",
+                  "color": "ink"
+                },
+                "image": {
+                  "aspect": "16:9",
+                  "radius": 0
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "date",
+                  "byline",
+                  "standfirst",
+                  "tags"
+                ],
+                "byline": {
+                  "role": false,
+                  "prefix": "By",
+                  "weight": 700,
+                  "avatars": false
+                },
+                "slotGap": {
+                  "lg": "20px",
+                  "sm": "16px"
+                },
+                "tagMore": "tag",
+                "tagSize": "md",
+                "metaJoin": false,
+                "tagColor": "#ffffff",
+                "tagLimit": 3,
+                "tagStyle": "outline-mono",
+                "titleFont": "heading",
+                "titleSize": {
+                  "lg": "32px",
+                  "sm": "24px"
+                },
+                "dateFormat": "long",
+                "excerptSize": "16px",
+                "titleWeight": 500,
+                "excerptColor": "ink",
+                "excerptLines": 3,
+                "slotGapAfter": {
+                  "standfirst": 20
+                },
+                "excerptWeight": 330,
+                "verticalAlign": "end",
+                "titleLineHeight": 1.15
+              },
+              "hook": "hero",
+              "lead": {
+                "span": 2,
+                "style": "stack-split",
+                "divider": false,
+                "maxWidth": "492px",
+                "coverSpan": "all",
+                "titleFont": "heading",
+                "titleSize": {
+                  "lg": "64px",
+                  "sm": "40px"
+                },
+                "titleTracking": -0.02,
+                "titleLineHeight": 1.05
+              },
+              "rest": {
+                "lg": "text-only",
+                "sm": "cards"
+              },
+              "limit": 3,
+              "filter": {},
+              "layout": "magazine",
+              "columns": {
+                "lg": 4,
+                "md": 2,
+                "sm": 1
+              },
+              "spaceAfter": "160px"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "18px",
+                  "color": "ink"
+                },
+                "image": {
+                  "aspect": "16:9",
+                  "radius": 0
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "date",
+                  "byline",
+                  "standfirst",
+                  "tags"
+                ],
+                "byline": {
+                  "role": false,
+                  "prefix": "By",
+                  "weight": 700,
+                  "avatars": false
+                },
+                "slotGap": {
+                  "lg": "20px",
+                  "sm": "16px"
+                },
+                "tagMore": "tag",
+                "tagSize": "md",
+                "metaJoin": false,
+                "tagColor": "#ffffff",
+                "tagLimit": 3,
+                "tagStyle": "outline-mono",
+                "titleFont": "heading",
+                "titleSize": {
+                  "lg": "32px",
+                  "sm": "24px"
+                },
+                "dateFormat": "long",
+                "excerptSize": "16px",
+                "titleWeight": 500,
+                "excerptColor": "ink",
+                "excerptLines": 3,
+                "slotGapAfter": {
+                  "standfirst": 20
+                },
+                "excerptWeight": 330,
+                "titleLineHeight": 1.15
+              },
+              "hook": "agent",
+              "limit": 4,
+              "filter": {
+                "tags": [
+                  "ai"
+                ]
+              },
+              "layout": "carousel",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "heading": {
+                "size": {
+                  "lg": "64px",
+                  "sm": "40px"
+                },
+                "text": "All about the agent",
+                "weight": 500,
+                "lineHeight": 1.05,
+                "spaceBelow": {
+                  "lg": "130px",
+                  "sm": "48px"
+                }
+              },
+              "perView": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "carousel": {
+                "count": {
+                  "size": "20px",
+                  "color": "#e9e5db"
+                },
+                "arrows": {
+                  "size": "40px",
+                  "color": "#e9e5db",
+                  "border": "#e9e5db",
+                  "radius": "999px"
+                },
+                "controls": "top-end",
+                "indicator": "count"
+              },
+              "moreLink": {
+                "href": "/b/your-org/your-blog/tag/ai",
+                "label": "All agent stories",
+                "style": "button",
+                "position": "below"
+              },
+              "spaceAfter": "160px"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "18px",
+                  "color": "ink"
+                },
+                "image": {
+                  "aspect": "16:9",
+                  "radius": 0
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "date",
+                  "byline",
+                  "standfirst",
+                  "tags"
+                ],
+                "byline": {
+                  "role": false,
+                  "prefix": "By",
+                  "weight": 700,
+                  "avatars": false
+                },
+                "slotGap": {
+                  "lg": "20px",
+                  "sm": "16px"
+                },
+                "tagMore": "tag",
+                "tagSize": "md",
+                "metaJoin": false,
+                "tagColor": "#ffffff",
+                "tagLimit": 3,
+                "tagStyle": "outline-mono",
+                "titleFont": "heading",
+                "titleSize": {
+                  "lg": "32px",
+                  "sm": "24px"
+                },
+                "dateFormat": "long",
+                "excerptSize": "16px",
+                "titleWeight": 500,
+                "excerptColor": "ink",
+                "excerptLines": 3,
+                "slotGapAfter": {
+                  "standfirst": 20
+                },
+                "excerptWeight": 330,
+                "titleLineHeight": 1.15
+              },
+              "hook": "future",
+              "limit": 3,
+              "filter": {
+                "tags": [
+                  "working-well"
+                ]
+              },
+              "layout": "grid",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "heading": {
+                "size": {
+                  "lg": "64px",
+                  "sm": "40px"
+                },
+                "text": "The future of design",
+                "weight": 500,
+                "lineHeight": 1.05,
+                "spaceBelow": {
+                  "lg": "130px",
+                  "sm": "48px"
+                }
+              },
+              "moreLink": {
+                "href": "/b/your-org/your-blog/tag/working-well",
+                "label": "See all Working Well",
+                "style": "button",
+                "position": "below"
+              },
+              "spaceAfter": "160px"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "18px",
+                  "color": "ink"
+                },
+                "image": {
+                  "aspect": "16:9",
+                  "radius": 0
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "date",
+                  "byline",
+                  "standfirst",
+                  "tags"
+                ],
+                "byline": {
+                  "role": false,
+                  "prefix": "By",
+                  "weight": 700,
+                  "avatars": false
+                },
+                "slotGap": {
+                  "lg": "20px",
+                  "sm": "16px"
+                },
+                "tagMore": "tag",
+                "tagSize": "md",
+                "metaJoin": false,
+                "tagColor": "#ffffff",
+                "tagLimit": 3,
+                "tagStyle": "outline-mono",
+                "titleFont": "heading",
+                "titleSize": {
+                  "lg": "32px",
+                  "sm": "24px"
+                },
+                "dateFormat": "long",
+                "excerptSize": "16px",
+                "titleWeight": 500,
+                "excerptColor": "ink",
+                "excerptLines": 3,
+                "slotGapAfter": {
+                  "standfirst": 20
+                },
+                "excerptWeight": 330,
+                "titleLineHeight": 1.15
+              },
+              "hook": "makers",
+              "limit": 3,
+              "filter": {
+                "tags": [
+                  "maker-stories"
+                ]
+              },
+              "layout": "grid",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "heading": {
+                "size": {
+                  "lg": "64px",
+                  "sm": "40px"
+                },
+                "text": "Meet the makers",
+                "weight": 500,
+                "lineHeight": 1.05,
+                "spaceBelow": {
+                  "lg": "130px",
+                  "sm": "48px"
+                }
+              },
+              "moreLink": {
+                "href": "/b/your-org/your-blog/tag/maker-stories",
+                "label": "See all Maker Stories",
+                "style": "button",
+                "position": "below"
+              },
+              "spaceAfter": "160px"
+            }
+          },
+          {
+            "type": "section",
+            "attrs": {
+              "key": "quote",
+              "role": "layout",
+              "scheme": "dark",
+              "padding": {
+                "top": "xl",
+                "bottom": "xl"
+              },
+              "fullBleed": true,
+              "contentAlign": "center"
+            },
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 3,
+                  "variant": "eyebrow",
+                  "textAlign": "center"
+                },
+                "content": [
+                  {
+                    "text": "Gather 2026: new materials, new tools, and a more expressive canvas",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "blockquote",
+                "attrs": {
+                  "cite": "Opening keynote",
+                  "size": 90,
+                  "align": "center",
+                  "variant": "pull"
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Tools lowered the floor. They have not raised the ceiling. That part is still ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "yours.”",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "muted"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "button",
+                "attrs": {
+                  "href": "/b/your-org/your-blog/building-great-products-now",
+                  "label": "Read the article",
+                  "style": "secondary"
+                }
+              }
+            ]
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "18px",
+                  "color": "ink"
+                },
+                "image": {
+                  "aspect": "21:9",
+                  "radius": 0
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "date",
+                  "byline",
+                  "standfirst",
+                  "tags",
+                  "readMore"
+                ],
+                "byline": {
+                  "role": false,
+                  "prefix": "By",
+                  "weight": 700,
+                  "avatars": false
+                },
+                "slotGap": {
+                  "lg": "20px",
+                  "sm": "16px"
+                },
+                "tagMore": "tag",
+                "tagSize": "md",
+                "metaJoin": false,
+                "readMore": {
+                  "align": "center",
+                  "arrow": false,
+                  "label": "Read the report",
+                  "style": "button"
+                },
+                "tagColor": "#ffffff",
+                "tagLimit": 3,
+                "tagStyle": "outline-mono",
+                "titleFont": "heading",
+                "titleSize": {
+                  "lg": "46px",
+                  "sm": "32px"
+                },
+                "dateFormat": "long",
+                "excerptSize": "16px",
+                "titleWeight": 500,
+                "excerptColor": "ink",
+                "excerptLines": 3,
+                "slotGapAfter": {
+                  "standfirst": 20
+                },
+                "excerptWeight": 330,
+                "titleLineHeight": 1.15
+              },
+              "hook": "report",
+              "limit": 1,
+              "filter": {
+                "tags": [
+                  "insights"
+                ]
+              },
+              "layout": "feed",
+              "columns": {
+                "lg": 1,
+                "md": 1,
+                "sm": 1
+              },
+              "spaceAfter": "120px"
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "subscribe",
+              "body": "",
+              "note": "By clicking “Submit” you agree to our TOS and Privacy Policy.",
+              "frame": "none",
+              "anchor": "subscribe",
+              "layout": "inline-row",
+              "consent": {
+                "text": "I agree to opt-in to Your Brand's mailing list.",
+                "checkbox": true
+              },
+              "heading": "Subscribe to Your Brand for an instantly better inbox",
+              "inputSize": "56px",
+              "inputStyle": "underline",
+              "buttonLabel": "→",
+              "buttonStyle": "link",
+              "headingFont": "heading",
+              "headingSize": {
+                "lg": "46px",
+                "sm": "32px"
+              },
+              "placeholder": "Enter email",
+              "inputFontSize": "24px",
+              "headingLineHeight": 1.1
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "meta": {
+                  "size": "18px",
+                  "color": "ink"
+                },
+                "image": {
+                  "aspect": "16:9",
+                  "radius": 0
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "date",
+                  "byline",
+                  "standfirst",
+                  "tags"
+                ],
+                "byline": {
+                  "role": false,
+                  "prefix": "By",
+                  "weight": 700,
+                  "avatars": false
+                },
+                "slotGap": {
+                  "lg": "20px",
+                  "sm": "16px"
+                },
+                "tagMore": "tag",
+                "tagSize": "md",
+                "metaJoin": false,
+                "tagColor": "#ffffff",
+                "tagLimit": 3,
+                "tagStyle": "outline-mono",
+                "titleFont": "heading",
+                "titleSize": {
+                  "lg": "32px",
+                  "sm": "24px"
+                },
+                "dateFormat": "long",
+                "excerptSize": "16px",
+                "titleWeight": 500,
+                "excerptColor": "ink",
+                "excerptLines": 3,
+                "slotGapAfter": {
+                  "standfirst": 20
+                },
+                "excerptWeight": 330,
+                "titleLineHeight": 1.15
+              },
+              "hook": "latest",
+              "dedupe": false,
+              "layout": "grid",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "heading": {
+                "size": {
+                  "lg": "90px",
+                  "sm": "48px"
+                },
+                "text": "The latest",
+                "align": "center",
+                "weight": 500,
+                "lineHeight": 1.05,
+                "spaceBelow": {
+                  "lg": "130px",
+                  "sm": "48px"
+                }
+              },
+              "pageSize": 9,
+              "paginate": "more",
+              "spaceAfter": {
+                "lg": "200px",
+                "sm": "80px"
+              },
+              "spaceBefore": {
+                "lg": "160px",
+                "sm": "64px"
+              }
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "subscribe",
+              "body": "",
+              "note": "By clicking “Submit” you agree to our TOS and Privacy Policy.",
+              "frame": "none",
+              "layout": "inline-row",
+              "consent": {
+                "text": "I agree to opt-in to Your Brand's mailing list.",
+                "checkbox": true
+              },
+              "heading": "Subscribe to Your Brand's editorial newsletter",
+              "inputSize": "56px",
+              "inputStyle": "underline",
+              "buttonLabel": "→",
+              "buttonStyle": "link",
+              "headingFont": "heading",
+              "headingSize": {
+                "lg": "46px",
+                "sm": "32px"
+              },
+              "placeholder": "Enter email",
+              "inputFontSize": "24px",
+              "headingLineHeight": 1.1
+            }
+          }
+        ]
+      },
+      "width": "full",
+      "gap": "lg",
+      "hideTitle": true,
+      "paddingTop": "none"
+    }
+  ]
+}

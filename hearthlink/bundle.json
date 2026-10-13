@@ -1,0 +1,496 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Hearthlink Community",
+    "slug": "template-hearthlink",
+    "description": "Categories with coloured bars beside the latest topics, under a bright blue header.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "forum",
+      "community",
+      "open-source",
+      "template"
+    ],
+    "spaceTypes": [
+      "FORUM"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "forum": {
+      "list": {
+        "pin": "glyph",
+        "heat": {
+          "views": [
+            500,
+            1000,
+            2500
+          ],
+          "replies": [
+            5,
+            10,
+            20
+          ]
+        },
+        "tags": "chips",
+        "phone": {
+          "dividers": true,
+          "titleLines": 2
+        },
+        "stats": {
+          "show": "none"
+        },
+        "header": {
+          "case": "title"
+        },
+        "avatars": "posters",
+        "columns": [
+          "posters",
+          "replies",
+          "views",
+          "activity"
+        ],
+        "excerpt": "pinned",
+        "titleSize": "17px",
+        "avatarSize": 25
+      },
+      "look": "clean",
+      "post": {
+        "date": "relative",
+        "menu": [
+          "like",
+          "link",
+          "reply"
+        ],
+        "name": "username-plain",
+        "flair": "chip",
+        "style": "rule",
+        "avatar": {
+          "size": "md",
+          "shape": "circle",
+          "position": "gutter",
+          "positionSm": "inline"
+        },
+        "actions": {
+          "align": "end",
+          "style": "icons"
+        },
+        "bodySize": 15,
+        "reactions": "both",
+        "gapMarkers": 3,
+        "menuHidden": [
+          "bookmark",
+          "quote",
+          "flag"
+        ],
+        "staffAccent": "none",
+        "headingScale": "body"
+      },
+      "dates": {
+        "style": "compact"
+      },
+      "front": {
+        "align": "start",
+        "filters": {
+          "items": [
+            "latest",
+            "top",
+            "categories"
+          ],
+          "links": [],
+          "style": "underline",
+          "pickers": [
+            "category",
+            "tags"
+          ],
+          "newTopic": false,
+          "activeColor": "#03a9f4"
+        }
+      },
+      "topic": {
+        "map": {
+          "show": "auto",
+          "style": "strip",
+          "minReplies": 3
+        },
+        "align": "start",
+        "share": {
+          "mode": "none"
+        },
+        "header": {
+          "meta": [],
+          "tags": "chips",
+          "category": "chip",
+          "kindChip": false,
+          "statusGlyph": true
+        },
+        "actions": [],
+        "measure": 690,
+        "related": true,
+        "timeline": {
+          "phone": "pill",
+          "placement": "beside-column",
+          "minReplies": 3
+        },
+        "breadcrumb": "none",
+        "answerPlacement": "excerpt"
+      },
+      "chrome": {
+        "searchPage": {
+          "head": "count",
+          "avatar": "start",
+          "filters": "disclosure"
+        }
+      },
+      "sidebar": {
+        "tags": [
+          "automation",
+          "templates",
+          "mqtt",
+          "zigbee",
+          "energy"
+        ],
+        "icons": true,
+        "width": 250,
+        "custom": [
+          {
+            "href": "/f/your-org/your-forum",
+            "icon": "layers",
+            "label": "Topics"
+          },
+          {
+            "href": "/f/your-org/your-forum/about",
+            "icon": "message",
+            "label": "Chat"
+          },
+          {
+            "href": "/f/your-org/your-forum/about",
+            "icon": "more-vertical",
+            "label": "More"
+          }
+        ],
+        "enabled": true,
+        "allLinks": true,
+        "sections": [
+          "custom",
+          "categories",
+          "tags"
+        ],
+        "categories": [
+          "blog",
+          "configuration",
+          "blueprints-exchange",
+          "installation",
+          "share-your-projects"
+        ],
+        "fullHeight": true,
+        "tagsLayout": "list",
+        "activeColor": "ink",
+        "collapsible": true,
+        "customTitle": "",
+        "sectionFold": true
+      },
+      "tagStyle": "chip",
+      "categories": {
+        "icons": true
+      },
+      "categoryPage": {
+        "stats": false,
+        "title": "{category}",
+        "banner": {
+          "align": "center",
+          "style": "color",
+          "width": "shell"
+        },
+        "breadcrumb": false,
+        "subcategories": "table"
+      },
+      "categoriesPage": {
+        "title": false,
+        "beside": "latest",
+        "fields": [
+          "description",
+          "counts",
+          "perWeek",
+          "subcategories"
+        ],
+        "layout": "table",
+        "filters": true,
+        "besideRow": {
+          "meta": [
+            "category",
+            "tags",
+            "replies",
+            "age"
+          ],
+          "avatarSize": 40,
+          "titleLines": 2
+        }
+      }
+    },
+    "chrome": {
+      "ctas": [
+        {
+          "ink": "#03a9f4",
+          "href": "/f/your-org/your-forum/about",
+          "label": "Sign Up",
+          "style": "outline",
+          "action": "signUp",
+          "height": 30,
+          "fontSize": 13,
+          "background": "#ffffff"
+        },
+        {
+          "ink": "#03a9f4",
+          "href": "/f/your-org/your-forum/about",
+          "label": "Log In",
+          "style": "solid",
+          "action": "signIn",
+          "height": 30,
+          "fontSize": 13,
+          "background": "#ffffff",
+          "showOnPhone": true
+        }
+      ],
+      "align": "split",
+      "header": {
+        "border": "none",
+        "height": 50,
+        "shadow": "sm",
+        "navSize": 14,
+        "navWeight": 400,
+        "logoHeight": 26
+      },
+      "search": "icon",
+      "sticky": true,
+      "mobileNav": "menu",
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "sidebarToggle": {
+        "desktop": "collapse",
+        "placement": "start",
+        "placementPhone": "end"
+      }
+    },
+    "layout": {
+      "widths": {
+        "max": "1400px",
+        "list": "1100px",
+        "text": "760px"
+      }
+    },
+    "palette": {
+      "ink": "#222222",
+      "line": "#e9e9e9",
+      "love": "#18BCF2",
+      "muted": "#646464",
+      "danger": "#e45735",
+      "heading": "#222222",
+      "primary": "#222222",
+      "success": "#009900",
+      "surface": "#ffffff",
+      "tertiary": "#03a9f4",
+      "highlight": "#ffff4d",
+      "secondary": "#F9F9F9",
+      "background": "#f9f9f9",
+      "quaternary": "#e45735",
+      "header_primary": "#F9F9F9",
+      "header_background": "#03a9f4"
+    },
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": 28,
+          "weight": 700,
+          "tracking": 0
+        },
+        "h2": {
+          "size": 18,
+          "weight": 600
+        },
+        "h3": {
+          "size": 16,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.5
+        }
+      },
+      "baseSize": 15
+    },
+    "accentColor": "#3AB54A",
+    "paletteDark": {
+      "ink": "#e6e6e6",
+      "line": "#3a3a3a",
+      "muted": "#a8a8a8",
+      "heading": "#f9f9f9",
+      "primary": "#F9F9F9",
+      "surface": "#2b2b2b",
+      "secondary": "#222222",
+      "background": "#222222",
+      "header_primary": "#F9F9F9",
+      "header_background": "#03a9f4"
+    },
+    "primaryColor": "#03a9f4",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap",
+    "monoFontFamily": "JetBrains Mono",
+    "customFontFamily": "Arimo"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "FORUM",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "filters"
+            }
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "lg",
+              "stackOn": "md"
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 50
+                },
+                "content": [
+                  {
+                    "type": "spaceCategories",
+                    "attrs": {
+                      "fields": [
+                        "color",
+                        "description",
+                        "perWeek",
+                        "children"
+                      ],
+                      "layout": "rows",
+                      "heading": "Category",
+                      "moreLink": false,
+                      "topTopics": {
+                        "lg": 0,
+                        "md": 0,
+                        "sm": 3
+                      },
+                      "topTopicsRow": {
+                        "ink": "ink",
+                        "meta": [
+                          "age",
+                          "replies"
+                        ],
+                        "size": 17
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 50
+                },
+                "content": [
+                  {
+                    "type": "spaceFeed",
+                    "attrs": {
+                      "card": {
+                        "image": {
+                          "size": "45px",
+                          "aspect": "1:1",
+                          "radius": "999px",
+                          "source": "authorAvatar",
+                          "position": "start"
+                        },
+                        "slots": [
+                          "cover",
+                          "title",
+                          "kicker",
+                          "tags"
+                        ],
+                        "stats": {
+                          "heat": true,
+                          "icons": false,
+                          "fields": [
+                            "replies",
+                            "activity"
+                          ],
+                          "position": "end"
+                        },
+                        "kicker": "category",
+                        "divider": "below",
+                        "slotGap": 4,
+                        "metaLine": [
+                          "kicker",
+                          "tags"
+                        ],
+                        "tagStyle": "chip",
+                        "statIcons": false,
+                        "titleSize": 17,
+                        "kickerStyle": {
+                          "case": "none",
+                          "font": "body",
+                          "size": 13,
+                          "swatch": true,
+                          "weight": 400,
+                          "tracking": 0
+                        },
+                        "titleWeight": 400
+                      },
+                      "sort": "latest",
+                      "limit": 20,
+                      "fields": [
+                        "avatar",
+                        "title",
+                        "category",
+                        "tags",
+                        "replies",
+                        "activity"
+                      ],
+                      "layout": "rows",
+                      "heading": {
+                        "size": 14,
+                        "text": "Latest",
+                        "color": "muted",
+                        "weight": 400
+                      },
+                      "paginate": "more",
+                      "moreButton": {
+                        "label": "More",
+                        "style": "outline"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "width": 1400,
+      "gap": "sm",
+      "hideTitle": true,
+      "paddingTop": 16
+    }
+  ]
+}

@@ -1,0 +1,1209 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Driftline Community",
+    "slug": "template-driftline",
+    "description": "A community front page with a featured video, changelog and guides tabs, latest videos and upcoming events.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "forum",
+      "community",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "FORUM"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "forum": {
+      "list": {
+        "avatars": "op",
+        "density": "cozy",
+        "excerpt": "all",
+        "kindChip": false,
+        "avatarSize": 40,
+        "titleLines": 2,
+        "excerptLines": 2
+      },
+      "look": "clean",
+      "post": {
+        "date": "relative",
+        "menu": [
+          "like",
+          "link",
+          "reply"
+        ],
+        "name": "name",
+        "style": "flat",
+        "avatar": {
+          "size": 24,
+          "shape": "circle",
+          "position": "inline",
+          "positionSm": "inline"
+        },
+        "opChip": false,
+        "actions": {
+          "align": "end",
+          "style": "icons"
+        },
+        "bodySize": 15,
+        "reactions": "like",
+        "gapMarkers": false,
+        "menuHidden": [
+          "bookmark",
+          "quote",
+          "flag"
+        ],
+        "staffAccent": "none",
+        "headingScale": "body",
+        "reactionsRow": "inline",
+        "acceptedStyle": "none",
+        "reactionPicker": "auto"
+      },
+      "dates": {
+        "style": "relative"
+      },
+      "front": {
+        "filters": {
+          "items": [
+            "latest",
+            "top"
+          ],
+          "links": [],
+          "style": "segmented",
+          "labels": {
+            "top": "Recent",
+            "latest": "Active"
+          },
+          "newTopic": false
+        }
+      },
+      "topic": {
+        "map": {
+          "show": "never"
+        },
+        "share": {
+          "mode": "icon",
+          "align": "end",
+          "frame": "box"
+        },
+        "header": {
+          "meta": [
+            "asked",
+            "solved"
+          ],
+          "tags": "chips",
+          "category": "none",
+          "kindChip": false,
+          "statusGlyph": false
+        },
+        "actions": [
+          "share"
+        ],
+        "measure": 1000,
+        "related": false,
+        "composer": {
+          "signedOut": "none"
+        },
+        "replyBar": {
+          "signedOut": "none"
+        },
+        "timeline": {
+          "phone": "none",
+          "placement": "none"
+        },
+        "suggested": false,
+        "breadcrumb": "trail",
+        "answerColor": "success",
+        "breadcrumbRoot": "Community",
+        "answerPlacement": "inline",
+        "actionsPlacement": "meta"
+      },
+      "sidebar": {
+        "icons": true,
+        "phone": "drawer",
+        "width": 220,
+        "custom": [
+          {
+            "href": "/f/your-org/your-forum",
+            "icon": "board",
+            "label": "Community"
+          }
+        ],
+        "enabled": true,
+        "headings": false,
+        "sections": [
+          "custom",
+          "categories"
+        ],
+        "activeColor": "ink",
+        "activeStyle": "ink",
+        "customTitle": ""
+      },
+      "pageHead": {
+        "placement": "above-sidebar"
+      },
+      "tagStyle": "plain",
+      "categoryPage": {
+        "list": "frontPage",
+        "title": "{category}",
+        "banner": "none",
+        "filters": {
+          "placement": "title-end"
+        },
+        "breadcrumb": false
+      }
+    },
+    "chrome": {
+      "ctas": [
+        {
+          "ink": "#171717",
+          "href": "/f/your-org/your-forum?signin=1",
+          "icon": "/api/assets/00000000-0000-4000-8000-000000000001",
+          "label": "Sign In",
+          "phone": "bar",
+          "action": "signIn",
+          "border": "#EBEBEB",
+          "background": "#FFFFFF"
+        }
+      ],
+      "header": {
+        "border": "none",
+        "height": 56,
+        "brandSize": 26,
+        "logoHeight": 26
+      },
+      "search": "pill",
+      "ctaStyle": "outline",
+      "showSignIn": false,
+      "searchStyle": {
+        "kbd": "mod-k",
+        "size": "md",
+        "label": "Search community",
+        "width": 448,
+        "labelPhone": ""
+      },
+      "signInStyle": {
+        "icon": "/api/assets/00000000-0000-4000-8000-000000000001",
+        "look": "outline",
+        "label": "Sign In"
+      },
+      "themeToggle": {
+        "show": false
+      },
+      "sidebarToggle": {
+        "placement": "end"
+      },
+      "searchPlacement": "center"
+    },
+    "layout": {
+      "widths": {
+        "max": "1336px",
+        "list": "1084px",
+        "text": "1084px"
+      },
+      "indexHeader": "show"
+    },
+    "palette": {
+      "ink": "#171717",
+      "line": "#EBEBEB",
+      "muted": "#666666",
+      "heading": "#171717",
+      "surface": "#FFFFFF",
+      "background": "#FFFFFF",
+      "header_primary": "#171717",
+      "header_background": "#FFFFFF"
+    },
+    "components": {
+      "code": {
+        "ink": "#171717",
+        "border": "#EBEBEB",
+        "radius": 6,
+        "background": "#FAFAFA"
+      },
+      "list": {
+        "marker": "none",
+        "itemGap": 10
+      },
+      "button": {
+        "radius": 6,
+        "weight": "medium"
+      },
+      "radius": 6,
+      "syntaxTheme": "github"
+    },
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 26
+          },
+          "weight": 600,
+          "tracking": -0.06,
+          "lineHeight": 1.17
+        },
+        "h3": {
+          "size": 18,
+          "weight": 500,
+          "tracking": -0.01
+        },
+        "body": {
+          "lineHeight": 1.5
+        },
+        "topicTitle": {
+          "size": 24,
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.3
+        }
+      }
+    },
+    "accentColor": "#0070F3",
+    "colorScheme": "light",
+    "primaryColor": "#171717",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "customFontFamily": "Geist"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "FORUM",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "link": {
+                "href": "/f/your-org/your-forum/driftline-weekly-october-5-2026",
+                "label": "Read the full recap",
+                "placement": "below"
+              },
+              "level": 1,
+              "placement": "page-head",
+              "spaceAfter": 12
+            },
+            "content": [
+              {
+                "text": "Driftline Weekly — October 5, 2026",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "lg"
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 66
+                },
+                "content": [
+                  {
+                    "type": "image",
+                    "attrs": {
+                      "alt": "Driftline Weekly, episode for October 5",
+                      "src": "/api/assets/00000000-0000-4000-8000-000000000002"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 34
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 15
+                    },
+                    "content": [
+                      {
+                        "text": "All",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "   Changelog   Guides",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "Oct 9  ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Changelog",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 500
+                    },
+                    "content": [
+                      {
+                        "text": "Agents can now buy domains with the Driftline CLI",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "Oct 9  ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Changelog",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 500
+                    },
+                    "content": [
+                      {
+                        "text": "New Pro teams now default to 30-day deployment retention",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "Oct 9  ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Changelog",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 500
+                    },
+                    "content": [
+                      {
+                        "text": "Blob storage billing begins for existing Pro teams",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "columns",
+            "attrs": {},
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 80
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Latest videos",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 20
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14,
+                      "textAlign": "end"
+                    },
+                    "content": [
+                      {
+                        "text": "See all →",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/f/your-org/your-forum"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "columns",
+            "attrs": {},
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 25
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "◆ 25 Sept  Driftline Weekly",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 600
+                    },
+                    "content": [
+                      {
+                        "text": "Sep 18 – 25, 2026",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 25
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "◆ 21 Sept  Driftline Weekly",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 600
+                    },
+                    "content": [
+                      {
+                        "text": "Sep 11 – 18, 2026",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 25
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "◆ 31 Aug  Driftline Weekly",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 600
+                    },
+                    "content": [
+                      {
+                        "text": "Aug 21 – 28, 2026",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 25
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "◆ 24 Aug  Driftline Weekly",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 600
+                    },
+                    "content": [
+                      {
+                        "text": "Aug 14 – 21, 2026",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "columns",
+            "attrs": {},
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 80
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Upcoming events",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 20
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14,
+                      "textAlign": "end"
+                    },
+                    "content": [
+                      {
+                        "text": "View calendar →",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/f/your-org/your-forum/c/events"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "columns",
+            "attrs": {},
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 33
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "6 Nov  Lisbon",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 600
+                    },
+                    "content": [
+                      {
+                        "text": "Ship Day: Lisbon",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 33
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "13 Nov",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 600
+                    },
+                    "content": [
+                      {
+                        "text": "Agent workshop: building agents with Loom",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 33
+                },
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 14
+                    },
+                    "content": [
+                      {
+                        "text": "20 Nov",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textColor",
+                            "attrs": {
+                              "color": "#666666"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": 18,
+                      "weight": 600
+                    },
+                    "content": [
+                      {
+                        "text": "Building a storefront that thinks",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "lg"
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 66
+                },
+                "content": [
+                  {
+                    "type": "spaceFeed",
+                    "attrs": {
+                      "gap": 28,
+                      "card": {
+                        "gap": "16px",
+                        "meta": {
+                          "size": "13px",
+                          "color": "#666666"
+                        },
+                        "image": {
+                          "size": "40px",
+                          "radius": "999px",
+                          "source": "authorAvatar",
+                          "position": "start"
+                        },
+                        "slots": [
+                          "cover",
+                          "byline",
+                          "date",
+                          "title"
+                        ],
+                        "slotGap": 2,
+                        "titleSize": "16px",
+                        "dateFormat": "relative",
+                        "metaLayout": "split",
+                        "excerptSize": "14px",
+                        "titleWeight": 500,
+                        "excerptLines": 2,
+                        "replyPreviews": {
+                          "avatar": true
+                        }
+                      },
+                      "limit": 5,
+                      "filter": {
+                        "category": "68825804-5c7c-4422-9115-41b4fe8b3074"
+                      },
+                      "layout": "feed",
+                      "heading": {
+                        "size": "20px",
+                        "text": "From the community",
+                        "weight": 500
+                      },
+                      "moreLink": {
+                        "href": "/f/your-org/your-forum/c/showcase",
+                        "label": "Visit #showcase"
+                      },
+                      "spaceAfter": 48
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 34
+                },
+                "content": [
+                  {
+                    "type": "spaceLeaderboard",
+                    "attrs": {
+                      "rank": "end",
+                      "limit": 3,
+                      "fields": [
+                        "avatar",
+                        "handle",
+                        "name"
+                      ],
+                      "period": "week",
+                      "heading": "Weekly leaderboard",
+                      "moreLink": false,
+                      "rankSize": 20,
+                      "handleStyle": "over-name"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "gap": 28,
+              "card": {
+                "gap": "16px",
+                "meta": {
+                  "size": "13px",
+                  "color": "#666666"
+                },
+                "image": {
+                  "size": "40px",
+                  "radius": "999px",
+                  "source": "authorAvatar",
+                  "position": "start"
+                },
+                "slots": [
+                  "cover",
+                  "byline",
+                  "activity",
+                  "title",
+                  "standfirst",
+                  "replyPreviews"
+                ],
+                "slotGap": 2,
+                "titleSize": "16px",
+                "dateFormat": "relative",
+                "metaLayout": "split",
+                "excerptSize": "14px",
+                "titleWeight": 500,
+                "excerptLines": 2,
+                "replyPreviews": {
+                  "avatar": true
+                }
+              },
+              "limit": 3,
+              "filter": {
+                "category": "bfe37c29-e857-4ead-a890-f5982ba85ed9"
+              },
+              "layout": "feed",
+              "showOn": "front",
+              "heading": {
+                "size": "20px",
+                "text": "Announcements",
+                "weight": 500
+              },
+              "spaceAfter": 48
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "gap": 28,
+              "card": {
+                "gap": "16px",
+                "meta": {
+                  "size": "13px",
+                  "color": "#666666"
+                },
+                "image": {
+                  "size": "40px",
+                  "radius": "999px",
+                  "source": "authorAvatar",
+                  "position": "start"
+                },
+                "slots": [
+                  "cover",
+                  "byline",
+                  "activity",
+                  "title",
+                  "standfirst",
+                  "replyPreviews"
+                ],
+                "slotGap": 2,
+                "titleSize": "16px",
+                "dateFormat": "relative",
+                "metaLayout": "split",
+                "excerptSize": "14px",
+                "titleWeight": 500,
+                "excerptLines": 2,
+                "replyPreviews": {
+                  "avatar": true
+                }
+              },
+              "limit": 2,
+              "filter": {
+                "category": "68825804-5c7c-4422-9115-41b4fe8b3074"
+              },
+              "layout": "feed",
+              "showOn": "front",
+              "heading": {
+                "size": "20px",
+                "text": "Showcase",
+                "weight": 500
+              },
+              "moreLink": {
+                "href": "/f/your-org/your-forum/c/showcase",
+                "label": "See all"
+              },
+              "spaceAfter": 48
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "gap": 28,
+              "card": {
+                "gap": "16px",
+                "meta": {
+                  "size": "13px",
+                  "color": "#666666"
+                },
+                "image": {
+                  "size": "40px",
+                  "radius": "999px",
+                  "source": "authorAvatar",
+                  "position": "start"
+                },
+                "slots": [
+                  "cover",
+                  "byline",
+                  "activity",
+                  "title",
+                  "standfirst",
+                  "replyPreviews"
+                ],
+                "slotGap": 2,
+                "titleSize": "16px",
+                "dateFormat": "relative",
+                "metaLayout": "split",
+                "excerptSize": "14px",
+                "titleWeight": 500,
+                "excerptLines": 2,
+                "replyPreviews": {
+                  "avatar": true
+                }
+              },
+              "limit": 8,
+              "filter": {
+                "category": "7e07bdf0-cf4c-4cc8-8b17-f995475e62c7"
+              },
+              "layout": "feed",
+              "showOn": "front",
+              "heading": {
+                "size": "20px",
+                "text": "Help",
+                "weight": 500
+              },
+              "moreLink": {
+                "href": "/f/your-org/your-forum/c/help",
+                "label": "See all"
+              },
+              "spaceAfter": 48
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "gap": 28,
+              "card": {
+                "gap": "16px",
+                "meta": {
+                  "size": "13px",
+                  "color": "#666666"
+                },
+                "image": {
+                  "size": "40px",
+                  "radius": "999px",
+                  "source": "authorAvatar",
+                  "position": "start"
+                },
+                "slots": [
+                  "cover",
+                  "byline",
+                  "activity",
+                  "title",
+                  "standfirst",
+                  "replyPreviews"
+                ],
+                "slotGap": 2,
+                "titleSize": "16px",
+                "dateFormat": "relative",
+                "metaLayout": "split",
+                "excerptSize": "14px",
+                "titleWeight": 500,
+                "excerptLines": 2,
+                "replyPreviews": {
+                  "avatar": true
+                }
+              },
+              "limit": 30,
+              "filter": {
+                "category": "$current"
+              },
+              "layout": "feed",
+              "showOn": "category",
+              "spaceAfter": 48
+            }
+          }
+        ]
+      },
+      "gap": "lg",
+      "hideTitle": true,
+      "paddingTop": 24
+    }
+  ]
+}

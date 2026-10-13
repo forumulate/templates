@@ -1,0 +1,42 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "larkhost",
+  "type": "FORUM",
+  "name": "Larkhost Community",
+  "description": "A dark header over a boxed topic table with poster avatars, replies, views and activity.",
+  "modelledOn": "A cloud hosting provider’s community",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "forum",
+    "community",
+    "hosting"
+  ],
+  "thumbnail": "/templates/larkhost.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/lh-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "dense",
+    "frontDoor": {
+      "showVotes": false,
+      "badgeStyle": "square",
+      "showSearch": false,
+      "showIdentity": false,
+      "showCategoryBadge": true,
+      "showCategoryCards": false,
+      "showLeaderboardLink": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": []
+}

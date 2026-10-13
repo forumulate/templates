@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="800" viewBox="0 0 1420 800">
+<defs><radialGradient id="o" cx="72%" cy="45%" r="55%"><stop offset="0" stop-color="#ff7a59"/><stop offset=".45" stop-color="#b03ad6"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="r" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3cc6ff"/><stop offset="1" stop-color="#7b5cff"/></linearGradient></defs>
+<rect width="1420" height="800" fill="#000"/><rect width="1420" height="800" fill="url(#o)"/>
+<circle cx="1040" cy="380" r="210" fill="none" stroke="url(#r)" stroke-width="34" opacity=".9"/>
+<circle cx="1040" cy="380" r="120" fill="#0b0b0b" opacity=".85"/>
+<text x="76" y="250" font-family="Helvetica Neue,Arial" font-size="190" font-weight="500" letter-spacing="-9" fill="#fff">Driftline</text>
+<text x="76" y="430" font-family="Helvetica Neue,Arial" font-size="190" font-weight="500" letter-spacing="-9" fill="#fff">Weekly</text>
+<g font-family="Helvetica Neue,Arial" font-size="36" fill="#fff"><rect x="76" y="480" width="330" height="92" rx="18" fill="#111" stroke="#333" stroke-width="3"/><text x="104" y="538">Edge Functions</text>
+<rect x="422" y="480" width="260" height="92" rx="18" fill="#111" stroke="#333" stroke-width="3"/><text x="452" y="538">Agent Kits</text>
+<rect x="698" y="480" width="200" height="92" rx="18" fill="#111" stroke="#333" stroke-width="3"/><text x="726" y="538">Regions</text></g>
+<g transform="translate(76 640)"><path d="M0 64 L30 0 L44 0 L14 64 Z M28 64 L58 0 L70 0 L40 64 Z" fill="#fff"/></g>
+<circle cx="710" cy="400" r="96" fill="#fff" opacity=".88"/><path d="M684 350 L684 450 L766 400 Z" fill="#000"/>
+</svg>

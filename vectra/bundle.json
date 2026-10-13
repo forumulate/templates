@@ -1,0 +1,858 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Vectra",
+    "slug": "template-vectra",
+    "description": "A near-black product blog with a red accent, glowing footer art, a two-up post grid and a newsletter footer — launch-day energy for an app company.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "product",
+      "app",
+      "glow",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "post": {
+      "cover": {
+        "show": false
+      },
+      "share": {
+        "show": false
+      },
+      "byline": {
+        "names": false,
+        "stack": true,
+        "avatars": true,
+        "avatarSize": 21
+      },
+      "header": {
+        "order": [
+          "title",
+          "dek",
+          "meta"
+        ],
+        "divider": true,
+        "dekWidth": "490px",
+        "dateStyle": "inline",
+        "metaParts": [
+          "byline",
+          "date"
+        ],
+        "dividerGap": "66px",
+        "metaLayout": "split",
+        "tagsPlacement": "hidden",
+        "showStandfirst": true
+      },
+      "bodyGap": "63px",
+      "suggested": {
+        "show": false
+      },
+      "breadcrumb": "none",
+      "paddingTop": "84px"
+    },
+    "chrome": {
+      "cta": {
+        "href": "/b/your-org/your-blog",
+        "label": "Download"
+      },
+      "align": "split",
+      "footer": {
+        "art": {
+          "fit": "cover",
+          "clip": "rule",
+          "fade": "bottom",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000001",
+          "height": 200,
+          "offsetY": -60,
+          "position": "center",
+          "glowAlign": 51,
+          "glowBelow": 200,
+          "glowWidth": "39%",
+          "placement": "edge"
+        },
+        "columns": "auto",
+        "linkGap": 17,
+        "linkInk": "#9c9c9d",
+        "padding": {
+          "top": 106,
+          "bottom": 78
+        },
+        "linkSize": 14,
+        "headingGap": 54,
+        "headingInk": "#ffffff",
+        "linkWeight": 500,
+        "newsletter": {
+          "rule": true,
+          "button": {
+            "ink": "#07080a",
+            "inkDark": "#07080a",
+            "background": "#e6e6e6",
+            "backgroundDark": "#e6e6e6"
+          },
+          "formId": "00000000-0000-4000-9000-000000000001",
+          "layout": "split",
+          "consent": {
+            "text": "By submitting your email address, you agree to receive Your Brand's monthly newsletter. For more information, please read our privacy policy. You can always withdraw your consent."
+          },
+          "heading": "Subscribe to our newsletter.",
+          "padding": {
+            "top": 80,
+            "bottom": 24
+          },
+          "hideLabel": true,
+          "placement": "below",
+          "splitRatio": 0.57,
+          "subheading": "Get product updates and news in your inbox. No spam.",
+          "headingWidth": 228,
+          "consentPlacement": "form"
+        },
+        "headingSize": 14,
+        "linkInkDark": "#9c9c9d",
+        "contentWidth": "1016px",
+        "headingStyle": "plain",
+        "headingWeight": 500,
+        "brandPlacement": "none",
+        "headingInkDark": "#ffffff"
+      },
+      "header": {
+        "blur": 20,
+        "border": "line",
+        "height": {
+          "lg": 76,
+          "sm": 56
+        },
+        "navGap": 32,
+        "navInk": "#9c9c9d",
+        "navSize": 14,
+        "opacity": 0.75,
+        "floating": {
+          "inset": 16,
+          "phone": "full",
+          "radius": 16,
+          "maxWidth": "1204px"
+        },
+        "navWeight": 500,
+        "background": {
+          "gradient": {
+            "type": "linear",
+            "angle": 180,
+            "stops": [
+              {
+                "color": "#151619"
+              },
+              {
+                "color": "#0d0e10"
+              }
+            ]
+          },
+          "gradientDark": {
+            "type": "linear",
+            "angle": 180,
+            "stops": [
+              {
+                "color": "#151619"
+              },
+              {
+                "color": "#0d0e10"
+              }
+            ]
+          }
+        },
+        "linksAlign": "center",
+        "logoHeight": 22,
+        "navInkDark": "#9c9c9d",
+        "borderColor": "#1f2023"
+      },
+      "sticky": true,
+      "ctaStyle": "solid",
+      "copyright": "© 2026 Your Brand.",
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Store"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Pro"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "AI"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Mobile"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Windows"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Teams"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Enterprise"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Blog"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Pricing"
+        }
+      ],
+      "themeToggle": {
+        "show": false
+      },
+      "secondaryCta": {
+        "ink": "#9c9c9d",
+        "href": "/b/your-org/your-blog",
+        "label": "Log in",
+        "style": "link",
+        "underline": false
+      },
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Store"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Pro"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Teams"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Pricing"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Changelog"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Browser Extension"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Developers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Mobile"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Windows"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand 2.0"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "API Docs ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Manual ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Troubleshooting"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand vs Others"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "FAQ"
+            }
+          ],
+          "heading": "Product"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand AI"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Notes"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Focus"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Clipboard History"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Window Management"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Snippets"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "File Search"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Quicklinks"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Calculator"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Calendar"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "System"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Emoji Picker"
+            }
+          ],
+          "heading": "Core Features"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Design Tools"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Developer Tools"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Pomodoro Timer"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Productivity"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Project Management"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Time Management"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Transcript"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Translation"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Work From Home"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "AI"
+            }
+          ],
+          "heading": "Top Extensions"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Manifesto"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Customers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Careers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Terms of Service"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Privacy Policy"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Acceptable Use Policy"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "DPA"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Trust Center ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Press Kit"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Contact"
+            }
+          ],
+          "heading": "Company"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Community Stories"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Ambassadors"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Forum"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Social ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "GitHub ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Dribbble ↗"
+            }
+          ],
+          "heading": "Community"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Keyboard"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Sketchpad ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Explore Snippets ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Explore Quicklinks ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Prompts ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Chat Presets ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Code Images ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Icon Maker ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Merch ↗"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Wallpapers"
+            }
+          ],
+          "heading": "By Your Brand"
+        }
+      ]
+    },
+    "layout": {
+      "gutter": {
+        "sm": 24
+      },
+      "widths": {
+        "max": "75rem",
+        "list": "1048px",
+        "text": "762px",
+        "board": "62.5rem",
+        "media": "75rem"
+      }
+    },
+    "motion": {
+      "hover": {
+        "card": "border",
+        "button": "glow"
+      },
+      "preset": "subtle",
+      "reveal": {
+        "effect": "fade-up",
+        "targets": [
+          "cards",
+          "images",
+          "headings"
+        ],
+        "distance": 12
+      }
+    },
+    "palette": {
+      "ink": "#d9d9da",
+      "line": "#1c1d20",
+      "muted": "#9c9c9d",
+      "heading": "#ffffff",
+      "surface": "#101113",
+      "background": "#07080a",
+      "header_primary": "#ffffff",
+      "header_background": "#0c0d0f"
+    },
+    "components": {
+      "code": {
+        "ink": "#e6e6e6",
+        "border": "#1f2023",
+        "radius": 12,
+        "background": "#101113"
+      },
+      "link": {
+        "color": "#ff6363",
+        "colorDark": "#ff6363",
+        "underline": "none"
+      },
+      "list": {
+        "marker": "emdash"
+      },
+      "meta": {
+        "case": "upper",
+        "font": "mono",
+        "size": 12,
+        "scope": "date",
+        "tracking": 0.01
+      },
+      "image": {
+        "margin": "64px",
+        "radius": 6
+      },
+      "input": {
+        "ink": "#ffffff",
+        "border": "#26272b",
+        "radius": 8,
+        "background": "#101113"
+      },
+      "button": {
+        "ink": "#07080a",
+        "radius": 8,
+        "weight": "medium",
+        "background": "#e6e6e6"
+      },
+      "radius": 12,
+      "shadow": "none",
+      "syntax": {
+        "attr": "#f5a524",
+        "meta": "#9c9c9d",
+        "title": "#7cb7ff",
+        "number": "#f5a524",
+        "string": "#5fd7a6",
+        "comment": "#6b6d73",
+        "keyword": "#ff6363",
+        "built_in": "#c792ea"
+      },
+      "caption": {
+        "align": "center"
+      },
+      "codeDark": {
+        "border": "#1f2023",
+        "background": "#101113"
+      },
+      "scrollbar": {
+        "thumb": "#2a2b2f",
+        "track": "#07080a",
+        "width": "thin"
+      },
+      "selection": {
+        "ink": "#07080a",
+        "background": "#ff6363"
+      },
+      "syntaxTheme": "one-dark"
+    },
+    "typography": {
+      "fluid": {
+        "enabled": true,
+        "minScale": 0.68,
+        "maxViewport": 1280,
+        "minViewport": 375
+      },
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 32
+          },
+          "weight": 600,
+          "tracking": 0.004,
+          "lineHeight": 1.3
+        },
+        "h2": {
+          "size": {
+            "lg": 24,
+            "sm": 24
+          },
+          "weight": 600,
+          "tracking": 0,
+          "lineHeight": 1.15
+        },
+        "h3": {
+          "size": 18,
+          "weight": 600,
+          "lineHeight": 1.15
+        },
+        "body": {
+          "tracking": 0.02,
+          "lineHeight": 1.6
+        },
+        "code": {
+          "size": 13
+        },
+        "lede": {
+          "size": {
+            "lg": 18,
+            "sm": 16
+          },
+          "color": "#9c9c9d",
+          "colorDark": "#9c9c9d",
+          "lineHeight": 1.6
+        },
+        "indexTitle": {
+          "size": {
+            "lg": 48,
+            "sm": 48
+          }
+        }
+      },
+      "baseSize": 16,
+      "features": {
+        "body": "\"tnum\" 0",
+        "heading": "\"tnum\" 0"
+      },
+      "headingWrap": "balance"
+    },
+    "accentColor": "#ff6363",
+    "colorScheme": "dark",
+    "paletteDark": {
+      "ink": "#d9d9da",
+      "line": "#1c1d20",
+      "muted": "#9c9c9d",
+      "heading": "#ffffff",
+      "surface": "#101113",
+      "background": "#07080a",
+      "header_primary": "#ffffff",
+      "header_background": "#0c0d0f"
+    },
+    "primaryColor": "#ff6363",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Geist+Mono:wght@400;500&display=swap",
+    "monoFontFamily": "Geist Mono",
+    "customFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "title",
+              "showRss": false,
+              "showArchive": false
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "align": "meta-end",
+                "image": {
+                  "span": "2/3",
+                  "aspect": "16:9",
+                  "position": "start"
+                },
+                "slots": [
+                  "cover",
+                  "title",
+                  "standfirst",
+                  "byline",
+                  "date"
+                ],
+                "byline": {
+                  "names": false,
+                  "avatars": true,
+                  "avatarSize": 21
+                },
+                "surface": {
+                  "hover": "none",
+                  "border": "#1c1d20",
+                  "radius": 10,
+                  "padding": "24px",
+                  "background": "#111214",
+                  "backgroundDark": "#111214"
+                },
+                "dateStyle": "mono-caps",
+                "titleSize": {
+                  "lg": "20px",
+                  "sm": "20px"
+                },
+                "dateFormat": "long",
+                "metaLayout": "split",
+                "excerptSize": "14px",
+                "titleWeight": 500,
+                "excerptLines": 3,
+                "titleTracking": 0.024,
+                "titleLineHeight": 1.4
+              },
+              "hook": "hero",
+              "limit": 1,
+              "filter": {
+                "pinned": true
+              },
+              "layout": "split",
+              "spaceAfter": {
+                "lg": "40px",
+                "sm": "36px"
+              }
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "rss": "icon",
+              "band": "tags",
+              "size": "15px",
+              "tags": [
+                "news",
+                "company",
+                "craft",
+                "resources"
+              ],
+              "style": "pills",
+              "height": "30px",
+              "radius": "8px",
+              "weight": 500,
+              "padding": "4px 8px",
+              "allLabel": "All Posts",
+              "inactive": "text",
+              "overflow": "scroll",
+              "activeFill": "#1b1c1e",
+              "activeColor": "#1b1c1e",
+              "inactiveColor": "#9c9c9d",
+              "inactiveWeight": 500,
+              "activeTextColor": "#ffffff",
+              "inactivePadding": "pill"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "gap": "24px",
+              "card": {
+                "align": "meta-end",
+                "slots": [
+                  "title",
+                  "standfirst",
+                  "byline",
+                  "date"
+                ],
+                "byline": {
+                  "names": false,
+                  "avatars": true,
+                  "avatarSize": 21
+                },
+                "surface": {
+                  "hover": "border",
+                  "border": "#1c1d20",
+                  "radius": 10,
+                  "padding": "24px",
+                  "background": "#111214",
+                  "backgroundDark": "#111214"
+                },
+                "dateStyle": "mono-caps",
+                "titleSize": {
+                  "lg": "20px",
+                  "sm": "20px"
+                },
+                "dateFormat": "long",
+                "metaLayout": "split",
+                "excerptSize": "14px",
+                "titleWeight": 500,
+                "excerptLines": 2,
+                "titleTracking": 0.024,
+                "titleLineHeight": 1.4
+              },
+              "hook": "posts",
+              "limit": 30,
+              "dedupe": true,
+              "layout": "grid",
+              "rowGap": "24px",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              }
+            }
+          }
+        ]
+      },
+      "width": "list",
+      "gap": "md"
+    }
+  ]
+}

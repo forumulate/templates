@@ -1,0 +1,1395 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Halcyon",
+    "slug": "template-halcyon",
+    "description": "A polished newsroom: a thin top bar, large feature tiles with standfirsts, “In the loop” stories and a share-and-download press kit on every article.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "newsroom",
+      "press",
+      "minimal",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "post": {
+      "cover": {
+        "show": false
+      },
+      "share": {
+        "show": true,
+        "size": 20,
+        "frame": "none",
+        "label": false,
+        "marks": true,
+        "style": "icons",
+        "labelEnd": "Share article",
+        "networks": [
+          "facebook",
+          "x",
+          "email",
+          "link"
+        ],
+        "position": "both",
+        "labelStyle": "heading"
+      },
+      "header": {
+        "order": [
+          "kicker",
+          "date",
+          "title",
+          "dek",
+          "share"
+        ],
+        "kicker": "firstTag",
+        "spacing": {
+          "afterDek": {
+            "lg": "56px",
+            "sm": "32px"
+          },
+          "afterDate": "20px",
+          "afterKicker": "4px"
+        },
+        "dateCase": "none",
+        "dateType": {
+          "size": 14,
+          "weight": 600,
+          "tracking": -0.016
+        },
+        "dateStyle": "eyebrow",
+        "kickerStyle": {
+          "case": "upper",
+          "font": "body",
+          "size": 12,
+          "color": "#6e6e73",
+          "weight": 700,
+          "tracking": -0.01
+        },
+        "tagsPlacement": "hidden",
+        "showStandfirst": true
+      },
+      "bodyGap": {
+        "lg": "64px",
+        "sm": "40px"
+      },
+      "suggested": {
+        "show": false,
+        "count": 4,
+        "style": "thumbs",
+        "title": "More from Newsroom",
+        "source": "latest"
+      },
+      "breadcrumb": "none",
+      "pageActions": {
+        "look": "card",
+        "pill": {
+          "icon": true,
+          "size": 14,
+          "color": "#1d1d1f",
+          "height": 36,
+          "weight": 600,
+          "background": "#ffffff"
+        },
+        "stack": {
+          "md": true,
+          "sm": true
+        },
+        "style": "panel",
+        "labels": {
+          "copy": "Copy text",
+          "download": "Download all media"
+        },
+        "radius": 18,
+        "padding": {
+          "lg": 36,
+          "sm": 24
+        },
+        "iconSize": 22,
+        "labelSize": {
+          "lg": 19,
+          "sm": 17
+        },
+        "placement": "body-end",
+        "background": "#f5f5f7",
+        "rowPadding": {
+          "lg": 36,
+          "sm": 20
+        }
+      },
+      "footnotesPosition": "post-end"
+    },
+    "chrome": {
+      "align": "split",
+      "footer": {
+        "html": "<p>More ways to shop: <a href=\"/b/your-org/your-blog\">Find a Your Brand Store</a> or <a href=\"/b/your-org/your-blog\">other retailer</a> near you.</p>",
+        "phone": "accordion",
+        "columns": 5,
+        "htmlSize": 12,
+        "linkSize": 12,
+        "bottomSize": 12,
+        "breadcrumb": true,
+        "headingSize": 12,
+        "htmlLinkInk": "#0066cc",
+        "headingStyle": "plain",
+        "htmlPlacement": "below",
+        "linkSeparator": "pipe",
+        "brandPlacement": "none",
+        "htmlLinkInkDark": "#2997ff",
+        "htmlLinkUnderline": true
+      },
+      "header": {
+        "blur": 20,
+        "border": "line",
+        "height": 52,
+        "navGap": 32,
+        "navInk": "#1d1d1f",
+        "navSize": 12,
+        "opacity": 0.92,
+        "brandSize": 21,
+        "navWeight": 400,
+        "logoHeight": 22,
+        "borderColor": "#d2d2d7"
+      },
+      "height": "compact",
+      "search": "pill",
+      "sticky": true,
+      "topBar": {
+        "ink": "#e8e8ed",
+        "align": "between",
+        "links": [
+          {
+            "href": "/b/your-org/your-blog",
+            "icon": "/api/assets/00000000-0000-4000-8000-000000000001",
+            "label": "Your Brand",
+            "iconOnly": true
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Store",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Arc",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Your Brand One",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Pulse",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Vista",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Sound",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Home",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Play",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Cloud",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Accessories",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "label": "Support",
+            "hideOn": [
+              "phone"
+            ]
+          },
+          {
+            "href": "/b/your-org/your-blog/search",
+            "icon": "search",
+            "label": "Search",
+            "iconOnly": true
+          },
+          {
+            "href": "/b/your-org/your-blog",
+            "icon": "/api/assets/00000000-0000-4000-8000-000000000002",
+            "label": "Bag",
+            "iconOnly": true
+          }
+        ],
+        "phone": "icons",
+        "height": 44,
+        "background": "#2a2a2c"
+      },
+      "ctaStyle": "pill",
+      "copyright": "Copyright © 2026 Your Brand. All rights reserved.",
+      "showSignIn": false,
+      "footerLinks": [
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Privacy Policy"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Terms of Use"
+        },
+        {
+          "href": "/b/your-org/your-blog",
+          "label": "Site Map"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "/b/your-org/your-blog/tag/update",
+          "label": "Your Brand Services"
+        },
+        {
+          "href": "/b/your-org/your-blog/tag/story",
+          "label": "Your Brand Stories"
+        }
+      ],
+      "searchStyle": {
+        "ink": "#1d1d1f",
+        "size": "sm",
+        "label": "Search Newsroom",
+        "background": "#e8e8ed",
+        "labelPhone": "Search"
+      },
+      "themeToggle": {
+        "show": false
+      },
+      "footerColumns": [
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Store"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Arc"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Arc Studio"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand One"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Pulse"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Vista"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Sound"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Home"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Accessories"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Gift Cards"
+            }
+          ],
+          "heading": "Shop and Learn"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Wallet"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Card"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Pay"
+            }
+          ],
+          "stack": true,
+          "heading": "Your Brand Wallet"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Manage Your Account"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Store Account"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Cloud"
+            }
+          ],
+          "heading": "Account"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand One"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Sound"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Play"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Books"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Podcasts"
+            }
+          ],
+          "stack": true,
+          "heading": "Entertainment"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Find a Store"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Sessions at Your Brand"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand Camp"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Certified Refurbished"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Trade In"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Financing"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Order Status"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Shopping Help"
+            }
+          ],
+          "heading": "Your Brand Store"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand and Business"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Shop for Business"
+            }
+          ],
+          "heading": "For Business"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand and Education"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Shop for College"
+            }
+          ],
+          "stack": true,
+          "heading": "For Education"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Your Brand and Government"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Shop for Public Service"
+            }
+          ],
+          "stack": true,
+          "heading": "For Government"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Accessibility"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Education"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Environment"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Privacy"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Supply Chain"
+            }
+          ],
+          "heading": "Your Brand Values"
+        },
+        {
+          "links": [
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Newsroom"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Leadership"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Careers"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Investors"
+            },
+            {
+              "href": "/b/your-org/your-blog",
+              "label": "Contact"
+            }
+          ],
+          "stack": true,
+          "heading": "About Your Brand"
+        }
+      ]
+    },
+    "layout": {
+      "frame": "wide",
+      "gutter": {
+        "lg": 32,
+        "md": 24,
+        "sm": 24
+      },
+      "widths": {
+        "max": "1029px",
+        "list": "1044px",
+        "text": "700px",
+        "board": "61.25rem",
+        "media": "61.25rem"
+      }
+    },
+    "palette": {
+      "ink": "#1d1d1f",
+      "line": "#d2d2d7",
+      "muted": "#6e6e73",
+      "heading": "#1d1d1f",
+      "surface": "#ffffff",
+      "background": "#ffffff",
+      "footer_primary": "#424245",
+      "header_primary": "#1d1d1f",
+      "footer_background": "#f5f5f7",
+      "header_background": "#ffffff"
+    },
+    "footnotes": {
+      "rule": false,
+      "placement": "end"
+    },
+    "components": {
+      "code": {
+        "radius": 12
+      },
+      "quote": {
+        "size": 28,
+        "style": "pull"
+      },
+      "button": {
+        "radius": 980,
+        "weight": "regular"
+      },
+      "radius": 18
+    },
+    "onThisPage": "never",
+    "typography": {
+      "fluid": {
+        "enabled": true,
+        "minScale": 0.68,
+        "maxViewport": 1280,
+        "minViewport": 375
+      },
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 32
+          },
+          "weight": 700,
+          "tracking": -0.003,
+          "lineHeight": 1.08
+        },
+        "h2": {
+          "size": {
+            "lg": 24,
+            "sm": 21
+          },
+          "weight": 700,
+          "tracking": 0.009,
+          "lineHeight": 1.167
+        },
+        "h3": {
+          "size": 19,
+          "weight": 700,
+          "tracking": 0.012,
+          "lineHeight": 1.42
+        },
+        "body": {
+          "size": {
+            "lg": 19,
+            "sm": 17
+          },
+          "tracking": 0.012,
+          "lineHeight": 1.42
+        },
+        "lede": {
+          "size": {
+            "lg": 24,
+            "sm": 21
+          },
+          "weight": 500,
+          "tracking": 0.009,
+          "lineHeight": 1.17
+        },
+        "small": {
+          "size": 12,
+          "color": "#86868b",
+          "weight": 600
+        }
+      },
+      "baseSize": 17,
+      "bodyWrap": "pretty",
+      "features": {
+        "body": "\"tnum\" 0",
+        "heading": "\"tnum\" 0"
+      },
+      "headingWrap": "balance"
+    },
+    "accentColor": "#1d1d1f",
+    "colorScheme": "light",
+    "primaryColor": "#0066cc",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap",
+    "customFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "section",
+            "attrs": {
+              "key": "latest",
+              "hook": "latest",
+              "padding": {
+                "x": 0,
+                "top": 56,
+                "bottom": 36
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#f5f5f7"
+              }
+            },
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "text": "Latest News",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "card": {
+                    "meta": {
+                      "size": {
+                        "lg": "17px",
+                        "sm": "14px"
+                      },
+                      "color": "#6e6e73",
+                      "weight": 600,
+                      "tracking": -0.016
+                    },
+                    "align": "meta-end",
+                    "image": {
+                      "bleed": true,
+                      "aspect": "16:9"
+                    },
+                    "slots": [
+                      "cover",
+                      "kicker",
+                      "title",
+                      "date"
+                    ],
+                    "kicker": "firstTag",
+                    "surface": {
+                      "hover": "none",
+                      "border": "none",
+                      "radius": {
+                        "lg": "32px",
+                        "sm": "24px"
+                      },
+                      "padding": {
+                        "lg": "32px",
+                        "sm": "24px"
+                      },
+                      "background": "#ffffff"
+                    },
+                    "dateIcon": "clock",
+                    "tagStyle": "eyebrow",
+                    "titleSize": {
+                      "lg": "32px",
+                      "sm": "21px"
+                    },
+                    "dateFormat": "relative",
+                    "kickerStyle": {
+                      "case": "upper",
+                      "font": "body",
+                      "size": {
+                        "lg": "14px",
+                        "sm": "12px"
+                      },
+                      "color": "#6e6e73",
+                      "weight": 700,
+                      "tracking": -0.016
+                    },
+                    "titleWeight": 700
+                  },
+                  "hook": "latest-lead",
+                  "lead": {
+                    "style": "split",
+                    "divider": false,
+                    "titleSize": {
+                      "lg": "32px",
+                      "sm": "21px"
+                    }
+                  },
+                  "limit": 1,
+                  "layout": "bento",
+                  "pattern": [
+                    1
+                  ],
+                  "spaceAfter": {
+                    "lg": "36px",
+                    "sm": "24px"
+                  }
+                }
+              },
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "gap": {
+                    "lg": "36px",
+                    "sm": "24px"
+                  },
+                  "card": {
+                    "meta": {
+                      "size": {
+                        "lg": "17px",
+                        "sm": "14px"
+                      },
+                      "color": "#6e6e73",
+                      "weight": 600,
+                      "tracking": -0.016
+                    },
+                    "align": "meta-end",
+                    "image": {
+                      "bleed": true,
+                      "aspect": "16:9"
+                    },
+                    "slots": [
+                      "cover",
+                      "kicker",
+                      "title",
+                      "date"
+                    ],
+                    "kicker": "firstTag",
+                    "surface": {
+                      "hover": "none",
+                      "border": "none",
+                      "radius": {
+                        "lg": "32px",
+                        "sm": "24px"
+                      },
+                      "padding": {
+                        "lg": "32px",
+                        "sm": "24px"
+                      },
+                      "background": "#ffffff"
+                    },
+                    "tagStyle": "eyebrow",
+                    "titleSize": {
+                      "lg": "24px",
+                      "sm": "21px"
+                    },
+                    "dateFormat": "long",
+                    "kickerStyle": {
+                      "case": "upper",
+                      "font": "body",
+                      "size": {
+                        "lg": "14px",
+                        "sm": "12px"
+                      },
+                      "color": "#6e6e73",
+                      "weight": 700,
+                      "tracking": -0.016
+                    },
+                    "titleWeight": 700
+                  },
+                  "hook": "latest-halves",
+                  "limit": 2,
+                  "layout": "grid",
+                  "offset": 1,
+                  "columns": {
+                    "lg": 2,
+                    "md": 2,
+                    "sm": 1
+                  },
+                  "spaceAfter": {
+                    "lg": "36px",
+                    "sm": "24px"
+                  }
+                }
+              },
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "gap": {
+                    "lg": "36px",
+                    "sm": "24px"
+                  },
+                  "card": {
+                    "meta": {
+                      "size": "14px",
+                      "color": "#6e6e73",
+                      "weight": 600,
+                      "tracking": -0.016
+                    },
+                    "align": "meta-end",
+                    "image": {
+                      "bleed": true,
+                      "aspect": "16:9"
+                    },
+                    "slots": [
+                      "cover",
+                      "kicker",
+                      "title",
+                      "date"
+                    ],
+                    "kicker": "firstTag",
+                    "surface": {
+                      "hover": "none",
+                      "border": "none",
+                      "radius": {
+                        "lg": "32px",
+                        "sm": "24px"
+                      },
+                      "padding": "24px",
+                      "background": "#ffffff"
+                    },
+                    "tagStyle": "eyebrow",
+                    "titleSize": "21px",
+                    "dateFormat": "long",
+                    "kickerStyle": {
+                      "case": "upper",
+                      "font": "body",
+                      "size": "12px",
+                      "color": "#6e6e73",
+                      "weight": 700,
+                      "tracking": -0.016
+                    },
+                    "titleWeight": 700
+                  },
+                  "hook": "latest-thirds",
+                  "limit": 3,
+                  "layout": "grid",
+                  "offset": 3,
+                  "columns": {
+                    "lg": 3,
+                    "md": 2,
+                    "sm": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "attrs": {
+              "key": "loop",
+              "hook": "loop",
+              "padding": {
+                "x": 0,
+                "top": 36,
+                "bottom": 80
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#f5f5f7"
+              }
+            },
+            "content": [
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "gap": {
+                    "lg": "36px",
+                    "sm": "12px"
+                  },
+                  "card": {
+                    "meta": {
+                      "size": "14px",
+                      "color": "#6e6e73",
+                      "weight": 600,
+                      "tracking": -0.016
+                    },
+                    "when": [
+                      {
+                        "tag": "video",
+                        "card": {
+                          "meta": {
+                            "color": "#f5f5f7"
+                          },
+                          "image": {
+                            "position": "overlay",
+                            "overlayAlign": "end",
+                            "overlayShade": 0.35
+                          },
+                          "byline": {
+                            "color": "#f5f5f7"
+                          },
+                          "surface": {
+                            "background": "#1d1d1f"
+                          },
+                          "excerptColor": "#f5f5f7"
+                        }
+                      }
+                    ],
+                    "align": "meta-end",
+                    "image": {
+                      "bleed": true,
+                      "aspect": "1:1"
+                    },
+                    "slots": [
+                      "cover",
+                      "byline",
+                      "standfirst",
+                      "date"
+                    ],
+                    "byline": {
+                      "size": "14px",
+                      "color": "#6e6e73",
+                      "weight": 600,
+                      "avatars": true,
+                      "avatarSize": 36
+                    },
+                    "surface": {
+                      "hover": "none",
+                      "border": "none",
+                      "radius": 24,
+                      "padding": "16px 24px 24px",
+                      "minHeight": {
+                        "lg": "539px",
+                        "sm": "533px"
+                      },
+                      "background": "#ffffff"
+                    },
+                    "dateFormat": "long",
+                    "excerptSize": "14px",
+                    "excerptColor": "#1d1d1f",
+                    "excerptLines": 4,
+                    "excerptWeight": 600
+                  },
+                  "hook": "loop-feed",
+                  "limit": 8,
+                  "filter": {
+                    "tags": [
+                      "loop"
+                    ]
+                  },
+                  "layout": "carousel",
+                  "heading": {
+                    "text": "In the Loop"
+                  },
+                  "perView": {
+                    "lg": 3,
+                    "md": 2,
+                    "sm": 1.15
+                  },
+                  "carousel": {
+                    "bleed": "end",
+                    "arrows": {
+                      "size": "44px",
+                      "color": "#1d1d1f",
+                      "border": "#e8e8ed",
+                      "background": "#e8e8ed"
+                    },
+                    "controls": "dots-start",
+                    "indicator": "dots"
+                  },
+                  "moreLink": {
+                    "href": "/b/your-org/your-blog/tag/loop",
+                    "size": "17px",
+                    "label": "View All",
+                    "style": "button",
+                    "border": "#e8e8ed",
+                    "height": "44px",
+                    "radius": "999px",
+                    "weight": 600,
+                    "position": {
+                      "lg": "top",
+                      "md": "top",
+                      "sm": "below"
+                    },
+                    "textColor": "#1d1d1f",
+                    "background": "#e8e8ed"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "attrs": {
+              "key": "stories",
+              "hook": "stories",
+              "padding": {
+                "x": 0,
+                "top": 80,
+                "bottom": 80
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#ffffff"
+              }
+            },
+            "content": [
+              {
+                "type": "section",
+                "attrs": {
+                  "key": "stories-head",
+                  "padding": {
+                    "x": 0,
+                    "top": 0,
+                    "bottom": 24
+                  },
+                  "contentAlign": "center"
+                },
+                "content": [
+                  {
+                    "type": "image",
+                    "attrs": {
+                      "alt": "",
+                      "src": "/api/assets/00000000-0000-4000-8000-000000000001",
+                      "align": "center",
+                      "width": "56px"
+                    }
+                  },
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 2
+                    },
+                    "content": [
+                      {
+                        "text": "Your Brand Stories",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "The makers, teachers and neighbours who use what we build",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "text": "to leave their corner of the world a little better.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "gap": {
+                    "lg": "36px",
+                    "sm": "12px"
+                  },
+                  "card": {
+                    "meta": {
+                      "size": "14px",
+                      "color": "#ffffff",
+                      "weight": 600,
+                      "tracking": -0.016
+                    },
+                    "image": {
+                      "position": "overlay",
+                      "overlayAlign": "end",
+                      "overlayShade": 0.6
+                    },
+                    "slots": [
+                      "cover",
+                      "kicker",
+                      "title",
+                      "date"
+                    ],
+                    "kicker": "firstTag",
+                    "surface": {
+                      "hover": "none",
+                      "border": "none",
+                      "radius": {
+                        "lg": "32px",
+                        "sm": "24px"
+                      },
+                      "padding": "24px",
+                      "minHeight": {
+                        "lg": "362px",
+                        "sm": "427px"
+                      }
+                    },
+                    "tagStyle": "chip",
+                    "titleSize": {
+                      "lg": "21px",
+                      "sm": "24px"
+                    },
+                    "dateFormat": "long",
+                    "kickerStyle": {
+                      "case": "upper",
+                      "font": "body",
+                      "size": "12px",
+                      "weight": 700,
+                      "tracking": -0.016
+                    },
+                    "titleWeight": 700
+                  },
+                  "hook": "stories-feed",
+                  "lead": {
+                    "card": {
+                      "meta": {
+                        "size": {
+                          "lg": "17px",
+                          "sm": "14px"
+                        }
+                      },
+                      "surface": {
+                        "padding": {
+                          "lg": "36px",
+                          "sm": "24px"
+                        }
+                      },
+                      "kickerStyle": {
+                        "size": {
+                          "lg": "14px",
+                          "sm": "12px"
+                        }
+                      }
+                    },
+                    "style": "overlay",
+                    "divider": false,
+                    "minHeight": {
+                      "lg": "551px",
+                      "sm": "427px"
+                    },
+                    "titleSize": {
+                      "lg": "40px",
+                      "sm": "24px"
+                    }
+                  },
+                  "limit": 4,
+                  "filter": {
+                    "tags": [
+                      "stories"
+                    ]
+                  },
+                  "layout": "bento",
+                  "pattern": [
+                    1,
+                    3
+                  ],
+                  "perView": {
+                    "sm": 1.15
+                  },
+                  "carousel": {
+                    "bleed": "end",
+                    "arrows": {
+                      "size": "44px",
+                      "color": "#1d1d1f",
+                      "border": "#e8e8ed",
+                      "background": "#e8e8ed"
+                    },
+                    "controls": "dots-start",
+                    "indicator": "dots"
+                  },
+                  "layoutSm": "carousel",
+                  "moreLink": {
+                    "href": "/b/your-org/your-blog/tag/stories",
+                    "size": "17px",
+                    "label": "View All",
+                    "style": "button",
+                    "border": "#f5f5f7",
+                    "height": "44px",
+                    "radius": "999px",
+                    "weight": 600,
+                    "position": "below",
+                    "textColor": "#1d1d1f",
+                    "background": "#f5f5f7"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "attrs": {
+              "key": "more",
+              "hook": "more",
+              "padding": {
+                "x": 0,
+                "top": 80,
+                "bottom": 80
+              },
+              "fullBleed": true,
+              "background": {
+                "color": "#f5f5f7"
+              }
+            },
+            "content": [
+              {
+                "type": "spaceFeed",
+                "attrs": {
+                  "gap": {
+                    "lg": "56px",
+                    "sm": "24px"
+                  },
+                  "card": {
+                    "gap": "28px",
+                    "meta": {
+                      "size": {
+                        "lg": "17px",
+                        "sm": "14px"
+                      },
+                      "color": "#6e6e73",
+                      "weight": 600,
+                      "tracking": -0.016
+                    },
+                    "image": {
+                      "size": {
+                        "lg": 132,
+                        "sm": 105
+                      },
+                      "aspect": "1:1",
+                      "radius": 20,
+                      "position": "start"
+                    },
+                    "slots": [
+                      "cover",
+                      "kicker",
+                      "title",
+                      "date"
+                    ],
+                    "kicker": "firstTag",
+                    "divider": "row",
+                    "tagStyle": "eyebrow",
+                    "titleSize": "21px",
+                    "dateFormat": "long",
+                    "kickerStyle": {
+                      "case": "upper",
+                      "font": "body",
+                      "size": {
+                        "lg": "14px",
+                        "sm": "12px"
+                      },
+                      "color": "#6e6e73",
+                      "weight": 700,
+                      "tracking": -0.016
+                    },
+                    "titleWeight": 700,
+                    "verticalAlign": "center"
+                  },
+                  "hook": "more-feed",
+                  "limit": 8,
+                  "dedupe": true,
+                  "layout": "grid",
+                  "rowGap": {
+                    "lg": "77px",
+                    "sm": "48px"
+                  },
+                  "columns": {
+                    "lg": 2,
+                    "md": 2,
+                    "sm": 1
+                  },
+                  "heading": {
+                    "text": "More from Your Brand Newsroom"
+                  },
+                  "moreLink": {
+                    "href": "/b/your-org/your-blog/archive",
+                    "size": "17px",
+                    "label": "View Archive",
+                    "style": "button",
+                    "border": "#e8e8ed",
+                    "height": "44px",
+                    "radius": "999px",
+                    "weight": 600,
+                    "position": "below",
+                    "textColor": "#1d1d1f",
+                    "background": "#e8e8ed"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "customization": {
+        "theme": {
+          "palette": {
+            "background": "#f5f5f7"
+          },
+          "typography": {
+            "levels": {
+              "h2": {
+                "size": {
+                  "lg": 32,
+                  "sm": 24
+                },
+                "weight": 700,
+                "tracking": 0.004,
+                "lineHeight": 1.125
+              },
+              "body": {
+                "size": 17,
+                "tracking": -0.022,
+                "lineHeight": 1.47
+              }
+            }
+          }
+        }
+      },
+      "width": "list",
+      "gap": "none",
+      "hideTitle": true,
+      "paddingTop": "none",
+      "paddingBottom": "none"
+    }
+  ]
+}

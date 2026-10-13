@@ -1,0 +1,1139 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Basalt Docs",
+    "slug": "template-basalt",
+    "description": "Roomy developer docs with an agent-prompt panel beside the title, a framework quickstart grid and product menus in the top bar.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "docs",
+      "developer",
+      "quickstart",
+      "template"
+    ],
+    "spaceTypes": [
+      "DOCS"
+    ]
+  },
+  "requiredOrigins": {
+    "fonts": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "theme": {
+    "docs": {
+      "toc": {
+        "label": "On this page",
+        "phone": "hide",
+        "steps": true,
+        "extras": [
+          "feedback",
+          "actions"
+        ],
+        "itemSize": 13,
+        "labelCase": "upper",
+        "labelFont": "mono",
+        "labelSize": 12,
+        "activeStyle": "bar",
+        "extrasOnAside": "below",
+        "extrasPlacement": "before"
+      },
+      "aside": {
+        "top": 72,
+        "width": "30rem"
+      },
+      "pager": {
+        "style": "links"
+      },
+      "blocks": {
+        "prompt": {
+          "collapseStyle": "pill"
+        }
+      },
+      "sidebar": {
+        "item": {
+          "size": 14,
+          "color": "muted",
+          "height": 30,
+          "radius": 0
+        },
+        "icons": {
+          "size": 18,
+          "color": "brand"
+        },
+        "width": 280,
+        "active": {
+          "color": "brand",
+          "style": "text",
+          "weight": 400
+        },
+        "border": true,
+        "groups": "label",
+        "search": "hide",
+        "chevron": "end",
+        "guideLine": false,
+        "groupLabel": {
+          "case": "upper",
+          "font": "mono",
+          "size": 13,
+          "color": "#171717",
+          "weight": 400,
+          "tracking": 0.04,
+          "colorDark": "#ededed"
+        }
+      },
+      "topRule": false,
+      "editLink": {
+        "label": "Edit this page",
+        "urlTemplate": "https://example.com/basalt/docs/edit/main/{path}"
+      },
+      "feedback": {
+        "label": "Is this helpful?",
+        "style": "thumbs",
+        "placement": "rail"
+      },
+      "pageHead": {
+        "updated": "hide",
+        "breadcrumb": {
+          "show": true,
+          "size": 14,
+          "separator": "chevron"
+        },
+        "description": "show"
+      },
+      "mobileNav": {
+        "bar": true,
+        "label": "section",
+        "style": "drawer"
+      },
+      "pageActions": {
+        "items": [
+          "mcp",
+          "markdown",
+          "chatgpt",
+          "claude"
+        ],
+        "label": "AI tools",
+        "phone": "icon",
+        "style": "text",
+        "placement": "rail"
+      },
+      "articleAlign": "start",
+      "articleWidth": "44rem"
+    },
+    "chrome": {
+      "cta": {
+        "ink": "#ffffff",
+        "href": "https://example.com/signup",
+        "size": "sm",
+        "label": "Sign up",
+        "border": "#2fbf86",
+        "height": 28,
+        "fontSize": 13,
+        "background": "#1f9d6d"
+      },
+      "align": "left",
+      "footer": {
+        "css": ".help p{margin:0 0 6px;font-size:13px} .help a{color:#2fbf86;text-decoration:none}",
+        "html": "<div class=\"help\"><p>Need some help? <a href=\"/p/your-org/your-docs/getting-started\">Contact support</a></p><p>Latest product updates? <a href=\"/p/your-org/your-docs/getting-started\">See changelog</a></p><p>Something's not right? <a href=\"/p/your-org/your-docs/getting-started\">Check system status</a></p></div>",
+        "border": true,
+        "padding": {
+          "top": 32,
+          "bottom": 16
+        },
+        "htmlSize": 13,
+        "linkSize": 13,
+        "bottomSize": 13,
+        "htmlPlacement": "above",
+        "brandPlacement": "none"
+      },
+      "header": {
+        "border": "line",
+        "height": 48,
+        "navGap": 24,
+        "navInk": "#525252",
+        "navSize": 14,
+        "navWeight": 400,
+        "linksAlign": "start",
+        "logoHeight": 30,
+        "navInkDark": "#a0a0a0",
+        "activeStyle": "underline",
+        "controlsAlign": "end"
+      },
+      "height": "compact",
+      "search": "pill",
+      "sticky": true,
+      "navMenu": {
+        "radius": 6,
+        "trigger": "hover",
+        "animation": "fade"
+      },
+      "ctaStyle": "solid",
+      "copyright": "© Basalt Labs",
+      "showSignIn": false,
+      "footerLinks": [
+        {
+          "href": "/p/your-org/your-docs/getting-started",
+          "label": "Contributing"
+        },
+        {
+          "href": "/p/your-org/your-docs/getting-started",
+          "label": "Author styleguide"
+        },
+        {
+          "href": "/p/your-org/your-docs/architecture",
+          "label": "Open source"
+        },
+        {
+          "href": "/p/your-org/your-docs/getting-started",
+          "label": "Privacy settings"
+        }
+      ],
+      "headerLinks": [
+        {
+          "href": "/p/your-org/your-docs/getting-started",
+          "label": "Start",
+          "match": {
+            "collection": [
+              "0457c036-1b82-4f4e-aded-c506c008b81e"
+            ]
+          }
+        },
+        {
+          "href": "/p/your-org/your-docs/database",
+          "label": "Products",
+          "match": {
+            "collection": [
+              "62e96460-db38-4a2b-8162-0342c37ec583",
+              "df2dc59b-ab00-4c82-9d83-afa7ac0aafa6",
+              "afbf508e-3ca3-4fe5-abdf-9a35ee2cba5f"
+            ]
+          },
+          "children": [
+            {
+              "href": "/p/your-org/your-docs/database",
+              "label": "Database"
+            },
+            {
+              "href": "/p/your-org/your-docs/auth",
+              "label": "Auth"
+            },
+            {
+              "href": "/p/your-org/your-docs/storage",
+              "label": "Storage"
+            }
+          ]
+        },
+        {
+          "href": "/p/your-org/your-docs/quickstart-nextjs",
+          "label": "Build",
+          "children": [
+            {
+              "href": "/p/your-org/your-docs/quickstart-nextjs",
+              "label": "Next.js quickstart"
+            },
+            {
+              "href": "/p/your-org/your-docs/quickstart-react",
+              "label": "React quickstart"
+            },
+            {
+              "href": "/p/your-org/your-docs/local-development",
+              "label": "Local development"
+            }
+          ]
+        },
+        {
+          "href": "/p/your-org/your-docs/api-keys",
+          "label": "Manage",
+          "children": [
+            {
+              "href": "/p/your-org/your-docs/api-keys",
+              "label": "API keys"
+            },
+            {
+              "href": "/p/your-org/your-docs/backups",
+              "label": "Backups"
+            }
+          ]
+        },
+        {
+          "href": "/p/your-org/your-docs/js-introduction",
+          "label": "Reference",
+          "match": {
+            "collection": [
+              "9e2c3633-c6ad-4087-bbff-e335d11b81be"
+            ]
+          },
+          "children": [
+            {
+              "href": "/p/your-org/your-docs/js-introduction",
+              "label": "JavaScript"
+            }
+          ]
+        },
+        {
+          "href": "/p/your-org/your-docs/architecture",
+          "label": "Resources",
+          "children": [
+            {
+              "href": "/p/your-org/your-docs/architecture",
+              "label": "Architecture"
+            }
+          ]
+        }
+      ],
+      "searchStyle": {
+        "kbd": "mod-k",
+        "open": "modal",
+        "size": "sm",
+        "label": "Search docs...",
+        "width": 220,
+        "labelPhone": "Search"
+      },
+      "socialLinks": [
+        {
+          "href": "https://example.com/x",
+          "platform": "x"
+        },
+        {
+          "href": "https://example.com/gh",
+          "platform": "github"
+        },
+        {
+          "href": "https://example.com/discord",
+          "platform": "discord"
+        },
+        {
+          "href": "https://example.com/yt",
+          "platform": "youtube"
+        }
+      ],
+      "themeToggle": {
+        "show": true,
+        "style": "icon",
+        "position": "footer"
+      },
+      "sidebarBrand": "hide",
+      "searchPlacement": "end"
+    },
+    "layout": {
+      "frame": "full",
+      "widths": {
+        "max": "1440px"
+      }
+    },
+    "palette": {
+      "ink": "#525252",
+      "line": "#e6e6e6",
+      "muted": "#707070",
+      "heading": "#171717",
+      "surface": "#f8f8f8",
+      "background": "#fcfcfc",
+      "footer_primary": "#525252",
+      "header_primary": "#171717",
+      "footer_background": "#fcfcfc",
+      "header_background": "#fcfcfc"
+    },
+    "components": {
+      "card": {
+        "arrow": "none"
+      },
+      "code": {
+        "ink": "#1f1f1f",
+        "copy": "icon",
+        "border": "#e6e6e6",
+        "radius": 6,
+        "background": "#f6f6f6"
+      },
+      "hint": {
+        "edge": "none",
+        "icon": "badge",
+        "radius": 6,
+        "background": "#f6f6f6",
+        "backgroundDark": "#1a1a1a"
+      },
+      "link": {
+        "color": "#171717",
+        "offset": 3,
+        "colorDark": "#ededed",
+        "thickness": 1,
+        "underline": "always"
+      },
+      "list": {
+        "marker": "dash",
+        "markerColor": "#a0a0a0",
+        "markerColorDark": "#505050"
+      },
+      "tabs": {
+        "overflow": "scroll"
+      },
+      "input": {
+        "radius": 6
+      },
+      "table": {
+        "size": 14,
+        "rules": "rows",
+        "stripe": false,
+        "density": "compact",
+        "headerBackground": "#fcfcfc",
+        "headerBackgroundDark": "#121212"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 6,
+        "weight": "medium",
+        "background": "#1f9d6d"
+      },
+      "radius": 6,
+      "stepper": {
+        "line": true,
+        "marker": "number",
+        "titleSize": 20
+      },
+      "codeDark": {
+        "ink": "#d4d4d4",
+        "border": "#2e2e2e",
+        "background": "#1a1a1a"
+      },
+      "scrollbar": {
+        "width": "thin"
+      },
+      "syntaxDark": {
+        "attr": "#a0d8ff",
+        "title": "#a0d8ff",
+        "number": "#ffcda1",
+        "string": "#ffcda1",
+        "comment": "#707070",
+        "keyword": "#3ecf8e",
+        "built_in": "#e7a3ff"
+      },
+      "syntaxTheme": "github"
+    },
+    "onThisPage": "auto",
+    "typography": {
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 36,
+            "sm": 32
+          },
+          "weight": 400,
+          "tracking": -0.01,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 24,
+          "weight": 400,
+          "lineHeight": 1.3
+        },
+        "h3": {
+          "size": 19,
+          "weight": 500,
+          "lineHeight": 1.4
+        },
+        "body": {
+          "lineHeight": 1.75
+        },
+        "code": {
+          "size": 13
+        },
+        "lede": {
+          "size": 19,
+          "color": "#525252",
+          "colorDark": "#a0a0a0",
+          "lineHeight": 1.5
+        }
+      },
+      "baseSize": 16
+    },
+    "accentColor": "#2fbf86",
+    "colorScheme": "system",
+    "paletteDark": {
+      "ink": "#b4b4b4",
+      "line": "#2e2e2e",
+      "muted": "#8f8f8f",
+      "heading": "#ededed",
+      "surface": "#1a1a1a",
+      "background": "#121212",
+      "footer_primary": "#a0a0a0",
+      "header_primary": "#ededed",
+      "footer_background": "#121212",
+      "header_background": "#121212"
+    },
+    "primaryColor": "#1f9d6d",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Code+Pro:wght@400;500&display=swap",
+    "bodyFontFamily": "Inter",
+    "headingAnchors": "hover",
+    "monoFontFamily": "Source Code Pro",
+    "headingFontFamily": "Inter"
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "DOCS",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": {
+                "lg": "lg",
+                "sm": "sm"
+              },
+              "stackOn": "md",
+              "spaceAround": {
+                "lg": 24,
+                "sm": 8
+              }
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 56
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "size": {
+                        "lg": 36,
+                        "md": 36,
+                        "sm": 28
+                      },
+                      "level": 1
+                    },
+                    "content": [
+                      {
+                        "text": "Basalt Documentation",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "size": {
+                        "lg": 18,
+                        "sm": 16
+                      },
+                      "color": "muted"
+                    },
+                    "content": [
+                      {
+                        "text": "Learn how to get up and running with Basalt through tutorials, APIs and platform resources.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 44
+                },
+                "content": [
+                  {
+                    "type": "tabs",
+                    "attrs": {
+                      "variant": "card",
+                      "asCodeGroup": false
+                    },
+                    "content": [
+                      {
+                        "type": "tab",
+                        "attrs": {
+                          "title": "Agent Prompt"
+                        },
+                        "content": [
+                          {
+                            "type": "prompt",
+                            "attrs": {
+                              "text": "Help me get set up with Basalt. Do the following:\n1. Install the basalt CLI as a dev dependency with `npm install basalt --save-dev`, so the version is pinned per project.\n2. Run `basalt init`, then `basalt start` to boot the local stack.\n3. Install @basalt/client and create one client from BASALT_URL and BASALT_PUBLISHABLE_KEY.",
+                              "wrap": true,
+                              "label": "Agent Prompt",
+                              "header": "tabs",
+                              "actions": [
+                                "copy"
+                              ],
+                              "targets": [],
+                              "collapse": 4,
+                              "showText": true,
+                              "copyStyle": "icon",
+                              "textStyle": "prose",
+                              "collapseStyle": "pill"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "tab",
+                        "attrs": {
+                          "title": "CLI"
+                        },
+                        "content": [
+                          {
+                            "type": "prompt",
+                            "attrs": {
+                              "text": "Run these in your project folder:\n1. `npm install basalt --save-dev`\n2. `npx basalt init`\n3. `npx basalt start`",
+                              "wrap": true,
+                              "label": "CLI",
+                              "header": "tabs",
+                              "actions": [
+                                "copy"
+                              ],
+                              "targets": [],
+                              "collapse": 4,
+                              "showText": true,
+                              "copyStyle": "icon",
+                              "textStyle": "prose",
+                              "collapseStyle": "pill"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "horizontalRule"
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "xl",
+              "stackOn": "md",
+              "spaceAround": {
+                "lg": 40,
+                "sm": 24
+              }
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 34
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Connect a framework",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "color": "muted"
+                    },
+                    "content": [
+                      {
+                        "text": "Start with a quickstart guide to connect your project in minutes.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 66
+                },
+                "content": [
+                  {
+                    "type": "cards",
+                    "attrs": {
+                      "border": "tile",
+                      "rowGap": 24,
+                      "columns": {
+                        "lg": 3,
+                        "md": 2,
+                        "sm": 1
+                      },
+                      "variant": "horizontal",
+                      "iconSize": 32,
+                      "minWidth": 160,
+                      "tileSize": 64,
+                      "iconAlign": "center",
+                      "titleSize": 14,
+                      "titleWeight": 400
+                    },
+                    "content": [
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/quickstart-react",
+                          "title": "React",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/quickstart-nextjs",
+                          "title": "Next.js",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/quickstart-react",
+                          "title": "Summit Start",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/quickstart-react",
+                          "title": "Vista",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000004",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/quickstart-nextjs",
+                          "title": "Nimbus",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/quickstart-react",
+                          "title": "Ember",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/quickstart-react",
+                          "title": "Prism",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/js-introduction",
+                          "title": "TypeScript",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/getting-started",
+                          "title": "iOS Swift",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/getting-started",
+                          "title": "Android Kotlin",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/getting-started",
+                          "title": "Flutter",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/local-development",
+                          "title": "Local CLI",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-00000000000c",
+                          "iconStyle": "tile"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "horizontalRule"
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "xl",
+              "stackOn": "md",
+              "spaceAround": {
+                "lg": 40,
+                "sm": 24
+              }
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 34
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Build your backend",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "color": "muted"
+                    },
+                    "content": [
+                      {
+                        "text": "Build with a complete backend platform, from your database to your application logic.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 66
+                },
+                "content": [
+                  {
+                    "type": "cards",
+                    "attrs": {
+                      "columns": {
+                        "lg": 2,
+                        "md": 2,
+                        "sm": 1
+                      }
+                    },
+                    "content": [
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/database",
+                          "icon": "database",
+                          "title": "Database",
+                          "iconStyle": "tile",
+                          "description": "Every project is a full Postgres database, with live changes, daily backups and extensions."
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/auth",
+                          "icon": "lock",
+                          "title": "Auth",
+                          "iconStyle": "tile",
+                          "description": "Passwords, magic links and social providers, with users stored in your own database."
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/storage",
+                          "icon": "archive",
+                          "title": "Storage",
+                          "iconStyle": "tile",
+                          "description": "Store and serve large files, protected by the same row-level policies as your tables."
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/architecture",
+                          "icon": "activity",
+                          "title": "Live",
+                          "iconStyle": "tile",
+                          "description": "Listen to database changes and broadcast messages to subscribed clients."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "horizontalRule"
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "xl",
+              "stackOn": "md",
+              "spaceAround": {
+                "lg": 40,
+                "sm": 24
+              }
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 34
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Use a client library",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "color": "muted"
+                    },
+                    "content": [
+                      {
+                        "text": "Use Basalt from the language your application is built with.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 66
+                },
+                "content": [
+                  {
+                    "type": "cards",
+                    "attrs": {
+                      "border": "tile",
+                      "rowGap": 24,
+                      "columns": {
+                        "lg": 3,
+                        "md": 2,
+                        "sm": 1
+                      },
+                      "variant": "horizontal",
+                      "iconSize": 32,
+                      "minWidth": 160,
+                      "tileSize": 64,
+                      "iconAlign": "center",
+                      "titleSize": 14,
+                      "titleWeight": 400
+                    },
+                    "content": [
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/js-introduction",
+                          "title": "JavaScript",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/getting-started",
+                          "title": "Flutter",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+                          "iconStyle": "tile"
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/getting-started",
+                          "title": "Swift",
+                          "iconUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+                          "iconStyle": "tile"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "horizontalRule"
+          },
+          {
+            "type": "columns",
+            "attrs": {
+              "gap": "xl",
+              "stackOn": "md",
+              "spaceAround": {
+                "lg": 40,
+                "sm": 24
+              }
+            },
+            "content": [
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 34
+                },
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 3
+                    },
+                    "content": [
+                      {
+                        "text": "Explore more",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "color": "muted"
+                    },
+                    "content": [
+                      {
+                        "text": "The tools, integrations and guides that help you get more from Basalt.",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Explore more resources ›",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "/p/your-org/your-docs/getting-started"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "attrs": {
+                  "width": 66
+                },
+                "content": [
+                  {
+                    "type": "cards",
+                    "attrs": {
+                      "columns": {
+                        "lg": 2,
+                        "md": 2,
+                        "sm": 1
+                      }
+                    },
+                    "content": [
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/local-development",
+                          "icon": "terminal",
+                          "title": "Local development",
+                          "iconStyle": "tile",
+                          "description": "Run the whole stack on your machine with the CLI."
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/backups",
+                          "icon": "history",
+                          "title": "Backups",
+                          "iconStyle": "tile",
+                          "description": "Daily snapshots and point-in-time recovery."
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/row-level-policies",
+                          "icon": "shield-check",
+                          "title": "Row-level policies",
+                          "iconStyle": "tile",
+                          "description": "Make tables safe to query from a browser."
+                        }
+                      },
+                      {
+                        "type": "card",
+                        "attrs": {
+                          "href": "/p/your-org/your-docs/architecture",
+                          "icon": "layers",
+                          "title": "Architecture",
+                          "iconStyle": "tile",
+                          "description": "How the services fit around one Postgres database."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "width": 1240,
+      "paddingTop": "3rem"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "plinth",
+  "type": "CHANGELOG",
+  "name": "Plinth",
+  "description": "A sleek dark changelog: dates in the gutter, illustrated release notes, tag filters and a one-line email subscribe.",
+  "modelledOn": "A product-planning tool’s changelog",
+  "features": [
+    "Composed front page (4 sections)",
+    "5-column footer",
+    "Index layout: gutter",
+    "Light and dark palettes",
+    "Motion presets",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "changelog",
+    "minimal",
+    "product"
+  ],
+  "thumbnail": "/templates/plinth.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark-f7f8f8.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-0000000000a1": "assets/release-a1.svg",
+    "/api/assets/00000000-0000-4000-8000-0000000000a2": "assets/release-a2.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {
+    "preset": "gutter",
+    "frontDoor": {
+      "showShare": true,
+      "showSubtitle": false,
+      "subscribeStyle": "icon"
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "workflow",
+      "label": "Workflow"
+    },
+    {
+      "slug": "inbox",
+      "label": "Inbox"
+    },
+    {
+      "slug": "reviews",
+      "label": "Reviews"
+    }
+  ],
+  "authors": [],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "stacked-branches",
+      "title": "Stacked branches",
+      "tags": [
+        "reviews"
+      ],
+      "daysAgo": 2,
+      "markdown": "![A stack of dependent branches](/api/assets/00000000-0000-4000-8000-0000000000a1)\n\nStacked branches now appear as one row in the review queue. Step through the stack and see review, checks and merge state for each branch at a glance.\n\n- Rebase the whole stack in one action.\n- Merge from the bottom up, automatically.\n\nPlaceholder release notes."
+    },
+    {
+      "slug": "more-control-over-agent-runs",
+      "title": "More control over agent runs",
+      "tags": [
+        "agents"
+      ],
+      "daysAgo": 9,
+      "markdown": "Agent runs can now be paused, resumed and limited to a budget. Every run shows what it changed and why.\n\nPlaceholder release notes."
+    },
+    {
+      "slug": "priority-inbox",
+      "title": "Priority inbox",
+      "tags": [
+        "inbox"
+      ],
+      "daysAgo": 16,
+      "markdown": "![The inbox sorted by priority](/api/assets/00000000-0000-4000-8000-0000000000a2)\n\nThe inbox now sorts by what needs you first: reviews you are blocking, mentions, then everything else.\n\nPlaceholder release notes."
+    },
+    {
+      "slug": "boards-at-scale",
+      "title": "Boards at scale",
+      "tags": [
+        "planning"
+      ],
+      "daysAgo": 23,
+      "markdown": "Boards with thousands of items now load instantly and scroll smoothly. Filters are kept per board and per person.\n\nPlaceholder release notes."
+    },
+    {
+      "slug": "keyboard-first-everything",
+      "title": "Keyboard-first everything",
+      "tags": [
+        "workflow"
+      ],
+      "daysAgo": 31,
+      "markdown": "Every action now has a shortcut, and the command menu learns the ones you use most.\n\nPlaceholder release notes."
+    }
+  ]
+}

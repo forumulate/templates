@@ -1,0 +1,408 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "kilter",
+  "type": "BLOG",
+  "name": "Kilter",
+  "description": "A loud tech-news front page: a vertical masthead, lead story, quick-hit rail, colour-coded sections and a “most popular” sidebar on every story.",
+  "modelledOn": "A consumer technology news magazine",
+  "features": [
+    "Composed front page (5 sections, with a sidebar)",
+    "Top bar above the header",
+    "Index layout: magazine",
+    "Post layout: article-suggested",
+    "Post-page sidebar",
+    "A band after every post",
+    "Motion presets",
+    "Colour-coded tags",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "news",
+    "magazine",
+    "bold"
+  ],
+  "thumbnail": "/templates/kilter.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark-vertical.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/wordmark-131313.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/wordmark-3cffd0.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/avatar-sam-rivera.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000c": "assets/cover-6.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000004"
+  },
+  "layout": {
+    "preset": "magazine",
+    "piecePreset": "article-suggested",
+    "frontDoor": {
+      "showRss": false,
+      "badgeStyle": "text",
+      "showSearch": false,
+      "showArchive": false
+    }
+  },
+  "piecePage": {
+    "sidebar": {
+      "position": "right",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "card": {
+                "index": true,
+                "slots": [
+                  "title",
+                  "byline"
+                ],
+                "byline": {
+                  "color": "#5a2bff"
+                },
+                "divider": "below",
+                "titleFont": "heading",
+                "titleSize": "17px",
+                "indexStyle": {
+                  "font": "heading",
+                  "color": "#5a2bff",
+                  "suffix": ".",
+                  "weight": 800,
+                  "placement": "inline"
+                },
+                "titleWeight": 800
+              },
+              "hook": "popular",
+              "sort": "top",
+              "limit": 5,
+              "filter": {},
+              "layout": "rows",
+              "period": "all",
+              "heading": {
+                "size": "22px",
+                "text": "Most popular",
+                "style": "rule-top",
+                "ruleColor": "#5a2bff",
+                "ruleWidth": "4px"
+              }
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "subscribe",
+              "body": "The day's biggest stories, every weekday morning.",
+              "frame": "card",
+              "layout": "stacked",
+              "heading": "Your Brand, daily",
+              "buttonLabel": "Sign up"
+            }
+          }
+        ]
+      }
+    },
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "section",
+          "attrs": {
+            "key": "more",
+            "hook": "more-band",
+            "padding": {
+              "x": 0,
+              "top": 40,
+              "bottom": 56
+            },
+            "fullBleed": true,
+            "background": {
+              "color": "#3cffd0"
+            }
+          },
+          "content": [
+            {
+              "type": "columns",
+              "attrs": {
+                "divider": "#131313",
+                "stackOn": "md"
+              },
+              "content": [
+                {
+                  "type": "column",
+                  "attrs": {
+                    "width": 72
+                  },
+                  "content": [
+                    {
+                      "type": "spaceFeed",
+                      "attrs": {
+                        "card": {
+                          "image": {
+                            "size": {
+                              "sm": 96
+                            },
+                            "aspect": "3:2",
+                            "positionSm": "end"
+                          },
+                          "slots": [
+                            "cover",
+                            "title"
+                          ],
+                          "byline": {
+                            "color": "#5a2bff"
+                          },
+                          "titleFont": "heading",
+                          "titleWeight": 800,
+                          "titleLineHeight": 1.15
+                        },
+                        "hook": "more",
+                        "limit": 6,
+                        "filter": {},
+                        "layout": "grid",
+                        "columns": {
+                          "lg": 3,
+                          "md": 3,
+                          "sm": 1
+                        },
+                        "heading": {
+                          "font": "mono",
+                          "size": "14px",
+                          "text": "More in {tag}",
+                          "color": "#5a2bff",
+                          "style": "plain"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "attrs": {
+                    "width": 28
+                  },
+                  "content": [
+                    {
+                      "type": "spaceFeed",
+                      "attrs": {
+                        "card": {
+                          "slots": [
+                            "date",
+                            "title"
+                          ],
+                          "divider": "below",
+                          "dateStyle": "mono-caps",
+                          "titleFont": "heading",
+                          "titleSize": "17px",
+                          "titleWeight": 800
+                        },
+                        "hook": "top",
+                        "sort": "top",
+                        "limit": 4,
+                        "filter": {},
+                        "layout": "rows",
+                        "period": "all",
+                        "heading": {
+                          "font": "mono",
+                          "size": "14px",
+                          "text": "Top stories",
+                          "color": "#5a2bff",
+                          "style": "plain"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "tech",
+      "label": "Tech",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "reviews",
+      "label": "Reviews",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "ai",
+      "label": "AI",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "culture",
+      "label": "Culture",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "quick",
+      "label": "quick"
+    },
+    {
+      "slug": "entertainment",
+      "label": "Entertainment",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "policy",
+      "label": "Policy",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "report",
+      "label": "Report",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "science",
+      "label": "Science",
+      "color": "#5a2bff"
+    },
+    {
+      "slug": "transportation",
+      "label": "Transportation",
+      "color": "#5a2bff"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Senior Reporter",
+      "bio": "Covers gadgets, privacy and the companies that sell them.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000005"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Reviews Editor",
+      "bio": "Tests the things so you do not have to.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000006"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "smallest-phone-best-battery",
+      "title": "The smallest phone of the year still has the best battery",
+      "tags": [
+        "quick",
+        "reviews"
+      ],
+      "daysAgo": 1,
+      "markdown": "It fits in a coin pocket and it lasted two full days in our testing. The trick is not a bigger cell; it is a screen that refuses to waste power on pixels nobody is looking at.\n\nShort news items like this one sit in the template's quick-hit rail. Replace it with your own.",
+      "excerpt": "Two days of battery from a phone that fits in a coin pocket.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "can-smart-locks-keep-privacy",
+      "title": "Every smart lock promises privacy. Can any of them keep it?",
+      "tags": [
+        "tech",
+        "policy",
+        "report"
+      ],
+      "daysAgo": 3,
+      "markdown": "We tested a stack of connected locks and read every privacy policy. Most collect more than they need, and few explain why.\n\n## What we looked for\n\n- Does it work without an account?\n- Where are the logs stored, and for how long?\n- Can you delete your history?\n\nOnly two passed all three. A report like this is the template's lead story; this one is placeholder copy.",
+      "excerpt": "We tested the locks and read the policies. Two passed.",
+      "featured": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "pickup-truck-for-the-city",
+      "title": "A full-size pickup squeezed into a city car",
+      "tags": [
+        "reviews",
+        "tech"
+      ],
+      "daysAgo": 6,
+      "markdown": "It parks like a hatchback and carries a sheet of plywood flat. The compromise is the ride: firm, honest and a little loud.\n\n## Verdict\n\nGood for people who need a bed twice a month and a parking space every day. Sample review copy.",
+      "excerpt": "Parks like a hatchback, carries plywood flat.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "maps-that-learn-potholes",
+      "title": "A map app now routes you around the potholes your neighbours hit",
+      "tags": [
+        "quick",
+        "tech"
+      ],
+      "daysAgo": 8,
+      "markdown": "Phones already know when a car jolts. Now one navigation app pools those jolts, anonymously, to steer drivers around the worst roads in town.\n\nPlaceholder copy for a short news item.",
+      "excerpt": "Anonymous jolts, pooled into a smoother route.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "robot-bird-feeder",
+      "title": "My short, strange romance with a robot bird feeder",
+      "tags": [
+        "culture",
+        "reviews"
+      ],
+      "daysAgo": 12,
+      "markdown": "It photographs every visitor and names the species. Within a week I knew the neighbourhood sparrows better than the neighbours.\n\n## The catch\n\nThe camera is good, the app is pushy, and the squirrels learned the lid faster than I did. Placeholder feature copy.",
+      "excerpt": "It names every visitor. The squirrels named it first.",
+      "featured": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true
+    },
+    {
+      "slug": "checking-the-machine-proof",
+      "title": "Mathematicians will need years to check what the machine just wrote",
+      "tags": [
+        "science",
+        "ai"
+      ],
+      "daysAgo": 16,
+      "markdown": "A theorem prover produced a proof thousands of pages long. Nobody doubts it compiles; the question is whether anyone can understand it.\n\n> A proof is also an explanation. This one explains very little.\n\nPlaceholder science copy for the template's long-read slot.",
+      "excerpt": "It compiles. Whether anyone can understand it is another matter.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000c",
+      "coverAlt": "Abstract placeholder artwork",
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true
+    }
+  ]
+}

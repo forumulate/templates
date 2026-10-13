@@ -1,0 +1,1101 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "ledgerline",
+  "type": "DOCS",
+  "name": "Ledgerline",
+  "description": "Payments-style docs: a dotted hero with an illustrated card, product link columns and a try-it-out code panel.",
+  "modelledOn": "A payments company’s API docs",
+  "features": [
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "docs",
+    "api",
+    "payments"
+  ],
+  "thumbnail": "/templates/ledgerline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/ledgerline-card.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/ledgerline-logo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/ledgerline-logo-dark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {},
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "section",
+          "attrs": {
+            "key": "hero",
+            "padding": {
+              "x": 0,
+              "top": "sm",
+              "bottom": "md"
+            },
+            "pattern": "dots",
+            "fullBleed": true,
+            "patternFade": "bottom",
+            "patternColor": {
+              "to": "#8a6cf0",
+              "from": "#f5a25d",
+              "angle": 90
+            }
+          },
+          "content": [
+            {
+              "type": "columns",
+              "attrs": {
+                "gap": "xl"
+              },
+              "content": [
+                {
+                  "type": "column",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 1
+                      },
+                      "content": [
+                        {
+                          "text": "Documentation",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "size": 20,
+                        "color": "muted"
+                      },
+                      "content": [
+                        {
+                          "text": "Explore our guides and examples to integrate Ledgerline.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "buttons",
+                      "attrs": {
+                        "align": "start"
+                      },
+                      "content": [
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/get-started",
+                            "label": "Get started with Ledgerline ›",
+                            "style": "primary"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/payments",
+                            "label": "Explore all products",
+                            "style": "link"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "content": [
+                    {
+                      "type": "image",
+                      "attrs": {
+                        "alt": "A sandbox test card",
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000001"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "attrs": {
+            "gap": "lg"
+          },
+          "content": [
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 3
+                  },
+                  "content": [
+                    {
+                      "text": "Payments",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Accept payments online",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/accept-a-payment"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Share a Payment Link",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/payment-links"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Refund a payment",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/refunds"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 3
+                  },
+                  "content": [
+                    {
+                      "text": "Revenue",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Sell subscriptions",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/subscriptions"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Offer usage-based pricing",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/usage-based-pricing"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Send invoices",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/invoices"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 3
+                  },
+                  "content": [
+                    {
+                      "text": "Developers",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Set up your development environment",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/development-environment"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Listen for webhooks",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/webhooks"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "API reference",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/api-api-reference"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spacer",
+          "attrs": {
+            "height": "lg"
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "text": "Try it out",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "tabs",
+          "attrs": {
+            "orientation": "vertical"
+          },
+          "content": [
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Create a customer"
+              },
+              "content": [
+                {
+                  "type": "codeBlock",
+                  "attrs": {
+                    "language": "bash"
+                  },
+                  "content": [
+                    {
+                      "text": "$ ledgerline customers create --email=\"jenny.rosen@example.com\" --name=\"Jenny Rosen\"\n{\n  \"id\": \"cus_Qm8xT2vLp0aZ\",\n  \"object\": \"customer\",\n  \"email\": \"jenny.rosen@example.com\",\n  \"name\": \"Jenny Rosen\",\n  \"livemode\": false\n}",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Start a checkout session"
+              },
+              "content": [
+                {
+                  "type": "codeBlock",
+                  "attrs": {
+                    "language": "bash"
+                  },
+                  "content": [
+                    {
+                      "text": "$ ledgerline checkout sessions create -d \"line_items[0][price]=price_1Qx\" \\\n    -d \"line_items[0][quantity]=1\" --mode payment --success-url \"https://example.com/success\"\n{\n  \"id\": \"cs_test_a1Lm…\",\n  \"object\": \"checkout.session\",\n  \"amount_total\": 4800,\n  \"currency\": \"usd\",\n  \"status\": \"open\"\n}",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Sell a product"
+              },
+              "content": [
+                {
+                  "type": "codeBlock",
+                  "attrs": {
+                    "language": "bash"
+                  },
+                  "content": [
+                    {
+                      "text": "$ ledgerline products create --name=\"Canvas tote\"\n$ ledgerline prices create --product=prod_Nx… --unit-amount=4800 --currency=usd",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spacer",
+          "attrs": {
+            "height": "lg"
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "Browse by product",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "size": 13,
+            "color": "muted"
+          },
+          "content": [
+            {
+              "text": "Payments",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "horizontalRule"
+        },
+        {
+          "type": "columns",
+          "attrs": {
+            "gap": "lg"
+          },
+          "content": [
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Payments",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/payments"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Online payments",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Hosted checkout",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/hosted-checkout"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Prebuilt, hosted payment page",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Payment Links",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/payment-links"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "No-code payments",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Embedded form",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/embedded-form"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "UI components for your own page",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Payment methods",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/payment-methods"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Cards, wallets and bank debits",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Refunds",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/refunds"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Return all or part of a payment",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "size": 13,
+            "color": "muted"
+          },
+          "content": [
+            {
+              "text": "Revenue",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "horizontalRule"
+        },
+        {
+          "type": "columns",
+          "attrs": {
+            "gap": "lg"
+          },
+          "content": [
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Subscriptions",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/subscriptions"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Recurring payments",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Invoices",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/invoices"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "One-off and recurring invoices",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Usage-based pricing",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/usage-based-pricing"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Meters and tiers",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "size": 13,
+            "color": "muted"
+          },
+          "content": [
+            {
+              "text": "Developers",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "horizontalRule"
+        },
+        {
+          "type": "columns",
+          "attrs": {
+            "gap": "lg"
+          },
+          "content": [
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Webhooks",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/webhooks"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Real-time event notifications",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Idempotency",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/idempotent-requests"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Safely retry requests",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Testing",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/testing"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Test cards and scenarios",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Versioning",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/versioning"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Dated API versions",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "Errors",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/errors"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Status codes and error types",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "weight": 600
+                  },
+                  "content": [
+                    {
+                      "text": "API keys",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/p/your-org/your-docs/api-keys"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": 14
+                  },
+                  "content": [
+                    {
+                      "text": "Authenticate requests",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spacer",
+          "attrs": {
+            "height": "lg"
+          }
+        },
+        {
+          "type": "horizontalRule"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Need help? ",
+              "type": "text"
+            },
+            {
+              "text": "Contact support.",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://example.com/support"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Check out our ",
+              "type": "text"
+            },
+            {
+              "text": "changelog.",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/p/your-org/your-docs/versioning"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "width": 1040
+  }
+}
