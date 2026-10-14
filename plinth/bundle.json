@@ -22,12 +22,7 @@
       "CHANGELOG"
     ]
   },
-  "requiredOrigins": {
-    "fonts": [
-      "https://fonts.googleapis.com",
-      "https://fonts.gstatic.com"
-    ]
-  },
+  "requiredOrigins": {},
   "theme": {
     "chrome": {
       "cta": {

@@ -22,12 +22,7 @@
       "FORUM"
     ]
   },
-  "requiredOrigins": {
-    "fonts": [
-      "https://fonts.googleapis.com",
-      "https://fonts.gstatic.com"
-    ]
-  },
+  "requiredOrigins": {},
   "theme": {
     "forum": {
       "list": {

@@ -22,12 +22,7 @@
       "DOCS"
     ]
   },
-  "requiredOrigins": {
-    "fonts": [
-      "https://fonts.googleapis.com",
-      "https://fonts.gstatic.com"
-    ]
-  },
+  "requiredOrigins": {},
   "theme": {
     "docs": {
       "api": {
