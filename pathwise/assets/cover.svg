@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<rect width="800" height="600" fill="#ddf4ff"/>
+<path d="M400 560 C 250 500, 250 420, 400 380 S 550 260, 400 220 S 250 100, 400 60" fill="none" stroke="#c4e8fb" stroke-width="28" stroke-linecap="round"/>
+<circle cx="400" cy="520" r="44" fill="#58cc02"/><circle cx="400" cy="532" r="44" fill="#58a700" opacity=".0"/>
+<circle cx="300" cy="430" r="44" fill="#58cc02"/>
+<circle cx="400" cy="380" r="44" fill="#ffc800"/>
+<circle cx="500" cy="300" r="44" fill="#1cb0f6"/>
+<circle cx="400" cy="220" r="44" fill="#e5e5e5"/>
+<circle cx="300" cy="140" r="44" fill="#e5e5e5"/>
+<path d="M382 380l12 12 22-24" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M282 430l12 12 22-24" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M382 520l12 12 22-24" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">½</text>
+<rect x="560" y="80" width="170" height="60" rx="30" fill="#ffffff"/><rect x="580" y="102" width="130" height="16" rx="8" fill="#ff9600"/>
+</svg>

@@ -1,0 +1,316 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "pathwise",
+  "type": "COURSES",
+  "name": "Pathwise",
+  "description": "A bright, game-like learning path: short lessons as round nodes on a winding path, a chunky progress bar over every lesson, quick checks between explanations, lessons that open one after another, and a unit test at the end.",
+  "modelledOn": "A gamified language- and maths-learning app",
+  "features": [
+    "Preset: Learning path — lessons as round nodes on a winding path",
+    "Chunky 16px progress bar over every lesson, in the success green",
+    "Lessons open one after another (linear order), with a padlock on the rest",
+    "Quick checks between explanations; a checkpoint quiz and a unit test",
+    "Answers shown after every attempt — it is practice, not an exam",
+    "Saturated palette, rounded heavy Nunito, chunky 16px buttons on a raised 3D edge",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "course",
+    "gamified",
+    "light",
+    "colorful",
+    "education"
+  ],
+  "thumbnail": "/templates/pathwise.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/cover.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/sam.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "path",
+    "frontDoor": {
+      "showProgress": true,
+      "showContinue": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [
+    {
+      "key": "sam",
+      "name": "Sam Okafor",
+      "role": "Maths teacher",
+      "bio": "Sam has taught fractions to ten-year-olds and to their parents, and prefers pizza to pie charts.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "hero"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outline"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outcomes"
+          }
+        }
+      ]
+    },
+    "width": "list"
+  },
+  "course": {
+    "metadata": {
+      "subtitle": "Short, playful lessons that take you from “what is a fraction?” to adding them in your head.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+      "coverAlt": "A winding path of round lesson nodes, three of them completed",
+      "level": "beginner",
+      "outcomes": [
+        "Read and place fractions",
+        "Compare and simplify fractions",
+        "Add and subtract fractions"
+      ],
+      "instructors": [
+        "sam"
+      ],
+      "language": "en",
+      "ctaLabel": "Start the path",
+      "topics": [
+        "Math",
+        "Fractions"
+      ]
+    },
+    "modules": [
+      {
+        "slug": "unit-1",
+        "name": "Unit 1 · Meet fractions",
+        "description": "What a fraction is, and where it sits.",
+        "pages": [
+          {
+            "slug": "what-is-a-fraction",
+            "title": "What is a fraction?",
+            "fields": {
+              "duration": 3,
+              "kind": "Reading",
+              "objectives": "Name the numerator and the denominator"
+            },
+            "markdown": "A fraction is a number that describes **part of a whole**.\n\nCut a pizza into 4 equal slices and eat 1. You ate **1/4** of the pizza.\n\n- The bottom number (the **denominator**) says how many equal parts the whole is cut into.\n- The top number (the **numerator**) says how many of those parts you have.\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJBJTIwYmFyJTIwaXMlMjBjdXQlMjBpbnRvJTIwNSUyMGVxdWFsJTIwcGllY2VzJTIwYW5kJTIwMiUyMGFyZSUyMHNoYWRlZC4lMjBXaGF0JTIwZnJhY3Rpb24lMjBpcyUyMHNoYWRlZCUzRiUyMiUyQyUyMmNob2ljZXMlMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyNSUyRjIlMjIlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyMiUyRjUlMjIlMkMlMjJjb3JyZWN0JTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjIyJTJGMyUyMiU3RCU1RCUyQyUyMmV4cGxhbmF0aW9uJTIyJTNBJTIyVHdvJTIwcGFydHMlMjBvdXQlMjBvZiUyMGZpdmUlMjBlcXVhbCUyMHBhcnRzJTNBJTIwMiUyRjUuJTIyJTdE\"}:::"
+          },
+          {
+            "slug": "fractions-on-a-number-line",
+            "title": "Fractions on a number line",
+            "fields": {
+              "duration": 4,
+              "kind": "Exercise",
+              "objectives": "Place a fraction on a number line"
+            },
+            "markdown": "Between 0 and 1 on a number line, cut the gap into equal steps. Each step is one part.\n\nWith 3 steps, the marks are **1/3**, **2/3** and **3/3** — and 3/3 is the same as 1.\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJPbiUyMGElMjBsaW5lJTIwY3V0JTIwaW50byUyMDQlMjBzdGVwcyUyMGJldHdlZW4lMjAwJTIwYW5kJTIwMSUyQyUyMHdoZXJlJTIwaXMlMjAzJTJGNCUzRiUyMiUyQyUyMmNob2ljZXMlMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyT25lJTIwc3RlcCUyMGFmdGVyJTIwMCUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJUaHJlZSUyMHN0ZXBzJTIwYWZ0ZXIlMjAwJTIyJTJDJTIyY29ycmVjdCUyMiUzQXRydWUlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyUGFzdCUyMDElMjIlN0QlNUQlMkMlMjJleHBsYW5hdGlvbiUyMiUzQSUyMkVhY2glMjBzdGVwJTIwaXMlMjAxJTJGNCUyQyUyMHNvJTIwMyUyRjQlMjBpcyUyMHRocmVlJTIwc3RlcHMlMjBhbG9uZy4lMjIlN0Q=\"}:::"
+          },
+          {
+            "slug": "compare-fractions",
+            "title": "Compare fractions",
+            "fields": {
+              "duration": 4,
+              "kind": "Exercise",
+              "objectives": "Compare fractions with a common numerator or denominator"
+            },
+            "markdown": "When the denominators match, the bigger numerator wins: **3/8 > 1/8**.\n\nWhen the numerators match, the **smaller** denominator wins, because the pieces are bigger: **1/3 > 1/5**.\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJXaGljaCUyMGlzJTIwYmlnZ2VyJTNGJTIyJTJDJTIyY2hvaWNlcyUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjIyJTJGNyUyMiUyQyUyMmNvcnJlY3QlMjIlM0F0cnVlJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMjIlMkY5JTIyJTdEJTVEJTJDJTIyZXhwbGFuYXRpb24lMjIlM0ElMjJTYW1lJTIwbnVtZXJhdG9yJTNBJTIwc2V2ZW50aHMlMjBhcmUlMjBiaWdnZXIlMjBwaWVjZXMlMjB0aGFuJTIwbmludGhzLiUyMiU3RA==\"}:::"
+          }
+        ]
+      },
+      {
+        "slug": "unit-2",
+        "name": "Unit 2 · Same amount, new name",
+        "description": "Equivalent fractions and simplifying.",
+        "pages": [
+          {
+            "slug": "equivalent-fractions",
+            "title": "Equivalent fractions",
+            "fields": {
+              "duration": 4,
+              "kind": "Reading",
+              "objectives": "Make an equivalent fraction"
+            },
+            "markdown": "**1/2**, **2/4** and **4/8** look different but cover the same amount.\n\nMultiply (or divide) the top and bottom by the same number and you get an equivalent fraction.\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJXaGljaCUyMGZyYWN0aW9uJTIwZXF1YWxzJTIwMyUyRjQlM0YlMjIlMkMlMjJjaG9pY2VzJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMjYlMkY4JTIyJTJDJTIyY29ycmVjdCUyMiUzQXRydWUlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyMyUyRjglMjIlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyNCUyRjMlMjIlN0QlNUQlMkMlMjJleHBsYW5hdGlvbiUyMiUzQSUyMk11bHRpcGx5JTIwdG9wJTIwYW5kJTIwYm90dG9tJTIwYnklMjAyJTNBJTIwNiUyRjguJTIyJTdE\"}:::"
+          },
+          {
+            "slug": "simplify",
+            "title": "Simplify fractions",
+            "fields": {
+              "duration": 5,
+              "kind": "Exercise",
+              "objectives": "Simplify a fraction fully"
+            },
+            "markdown": "To simplify, divide the top and bottom by the biggest number that divides both.\n\n**6/9** → both divide by 3 → **2/3**.\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJTaW1wbGlmeSUyMDglMkYxMi4lMjIlMkMlMjJjaG9pY2VzJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMjQlMkY2JTIyJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMjIlMkYzJTIyJTJDJTIyY29ycmVjdCUyMiUzQXRydWUlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyMSUyRjQlMjIlN0QlNUQlMkMlMjJleHBsYW5hdGlvbiUyMiUzQSUyMjQlMjBkaXZpZGVzJTIwYm90aCUzQSUyMDglMkYxMiUyMCUzRCUyMDIlMkYzLiUyMCg0JTJGNiUyMGlzJTIwZXF1YWwlMkMlMjBidXQlMjBub3QlMjBzaW1wbGVzdC4pJTIyJTdE\"}:::"
+          },
+          {
+            "slug": "common-denominators",
+            "title": "Common denominators",
+            "fields": {
+              "duration": 5,
+              "kind": "Reading",
+              "objectives": "Rewrite two fractions over a common denominator"
+            },
+            "markdown": "To compare 2/3 and 3/4, rewrite both with the **same** denominator.\n\n12 is a multiple of 3 and 4: **2/3 = 8/12** and **3/4 = 9/12**. Now compare the tops: 3/4 is bigger."
+          }
+        ]
+      },
+      {
+        "slug": "unit-3",
+        "name": "Unit 3 · Add and subtract",
+        "description": "Putting fractions together and taking them apart.",
+        "pages": [
+          {
+            "slug": "add-like-fractions",
+            "title": "Add fractions with like denominators",
+            "fields": {
+              "duration": 3,
+              "kind": "Exercise",
+              "objectives": "Add fractions with the same denominator"
+            },
+            "markdown": "Same denominator? Add the tops and keep the bottom.\n\n**2/7 + 3/7 = 5/7**\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjIxJTJGNSUyMCUyQiUyMDMlMkY1JTIwJTNEJTIwJTNGJTIyJTJDJTIyY2hvaWNlcyUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjI0JTJGMTAlMjIlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyNCUyRjUlMjIlMkMlMjJjb3JyZWN0JTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjIzJTJGMjUlMjIlN0QlNUQlMkMlMjJleHBsYW5hdGlvbiUyMiUzQSUyMkFkZCUyMHRoZSUyMG51bWVyYXRvcnMlMkMlMjBrZWVwJTIwdGhlJTIwZGVub21pbmF0b3IuJTIyJTdE\"}:::"
+          },
+          {
+            "slug": "add-unlike-fractions",
+            "title": "Add fractions with unlike denominators",
+            "fields": {
+              "duration": 5,
+              "kind": "Exercise",
+              "objectives": "Add fractions with different denominators"
+            },
+            "markdown": "Different denominators? Find a common denominator first.\n\n**1/2 + 1/3** → **3/6 + 2/6 = 5/6**\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjIxJTJGNCUyMCUyQiUyMDElMkYyJTIwJTNEJTIwJTNGJTIyJTJDJTIyY2hvaWNlcyUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjIyJTJGNiUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjIzJTJGNCUyMiUyQyUyMmNvcnJlY3QlMjIlM0F0cnVlJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMjElMkY2JTIyJTdEJTVEJTJDJTIyZXhwbGFuYXRpb24lMjIlM0ElMjIxJTJGMiUyMCUzRCUyMDIlMkY0JTJDJTIwc28lMjAxJTJGNCUyMCUyQiUyMDIlMkY0JTIwJTNEJTIwMyUyRjQuJTIyJTdE\"}:::"
+          },
+          {
+            "slug": "subtract-fractions",
+            "title": "Subtract fractions",
+            "fields": {
+              "duration": 4,
+              "kind": "Exercise",
+              "objectives": "Subtract fractions and simplify the answer"
+            },
+            "markdown": "Subtracting works the same way: common denominator, then subtract the tops.\n\n**5/6 − 1/3** → **5/6 − 2/6 = 3/6 = 1/2**"
+          }
+        ]
+      }
+    ],
+    "quizzes": [
+      {
+        "lesson": "compare-fractions",
+        "quiz": {
+          "title": "Checkpoint: compare",
+          "passingScore": 100,
+          "questions": [
+            {
+              "prompt": "Which is bigger: 3/10 or 7/10?",
+              "choices": [
+                "3/10",
+                "7/10"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Same denominator: compare the numerators."
+            },
+            {
+              "prompt": "Which is bigger: 1/4 or 1/6?",
+              "choices": [
+                "1/4",
+                "1/6"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Quarters are bigger pieces than sixths."
+            }
+          ]
+        }
+      },
+      {
+        "module": "unit-3",
+        "quiz": {
+          "title": "Unit test",
+          "passingScore": 75,
+          "questions": [
+            {
+              "prompt": "Simplify 10/15.",
+              "choices": [
+                "2/3",
+                "5/3",
+                "1/5"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Divide top and bottom by 5."
+            },
+            {
+              "prompt": "2/9 + 4/9 = ?",
+              "choices": [
+                "6/18",
+                "6/9",
+                "8/9"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Then simplify if you like: 2/3."
+            },
+            {
+              "prompt": "1/2 + 1/4 = ?",
+              "choices": [
+                "2/6",
+                "3/4",
+                "1/8"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "1/2 = 2/4."
+            },
+            {
+              "prompt": "3/4 − 1/2 = ?",
+              "choices": [
+                "1/4",
+                "2/2",
+                "1/2"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "3/4 − 2/4 = 1/4."
+            }
+          ]
+        }
+      }
+    ],
+    "quizPolicy": {
+      "reveal": "always"
+    },
+    "access": {
+      "order": "linear"
+    },
+    "learning": {
+      "xpPerLesson": 10,
+      "xpPerCourse": 100
+    }
+  }
+}

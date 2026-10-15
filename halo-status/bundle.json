@@ -1,0 +1,214 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Halo Status",
+    "slug": "template-halo-status",
+    "description": "A floating card over a dark band: a centred headline inside a soft halo, each group as its own card with its uptime, fat ribbon bars that read as one stripe, and a light/dark switch in the footer.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "status",
+      "modern",
+      "card",
+      "dark-band",
+      "template"
+    ],
+    "spaceTypes": [
+      "STATUS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "primaryColor": "#10b981",
+    "accentColor": "#10b981",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Plus Jakarta Sans",
+    "palette": {
+      "background": "#f5f7fa",
+      "surface": "#ffffff",
+      "ink": "#374151",
+      "heading": "#111827",
+      "muted": "#6b7280",
+      "line": "#e5e7eb",
+      "header_background": "#111827",
+      "header_primary": "#f9fafb",
+      "footer_background": "#f5f7fa",
+      "footer_primary": "#6b7280",
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "danger": "#ef4444",
+      "info": "#3b82f6"
+    },
+    "paletteDark": {
+      "background": "#0b0f17",
+      "surface": "#111827",
+      "ink": "#d1d5db",
+      "heading": "#f9fafb",
+      "muted": "#9ca3af",
+      "line": "#1f2937",
+      "header_background": "#030712",
+      "header_primary": "#f9fafb",
+      "footer_background": "#0b0f17",
+      "footer_primary": "#9ca3af",
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "danger": "#ef4444",
+      "info": "#3b82f6"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 26,
+            "sm": 22
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "size": 13,
+          "weight": 700,
+          "tracking": 0.06,
+          "lineHeight": 1.4,
+          "case": "upper"
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 12,
+      "button": {
+        "background": "#111827",
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "semibold"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 72,
+        "border": "none"
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": true,
+        "style": "switch",
+        "position": "footer"
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "motion": {
+      "preset": "subtle"
+    },
+    "status": {
+      "colors": {
+        "operational": {
+          "color": "#10b981"
+        },
+        "degraded": {
+          "color": "#f59e0b"
+        },
+        "partial": {
+          "color": "#f97316"
+        },
+        "major": {
+          "color": "#ef4444"
+        },
+        "maintenance": {
+          "color": "#3b82f6"
+        },
+        "noData": {
+          "color": "#e5e7eb",
+          "colorDark": "#1f2937"
+        }
+      },
+      "banner": {
+        "style": "centered",
+        "icon": true,
+        "align": "center",
+        "subline": true,
+        "showUpdated": true,
+        "pad": 32
+      },
+      "components": {
+        "layout": "list",
+        "container": "card-per-group",
+        "card": {
+          "surface": "flat",
+          "radius": 12,
+          "pad": 16
+        },
+        "dividers": false,
+        "statusStyle": "icon-word",
+        "statusCase": "upper",
+        "rowMeta": "none",
+        "groupCollapse": "expanded",
+        "groupSummary": "count-uptime"
+      },
+      "bars": {
+        "shape": "ribbon",
+        "height": 32,
+        "gap": 1,
+        "radius": 2,
+        "days": 90,
+        "daysPhone": 30,
+        "fill": "solid",
+        "noData": "full",
+        "caption": true,
+        "percentDecimals": 2,
+        "tooltip": "styled",
+        "captionCase": "uppercase",
+        "captionTracking": 0.08
+      },
+      "legend": {
+        "position": "bottom",
+        "states": 5
+      },
+      "incidents": {
+        "card": "accent-left",
+        "chips": true,
+        "updates": "latest",
+        "time": "relative",
+        "emptyStates": true,
+        "foldOutages": true
+      },
+      "page": {
+        "frame": "band-card",
+        "band": {
+          "color": "#111827",
+          "colorDark": "#030712"
+        },
+        "bandHeight": 270,
+        "emptyDays": 7,
+        "nav": "links"
+      },
+      "history": {
+        "view": "list",
+        "monthsPerPage": 3
+      },
+      "incident": {
+        "timeline": "rail",
+        "order": "desc"
+      },
+      "uptime": {
+        "months": 3,
+        "cell": "round"
+      },
+      "maintenance": {
+        "view": "list",
+        "showPast": true
+      }
+    }
+  },
+  "components": []
+}

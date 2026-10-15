@@ -1,0 +1,152 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Reelhouse",
+    "slug": "template-reelhouse",
+    "description": "A dark, dense video course: a wide cover over a stats strip, the instructors with their companies, and the lessons as a timed table. Every lesson is a self-hosted video with chapters, a searchable transcript and a speed row.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "course",
+      "video",
+      "dark",
+      "developer",
+      "dense",
+      "template"
+    ],
+    "spaceTypes": [
+      "COURSES"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "colorSchemeStrict": true,
+    "primaryColor": "#ff4f5e",
+    "primaryColorDark": "#ff4f5e",
+    "accentColor": "#2fd3a5",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
+    "customFontFamily": "Inter",
+    "palette": {
+      "background": "#0f1117",
+      "surface": "#171a23",
+      "ink": "#c9cdd8",
+      "heading": "#ffffff",
+      "muted": "#8a90a2",
+      "line": "#262a3a",
+      "header_background": "#0f1117",
+      "header_primary": "#ffffff",
+      "footer_background": "#0f1117",
+      "footer_primary": "#8a90a2",
+      "success": "#2fd3a5",
+      "danger": "#ff4f5e"
+    },
+    "paletteDark": {
+      "background": "#0f1117",
+      "surface": "#171a23",
+      "ink": "#c9cdd8",
+      "heading": "#ffffff",
+      "muted": "#8a90a2",
+      "line": "#262a3a",
+      "header_background": "#0f1117",
+      "header_primary": "#ffffff",
+      "footer_background": "#0f1117",
+      "footer_primary": "#8a90a2",
+      "success": "#2fd3a5",
+      "danger": "#ff4f5e"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 44,
+            "sm": 30
+          },
+          "weight": 800,
+          "tracking": -0.03,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": {
+            "lg": 24,
+            "sm": 21
+          },
+          "weight": 700,
+          "lineHeight": 1.25
+        },
+        "h3": {
+          "size": 17,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.55
+        }
+      }
+    },
+    "components": {
+      "radius": 6,
+      "button": {
+        "background": "#ff4f5e",
+        "ink": "#0f1117",
+        "radius": 6,
+        "weight": "bold"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 56,
+        "border": "line"
+      },
+      "showSignIn": true,
+      "copyright": "© 2026 Your Brand."
+    },
+    "courses": {
+      "landing": {
+        "layout": "hero-cover",
+        "coverAspect": "wide",
+        "showStats": true,
+        "showInstructors": true,
+        "showOutcomes": true,
+        "showPrereqs": true,
+        "ctaStyle": "solid",
+        "coverRadius": 8
+      },
+      "outline": {
+        "style": "timestamp-table",
+        "showDurations": true,
+        "showKinds": false,
+        "showModuleProgress": true,
+        "numbering": "1.1"
+      },
+      "lesson": {
+        "sidebar": "curriculum",
+        "progressBar": "sidebar",
+        "completion": "complete-and-continue",
+        "endCard": "completed-next",
+        "objectivesBox": false
+      },
+      "progress": {
+        "style": "thin",
+        "doneMark": "fill"
+      },
+      "video": {
+        "speed": true,
+        "resume": true,
+        "transcript": "open",
+        "completeAt": 90
+      },
+      "certificate": {
+        "layout": "modern",
+        "logo": true,
+        "border": "none"
+      }
+    }
+  },
+  "components": []
+}

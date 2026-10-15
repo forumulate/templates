@@ -1,0 +1,306 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Assurance",
+    "slug": "template-assurance",
+    "description": "A trust centre: compliance badge tiles in the brand accent, the policies grouped as Security, Privacy and Terms, a document library with public reports and Request access, the status page’s live state, a sortable sub-processor list and region/language versions.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "dark",
+      "legal",
+      "trust-centre",
+      "security",
+      "template"
+    ],
+    "spaceTypes": [
+      "LEGAL"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "logoIncludesName": true,
+    "colorScheme": "system",
+    "primaryColor": "#0f766e",
+    "accentColor": "#0f766e",
+    "primaryColorDark": "#2dd4bf",
+    "palette": {
+      "ink": "#25332f",
+      "line": "#dfe7e4",
+      "muted": "#5b6b67",
+      "heading": "#0b1f1d",
+      "surface": "#f3f7f6",
+      "background": "#ffffff",
+      "header_primary": "#0b1f1d",
+      "header_background": "#ffffff",
+      "footer_primary": "#5b6b67",
+      "footer_background": "#f3f7f6"
+    },
+    "paletteDark": {
+      "ink": "#c9d6d2",
+      "line": "#24312e",
+      "muted": "#8fa39e",
+      "heading": "#eef6f4",
+      "surface": "#111a18",
+      "background": "#0a1110",
+      "header_primary": "#eef6f4",
+      "header_background": "#0a1110",
+      "footer_primary": "#8fa39e",
+      "footer_background": "#111a18"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "onThisPage": "always",
+    "headingAnchors": "hover",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 44,
+            "sm": 32
+          },
+          "weight": 700,
+          "tracking": -0.025
+        },
+        "h2": {
+          "size": 22,
+          "weight": 600,
+          "spaceBefore": "48px"
+        }
+      }
+    },
+    "components": {
+      "radius": 12,
+      "button": {
+        "radius": 8,
+        "weight": "semibold"
+      },
+      "link": {
+        "underline": "hover"
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 500,
+        "logoHeight": 24
+      },
+      "headerLinks": [
+        {
+          "label": "Security",
+          "href": "/legal/your-org/security"
+        },
+        {
+          "label": "Privacy",
+          "href": "/legal/your-org/privacy"
+        },
+        {
+          "label": "Sub-processors",
+          "href": "/legal/your-org/subprocessors"
+        },
+        {
+          "label": "Trust centre",
+          "href": "/legal/your-org"
+        }
+      ],
+      "cta": {
+        "label": "Request a report",
+        "href": "/legal/your-org/security",
+        "showOnPhone": false
+      },
+      "footer": {
+        "columns": 3,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingStyle": "plain"
+      },
+      "footerColumns": [
+        {
+          "heading": "Security",
+          "links": [
+            {
+              "label": "Security Overview",
+              "href": "/legal/your-org/security"
+            },
+            {
+              "label": "Report a vulnerability",
+              "href": "/legal/your-org/security-disclosure"
+            }
+          ]
+        },
+        {
+          "heading": "Privacy",
+          "links": [
+            {
+              "label": "Privacy Policy",
+              "href": "/legal/your-org/privacy"
+            },
+            {
+              "label": "Data Processing Addendum",
+              "href": "/legal/your-org/dpa"
+            },
+            {
+              "label": "Sub-processors",
+              "href": "/legal/your-org/subprocessors"
+            },
+            {
+              "label": "Cookie Policy",
+              "href": "/legal/your-org/cookies"
+            }
+          ]
+        },
+        {
+          "heading": "Terms",
+          "links": [
+            {
+              "label": "Terms of Service",
+              "href": "/legal/your-org/terms"
+            },
+            {
+              "label": "Service Level Agreement",
+              "href": "/legal/your-org/sla"
+            },
+            {
+              "label": "Acceptable Use",
+              "href": "/legal/your-org/acceptable-use"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand. Sample text — not legal advice; sample badges are not real certifications."
+    },
+    "docs": {
+      "toc": {
+        "activeStyle": "bar",
+        "label": "On this page"
+      }
+    },
+    "legal": {
+      "register": {
+        "group": "collection",
+        "description": "show",
+        "date": "updated",
+        "edition": false,
+        "search": "auto"
+      },
+      "head": {
+        "lead": "effective",
+        "kicker": "updated",
+        "kickerMono": false
+      },
+      "date": {
+        "format": "long"
+      },
+      "numbering": {
+        "style": "decimal",
+        "levels": 1
+      },
+      "summary": {
+        "style": "callout"
+      },
+      "history": "disclosure",
+      "docNav": "sidebar",
+      "definitions": "list",
+      "item": {
+        "actions": {
+          "style": "row"
+        }
+      },
+      "variants": {
+        "picker": "menu",
+        "register": "picker",
+        "banner": "notice"
+      },
+      "subprocessors": {
+        "sortable": true,
+        "changes": "summary"
+      },
+      "trust": {
+        "compliance": {
+          "heading": "Compliance (sample badges)",
+          "style": "tiles",
+          "items": [
+            {
+              "name": "SOC 2 Type II",
+              "status": "certified",
+              "logo": "/api/assets/00000000-0000-4000-8000-000000000003",
+              "href": "/legal/your-org/security",
+              "note": "Sample badge, not a real certification. Replace it with your own, or delete it."
+            },
+            {
+              "name": "ISO/IEC 27001",
+              "status": "certified",
+              "logo": "/api/assets/00000000-0000-4000-8000-000000000004",
+              "href": "/legal/your-org/security",
+              "note": "Sample badge, not a real certification. Replace it with your own, or delete it."
+            },
+            {
+              "name": "GDPR",
+              "status": "compliant",
+              "logo": "/api/assets/00000000-0000-4000-8000-000000000005",
+              "href": "/legal/your-org/privacy-eu",
+              "note": "Sample badge, not a real certification. Replace it with your own, or delete it."
+            },
+            {
+              "name": "HIPAA",
+              "status": "in-progress",
+              "logo": "/api/assets/00000000-0000-4000-8000-000000000006",
+              "note": "Sample badge, not a real certification. Replace it with your own, or delete it."
+            }
+          ]
+        },
+        "access": {
+          "heading": "Document library",
+          "requestHref": "mailto:trust@example.com",
+          "items": [
+            {
+              "title": "Security overview",
+              "description": "How we protect the Service, in one page.",
+              "href": "/legal/your-org/security",
+              "access": "public"
+            },
+            {
+              "title": "Sub-processor list",
+              "description": "Sortable, and published as data.",
+              "href": "/legal/your-org/subprocessors",
+              "access": "public"
+            },
+            {
+              "title": "SOC 2 Type II report (sample)",
+              "description": "Shared under NDA with customers and prospects.",
+              "access": "request"
+            },
+            {
+              "title": "Penetration test summary (sample)",
+              "description": "The latest independent test, summarised.",
+              "access": "request"
+            },
+            {
+              "title": "Security questionnaire (sample)",
+              "description": "A completed standard questionnaire.",
+              "access": "request"
+            }
+          ]
+        },
+        "status": "card"
+      }
+    }
+  },
+  "components": []
+}

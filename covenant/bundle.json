@@ -1,0 +1,204 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Covenant",
+    "slug": "template-covenant",
+    "description": "A legal hub with weight: an intro and three cards on how the agreements fit, documents grouped as Agreements, Privacy and Policies, and documents with numbered clauses, a boxed plain-English summary and the register in a sidebar.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "legal",
+      "grouped",
+      "cards",
+      "template"
+    ],
+    "spaceTypes": [
+      "LEGAL"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "logoIncludesName": true,
+    "colorScheme": "light",
+    "primaryColor": "#4338ca",
+    "accentColor": "#4338ca",
+    "palette": {
+      "ink": "#2a3a52",
+      "line": "#e2e7ef",
+      "muted": "#5e6b80",
+      "heading": "#0d1b33",
+      "surface": "#f5f7fb",
+      "background": "#ffffff",
+      "header_primary": "#0d1b33",
+      "header_background": "#ffffff",
+      "footer_primary": "#5e6b80",
+      "footer_background": "#f5f7fb"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Albert Sans",
+    "onThisPage": "always",
+    "headingAnchors": "hover",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 40,
+            "sm": 30
+          },
+          "weight": 700,
+          "tracking": -0.02
+        },
+        "h2": {
+          "size": 22,
+          "weight": 600,
+          "spaceBefore": "48px"
+        }
+      }
+    },
+    "components": {
+      "radius": 10,
+      "button": {
+        "radius": 8,
+        "weight": "semibold"
+      },
+      "link": {
+        "underline": "hover"
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 500,
+        "logoHeight": 24
+      },
+      "headerLinks": [
+        {
+          "label": "Terms",
+          "href": "/legal/your-org/terms"
+        },
+        {
+          "label": "Privacy",
+          "href": "/legal/your-org/privacy"
+        },
+        {
+          "label": "DPA",
+          "href": "/legal/your-org/dpa"
+        },
+        {
+          "label": "All documents",
+          "href": "/legal/your-org"
+        }
+      ],
+      "cta": {
+        "label": "Sub-processors",
+        "href": "/legal/your-org/subprocessors",
+        "showOnPhone": false
+      },
+      "footer": {
+        "columns": 3,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingStyle": "plain"
+      },
+      "footerColumns": [
+        {
+          "heading": "Agreements",
+          "links": [
+            {
+              "label": "Terms of Service",
+              "href": "/legal/your-org/terms"
+            },
+            {
+              "label": "Data Processing Addendum",
+              "href": "/legal/your-org/dpa"
+            },
+            {
+              "label": "Service Level Agreement",
+              "href": "/legal/your-org/sla"
+            }
+          ]
+        },
+        {
+          "heading": "Privacy",
+          "links": [
+            {
+              "label": "Privacy Policy",
+              "href": "/legal/your-org/privacy"
+            },
+            {
+              "label": "Sub-processors",
+              "href": "/legal/your-org/subprocessors"
+            },
+            {
+              "label": "Cookie Policy",
+              "href": "/legal/your-org/cookies"
+            }
+          ]
+        },
+        {
+          "heading": "Policies",
+          "links": [
+            {
+              "label": "Acceptable Use",
+              "href": "/legal/your-org/acceptable-use"
+            },
+            {
+              "label": "Trademark Guidelines",
+              "href": "/legal/your-org/brand-guidelines"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand. Sample legal text — not legal advice."
+    },
+    "docs": {
+      "toc": {
+        "activeStyle": "bar",
+        "label": "On this page"
+      }
+    },
+    "legal": {
+      "register": {
+        "group": "collection",
+        "description": "show",
+        "date": "effective",
+        "edition": false
+      },
+      "head": {
+        "lead": "effective",
+        "kicker": "effective",
+        "kickerMono": false
+      },
+      "date": {
+        "format": "long"
+      },
+      "numbering": {
+        "style": "decimal",
+        "levels": 2
+      },
+      "summary": {
+        "style": "callout"
+      },
+      "history": "disclosure",
+      "docNav": "sidebar",
+      "definitions": "table"
+    }
+  },
+  "components": []
+}

@@ -1,0 +1,253 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "vantage-contact",
+  "type": "CONTACT",
+  "name": "Vantage Contact",
+  "description": "A split contact-sales page: the pitch, three proof numbers and a logo wall on the left; a raised form card on the right that stays in view while you read.",
+  "modelledOn": "A frontend cloud platform’s contact-sales page",
+  "features": [
+    "Split preset: pitch left, sticky form card right",
+    "Proof numbers and a customer logo wall from blocks, not CSS",
+    "Two questions to a row and a full-width button",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "contact",
+    "sales",
+    "split"
+  ],
+  "thumbnail": "/templates/vantage-contact.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/vg-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/vg-logo-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/vg-logo-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/vg-logo-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/vg-logo-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/vg-logo-5.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/vg-logo-6.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "split",
+    "frontDoor": {
+      "title": "Talk to our sales team",
+      "subtitle": "Get a custom quote, a demo shaped around your stack, or answers on security and compliance."
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "contactForm": {
+      "submitLabel": "Talk to sales",
+      "successTitle": "Thanks for reaching out",
+      "successMessage": "A member of our team will be in touch within one business day."
+    }
+  },
+  "contact": {
+    "departments": [
+      {
+        "name": "A new project",
+        "description": "Starting fresh on Your Brand",
+        "fields": [
+          "company",
+          "company_size",
+          "country",
+          "product"
+        ]
+      },
+      {
+        "name": "Moving from another platform",
+        "description": "Migrations, timelines and support",
+        "fields": [
+          "company",
+          "company_size",
+          "country",
+          "product"
+        ]
+      },
+      {
+        "name": "Security and compliance",
+        "description": "Reviews, questionnaires and contracts",
+        "fields": [
+          "company",
+          "country"
+        ]
+      }
+    ],
+    "formFields": [
+      {
+        "key": "company",
+        "label": "Company name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "company_size",
+        "label": "Company size",
+        "type": "select",
+        "required": true,
+        "options": [
+          "1–49",
+          "50–249",
+          "250–999",
+          "1,000+"
+        ]
+      },
+      {
+        "key": "country",
+        "label": "Country",
+        "type": "text",
+        "placeholder": "Where your team is based"
+      },
+      {
+        "key": "product",
+        "label": "Primary interest",
+        "type": "select",
+        "options": [
+          "Hosting and deploys",
+          "Edge functions",
+          "Analytics",
+          "Enterprise plan"
+        ]
+      }
+    ],
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "talk-to-sales",
+              "title": "Talk to sales",
+              "hideFromNav": true,
+              "fields": {
+                "email": "sales@example.com",
+                "responseTarget": "one business day"
+              },
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "bulletList",
+                    "content": [
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Get a custom quote for your team and your traffic."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "See a demo of the platform built around your stack."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "listItem",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "text": "Talk through security reviews, SSO and data residency."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "stats",
+                    "attrs": {
+                      "layout": "row",
+                      "columns": 3,
+                      "items": [
+                        {
+                          "value": 99.99,
+                          "decimals": 2,
+                          "suffix": "%",
+                          "label": "Uptime over the last year"
+                        },
+                        {
+                          "value": 6,
+                          "suffix": "x",
+                          "label": "Faster builds after moving"
+                        },
+                        {
+                          "value": 40,
+                          "suffix": "+",
+                          "label": "Regions on the network"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "logoWall",
+                    "attrs": {
+                      "title": "Trusted by teams at",
+                      "columns": 3,
+                      "grayscale": true,
+                      "size": "sm",
+                      "logos": [
+                        {
+                          "src": "/api/assets/00000000-0000-4000-8000-000000000002",
+                          "alt": "Loomwork"
+                        },
+                        {
+                          "src": "/api/assets/00000000-0000-4000-8000-000000000003",
+                          "alt": "Cinderly"
+                        },
+                        {
+                          "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                          "alt": "Parcelo"
+                        },
+                        {
+                          "src": "/api/assets/00000000-0000-4000-8000-000000000005",
+                          "alt": "Brightfold"
+                        },
+                        {
+                          "src": "/api/assets/00000000-0000-4000-8000-000000000006",
+                          "alt": "Tandemly"
+                        },
+                        {
+                          "src": "/api/assets/00000000-0000-4000-8000-000000000007",
+                          "alt": "Archway"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

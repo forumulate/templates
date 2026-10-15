@@ -1,0 +1,209 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Beacon Status",
+    "slug": "template-beacon-status",
+    "description": "The classic status page: a painted header, a solid banner that says it in one line, every component in a two-column grid with thin ninety-day bars, a legend under them and the last fifteen days spelled out — “No incidents reported” included.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "status",
+      "classic",
+      "light",
+      "grid",
+      "template"
+    ],
+    "spaceTypes": [
+      "STATUS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#2459d1",
+    "accentColor": "#2459d1",
+    "font": "sans",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#ffffff",
+      "ink": "#333333",
+      "heading": "#1f2328",
+      "muted": "#6b7280",
+      "line": "#e1e4e8",
+      "header_background": "#1b2140",
+      "header_primary": "#ffffff",
+      "footer_background": "#ffffff",
+      "footer_primary": "#6b7280",
+      "success": "#2fcc66",
+      "warning": "#f1c40f",
+      "danger": "#e74c3c",
+      "info": "#3498db"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 30,
+            "sm": 26
+          },
+          "weight": 600,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "size": 20,
+          "weight": 600,
+          "lineHeight": 1.3
+        },
+        "body": {
+          "lineHeight": 1.55
+        }
+      }
+    },
+    "components": {
+      "radius": 4,
+      "button": {
+        "background": "#2459d1",
+        "ink": "#ffffff",
+        "radius": 4,
+        "weight": "semibold"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": {
+          "lg": 96,
+          "sm": 64
+        },
+        "border": "none",
+        "logoHeight": 32
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "status": {
+      "colors": {
+        "operational": {
+          "color": "#2fcc66"
+        },
+        "degraded": {
+          "color": "#f1c40f"
+        },
+        "partial": {
+          "color": "#e67e22"
+        },
+        "major": {
+          "color": "#e74c3c"
+        },
+        "maintenance": {
+          "color": "#3498db"
+        },
+        "noData": {
+          "color": "#b3bac5"
+        }
+      },
+      "banner": {
+        "style": "solid",
+        "icon": true,
+        "align": "start",
+        "radius": 4,
+        "showUpdated": true
+      },
+      "components": {
+        "layout": "grid-2",
+        "container": "card",
+        "card": {
+          "surface": "outline",
+          "radius": 4
+        },
+        "dividers": true,
+        "statusStyle": "icon-word",
+        "rowMeta": "none"
+      },
+      "bars": {
+        "shape": "thin",
+        "height": 34,
+        "gap": 2,
+        "radius": 0,
+        "days": 90,
+        "daysPhone": 30,
+        "fill": "solid",
+        "noData": "full",
+        "caption": true,
+        "percentDecimals": 2,
+        "tooltip": "styled"
+      },
+      "legend": {
+        "position": "bottom",
+        "states": 5
+      },
+      "incidents": {
+        "card": "plain",
+        "updates": "all",
+        "time": "absolute",
+        "emptyStates": true,
+        "foldOutages": true
+      },
+      "page": {
+        "frame": "plain",
+        "emptyDays": 15,
+        "nav": "links"
+      },
+      "hero": {
+        "layers": [
+          {
+            "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20920%20200%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%235f73c7%22%20stroke-opacity%3D%22.35%22%20stroke-width%3D%221%22%3E%3Cpath%20d%3D%22M0%20150h920M0%20120h920M0%2090h920M0%2060h920M0%2030h920%22%2F%3E%3Cpath%20d%3D%22M80%200v200M200%200v200M320%200v200M440%200v200M560%200v200M680%200v200M800%200v200%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%238fa2ff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-opacity%3D%22.8%22%3E%3Cpath%20d%3D%22M140%20150l60-40%20120%2020%20120-60%20120%2030%20120-50%20120%2040%22%2F%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22110%22%20r%3D%225%22%20fill%3D%22%231b2140%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22130%22%20r%3D%225%22%20fill%3D%22%231b2140%22%2F%3E%3Ccircle%20cx%3D%22440%22%20cy%3D%2270%22%20r%3D%225%22%20fill%3D%22%231b2140%22%2F%3E%3Ccircle%20cx%3D%22560%22%20cy%3D%22100%22%20r%3D%225%22%20fill%3D%22%231b2140%22%2F%3E%3Ccircle%20cx%3D%22680%22%20cy%3D%2250%22%20r%3D%225%22%20fill%3D%22%231b2140%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(700%2092)%22%3E%3Crect%20width%3D%22120%22%20height%3D%2234%22%20rx%3D%224%22%20fill%3D%22%232459d1%22%2F%3E%3Crect%20y%3D%2242%22%20width%3D%22120%22%20height%3D%2234%22%20rx%3D%224%22%20fill%3D%22%232459d1%22%20fill-opacity%3D%22.7%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2217%22%20r%3D%225%22%20fill%3D%22%232fcc66%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2259%22%20r%3D%225%22%20fill%3D%22%232fcc66%22%2F%3E%3Cpath%20d%3D%22M36%2017h66M36%2059h50%22%20stroke%3D%22%23ffffff%22%20stroke-opacity%3D%22.6%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(680%2036)%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-opacity%3D%22.55%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M70%2022a26%2026%200%200%201%2036%200M60%2012a40%2040%200%200%201%2056%200%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E",
+            "size": "cover",
+            "x": 50,
+            "y": 50
+          },
+          {
+            "gradient": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "#1b2140",
+                  "at": 0
+                },
+                {
+                  "color": "#2b3566",
+                  "at": 100
+                }
+              ]
+            }
+          }
+        ],
+        "placement": "below-title",
+        "height": 180,
+        "overlap": 48,
+        "radius": 4
+      },
+      "history": {
+        "view": "list",
+        "monthsPerPage": 3
+      },
+      "incident": {
+        "timeline": "list",
+        "order": "desc"
+      },
+      "uptime": {
+        "months": 3,
+        "cell": "square"
+      },
+      "maintenance": {
+        "view": "list",
+        "showPast": true
+      }
+    }
+  },
+  "components": []
+}

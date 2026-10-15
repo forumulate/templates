@@ -12,6 +12,8 @@
     "Index layout: gutter",
     "Light and dark palettes",
     "Motion presets",
+    "Release page: “More releases” and an email subscribe after every release",
+    "No change-type badges; every release in full on the index",
     "Zero custom CSS — every detail is a theme setting"
   ],
   "tags": [
@@ -40,7 +42,25 @@
       "subscribeStyle": "icon"
     }
   },
-  "piecePage": null,
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe",
+            "heading": "Get every release by email",
+            "body": "One short email when something ships.",
+            "layout": "inline-row",
+            "frame": "none",
+            "inputStyle": "underline"
+          }
+        }
+      ]
+    }
+  },
   "tagInfo": [
     {
       "slug": "agents",
@@ -100,7 +120,7 @@
         "planning"
       ],
       "daysAgo": 23,
-      "markdown": "Boards with thousands of items now load instantly and scroll smoothly. Filters are kept per board and per person.\n\nPlaceholder release notes."
+      "markdown": "Boards with thousands of items now load instantly and scroll smoothly. Filters are kept per board and per person.\n\n:::expandable{title=\"Fixes\"}\n- Dragging a card to the last column no longer scrolls the board back.\n- Filters with a date range keep their range after a reload.\n:::\n\n:::expandable{title=\"Improvements\"}\n- Board columns remember their width.\n:::\n\nPlaceholder release notes."
     },
     {
       "slug": "keyboard-first-everything",

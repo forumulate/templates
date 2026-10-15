@@ -1,0 +1,2272 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "covenant",
+  "type": "LEGAL",
+  "name": "Covenant",
+  "description": "A legal hub with weight: an intro and three cards on how the agreements fit, documents grouped as Agreements, Privacy and Policies, and documents with numbered clauses, a boxed plain-English summary and the register in a sidebar.",
+  "modelledOn": "A payments company’s legal hub",
+  "features": [
+    "Preset: cards — each document as a card with its description, grouped under its collection",
+    "Intro band with three cards: how the agreements fit, your data, recent changes",
+    "Automatic clause numbers (1. / 1.1) written into the headings and the contents rail",
+    "Effective date as the kicker above the title and the lead of the head, spelled long",
+    "Plain-English summary as a raised callout; definitions as a two-column table",
+    "The register beside every document (sidebar) and an on-this-page rail",
+    "History disclosure under the head; Get updates as a menu",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "legal",
+    "grouped",
+    "cards"
+  ],
+  "thumbnail": "/templates/covenant.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {
+    "preset": "cards",
+    "frontDoor": {
+      "subscribeStyle": "menu"
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Every agreement, policy and notice that applies when you use Your Brand — each with the date it took effect, a plain-English summary and its full history."
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "attrs": {
+            "columns": {
+              "lg": 3,
+              "md": 3,
+              "sm": 1
+            }
+          },
+          "content": [
+            {
+              "type": "card",
+              "attrs": {
+                "title": "How the agreements fit",
+                "icon": "layers",
+                "iconStyle": "tile",
+                "description": "The Terms of Service are the core; the DPA and SLA add to them for paid plans.",
+                "href": "/legal/your-org/terms"
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "title": "Your data",
+                "icon": "shield-check",
+                "iconStyle": "tile",
+                "description": "What we collect, why, and the providers that help us run the Service.",
+                "href": "/legal/your-org/privacy"
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "title": "Recent changes",
+                "icon": "history",
+                "iconStyle": "tile",
+                "description": "Each document keeps its editions and a note on what changed.",
+                "href": "/legal/your-org/terms"
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "All documents"
+            }
+          ]
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "documents"
+          }
+        }
+      ]
+    }
+  },
+  "legal": {
+    "collections": [
+      {
+        "slug": "agreements-group",
+        "name": "Agreements",
+        "description": "The contracts that cover using Your Brand.",
+        "nav": {
+          "icon": "file-text"
+        },
+        "pages": [
+          {
+            "slug": "terms",
+            "title": "Terms of Service",
+            "fields": {
+              "version": "2026-03",
+              "effective": "2026-03-02",
+              "jurisdiction": "Placeholder Jurisdiction",
+              "changes": "We clarified renewals and how long you have to export your content after closing an account."
+            },
+            "metadata": {
+              "seoDescription": "The agreement that covers your use of Your Brand: accounts, content, fees and ending the agreement."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You own what you create. We run the Service for you, bill you for the plan you choose and give you 30 days to take your content with you if you leave."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "definitions"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Service — the Your Brand product and everything we host for you."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Content — anything you or your users upload or write in the Service."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Plan — the subscription you chose, with its limits and price."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Who these terms are between"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "These terms are an agreement between Your Brand and the person or organization that creates an account ("
+                        },
+                        {
+                          "type": "text",
+                          "text": "you",
+                          "marks": [
+                            {
+                              "type": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": "). If you accept them for an organization, you confirm you are allowed to bind it."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Your account"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You are responsible for what happens under your account. Use a strong password, keep it to yourself and turn on two-step sign-in where we offer it."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Tell us at once if you think somebody has used your account without permission."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Using the Service"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You may use the Service for your own business purposes, within your plan’s limits and in line with the "
+                        },
+                        {
+                          "type": "text",
+                          "text": "Acceptable Use Policy",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/legal/your-org/acceptable-use"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": ". You may not:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "resell or sublicense the Service unless we have agreed to it in writing;"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "try to get around usage limits, security controls or billing;"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "use the Service to build a product that copies it."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Your content"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You keep every right you have in the content you put into the Service. You give us permission to host, copy and display it only as far as we need to run the Service for you."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We do not sell your content and we do not use it to train models for anyone else."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Fees and payment"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Paid plans are billed in advance and renew for the same period unless you cancel before the renewal date. Prices exclude taxes, which we add where the law requires."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "If a payment fails we will tell you and try again. We may limit a paid feature if an invoice stays unpaid for 30 days after that notice."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Ending the agreement"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You can close your account at any time from your settings. We may suspend or end your access if you seriously break these terms and do not fix it within 14 days of our notice."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "After an account closes you have 30 days to export your content before we delete it."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Warranties and liability"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "EXCEPT AS THESE TERMS SAY OTHERWISE, THE SERVICE IS PROVIDED “AS IS”. TO THE EXTENT THE LAW ALLOWS, EACH PARTY’S TOTAL LIABILITY UNDER THESE TERMS IS LIMITED TO THE FEES YOU PAID IN THE 12 MONTHS BEFORE THE CLAIM."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Changes to these terms"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "When we make a material change we publish the new edition with its effective date at least 30 days in advance and, where you have to accept it again, ask you on your next visit."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Governing law"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "These terms are governed by the law of Placeholder Jurisdiction. Its courts have exclusive jurisdiction over any dispute about them."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "contact"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Questions about these terms: legal@example.com. We answer within five working days."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "dpa",
+            "title": "Data Processing Addendum",
+            "fields": {
+              "version": "2026-02",
+              "effective": "2026-02-02",
+              "jurisdiction": "Placeholder Jurisdiction"
+            },
+            "metadata": {
+              "seoDescription": "How we process personal data on your behalf: roles, security, sub-processors and breach notice."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "When your content includes personal data, we only process it to run the Service for you, keep it secure and tell you quickly if something goes wrong."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "definitions"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Controller — the party that decides why and how personal data is processed."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Processor — the party that processes personal data on the controller’s behalf."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Breach — a security incident that leads to the loss of, or unauthorized access to, personal data."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Roles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "For personal data in your content, you are the controller and Your Brand is the processor. We process it only on your documented instructions, which are these terms and your use of the Service."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Security"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We keep the data encrypted in transit and at rest, limit staff access to what a task needs, and test our controls every year."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Sub-processors"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You authorize the sub-processors in our "
+                        },
+                        {
+                          "type": "text",
+                          "text": "list",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/legal/your-org/subprocessors"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": ". We give you 30 days’ notice of a new one, and you may object on reasonable grounds."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Breaches"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We notify you without undue delay, and within 72 hours, after becoming aware of a breach affecting your data, with what we know and what we are doing about it."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Deletion"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "When the agreement ends we delete the personal data within 90 days, unless the law requires us to keep it."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "contact"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Ask for a countersigned copy at legal@example.com."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "sla",
+            "title": "Service Level Agreement",
+            "fields": {
+              "version": "2025-09",
+              "effective": "2025-09-01"
+            },
+            "metadata": {
+              "seoDescription": "The uptime we commit to on paid plans and the credits if we miss it."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "On paid plans we commit to 99.9% uptime a month; if we miss it, you get a credit."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Uptime commitment"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "On paid plans we aim for the Service to be available 99.9% of each calendar month, excluding scheduled maintenance we announced at least 48 hours in advance."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Service credits"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table",
+                      "content": [
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Monthly uptime"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Credit"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Below 99.9%"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "10%"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Below 99.0%"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "25%"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Below 95.0%"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "50%"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Claiming a credit"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Write to legal@example.com within 30 days of the end of the month, with the dates and times affected."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "privacy-group",
+        "name": "Privacy",
+        "description": "How we handle personal data, and who helps us.",
+        "nav": {
+          "icon": "shield-check"
+        },
+        "pages": [
+          {
+            "slug": "privacy",
+            "title": "Privacy Policy",
+            "fields": {
+              "version": "2026-03",
+              "effective": "2026-03-02",
+              "jurisdiction": "Placeholder Jurisdiction"
+            },
+            "metadata": {
+              "seoDescription": "What personal data we collect, why, who we share it with and the rights you have over it."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We collect what we need to run the Service, we never sell it, and you can see, export or delete it whenever you like."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "What we collect"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Account details",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " — your name, email address and billing details."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Content",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " — what you write or upload in the Service."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Usage data",
+                                  "marks": [
+                                    {
+                                      "type": "bold"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " — pages visited, features used, device and browser type, kept to run and improve the Service."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "How we use it"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We use personal data to provide the Service, answer support requests, keep accounts secure and send the messages you ask for. We never sell personal data."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Who we share it with"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We share data with providers that host, support or bill for the Service, under contracts that protect it. They are listed in "
+                        },
+                        {
+                          "type": "text",
+                          "text": "Sub-processors",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/legal/your-org/subprocessors"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": "."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "How long we keep it"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We keep account data while your account is open and delete it within 90 days of closing, except where the law requires us to keep a record for longer."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Your rights"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You can ask to access, correct, export or delete your personal data, or object to how we use it, by writing to privacy@example.com. We answer within 30 days."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "contact"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Write to privacy@example.com. We answer within 30 days."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "subprocessors",
+            "title": "Sub-processors",
+            "fields": {
+              "version": "2026-04",
+              "effective": "2026-04-06"
+            },
+            "metadata": {
+              "seoDescription": "The providers that may process personal data for us, what they do and where."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "These are the companies that help us run the Service and may handle your data. We tell you a month before we add one."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Current sub-processors"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table",
+                      "content": [
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Provider"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "What they do"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Location"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Example Cloud Co."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Hosting and storage"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "European Union"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Example Mail Ltd."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Sending account email"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "European Union"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Example Payments Inc."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Billing"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "United States"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Example Support Desk"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Support tickets"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "United States"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Changes to this list"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We publish a new edition of this list at least 30 days before a new sub-processor starts. Subscribe to the register’s updates to hear about it."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "cookies",
+            "title": "Cookie Policy",
+            "fields": {
+              "version": "2026-01",
+              "effective": "2026-01-12"
+            },
+            "metadata": {
+              "seoDescription": "The cookies we set, why we set them and how to change your choices."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We use the cookies the site needs to work, and analytics only if you say yes."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "What a cookie is"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "A cookie is a small file a website asks your browser to keep, so it can remember you between pages and visits."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "The cookies we set"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table",
+                      "content": [
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Cookie"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Why"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "How long"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "session"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Keeps you signed in"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Until you sign out"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "prefs"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Remembers your language and theme"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "1 year"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "analytics"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Counts visits, only if you agree"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "13 months"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Your choices"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You can accept or refuse optional cookies in the cookie settings link in our footer, and change your choice at any time."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "policies-group",
+        "name": "Policies",
+        "description": "The rules for using the Service and our name.",
+        "nav": {
+          "icon": "scale"
+        },
+        "pages": [
+          {
+            "slug": "acceptable-use",
+            "title": "Acceptable Use Policy",
+            "fields": {
+              "version": "2025-11",
+              "effective": "2025-11-03"
+            },
+            "metadata": {
+              "seoDescription": "What you may not do with the Service, and what happens if somebody does."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Use the Service for lawful work, do not attack it or other people, and do not try to get around its limits."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Illegal or harmful content"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Do not use the Service to publish or store content that is illegal, that harasses or threatens people, or that exploits anyone."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Security and abuse"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Do not probe, scan or test the Service’s security without our written permission."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Do not send spam or use the Service to distribute malware."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Do not overload the Service or get around its rate limits."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "What we do about it"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "We may remove content or suspend an account that breaks this policy. Where we can, we tell you first and give you a chance to fix it."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "contact"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Report abuse to abuse@example.com."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "brand-guidelines",
+            "title": "Trademark Guidelines",
+            "fields": {
+              "version": "2025-06",
+              "effective": "2025-06-02"
+            },
+            "metadata": {
+              "seoDescription": "How you may use our name and logo when you write about us or integrate with us."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You may say you work with us; please do not change our logo or imply we endorse you."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "terms"
+                  },
+                  "content": [
+                    {
+                      "type": "hint",
+                      "attrs": {
+                        "style": "warning",
+                        "title": "Sample text"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Sample text for a fictional company, written to show the layout. It is not legal advice and not fit to publish as your own: replace every word with text your counsel has reviewed."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Using our name"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You may use the Your Brand name to say truthfully that your product works with ours. Do not suggest we sponsor or endorse you."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Using our logo"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Use the logo as we supply it: do not recolour, stretch or combine it with your own mark."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

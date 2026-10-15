@@ -1,0 +1,159 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lamplight",
+    "slug": "template-lamplight",
+    "description": "A friendly help centre: a soft gradient search hero, four-up category cards with icons and question counts, popular questions and a contact band.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "help-center",
+      "support",
+      "friendly",
+      "template"
+    ],
+    "spaceTypes": [
+      "FAQ"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#1f6feb",
+    "accentColor": "#1f6feb",
+    "palette": {
+      "ink": "#2c3440",
+      "line": "#e3e8ef",
+      "muted": "#6b7685",
+      "heading": "#141a22",
+      "surface": "#f6f8fb",
+      "background": "#ffffff",
+      "header_primary": "#141a22",
+      "header_background": "#ffffff",
+      "footer_primary": "#6b7685",
+      "footer_background": "#f6f8fb"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Plus Jakarta Sans",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": 40,
+          "weight": 700,
+          "tracking": -0.02
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": 64
+      }
+    },
+    "components": {
+      "radius": 12,
+      "input": {
+        "border": "#d4dbe5",
+        "radius": 10,
+        "background": "#ffffff"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 10,
+        "weight": "semibold",
+        "background": "#1f6feb"
+      },
+      "expandable": {
+        "border": "#e3e8ef",
+        "pad": 16
+      }
+    },
+    "faq": {
+      "search": {
+        "placement": "hero",
+        "headline": "How can we help?",
+        "lede": "Search the help centre, or pick a topic below.",
+        "placeholder": "Search for answers…",
+        "size": "lg",
+        "align": "center",
+        "shortcut": true,
+        "layers": [
+          {
+            "gradient": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "#e8f0fe",
+                  "at": 0
+                },
+                {
+                  "color": "#ffffff",
+                  "at": 100
+                }
+              ]
+            }
+          }
+        ],
+        "layersDark": [
+          {
+            "gradient": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "#13213a",
+                  "at": 0
+                },
+                {
+                  "color": "#0d1117",
+                  "at": 100
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "categories": {
+        "show": "always",
+        "layout": "grid",
+        "columns": 4,
+        "icon": true,
+        "description": true,
+        "count": true
+      },
+      "featured": {
+        "show": "auto",
+        "from": "featured",
+        "layout": "rows",
+        "limit": 5,
+        "excerpt": false,
+        "chips": true,
+        "heading": "Popular questions"
+      },
+      "item": {
+        "style": "row",
+        "icon": "chevron",
+        "iconPosition": "end",
+        "feedback": "open-only"
+      },
+      "contact": {
+        "contact": true,
+        "community": true,
+        "docs": true,
+        "status": true,
+        "heading": "Still stuck? We’re here to help."
+      }
+    }
+  },
+  "components": []
+}

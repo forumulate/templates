@@ -1,0 +1,173 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Shipcast",
+    "slug": "template-shipcast",
+    "description": "A developer launch stream: strict dark, hairline borders and square corners, times in mono in both zones. The launch page counts down over a single column, its schedule is a time · title · speaker table, and after the stream every session keeps its recording.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "events",
+      "launch",
+      "stream",
+      "dark",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "EVENTS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "colorSchemeStrict": true,
+    "primaryColor": "#ffffff",
+    "accentColor": "#3291ff",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "customFontFamily": "Geist",
+    "headingFontFamily": "Geist",
+    "bodyFontFamily": "Geist",
+    "monoFontFamily": "Geist Mono",
+    "palette": {
+      "background": "#000000",
+      "surface": "#0a0a0a",
+      "ink": "#a1a1a1",
+      "heading": "#ededed",
+      "muted": "#8f8f8f",
+      "line": "#262626",
+      "header_background": "#000000",
+      "header_primary": "#ededed",
+      "footer_background": "#000000",
+      "footer_primary": "#8f8f8f",
+      "success": "#50e3c2",
+      "warning": "#f5a623",
+      "danger": "#ff4d4f",
+      "info": "#3291ff"
+    },
+    "paletteDark": {
+      "background": "#000000",
+      "surface": "#0a0a0a",
+      "ink": "#a1a1a1",
+      "heading": "#ededed",
+      "muted": "#8f8f8f",
+      "line": "#262626",
+      "header_background": "#000000",
+      "header_primary": "#ededed",
+      "footer_background": "#000000",
+      "footer_primary": "#8f8f8f",
+      "success": "#50e3c2",
+      "warning": "#f5a623",
+      "danger": "#ff4d4f",
+      "info": "#3291ff"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 40,
+            "sm": 30
+          },
+          "weight": 600,
+          "tracking": -0.04,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 24,
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.2
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 0,
+      "button": {
+        "background": "#ffffff",
+        "ink": "#000000",
+        "radius": 0,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 56,
+        "border": "line"
+      },
+      "showSignIn": true,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "events": {
+      "list": {
+        "layout": "compact",
+        "pastMode": "tabs",
+        "dateTile": "none",
+        "cover": "none",
+        "showHosts": false,
+        "showCapacity": false,
+        "showLocation": false,
+        "density": "compact",
+        "timeDisplay": "both",
+        "zoneToggle": true
+      },
+      "page": {
+        "layout": "single",
+        "registerCard": "inline",
+        "cover": {
+          "show": true,
+          "aspect": "16:9",
+          "radius": 0
+        },
+        "facts": {
+          "look": "kicker"
+        },
+        "showCountdown": true,
+        "showRelated": true,
+        "relatedCount": 3,
+        "timeDisplay": "both",
+        "zoneToggle": true,
+        "showMap": false
+      },
+      "agenda": {
+        "layout": "table",
+        "dayTabs": false,
+        "showFilters": false,
+        "showCount": false,
+        "showSpeakers": true,
+        "showSave": true,
+        "showAddToCalendar": true,
+        "timeDisplay": "both",
+        "zoneToggle": true
+      },
+      "speakers": {
+        "layout": "grid",
+        "columns": 3,
+        "avatarShape": "square",
+        "showBio": true,
+        "showSocials": true
+      },
+      "chips": {
+        "style": "outline-mono",
+        "case": "upper"
+      },
+      "tones": {
+        "live": {
+          "tone": "danger"
+        }
+      }
+    }
+  },
+  "components": []
+}

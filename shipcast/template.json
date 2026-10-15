@@ -1,0 +1,693 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "shipcast",
+  "type": "EVENTS",
+  "name": "Shipcast",
+  "description": "A developer launch stream: strict dark, hairline borders and square corners, times in mono in both zones. The launch page counts down over a single column, its schedule is a time · title · speaker table, and after the stream every session keeps its recording.",
+  "modelledOn": "A frontend cloud platform’s launch-event stream",
+  "features": [
+    "Strict dark scheme, hairline rules, zero radius, Geist and Geist Mono",
+    "Compact list with every time in the event’s zone and the reader’s",
+    "Launch page: one column, countdown, the stream link and a “More events” row",
+    "Schedule as a hairline table (time · title · speaker) with per-session calendar files",
+    "Past edition with a recording on every session — the after-event library",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "events",
+    "launch",
+    "stream",
+    "dark",
+    "developer"
+  ],
+  "thumbnail": "/templates/shipcast.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/shipcast-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/shipcast-cover-live.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/shipcast-cover-office.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/shipcast-cover-build.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/shipcast-cover-winter.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/shipcast-cover-edge.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/shipcast-cover-recap.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/shipcast-speaker-nadia-brooks.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/shipcast-speaker-kai-moreno.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000010": "assets/shipcast-speaker-ruth-adeyemi.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000011": "assets/shipcast-speaker-felix-strand.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000012": "assets/shipcast-speaker-mei-chen.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000013": "assets/shipcast-speaker-jonah-weiss.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000014": "assets/shipcast-host.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "webinar",
+    "frontDoor": {
+      "showTags": false,
+      "showSubscribe": true,
+      "subscribeStyle": "menu",
+      "showRss": true,
+      "showPast": true,
+      "showShare": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "launch",
+      "label": "Launch"
+    },
+    {
+      "slug": "office-hours",
+      "label": "Office hours"
+    },
+    {
+      "slug": "community",
+      "label": "Community"
+    },
+    {
+      "slug": "keynote",
+      "label": "Keynote"
+    },
+    {
+      "slug": "platform",
+      "label": "Platform"
+    },
+    {
+      "slug": "edge",
+      "label": "Edge"
+    },
+    {
+      "slug": "design",
+      "label": "Design"
+    },
+    {
+      "slug": "ai",
+      "label": "AI"
+    },
+    {
+      "slug": "demo",
+      "label": "Demo"
+    }
+  ],
+  "authors": [
+    {
+      "key": "shipcast-team",
+      "name": "Your Brand",
+      "role": "Host",
+      "bio": "Live from the studio.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000014"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "section",
+          "attrs": {
+            "key": "hero",
+            "role": "layout",
+            "contentAlign": "start",
+            "padding": {
+              "top": 72,
+              "bottom": 48
+            },
+            "border": {
+              "width": 1,
+              "color": "#333333",
+              "sides": "bottom"
+            }
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "SHIPCAST · LIVE STREAM"
+                }
+              ],
+              "attrs": {
+                "size": 13,
+                "color": "muted"
+              }
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2,
+                "size": {
+                  "lg": 56,
+                  "sm": 34
+                },
+                "tracking": -0.04
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Everything we are shipping, live."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "One morning, one stream. A keynote, five talks from the engineers who built it and a live demo — then the recordings, here, the same day."
+                }
+              ],
+              "attrs": {
+                "size": {
+                  "lg": 19,
+                  "sm": 16
+                },
+                "color": "muted"
+              }
+            },
+            {
+              "type": "buttons",
+              "attrs": {
+                "align": "start"
+              },
+              "content": [
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "Register free",
+                    "href": "/e/your-org/your-events/shipcast-live",
+                    "style": "primary"
+                  }
+                },
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "Schedule",
+                    "href": "/e/your-org/your-events/shipcast-live/agenda",
+                    "style": "secondary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "events"
+          }
+        }
+      ]
+    },
+    "width": 1040
+  },
+  "settings": {
+    "eventAttendance": {
+      "emailRsvp": true
+    },
+    "eventNotices": {
+      "reminders": [
+        "1d",
+        "15m"
+      ],
+      "confirmations": true
+    }
+  },
+  "events": {
+    "events": [
+      {
+        "slug": "shipcast-live",
+        "title": "Shipcast Live",
+        "daysFromNow": 18,
+        "startTime": "09:00",
+        "durationHours": 3,
+        "event": {
+          "timezone": "America/Los_Angeles",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://live.example.com/shipcast/live",
+          "joinLinkVisibility": "public",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+          "coverAlt": "",
+          "tags": [
+            "launch"
+          ],
+          "hosts": [
+            {
+              "author": "shipcast-team"
+            }
+          ],
+          "description": "Our launch event, streamed live: a keynote, five short talks from the people who built it, a live demo and your questions at the end.\n\n## Watch\n\nFree and online — register to get the stream link and a reminder. The recording is posted here the same day.\n\n## Format\n\n- 3 hours, one stage\n- Every talk under 25 minutes\n- Questions from the chat in the closing Q&A"
+        },
+        "sessions": [
+          {
+            "slug": "keynote",
+            "title": "Keynote",
+            "day": 0,
+            "startTime": "09:00",
+            "durationMinutes": 30,
+            "speakers": [
+              "nadia-brooks",
+              "kai-moreno"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Keynote",
+              "description": "Everything we are shipping today, in thirty minutes.",
+              "tags": [
+                "keynote"
+              ]
+            }
+          },
+          {
+            "slug": "instant-builds",
+            "title": "Instant builds, for real this time",
+            "day": 0,
+            "startTime": "09:35",
+            "durationMinutes": 20,
+            "speakers": [
+              "kai-moreno"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Platform",
+              "description": "The new build pipeline, and why your next deploy is four times faster.",
+              "tags": [
+                "platform"
+              ]
+            }
+          },
+          {
+            "slug": "edge-everywhere",
+            "title": "Edge everywhere",
+            "day": 0,
+            "startTime": "10:00",
+            "durationMinutes": 20,
+            "speakers": [
+              "ruth-adeyemi"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Platform",
+              "description": "Routing, caching and compute at the edge — what changed and how to use it.",
+              "tags": [
+                "edge"
+              ]
+            }
+          },
+          {
+            "slug": "dashboard-redesign",
+            "title": "Designing the new dashboard",
+            "day": 0,
+            "startTime": "10:25",
+            "durationMinutes": 20,
+            "speakers": [
+              "felix-strand"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Design",
+              "description": "What we removed, what we kept, and the research behind both.",
+              "tags": [
+                "design"
+              ]
+            }
+          },
+          {
+            "slug": "ai-sdk-launch",
+            "title": "AI SDK 2: from prototype to production",
+            "day": 0,
+            "startTime": "10:50",
+            "durationMinutes": 25,
+            "speakers": [
+              "jonah-weiss",
+              "mei-chen"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "AI",
+              "description": "Streaming, tools and evaluation — with a live build from zero.",
+              "tags": [
+                "ai"
+              ]
+            }
+          },
+          {
+            "slug": "live-demo",
+            "title": "Live demo: ship a product in fifteen minutes",
+            "day": 0,
+            "startTime": "11:20",
+            "durationMinutes": 15,
+            "speakers": [
+              "mei-chen"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Demo",
+              "description": "One repository, one command, one URL. No cuts.",
+              "tags": [
+                "demo"
+              ]
+            }
+          },
+          {
+            "slug": "closing-qa",
+            "title": "Closing Q&A",
+            "day": 0,
+            "startTime": "11:40",
+            "durationMinutes": 20,
+            "speakers": [
+              "nadia-brooks",
+              "kai-moreno",
+              "ruth-adeyemi"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Keynote",
+              "description": "Your questions from the chat, answered live.",
+              "tags": [
+                "keynote"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "ask-the-engineers",
+        "title": "Ask the Engineers",
+        "daysFromNow": 32,
+        "startTime": "10:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "America/Los_Angeles",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://live.example.com/shipcast/ask-the-engineers",
+          "joinLinkVisibility": "public",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+          "coverAlt": "",
+          "tags": [
+            "office-hours"
+          ],
+          "hosts": [
+            {
+              "author": "shipcast-team"
+            }
+          ],
+          "description": "An hour of open questions with the engineers behind the launch. Bring your repository and your error messages."
+        }
+      },
+      {
+        "slug": "ship-it-build-night",
+        "title": "Ship It Build Night",
+        "daysFromNow": 46,
+        "startTime": "17:00",
+        "durationHours": 4,
+        "event": {
+          "timezone": "America/Los_Angeles",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://live.example.com/shipcast/build-night",
+          "joinLinkVisibility": "public",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000004",
+          "coverAlt": "",
+          "tags": [
+            "community"
+          ],
+          "hosts": [
+            {
+              "author": "shipcast-team"
+            }
+          ],
+          "description": "Four hours, one prompt, build anything. Share the URL at the end; the best three get a shout-out on the stream."
+        }
+      },
+      {
+        "slug": "shipcast-winter-edition",
+        "title": "Shipcast Winter Edition",
+        "daysFromNow": -64,
+        "startTime": "09:00",
+        "durationHours": 2,
+        "event": {
+          "timezone": "America/Los_Angeles",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://live.example.com/shipcast/winter",
+          "joinLinkVisibility": "public",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+          "coverAlt": "",
+          "tags": [
+            "launch"
+          ],
+          "hosts": [
+            {
+              "author": "shipcast-team"
+            }
+          ],
+          "description": "The winter launch stream. Every talk is recorded — open the agenda to watch them one by one.",
+          "recordingUrl": "https://video.example.com/shipcast/winter"
+        },
+        "sessions": [
+          {
+            "slug": "keynote",
+            "title": "Winter keynote",
+            "day": 0,
+            "startTime": "09:00",
+            "durationMinutes": 30,
+            "speakers": [
+              "nadia-brooks"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Keynote",
+              "description": "The winter launches: preview deployments, analytics and a new CLI.",
+              "tags": [
+                "keynote"
+              ],
+              "recordingUrl": "https://video.example.com/shipcast/winter/keynote"
+            }
+          },
+          {
+            "slug": "preview-everything",
+            "title": "Preview everything",
+            "day": 0,
+            "startTime": "09:35",
+            "durationMinutes": 20,
+            "speakers": [
+              "kai-moreno"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Platform",
+              "description": "Every branch, every commit, its own URL.",
+              "tags": [
+                "platform"
+              ],
+              "recordingUrl": "https://video.example.com/shipcast/winter/preview-everything"
+            }
+          },
+          {
+            "slug": "analytics-without-cookies",
+            "title": "Analytics without cookies",
+            "day": 0,
+            "startTime": "10:00",
+            "durationMinutes": 20,
+            "speakers": [
+              "felix-strand",
+              "ruth-adeyemi"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Platform",
+              "description": "Privacy-friendly analytics, designed in and measured at the edge.",
+              "tags": [
+                "edge"
+              ],
+              "recordingUrl": "https://video.example.com/shipcast/winter/analytics-without-cookies"
+            }
+          },
+          {
+            "slug": "cli-v4",
+            "title": "The new CLI",
+            "day": 0,
+            "startTime": "10:25",
+            "durationMinutes": 20,
+            "speakers": [
+              "mei-chen"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Demo",
+              "description": "A tour of the CLI, rebuilt from scratch.",
+              "tags": [
+                "demo"
+              ],
+              "recordingUrl": "https://video.example.com/shipcast/winter/cli-v4"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "edge-caching-deep-dive",
+        "title": "Edge Caching Deep Dive",
+        "daysFromNow": -22,
+        "startTime": "10:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "America/Los_Angeles",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://live.example.com/shipcast/edge-caching",
+          "joinLinkVisibility": "public",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+          "coverAlt": "",
+          "tags": [
+            "office-hours"
+          ],
+          "hosts": [
+            {
+              "author": "shipcast-team"
+            }
+          ],
+          "description": "An hour on how the cache decides what to keep, with the engineers who wrote it.",
+          "recordingUrl": "https://video.example.com/shipcast/edge-caching"
+        }
+      },
+      {
+        "slug": "launch-recap",
+        "title": "Launch Recap",
+        "daysFromNow": -110,
+        "startTime": "09:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "America/Los_Angeles",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://live.example.com/shipcast/recap",
+          "joinLinkVisibility": "public",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+          "coverAlt": "",
+          "tags": [
+            "launch"
+          ],
+          "hosts": [
+            {
+              "author": "shipcast-team"
+            }
+          ],
+          "description": "Everything from the autumn launch, in one hour.",
+          "recordingUrl": "https://video.example.com/shipcast/recap"
+        }
+      }
+    ],
+    "speakers": [
+      {
+        "key": "nadia-brooks",
+        "speaker": {
+          "name": "Nadia Brooks",
+          "title": "CEO",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+          "bio": "Founded the company to make shipping software feel instant.",
+          "position": 0,
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/nadia-brooks"
+            }
+          ]
+        }
+      },
+      {
+        "key": "kai-moreno",
+        "speaker": {
+          "name": "Kai Moreno",
+          "title": "VP of Engineering",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+          "bio": "Leads the runtime and build teams.",
+          "position": 1,
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/kai-moreno"
+            }
+          ]
+        }
+      },
+      {
+        "key": "ruth-adeyemi",
+        "speaker": {
+          "name": "Ruth Adeyemi",
+          "title": "Staff Engineer, Edge",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000010",
+          "bio": "Works on caching, routing and the network in between.",
+          "position": 2,
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/ruth-adeyemi"
+            }
+          ]
+        }
+      },
+      {
+        "key": "felix-strand",
+        "speaker": {
+          "name": "Felix Strand",
+          "title": "Product Designer",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000011",
+          "bio": "Designs the dashboard and the command line, in that order.",
+          "position": 3,
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/felix-strand"
+            }
+          ]
+        }
+      },
+      {
+        "key": "mei-chen",
+        "speaker": {
+          "name": "Mei Chen",
+          "title": "Developer Advocate",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000012",
+          "bio": "Builds demos live and occasionally on purpose.",
+          "position": 4,
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/mei-chen"
+            }
+          ]
+        }
+      },
+      {
+        "key": "jonah-weiss",
+        "speaker": {
+          "name": "Jonah Weiss",
+          "title": "Engineering Manager, AI",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000013",
+          "bio": "Runs the team shipping the AI SDK.",
+          "position": 5,
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/jonah-weiss"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

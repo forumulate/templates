@@ -1,0 +1,120 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Fieldnote Support",
+    "slug": "template-fieldnote",
+    "description": "A calm, single-column support page in a large serif: a human promise, your hours and how fast you answer up front, and a plain form with no box around it.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "contact",
+      "support",
+      "serif",
+      "template"
+    ],
+    "spaceTypes": [
+      "CONTACT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#2d6a4f",
+    "accentColor": "#2d6a4f",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&display=swap",
+    "headingFontFamily": "Newsreader",
+    "bodyFontFamily": "Newsreader",
+    "palette": {
+      "ink": "#2b2a26",
+      "line": "#e2dccd",
+      "muted": "#6d6a60",
+      "heading": "#1d1c19",
+      "surface": "#f3eee2",
+      "background": "#fbf8f1",
+      "header_primary": "#1d1c19",
+      "header_background": "#fbf8f1",
+      "footer_primary": "#6d6a60",
+      "footer_background": "#fbf8f1"
+    },
+    "typography": {
+      "baseSize": 20,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 52,
+            "sm": 36
+          },
+          "weight": 500,
+          "tracking": -0.015,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 28,
+          "weight": 500,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 6,
+      "input": {
+        "border": "#d6cfbd",
+        "radius": 6,
+        "background": "#ffffff"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 6,
+        "weight": "medium",
+        "background": "#2d6a4f"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "none",
+        "height": 72
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "contact": {
+      "form": {
+        "card": {
+          "surface": "flat",
+          "pad": 0
+        },
+        "width": "narrow",
+        "labelPosition": "above",
+        "columns": 1
+      },
+      "facts": {
+        "look": "tiles",
+        "placement": "above"
+      },
+      "topics": {
+        "look": "select"
+      },
+      "deflect": {
+        "limit": 3
+      },
+      "channels": {
+        "look": "list",
+        "heading": "Or help yourself"
+      }
+    }
+  },
+  "components": []
+}

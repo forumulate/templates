@@ -1,0 +1,148 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Plainwork Jobs",
+    "slug": "template-plainwork",
+    "description": "A calm, single-column jobs page in large serif prose: a few paragraphs about the company, a link to how we hire, and a plain list of openings with the salary stated in every one.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "careers",
+      "minimal",
+      "serif",
+      "small-team",
+      "template"
+    ],
+    "spaceTypes": [
+      "CAREERS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "font": "serif",
+    "primaryColor": "#1d4ed8",
+    "primaryColorDark": "#93b4ff",
+    "accentColor": "#facc15",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#fafaf7",
+      "ink": "#1c1c1c",
+      "muted": "#5f5f5f",
+      "heading": "#111111",
+      "line": "#e6e4dc",
+      "header_background": "#ffffff",
+      "header_primary": "#111111"
+    },
+    "paletteDark": {
+      "background": "#141414",
+      "surface": "#1c1c1c",
+      "ink": "#e8e6df",
+      "muted": "#a3a19a",
+      "heading": "#ffffff",
+      "line": "#2e2d2a",
+      "header_background": "#141414",
+      "header_primary": "#ffffff"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&display=swap",
+    "customFontFamily": "Newsreader",
+    "headingFontFamily": "Newsreader",
+    "bodyFontFamily": "Newsreader",
+    "contentWidth": "standard",
+    "typography": {
+      "baseSize": 21,
+      "bodyWrap": "pretty",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 36
+          },
+          "weight": 600,
+          "tracking": -0.01,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": {
+            "lg": 30,
+            "sm": 26
+          },
+          "weight": 600,
+          "lineHeight": 1.2
+        },
+        "h3": {
+          "size": 23,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "chrome": {
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "How we hire",
+          "href": "/jobs/your-org/your-careers/how-we-hire"
+        },
+        {
+          "label": "Working here",
+          "href": "/jobs/your-org/your-careers/working-here"
+        }
+      ],
+      "footerLinks": [
+        {
+          "label": "How we hire",
+          "href": "/jobs/your-org/your-careers/how-we-hire"
+        },
+        {
+          "label": "Working here",
+          "href": "/jobs/your-org/your-careers/working-here"
+        }
+      ],
+      "copyright": "© 2026 Your Brand"
+    },
+    "components": {
+      "link": {
+        "underline": "always",
+        "offset": 3,
+        "thickness": 1
+      },
+      "button": {
+        "radius": 4
+      }
+    },
+    "careers": {
+      "list": {
+        "layout": "rows",
+        "facets": [],
+        "chips": {
+          "style": "text"
+        },
+        "divider": "rule",
+        "density": "comfortable",
+        "hover": "none",
+        "rowAction": "text"
+      }
+    },
+    "docs": {
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "breadcrumb": {
+          "show": true
+        },
+        "contributors": false
+      },
+      "articleWidth": "40rem"
+    }
+  },
+  "components": []
+}

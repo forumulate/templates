@@ -1,0 +1,175 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Keynote Coast",
+    "slug": "template-keynote-coast",
+    "description": "An annual conference microsite: a saturated full-width hero, the numbers, featured speakers, the calendar, a call for proposals, tiered sponsors and an FAQ. The conference itself opens on a full-bleed hero with a countdown, and its programme reads as a grid by stage with day tabs and filters.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "events",
+      "conference",
+      "agenda",
+      "speakers",
+      "template"
+    ],
+    "spaceTypes": [
+      "EVENTS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#ff4b2b",
+    "accentColor": "#ffb300",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "headingFontFamily": "Archivo",
+    "bodyFontFamily": "Inter",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#fff8f3",
+      "ink": "#2b2623",
+      "heading": "#14110f",
+      "muted": "#776c66",
+      "line": "#f0e4dc",
+      "header_background": "#ffffff",
+      "header_primary": "#14110f",
+      "footer_background": "#14110f",
+      "footer_primary": "#e8ddd6"
+    },
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 56,
+            "sm": 36
+          },
+          "weight": 900,
+          "tracking": -0.035,
+          "lineHeight": 1.0
+        },
+        "h2": {
+          "size": {
+            "lg": 36,
+            "sm": 26
+          },
+          "weight": 800,
+          "tracking": -0.025,
+          "lineHeight": 1.1
+        },
+        "h3": {
+          "size": 20,
+          "weight": 700,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 12,
+      "button": {
+        "background": "#14110f",
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "bold"
+      }
+    },
+    "titleBand": {
+      "layers": [
+        {
+          "gradient": {
+            "type": "linear",
+            "angle": 120,
+            "stops": [
+              {
+                "color": "#ff4b2b",
+                "at": 0
+              },
+              {
+                "color": "#ffb300",
+                "at": 100
+              }
+            ]
+          }
+        }
+      ],
+      "height": 240,
+      "heightPhone": 160,
+      "titleColor": "#ffffff",
+      "pages": "all"
+    },
+    "chrome": {
+      "header": {
+        "height": 72,
+        "border": "none"
+      },
+      "showSignIn": true,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "events": {
+      "list": {
+        "layout": "grid",
+        "columns": 3,
+        "cover": "top",
+        "coverAspect": "16:9",
+        "dateTile": "pill",
+        "pastMode": "tabs",
+        "showHosts": false,
+        "showCapacity": false
+      },
+      "page": {
+        "layout": "hero-full",
+        "registerCard": "sticky-side",
+        "cover": {
+          "aspect": "3:1",
+          "radius": 0
+        },
+        "facts": {
+          "look": "tiles"
+        },
+        "showCountdown": true,
+        "showMap": true,
+        "map": {
+          "style": "card",
+          "linkTo": "google"
+        },
+        "showRelated": true
+      },
+      "agenda": {
+        "layout": "grid-by-stage",
+        "dayTabs": true,
+        "showFilters": true,
+        "showCount": true,
+        "showSpeakers": true,
+        "showSave": true
+      },
+      "speakers": {
+        "layout": "grid",
+        "columns": 5,
+        "avatarShape": "square",
+        "showBio": false,
+        "showSocials": true
+      },
+      "chips": {
+        "style": "pill",
+        "case": "upper"
+      },
+      "dateTileTone": {
+        "tone": "brand"
+      }
+    }
+  },
+  "components": []
+}

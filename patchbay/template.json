@@ -1,0 +1,97 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "patchbay",
+  "type": "FAQ",
+  "name": "Patchbay",
+  "description": "A plain-spoken support page: big title and lede, contact cards first, then the common issues as ruled rows with muted answers, all open. Dark.",
+  "modelledOn": "A software company’s support page",
+  "features": [
+    "Preset: sectioned — every answer open",
+    "Contact cards above the questions (front-door section order)",
+    "Ruled rows, no disclosure icon, muted answers, no feedback row",
+    "An “Or email …” line under the cards",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "support",
+    "minimal",
+    "developer"
+  ],
+  "thumbnail": "/templates/patchbay.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "sectioned",
+    "frontDoor": {
+      "showCategoryCards": false,
+      "showFeatured": false,
+      "sectionOrder": "intro,contact,questions"
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "faq": {
+    "collections": [
+      {
+        "slug": "common-issues",
+        "name": "Common issues",
+        "description": "The questions we answer most, answered once.",
+        "nav": {
+          "icon": "life-buoy"
+        },
+        "pages": [
+          {
+            "slug": "sync-delay",
+            "title": "Why is my data not updating?",
+            "markdown": "Sync runs every five minutes. If a change has not appeared after ten, open **Settings → Connections** and choose **Sync now**. A red dot next to a connection means its credentials expired."
+          },
+          {
+            "slug": "api-401",
+            "title": "The API returns 401 Unauthorized. What’s wrong?",
+            "markdown": "The key is missing, revoked or sent in the wrong header. Send it as `Authorization: Bearer <key>`, and check under **Settings → API keys** that it is still active."
+          },
+          {
+            "slug": "export-csv",
+            "title": "How do I export my data?",
+            "markdown": "Every table has an **Export** button that downloads a CSV of the rows you are looking at, filters included. For everything at once, use **Settings → Export workspace**."
+          },
+          {
+            "slug": "rate-limits",
+            "title": "What are the API rate limits?",
+            "markdown": "100 requests per second per workspace, with bursts up to 200. A `429` response includes a `Retry-After` header telling you how long to wait."
+          }
+        ]
+      },
+      {
+        "slug": "account",
+        "name": "Account",
+        "description": "Sign-in, team members and your plan.",
+        "nav": {
+          "icon": "user-check"
+        },
+        "pages": [
+          {
+            "slug": "sso",
+            "title": "Can we sign in with our company’s identity provider?",
+            "markdown": "Yes, on the Team plan and above. Add your provider under **Settings → Security → Single sign-on**; members are moved over the next time they sign in."
+          },
+          {
+            "slug": "remove-member",
+            "title": "What happens when I remove a member?",
+            "markdown": "They lose access straight away. Anything they created stays in the workspace and is reassigned to you."
+          }
+        ]
+      }
+    ]
+  }
+}

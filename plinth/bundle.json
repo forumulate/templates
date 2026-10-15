@@ -390,7 +390,11 @@
         "backGlyph": "chevron",
         "metaAbove": true,
         "shareIcon": "link",
-        "shareStyle": "link"
+        "shareStyle": "link",
+        "nav": "more",
+        "moreCount": 3,
+        "authors": "none",
+        "readTime": false
       },
       "dateTone": "ink",
       "entryGap": 120,
@@ -398,7 +402,17 @@
       "stickyDate": true,
       "columnWidth": 624,
       "gutterWidth": 328,
-      "datePlacement": "gutter"
+      "datePlacement": "gutter",
+      "typeBadge": {
+        "show": false
+      },
+      "entry": {
+        "body": "full",
+        "cover": "none",
+        "titleAboveBody": true
+      },
+      "tagStyle": "text",
+      "tagInk": "neutral"
     },
     "components": {
       "code": {

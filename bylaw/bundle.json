@@ -1,0 +1,220 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Bylaw",
+    "slug": "template-bylaw",
+    "description": "A site-policy register like an open-source handbook: recommended cards, a filterable list grouped as Terms, Acceptable use, Privacy and Security, and documents with lettered clauses, a “what each section says” table, a breadcrumb and Copy as Markdown.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "dark",
+      "legal",
+      "site-policy",
+      "filter",
+      "template"
+    ],
+    "spaceTypes": [
+      "LEGAL"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "logoIncludesName": true,
+    "colorScheme": "system",
+    "primaryColor": "#0969da",
+    "accentColor": "#0969da",
+    "palette": {
+      "ink": "#1f2328",
+      "line": "#d1d9e0",
+      "muted": "#59636e",
+      "heading": "#1f2328",
+      "surface": "#f6f8fa",
+      "background": "#ffffff",
+      "header_primary": "#1f2328",
+      "header_background": "#ffffff",
+      "footer_primary": "#59636e",
+      "footer_background": "#f6f8fa"
+    },
+    "paletteDark": {
+      "ink": "#d1d7e0",
+      "line": "#3d444d",
+      "muted": "#9198a1",
+      "heading": "#f0f6fc",
+      "surface": "#151b23",
+      "background": "#0d1117",
+      "header_primary": "#f0f6fc",
+      "header_background": "#0d1117",
+      "footer_primary": "#9198a1",
+      "footer_background": "#151b23"
+    },
+    "primaryColorDark": "#4493f8",
+    "font": "sans",
+    "headingAnchors": "hover",
+    "onThisPage": "always",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 32,
+            "sm": 26
+          },
+          "weight": 600
+        },
+        "h2": {
+          "size": 24,
+          "weight": 600
+        }
+      }
+    },
+    "components": {
+      "radius": 6,
+      "button": {
+        "radius": 6,
+        "weight": "medium"
+      },
+      "hint": {
+        "variants": {
+          "gloss": {
+            "background": "#ddf4ff",
+            "backgroundDark": "#0c2d6b",
+            "barColor": "#0969da",
+            "barColorDark": "#4493f8"
+          }
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 500,
+        "logoHeight": 24
+      },
+      "headerLinks": [
+        {
+          "label": "Terms",
+          "href": "/legal/your-org/terms"
+        },
+        {
+          "label": "Privacy",
+          "href": "/legal/your-org/privacy"
+        },
+        {
+          "label": "Acceptable use",
+          "href": "/legal/your-org/acceptable-use"
+        },
+        {
+          "label": "All policies",
+          "href": "/legal/your-org"
+        }
+      ],
+      "footer": {
+        "columns": 2,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingStyle": "plain"
+      },
+      "footerColumns": [
+        {
+          "heading": "Policies",
+          "links": [
+            {
+              "label": "Terms of Service",
+              "href": "/legal/your-org/terms"
+            },
+            {
+              "label": "Privacy Policy",
+              "href": "/legal/your-org/privacy"
+            },
+            {
+              "label": "Acceptable Use",
+              "href": "/legal/your-org/acceptable-use"
+            }
+          ]
+        },
+        {
+          "heading": "More",
+          "links": [
+            {
+              "label": "Sub-processors",
+              "href": "/legal/your-org/subprocessors"
+            },
+            {
+              "label": "Cookie Policy",
+              "href": "/legal/your-org/cookies"
+            },
+            {
+              "label": "Report a vulnerability",
+              "href": "/legal/your-org/security-disclosure"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand. Sample legal text — not legal advice."
+    },
+    "docs": {
+      "pageHead": {
+        "breadcrumb": {
+          "show": true,
+          "style": "trail",
+          "separator": "/",
+          "root": "space",
+          "collection": true
+        }
+      },
+      "toc": {
+        "activeStyle": "bar",
+        "label": "In this article"
+      }
+    },
+    "legal": {
+      "register": {
+        "group": "collection",
+        "description": "show",
+        "date": "updated",
+        "search": "always",
+        "edition": false
+      },
+      "head": {
+        "lead": "effective",
+        "kicker": "none",
+        "rule": false
+      },
+      "date": {
+        "format": "long"
+      },
+      "numbering": {
+        "style": "alpha",
+        "levels": 1
+      },
+      "gloss": "table-top",
+      "summary": {
+        "style": "plain"
+      },
+      "history": "open",
+      "docNav": "sidebar",
+      "definitions": "list",
+      "item": {
+        "actions": {
+          "style": "row"
+        }
+      }
+    }
+  },
+  "components": []
+}

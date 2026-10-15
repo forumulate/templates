@@ -1,0 +1,334 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "primer",
+  "type": "COURSES",
+  "name": "Primer",
+  "description": "A chapter-by-chapter tutorial: numbered chapters, a chapter badge and an \"In this chapter\" box over every lesson, code with file names, Reveal-the-solution exercises, and a \"Next up\" card at the end of each chapter.",
+  "modelledOn": "A web framework’s official chapter tutorial",
+  "features": [
+    "Preset: Chapter tutorial — numbered chapters (01, 02 …) in the outline and the rail",
+    "Chapter badge and an “In this chapter” objectives box over every lesson",
+    "Code blocks with file names; Reveal-the-solution exercises and inline knowledge checks",
+    "“Complete and continue”, then a “Next up” card at the end of each chapter",
+    "Hero beside the cover, “What you’ll learn” and the instructor",
+    "Light and dark, Geist and Geist Mono, one blue accent",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "course",
+    "tutorial",
+    "developer",
+    "light",
+    "dark"
+  ],
+  "thumbnail": "/templates/primer.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/cover.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/ada.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "tutorial",
+    "frontDoor": {
+      "showProgress": true,
+      "showContinue": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [
+    {
+      "key": "ada",
+      "name": "Ada Reyes",
+      "role": "Developer educator, Your Brand",
+      "bio": "Ada has taught web development to thousands of people and still writes every example by hand.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "hero"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outcomes"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outline"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "instructors"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "faq"
+          }
+        }
+      ]
+    },
+    "width": "board"
+  },
+  "course": {
+    "metadata": {
+      "subtitle": "Build a full-stack dashboard from an empty folder, one chapter at a time.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+      "coverAlt": "A sketch of a dashboard with a sidebar, two stat cards and a line chart",
+      "level": "beginner",
+      "outcomes": [
+        "Structure an app with routes, layouts and pages",
+        "Load fonts and images without layout shift",
+        "Read from a database in a server component",
+        "Stream slow parts of a page behind a skeleton",
+        "Change data with server actions",
+        "Deploy to production from Git"
+      ],
+      "prerequisites": [
+        {
+          "text": "Comfortable with HTML, CSS and modern JavaScript"
+        },
+        {
+          "text": "Node.js 20 or later installed"
+        }
+      ],
+      "instructors": [
+        "ada"
+      ],
+      "language": "en",
+      "ctaLabel": "Start learning",
+      "showUpdated": true,
+      "topics": [
+        "Web development",
+        "React"
+      ],
+      "faq": [
+        {
+          "question": "Is the course free?",
+          "answer": "Yes. Every chapter is free, and you can take it at your own pace."
+        },
+        {
+          "question": "Do I need to sign in?",
+          "answer": "No. Sign in only if you want your progress saved across devices and a certificate at the end."
+        }
+      ]
+    },
+    "modules": [
+      {
+        "slug": "foundations",
+        "name": "Foundations",
+        "description": "Set up the project, style it and load fonts and images.",
+        "pages": [
+          {
+            "slug": "getting-started",
+            "title": "Getting started",
+            "fields": {
+              "duration": 6,
+              "kind": "Reading",
+              "objectives": "Create a project from the starter; Run the development server; Find your way around the folders"
+            },
+            "markdown": "Welcome to the course. Over the next nine chapters you will build a small but real dashboard: a page that signs people in, reads invoices from a database and lets them change one.\n\n## Create the project\n\nOpen a terminal in the folder you keep your projects in and run:\n\n```bash title=\"Terminal\"\nnpx create-your-brand-app@latest dashboard --example starter\ncd dashboard\nnpm run dev\n```\n\nOpen `http://localhost:3000`. You should see the starter page with a heading and an empty sidebar.\n\n## What is in the folder\n\n```txt title=\"dashboard/\"\napp/          routes, layouts and pages\napp/lib/      data helpers and type definitions\npublic/       pictures served as they are\n```\n\n:::hint{style=\"info\"}\nEvery chapter ends in a working app. If something goes wrong, the solution for that chapter is in the `solutions/` folder of the starter.\n:::"
+          },
+          {
+            "slug": "css-styling",
+            "title": "CSS styling",
+            "fields": {
+              "duration": 9,
+              "kind": "Exercise",
+              "objectives": "Add global styles; Style an element with utility classes"
+            },
+            "markdown": "The starter ships with a global stylesheet and utility classes. In this chapter you will add your own styles to the home page.\n\n## Global styles\n\nImport the global stylesheet once, in the root layout:\n\n```tsx title=\"app/layout.tsx\"\nimport './ui/global.css';\n\nexport default function RootLayout({ children }: { children: React.ReactNode }) {\n  return (\n    <html lang=\"en\">\n      <body>{children}</body>\n    </html>\n  );\n}\n```\n\n## Practice: a shape with utility classes\n\nAdd a black triangle to the home page, above the heading, using only border utilities.\n\n:::expandable{title=\"Reveal the solution\" style=\"solution\"}\n```tsx title=\"app/page.tsx\"\n<div className=\"h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent\" />\n```\n:::\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJXaGVyZSUyMHNob3VsZCUyMHRoZSUyMGdsb2JhbCUyMHN0eWxlc2hlZXQlMjBiZSUyMGltcG9ydGVkJTNGJTIyJTJDJTIyY2hvaWNlcyUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjJJbiUyMGV2ZXJ5JTIwcGFnZSUyMHRoYXQlMjBuZWVkcyUyMGl0JTIyJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMk9uY2UlMkMlMjBpbiUyMHRoZSUyMHJvb3QlMjBsYXlvdXQlMjIlMkMlMjJjb3JyZWN0JTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJJbiUyMHRoZSUyMHB1YmxpYyUyMGZvbGRlciUyMiU3RCU1RCUyQyUyMmV4cGxhbmF0aW9uJTIyJTNBJTIyVGhlJTIwcm9vdCUyMGxheW91dCUyMHdyYXBzJTIwZXZlcnklMjBwYWdlJTJDJTIwc28lMjBvbmUlMjBpbXBvcnQlMjB0aGVyZSUyMHN0eWxlcyUyMHRoZSUyMHdob2xlJTIwYXBwLiUyMiU3RA==\"}:::"
+          },
+          {
+            "slug": "fonts-and-images",
+            "title": "Fonts and images",
+            "fields": {
+              "duration": 8,
+              "kind": "Reading",
+              "objectives": "Load a self-hosted font; Add an image that never shifts the page"
+            },
+            "markdown": "Fonts and pictures are the two things that most often make a page jump while it loads. The framework handles both for you.\n\n## Fonts\n\n```ts title=\"app/ui/fonts.ts\"\nimport { localFont } from 'your-brand/font';\n\nexport const body = localFont({ src: './inter.woff2', display: 'swap' });\n```\n\nThe font file ships with your app, so the reader never requests it from anyone else.\n\n## Images\n\nUse the `Image` component with a `width` and `height`. The page reserves the space before the picture arrives, so nothing below it moves.\n\n```tsx title=\"app/page.tsx\"\n<Image src=\"/hero-desktop.png\" width={1000} height={760} alt=\"Screenshots of the dashboard\" />\n```"
+          }
+        ]
+      },
+      {
+        "slug": "routing-and-data",
+        "name": "Routing and data",
+        "description": "Pages, layouts, links and your first database query.",
+        "pages": [
+          {
+            "slug": "layouts-and-pages",
+            "title": "Creating layouts and pages",
+            "fields": {
+              "duration": 10,
+              "kind": "Reading",
+              "objectives": "Make a route from a folder; Share a layout between pages"
+            },
+            "markdown": "A folder inside `app/` is a route, and a `page.tsx` inside it is what the route shows.\n\n```txt title=\"app/\"\napp/dashboard/page.tsx            /dashboard\napp/dashboard/invoices/page.tsx   /dashboard/invoices\n```\n\n## A shared layout\n\nA `layout.tsx` wraps every page under it. The sidebar goes here, so it stays put while the page beside it changes.\n\n```tsx title=\"app/dashboard/layout.tsx\"\nexport default function Layout({ children }: { children: React.ReactNode }) {\n  return (\n    <div className=\"flex\">\n      <SideNav />\n      <main className=\"grow p-6\">{children}</main>\n    </div>\n  );\n}\n```"
+          },
+          {
+            "slug": "navigating",
+            "title": "Navigating between pages",
+            "fields": {
+              "duration": 7,
+              "kind": "Exercise",
+              "objectives": "Link between pages without a reload; Highlight the current page"
+            },
+            "markdown": "Plain `<a>` tags reload the whole page. The `Link` component swaps only what changed.\n\n```tsx title=\"app/ui/nav-links.tsx\"\nimport Link from 'your-brand/link';\n\n<Link href=\"/dashboard/invoices\">Invoices</Link>\n```\n\n## Practice: show the active link\n\nUse the current path to give the active link a different colour.\n\n:::expandable{title=\"Reveal the solution\" style=\"solution\"}\n```tsx title=\"app/ui/nav-links.tsx\"\nconst pathname = usePathname();\n<Link className={pathname === link.href ? 'text-blue-600' : ''} href={link.href}>{link.name}</Link>\n```\n:::"
+          },
+          {
+            "slug": "fetching-data",
+            "title": "Fetching data",
+            "fields": {
+              "duration": 12,
+              "kind": "Reading",
+              "objectives": "Query the database from a page; Run independent requests in parallel"
+            },
+            "markdown": "Pages are server components by default, so they can read the database directly.\n\n```ts title=\"app/lib/data.ts\"\nexport async function fetchLatestInvoices() {\n  return sql`SELECT amount, name, email FROM invoices ORDER BY date DESC LIMIT 5`;\n}\n```\n\n```tsx title=\"app/dashboard/page.tsx\"\nexport default async function Page() {\n  const latest = await fetchLatestInvoices();\n  return <LatestInvoices invoices={latest} />;\n}\n```\n\n:::hint{style=\"warning\"}\nRequests that do not depend on each other should start together. Waiting for each in turn makes the page as slow as all of them added up.\n:::"
+          }
+        ]
+      },
+      {
+        "slug": "ship-it",
+        "name": "Ship it",
+        "description": "Streaming, server actions and deployment.",
+        "pages": [
+          {
+            "slug": "streaming",
+            "title": "Streaming",
+            "fields": {
+              "duration": 8,
+              "kind": "Reading",
+              "objectives": "Stream a slow part of the page; Draw a skeleton that does not shift the layout"
+            },
+            "markdown": "A slow query should not hold up the whole page. Wrap the slow part in `Suspense` and show a skeleton the same size until it arrives.\n\n```tsx title=\"app/dashboard/page.tsx\"\n<Suspense fallback={<RevenueChartSkeleton />}>\n  <RevenueChart />\n</Suspense>\n```\n\nThe skeleton must take the same space as the chart, so nothing moves when the real chart replaces it."
+          },
+          {
+            "slug": "mutating-data",
+            "title": "Mutating data",
+            "fields": {
+              "duration": 12,
+              "kind": "Exercise",
+              "objectives": "Write a server action; Validate input before it is stored"
+            },
+            "markdown": "A form can call a server action directly. No API route, no client-side fetch.\n\n```ts title=\"app/lib/actions.ts\"\n'use server';\n\nexport async function updateInvoice(id: string, form: FormData) {\n  const amount = Number(form.get('amount'));\n  await sql`UPDATE invoices SET amount = ${amount} WHERE id = ${id}`;\n  revalidatePath('/dashboard/invoices');\n}\n```\n\n## Practice: validate the amount\n\nRefuse an amount that is not a positive number before it reaches the database.\n\n:::expandable{title=\"Reveal the solution\" style=\"solution\"}\n```ts title=\"app/lib/actions.ts\"\nif (!Number.isFinite(amount) || amount <= 0) return { message: 'Enter an amount above zero.' };\n```\n:::"
+          },
+          {
+            "slug": "deploying",
+            "title": "Deploying your app",
+            "fields": {
+              "duration": 6,
+              "kind": "Reading",
+              "objectives": "Deploy from Git; Configure environment variables"
+            },
+            "markdown": "You have a dashboard that reads, streams and writes. Time to put it online.\n\n1. Push the project to a Git repository.\n2. Import it in Your Brand Cloud and add the database's connection string as an environment variable.\n3. Every push to `main` now deploys, and every branch gets a preview address.\n\nCongratulations: you have finished the course. Take the final check below to earn your certificate."
+          }
+        ]
+      }
+    ],
+    "quizzes": [
+      {
+        "lesson": "fetching-data",
+        "quiz": {
+          "title": "Check: fetching data",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "Where can a page read the database directly?",
+              "choices": [
+                "In a server component",
+                "In any client component",
+                "Only in an API route"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Pages are server components by default, so the query runs on the server."
+            },
+            {
+              "prompt": "Two requests do not depend on each other. How should you start them?",
+              "choices": [
+                "One after the other",
+                "Together, in parallel",
+                "In the browser"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Started together, the page waits for the slowest one instead of the sum of both."
+            }
+          ]
+        }
+      },
+      {
+        "module": "ship-it",
+        "quiz": {
+          "title": "Final check",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "What should a Suspense fallback look like?",
+              "choices": [
+                "A spinner in the corner",
+                "A skeleton the same size as the content",
+                "Nothing"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "A skeleton of the same size means nothing moves when the content arrives."
+            },
+            {
+              "prompt": "Where does a server action run?",
+              "choices": [
+                "On the server",
+                "In the browser",
+                "In a worker"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "That is why it can talk to the database directly."
+            },
+            {
+              "prompt": "Which of these does a deploy from Git give you?",
+              "choices": [
+                "A preview for every branch",
+                "Production on every push to main",
+                "A new database per commit"
+              ],
+              "correctIndexes": [
+                0,
+                1
+              ],
+              "explanation": "Branches get previews; main goes to production. The database is yours to configure."
+            }
+          ]
+        }
+      }
+    ],
+    "quizPolicy": {
+      "reveal": "always"
+    }
+  }
+}

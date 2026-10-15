@@ -1,0 +1,277 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Tidepool Pricing",
+    "slug": "template-tidepool-pricing",
+    "description": "A light pricing page: a centred headline, three plans with a monthly / yearly switch, a comparison table whose header stays put as you scroll, an FAQ and an enterprise band with a contact form that lands in your inbox.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "pricing",
+      "landing",
+      "template"
+    ],
+    "spaceTypes": [
+      "CUSTOM"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "palette": {
+      "ink": "#3c4257",
+      "line": "#e3e8ee",
+      "muted": "#697386",
+      "heading": "#0f1729",
+      "surface": "#f6f9fb",
+      "background": "#ffffff",
+      "header_primary": "#0f1729",
+      "header_background": "#ffffff",
+      "footer_primary": "#697386",
+      "footer_background": "#f6f9fb"
+    },
+    "paletteDark": {
+      "ink": "#c9d1dc",
+      "line": "#1f2a33",
+      "muted": "#8b97a6",
+      "heading": "#f4f7fa",
+      "surface": "#0f1a20",
+      "background": "#0a1216",
+      "header_primary": "#f4f7fa",
+      "header_background": "#0a1216",
+      "footer_primary": "#8b97a6",
+      "footer_background": "#0f1a20"
+    },
+    "primaryColor": "#0e7c86",
+    "primaryColorDark": "#2dd4bf",
+    "accentColor": "#f97362",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+    "customFontFamily": "Plus Jakarta Sans",
+    "layout": {
+      "widths": {
+        "max": "1160px"
+      },
+      "gutter": {
+        "lg": 24,
+        "sm": 20
+      }
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 56,
+            "sm": 36
+          },
+          "weight": 800,
+          "tracking": -0.03,
+          "lineHeight": 1.05
+        },
+        "h2": {
+          "size": {
+            "lg": 36,
+            "sm": 28
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.15
+        },
+        "h3": {
+          "size": 20,
+          "weight": 700
+        },
+        "eyebrow": {
+          "size": 13,
+          "weight": 700,
+          "case": "upper",
+          "tracking": 0.08,
+          "color": "#0e7c86",
+          "colorDark": "#2dd4bf"
+        }
+      }
+    },
+    "components": {
+      "radius": 14,
+      "button": {
+        "radius": 10,
+        "weight": "semibold"
+      },
+      "input": {
+        "radius": 10
+      },
+      "expandable": {
+        "style": "row",
+        "icon": "chevron",
+        "iconPosition": "end",
+        "pad": 18
+      },
+      "link": {
+        "underline": "hover"
+      }
+    },
+    "motion": {
+      "preset": "subtle",
+      "reveal": {
+        "effect": "fade-up",
+        "targets": [
+          "cards",
+          "headings"
+        ],
+        "distance": 16,
+        "once": true
+      },
+      "hover": {
+        "card": "lift",
+        "button": "lift",
+        "link": "fade"
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": {
+          "lg": 68,
+          "sm": 60
+        },
+        "navGap": 28,
+        "navSize": 15,
+        "navWeight": 500,
+        "logoHeight": 26
+      },
+      "headerLinks": [
+        {
+          "label": "Product",
+          "href": "/x/your-org/your-custom#plans"
+        },
+        {
+          "label": "Templates",
+          "href": "/x/your-org/your-custom#plans"
+        },
+        {
+          "label": "Customers",
+          "href": "/x/your-org/your-custom#logos"
+        },
+        {
+          "label": "Pricing",
+          "href": "/x/your-org/your-custom",
+          "highlight": true
+        },
+        {
+          "label": "Enterprise",
+          "href": "/x/your-org/your-custom#enterprise"
+        }
+      ],
+      "cta": {
+        "label": "Start for free",
+        "href": "/x/your-org/your-custom#plans",
+        "showOnPhone": true
+      },
+      "secondaryCta": {
+        "label": "Log in",
+        "href": "/x/your-org/your-custom#plans",
+        "style": "link",
+        "underline": false,
+        "showOnPhone": false
+      },
+      "footer": {
+        "columns": 4,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingWeight": 700,
+        "headingStyle": "plain"
+      },
+      "footerDescription": "Presentations your whole team can make, share and measure.",
+      "footerColumns": [
+        {
+          "heading": "Product",
+          "links": [
+            {
+              "label": "Pricing",
+              "href": "/x/your-org/your-custom#plans"
+            },
+            {
+              "label": "Compare plans",
+              "href": "/x/your-org/your-custom#compare"
+            },
+            {
+              "label": "Enterprise",
+              "href": "/x/your-org/your-custom#enterprise"
+            },
+            {
+              "label": "Templates",
+              "href": "/x/your-org/your-custom#plans"
+            }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            {
+              "label": "Help centre",
+              "href": "/x/your-org/your-custom#faq"
+            },
+            {
+              "label": "Guides",
+              "href": "/x/your-org/your-custom#faq"
+            },
+            {
+              "label": "Changelog",
+              "href": "/x/your-org/your-custom#faq"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            {
+              "label": "About",
+              "href": "/x/your-org/your-custom#logos"
+            },
+            {
+              "label": "Customers",
+              "href": "/x/your-org/your-custom#logos"
+            },
+            {
+              "label": "Careers",
+              "href": "/x/your-org/your-custom#enterprise"
+            },
+            {
+              "label": "Contact",
+              "href": "/x/your-org/your-custom#enterprise"
+            }
+          ]
+        },
+        {
+          "heading": "Legal",
+          "links": [
+            {
+              "label": "Privacy",
+              "href": "/x/your-org/your-custom#faq"
+            },
+            {
+              "label": "Terms",
+              "href": "/x/your-org/your-custom#faq"
+            },
+            {
+              "label": "Security",
+              "href": "/x/your-org/your-custom#enterprise"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand."
+    }
+  },
+  "components": []
+}

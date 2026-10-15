@@ -1,0 +1,210 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Meridian",
+    "slug": "template-meridian-status",
+    "description": "A dark, bespoke page for a payments network: tiles that count components by state, the flagship group as a hero card beside the open incidents and maintenance, square bars, and times in UTC with a Local / UTC switch.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "status",
+      "dark",
+      "two-column",
+      "bespoke",
+      "template"
+    ],
+    "spaceTypes": [
+      "STATUS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "primaryColor": "#7a73ff",
+    "accentColor": "#7a73ff",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Manrope",
+    "palette": {
+      "background": "#0a2540",
+      "surface": "#0f2e4f",
+      "ink": "#c4d2e3",
+      "heading": "#ffffff",
+      "muted": "#8ea4bf",
+      "line": "#1d4166",
+      "header_background": "#0a2540",
+      "header_primary": "#ffffff",
+      "footer_background": "#071a2e",
+      "footer_primary": "#8ea4bf",
+      "success": "#22c55e",
+      "warning": "#f5a524",
+      "danger": "#f0506e",
+      "info": "#7a73ff"
+    },
+    "paletteDark": {
+      "background": "#0a2540",
+      "surface": "#0f2e4f",
+      "ink": "#c4d2e3",
+      "heading": "#ffffff",
+      "muted": "#8ea4bf",
+      "line": "#1d4166",
+      "header_background": "#0a2540",
+      "header_primary": "#ffffff",
+      "footer_background": "#071a2e",
+      "footer_primary": "#8ea4bf",
+      "success": "#22c55e",
+      "warning": "#f5a524",
+      "danger": "#f0506e",
+      "info": "#7a73ff"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 30,
+            "sm": 24
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "size": 17,
+          "weight": 600,
+          "lineHeight": 1.35
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "background": "#7a73ff",
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "semibold"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 68,
+        "border": "line",
+        "borderColor": "#1d4166"
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "status": {
+      "colors": {
+        "operational": {
+          "color": "#22c55e"
+        },
+        "degraded": {
+          "color": "#f5a524"
+        },
+        "partial": {
+          "color": "#fb7d3c"
+        },
+        "major": {
+          "color": "#f0506e"
+        },
+        "maintenance": {
+          "color": "#7a73ff"
+        },
+        "noData": {
+          "color": "#1d4166"
+        }
+      },
+      "banner": {
+        "style": "outline",
+        "icon": true,
+        "align": "start",
+        "subline": true,
+        "showUpdated": true,
+        "radius": 8,
+        "pad": 20
+      },
+      "components": {
+        "layout": "list",
+        "container": "card-per-group",
+        "card": {
+          "surface": "raised",
+          "radius": 10,
+          "pad": 20,
+          "shadow": "md"
+        },
+        "dividers": true,
+        "statusStyle": "icon-word",
+        "rowMeta": "percent",
+        "groupCollapse": "none",
+        "groupSummary": "count-uptime",
+        "headline": "first",
+        "headlineSize": 56
+      },
+      "bars": {
+        "shape": "square",
+        "height": 34,
+        "width": 6,
+        "gap": 3,
+        "radius": 1,
+        "days": 90,
+        "daysPhone": 30,
+        "fill": "solid",
+        "noData": "full",
+        "caption": false,
+        "percentDecimals": 2,
+        "tooltip": "styled"
+      },
+      "legend": {
+        "position": "top",
+        "states": 3
+      },
+      "incidents": {
+        "card": "accent-left",
+        "chips": true,
+        "updates": "latest",
+        "time": "both",
+        "emptyStates": true,
+        "foldOutages": true
+      },
+      "page": {
+        "frame": "plain",
+        "emptyDays": 7,
+        "nav": "links",
+        "timezone": "utc",
+        "refresh": 60,
+        "favicon": "alert"
+      },
+      "header": {
+        "zoneSwitch": true
+      },
+      "history": {
+        "view": "list",
+        "monthsPerPage": 3
+      },
+      "incident": {
+        "timeline": "rail",
+        "order": "asc"
+      },
+      "uptime": {
+        "months": 3,
+        "cell": "square"
+      },
+      "maintenance": {
+        "view": "list",
+        "showPast": true
+      }
+    }
+  },
+  "components": []
+}

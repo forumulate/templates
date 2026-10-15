@@ -1,0 +1,342 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "quietline",
+  "type": "STATUS",
+  "name": "Quietline",
+  "description": "A calm, narrow status page that follows the visitor’s light or dark setting: a tinted banner, components folded into groups that say how many they hold, small rounded bars with the uptime beside each, and the incident history as a month calendar.",
+  "modelledOn": "An AI model provider’s status page",
+  "features": [
+    "Narrow 720px column, light and dark from the visitor’s own setting",
+    "Tinted banner with a line on what it means for you",
+    "Groups folded by default, each saying how many components it holds",
+    "Small rounded bars with the uptime percentage beside each component",
+    "History as a month calendar; incident pages with a timeline rail"
+  ],
+  "tags": [
+    "status",
+    "minimal",
+    "dark",
+    "light",
+    "ai"
+  ],
+  "thumbnail": "/templates/quietline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/ql-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "intro"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        }
+      ]
+    },
+    "width": 720
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "apis",
+        "name": "APIs",
+        "description": "Everything you call from your own code."
+      },
+      {
+        "key": "apps",
+        "name": "Apps",
+        "description": "The apps people chat in."
+      },
+      {
+        "key": "platform",
+        "name": "Platform",
+        "description": "Accounts, keys and billing."
+      }
+    ],
+    "components": [
+      {
+        "key": "responses",
+        "monitor": {
+          "name": "Responses API",
+          "kind": "manual",
+          "description": "Text and tool-calling responses from every model."
+        },
+        "startsDaysAgo": 120,
+        "group": "apis"
+      },
+      {
+        "key": "embeddings",
+        "monitor": {
+          "name": "Embeddings",
+          "kind": "manual",
+          "description": "Vector embeddings for search and retrieval."
+        },
+        "startsDaysAgo": 120,
+        "group": "apis"
+      },
+      {
+        "key": "realtime",
+        "monitor": {
+          "name": "Realtime API",
+          "kind": "manual",
+          "description": "Low-latency speech and streaming sessions."
+        },
+        "startsDaysAgo": 120,
+        "group": "apis"
+      },
+      {
+        "key": "batch",
+        "monitor": {
+          "name": "Batch",
+          "kind": "manual",
+          "description": "Large asynchronous jobs at a lower price."
+        },
+        "startsDaysAgo": 120,
+        "group": "apis"
+      },
+      {
+        "key": "files",
+        "monitor": {
+          "name": "Files",
+          "kind": "manual",
+          "description": "Uploads used by the APIs and the apps."
+        },
+        "startsDaysAgo": 120,
+        "group": "apis"
+      },
+      {
+        "key": "web-app",
+        "monitor": {
+          "name": "Web app",
+          "kind": "manual",
+          "description": "Chat in the browser."
+        },
+        "startsDaysAgo": 120,
+        "group": "apps"
+      },
+      {
+        "key": "desktop",
+        "monitor": {
+          "name": "Desktop app",
+          "kind": "manual",
+          "description": "The macOS and Windows apps."
+        },
+        "startsDaysAgo": 120,
+        "group": "apps"
+      },
+      {
+        "key": "mobile",
+        "monitor": {
+          "name": "Mobile apps",
+          "kind": "manual",
+          "description": "The iOS and Android apps."
+        },
+        "startsDaysAgo": 120,
+        "group": "apps"
+      },
+      {
+        "key": "console",
+        "monitor": {
+          "name": "Developer console",
+          "kind": "manual",
+          "description": "Keys, usage and the playground."
+        },
+        "startsDaysAgo": 120,
+        "group": "platform"
+      },
+      {
+        "key": "sign-in",
+        "monitor": {
+          "name": "Sign-in",
+          "kind": "manual",
+          "description": "Sign-in and single sign-on for every app."
+        },
+        "startsDaysAgo": 120,
+        "group": "platform"
+      },
+      {
+        "key": "billing",
+        "monitor": {
+          "name": "Billing",
+          "kind": "manual",
+          "description": "Plans, invoices and usage limits."
+        },
+        "startsDaysAgo": 120,
+        "group": "platform"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "responses-errors",
+        "components": [
+          {
+            "key": "responses",
+            "impact": "partial_outage"
+          },
+          {
+            "key": "realtime",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Elevated error rates on the Responses API",
+          "severity": "major"
+        },
+        "daysAgo": 2,
+        "resolvedAfterHours": 2.25,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "We are seeing elevated 5xx errors on the Responses API for some models and are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.6,
+            "body": "We have identified a capacity shortfall in one inference cluster and are shifting traffic away from it.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.4,
+            "body": "Error rates are back to normal. Some requests may still see higher latency while the cluster recovers.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 2.25,
+            "body": "Latency is back to normal. This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "slow-uploads",
+        "components": [
+          "web-app",
+          "files"
+        ],
+        "incident": {
+          "title": "Slow file uploads in the web app",
+          "severity": "minor"
+        },
+        "daysAgo": 11,
+        "resolvedAfterHours": 1.25,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Uploading files in the web app is taking longer than usual. We are looking into it.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.75,
+            "body": "A fix for an overloaded upload service is rolling out.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.25,
+            "body": "Uploads are fast again. This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "sign-in-failures",
+        "components": [
+          {
+            "key": "sign-in",
+            "impact": "major_outage"
+          },
+          {
+            "key": "console",
+            "impact": "partial_outage"
+          }
+        ],
+        "incident": {
+          "title": "Sign-in failures for some accounts",
+          "severity": "critical",
+          "markdown": "## Impact\n\nFor 66 minutes, about 30% of sign-in attempts failed with an error page. People already signed in were not affected, and API requests authenticated with keys kept working.\n\n## Timeline\n\n1. 09:12 UTC — a session-store change is deployed\n2. 09:15 UTC — sign-in error rate alert fires\n3. 09:41 UTC — the change is identified and rolled back\n4. 10:18 UTC — error rate back to baseline\n\n## What caused it\n\nThe change shortened a connection timeout to the session store. Under morning load, a share of sign-ins timed out before the store answered.\n\n## What we changed\n\nTimeout changes now ship behind a flag and roll out to 1% of traffic first, with automatic rollback on a rise in sign-in errors.\n"
+        },
+        "daysAgo": 38,
+        "resolvedAfterHours": 1.1,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some people cannot sign in and see an error page. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "We have identified a recent change as the cause and are rolling it back.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 0.8,
+            "body": "The rollback is complete. Sign-ins are recovering.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.1,
+            "body": "Sign-in is working normally. We have published a write-up.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "batch-migration",
+        "components": [
+          "batch"
+        ],
+        "incident": {
+          "title": "Batch queue migration",
+          "markdown": "We are moving the Batch queue to new storage. New batches submitted during the window start after it ends; batches already running are not interrupted."
+        },
+        "daysFromNow": 6,
+        "durationHours": 3
+      }
+    ]
+  }
+}

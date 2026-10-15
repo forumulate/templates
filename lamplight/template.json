@@ -1,0 +1,147 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lamplight",
+  "type": "FAQ",
+  "name": "Lamplight",
+  "description": "A friendly help centre: a soft gradient search hero, four-up category cards with icons and question counts, popular questions and a contact band.",
+  "modelledOn": "A customer-support software company’s help centre",
+  "features": [
+    "Preset: help-centre — each category’s questions on its own page",
+    "Search hero with a gradient background and ⌘K",
+    "Category cards: icon, description, question count (4 per row)",
+    "Popular questions from the question’s own “Popular question” field",
+    "“Still stuck?” contact cards",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "help-center",
+    "support",
+    "friendly"
+  ],
+  "thumbnail": "/templates/lamplight.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "help-centre"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "faq": {
+    "collections": [
+      {
+        "slug": "getting-started",
+        "name": "Getting started",
+        "description": "Set up your account, invite your team and send the first reply.",
+        "nav": {
+          "icon": "rocket"
+        },
+        "pages": [
+          {
+            "slug": "create-account",
+            "title": "How do I create an account?",
+            "markdown": "Go to the sign-up page, enter your work email and choose a password. We send a confirmation link; once you click it, your workspace is ready and you land on the setup checklist.",
+            "fields": {
+              "featured": true
+            }
+          },
+          {
+            "slug": "invite-teammates",
+            "title": "How do I invite teammates?",
+            "markdown": "Open **Settings → Team** and choose **Invite people**. Add one address per line and pick a role for each. Invitations stay valid for seven days, and you can resend one from the same list."
+          },
+          {
+            "slug": "first-mailbox",
+            "title": "How do I connect my support mailbox?",
+            "markdown": "In **Settings → Mailboxes**, choose **Connect a mailbox** and follow the forwarding steps for your email provider. New mail shows up in Your Brand within a minute of arriving."
+          }
+        ]
+      },
+      {
+        "slug": "billing",
+        "name": "Billing and plans",
+        "description": "Plans, invoices, receipts and changing how you pay.",
+        "nav": {
+          "icon": "credit-card"
+        },
+        "pages": [
+          {
+            "slug": "change-plan",
+            "title": "How do I change my plan?",
+            "markdown": "Account owners can switch plans under **Settings → Billing**. An upgrade takes effect straight away and is prorated; a downgrade starts at your next renewal date.",
+            "fields": {
+              "featured": true
+            }
+          },
+          {
+            "slug": "download-invoice",
+            "title": "Where can I download an invoice?",
+            "markdown": "Every invoice is listed under **Settings → Billing → History**. Choose one to download a PDF that includes your company details and tax number."
+          },
+          {
+            "slug": "update-card",
+            "title": "How do I update my payment card?",
+            "markdown": "Choose **Update payment method** on the billing page. The new card is used for the next charge; the old one is removed from our payment provider at the same time."
+          }
+        ]
+      },
+      {
+        "slug": "conversations",
+        "name": "Conversations",
+        "description": "Replying, assigning, tagging and keeping the queue moving.",
+        "nav": {
+          "icon": "message-circle"
+        },
+        "pages": [
+          {
+            "slug": "assign-conversation",
+            "title": "How do I assign a conversation to someone else?",
+            "markdown": "Open the conversation and pick a teammate from the **Assignee** menu at the top. They get a notification, and the conversation moves to their queue."
+          },
+          {
+            "slug": "saved-replies",
+            "title": "Can I save replies I send often?",
+            "markdown": "Yes. Type the answer once, then choose **Save as reply** from the composer menu. Saved replies can include the customer’s first name and are shared with the whole team.",
+            "fields": {
+              "featured": true
+            }
+          },
+          {
+            "slug": "merge-conversations",
+            "title": "What happens when I merge two conversations?",
+            "markdown": "The older conversation is folded into the newer one, keeping every message in order. Tags and notes from both are kept, and the customer sees nothing change."
+          }
+        ]
+      },
+      {
+        "slug": "account-security",
+        "name": "Account and security",
+        "description": "Passwords, two-step sign-in and who can see what.",
+        "nav": {
+          "icon": "shield-check"
+        },
+        "pages": [
+          {
+            "slug": "two-factor",
+            "title": "How do I turn on two-step sign-in?",
+            "markdown": "Go to **Profile → Security** and choose **Turn on two-step sign-in**. Scan the code with an authenticator app and enter the six digits it shows to finish."
+          },
+          {
+            "slug": "reset-password",
+            "title": "I forgot my password. What now?",
+            "markdown": "Choose **Forgot password?** on the sign-in page and enter your email. The reset link is valid for one hour; if it does not arrive, check your spam folder first."
+          }
+        ]
+      }
+    ]
+  }
+}

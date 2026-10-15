@@ -1,0 +1,186 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "ledgerline-changes",
+  "type": "CHANGELOG",
+  "name": "Ledgerline Changes",
+  "description": "A payments company's API changelog in a docs-like shell: dated versions grouped under named release families with an overview card, Breaking badges, typed rows, a version compare form and GA / preview channels.",
+  "modelledOn": "A payments company's API changelog",
+  "features": [
+    "Release families (Basil, Acacia) with an overview card for each",
+    "Change types renamed to an API changelog's words: Added, Changed, Deprecated, Removed",
+    "Breaking badge, version pill and GA / Preview channel on every row",
+    "Checklist filter: types, tags, Breaking, plus Compare versions (from / to)",
+    "Section eyebrows with glyphs, square bullets, screenshots on a soft panel",
+    "Grid hero and a light docs shell, with a dark twin",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "changelog",
+    "api",
+    "developer"
+  ],
+  "thumbnail": "/templates/ledgerline-changes.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/ledgerline-card.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/ledgerline-logo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/ledgerline-logo-dark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "rows",
+    "frontDoor": {
+      "showRss": true,
+      "showDates": true,
+      "showVersionBadge": true,
+      "showSubtitle": false,
+      "showShare": true,
+      "subscribeStyle": "menu"
+    }
+  },
+  "shape": {
+    "params": {
+      "set": {
+        "type": {
+          "options": [
+            "Added",
+            "Changed",
+            "Deprecated",
+            "Removed"
+          ]
+        },
+        "channel": {
+          "options": [
+            "GA",
+            "Preview"
+          ]
+        }
+      }
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe",
+            "heading": "Get API changes by email",
+            "body": "One email per release family, and one for every breaking change.",
+            "layout": "inline-row",
+            "frame": "none"
+          }
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "payments",
+      "label": "Payments"
+    },
+    {
+      "slug": "billing",
+      "label": "Billing"
+    },
+    {
+      "slug": "connect",
+      "label": "Connect"
+    },
+    {
+      "slug": "webhooks",
+      "label": "Webhooks"
+    }
+  ],
+  "authors": [],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "basil",
+      "title": "Basil: one request for every payment method",
+      "tags": [
+        "payments",
+        "billing"
+      ],
+      "daysAgo": 2,
+      "markdown": "Basil is the API generation that lets one request create a payment for any method a customer chooses. It changes how payment methods are listed and renames two error codes; everything else is additive.\n\n## Added\n\n- `automatic_payment_methods` on every payment request.\n- A `payment_method_options` hash per method.\n\n## Changed\n\n- Payment methods are listed newest first.\n\n## Upgrading\n\nPin `2026-09-30.basil` in a test environment, run your integration tests, then move your account default.\n\nPlaceholder release notes.",
+      "version": "2026-09-30.basil",
+      "fields": {
+        "type": "Changed",
+        "family": "Basil",
+        "familyOverview": true,
+        "channel": "GA",
+        "breaking": true
+      }
+    },
+    {
+      "slug": "basil-refund-reasons",
+      "title": "Refund reasons are required for partial refunds",
+      "tags": [
+        "payments"
+      ],
+      "daysAgo": 9,
+      "markdown": "Partial refunds now need a `reason`, so disputes can be answered without a support ticket.\n\n## Changed\n\n- `reason` is required when `amount` is less than the charge.\n\n## Upgrading\n\nSend `reason` on partial refunds before upgrading, or the request answers `400`.\n\nPlaceholder release notes.",
+      "version": "2026-10-08.basil",
+      "fields": {
+        "type": "Changed",
+        "family": "Basil",
+        "channel": "GA",
+        "breaking": true
+      }
+    },
+    {
+      "slug": "basil-webhook-thin-events",
+      "title": "Thin events for webhooks (preview)",
+      "tags": [
+        "webhooks"
+      ],
+      "daysAgo": 14,
+      "markdown": "Thin events carry the object id and a type, and you fetch the rest — smaller payloads and no stale snapshots.\n\n## Added\n\n- `event_payload: thin` on webhook endpoints.\n- `GET /v2/events/{id}` returns the full object at delivery time.\n\nPlaceholder release notes.",
+      "version": "2026-10-02.basil",
+      "fields": {
+        "type": "Added",
+        "family": "Basil",
+        "channel": "Preview"
+      }
+    },
+    {
+      "slug": "acacia",
+      "title": "Acacia: Connect accounts without a type",
+      "tags": [
+        "connect"
+      ],
+      "daysAgo": 120,
+      "markdown": "Acacia replaces account types with explicit responsibilities: who collects fees, who is liable for losses and who the dashboard belongs to.\n\n## Added\n\n- `controller` on accounts.\n\n## Deprecated\n\n- `type` on accounts; it keeps working for this family.\n\nPlaceholder release notes.",
+      "version": "2026-04-30.acacia",
+      "fields": {
+        "type": "Added",
+        "family": "Acacia",
+        "familyOverview": true,
+        "channel": "GA"
+      }
+    },
+    {
+      "slug": "acacia-legacy-sources",
+      "title": "Legacy sources are removed",
+      "tags": [
+        "payments"
+      ],
+      "daysAgo": 150,
+      "markdown": "The legacy Sources API stops accepting new sources. Existing sources keep charging until they expire.\n\n## Removed\n\n- `POST /v1/sources` for card and bank sources.\n\n## Upgrading\n\nCreate payment methods instead; the migration guide maps each source field.\n\nPlaceholder release notes.",
+      "version": "2026-03-31.acacia",
+      "fields": {
+        "type": "Removed",
+        "family": "Acacia",
+        "channel": "GA",
+        "breaking": true
+      }
+    }
+  ]
+}

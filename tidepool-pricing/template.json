@@ -1,0 +1,1394 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "tidepool-pricing",
+  "type": "CUSTOM",
+  "name": "Tidepool Pricing",
+  "description": "A light pricing page: a centred headline, three plans with a monthly / yearly switch, a comparison table whose header stays put as you scroll, an FAQ and an enterprise band with a contact form that lands in your inbox.",
+  "modelledOn": "A SaaS company’s pricing page",
+  "features": [
+    "A landing page: the space’s address shows it, full width",
+    "Three plans with a monthly / yearly switch that needs no JavaScript",
+    "Comparison table with a sticky header",
+    "FAQ that opens one answer at a time",
+    "Enterprise band with a real contact form, created on apply",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "pricing",
+    "landing",
+    "saas"
+  ],
+  "thumbnail": "/templates/tidepool-pricing.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/wordmark-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-brightfin.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/logo-holloway.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/logo-mosswood.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/logo-northvale.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/logo-quarry.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "landing"
+  },
+  "custom": {
+    "collections": [
+      {
+        "slug": "site",
+        "name": "Site",
+        "pages": [
+          {
+            "slug": "pricing",
+            "title": "Pricing",
+            "metadata": {
+              "hideTitle": true,
+              "seoTitle": "Pricing — Your Brand",
+              "seoDescription": "Start free, then pay per editor. Compare the Free, Team and Business plans, or talk to us about Enterprise."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "hero",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 104,
+                      "bottom": 32
+                    },
+                    "contentAlign": "center"
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "eyebrow": "Pricing",
+                        "title": "Plans that grow with your team",
+                        "level": 1,
+                        "sub": "Start free, then pay per editor as you grow. Viewers are always free, and every plan includes unlimited presentations.",
+                        "note": "Prices exclude tax. Cancel any time.",
+                        "layout": "center",
+                        "size": "lg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "plans",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 24,
+                      "bottom": 80
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "pricing",
+                      "attrs": {
+                        "periods": [
+                          {
+                            "label": "Monthly",
+                            "suffix": "/editor/mo"
+                          },
+                          {
+                            "label": "Yearly",
+                            "suffix": "/editor/mo"
+                          }
+                        ],
+                        "defaultPeriod": 1,
+                        "currency": "$",
+                        "plans": [
+                          {
+                            "name": "Free",
+                            "description": "For trying it out and personal projects.",
+                            "prices": [
+                              "Free",
+                              "Free"
+                            ],
+                            "features": [
+                              {
+                                "text": "Up to 3 editors"
+                              },
+                              {
+                                "text": "Unlimited presentations"
+                              },
+                              {
+                                "text": "Templates and brand colours"
+                              },
+                              {
+                                "text": "Version history",
+                                "state": "text",
+                                "value": "7 days"
+                              }
+                            ],
+                            "cta": {
+                              "label": "Start for free",
+                              "href": "/x/your-org/your-custom#plans"
+                            }
+                          },
+                          {
+                            "name": "Team",
+                            "description": "For teams that present together every week.",
+                            "prices": [
+                              12,
+                              10
+                            ],
+                            "features": [
+                              {
+                                "text": "Unlimited editors"
+                              },
+                              {
+                                "text": "Custom fonts and brand kits"
+                              },
+                              {
+                                "text": "Shared workspaces and folders"
+                              },
+                              {
+                                "text": "Version history",
+                                "state": "text",
+                                "value": "1 year"
+                              },
+                              {
+                                "text": "Engagement analytics"
+                              }
+                            ],
+                            "cta": {
+                              "label": "Start a free trial",
+                              "href": "/x/your-org/your-custom#plans"
+                            },
+                            "highlighted": true,
+                            "badge": "Most popular",
+                            "priceNote": "Yearly saves 17%"
+                          },
+                          {
+                            "name": "Business",
+                            "description": "For companies with many teams and more control.",
+                            "prices": [
+                              24,
+                              20
+                            ],
+                            "features": [
+                              {
+                                "text": "Everything in Team"
+                              },
+                              {
+                                "text": "Single sign-on (SAML)"
+                              },
+                              {
+                                "text": "Roles and permissions"
+                              },
+                              {
+                                "text": "Audit log"
+                              },
+                              {
+                                "text": "Version history",
+                                "state": "text",
+                                "value": "Unlimited"
+                              }
+                            ],
+                            "cta": {
+                              "label": "Start a free trial",
+                              "href": "/x/your-org/your-custom#plans"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "logos",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 16,
+                      "bottom": 64
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "logoWall",
+                      "attrs": {
+                        "title": "Chosen by 4,000 teams who present for a living",
+                        "logos": [
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                            "alt": "Brightfin"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000005",
+                            "alt": "Holloway"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000006",
+                            "alt": "Mosswood"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000007",
+                            "alt": "Northvale"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000008",
+                            "alt": "Quarry"
+                          }
+                        ],
+                        "columns": 5,
+                        "grayscale": true,
+                        "size": "sm"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "compare",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 96
+                    },
+                    "anchor": "compare",
+                    "background": {
+                      "color": "surface"
+                    },
+                    "fullBleed": true
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Compare every feature"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "color": "muted",
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Everything that differs between the plans, row by row."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table",
+                      "attrs": {
+                        "stickyHeader": true
+                      },
+                      "content": [
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Free"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Team"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableHeader",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Business"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Editors"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Up to 3"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Viewers"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Presentations"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Custom fonts"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "—"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Included"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Included"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Brand kits"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "1"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Version history"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "7 days"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "1 year"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Unlimited"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Engagement analytics"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "—"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Included"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Included"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Single sign-on (SAML)"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "—"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "—"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Included"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Roles and permissions"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "—"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Basic"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Advanced"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Audit log"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "—"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "—"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Included"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableRow",
+                          "content": [
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Support"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Help centre"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Email, 1 business day"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "tableCell",
+                              "content": [
+                                {
+                                  "type": "paragraph",
+                                  "content": [
+                                    {
+                                      "type": "text",
+                                      "text": "Priority, 4 hours"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "faq",
+                    "role": "layout",
+                    "width": "narrow",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 96
+                    },
+                    "anchor": "faq"
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Questions, answered"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "expandableGroup",
+                      "attrs": {
+                        "style": "row"
+                      },
+                      "content": [
+                        {
+                          "type": "expandable",
+                          "attrs": {
+                            "title": "Who counts as an editor?"
+                          },
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Anyone who can change a presentation in your workspace. People who only view, comment or present are free on every plan."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "expandable",
+                          "attrs": {
+                            "title": "Can I switch between monthly and yearly?"
+                          },
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes. Switching to yearly takes effect straight away and we credit what is left of the month; switching back takes effect at renewal."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "expandable",
+                          "attrs": {
+                            "title": "What happens when the trial ends?"
+                          },
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "You choose a plan or stay on Free. Nothing is deleted — presentations over the Free limits become read-only until you upgrade."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "expandable",
+                          "attrs": {
+                            "title": "Do you offer discounts for education and non-profits?"
+                          },
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Yes: half price on Team and Business for schools, universities and registered non-profits. Write to us from the form below."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "expandable",
+                          "attrs": {
+                            "title": "How do I cancel?"
+                          },
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "From the billing page, any time. You keep your plan until the end of the period you paid for."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "enterprise",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 48
+                    },
+                    "anchor": "enterprise",
+                    "radius": "lg",
+                    "scheme": "dark",
+                    "background": {
+                      "gradient": {
+                        "type": "linear",
+                        "angle": 135,
+                        "stops": [
+                          {
+                            "color": "#0b3d47"
+                          },
+                          {
+                            "color": "#0e7c86"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "columns",
+                      "attrs": {
+                        "gap": "xl",
+                        "valign": "start",
+                        "stackOn": "md"
+                      },
+                      "content": [
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Enterprise"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 2
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Rolling it out to the whole company?"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Volume pricing, a security review, a named contact and an onboarding plan for every team. Tell us a little about yours and we will reply within one business day."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "bulletList",
+                              "content": [
+                                {
+                                  "type": "listItem",
+                                  "content": [
+                                    {
+                                      "type": "paragraph",
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "SCIM provisioning and SSO"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "listItem",
+                                  "content": [
+                                    {
+                                      "type": "paragraph",
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "Data residency in the EU or US"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "listItem",
+                                  "content": [
+                                    {
+                                      "type": "paragraph",
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "Invoiced billing and custom terms"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "form",
+                              "attrs": {
+                                "formId": "00000000-0000-4000-9000-000000000001",
+                                "fields": [
+                                  {
+                                    "name": "name",
+                                    "type": "text",
+                                    "label": "Your name",
+                                    "required": true
+                                  },
+                                  {
+                                    "name": "email",
+                                    "type": "email",
+                                    "label": "Work email",
+                                    "placeholder": "you@company.com",
+                                    "required": true
+                                  },
+                                  {
+                                    "name": "company",
+                                    "type": "text",
+                                    "label": "Company",
+                                    "required": true
+                                  },
+                                  {
+                                    "name": "size",
+                                    "type": "select",
+                                    "label": "Team size",
+                                    "options": [
+                                      "1–50",
+                                      "51–200",
+                                      "201–1,000",
+                                      "1,000+"
+                                    ],
+                                    "required": true
+                                  },
+                                  {
+                                    "name": "message",
+                                    "type": "textarea",
+                                    "label": "What are you hoping to do?"
+                                  }
+                                ],
+                                "submitLabel": "Talk to sales",
+                                "successMessage": "Thanks — someone from our team will be in touch within one business day.",
+                                "layout": "stacked"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "id": "00000000-0000-4000-9000-000000000001",
+      "form": {
+        "name": "Talk to sales",
+        "fields": [
+          {
+            "name": "name",
+            "type": "text",
+            "label": "Your name",
+            "required": true
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "label": "Work email",
+            "placeholder": "you@company.com",
+            "required": true
+          },
+          {
+            "name": "company",
+            "type": "text",
+            "label": "Company",
+            "required": true
+          },
+          {
+            "name": "size",
+            "type": "select",
+            "label": "Team size",
+            "options": [
+              "1–50",
+              "51–200",
+              "201–1,000",
+              "1,000+"
+            ],
+            "required": true
+          },
+          {
+            "name": "message",
+            "type": "textarea",
+            "label": "What are you hoping to do?"
+          }
+        ],
+        "submitLabel": "Talk to sales",
+        "successMessage": "Thanks — someone from our team will be in touch within one business day.",
+        "layout": "stacked"
+      }
+    }
+  ]
+}

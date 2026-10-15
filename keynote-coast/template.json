@@ -1,0 +1,1259 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "keynote-coast",
+  "type": "EVENTS",
+  "name": "Keynote Coast",
+  "description": "An annual conference microsite: a saturated full-width hero, the numbers, featured speakers, the calendar, a call for proposals, tiered sponsors and an FAQ. The conference itself opens on a full-bleed hero with a countdown, and its programme reads as a grid by stage with day tabs and filters.",
+  "modelledOn": "A design-tool company’s annual conference site",
+  "features": [
+    "Full-bleed hero picture (a drawn conference hall) under a translucent brand gradient, stats row, featured speakers and sponsor tiers on the front page",
+    "Conference page: full-bleed hero cover, countdown, fact tiles, sticky register card",
+    "Two-day programme as a grid by stage with day tabs, filters by track, stage, level and tag, and My agenda",
+    "Ten speakers on a five-wide grid of square portraits, each with a page listing their sessions",
+    "Large, tight display type and a painted title band over every page title",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "events",
+    "conference",
+    "agenda",
+    "speakers"
+  ],
+  "thumbnail": "/templates/keynote-coast.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/keynote-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/keynote-cover-conference.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/keynote-cover-cfp.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/keynote-cover-warmup.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/keynote-cover-past1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/keynote-cover-past2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/keynote-cover-past3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/keynote-speaker-ines-carvalho.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/keynote-speaker-marcus-bell.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000010": "assets/keynote-speaker-priya-raman.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000011": "assets/keynote-speaker-tomas-novak.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000012": "assets/keynote-speaker-aiko-tanaka.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000013": "assets/keynote-speaker-sam-oduya.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000014": "assets/keynote-speaker-lea-fischer.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000015": "assets/keynote-speaker-diego-ramos.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000016": "assets/keynote-speaker-hana-lee.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000017": "assets/keynote-speaker-owen-clarke.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000018": "assets/keynote-host-team.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000019": "assets/keynote-sponsor-northpass.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000020": "assets/keynote-sponsor-tidewell.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000021": "assets/keynote-sponsor-ordinal.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000022": "assets/keynote-sponsor-brightloop.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000023": "assets/keynote-sponsor-fernway.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000024": "assets/keynote-sponsor-kitepoint.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000025": "assets/keynote-sponsor-larchmont.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000026": "assets/keynote-sponsor-quillby.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000027": "assets/keynote-hero-hall.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "conference",
+    "frontDoor": {
+      "showTags": false,
+      "showSubscribe": true,
+      "subscribeStyle": "button",
+      "showRss": true,
+      "showPast": true,
+      "showShare": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "conference",
+      "label": "Conference",
+      "color": "#ff4b2b",
+      "textColor": "#ffffff"
+    },
+    {
+      "slug": "community",
+      "label": "Community",
+      "color": "#fff1d6",
+      "textColor": "#8a5200"
+    },
+    {
+      "slug": "online",
+      "label": "Online",
+      "color": "#e4e7ff",
+      "textColor": "#2b36b8"
+    },
+    {
+      "slug": "design-systems",
+      "label": "Design systems",
+      "color": "#efe7ff",
+      "textColor": "#5b2fb8"
+    },
+    {
+      "slug": "keynote",
+      "label": "Keynote"
+    },
+    {
+      "slug": "typography",
+      "label": "Typography"
+    },
+    {
+      "slug": "performance",
+      "label": "Performance"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "workshop",
+      "label": "Workshop"
+    },
+    {
+      "slug": "research",
+      "label": "Research"
+    },
+    {
+      "slug": "developers",
+      "label": "Developers"
+    },
+    {
+      "slug": "motion",
+      "label": "Motion"
+    }
+  ],
+  "authors": [
+    {
+      "key": "events-team",
+      "name": "Your Brand Events",
+      "role": "Organizer",
+      "bio": "The team behind the conference.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000018"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "section",
+          "attrs": {
+            "key": "hero",
+            "role": "layout",
+            "fullBleed": true,
+            "contentAlign": "center",
+            "scheme": "dark",
+            "padding": {
+              "top": 112,
+              "bottom": 96
+            },
+            "background": {
+              "gradient": {
+                "type": "linear",
+                "angle": 135,
+                "stops": [
+                  {
+                    "color": "#ff4b2bd9",
+                    "at": 0
+                  },
+                  {
+                    "color": "#ff7a00b3",
+                    "at": 55
+                  },
+                  {
+                    "color": "#ffb300cc",
+                    "at": 100
+                  }
+                ]
+              },
+              "image": {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000027",
+                "size": "cover",
+                "position": "center"
+              }
+            }
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Amsterdam · Harbour Hall · and online",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ],
+              "attrs": {
+                "textAlign": "center",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2,
+                "textAlign": "center",
+                "color": "#ffffff",
+                "size": {
+                  "lg": 64,
+                  "sm": 38
+                }
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The conference for people who build tools"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Two days, three stages, forty speakers. Talks, workshops and the people behind the products you use every day."
+                }
+              ],
+              "attrs": {
+                "textAlign": "center",
+                "color": "#ffffff",
+                "size": {
+                  "lg": 20,
+                  "sm": 17
+                }
+              }
+            },
+            {
+              "type": "buttons",
+              "attrs": {
+                "align": "center"
+              },
+              "content": [
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "Get tickets",
+                    "href": "/e/your-org/your-events/keynote-coast-conference",
+                    "style": "primary"
+                  }
+                },
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "See the agenda",
+                    "href": "/e/your-org/your-events/keynote-coast-conference/agenda",
+                    "style": "secondary"
+                  }
+                },
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "Speakers",
+                    "href": "/e/your-org/your-events/keynote-coast-conference/speakers",
+                    "style": "link"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "stats",
+          "attrs": {
+            "layout": "row",
+            "animate": false,
+            "items": [
+              {
+                "value": 2,
+                "label": "Days"
+              },
+              {
+                "value": 3,
+                "label": "Stages"
+              },
+              {
+                "value": 40,
+                "suffix": "+",
+                "label": "Speakers"
+              },
+              {
+                "value": 1200,
+                "label": "Attendees"
+              }
+            ],
+            "columns": 4
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Featured speakers"
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "content": [
+            {
+              "type": "column",
+              "attrs": {
+                "width": 20
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Inês Carvalho",
+                    "role": "VP of Design, Your Brand",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000008",
+                    "layout": "card",
+                    "photoShape": "square"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 20
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Marcus Bell",
+                    "role": "Founder, Fieldnote Studio",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000009",
+                    "layout": "card",
+                    "photoShape": "square"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 20
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Priya Raman",
+                    "role": "Staff Engineer, Your Brand",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000010",
+                    "layout": "card",
+                    "photoShape": "square"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 20
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Tomás Novák",
+                    "role": "Design Systems Lead, Halfmoon",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000011",
+                    "layout": "card",
+                    "photoShape": "square"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 20
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Aiko Tanaka",
+                    "role": "Principal Researcher, Northlight",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000012",
+                    "layout": "card",
+                    "photoShape": "square"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "All speakers →",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/e/your-org/your-events/keynote-coast-conference/speakers"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "events"
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Call for proposals"
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "attrs": {
+            "style": "info",
+            "title": "Proposals are open"
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "We are looking for talks and workshops about craft, design systems, research and the engineering behind tools. First-time speakers are welcome: every accepted speaker gets a coach and a rehearsal."
+                }
+              ]
+            },
+            {
+              "type": "buttons",
+              "attrs": {
+                "align": "start"
+              },
+              "content": [
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "Join speaker office hours",
+                    "href": "/e/your-org/your-events/speaker-office-hours",
+                    "style": "secondary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Sponsors"
+            }
+          ]
+        },
+        {
+          "type": "logoWall",
+          "attrs": {
+            "title": "Headline",
+            "logos": [
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000019",
+                "alt": "Northpass"
+              },
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000020",
+                "alt": "Tidewell"
+              }
+            ],
+            "columns": 2,
+            "grayscale": false,
+            "size": "lg"
+          }
+        },
+        {
+          "type": "logoWall",
+          "attrs": {
+            "title": "Partner",
+            "logos": [
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000021",
+                "alt": "Ordinal"
+              },
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000022",
+                "alt": "Brightloop"
+              },
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000023",
+                "alt": "Fernway"
+              }
+            ],
+            "columns": 3,
+            "grayscale": false,
+            "size": "md"
+          }
+        },
+        {
+          "type": "logoWall",
+          "attrs": {
+            "title": "Community",
+            "logos": [
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000024",
+                "alt": "Kitepoint"
+              },
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000025",
+                "alt": "Larchmont"
+              },
+              {
+                "src": "/api/assets/00000000-0000-4000-8000-000000000026",
+                "alt": "Quillby"
+              }
+            ],
+            "columns": 4,
+            "grayscale": false,
+            "size": "sm"
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Questions"
+            }
+          ]
+        },
+        {
+          "type": "tabs",
+          "attrs": {
+            "variant": "card",
+            "asCodeGroup": false
+          },
+          "content": [
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Tickets"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Tickets include both days, meals and the reception. Team tickets for five or more save 15%. Students and educators get a free streaming pass — ask the team."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Plans change: transfer your ticket to a colleague any time before the doors open."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Venue"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Harbour Hall is ten minutes on foot from the central station. Every stage is step-free; there is a quiet room, a parents’ room and gender-neutral bathrooms on every floor."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Accessibility"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Live captions on the main stage and in every recording. Sign-language interpretation on request — tell us two weeks ahead and we will arrange it."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tab",
+              "attrs": {
+                "title": "Code of conduct"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Keynote Coast is for everyone. Harassment of any kind is not tolerated. Find a volunteer in a yellow lanyard, or message the safety line printed on your badge."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "width": 1180
+  },
+  "events": {
+    "events": [
+      {
+        "slug": "keynote-coast-conference",
+        "title": "Keynote Coast Conference",
+        "daysFromNow": 58,
+        "startTime": "09:00",
+        "durationHours": 33.5,
+        "event": {
+          "timezone": "Europe/Amsterdam",
+          "attendanceMode": "hybrid",
+          "location": "Harbour Hall, Amsterdam",
+          "venue": {
+            "name": "Harbour Hall",
+            "street": "Voorbeeldkade 1",
+            "city": "Amsterdam",
+            "postalCode": "1011 AA",
+            "country": "NL",
+            "lat": 52.378,
+            "lng": 4.913
+          },
+          "url": "https://live.example.com/keynote-coast",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+          "coverAlt": "",
+          "capacity": 1200,
+          "tags": [
+            "conference"
+          ],
+          "hosts": [
+            {
+              "author": "events-team"
+            }
+          ],
+          "description": "Two days of talks, workshops and conversations about building better tools — on three stages at Harbour Hall, and streamed for everyone who cannot make it.\n\n## What is included\n\n- Every talk and workshop on both days\n- Breakfast, lunch and the evening reception\n- Recordings of every session, a week after\n\n## Good to know\n\n- Step-free access to every stage; live captions on the main stage\n- Quiet room and parents’ room on the first floor\n- Every attendee agrees to the code of conduct"
+        },
+        "sessions": [
+          {
+            "slug": "opening-keynote",
+            "title": "Opening keynote: Tools that disappear",
+            "day": 0,
+            "startTime": "09:30",
+            "durationMinutes": 60,
+            "speakers": [
+              "ines-carvalho",
+              "diego-ramos"
+            ],
+            "session": {
+              "stage": "Main stage",
+              "track": "Keynotes",
+              "level": "Everyone",
+              "description": "What we shipped this year, what we learned, and the one idea behind all of it: the best tool is the one you stop noticing.",
+              "tags": [
+                "keynote"
+              ]
+            }
+          },
+          {
+            "slug": "type-on-screens",
+            "title": "Type on screens, ten years on",
+            "day": 0,
+            "startTime": "11:00",
+            "durationMinutes": 40,
+            "speakers": [
+              "ines-carvalho"
+            ],
+            "session": {
+              "stage": "Main stage",
+              "track": "Craft",
+              "level": "Intermediate",
+              "description": "A decade of drawing letters for pixels, and what variable fonts finally fixed.",
+              "tags": [
+                "typography"
+              ]
+            }
+          },
+          {
+            "slug": "fast-by-default",
+            "title": "Fast by default: rendering at 120 frames",
+            "day": 0,
+            "startTime": "11:00",
+            "durationMinutes": 40,
+            "speakers": [
+              "priya-raman"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Engineering",
+              "level": "Advanced",
+              "description": "How the canvas stays smooth with ten thousand layers, and the benchmarks that keep it honest.",
+              "tags": [
+                "performance"
+              ]
+            }
+          },
+          {
+            "slug": "systems-that-scale",
+            "title": "Design systems that survive a reorg",
+            "day": 0,
+            "startTime": "13:30",
+            "durationMinutes": 40,
+            "speakers": [
+              "tomas-novak"
+            ],
+            "session": {
+              "stage": "Main stage",
+              "track": "Design systems",
+              "level": "Intermediate",
+              "description": "Four hundred components, six teams, one source of truth — and the governance that makes it work.",
+              "tags": [
+                "design-systems"
+              ]
+            }
+          },
+          {
+            "slug": "accessible-from-day-one",
+            "title": "Accessible from day one",
+            "day": 0,
+            "startTime": "13:30",
+            "durationMinutes": 90,
+            "speakers": [
+              "sam-oduya"
+            ],
+            "session": {
+              "stage": "Workshop room",
+              "track": "Craft",
+              "level": "Beginner",
+              "description": "A hands-on workshop: audit a real screen together and fix what we find. Bring a laptop.",
+              "tags": [
+                "accessibility",
+                "workshop"
+              ]
+            }
+          },
+          {
+            "slug": "research-to-roadmap",
+            "title": "From research to roadmap",
+            "day": 0,
+            "startTime": "15:00",
+            "durationMinutes": 40,
+            "speakers": [
+              "aiko-tanaka",
+              "owen-clarke"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Product",
+              "level": "Intermediate",
+              "description": "A researcher and a head of product on turning what users say into what teams build.",
+              "tags": [
+                "research"
+              ]
+            }
+          },
+          {
+            "slug": "day-one-closing",
+            "title": "Closing conversation: the next ten years",
+            "day": 0,
+            "startTime": "16:30",
+            "durationMinutes": 45,
+            "speakers": [
+              "marcus-bell",
+              "ines-carvalho"
+            ],
+            "session": {
+              "stage": "Main stage",
+              "track": "Keynotes",
+              "level": "Everyone",
+              "description": "An unscripted conversation about where design tools are going.",
+              "tags": [
+                "keynote"
+              ]
+            }
+          },
+          {
+            "slug": "day-two-keynote",
+            "title": "Day two keynote: Building on the platform",
+            "day": 1,
+            "startTime": "09:30",
+            "durationMinutes": 50,
+            "speakers": [
+              "hana-lee",
+              "priya-raman"
+            ],
+            "session": {
+              "stage": "Main stage",
+              "track": "Keynotes",
+              "level": "Everyone",
+              "description": "The developer platform, live: plugins, the API and three things people built with it.",
+              "tags": [
+                "keynote",
+                "developers"
+              ]
+            }
+          },
+          {
+            "slug": "brand-in-motion",
+            "title": "Brand in motion",
+            "day": 1,
+            "startTime": "11:00",
+            "durationMinutes": 40,
+            "speakers": [
+              "lea-fischer"
+            ],
+            "session": {
+              "stage": "Main stage",
+              "track": "Craft",
+              "level": "Intermediate",
+              "description": "Giving a brand system a sense of timing: principles, curves and the motion tokens behind them.",
+              "tags": [
+                "motion"
+              ]
+            }
+          },
+          {
+            "slug": "plugins-workshop",
+            "title": "Build your first plugin",
+            "day": 1,
+            "startTime": "11:00",
+            "durationMinutes": 90,
+            "speakers": [
+              "hana-lee"
+            ],
+            "session": {
+              "stage": "Workshop room",
+              "track": "Engineering",
+              "level": "Beginner",
+              "description": "A guided workshop from empty folder to a published plugin.",
+              "tags": [
+                "developers",
+                "workshop"
+              ]
+            }
+          },
+          {
+            "slug": "tokens-in-practice",
+            "title": "Design tokens in practice",
+            "day": 1,
+            "startTime": "13:30",
+            "durationMinutes": 40,
+            "speakers": [
+              "tomas-novak",
+              "lea-fischer"
+            ],
+            "session": {
+              "stage": "Studio",
+              "track": "Design systems",
+              "level": "Advanced",
+              "description": "Naming, theming and shipping tokens across web, iOS and Android.",
+              "tags": [
+                "design-systems"
+              ]
+            }
+          },
+          {
+            "slug": "closing-keynote",
+            "title": "Closing keynote",
+            "day": 1,
+            "startTime": "15:30",
+            "durationMinutes": 45,
+            "speakers": [
+              "marcus-bell",
+              "owen-clarke"
+            ],
+            "session": {
+              "stage": "Main stage",
+              "track": "Keynotes",
+              "level": "Everyone",
+              "description": "Thank-yous, a few surprises and next year’s dates.",
+              "tags": [
+                "keynote"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "speaker-office-hours",
+        "title": "Speaker Office Hours",
+        "daysFromNow": 11,
+        "startTime": "17:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "Europe/Amsterdam",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://meet.example.com/keynote-office-hours",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+          "coverAlt": "",
+          "tags": [
+            "community"
+          ],
+          "hosts": [
+            {
+              "author": "events-team"
+            }
+          ],
+          "description": "Thinking of speaking next year? Bring your idea; the programme team will help you shape it into a proposal. Thirty minutes of questions, thirty of feedback."
+        }
+      },
+      {
+        "slug": "warm-up-night",
+        "title": "Warm-up Night",
+        "daysFromNow": 57,
+        "startTime": "19:00",
+        "durationHours": 3,
+        "event": {
+          "timezone": "Europe/Amsterdam",
+          "attendanceMode": "in_person",
+          "location": "Harbour Hall Café, Amsterdam",
+          "venue": {
+            "name": "Harbour Hall Café",
+            "street": "Voorbeeldkade 1",
+            "city": "Amsterdam",
+            "postalCode": "1011 AA",
+            "country": "NL",
+            "lat": 52.378,
+            "lng": 4.913
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000004",
+          "coverAlt": "",
+          "capacity": 300,
+          "tags": [
+            "community"
+          ],
+          "hosts": [
+            {
+              "author": "events-team"
+            }
+          ],
+          "description": "The night before the conference: pick up your badge early, meet the speakers and the people you will sit next to tomorrow."
+        }
+      },
+      {
+        "slug": "spring-sessions",
+        "title": "Spring Sessions",
+        "daysFromNow": -35,
+        "startTime": "16:00",
+        "durationHours": 2,
+        "event": {
+          "timezone": "Europe/Amsterdam",
+          "attendanceMode": "online",
+          "location": "Online",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+          "coverAlt": "",
+          "tags": [
+            "online"
+          ],
+          "hosts": [
+            {
+              "author": "events-team"
+            }
+          ],
+          "description": "Three talks streamed from the studio, with questions from the chat.",
+          "recordingUrl": "https://video.example.com/keynote-coast/spring-sessions"
+        }
+      },
+      {
+        "slug": "design-systems-summit",
+        "title": "Design Systems Summit",
+        "daysFromNow": -120,
+        "startTime": "10:00",
+        "durationHours": 7,
+        "event": {
+          "timezone": "Europe/Amsterdam",
+          "attendanceMode": "in_person",
+          "location": "Harbour Hall, Amsterdam",
+          "venue": {
+            "name": "Harbour Hall",
+            "street": "Voorbeeldkade 1",
+            "city": "Amsterdam",
+            "postalCode": "1011 AA",
+            "country": "NL",
+            "lat": 52.378,
+            "lng": 4.913
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+          "coverAlt": "",
+          "tags": [
+            "design-systems"
+          ],
+          "hosts": [
+            {
+              "author": "events-team"
+            }
+          ],
+          "description": "A one-day summit for the people who build and keep design systems. Every talk is in the recording.",
+          "recordingUrl": "https://video.example.com/keynote-coast/design-systems-summit",
+          "slidesUrl": "https://slides.example.com/keynote-coast/design-systems-summit"
+        }
+      },
+      {
+        "slug": "last-year-at-keynote-coast",
+        "title": "Last Year at Keynote Coast",
+        "daysFromNow": -300,
+        "startTime": "09:00",
+        "durationHours": 33.5,
+        "event": {
+          "timezone": "Europe/Amsterdam",
+          "attendanceMode": "hybrid",
+          "location": "Harbour Hall, Amsterdam",
+          "venue": {
+            "name": "Harbour Hall",
+            "street": "Voorbeeldkade 1",
+            "city": "Amsterdam",
+            "postalCode": "1011 AA",
+            "country": "NL",
+            "lat": 52.378,
+            "lng": 4.913
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+          "coverAlt": "",
+          "tags": [
+            "conference"
+          ],
+          "hosts": [
+            {
+              "author": "events-team"
+            }
+          ],
+          "description": "Last year’s conference: forty talks, nine workshops, one very long queue for coffee. Watch every session.",
+          "recordingUrl": "https://video.example.com/keynote-coast/last-year"
+        }
+      }
+    ],
+    "speakers": [
+      {
+        "key": "ines-carvalho",
+        "speaker": {
+          "name": "Inês Carvalho",
+          "title": "VP of Design",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+          "bio": "Leads design across the product; spent ten years making type for screens.",
+          "position": 0,
+          "pronouns": "she/her",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/ines-carvalho"
+            }
+          ]
+        }
+      },
+      {
+        "key": "marcus-bell",
+        "speaker": {
+          "name": "Marcus Bell",
+          "title": "Founder",
+          "company": "Fieldnote Studio",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+          "bio": "Runs a small studio that builds design tools for other studios.",
+          "position": 1,
+          "pronouns": "he/him",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/marcus-bell"
+            }
+          ]
+        }
+      },
+      {
+        "key": "priya-raman",
+        "speaker": {
+          "name": "Priya Raman",
+          "title": "Staff Engineer",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000010",
+          "bio": "Works on the rendering engine and anything that has to be fast.",
+          "position": 2,
+          "pronouns": "she/her",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/priya-raman"
+            }
+          ]
+        }
+      },
+      {
+        "key": "tomas-novak",
+        "speaker": {
+          "name": "Tomás Novák",
+          "title": "Design Systems Lead",
+          "company": "Halfmoon",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000011",
+          "bio": "Keeps a design system of four hundred components honest.",
+          "position": 3,
+          "pronouns": "he/him",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/tomas-novak"
+            }
+          ]
+        }
+      },
+      {
+        "key": "aiko-tanaka",
+        "speaker": {
+          "name": "Aiko Tanaka",
+          "title": "Principal Researcher",
+          "company": "Northlight",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000012",
+          "bio": "Studies how teams decide what to build next.",
+          "position": 4,
+          "pronouns": "she/her",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/aiko-tanaka"
+            }
+          ]
+        }
+      },
+      {
+        "key": "sam-oduya",
+        "speaker": {
+          "name": "Sam Oduya",
+          "title": "Accessibility Engineer",
+          "company": "Openfield",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000013",
+          "bio": "Makes interfaces that work for everyone, then writes about it.",
+          "position": 5,
+          "pronouns": "they/them",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/sam-oduya"
+            }
+          ]
+        }
+      },
+      {
+        "key": "lea-fischer",
+        "speaker": {
+          "name": "Lea Fischer",
+          "title": "Creative Director",
+          "company": "Brightwork",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000014",
+          "bio": "Brand systems, motion and the occasional mural.",
+          "position": 6,
+          "pronouns": "she/her",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/lea-fischer"
+            }
+          ]
+        }
+      },
+      {
+        "key": "diego-ramos",
+        "speaker": {
+          "name": "Diego Ramos",
+          "title": "Product Manager",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000015",
+          "bio": "Ships the collaboration features; previously a teacher.",
+          "position": 7,
+          "pronouns": "he/him",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/diego-ramos"
+            }
+          ]
+        }
+      },
+      {
+        "key": "hana-lee",
+        "speaker": {
+          "name": "Hana Lee",
+          "title": "Developer Advocate",
+          "company": "Your Brand",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000016",
+          "bio": "Turns the API into things people actually build.",
+          "position": 8,
+          "pronouns": "she/her",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/hana-lee"
+            }
+          ]
+        }
+      },
+      {
+        "key": "owen-clarke",
+        "speaker": {
+          "name": "Owen Clarke",
+          "title": "Head of Product",
+          "company": "Tessellate",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000017",
+          "bio": "Has opinions about roadmaps and will share them.",
+          "position": 9,
+          "pronouns": "he/him",
+          "socials": [
+            {
+              "label": "Website",
+              "url": "https://example.com/owen-clarke"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

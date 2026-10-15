@@ -1,0 +1,143 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "halyard",
+  "type": "CONTACT",
+  "name": "Halyard Contact",
+  "description": "A dark topic router: a card per topic with a line saying what it is for, and the form opening on the one somebody picks — asking only that topic’s questions.",
+  "modelledOn": "A product tool’s contact router",
+  "features": [
+    "Router preset: topic cards first, then that topic’s form",
+    "Each topic asks its own questions (a bug report asks severity, sales asks team size)",
+    "A channels band under the form: your docs, community, status and changelog, plus your own links",
+    "Dark, quiet tokens with an outlined form card",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "contact",
+    "router",
+    "product"
+  ],
+  "thumbnail": "/templates/halyard.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/hy-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "router",
+    "frontDoor": {
+      "title": "Contact Your Brand",
+      "subtitle": "Pick a topic and we will open the right form. Most messages get a reply within a day."
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "contactForm": {
+      "submitLabel": "Send message",
+      "successTitle": "Message received",
+      "successMessage": "Every message is read by a person on the team. Expect a reply by email."
+    }
+  },
+  "contact": {
+    "departments": [
+      {
+        "name": "Sales",
+        "description": "Plans, volume pricing and security reviews",
+        "icon": "credit-card",
+        "fields": [
+          "company",
+          "team_size"
+        ]
+      },
+      {
+        "name": "Support",
+        "description": "Something is not working the way it should",
+        "icon": "life-buoy",
+        "fields": [
+          "workspace_url",
+          "severity"
+        ],
+        "redirectTo": "docs"
+      },
+      {
+        "name": "Billing",
+        "description": "Invoices, receipts and plan changes",
+        "icon": "receipt",
+        "fields": [
+          "workspace_url"
+        ]
+      },
+      {
+        "name": "Something else",
+        "description": "Press, partnerships and everything in between",
+        "icon": "message-circle",
+        "fields": []
+      }
+    ],
+    "formFields": [
+      {
+        "key": "company",
+        "label": "Company",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "team_size",
+        "label": "Team size",
+        "type": "select",
+        "options": [
+          "Just me",
+          "2–20",
+          "21–100",
+          "101–500",
+          "More than 500"
+        ]
+      },
+      {
+        "key": "workspace_url",
+        "label": "Workspace URL",
+        "type": "url",
+        "placeholder": "https://app.example.com/your-team",
+        "help": "So we can look at the right account."
+      },
+      {
+        "key": "severity",
+        "label": "How much is this blocking you?",
+        "type": "select",
+        "required": true,
+        "options": [
+          "A question",
+          "It slows me down",
+          "I am blocked"
+        ]
+      }
+    ],
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "contact",
+              "title": "Contact",
+              "hideFromNav": true,
+              "fields": {
+                "email": "hello@example.com",
+                "responseTarget": "one working day"
+              },
+              "markdown": "Not sure which topic fits? Write to us directly and we will route it to the right person.\n\n## Before you write\n\n- For a bug, say what you expected to happen and what happened instead.\n- Include the workspace it happened in — we will never ask for your password.\n- One topic per message keeps each answer fast."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "beacon-status",
+  "type": "STATUS",
+  "name": "Beacon Status",
+  "description": "The classic status page: a painted header, a solid banner that says it in one line, every component in a two-column grid with thin ninety-day bars, a legend under them and the last fifteen days spelled out — “No incidents reported” included.",
+  "modelledOn": "A code-hosting platform’s status page",
+  "features": [
+    "A drawn hero illustration the solid banner rides up onto",
+    "Solid state banner with its glyph and the time of the last update",
+    "Two-column component grid with thin 90-day bars and a styled day panel",
+    "The last 15 days listed, quiet days included",
+    "Classic traffic-light colours and a five-state legend",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "status",
+    "classic",
+    "light",
+    "grid"
+  ],
+  "thumbnail": "/templates/beacon-status.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/bc-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "intro"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        }
+      ]
+    },
+    "width": 920
+  },
+  "status": {
+    "groups": [],
+    "components": [
+      {
+        "key": "git-operations",
+        "monitor": {
+          "name": "Git operations",
+          "kind": "manual",
+          "description": "Clone, fetch and push over HTTPS and SSH."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "api-requests",
+        "monitor": {
+          "name": "API requests",
+          "kind": "manual",
+          "description": "The REST and GraphQL APIs."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "webhooks",
+        "monitor": {
+          "name": "Webhooks",
+          "kind": "manual",
+          "description": "Delivery of repository and organization events."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "issues",
+        "monitor": {
+          "name": "Issues",
+          "kind": "manual",
+          "description": "Issues, labels and project boards."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "pull-requests",
+        "monitor": {
+          "name": "Pull requests",
+          "kind": "manual",
+          "description": "Reviews, merges and branch protection."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "pipelines",
+        "monitor": {
+          "name": "Pipelines",
+          "kind": "manual",
+          "description": "Hosted build, test and deploy runners."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "packages",
+        "monitor": {
+          "name": "Packages",
+          "kind": "manual",
+          "description": "The package and container registry."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "pages",
+        "monitor": {
+          "name": "Pages",
+          "kind": "manual",
+          "description": "Static sites served from your repositories."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "web-app",
+        "monitor": {
+          "name": "Web app",
+          "kind": "manual",
+          "description": "Browsing code, search and notifications in the browser."
+        },
+        "startsDaysAgo": 120
+      },
+      {
+        "key": "email",
+        "monitor": {
+          "name": "Email notifications",
+          "kind": "manual",
+          "description": "Mail about mentions, reviews and builds."
+        },
+        "startsDaysAgo": 120
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "delayed-webhooks",
+        "components": [
+          "webhooks"
+        ],
+        "incident": {
+          "title": "Delayed webhook deliveries",
+          "severity": "minor"
+        },
+        "daysAgo": 3,
+        "resolvedAfterHours": 1.6,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "We are investigating delays of up to 20 minutes in webhook deliveries.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "A delivery queue node failed over and a backlog formed behind it. We have added capacity and the backlog is draining.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "Deliveries are back to normal latency. Queued events are being delivered in order; none were dropped.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.6,
+            "body": "This incident has been resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "pipelines-queued",
+        "components": [
+          "pipelines"
+        ],
+        "incident": {
+          "title": "Pipeline jobs queued longer than usual",
+          "severity": "major",
+          "markdown": "## Impact\n\nFor 2 hours 45 minutes, about one in five pipeline jobs on hosted Linux runners waited more than ten minutes to start. Jobs on self-hosted runners were not affected, and no job results were lost.\n\n## Timeline\n\n1. 14:02 UTC — queue times begin to rise in one region\n2. 14:19 UTC — alert fires; investigation starts\n3. 15:10 UTC — a faulty runner image is identified and rolled back\n4. 16:47 UTC — queue times back to normal\n\n## What caused it\n\nA new runner image failed its health check after boot, so runners were created and torn down in a loop instead of taking jobs.\n\n## What we changed\n\nRunner images now roll out to one region at a time and stop automatically when boot health checks fail.\n"
+        },
+        "daysAgo": 9,
+        "resolvedAfterHours": 2.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "We are investigating longer than usual queue times for pipeline jobs on hosted runners.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.85,
+            "body": "We have traced the delay to a runner image released this afternoon and are rolling it back.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.9,
+            "body": "The rollback is complete and queued jobs are starting. We are watching queue times recover.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 2.75,
+            "body": "Queue times are back to normal. A full write-up is attached to this incident.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "ssh-git",
+        "components": [
+          {
+            "key": "git-operations",
+            "impact": "major_outage"
+          },
+          {
+            "key": "web-app",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Git operations over SSH failing",
+          "severity": "critical"
+        },
+        "daysAgo": 24,
+        "resolvedAfterHours": 0.9,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some users are seeing connection resets when pushing or fetching over SSH. HTTPS is not affected. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.3,
+            "body": "A configuration change to our SSH load balancers caused the resets. We are reverting it.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 0.6,
+            "body": "The change has been reverted and SSH connections are succeeding again.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 0.9,
+            "body": "This incident has been resolved.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "packages-db",
+        "components": [
+          "packages"
+        ],
+        "incident": {
+          "title": "Scheduled maintenance for the package registry",
+          "markdown": "We are upgrading the database behind the package registry. Publishing new versions may be paused for up to ten minutes during the window. Installs and downloads are not affected."
+        },
+        "daysFromNow": 4,
+        "durationHours": 2
+      }
+    ]
+  }
+}

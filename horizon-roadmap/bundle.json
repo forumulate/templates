@@ -1,0 +1,201 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Horizon",
+    "slug": "template-horizon-roadmap",
+    "description": "A Now / Next / Later portal: the lanes are horizons rather than workflow, each with a tinted head; outlined cards carry a theme eyebrow, a three-line description and their status as a chip, under a warm serif headline.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "warm",
+      "serif",
+      "horizons",
+      "template"
+    ],
+    "spaceTypes": [
+      "ROADMAP"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#c2410c",
+    "accentColor": "#c2410c",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "bodyFontFamily": "Inter",
+    "headingFontFamily": "Newsreader",
+    "palette": {
+      "ink": "#3b2f25",
+      "line": "#e8ddcf",
+      "muted": "#8a7765",
+      "heading": "#2b2118",
+      "surface": "#fffdf9",
+      "background": "#fbf7f2",
+      "header_primary": "#2b2118",
+      "header_background": "#fbf7f2",
+      "footer_primary": "#8a7765",
+      "footer_background": "#fbf7f2"
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 44,
+            "sm": 32
+          },
+          "weight": 500,
+          "tracking": -0.015,
+          "lineHeight": 1.1
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "header": {
+        "border": "line",
+        "height": 64,
+        "borderColor": "#e8ddcf"
+      }
+    },
+    "components": {
+      "radius": 10,
+      "button": {
+        "radius": 999,
+        "weight": "medium",
+        "background": "#c2410c",
+        "ink": "#ffffff"
+      }
+    },
+    "layout": {
+      "widths": {
+        "board": "1180px"
+      }
+    },
+    "roadmap": {
+      "lanes": {
+        "style": "tinted-header",
+        "headerRule": true,
+        "glyph": "none",
+        "overflow": "fit",
+        "empty": "show",
+        "countStyle": "text",
+        "phone": "tabs",
+        "gap": 24,
+        "tones": {
+          "submitted": {
+            "color": "#a8a29e"
+          },
+          "planned": {
+            "color": "#2c4f6b"
+          },
+          "inProgress": {
+            "color": "#c2410c"
+          },
+          "shipped": {
+            "color": "#2f5d3a"
+          },
+          "declined": {
+            "tone": "neutral"
+          }
+        }
+      },
+      "card": {
+        "frame": {
+          "surface": "outline",
+          "radius": 10,
+          "pad": 18
+        },
+        "eyebrow": "theme",
+        "meta": [
+          "comments",
+          "effort"
+        ],
+        "titleLines": 2,
+        "excerptLines": 3,
+        "density": "comfortable"
+      },
+      "vote": {
+        "style": "pill",
+        "position": "footer",
+        "glyph": "thumb",
+        "votedFill": "brand"
+      },
+      "header": {
+        "layout": "hero",
+        "subtitle": "What we are working on now, what comes next, and what is further out. Tell us what matters to you.",
+        "subscribe": true,
+        "hero": {
+          "eyebrow": "Product roadmap",
+          "align": "center",
+          "size": "lg",
+          "submitLabel": "Share an idea",
+          "layers": [
+            {
+              "gradient": {
+                "angle": 180,
+                "stops": [
+                  {
+                    "color": "#f3e4d0",
+                    "at": 0
+                  },
+                  {
+                    "color": "#fbf7f2",
+                    "at": 100
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "filters": {
+        "style": "pills",
+        "sort": [
+          "top",
+          "new"
+        ],
+        "tags": true,
+        "search": true
+      },
+      "item": {
+        "rail": {
+          "layout": "side",
+          "items": [
+            "vote",
+            "voters",
+            "follow",
+            "facts",
+            "share"
+          ]
+        },
+        "voters": "stack",
+        "activity": true,
+        "response": true,
+        "shippedIn": true,
+        "replies": true,
+        "reactions": true,
+        "staffBadge": true,
+        "merged": "notice"
+      },
+      "submit": {
+        "sections": [
+          "problem",
+          "proposal"
+        ],
+        "rich": true,
+        "similar": true,
+        "theme": true
+      }
+    }
+  },
+  "components": []
+}

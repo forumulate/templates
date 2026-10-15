@@ -1,0 +1,648 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "northstar-story",
+  "type": "CUSTOM",
+  "name": "Northstar Story",
+  "description": "A long-form product story in large serif type: a full-bleed film behind the title, a numbers band, a scroll-driven sequence where the picture stays put while the chapters pass, pull quotes and parallax picture breaks.",
+  "modelledOn": "A browser company’s editorial product story",
+  "features": [
+    "A landing page: the space’s address shows it, full width",
+    "Full-bleed film behind the title (muted, looping; the poster under reduced motion)",
+    "Scroll-driven story: the picture stays while the chapters pass",
+    "Numbers band, pull quotes, parallax picture breaks",
+    "Large serif display type over a clean sans",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "editorial",
+    "story",
+    "landing",
+    "serif"
+  ],
+  "thumbnail": "/templates/northstar-story.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/wordmark-light.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/film.mp4",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/film-poster.jpg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/break-dusk.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/break-night.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/chapter-0.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/chapter-1.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/chapter-2.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/chapter-3.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "landing"
+  },
+  "custom": {
+    "collections": [
+      {
+        "slug": "story",
+        "name": "Story",
+        "pages": [
+          {
+            "slug": "story",
+            "title": "The long way to something simple",
+            "metadata": {
+              "hideTitle": true,
+              "seoTitle": "The long way to something simple — Your Brand",
+              "seoDescription": "Fourteen months, two hundred prototypes and one rule. How Your Brand was made."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "film",
+                    "role": "layout",
+                    "width": "full",
+                    "padding": {
+                      "top": 160,
+                      "bottom": 96
+                    },
+                    "fullBleed": true,
+                    "scheme": "dark",
+                    "minHeight": "88vh",
+                    "verticalAlign": "end",
+                    "background": {
+                      "color": "#0f0c09",
+                      "video": {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                        "poster": "/api/assets/00000000-0000-4000-8000-000000000005"
+                      }
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "eyebrow": "A Your Brand story",
+                        "title": "The long way to something simple",
+                        "level": 1,
+                        "sub": "Fourteen months, two hundred prototypes and one rule: take things away until what is left feels obvious. This is how we built it.",
+                        "layout": "center",
+                        "size": "xl"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "opening",
+                    "role": "layout",
+                    "width": "narrow",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 48
+                    },
+                    "anchor": "opening"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "size": {
+                          "lg": 24,
+                          "sm": 20
+                        }
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "It started with a list of everything we disliked about the tools we used every day. It was a long list. Most of it came down to one feeling: that the software wanted our attention more than it wanted to help."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "So we set ourselves a strange goal. Not more features, but fewer decisions. Every screen would have to earn its place, and every setting would have to explain why it was not the default."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "numbers",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 48,
+                      "bottom": 64
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "stats",
+                      "attrs": {
+                        "layout": "row",
+                        "items": [
+                          {
+                            "value": 14,
+                            "label": "Months",
+                            "description": "from the first sketch to the first release"
+                          },
+                          {
+                            "value": 212,
+                            "label": "Prototypes",
+                            "description": "most of them thrown away on purpose"
+                          },
+                          {
+                            "value": 3,
+                            "label": "Continents",
+                            "description": "where the team worked, and argued"
+                          },
+                          {
+                            "value": 1,
+                            "label": "Rule",
+                            "description": "take it away until it feels obvious"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "chapters",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 64,
+                      "bottom": 64
+                    },
+                    "anchor": "chapters"
+                  },
+                  "content": [
+                    {
+                      "type": "story",
+                      "attrs": {
+                        "label": "How it was made",
+                        "side": "end",
+                        "mediaWidth": "half",
+                        "top": 96
+                      },
+                      "content": [
+                        {
+                          "type": "storyStep",
+                          "attrs": {
+                            "media": "/api/assets/00000000-0000-4000-8000-000000000008",
+                            "alt": "Six lines, one of them in focus",
+                            "caption": "Six lines, one of them in focus"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Chapter one"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A sketch on the back of a receipt"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "The first version was a drawing: six lines, one of them darker than the rest. That darker line became the whole idea — one thing in focus, everything else waiting quietly."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "storyStep",
+                          "attrs": {
+                            "media": "/api/assets/00000000-0000-4000-8000-000000000009",
+                            "alt": "A wall of prototypes, one kept",
+                            "caption": "A wall of prototypes, one kept"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Chapter two"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Two hundred ways to be wrong"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "We built a prototype a day and showed each one to someone who had never seen the last. Two hundred and eleven of them taught us what to remove."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "The one that survived was the one people stopped noticing."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "storyStep",
+                          "attrs": {
+                            "media": "/api/assets/00000000-0000-4000-8000-00000000000a",
+                            "alt": "A route of five steps, the last one marked",
+                            "caption": "A route of five steps, the last one marked"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Chapter three"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "The route, not the map"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Instead of a menu of everything, we showed the next step. Then the one after. People finished faster, and told us it felt slower — in the good way."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "storyStep",
+                          "attrs": {
+                            "media": "/api/assets/00000000-0000-4000-8000-00000000000b",
+                            "alt": "A single point at the centre of quiet rings",
+                            "caption": "A single point at the centre of quiet rings"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Chapter four"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "One point of light"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "When it was done, there was almost nothing on the screen. That was the hardest thing we have ever made."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "quote-maya",
+                    "role": "layout",
+                    "width": "narrow",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "blockquote",
+                      "attrs": {
+                        "variant": "pull",
+                        "cite": "Maya Lindqvist, Head of Design",
+                        "align": "center",
+                        "size": 40
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "We were not trying to make it beautiful. We were trying to make it quiet, and it turned out those were the same thing."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "dusk",
+                    "role": "layout",
+                    "width": "full",
+                    "padding": {
+                      "top": 120,
+                      "bottom": 120
+                    },
+                    "fullBleed": true,
+                    "scheme": "dark",
+                    "minHeight": "70vh",
+                    "verticalAlign": "center",
+                    "contentAlign": "center",
+                    "background": {
+                      "color": "#16130f",
+                      "image": {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000006",
+                        "size": "cover",
+                        "position": "center",
+                        "attachment": "parallax",
+                        "overlay": {
+                          "color": "#16130f",
+                          "opacity": 0.25
+                        }
+                      }
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "What we left out"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "left-out",
+                    "role": "layout",
+                    "width": "narrow",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 64
+                    },
+                    "anchor": "left-out"
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Every feature is a promise"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "A feature is not finished when it ships. Someone has to learn it, someone has to explain it, and someone has to keep it working for years. So we kept a second list: things we had built, liked, and removed anyway."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Notifications that could wait. Settings nobody changed. A dashboard that told you how busy you were. Each one made the product a little louder; together they would have made it a different product."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "What is left is small on purpose. When you need more, it is there — one step away, never in the way."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "quote-jonah",
+                    "role": "layout",
+                    "width": "narrow",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "blockquote",
+                      "attrs": {
+                        "variant": "pull",
+                        "cite": "Jonah Okafor, Engineering",
+                        "align": "center",
+                        "size": 40
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "The best thing anyone said about the beta was that they forgot they were using it."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "night",
+                    "role": "layout",
+                    "width": "full",
+                    "padding": {
+                      "top": 120,
+                      "bottom": 120
+                    },
+                    "fullBleed": true,
+                    "scheme": "dark",
+                    "minHeight": "70vh",
+                    "verticalAlign": "center",
+                    "contentAlign": "center",
+                    "background": {
+                      "color": "#16130f",
+                      "image": {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000007",
+                        "size": "cover",
+                        "position": "center",
+                        "attachment": "parallax",
+                        "overlay": {
+                          "color": "#16130f",
+                          "opacity": 0.25
+                        }
+                      }
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Built for the long run"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "closing",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 112,
+                      "bottom": 112
+                    },
+                    "anchor": "closing"
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "title": "Try the quiet version",
+                        "level": 2,
+                        "sub": "Your Brand is free to start. Bring your work over in a minute, and see how little you have to think about.",
+                        "actions": [
+                          {
+                            "label": "Get Your Brand",
+                            "href": "/x/your-org/your-custom#closing",
+                            "style": "primary"
+                          },
+                          {
+                            "label": "Read the notes",
+                            "href": "/x/your-org/your-custom#left-out",
+                            "style": "link"
+                          }
+                        ],
+                        "layout": "center",
+                        "size": "lg"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Brightwater Careers",
+    "slug": "template-brightwater",
+    "description": "A warm, culture-led careers page: a photo-collage hero, values and benefits as cards, words from the team with portraits, office cards, then roles as two-up cards with their facts as chips.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "careers",
+      "culture",
+      "warm",
+      "serif",
+      "template"
+    ],
+    "spaceTypes": [
+      "CAREERS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "primaryColor": "#c2410c",
+    "primaryColorDark": "#fb923c",
+    "accentColor": "#0f766e",
+    "palette": {
+      "background": "#fffdf9",
+      "surface": "#fbf4ea",
+      "ink": "#3b342c",
+      "muted": "#7a6f62",
+      "heading": "#1f1a14",
+      "line": "#ece2d3",
+      "header_background": "#fffdf9",
+      "header_primary": "#1f1a14"
+    },
+    "paletteDark": {
+      "background": "#16130f",
+      "surface": "#1f1a14",
+      "ink": "#e7ddd0",
+      "muted": "#a89a89",
+      "heading": "#fff7ec",
+      "line": "#3a3127",
+      "header_background": "#16130f",
+      "header_primary": "#fff7ec"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "headingFontFamily": "Newsreader",
+    "bodyFontFamily": "Inter",
+    "typography": {
+      "baseSize": 17,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 60,
+            "sm": 40
+          },
+          "weight": 500,
+          "tracking": -0.02,
+          "lineHeight": 1.05
+        },
+        "h2": {
+          "size": {
+            "lg": 36,
+            "sm": 28
+          },
+          "weight": 500,
+          "tracking": -0.01,
+          "lineHeight": 1.15
+        },
+        "h3": {
+          "size": 20,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.65
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Life here",
+          "href": "/jobs/your-org/your-careers/life-at-your-brand"
+        },
+        {
+          "label": "Benefits",
+          "href": "/jobs/your-org/your-careers/benefits"
+        }
+      ],
+      "cta": {
+        "label": "Open roles",
+        "href": "/jobs/your-org/your-careers#open-roles"
+      },
+      "footerLinks": [
+        {
+          "label": "Life here",
+          "href": "/jobs/your-org/your-careers/life-at-your-brand"
+        },
+        {
+          "label": "Benefits",
+          "href": "/jobs/your-org/your-careers/benefits"
+        },
+        {
+          "label": "Candidate privacy",
+          "href": "https://example.com/privacy"
+        }
+      ],
+      "copyright": "© 2026 Your Brand"
+    },
+    "components": {
+      "button": {
+        "radius": 999,
+        "weight": "regular"
+      },
+      "card": {
+        "arrow": "end"
+      }
+    },
+    "careers": {
+      "list": {
+        "layout": "cards",
+        "columns": 2,
+        "chips": {
+          "style": "pill"
+        },
+        "facets": [
+          "team",
+          "location"
+        ],
+        "filterPlacement": "dropdowns",
+        "filtersFrom": 0,
+        "hover": "lift",
+        "rowAction": "arrow"
+      },
+      "role": {
+        "moreRoles": 4
+      },
+      "facts": {
+        "look": "chips"
+      }
+    },
+    "docs": {
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "breadcrumb": {
+          "show": true
+        },
+        "contributors": false
+      },
+      "articleWidth": "44rem"
+    }
+  },
+  "components": []
+}

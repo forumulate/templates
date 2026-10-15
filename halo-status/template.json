@@ -1,0 +1,308 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "halo-status",
+  "type": "STATUS",
+  "name": "Halo Status",
+  "description": "A floating card over a dark band: a centred headline inside a soft halo, each group as its own card with its uptime, fat ribbon bars that read as one stripe, and a light/dark switch in the footer.",
+  "modelledOn": "A code editor’s status page",
+  "features": [
+    "The page as a card floating over a dark band",
+    "Centred headline with its glyph and the time of the last update",
+    "A card per group, with its component count and uptime",
+    "Fat ribbon bars with an uppercase, tracked caption, and a five-state legend",
+    "Light/dark switch in the footer; subtle motion"
+  ],
+  "tags": [
+    "status",
+    "modern",
+    "card",
+    "dark-band"
+  ],
+  "thumbnail": "/templates/halo-status.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/hl-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "intro"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        }
+      ]
+    },
+    "width": 840
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "editor",
+        "name": "Editor services",
+        "description": "What the editor reaches for while you work."
+      },
+      {
+        "key": "accounts",
+        "name": "Accounts",
+        "description": "Signing in and keeping your settings with you."
+      },
+      {
+        "key": "website",
+        "name": "Website",
+        "description": "Downloads and documentation."
+      }
+    ],
+    "components": [
+      {
+        "key": "collaboration",
+        "monitor": {
+          "name": "Live collaboration",
+          "kind": "manual",
+          "description": "Shared sessions, cursors and voice."
+        },
+        "startsDaysAgo": 120,
+        "group": "editor"
+      },
+      {
+        "key": "extensions",
+        "monitor": {
+          "name": "Extension registry",
+          "kind": "manual",
+          "description": "Searching, installing and updating extensions."
+        },
+        "startsDaysAgo": 120,
+        "group": "editor"
+      },
+      {
+        "key": "assistant",
+        "monitor": {
+          "name": "AI assistant",
+          "kind": "manual",
+          "description": "Inline edits and the assistant panel."
+        },
+        "startsDaysAgo": 120,
+        "group": "editor"
+      },
+      {
+        "key": "auto-updates",
+        "monitor": {
+          "name": "Auto-updates",
+          "kind": "manual",
+          "description": "New versions delivered in the background."
+        },
+        "startsDaysAgo": 120,
+        "group": "editor"
+      },
+      {
+        "key": "sign-in",
+        "monitor": {
+          "name": "Sign-in",
+          "kind": "manual",
+          "description": "Signing in from the editor and the website."
+        },
+        "startsDaysAgo": 120,
+        "group": "accounts"
+      },
+      {
+        "key": "settings-sync",
+        "monitor": {
+          "name": "Settings sync",
+          "kind": "manual",
+          "description": "Themes, keymaps and settings across machines."
+        },
+        "startsDaysAgo": 120,
+        "group": "accounts"
+      },
+      {
+        "key": "billing",
+        "monitor": {
+          "name": "Billing",
+          "kind": "manual",
+          "description": "Plans and invoices."
+        },
+        "startsDaysAgo": 120,
+        "group": "accounts"
+      },
+      {
+        "key": "downloads",
+        "monitor": {
+          "name": "Downloads",
+          "kind": "manual",
+          "description": "Installers for every platform."
+        },
+        "startsDaysAgo": 120,
+        "group": "website"
+      },
+      {
+        "key": "docs",
+        "monitor": {
+          "name": "Documentation",
+          "kind": "manual",
+          "description": "Guides and reference."
+        },
+        "startsDaysAgo": 120,
+        "group": "website"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "collab-disconnects",
+        "components": [
+          "collaboration"
+        ],
+        "incident": {
+          "title": "Live collaboration sessions disconnecting",
+          "severity": "major"
+        },
+        "daysAgo": 5,
+        "resolvedAfterHours": 1.5,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Shared sessions are dropping every few minutes for some people. Local editing is unaffected. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.4,
+            "body": "One collaboration server was running out of memory and restarting. We have taken it out of rotation.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.0,
+            "body": "Sessions are stable. We are watching the remaining servers.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.5,
+            "body": "Resolved. Sessions have been stable for half an hour.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "stale-extension-search",
+        "components": [
+          "extensions"
+        ],
+        "incident": {
+          "title": "Extension search showing stale results",
+          "severity": "minor"
+        },
+        "daysAgo": 16,
+        "resolvedAfterHours": 3,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Extensions published in the last few hours are missing from search. Installing by name still works.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 1.5,
+            "body": "The search index stopped updating after a deploy. We are rebuilding it.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 3,
+            "body": "The index is rebuilt and new extensions appear in search again.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "update-mirror",
+        "components": [
+          {
+            "key": "auto-updates",
+            "impact": "partial_outage"
+          },
+          {
+            "key": "downloads",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Update downloads failing from one mirror",
+          "severity": "major",
+          "markdown": "## Impact\n\nFor about 50 minutes, roughly a quarter of update and installer downloads failed with a checksum error and were retried. No corrupted build was ever installed: the editor checks every download before it applies it.\n\n## Timeline\n\n1. 18:05 UTC — a mirror starts serving a truncated file\n2. 18:21 UTC — the checksum-failure alert fires\n3. 18:38 UTC — the mirror is removed from rotation\n4. 18:55 UTC — the failure rate is back to zero\n\n## What caused it\n\nA disk on one mirror filled up during a sync, so it served a partial copy of the newest release.\n\n## What we changed\n\nMirrors now verify each release against its checksum before they start serving it, and leave rotation by themselves when they cannot.\n"
+        },
+        "daysAgo": 29,
+        "resolvedAfterHours": 0.85,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some update downloads are failing with a checksum error. The editor retries them automatically. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.55,
+            "body": "One download mirror was serving an incomplete file. It has been removed from rotation.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 0.85,
+            "body": "Downloads are succeeding everywhere. Resolved.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "collab-upgrade",
+        "components": [
+          "collaboration"
+        ],
+        "incident": {
+          "title": "Collaboration server upgrade",
+          "markdown": "We are upgrading the collaboration servers. Shared sessions will reconnect once, for a few seconds, during the window. Your work is not affected."
+        },
+        "daysFromNow": 3,
+        "durationHours": 1
+      }
+    ]
+  }
+}

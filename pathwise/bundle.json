@@ -1,0 +1,145 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Pathwise",
+    "slug": "template-pathwise",
+    "description": "A bright, game-like learning path: short lessons as round nodes on a winding path, a chunky progress bar over every lesson, quick checks between explanations, lessons that open one after another, and a unit test at the end.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "course",
+      "gamified",
+      "light",
+      "colorful",
+      "education",
+      "template"
+    ],
+    "spaceTypes": [
+      "COURSES"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#58cc02",
+    "accentColor": "#1cb0f6",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap",
+    "customFontFamily": "Nunito",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#f7f7f7",
+      "ink": "#4b4b4b",
+      "heading": "#3c3c3c",
+      "muted": "#777777",
+      "line": "#e5e5e5",
+      "header_background": "#ffffff",
+      "header_primary": "#58cc02",
+      "footer_background": "#ffffff",
+      "footer_primary": "#777777",
+      "success": "#58cc02",
+      "info": "#1cb0f6",
+      "warning": "#ffc800",
+      "danger": "#ff4b4b"
+    },
+    "typography": {
+      "baseSize": 17,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 40,
+            "sm": 30
+          },
+          "weight": 900,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": {
+            "lg": 26,
+            "sm": 22
+          },
+          "weight": 800,
+          "lineHeight": 1.25
+        },
+        "h3": {
+          "size": 19,
+          "weight": 800
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 16,
+      "button": {
+        "background": "#58cc02",
+        "ink": "#ffffff",
+        "border": "#e5e5e5",
+        "radius": 16,
+        "weight": "bold",
+        "edge": {
+          "height": 4,
+          "color": "#58a700"
+        }
+      },
+      "input": {
+        "radius": 16,
+        "border": "#e5e5e5"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 64,
+        "border": "line"
+      },
+      "showSignIn": true,
+      "copyright": "© 2026 Your Brand."
+    },
+    "courses": {
+      "landing": {
+        "layout": "path",
+        "showStats": true,
+        "showInstructors": false,
+        "showOutcomes": true,
+        "ctaStyle": "solid",
+        "coverAspect": "square",
+        "coverRadius": 24
+      },
+      "outline": {
+        "style": "path-nodes",
+        "showDurations": false,
+        "showKinds": false,
+        "showModuleProgress": true
+      },
+      "lesson": {
+        "sidebar": "drawer",
+        "progressBar": "top",
+        "completion": "complete-and-continue",
+        "endCard": "completed-next",
+        "objectivesBox": false
+      },
+      "progress": {
+        "style": "thick-rounded",
+        "doneMark": "fill",
+        "tone": {
+          "tone": "success"
+        }
+      },
+      "access": {
+        "lockStyle": "icon",
+        "showDripDates": false
+      },
+      "certificate": {
+        "layout": "modern",
+        "logo": true,
+        "border": "none"
+      }
+    }
+  },
+  "components": []
+}

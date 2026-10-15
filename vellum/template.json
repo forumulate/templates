@@ -1,0 +1,191 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "vellum",
+  "type": "CHANGELOG",
+  "name": "Vellum",
+  "description": "A light, airy changelog of summaries: each day once in a wide date gutter beside a hairline rail, big tight titles, the people who shipped it, tag pills and a round feed button — and a release page with its facts in a side column.",
+  "modelledOn": "A frontend cloud platform’s changelog",
+  "features": [
+    "Index layout: gutter (260px, hairline rail, no dots), one date per day",
+    "Summaries only, with a “Read release” link",
+    "Authors as avatars and names on every release",
+    "32px titles with tight tracking",
+    "Tag pills, search and a round subscribe icon on the title row",
+    "Month archive with “Load more”",
+    "Release page: side column with date, reading time and copy/share actions",
+    "Light and dark palettes",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "changelog",
+    "minimal",
+    "developer"
+  ],
+  "thumbnail": "/templates/vellum.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000101": "assets/vellum-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000102": "assets/vellum-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000103": "assets/vellum-amara-osei.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000104": "assets/vellum-lukas-brandt.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000105": "assets/vellum-sofia-reyes.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000106": "assets/vellum-observability.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000102",
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000101"
+  },
+  "layout": {
+    "preset": "gutter",
+    "frontDoor": {
+      "showRss": true,
+      "showDates": true,
+      "showVersionBadge": false,
+      "showSubtitle": false,
+      "showShare": true,
+      "subscribeStyle": "icon"
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe",
+            "heading": "Subscribe to the changelog",
+            "body": "One email when something ships. No marketing.",
+            "layout": "inline-row",
+            "frame": "card"
+          }
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "slug": "builds",
+      "label": "Builds"
+    },
+    {
+      "slug": "cli",
+      "label": "CLI"
+    }
+  ],
+  "authors": [
+    {
+      "key": "amara-osei",
+      "name": "Amara Osei",
+      "role": "Engineering",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000103"
+    },
+    {
+      "key": "lukas-brandt",
+      "name": "Lukas Brandt",
+      "role": "Product",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000104"
+    },
+    {
+      "key": "sofia-reyes",
+      "name": "Sofia Reyes",
+      "role": "Developer Experience",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000105"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "observability-for-every-deployment",
+      "title": "Observability for every deployment",
+      "tags": [
+        "observability"
+      ],
+      "daysAgo": 2,
+      "markdown": "Every deployment now records request logs, function durations and cache hits for seven days, with no setup and no extra cost on any plan.\n\n## Added\n\n![Request logs grouped by route](/api/assets/00000000-0000-4000-8000-000000000106)\n\n- Logs filter by route, status code and region.\n- A per-deployment summary shows the slowest routes first.\n\nPlaceholder release notes.",
+      "authors": [
+        "amara-osei",
+        "lukas-brandt"
+      ],
+      "fields": {
+        "type": "New",
+        "ctaUrl": "https://example.com/docs/observability"
+      }
+    },
+    {
+      "slug": "preview-comments-on-mobile",
+      "title": "Preview comments on mobile",
+      "tags": [
+        "collaboration"
+      ],
+      "daysAgo": 2,
+      "markdown": "Comments on preview deployments now work on phones and tablets, with the same threads and mentions as on a desktop.\n\n## Changed\n\n- The toolbar collapses into one button on narrow screens.\n- Screenshots attached on mobile keep the device frame.\n\nPlaceholder release notes.",
+      "authors": [
+        "sofia-reyes"
+      ],
+      "fields": {
+        "type": "Improved"
+      }
+    },
+    {
+      "slug": "build-cache-keyed-by-lockfile",
+      "title": "Build cache keyed by lockfile",
+      "tags": [
+        "builds"
+      ],
+      "daysAgo": 8,
+      "markdown": "The build cache is now keyed by your lockfile, so a dependency change restores the right cache instead of starting cold.\n\n## Fixed\n\n- Monorepos with several lockfiles restore each package's own cache.\n\nPlaceholder release notes.",
+      "authors": [
+        "amara-osei"
+      ],
+      "fields": {
+        "type": "Fixed"
+      }
+    },
+    {
+      "slug": "node-js-18-builds-are-deprecated",
+      "title": "Node.js 18 builds are deprecated",
+      "tags": [
+        "builds"
+      ],
+      "daysAgo": 15,
+      "markdown": "New builds on Node.js 18 will stop on the date below. Existing deployments keep serving traffic.\n\n## Upgrading\n\nSet the Node.js version to 20 or 22 in your project settings, or in `engines.node` in `package.json`, and redeploy. Builds still on 18 after the cut-off fail with a message that names this page.\n\nPlaceholder release notes.",
+      "authors": [
+        "lukas-brandt"
+      ],
+      "fields": {
+        "type": "Deprecated",
+        "breaking": true
+      }
+    },
+    {
+      "slug": "edge-config-in-the-command-line",
+      "title": "Edge config in the command line",
+      "tags": [
+        "cli"
+      ],
+      "daysAgo": 24,
+      "markdown": "Read and write edge config items from the command line, and pull them into local development with one command.\n\n## Added\n\n- `edge-config get`, `set` and `pull`.\n- Values are typed when your project uses TypeScript.\n\nPlaceholder release notes.",
+      "authors": [
+        "sofia-reyes",
+        "amara-osei"
+      ],
+      "fields": {
+        "type": "New",
+        "channel": "Beta"
+      }
+    }
+  ]
+}

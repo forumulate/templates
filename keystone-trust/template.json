@@ -1,0 +1,1826 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "keystone-trust",
+  "type": "CUSTOM",
+  "name": "Keystone Trust",
+  "description": "A trust centre in the article layout: the page tree and an on-this-page rail, uptime and audit numbers, a wall of compliance badges, cards for each control, an FAQ and a way to reach the security team — with pages for practices, compliance, privacy, subprocessors and vulnerability reports.",
+  "modelledOn": "A software company’s security and trust centre",
+  "features": [
+    "Article layout: page tree, on-this-page rail, breadcrumb, updated date",
+    "Uptime and audit numbers, a wall of compliance badges",
+    "Cards for each control, an FAQ, a contact band",
+    "Six pages: overview, security, compliance, privacy, subprocessors, vulnerability reports",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "trust",
+    "security",
+    "compliance",
+    "article"
+  ],
+  "thumbnail": "/templates/keystone-trust.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/wordmark-light.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/badge-soc2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/badge-iso27001.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/badge-iso27701.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/badge-gdpr.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/badge-hipaa.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/badge-csa-star.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "article"
+  },
+  "custom": {
+    "collections": [
+      {
+        "slug": "trust",
+        "name": "Trust centre",
+        "pages": [
+          {
+            "slug": "overview",
+            "title": "Trust centre",
+            "metadata": {
+              "seoDescription": "How Your Brand protects your data: certifications, controls and how to reach the security team."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "size": {
+                      "lg": 19,
+                      "sm": 17
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Your Brand holds your data to the standard we would want for our own. This page is the short version: what we have been audited against, how the platform is protected, and how to reach the people responsible. Every section links to the detail."
+                    }
+                  ]
+                },
+                {
+                  "type": "stats",
+                  "attrs": {
+                    "layout": "cards",
+                    "columns": 4,
+                    "items": [
+                      {
+                        "value": 99.99,
+                        "decimals": 2,
+                        "suffix": "%",
+                        "label": "Uptime",
+                        "description": "trailing twelve months"
+                      },
+                      {
+                        "value": 4,
+                        "label": "Certifications",
+                        "description": "audited by independent firms"
+                      },
+                      {
+                        "value": 2,
+                        "suffix": "×",
+                        "label": "Penetration tests",
+                        "description": "a year, by outside testers"
+                      },
+                      {
+                        "value": 24,
+                        "suffix": "h",
+                        "label": "First response",
+                        "description": "to a vulnerability report"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Certifications and reports"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "color": "muted"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Audited every year. Reports are shared under NDA from the compliance page."
+                    }
+                  ]
+                },
+                {
+                  "type": "logoWall",
+                  "attrs": {
+                    "logos": [
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                        "alt": "SOC 2 Type II",
+                        "href": "/x/your-org/your-custom/compliance"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000005",
+                        "alt": "ISO/IEC 27001",
+                        "href": "/x/your-org/your-custom/compliance"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000006",
+                        "alt": "ISO/IEC 27701",
+                        "href": "/x/your-org/your-custom/compliance"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000007",
+                        "alt": "GDPR",
+                        "href": "/x/your-org/your-custom/compliance"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000008",
+                        "alt": "HIPAA",
+                        "href": "/x/your-org/your-custom/compliance"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000009",
+                        "alt": "CSA STAR Level 1",
+                        "href": "/x/your-org/your-custom/compliance"
+                      }
+                    ],
+                    "columns": 6,
+                    "size": "lg"
+                  }
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "How we protect your data"
+                    }
+                  ]
+                },
+                {
+                  "type": "cards",
+                  "attrs": {
+                    "columns": {
+                      "lg": 3,
+                      "md": 2,
+                      "sm": 1
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "card",
+                      "attrs": {
+                        "title": "Encryption",
+                        "description": "TLS 1.2+ in transit and AES-256 at rest, with keys rotated automatically.",
+                        "icon": "lock",
+                        "iconStyle": "tile",
+                        "href": "/x/your-org/your-custom/security"
+                      }
+                    },
+                    {
+                      "type": "card",
+                      "attrs": {
+                        "title": "Access control",
+                        "description": "Single sign-on, hardware keys and least-privilege roles for every employee.",
+                        "icon": "key-round",
+                        "iconStyle": "tile",
+                        "href": "/x/your-org/your-custom/security"
+                      }
+                    },
+                    {
+                      "type": "card",
+                      "attrs": {
+                        "title": "Infrastructure",
+                        "description": "Isolated networks, hardened images and infrastructure defined in reviewed code.",
+                        "icon": "server",
+                        "iconStyle": "tile",
+                        "href": "/x/your-org/your-custom/security"
+                      }
+                    },
+                    {
+                      "type": "card",
+                      "attrs": {
+                        "title": "Monitoring",
+                        "description": "Centralised logs, alerting around the clock and an on-call security rotation.",
+                        "icon": "activity",
+                        "iconStyle": "tile",
+                        "href": "/x/your-org/your-custom/security"
+                      }
+                    },
+                    {
+                      "type": "card",
+                      "attrs": {
+                        "title": "Business continuity",
+                        "description": "Backups every hour, tested restores and a recovery plan we rehearse.",
+                        "icon": "history",
+                        "iconStyle": "tile",
+                        "href": "/x/your-org/your-custom/security"
+                      }
+                    },
+                    {
+                      "type": "card",
+                      "attrs": {
+                        "title": "Vendor management",
+                        "description": "Every subprocessor is reviewed before use and every year after.",
+                        "icon": "user-check",
+                        "iconStyle": "tile",
+                        "href": "/x/your-org/your-custom/subprocessors"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Frequently asked questions"
+                    }
+                  ]
+                },
+                {
+                  "type": "expandableGroup",
+                  "attrs": {
+                    "style": "bordered"
+                  },
+                  "content": [
+                    {
+                      "type": "expandable",
+                      "attrs": {
+                        "title": "Where is my data stored?"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "In the region you choose when you sign up — the EU or the US. It does not leave that region except through subprocessors listed on the subprocessors page."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "expandable",
+                      "attrs": {
+                        "title": "Can I get your SOC 2 report?"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Yes. Request it from the compliance page; we share it under a mutual NDA, usually within two business days."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "expandable",
+                      "attrs": {
+                        "title": "Do you train models on customer data?"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "No. Customer content is never used to train models, ours or anyone else’s."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "expandable",
+                      "attrs": {
+                        "title": "How do you handle a security incident?"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "We follow a written response plan, tell affected customers without undue delay and within 72 hours, and publish a write-up when it is over."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "expandable",
+                      "attrs": {
+                        "title": "Do you have a bug bounty?"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "We run a disclosure programme with rewards for valid reports. See the vulnerability reports page for scope and how to submit."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Talk to the security team"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "contact",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 40,
+                      "bottom": 40,
+                      "x": 32
+                    },
+                    "radius": "lg",
+                    "background": {
+                      "color": "surface"
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#e4e7ec"
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Have a question we did not answer?"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "color": "muted"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Our security team reads every message. For a suspected vulnerability, use the report form so it reaches the on-call engineer."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "buttons",
+                      "attrs": {
+                        "align": "start"
+                      },
+                      "content": [
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "label": "Contact security",
+                            "href": "/x/your-org/your-custom/report",
+                            "style": "primary"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "label": "Request reports",
+                            "href": "/x/your-org/your-custom/compliance",
+                            "style": "secondary"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "security",
+            "title": "Security practices",
+            "metadata": {
+              "seoDescription": "Encryption, access control, infrastructure, development, monitoring and continuity at Your Brand."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The controls behind the summary on the overview, grouped the way an auditor would read them."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Encryption"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "All traffic is encrypted with TLS 1.2 or later, with HSTS on every domain. Data at rest — databases, backups and file storage — is encrypted with AES-256. Keys live in a managed key service and rotate automatically."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Identity and access"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Single sign-on with hardware security keys for every employee"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Production access is just-in-time, approved and logged"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Access is reviewed every quarter and removed the day someone leaves"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Infrastructure"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Workloads run in isolated networks with no inbound access except through the load balancer. Infrastructure is defined in code, reviewed like any other change and rebuilt from hardened images."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Secure development"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Every change is reviewed by a second engineer"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Dependencies are scanned on every build and patched on a published schedule"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Annual secure-coding training for everyone who ships code"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Monitoring and response"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Logs from every service are centralised and kept for a year. Alerts page an on-call engineer at any hour. Incidents follow a written plan, and every one ends with a review that is shared internally."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Continuity"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Databases are backed up hourly and copied to a second region. Restores are tested every month; the recovery plan is rehearsed twice a year."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "compliance",
+            "title": "Compliance",
+            "metadata": {
+              "seoDescription": "SOC 2, ISO 27001, ISO 27701, GDPR, HIPAA and CSA STAR — scope, dates and how to request reports."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Independent auditors check our controls every year. Reports are available to customers and prospects under NDA."
+                    }
+                  ]
+                },
+                {
+                  "type": "logoWall",
+                  "attrs": {
+                    "logos": [
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                        "alt": "SOC 2 Type II"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000005",
+                        "alt": "ISO/IEC 27001"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000006",
+                        "alt": "ISO/IEC 27701"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000007",
+                        "alt": "GDPR"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000008",
+                        "alt": "HIPAA"
+                      },
+                      {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000009",
+                        "alt": "CSA STAR Level 1"
+                      }
+                    ],
+                    "columns": 6,
+                    "size": "md"
+                  }
+                },
+                {
+                  "type": "table",
+                  "attrs": {
+                    "stickyHeader": true
+                  },
+                  "content": [
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableHeader",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Framework"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableHeader",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Scope"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableHeader",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Last audited"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableHeader",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Report"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "SOC 2 Type II"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Security, availability, confidentiality"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "March 2026"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "On request"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "ISO/IEC 27001"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Information security management"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "January 2026"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Certificate"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "ISO/IEC 27701"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Privacy information management"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "January 2026"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Certificate"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "GDPR"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Processing of EU personal data"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Continuous"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "DPA"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "HIPAA"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Protected health information"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Annual review"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "BAA on request"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "CSA STAR Level 1"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Cloud controls self-assessment"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "February 2026"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Public"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Requesting a report"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Ask your account contact, or write from the security contact page with your company name. We send reports under a mutual NDA, usually within two business days."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "privacy",
+            "title": "Data protection",
+            "metadata": {
+              "seoDescription": "What Your Brand collects, where it is stored, your rights and how long it is kept."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "How we handle personal data, in plain words. The legal text lives in our privacy policy and data processing agreement."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What we collect"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Account details you give us, the content you create, and usage data we need to run and improve the service. Nothing else."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Where it is stored"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "In the region you choose — the EU or the US. Backups stay in that region."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Your rights"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "See, export or delete your data from the account settings"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Ask us to correct or restrict processing"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Reach our data protection officer from the security contact page"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Retention"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Content is kept while your account is active and deleted within 30 days of closing it; backups age out within a further 35 days."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "subprocessors",
+            "title": "Subprocessors",
+            "metadata": {
+              "seoDescription": "The companies that process customer data on behalf of Your Brand."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The companies that process customer data on our behalf. We give 30 days’ notice before adding one."
+                    }
+                  ]
+                },
+                {
+                  "type": "table",
+                  "attrs": {
+                    "stickyHeader": true
+                  },
+                  "content": [
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableHeader",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Subprocessor"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableHeader",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Purpose"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableHeader",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Location"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Cloud hosting provider"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Infrastructure and storage"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "EU / US (your choice)"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Email delivery service"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Transactional email"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "US"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Payment processor"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Billing"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "US"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Support platform"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Customer support conversations"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "EU"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tableRow",
+                      "content": [
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Error monitoring service"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Application error reports (no customer content)"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tableCell",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "EU"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Get notified of changes"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Subscribe from your account settings to receive an email when this list changes."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "report",
+            "title": "Report a vulnerability",
+            "metadata": {
+              "seoDescription": "How to report a security issue to Your Brand, and what happens next."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "If you believe you have found a security issue in Your Brand, please tell us. We will not take legal action against good-faith research."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "How to report"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Describe the issue and how to reproduce it"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Include the URLs, accounts or requests involved"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Give us reasonable time to fix it before you share it"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What happens next"
+                    }
+                  ]
+                },
+                {
+                  "type": "stepper",
+                  "content": [
+                    {
+                      "type": "step",
+                      "attrs": {
+                        "title": "Within 24 hours"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "We confirm we have your report and who is handling it."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "step",
+                      "attrs": {
+                        "title": "Within 5 business days"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "We tell you whether we can reproduce it and how severe we think it is."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "step",
+                      "attrs": {
+                        "title": "When it is fixed"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "We let you know, credit you if you would like, and pay a reward for valid reports in scope."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Scope"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "In scope: the Your Brand web app, API and public website. Out of scope: denial of service, social engineering, and reports from automated scanners without a working proof."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

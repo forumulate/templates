@@ -1,0 +1,344 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "atriumline",
+  "type": "CONTACT",
+  "name": "Atriumline Contact",
+  "description": "A company contact page for a business with offices around the world: topic cards that open the right form, your sales line and hours with an “Open now” line, and a grid of office cards — photo, address, phone, hours and a map link each.",
+  "modelledOn": "A CRM company’s global contact page",
+  "features": [
+    "Topic cards (sales, support, partners, press), each asking its own questions",
+    "Six offices as photo cards, each with its own hours and “Open now” on that office’s clock",
+    "Sales line, languages and a structured schedule as fact tiles",
+    "Other ways to get help — your docs, community and status spaces — found automatically",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "contact",
+    "offices",
+    "company"
+  ],
+  "thumbnail": "/templates/atriumline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/al-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/al-office-boston.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/al-office-toronto.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/al-office-london.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/al-office-dublin.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/al-office-singapore.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/al-office-sydney.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "title": "Talk to Your Brand",
+      "subtitle": "Sales, support, partnerships or press — pick what it is about and we will put you in front of the right team, in the right time zone."
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "contactForm": {
+      "submitLabel": "Send to the team",
+      "successTitle": "Thanks — you are in the right place",
+      "successMessage": "Your message is with the team that handles it. Someone from the office nearest you will reply by email, usually within one business day."
+    }
+  },
+  "contact": {
+    "departments": [
+      {
+        "name": "Talk to sales",
+        "description": "Plans, pricing, a demo for your team or a custom quote",
+        "icon": "trending-up",
+        "fields": [
+          "company",
+          "company_size",
+          "country",
+          "phone"
+        ]
+      },
+      {
+        "name": "Get support",
+        "description": "Help with your account, your setup or something that is not working",
+        "icon": "life-buoy",
+        "fields": [
+          "account_email"
+        ]
+      },
+      {
+        "name": "Become a partner",
+        "description": "Agencies, resellers and app developers",
+        "icon": "users",
+        "fields": [
+          "company",
+          "website",
+          "country"
+        ]
+      },
+      {
+        "name": "Press and media",
+        "description": "Interviews, statements and the press kit",
+        "icon": "newspaper",
+        "fields": [
+          "publication"
+        ]
+      }
+    ],
+    "formFields": [
+      {
+        "key": "company",
+        "label": "Company",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "company_size",
+        "label": "Company size",
+        "type": "select",
+        "required": true,
+        "options": [
+          "1–10",
+          "11–50",
+          "51–200",
+          "201–1,000",
+          "More than 1,000"
+        ]
+      },
+      {
+        "key": "country",
+        "label": "Country or region",
+        "type": "text",
+        "placeholder": "Where your team is based",
+        "help": "So the office nearest you picks it up."
+      },
+      {
+        "key": "phone",
+        "label": "Phone number",
+        "type": "phone",
+        "help": "Optional — if you would rather we call."
+      },
+      {
+        "key": "account_email",
+        "label": "The email on your account",
+        "type": "email",
+        "help": "If it is different from the one above."
+      },
+      {
+        "key": "website",
+        "label": "Website",
+        "type": "url",
+        "placeholder": "https://example.com"
+      },
+      {
+        "key": "publication",
+        "label": "Publication",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "contact",
+              "title": "Contact",
+              "hideFromNav": true,
+              "fields": {
+                "email": "hello@example.com",
+                "phone": "+1 617 555 0100",
+                "openingHours": {
+                  "tz": "America/New_York",
+                  "slots": [
+                    {
+                      "days": [
+                        "mo",
+                        "tu",
+                        "we",
+                        "th",
+                        "fr"
+                      ],
+                      "open": "08:00",
+                      "close": "20:00"
+                    }
+                  ]
+                },
+                "responseTarget": "one business day",
+                "languages": "English, Français, Deutsch, Español, 日本語",
+                "offices": [
+                  {
+                    "name": "Boston (headquarters)",
+                    "street": "48 Harbourside Way",
+                    "city": "Boston",
+                    "region": "MA",
+                    "postcode": "02210",
+                    "country": "United States",
+                    "phone": "+1 617 555 0142",
+                    "email": "boston@example.com",
+                    "image": "/api/assets/00000000-0000-4000-8000-000000000002",
+                    "hours": {
+                      "tz": "America/New_York",
+                      "slots": [
+                        {
+                          "days": [
+                            "mo",
+                            "tu",
+                            "we",
+                            "th",
+                            "fr"
+                          ],
+                          "open": "08:30",
+                          "close": "18:00"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Toronto",
+                    "street": "210 Queensway Lane, Floor 6",
+                    "city": "Toronto",
+                    "region": "ON",
+                    "postcode": "M5V 0A1",
+                    "country": "Canada",
+                    "phone": "+1 416 555 0187",
+                    "email": "toronto@example.com",
+                    "image": "/api/assets/00000000-0000-4000-8000-000000000003",
+                    "hours": {
+                      "tz": "America/Toronto",
+                      "slots": [
+                        {
+                          "days": [
+                            "mo",
+                            "tu",
+                            "we",
+                            "th",
+                            "fr"
+                          ],
+                          "open": "09:00",
+                          "close": "17:30"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "London",
+                    "street": "9 Lantern Yard",
+                    "city": "London",
+                    "postcode": "EC2A 4BX",
+                    "country": "United Kingdom",
+                    "phone": "+44 20 7946 0958",
+                    "email": "london@example.com",
+                    "image": "/api/assets/00000000-0000-4000-8000-000000000004",
+                    "hours": {
+                      "tz": "Europe/London",
+                      "slots": [
+                        {
+                          "days": [
+                            "mo",
+                            "tu",
+                            "we",
+                            "th",
+                            "fr"
+                          ],
+                          "open": "09:00",
+                          "close": "17:30"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Dublin",
+                    "street": "Dock Mill, 3 Quayside Row",
+                    "city": "Dublin",
+                    "postcode": "D02 XY00",
+                    "country": "Ireland",
+                    "email": "dublin@example.com",
+                    "image": "/api/assets/00000000-0000-4000-8000-000000000005",
+                    "hours": {
+                      "tz": "Europe/Dublin",
+                      "slots": [
+                        {
+                          "days": [
+                            "mo",
+                            "tu",
+                            "we",
+                            "th",
+                            "fr"
+                          ],
+                          "open": "09:00",
+                          "close": "17:30"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Singapore",
+                    "street": "18 Marina Crescent, #12-01",
+                    "city": "Singapore",
+                    "postcode": "018000",
+                    "country": "Singapore",
+                    "email": "singapore@example.com",
+                    "image": "/api/assets/00000000-0000-4000-8000-000000000006",
+                    "hours": {
+                      "tz": "Asia/Singapore",
+                      "slots": [
+                        {
+                          "days": [
+                            "mo",
+                            "tu",
+                            "we",
+                            "th",
+                            "fr"
+                          ],
+                          "open": "09:00",
+                          "close": "18:00"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Sydney",
+                    "street": "Level 9, 66 Wharf Terrace",
+                    "city": "Sydney",
+                    "region": "NSW",
+                    "postcode": "2000",
+                    "country": "Australia",
+                    "phone": "+61 2 5550 1234",
+                    "email": "sydney@example.com",
+                    "image": "/api/assets/00000000-0000-4000-8000-000000000007",
+                    "hours": {
+                      "tz": "Australia/Sydney",
+                      "slots": [
+                        {
+                          "days": [
+                            "mo",
+                            "tu",
+                            "we",
+                            "th",
+                            "fr"
+                          ],
+                          "open": "08:30",
+                          "close": "17:30"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "markdown": "Whatever you need, there is a team for it — and an office in your time zone. Choose a topic and the form asks only what that team needs to help you.\n\n## When you will hear back\n\nSales and partnership enquiries get a reply within one business day from the office nearest you. Support messages from paying customers are answered around the clock; everyone else hears back within one business day.\n\n## What to tell us\n\n- The name of your company and roughly how big your team is.\n- What you are trying to get done, in a sentence or two.\n- For support: the email on your account, and what happened instead of what you expected."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "fieldnote",
+  "type": "CONTACT",
+  "name": "Fieldnote Support",
+  "description": "A calm, single-column support page in a large serif: a human promise, your hours and how fast you answer up front, and a plain form with no box around it.",
+  "modelledOn": "A project-management company’s support page",
+  "features": [
+    "Standard preset in one readable column",
+    "“Open now” on the team’s own clock, the hours and the response time as tiles above the form",
+    "Help articles suggested while somebody types, before they send",
+    "Large serif type on warm paper; a plain, unboxed form",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "contact",
+    "support",
+    "serif"
+  ],
+  "thumbnail": "/templates/fieldnote.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/fn-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "title": "Questions? Real people answer them.",
+      "subtitle": "No bots and no ticket maze. Write to us and a person on the Your Brand support team will reply — usually within a couple of hours on weekdays.",
+      "deflect": true,
+      "showOpenNow": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "contactForm": {
+      "submitLabel": "Send it",
+      "successTitle": "Got it — thank you",
+      "successMessage": "A real person will read this and write back. If it is after hours, we will be on it first thing in the morning."
+    }
+  },
+  "contact": {
+    "departments": [
+      {
+        "name": "A question about my account"
+      },
+      {
+        "name": "Billing and invoices"
+      },
+      {
+        "name": "Something is not working",
+        "fields": [
+          "account_url"
+        ]
+      },
+      {
+        "name": "Just saying hello",
+        "fields": []
+      }
+    ],
+    "formFields": [
+      {
+        "key": "account_url",
+        "label": "Your account address",
+        "type": "url",
+        "placeholder": "https://app.example.com/1234",
+        "help": "Optional, but it saves a round trip."
+      }
+    ],
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "support",
+              "title": "Support",
+              "hideFromNav": true,
+              "fields": {
+                "email": "support@example.com",
+                "openingHours": {
+                  "tz": "America/Chicago",
+                  "slots": [
+                    {
+                      "days": [
+                        "mo",
+                        "tu",
+                        "we",
+                        "th",
+                        "fr"
+                      ],
+                      "open": "06:00",
+                      "close": "18:00"
+                    }
+                  ]
+                },
+                "responseTarget": "a couple of hours on weekdays"
+              },
+              "markdown": "Our support team is a small group of people who know the product inside out. There is no outsourced first line and no bot pretending to be one of us.\n\n## When you will hear back\n\nOn weekdays most messages get an answer within a couple of hours. Write to us over the weekend and we will reply first thing Monday — urgent problems with your account are watched all week.\n\n## What to tell us\n\n- What you were trying to do, and what happened instead.\n- The address of the page or project it happened on.\n- A screenshot, if you have one — you can attach it below."
+            }
+          ]
+        },
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "support",
+              "title": "Support",
+              "hideFromNav": true,
+              "fields": {
+                "email": "support@example.com",
+                "hours": "Mon–Fri, 06:00–18:00 US Central",
+                "responseTarget": "a couple of hours on weekdays",
+                "openingHours": {
+                  "tz": "America/Chicago",
+                  "slots": [
+                    {
+                      "days": [
+                        "mo",
+                        "tu",
+                        "we",
+                        "th",
+                        "fr"
+                      ],
+                      "open": "06:00",
+                      "close": "18:00"
+                    }
+                  ]
+                }
+              },
+              "markdown": "Our support team is a small group of people who know the product inside out. There is no outsourced first line and no bot pretending to be one of us.\n\n## When you will hear back\n\nOn weekdays most messages get an answer within a couple of hours. Write to us over the weekend and we will reply first thing Monday — urgent problems with your account are watched all week.\n\n## What to tell us\n\n- What you were trying to do, and what happened instead.\n- The address of the page or project it happened on.\n- A screenshot, if you have one — you can attach it below."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

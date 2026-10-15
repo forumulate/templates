@@ -1,0 +1,202 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Keystone Trust",
+    "slug": "template-keystone-trust",
+    "description": "A trust centre in the article layout: the page tree and an on-this-page rail, uptime and audit numbers, a wall of compliance badges, cards for each control, an FAQ and a way to reach the security team — with pages for practices, compliance, privacy, subprocessors and vulnerability reports.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "trust",
+      "article",
+      "template"
+    ],
+    "spaceTypes": [
+      "CUSTOM"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "palette": {
+      "ink": "#344054",
+      "line": "#e4e7ec",
+      "muted": "#667085",
+      "heading": "#101828",
+      "surface": "#f7f8fa",
+      "background": "#ffffff",
+      "header_primary": "#101828",
+      "header_background": "#ffffff",
+      "footer_primary": "#667085",
+      "footer_background": "#f7f8fa"
+    },
+    "paletteDark": {
+      "ink": "#cfd4dc",
+      "line": "#1f2937",
+      "muted": "#98a2b3",
+      "heading": "#f2f4f7",
+      "surface": "#111827",
+      "background": "#0b1120",
+      "header_primary": "#f2f4f7",
+      "header_background": "#0b1120",
+      "footer_primary": "#98a2b3",
+      "footer_background": "#111827"
+    },
+    "primaryColor": "#15803d",
+    "primaryColorDark": "#4ade80",
+    "accentColor": "#0e7490",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap",
+    "customFontFamily": "Inter",
+    "monoFontFamily": "IBM Plex Mono",
+    "onThisPage": "auto",
+    "layout": {
+      "widths": {
+        "max": "1280px"
+      },
+      "gutter": {
+        "lg": 32,
+        "sm": 20
+      }
+    },
+    "typography": {
+      "baseSize": 16,
+      "rhythm": "product",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 40,
+            "sm": 30
+          },
+          "weight": 700,
+          "tracking": -0.02
+        },
+        "h2": {
+          "size": 24,
+          "weight": 600,
+          "tracking": -0.01,
+          "spaceBefore": "56px"
+        },
+        "h3": {
+          "size": 18,
+          "weight": 600
+        }
+      }
+    },
+    "components": {
+      "radius": 10,
+      "button": {
+        "radius": 8,
+        "weight": "semibold"
+      },
+      "expandable": {
+        "style": "bordered",
+        "icon": "chevron",
+        "iconPosition": "end"
+      },
+      "link": {
+        "underline": "hover"
+      }
+    },
+    "motion": {
+      "preset": "subtle",
+      "hover": {
+        "card": "border",
+        "link": "fade"
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 500,
+        "logoHeight": 24
+      },
+      "headerLinks": [
+        {
+          "label": "Overview",
+          "href": "/x/your-org/your-custom/overview"
+        },
+        {
+          "label": "Security",
+          "href": "/x/your-org/your-custom/security"
+        },
+        {
+          "label": "Compliance",
+          "href": "/x/your-org/your-custom/compliance"
+        },
+        {
+          "label": "Privacy",
+          "href": "/x/your-org/your-custom/privacy"
+        }
+      ],
+      "cta": {
+        "label": "Report a vulnerability",
+        "href": "/x/your-org/your-custom/report",
+        "showOnPhone": false
+      },
+      "footer": {
+        "columns": 3,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingStyle": "plain"
+      },
+      "footerColumns": [
+        {
+          "heading": "Trust",
+          "links": [
+            {
+              "label": "Overview",
+              "href": "/x/your-org/your-custom/overview"
+            },
+            {
+              "label": "Security practices",
+              "href": "/x/your-org/your-custom/security"
+            },
+            {
+              "label": "Compliance",
+              "href": "/x/your-org/your-custom/compliance"
+            }
+          ]
+        },
+        {
+          "heading": "Privacy",
+          "links": [
+            {
+              "label": "Data protection",
+              "href": "/x/your-org/your-custom/privacy"
+            },
+            {
+              "label": "Subprocessors",
+              "href": "/x/your-org/your-custom/subprocessors"
+            }
+          ]
+        },
+        {
+          "heading": "Contact",
+          "links": [
+            {
+              "label": "Report a vulnerability",
+              "href": "/x/your-org/your-custom/report"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand."
+    }
+  },
+  "components": []
+}

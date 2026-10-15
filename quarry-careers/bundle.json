@@ -1,0 +1,159 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Quarry Careers",
+    "slug": "template-quarry-careers",
+    "description": "A dark, culture-first careers page: a one-line hero with an anchor to the roles, a short essay on quality, eleven numbered principles, talks and interviews, then every opening grouped under its team with counts.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "careers",
+      "remote",
+      "culture",
+      "template"
+    ],
+    "spaceTypes": [
+      "CAREERS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "colorSchemeStrict": true,
+    "primaryColor": "#5e6ad2",
+    "primaryColorDark": "#7c85e0",
+    "accentColor": "#7c85e0",
+    "palette": {
+      "background": "#08090a",
+      "surface": "#121316",
+      "ink": "#d0d6e0",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "line": "#23252a",
+      "header_background": "#08090a",
+      "header_primary": "#f7f8f8"
+    },
+    "paletteDark": {
+      "background": "#08090a",
+      "surface": "#121316",
+      "ink": "#d0d6e0",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "line": "#23252a",
+      "header_background": "#08090a",
+      "header_primary": "#f7f8f8"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 64,
+            "sm": 40
+          },
+          "weight": 600,
+          "tracking": -0.03,
+          "lineHeight": 1.05
+        },
+        "h2": {
+          "size": {
+            "lg": 32,
+            "sm": 26
+          },
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.15
+        },
+        "h3": {
+          "size": 18,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Product",
+          "href": "https://example.com/product"
+        },
+        {
+          "label": "Principles",
+          "href": "/jobs/your-org/your-careers/principles"
+        },
+        {
+          "label": "How we hire",
+          "href": "/jobs/your-org/your-careers/how-we-hire"
+        }
+      ],
+      "cta": {
+        "label": "Open roles",
+        "href": "/jobs/your-org/your-careers#open-roles"
+      },
+      "footerLinks": [
+        {
+          "label": "Product",
+          "href": "https://example.com/product"
+        },
+        {
+          "label": "Principles",
+          "href": "/jobs/your-org/your-careers/principles"
+        },
+        {
+          "label": "How we hire",
+          "href": "/jobs/your-org/your-careers/how-we-hire"
+        }
+      ],
+      "copyright": "© 2026 Your Brand"
+    },
+    "components": {
+      "button": {
+        "radius": 8,
+        "weight": "regular"
+      }
+    },
+    "careers": {
+      "list": {
+        "layout": "rows",
+        "group": {
+          "by": "field",
+          "field": "team",
+          "style": "heading",
+          "counts": true
+        },
+        "fields": [
+          "location"
+        ],
+        "divider": "rule",
+        "hover": "tint",
+        "rowAction": "text"
+      }
+    },
+    "docs": {
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "breadcrumb": {
+          "show": true
+        },
+        "contributors": false
+      },
+      "articleWidth": "44rem"
+    }
+  },
+  "components": []
+}

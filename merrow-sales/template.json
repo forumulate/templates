@@ -1,0 +1,140 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "merrow-sales",
+  "type": "CONTACT",
+  "name": "Merrow Sales",
+  "description": "A two-step contact-sales page: work email and topic first, the qualifying questions after Continue, in a raised card on a bright, generous page.",
+  "modelledOn": "A payments company’s contact-sales page",
+  "features": [
+    "Steps preset: a short first step people finish",
+    "Raised form card, two questions to a row, full-width button",
+    "Qualifying questions: company, website, size and what they need",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "contact",
+    "sales",
+    "steps"
+  ],
+  "thumbnail": "/templates/merrow-sales.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mr-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "steps",
+    "frontDoor": {
+      "title": "Talk to the Your Brand sales team",
+      "subtitle": "Tell us where your business is headed and we will put you in touch with the right person — usually within one business day."
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "contactForm": {
+      "submitLabel": "Contact sales",
+      "successTitle": "Thanks — we will be in touch",
+      "successMessage": "Someone from our sales team will reply within one business day with a few times to talk.",
+      "workEmailOnly": true
+    }
+  },
+  "contact": {
+    "departments": [
+      {
+        "name": "Talk to sales",
+        "description": "Pricing, volume and a plan that fits how you sell",
+        "icon": "credit-card",
+        "fields": [
+          "company",
+          "website",
+          "company_size",
+          "interest"
+        ]
+      },
+      {
+        "name": "Become a partner",
+        "description": "Build on Your Brand or refer your customers",
+        "icon": "users",
+        "fields": [
+          "company",
+          "website"
+        ]
+      },
+      {
+        "name": "Something else",
+        "description": "Press, events and everything in between",
+        "icon": "message-circle",
+        "fields": []
+      }
+    ],
+    "formFields": [
+      {
+        "key": "company",
+        "label": "Company name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Acme Inc."
+      },
+      {
+        "key": "website",
+        "label": "Company website",
+        "type": "url",
+        "placeholder": "https://example.com"
+      },
+      {
+        "key": "company_size",
+        "label": "Company size",
+        "type": "select",
+        "required": true,
+        "options": [
+          "1–10",
+          "11–50",
+          "51–200",
+          "201–1,000",
+          "More than 1,000"
+        ]
+      },
+      {
+        "key": "interest",
+        "label": "What are you interested in?",
+        "type": "multiselect",
+        "options": [
+          "Online payments",
+          "Subscriptions",
+          "Invoicing",
+          "Payouts",
+          "Something else"
+        ],
+        "help": "Pick as many as apply."
+      }
+    ],
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "contact-sales",
+              "title": "Contact sales",
+              "hideFromNav": true,
+              "fields": {
+                "email": "sales@example.com",
+                "hours": "Mon–Fri, 08:00–18:00 in your time zone",
+                "responseTarget": "one business day"
+              },
+              "markdown": "Whether you are launching your first product or moving a large business onto a new platform, we will help you find the setup that fits.\n\n## What happens next\n\n1. You tell us a little about your business.\n2. A specialist reads it and writes back with a few times to talk.\n3. On the call we go through your goals, your volume and a plan with pricing to match."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

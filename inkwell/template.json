@@ -1,0 +1,216 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "inkwell",
+  "type": "CHANGELOG",
+  "name": "Inkwell",
+  "description": "A black, editorial changelog: a large serif title, a cover picture over every release, summaries with the authors’ faces, a white-dotted rail — and a centred release page with code in tabs, video and a link to the page as Markdown.",
+  "modelledOn": "A transactional email API’s changelog",
+  "features": [
+    "Index layout: gutter, white rail dots, the change type under the date",
+    "16:9 cover picture above every release title",
+    "Summaries with the authors as avatars",
+    "Serif display headings (Newsreader) over Inter",
+    "Search and an email-popover subscribe on the title row",
+    "Release page: centred head, date above the title, “More releases”, Markdown actions",
+    "Sample release with a code group and a self-hosted video",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "changelog",
+    "editorial",
+    "developer"
+  ],
+  "thumbnail": "/templates/inkwell.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000101": "assets/inkwell-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000102": "assets/inkwell-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000103": "assets/inkwell-noah-lindqvist.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000104": "assets/inkwell-ines-carvalho.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000105": "assets/inkwell-dara-okafor.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000106": "assets/inkwell-cover-templates.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000107": "assets/inkwell-cover-inbound.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000108": "assets/inkwell-cover-logs.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000109": "assets/inkwell-cover-keys.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000010a": "assets/inkwell-cover-domains.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000010b": "assets/inkwell-demo.mp4",
+    "/api/assets/00000000-0000-4000-8000-00000000010c": "assets/inkwell-demo-poster.jpg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000102",
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000101"
+  },
+  "layout": {
+    "preset": "gutter",
+    "frontDoor": {
+      "showRss": true,
+      "showDates": true,
+      "showVersionBadge": false,
+      "showSubtitle": true,
+      "showShare": true,
+      "subscribeStyle": "email-popover"
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe",
+            "heading": "Stay in the loop",
+            "body": "Product updates, once a month. Unsubscribe any time.",
+            "layout": "inline-row",
+            "frame": "none",
+            "inputStyle": "underline"
+          }
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "templates",
+      "label": "Templates"
+    },
+    {
+      "slug": "inbound",
+      "label": "Inbound"
+    },
+    {
+      "slug": "dashboard",
+      "label": "Dashboard"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "domains",
+      "label": "Domains"
+    }
+  ],
+  "authors": [
+    {
+      "key": "noah-lindqvist",
+      "name": "Noah Lindqvist",
+      "role": "Founder",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000103"
+    },
+    {
+      "key": "ines-carvalho",
+      "name": "Inês Carvalho",
+      "role": "Engineering",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000104"
+    },
+    {
+      "key": "dara-okafor",
+      "name": "Dara Okafor",
+      "role": "Design",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000105"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "introducing-email-templates",
+      "title": "Introducing email templates",
+      "tags": [
+        "templates"
+      ],
+      "daysAgo": 3,
+      "markdown": "Write an email once, as a component, and send it from any language with its variables filled in. Templates are versioned, previewed and tested before they reach an inbox.\n\n## Added\n\n:::video{src=\"/api/assets/00000000-0000-4000-8000-00000000010b\" poster=\"/api/assets/00000000-0000-4000-8000-00000000010c\"}:::\n\n- A template gallery to start from: welcome, receipt, password reset.\n- Preview with test data, in light and dark mail clients.\n\nSend one from the SDK:\n\n:::codeGroup{syncKey=\"lang\"}\n```js title=\"Node.js\"\nawait client.emails.send({ template: \"welcome\", to: \"you@example.com\", data: { name: \"Ada\" } });\n```\n```python title=\"Python\"\nclient.emails.send(template=\"welcome\", to=\"you@example.com\", data={\"name\": \"Ada\"})\n```\n```sh title=\"cURL\"\ncurl -X POST https://api.example.com/emails -d '{\"template\":\"welcome\",\"to\":\"you@example.com\"}'\n```\n:::\n\nPlaceholder release notes.",
+      "authors": [
+        "noah-lindqvist",
+        "dara-okafor"
+      ],
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000106",
+      "coverAlt": "Email templates",
+      "fields": {
+        "type": "New",
+        "ctaUrl": "https://example.com/docs/templates"
+      }
+    },
+    {
+      "slug": "receive-email-with-inbound-routes",
+      "title": "Receive email with inbound routes",
+      "tags": [
+        "inbound"
+      ],
+      "daysAgo": 11,
+      "markdown": "Point a domain's MX record at us and every message it receives arrives at your webhook as JSON, attachments included.\n\n## Added\n\n- Routes by address, by subdomain or catch-all.\n- Spam scores and authentication results on every message.\n\nPlaceholder release notes.",
+      "authors": [
+        "ines-carvalho"
+      ],
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000107",
+      "coverAlt": "Inbound email",
+      "fields": {
+        "type": "New",
+        "channel": "Beta"
+      }
+    },
+    {
+      "slug": "logs-that-load-in-a-blink",
+      "title": "Logs that load in a blink",
+      "tags": [
+        "dashboard"
+      ],
+      "daysAgo": 19,
+      "markdown": "The logs page now opens instantly on accounts with millions of messages, and filters apply as you type.\n\n## Changed\n\n- Search by recipient, subject or message ID.\n- Export the current filter as CSV.\n\nPlaceholder release notes.",
+      "authors": [
+        "dara-okafor"
+      ],
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000108",
+      "coverAlt": "Faster logs",
+      "fields": {
+        "type": "Improved"
+      }
+    },
+    {
+      "slug": "scoped-api-keys",
+      "title": "Scoped API keys",
+      "tags": [
+        "api",
+        "security"
+      ],
+      "daysAgo": 30,
+      "markdown": "API keys can now be limited to sending, to one domain, or to read-only access, and every key shows when it was last used.\n\n## Upgrading\n\nFull-access keys created before this release keep working until the date below, then become send-only. Create a scoped key for each service and rotate the old one out; the keys page marks every key that still needs it.\n\n## Security\n\n- Keys are shown once, at creation, and stored hashed.\n\nPlaceholder release notes.",
+      "authors": [
+        "ines-carvalho",
+        "noah-lindqvist"
+      ],
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000109",
+      "coverAlt": "Scoped API keys",
+      "fields": {
+        "type": "Security",
+        "breaking": true
+      }
+    },
+    {
+      "slug": "domain-health-checks",
+      "title": "Domain health checks",
+      "tags": [
+        "domains"
+      ],
+      "daysAgo": 44,
+      "markdown": "Each domain now shows whether its SPF, DKIM and DMARC records are right, and tells you the exact record to fix when one is not.\n\n## Changed\n\n- Checks re-run every hour and email you when a record breaks.\n\nPlaceholder release notes.",
+      "authors": [
+        "noah-lindqvist"
+      ],
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000010a",
+      "coverAlt": "Domain health",
+      "fields": {
+        "type": "Improved"
+      }
+    }
+  ]
+}

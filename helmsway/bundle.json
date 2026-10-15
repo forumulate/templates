@@ -1,0 +1,125 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Helmsway",
+    "slug": "template-helmsway",
+    "description": "A restrained support site: a left-aligned search hero, popular articles with their first line and topic chips, then a compact topic list and contact.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "help-center",
+      "support",
+      "fintech",
+      "template"
+    ],
+    "spaceTypes": [
+      "FAQ"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#533afd",
+    "accentColor": "#533afd",
+    "palette": {
+      "ink": "#425466",
+      "line": "#e3e8ee",
+      "muted": "#697386",
+      "heading": "#0a2540",
+      "surface": "#f6f9fc",
+      "background": "#ffffff",
+      "header_primary": "#0a2540",
+      "header_background": "#ffffff",
+      "footer_primary": "#697386",
+      "footer_background": "#f6f9fc"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Albert Sans",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": 36,
+          "weight": 600,
+          "tracking": -0.015
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": 60
+      }
+    },
+    "components": {
+      "radius": 8,
+      "input": {
+        "border": "#cfd7df",
+        "radius": 8,
+        "background": "#ffffff"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "semibold",
+        "background": "#533afd"
+      },
+      "expandable": {
+        "border": "#e3e8ee",
+        "pad": 14
+      }
+    },
+    "faq": {
+      "search": {
+        "placement": "hero",
+        "headline": "Your Brand Support",
+        "lede": "Find help and answers to common questions.",
+        "placeholder": "Search the knowledge base",
+        "size": "md",
+        "align": "start",
+        "shortcut": true
+      },
+      "featured": {
+        "show": "always",
+        "from": "featured",
+        "layout": "rows",
+        "limit": 6,
+        "excerpt": true,
+        "chips": true,
+        "heading": "Popular articles"
+      },
+      "categories": {
+        "show": "always",
+        "layout": "list",
+        "icon": true,
+        "description": false,
+        "count": true,
+        "heading": "Popular topics"
+      },
+      "item": {
+        "style": "row",
+        "icon": "chevron",
+        "iconPosition": "end",
+        "feedback": "open-only",
+        "helpfulStat": true,
+        "helpfulStatMin": 20
+      },
+      "contact": {
+        "contact": true,
+        "community": false,
+        "docs": true,
+        "status": true,
+        "heading": "Contact support — around the clock"
+      }
+    }
+  },
+  "components": []
+}

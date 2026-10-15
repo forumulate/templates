@@ -1,0 +1,836 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "gridline",
+  "type": "CUSTOM",
+  "name": "Gridline",
+  "description": "A monochrome developer-platform homepage on a hairline grid: a centred hero on a faded grid pattern, a scrolling logo marquee, a tabbed feature switcher with code, feature cards, testimonials, numbers and a two-button call to action.",
+  "modelledOn": "A frontend cloud platform’s homepage",
+  "features": [
+    "A landing page: the space’s address shows it, full width",
+    "Hairline grid from section borders (no element styles)",
+    "Centred hero on a faded grid pattern",
+    "Logo marquee, tabbed feature switcher with code groups",
+    "Feature cards, testimonials, numbers, two-button call to action",
+    "Mono eyebrows over a geometric sans",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "monochrome",
+    "landing",
+    "developer",
+    "grid"
+  ],
+  "thumbnail": "/templates/gridline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-ardent.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-fernhill.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/logo-lumio.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/logo-packwell.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/logo-orbitly.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/logo-tallgrass.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/logo-wrenfield.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/logo-copperline.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "landing"
+  },
+  "custom": {
+    "collections": [
+      {
+        "slug": "site",
+        "name": "Site",
+        "pages": [
+          {
+            "slug": "home",
+            "title": "Home",
+            "metadata": {
+              "hideTitle": true,
+              "seoTitle": "Your Brand — ship the web, from commit to everywhere",
+              "seoDescription": "Previews for every push, global deploys for every merge, and the numbers to prove it."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "hero",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 128,
+                      "bottom": 112,
+                      "x": 40
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#ebebeb",
+                      "sides": "all"
+                    },
+                    "pattern": "grid",
+                    "patternColor": "#ebebeb",
+                    "patternFade": "radial"
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "title": "Ship the web, from commit to everywhere",
+                        "level": 1,
+                        "sub": "Your Brand gives your team the tools and the cloud to build, preview and run fast websites and apps — with every push a live preview and every merge a global deploy.",
+                        "actions": [
+                          {
+                            "label": "Start deploying",
+                            "href": "/x/your-org/your-custom#start",
+                            "style": "primary"
+                          },
+                          {
+                            "label": "Get a demo",
+                            "href": "/x/your-org/your-custom#start",
+                            "style": "secondary"
+                          }
+                        ],
+                        "layout": "center",
+                        "size": "xl"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "logos",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 40,
+                      "bottom": 40,
+                      "x": 0
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#ebebeb",
+                      "sides": "x"
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "logoWall",
+                      "attrs": {
+                        "logos": [
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000003",
+                            "alt": "Ardent"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                            "alt": "Fernhill"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000005",
+                            "alt": "Lumio"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000006",
+                            "alt": "Packwell"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000007",
+                            "alt": "Orbitly"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000008",
+                            "alt": "Tallgrass"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000009",
+                            "alt": "Wrenfield"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-00000000000a",
+                            "alt": "Copperline"
+                          }
+                        ],
+                        "marquee": true,
+                        "speed": "slow",
+                        "grayscale": true,
+                        "size": "sm"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "features",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 80,
+                      "bottom": 80,
+                      "x": 40
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#ebebeb",
+                      "sides": "all"
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3,
+                        "variant": "eyebrow"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Workflows"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "One platform for every part of the release"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "color": "muted"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Preview each branch, ship to the edge and watch it run — the same three commands on every framework."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tabs",
+                      "attrs": {
+                        "variant": "card"
+                      },
+                      "content": [
+                        {
+                          "type": "tab",
+                          "attrs": {
+                            "title": "Preview"
+                          },
+                          "content": [
+                            {
+                              "type": "columns",
+                              "attrs": {
+                                "valign": "center",
+                                "gap": "xl",
+                                "stackOn": "md"
+                              },
+                              "content": [
+                                {
+                                  "type": "column",
+                                  "content": [
+                                    {
+                                      "type": "heading",
+                                      "attrs": {
+                                        "level": 3
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "A live URL for every push"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "paragraph",
+                                      "attrs": {
+                                        "color": "muted"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "Open a pull request and get a shareable preview in seconds. Comments land on the page, not in a thread nobody reads."
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "buttons",
+                                      "attrs": {
+                                        "align": "start"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "button",
+                                          "attrs": {
+                                            "label": "Read the guide",
+                                            "href": "/x/your-org/your-custom#features",
+                                            "style": "link"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "content": [
+                                    {
+                                      "type": "codeGroup",
+                                      "attrs": {
+                                        "picker": "tabs"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "codeBlock",
+                                          "attrs": {
+                                            "language": "bash",
+                                            "title": "Terminal"
+                                          },
+                                          "content": [
+                                            {
+                                              "type": "text",
+                                              "text": "git push origin feature/checkout\n# → Preview ready: https://checkout-git-feature.example.app"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "codeBlock",
+                                          "attrs": {
+                                            "language": "json",
+                                            "title": "gridline.json"
+                                          },
+                                          "content": [
+                                            {
+                                              "type": "text",
+                                              "text": "{\n  \"previews\": { \"comments\": true },\n  \"regions\": [\"auto\"]\n}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tab",
+                          "attrs": {
+                            "title": "Deploy"
+                          },
+                          "content": [
+                            {
+                              "type": "columns",
+                              "attrs": {
+                                "valign": "center",
+                                "gap": "xl",
+                                "stackOn": "md"
+                              },
+                              "content": [
+                                {
+                                  "type": "column",
+                                  "content": [
+                                    {
+                                      "type": "heading",
+                                      "attrs": {
+                                        "level": 3
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "Merge to ship, everywhere at once"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "paragraph",
+                                      "attrs": {
+                                        "color": "muted"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "Every merge builds once and serves from every region. Roll back to any earlier deploy in one click, with no rebuild."
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "buttons",
+                                      "attrs": {
+                                        "align": "start"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "button",
+                                          "attrs": {
+                                            "label": "Read the guide",
+                                            "href": "/x/your-org/your-custom#features",
+                                            "style": "link"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "content": [
+                                    {
+                                      "type": "codeGroup",
+                                      "attrs": {
+                                        "picker": "tabs"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "codeBlock",
+                                          "attrs": {
+                                            "language": "bash",
+                                            "title": "Terminal"
+                                          },
+                                          "content": [
+                                            {
+                                              "type": "text",
+                                              "text": "gridline deploy --prod\n# → Production: https://example.app (12 regions, 41s)"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "codeBlock",
+                                          "attrs": {
+                                            "language": "bash",
+                                            "title": "Rollback"
+                                          },
+                                          "content": [
+                                            {
+                                              "type": "text",
+                                              "text": "gridline rollback dpl_4f2a9c\n# → Restored in 2s"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tab",
+                          "attrs": {
+                            "title": "Observe"
+                          },
+                          "content": [
+                            {
+                              "type": "columns",
+                              "attrs": {
+                                "valign": "center",
+                                "gap": "xl",
+                                "stackOn": "md"
+                              },
+                              "content": [
+                                {
+                                  "type": "column",
+                                  "content": [
+                                    {
+                                      "type": "heading",
+                                      "attrs": {
+                                        "level": 3
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "See what users see"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "paragraph",
+                                      "attrs": {
+                                        "color": "muted"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "text",
+                                          "text": "Real-user speed scores, logs and traces for each route, tied to the deploy that changed them."
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "buttons",
+                                      "attrs": {
+                                        "align": "start"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "button",
+                                          "attrs": {
+                                            "label": "Read the guide",
+                                            "href": "/x/your-org/your-custom#features",
+                                            "style": "link"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "content": [
+                                    {
+                                      "type": "codeGroup",
+                                      "attrs": {
+                                        "picker": "tabs"
+                                      },
+                                      "content": [
+                                        {
+                                          "type": "codeBlock",
+                                          "attrs": {
+                                            "language": "ts",
+                                            "title": "middleware.ts"
+                                          },
+                                          "content": [
+                                            {
+                                              "type": "text",
+                                              "text": "export const config = { matcher: ['/shop/:path*'] };\n\nexport default function middleware(req: Request) {\n  console.log('region', req.headers.get('x-region'));\n}"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "codeBlock",
+                                          "attrs": {
+                                            "language": "bash",
+                                            "title": "Logs"
+                                          },
+                                          "content": [
+                                            {
+                                              "type": "text",
+                                              "text": "gridline logs --follow --route /shop"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "platform",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 80,
+                      "bottom": 80,
+                      "x": 40
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#ebebeb",
+                      "sides": "x"
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3,
+                        "variant": "eyebrow"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Platform"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Infrastructure that reads your code"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "cards",
+                      "attrs": {
+                        "columns": {
+                          "lg": 3,
+                          "md": 2,
+                          "sm": 1
+                        }
+                      },
+                      "content": [
+                        {
+                          "type": "card",
+                          "attrs": {
+                            "title": "Framework-aware builds",
+                            "description": "It reads your framework and sets the output, caching and routes for you.",
+                            "icon": "cpu",
+                            "iconStyle": "tile"
+                          }
+                        },
+                        {
+                          "type": "card",
+                          "attrs": {
+                            "title": "Edge network",
+                            "description": "Static files and functions served from the region nearest each visitor.",
+                            "icon": "globe",
+                            "iconStyle": "tile"
+                          }
+                        },
+                        {
+                          "type": "card",
+                          "attrs": {
+                            "title": "Instant rollbacks",
+                            "description": "Every deploy is kept. Go back to any of them in seconds.",
+                            "icon": "history",
+                            "iconStyle": "tile"
+                          }
+                        },
+                        {
+                          "type": "card",
+                          "attrs": {
+                            "title": "Preview comments",
+                            "description": "Review the page itself: pin a comment to any element.",
+                            "icon": "message-square",
+                            "iconStyle": "tile"
+                          }
+                        },
+                        {
+                          "type": "card",
+                          "attrs": {
+                            "title": "Speed insights",
+                            "description": "Real-user scores per route, before and after each change.",
+                            "icon": "gauge",
+                            "iconStyle": "tile"
+                          }
+                        },
+                        {
+                          "type": "card",
+                          "attrs": {
+                            "title": "Secure by default",
+                            "description": "Automatic HTTPS, DDoS mitigation and a firewall you can script.",
+                            "icon": "shield-check",
+                            "iconStyle": "tile"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "testimonials",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 80,
+                      "bottom": 80,
+                      "x": 40
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#ebebeb",
+                      "sides": "all"
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Teams ship more when shipping is boring"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "testimonials",
+                      "attrs": {
+                        "layout": "grid",
+                        "columns": 3,
+                        "items": [
+                          {
+                            "quote": "We went from a release a week to forty a day, and nobody had to stay late for any of them.",
+                            "author": "Priya Natarajan",
+                            "role": "Head of Platform, Packwell"
+                          },
+                          {
+                            "quote": "Previews changed how design reviews work. People comment on the real page, so nothing gets lost in translation.",
+                            "author": "Tomás Ferreira",
+                            "role": "Design Lead, Lumio"
+                          },
+                          {
+                            "quote": "Our checkout got faster in every region the day we moved. That paid for the migration in a month.",
+                            "author": "Hannah Becker",
+                            "role": "CTO, Tallgrass"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "numbers",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 56,
+                      "bottom": 56,
+                      "x": 40
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#ebebeb",
+                      "sides": "x"
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "stats",
+                      "attrs": {
+                        "layout": "row",
+                        "items": [
+                          {
+                            "value": 41,
+                            "suffix": "s",
+                            "label": "Median build"
+                          },
+                          {
+                            "value": 12,
+                            "label": "Regions"
+                          },
+                          {
+                            "value": 99.99,
+                            "decimals": 2,
+                            "suffix": "%",
+                            "label": "Uptime, last 90 days"
+                          },
+                          {
+                            "value": 2,
+                            "suffix": "s",
+                            "label": "To roll back"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "cta",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 96,
+                      "x": 40
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#ebebeb",
+                      "sides": "all"
+                    },
+                    "anchor": "start",
+                    "contentAlign": "center"
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Deploy your first app in a minute"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "color": "muted",
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Connect a repository and push. Your Brand does the rest."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "buttons",
+                      "attrs": {
+                        "align": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "label": "Start deploying",
+                            "href": "/x/your-org/your-custom#start",
+                            "style": "primary"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "label": "Get a demo",
+                            "href": "/x/your-org/your-custom#start",
+                            "style": "secondary"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

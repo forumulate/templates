@@ -1,0 +1,297 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Gridline",
+    "slug": "template-gridline",
+    "description": "A monochrome developer-platform homepage on a hairline grid: a centred hero on a faded grid pattern, a scrolling logo marquee, a tabbed feature switcher with code, feature cards, testimonials, numbers and a two-button call to action.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "monochrome",
+      "landing",
+      "template"
+    ],
+    "spaceTypes": [
+      "CUSTOM"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "palette": {
+      "ink": "#171717",
+      "line": "#ebebeb",
+      "muted": "#666666",
+      "heading": "#000000",
+      "surface": "#fafafa",
+      "background": "#ffffff",
+      "header_primary": "#000000",
+      "header_background": "#ffffff",
+      "footer_primary": "#666666",
+      "footer_background": "#fafafa"
+    },
+    "primaryColor": "#000000",
+    "accentColor": "#0070f3",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "headingFontFamily": "Geist",
+    "bodyFontFamily": "Geist",
+    "monoFontFamily": "Geist Mono",
+    "layout": {
+      "widths": {
+        "max": "1080px"
+      },
+      "gutter": {
+        "lg": 24,
+        "sm": 16
+      }
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 60,
+            "sm": 38
+          },
+          "weight": 600,
+          "tracking": -0.045,
+          "lineHeight": 1.02
+        },
+        "h2": {
+          "size": {
+            "lg": 40,
+            "sm": 28
+          },
+          "weight": 600,
+          "tracking": -0.035,
+          "lineHeight": 1.1
+        },
+        "h3": {
+          "size": 20,
+          "weight": 600,
+          "tracking": -0.02
+        },
+        "body": {
+          "lineHeight": 1.6
+        },
+        "eyebrow": {
+          "font": "mono",
+          "size": 13,
+          "weight": 500,
+          "case": "upper",
+          "tracking": 0.04,
+          "color": "#666666"
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "radius": 999,
+        "weight": "medium"
+      },
+      "link": {
+        "color": "#000000",
+        "underline": "hover"
+      },
+      "code": {
+        "background": "#fafafa",
+        "border": "#ebebeb",
+        "ink": "#171717",
+        "radius": 8
+      },
+      "selection": {
+        "background": "#000000",
+        "ink": "#ffffff"
+      }
+    },
+    "motion": {
+      "preset": "subtle",
+      "reveal": {
+        "effect": "fade",
+        "targets": [
+          "blocks"
+        ],
+        "once": true
+      },
+      "hover": {
+        "card": "border",
+        "button": "none",
+        "link": "fade"
+      },
+      "header": {
+        "behavior": "sticky",
+        "blur": true
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "blur": 8,
+        "opacity": 0.85,
+        "border": "line",
+        "borderColor": "#ebebeb",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 20,
+        "navInk": "#666666",
+        "navSize": 14,
+        "navWeight": 400,
+        "logoHeight": 22
+      },
+      "headerLinks": [
+        {
+          "label": "Products",
+          "children": [
+            {
+              "label": "Previews",
+              "href": "/x/your-org/your-custom#features",
+              "description": "A live URL for every push"
+            },
+            {
+              "label": "Deploys",
+              "href": "/x/your-org/your-custom#features",
+              "description": "Global by default"
+            },
+            {
+              "label": "Observability",
+              "href": "/x/your-org/your-custom#features",
+              "description": "Speed, logs and traces"
+            }
+          ]
+        },
+        {
+          "label": "Platform",
+          "href": "/x/your-org/your-custom#platform"
+        },
+        {
+          "label": "Customers",
+          "href": "/x/your-org/your-custom#testimonials"
+        },
+        {
+          "label": "Pricing",
+          "href": "/x/your-org/your-custom#start"
+        },
+        {
+          "label": "Docs",
+          "href": "/x/your-org/your-custom#features"
+        }
+      ],
+      "cta": {
+        "label": "Sign up",
+        "href": "/x/your-org/your-custom#start",
+        "showOnPhone": true
+      },
+      "ctaStyle": "pill",
+      "secondaryCta": {
+        "label": "Log in",
+        "href": "/x/your-org/your-custom#start",
+        "style": "link",
+        "underline": false,
+        "showOnPhone": false
+      },
+      "footer": {
+        "columns": 4,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingWeight": 500,
+        "headingStyle": "plain"
+      },
+      "footerColumns": [
+        {
+          "heading": "Products",
+          "links": [
+            {
+              "label": "Previews",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Deploys",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Observability",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Firewall",
+              "href": "/x/your-org/your-custom#platform"
+            }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            {
+              "label": "Docs",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Guides",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Changelog",
+              "href": "/x/your-org/your-custom#numbers"
+            },
+            {
+              "label": "Status",
+              "href": "/x/your-org/your-custom#numbers"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            {
+              "label": "About",
+              "href": "/x/your-org/your-custom#hero"
+            },
+            {
+              "label": "Customers",
+              "href": "/x/your-org/your-custom#testimonials"
+            },
+            {
+              "label": "Careers",
+              "href": "/x/your-org/your-custom#start"
+            },
+            {
+              "label": "Contact",
+              "href": "/x/your-org/your-custom#start"
+            }
+          ]
+        },
+        {
+          "heading": "Legal",
+          "links": [
+            {
+              "label": "Privacy",
+              "href": "/x/your-org/your-custom#start"
+            },
+            {
+              "label": "Terms",
+              "href": "/x/your-org/your-custom#start"
+            },
+            {
+              "label": "Security",
+              "href": "/x/your-org/your-custom#platform"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand, Inc."
+    }
+  },
+  "components": []
+}

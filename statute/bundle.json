@@ -1,0 +1,193 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Statute",
+    "slug": "template-statute",
+    "description": "Minimal and typographic, on dark: a huge title under a monospace “EFFECTIVE DATE” kicker, headings exactly as written, defined terms set bold at the start of their meaning, and a narrow measure.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "legal",
+      "minimal",
+      "typographic",
+      "template"
+    ],
+    "spaceTypes": [
+      "LEGAL"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "logoIncludesName": true,
+    "colorScheme": "dark",
+    "colorSchemeStrict": true,
+    "primaryColor": "#8b8ff7",
+    "accentColor": "#8b8ff7",
+    "palette": {
+      "ink": "#d0d6e0",
+      "line": "#26282d",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#121315",
+      "background": "#0a0a0b",
+      "header_primary": "#f7f8f8",
+      "header_background": "#0a0a0b",
+      "footer_primary": "#8a8f98",
+      "footer_background": "#121315"
+    },
+    "paletteDark": {
+      "ink": "#d0d6e0",
+      "line": "#26282d",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#121315",
+      "background": "#0a0a0b",
+      "header_primary": "#f7f8f8",
+      "header_background": "#0a0a0b",
+      "footer_primary": "#8a8f98",
+      "footer_background": "#121315"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "customFontFamily": "Inter",
+    "monoFontFamily": "Geist Mono",
+    "onThisPage": "auto",
+    "headingAnchors": "hover",
+    "layout": {
+      "widths": {
+        "text": "42rem"
+      }
+    },
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 64,
+            "sm": 40
+          },
+          "weight": 600,
+          "tracking": -0.03
+        },
+        "h2": {
+          "size": 20,
+          "weight": 600,
+          "spaceBefore": "56px"
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "radius": 8,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 500,
+        "logoHeight": 24
+      },
+      "headerLinks": [
+        {
+          "label": "Terms",
+          "href": "/legal/your-org/terms"
+        },
+        {
+          "label": "Privacy",
+          "href": "/legal/your-org/privacy"
+        },
+        {
+          "label": "DPA",
+          "href": "/legal/your-org/dpa"
+        }
+      ],
+      "footer": {
+        "columns": 2,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingStyle": "plain"
+      },
+      "footerColumns": [
+        {
+          "heading": "Legal",
+          "links": [
+            {
+              "label": "Terms of Service",
+              "href": "/legal/your-org/terms"
+            },
+            {
+              "label": "Privacy Policy",
+              "href": "/legal/your-org/privacy"
+            },
+            {
+              "label": "Data Processing Addendum",
+              "href": "/legal/your-org/dpa"
+            }
+          ]
+        },
+        {
+          "heading": "More",
+          "links": [
+            {
+              "label": "Sub-processors",
+              "href": "/legal/your-org/subprocessors"
+            },
+            {
+              "label": "Acceptable Use",
+              "href": "/legal/your-org/acceptable-use"
+            },
+            {
+              "label": "All documents",
+              "href": "/legal/your-org"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand. Sample legal text — not legal advice."
+    },
+    "legal": {
+      "register": {
+        "group": "none",
+        "description": "show",
+        "date": "effective",
+        "edition": false,
+        "search": "never"
+      },
+      "head": {
+        "lead": "effective",
+        "kicker": "effective",
+        "kickerMono": true,
+        "rule": false
+      },
+      "date": {
+        "format": "long"
+      },
+      "numbering": {
+        "style": "none"
+      },
+      "summary": {
+        "style": "plain"
+      },
+      "history": "disclosure",
+      "docNav": "none",
+      "definitions": "inline-bold"
+    }
+  },
+  "components": []
+}

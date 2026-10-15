@@ -1,0 +1,443 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Ledgerline Changes",
+    "slug": "template-ledgerline-changes",
+    "description": "A payments company's API changelog in a docs-like shell: dated versions grouped under named release families with an overview card, Breaking badges, typed rows, a version compare form and GA / preview channels.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "changelog",
+      "api",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "CHANGELOG"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "colorSchemeStrict": false,
+    "primaryColor": "#1a1f36",
+    "accentColor": "#635bff",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap",
+    "customFontFamily": "Inter",
+    "monoFontFamily": "Source Code Pro",
+    "palette": {
+      "ink": "#3c4257",
+      "line": "#e3e8ee",
+      "muted": "#687385",
+      "heading": "#1a1f36",
+      "surface": "#f6f8fa",
+      "background": "#ffffff",
+      "footer_primary": "#687385",
+      "header_primary": "#1a1f36",
+      "footer_background": "#f7f8fb",
+      "header_background": "#ffffff",
+      "success": "#1f8a4c",
+      "warning": "#b3600b",
+      "danger": "#df1b41",
+      "info": "#635bff"
+    },
+    "paletteDark": {
+      "ink": "#c9d1e0",
+      "line": "#2a3247",
+      "muted": "#8d96aa",
+      "heading": "#f5f7fb",
+      "surface": "#151b2b",
+      "background": "#0b1020",
+      "footer_primary": "#8d96aa",
+      "header_primary": "#f5f7fb",
+      "footer_background": "#080c18",
+      "header_background": "#0b1020",
+      "success": "#3ecf8e",
+      "warning": "#f5a623",
+      "danger": "#ff5c7a",
+      "info": "#9b96ff"
+    },
+    "onThisPage": "always",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 40,
+            "sm": 30
+          },
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 20,
+          "weight": 600,
+          "lineHeight": 1.3,
+          "spaceBefore": "40px"
+        },
+        "body": {
+          "lineHeight": 1.6
+        },
+        "indexTitle": {
+          "size": {
+            "lg": 40,
+            "sm": 30
+          },
+          "weight": 600,
+          "tracking": -0.03,
+          "lineHeight": 1
+        },
+        "entryTitle": {
+          "size": 16,
+          "weight": 600,
+          "lineHeight": 1.4
+        },
+        "eyebrow": {
+          "font": "mono",
+          "case": "upper",
+          "size": 12,
+          "tracking": 0.04,
+          "color": "#687385"
+        }
+      }
+    },
+    "layout": {
+      "widths": {
+        "max": "1200px",
+        "list": "960px",
+        "text": "760px"
+      },
+      "heroDecor": {
+        "style": "grid",
+        "color": "#e3e8ee",
+        "colorDark": "#1c2335",
+        "height": 260,
+        "intensity": 50
+      }
+    },
+    "components": {
+      "radius": 6,
+      "code": {
+        "background": "#f6f8fa",
+        "border": "#e3e8ee",
+        "ink": "#1a1f36",
+        "radius": 6
+      },
+      "button": {
+        "background": "#635bff",
+        "ink": "#ffffff",
+        "radius": 6,
+        "weight": "medium"
+      },
+      "input": {
+        "background": "#ffffff",
+        "border": "#e3e8ee",
+        "ink": "#1a1f36",
+        "radius": 6
+      },
+      "link": {
+        "color": "#635bff",
+        "colorDark": "#9b96ff",
+        "underline": "hover"
+      },
+      "image": {
+        "backdrop": {
+          "style": "gradient",
+          "color": "#f6f8fa",
+          "to": "#eceefd",
+          "colorDark": "#151b2b",
+          "toDark": "#1d1f45",
+          "angle": 135,
+          "padding": 24
+        }
+      }
+    },
+    "chrome": {
+      "align": "split",
+      "sticky": true,
+      "header": {
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "border": "line",
+        "borderColor": "#e3e8ee",
+        "navSize": 14,
+        "navInk": "#3c4257",
+        "navInkDark": "#c9d1e0",
+        "logoHeight": 28
+      },
+      "headerLinks": [
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "API reference"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Guides"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Changelog"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Upgrades"
+        }
+      ],
+      "cta": {
+        "href": "/c/your-org/your-changelog",
+        "label": "Dashboard",
+        "showOnPhone": false
+      },
+      "ctaStyle": "solid",
+      "showSignIn": false,
+      "socialLinks": [
+        {
+          "platform": "github",
+          "href": "https://example.com/github"
+        }
+      ],
+      "footerColumns": [
+        {
+          "heading": "Developers",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "API reference"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "SDKs"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Webhooks"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Versioning"
+            }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Changelog"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Status"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Support"
+            }
+          ]
+        }
+      ],
+      "footerLinks": [
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Privacy"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Terms"
+        }
+      ],
+      "copyright": "© 2026 Your Brand.",
+      "themeToggle": {
+        "show": true
+      }
+    },
+    "changelog": {
+      "indexWidth": 960,
+      "datePlacement": "above",
+      "dateFormat": "day-month-short",
+      "dateTone": "muted",
+      "group": {
+        "by": "month",
+        "style": "heading",
+        "collapsible": false,
+        "counts": true
+      },
+      "rail": {
+        "show": false
+      },
+      "entryGap": 24,
+      "typeBadge": {
+        "show": true,
+        "look": "outline-mono",
+        "case": "upper",
+        "placement": "before-title",
+        "glyph": false,
+        "tones": {
+          "added": {
+            "tone": "success"
+          },
+          "changed": {
+            "tone": "info"
+          },
+          "deprecated": {
+            "tone": "warning"
+          },
+          "removed": {
+            "tone": "danger"
+          }
+        }
+      },
+      "breakingBadge": "badge",
+      "tagStyle": "text",
+      "tagOverflow": 1,
+      "tagInk": "neutral",
+      "versionBadge": {
+        "mono": true,
+        "fill": "#f6f8fa",
+        "ink": "#1a1f36",
+        "fillDark": "#151b2b",
+        "inkDark": "#f5f7fb"
+      },
+      "entry": {
+        "body": "title",
+        "cover": "none",
+        "readTime": false
+      },
+      "facts": {
+        "look": "chips",
+        "cta": "button"
+      },
+      "header": {
+        "right": [
+          "copyFeed"
+        ],
+        "rightPhone": [
+          "copyFeed"
+        ],
+        "rule": true,
+        "padBottom": 32,
+        "subtitle": ""
+      },
+      "filters": {
+        "tags": true,
+        "types": true,
+        "search": true,
+        "versions": true,
+        "style": "checklist",
+        "match": true,
+        "tagLinks": "query",
+        "tabInk": "neutral"
+      },
+      "archive": {
+        "style": "years",
+        "paging": "numbers",
+        "counts": true
+      },
+      "release": {
+        "layout": "stacked",
+        "align": "start",
+        "width": 880,
+        "metaAbove": true,
+        "readTime": true,
+        "nav": "prev-next",
+        "breadcrumb": true,
+        "backGlyph": "arrow",
+        "shareStyle": "icons",
+        "actions": {
+          "items": [
+            "copyLink",
+            "viewMarkdown",
+            "share"
+          ],
+          "style": "icons"
+        }
+      },
+      "sections": {
+        "look": "eyebrow",
+        "glyphs": true,
+        "tone": "kind",
+        "rule": true
+      },
+      "prose": {
+        "listMarker": "square"
+      },
+      "channelBadge": {
+        "show": true,
+        "skip": [
+          "GA"
+        ]
+      }
+    }
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "CHANGELOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "section",
+            "attrs": {
+              "key": "hero",
+              "role": "layout",
+              "fullBleed": true,
+              "padding": {
+                "top": 72,
+                "bottom": 40
+              },
+              "border": {
+                "width": 1,
+                "color": "#e3e8ee",
+                "sides": "bottom"
+              }
+            },
+            "content": [
+              {
+                "type": "spaceBand",
+                "attrs": {
+                  "band": "title"
+                }
+              }
+            ]
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "filters",
+              "style": "checklist"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "space": "self",
+              "controls": true,
+              "limit": 30,
+              "layout": "compact"
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "archive"
+            }
+          }
+        ]
+      },
+      "paddingTop": {
+        "lg": "0px",
+        "sm": "0px"
+      }
+    }
+  ]
+}

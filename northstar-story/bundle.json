@@ -1,0 +1,243 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Northstar Story",
+    "slug": "template-northstar-story",
+    "description": "A long-form product story in large serif type: a full-bleed film behind the title, a numbers band, a scroll-driven sequence where the picture stays put while the chapters pass, pull quotes and parallax picture breaks.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "editorial",
+      "serif",
+      "template"
+    ],
+    "spaceTypes": [
+      "CUSTOM"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "palette": {
+      "ink": "#2b2721",
+      "line": "#ddd5c7",
+      "muted": "#6e665a",
+      "heading": "#16130f",
+      "surface": "#eee8dc",
+      "background": "#f6f2ea",
+      "header_primary": "#16130f",
+      "header_background": "#f6f2ea",
+      "footer_primary": "#6e665a",
+      "footer_background": "#eee8dc"
+    },
+    "primaryColor": "#16130f",
+    "accentColor": "#c2410c",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap",
+    "headingFontFamily": "Newsreader",
+    "bodyFontFamily": "Inter",
+    "layout": {
+      "widths": {
+        "max": "1240px"
+      },
+      "measure": "38rem",
+      "gutter": {
+        "lg": 32,
+        "sm": 20
+      }
+    },
+    "typography": {
+      "baseSize": 18,
+      "headingWrap": "balance",
+      "bodyWrap": "pretty",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 96,
+            "sm": 52
+          },
+          "weight": 400,
+          "tracking": -0.025,
+          "lineHeight": 0.98
+        },
+        "h2": {
+          "size": {
+            "lg": 60,
+            "sm": 36
+          },
+          "weight": 400,
+          "tracking": -0.02,
+          "lineHeight": 1.05,
+          "spaceBefore": {
+            "lg": "72px",
+            "sm": "48px"
+          }
+        },
+        "h3": {
+          "size": {
+            "lg": 34,
+            "sm": 26
+          },
+          "weight": 400,
+          "tracking": -0.01,
+          "lineHeight": 1.15
+        },
+        "body": {
+          "lineHeight": 1.7
+        },
+        "eyebrow": {
+          "font": "body",
+          "size": 12,
+          "weight": 600,
+          "case": "upper",
+          "tracking": 0.14,
+          "color": "#c2410c"
+        }
+      }
+    },
+    "components": {
+      "radius": 4,
+      "button": {
+        "background": "#16130f",
+        "ink": "#f6f2ea",
+        "radius": 999,
+        "weight": "medium"
+      },
+      "quote": {
+        "size": 40,
+        "align": "center",
+        "style": "pull"
+      },
+      "image": {
+        "radius": 4
+      },
+      "selection": {
+        "background": "#fed7aa",
+        "ink": "#16130f"
+      },
+      "link": {
+        "color": "#16130f",
+        "underline": "always",
+        "thickness": 1,
+        "offset": 3
+      }
+    },
+    "motion": {
+      "preset": "lively",
+      "reveal": {
+        "effect": "fade-up",
+        "targets": [
+          "headings",
+          "paragraphs",
+          "images"
+        ],
+        "distance": 32,
+        "once": true
+      },
+      "hover": {
+        "link": "fade",
+        "button": "none",
+        "image": "none"
+      },
+      "header": {
+        "behavior": "transparent-until-scroll"
+      },
+      "ambient": {
+        "scrollProgress": true
+      }
+    },
+    "chrome": {
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "none",
+        "height": {
+          "lg": 72,
+          "sm": 60
+        },
+        "navGap": 28,
+        "navSize": 15,
+        "logoHeight": 24
+      },
+      "headerLinks": [
+        {
+          "label": "Story",
+          "href": "/x/your-org/your-custom#chapters"
+        },
+        {
+          "label": "What we left out",
+          "href": "/x/your-org/your-custom#left-out"
+        },
+        {
+          "label": "Download",
+          "href": "/x/your-org/your-custom#closing"
+        }
+      ],
+      "cta": {
+        "label": "Get Your Brand",
+        "href": "/x/your-org/your-custom#closing",
+        "showOnPhone": true
+      },
+      "ctaStyle": "pill",
+      "footer": {
+        "columns": 3,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingStyle": "plain"
+      },
+      "footerDescription": "Software that waits for you, not the other way round.",
+      "footerColumns": [
+        {
+          "heading": "Read",
+          "links": [
+            {
+              "label": "The story",
+              "href": "/x/your-org/your-custom#chapters"
+            },
+            {
+              "label": "What we left out",
+              "href": "/x/your-org/your-custom#left-out"
+            }
+          ]
+        },
+        {
+          "heading": "Get it",
+          "links": [
+            {
+              "label": "Download",
+              "href": "/x/your-org/your-custom#closing"
+            },
+            {
+              "label": "Release notes",
+              "href": "/x/your-org/your-custom#left-out"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            {
+              "label": "About",
+              "href": "/x/your-org/your-custom#opening"
+            },
+            {
+              "label": "Careers",
+              "href": "/x/your-org/your-custom#closing"
+            },
+            {
+              "label": "Press",
+              "href": "/x/your-org/your-custom#closing"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand."
+    }
+  },
+  "components": []
+}

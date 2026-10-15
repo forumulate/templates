@@ -1,0 +1,426 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Inkwell",
+    "slug": "template-inkwell",
+    "description": "A black, editorial changelog: a large serif title, a cover picture over every release, summaries with the authors’ faces, a white-dotted rail — and a centred release page with code in tabs, video and a link to the page as Markdown.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "changelog",
+      "editorial",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "CHANGELOG"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "logoIncludesName": true,
+    "colorScheme": "dark",
+    "colorSchemeStrict": true,
+    "primaryColor": "#f1f7fe",
+    "accentColor": "#f1f7fe",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+    "customFontFamily": "Inter",
+    "headingFontFamily": "Newsreader",
+    "monoFontFamily": "JetBrains Mono",
+    "palette": {
+      "ink": "#a1a4a5",
+      "line": "#1f1f1f",
+      "muted": "#70757e",
+      "heading": "#f1f7fe",
+      "surface": "#0b0b0b",
+      "background": "#000000",
+      "footer_primary": "#70757e",
+      "header_primary": "#f1f7fe",
+      "footer_background": "#000000",
+      "header_background": "#000000",
+      "success": "#46fea5",
+      "warning": "#ffca16",
+      "danger": "#ff6b6b",
+      "info": "#70b8ff"
+    },
+    "paletteDark": {
+      "ink": "#a1a4a5",
+      "line": "#1f1f1f",
+      "muted": "#70757e",
+      "heading": "#f1f7fe",
+      "surface": "#0b0b0b",
+      "background": "#000000",
+      "footer_primary": "#70757e",
+      "header_primary": "#f1f7fe",
+      "footer_background": "#000000",
+      "header_background": "#000000",
+      "success": "#46fea5",
+      "warning": "#ffca16",
+      "danger": "#ff6b6b",
+      "info": "#70b8ff"
+    },
+    "onThisPage": "never",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 56,
+            "sm": 38
+          },
+          "weight": 400,
+          "tracking": -0.02,
+          "lineHeight": 1.05,
+          "font": "heading"
+        },
+        "h2": {
+          "size": 26,
+          "weight": 400,
+          "lineHeight": 1.25,
+          "font": "heading",
+          "spaceBefore": "44px"
+        },
+        "h3": {
+          "size": 18,
+          "weight": 500,
+          "lineHeight": 1.35,
+          "font": "body"
+        },
+        "body": {
+          "lineHeight": 1.7
+        },
+        "indexTitle": {
+          "size": {
+            "lg": 76,
+            "sm": 48
+          },
+          "weight": 400,
+          "tracking": -0.03,
+          "lineHeight": 1,
+          "font": "heading"
+        },
+        "entryTitle": {
+          "size": {
+            "lg": 34,
+            "sm": 26
+          },
+          "weight": 400,
+          "tracking": -0.015,
+          "lineHeight": 1.15,
+          "font": "heading"
+        }
+      }
+    },
+    "layout": {
+      "widths": {
+        "max": "1200px",
+        "list": "1040px",
+        "text": "680px"
+      }
+    },
+    "components": {
+      "radius": 12,
+      "code": {
+        "background": "#0b0b0b",
+        "border": "#1f1f1f",
+        "ink": "#f1f7fe",
+        "radius": 10
+      },
+      "button": {
+        "background": "#f1f7fe",
+        "ink": "#000000",
+        "radius": 10,
+        "weight": "medium"
+      },
+      "input": {
+        "background": "#0b0b0b",
+        "border": "#1f1f1f",
+        "ink": "#f1f7fe",
+        "radius": 10
+      },
+      "image": {
+        "radius": 16
+      },
+      "link": {
+        "color": "#f1f7fe",
+        "colorDark": "#f1f7fe",
+        "underline": "always",
+        "offset": 3,
+        "thickness": 1
+      }
+    },
+    "chrome": {
+      "align": "split",
+      "sticky": true,
+      "header": {
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "border": "line",
+        "borderColor": "#1f1f1f",
+        "navSize": 14,
+        "navInk": "#a1a4a5",
+        "navInkDark": "#a1a4a5",
+        "logoHeight": 24,
+        "blur": 12,
+        "opacity": 0.8
+      },
+      "headerLinks": [
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Features"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Company"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Resources"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Docs"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Pricing"
+        }
+      ],
+      "cta": {
+        "href": "/c/your-org/your-changelog",
+        "label": "Get started",
+        "showOnPhone": true
+      },
+      "ctaStyle": "pill",
+      "secondaryCta": {
+        "href": "/c/your-org/your-changelog",
+        "label": "Sign in",
+        "style": "link",
+        "showOnPhone": false
+      },
+      "showSignIn": false,
+      "footerColumns": [
+        {
+          "heading": "Documentation",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Getting started"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "API reference"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Integrations"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Examples"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "SDKs"
+            }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Changelog"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Pricing"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Security"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Status"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "About"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Blog"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Careers"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Contact"
+            }
+          ]
+        },
+        {
+          "heading": "Legal",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Privacy"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Terms"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "DPA"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand.",
+      "themeToggle": {
+        "show": false
+      }
+    },
+    "changelog": {
+      "datePlacement": "gutter",
+      "gutterWidth": 240,
+      "stickyDate": true,
+      "dateFormat": "long",
+      "dateTone": "muted",
+      "rail": {
+        "show": true,
+        "width": 1,
+        "dot": true,
+        "dotSize": 7,
+        "color": "#1f1f1f",
+        "dotColor": "#ffffff",
+        "latestDotColor": "#ffffff"
+      },
+      "entryGap": 112,
+      "indexWidth": 1040,
+      "typeBadge": {
+        "show": true,
+        "look": "outline",
+        "placement": "gutter",
+        "glyph": false,
+        "case": "none"
+      },
+      "breakingBadge": "badge",
+      "channelBadge": {
+        "show": true,
+        "look": "outline"
+      },
+      "tagStyle": "text",
+      "tagOverflow": 2,
+      "tagInk": "neutral",
+      "entry": {
+        "body": "summary",
+        "cover": "above-title",
+        "coverAspect": "16:9",
+        "authors": "avatars",
+        "readMore": "Read more",
+        "titleAboveBody": true
+      },
+      "facts": {
+        "look": "chips",
+        "cta": "button"
+      },
+      "header": {
+        "right": [
+          "search",
+          "subscribe"
+        ],
+        "rightPhone": [
+          "subscribe"
+        ],
+        "rule": false,
+        "searchStyle": "compact",
+        "padBottom": 64,
+        "subtitle": "New features, improvements and fixes to the platform."
+      },
+      "filters": {
+        "tags": false,
+        "types": false,
+        "search": false,
+        "versions": false
+      },
+      "archive": {
+        "style": "years",
+        "paging": "numbers",
+        "counts": false
+      },
+      "release": {
+        "layout": "stacked",
+        "align": "center",
+        "width": "text",
+        "metaAbove": true,
+        "cover": true,
+        "authors": "avatars-names",
+        "readTime": true,
+        "nav": "more",
+        "moreCount": 3,
+        "shareStyle": "icons",
+        "actions": {
+          "items": [
+            "copyLink",
+            "viewMarkdown",
+            "copyMarkdown"
+          ],
+          "style": "row"
+        }
+      }
+    }
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "CHANGELOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "title"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "space": "self",
+              "controls": true,
+              "limit": 12
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "archive"
+            }
+          }
+        ]
+      },
+      "paddingTop": {
+        "lg": "96px",
+        "sm": "56px"
+      }
+    }
+  ]
+}

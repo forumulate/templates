@@ -1,0 +1,151 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Halyard Contact",
+    "slug": "template-halyard",
+    "description": "A dark topic router: a card per topic with a line saying what it is for, and the form opening on the one somebody picks — asking only that topic’s questions.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "contact",
+      "router",
+      "product",
+      "template"
+    ],
+    "spaceTypes": [
+      "CONTACT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "primaryColor": "#e5e5e6",
+    "accentColor": "#8b8cf6",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "palette": {
+      "ink": "#d0d6e0",
+      "line": "#23252a",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#141516",
+      "background": "#08090a",
+      "header_primary": "#f7f8f8",
+      "header_background": "#08090a",
+      "footer_primary": "#8a8f98",
+      "footer_background": "#08090a"
+    },
+    "paletteDark": {
+      "ink": "#d0d6e0",
+      "line": "#23252a",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#141516",
+      "background": "#08090a",
+      "header_primary": "#f7f8f8",
+      "header_background": "#08090a",
+      "footer_primary": "#8a8f98",
+      "footer_background": "#08090a"
+    },
+    "typography": {
+      "baseSize": 15,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 44,
+            "sm": 32
+          },
+          "weight": 590,
+          "tracking": -0.022,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 20,
+          "weight": 590,
+          "tracking": -0.012,
+          "lineHeight": 1.33
+        },
+        "body": {
+          "tracking": -0.011,
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "card": {
+        "background": "#141516",
+        "backgroundDark": "#141516",
+        "iconSize": 18,
+        "arrow": "none"
+      },
+      "input": {
+        "border": "#2a2b30",
+        "radius": 8,
+        "background": "#0f1011"
+      },
+      "button": {
+        "ink": "#08090a",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#e5e5e6"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64,
+        "borderColor": "#23252a"
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "contact": {
+      "form": {
+        "card": {
+          "surface": "outline",
+          "radius": 10,
+          "pad": 24
+        },
+        "width": "narrow",
+        "columns": 1,
+        "submitAlign": "end"
+      },
+      "facts": {
+        "look": "chips",
+        "placement": "below"
+      },
+      "topics": {
+        "look": "cards",
+        "columns": 2
+      },
+      "channels": {
+        "look": "cards",
+        "heading": "Other ways to reach us",
+        "links": [
+          {
+            "label": "Security reports",
+            "url": "mailto:security@example.com",
+            "description": "Found a vulnerability? Write to the security team directly."
+          },
+          {
+            "label": "Feature requests",
+            "url": "mailto:feedback@example.com",
+            "description": "Ideas go straight to the people who build the product."
+          }
+        ]
+      }
+    }
+  },
+  "components": []
+}

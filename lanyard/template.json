@@ -1,0 +1,421 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lanyard",
+  "type": "ROADMAP",
+  "name": "Lanyard",
+  "description": "A feedback board’s public roadmap: three bordered lane panels with a coloured dot in each head, a square vote box on the left of every card, an uppercase theme eyebrow, and an item page with its voters in a left-hand rail.",
+  "modelledOn": "A customer-feedback tool’s public roadmap",
+  "features": [
+    "Preset: board — three lane panels (Under review / Planned / In progress) with a tinted dot and a hairline under each head",
+    "Square vote box with a chevron at the start of each card; uppercase theme eyebrow; no excerpt",
+    "Sort row (Trending / Top / New), tags and search above the board",
+    "Item page: the voters, vote and Follow in a rail on the left; the team’s answer under the title",
+    "White and indigo, Inter, 6px corners",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "feedback",
+    "voting",
+    "board"
+  ],
+  "thumbnail": "/templates/lanyard.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "board",
+    "frontDoor": {
+      "badgeStyle": "dot",
+      "showEmptyLanes": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "integrations",
+      "label": "Integrations",
+      "color": "#e0f2f1",
+      "textColor": "#0f766e"
+    },
+    {
+      "slug": "reporting",
+      "label": "Reporting",
+      "color": "#e0e7ff",
+      "textColor": "#3730a3"
+    },
+    {
+      "slug": "admin",
+      "label": "Admin",
+      "color": "#f3e8ff",
+      "textColor": "#6b21a8"
+    },
+    {
+      "slug": "security",
+      "label": "Security",
+      "color": "#fee2e2",
+      "textColor": "#991b1b"
+    },
+    {
+      "slug": "mobile",
+      "label": "Mobile",
+      "color": "#fef3c7",
+      "textColor": "#92400e"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning",
+      "color": "#dcfce7",
+      "textColor": "#166534"
+    },
+    {
+      "slug": "interface",
+      "label": "Interface",
+      "color": "#f1f5f9",
+      "textColor": "#334155"
+    },
+    {
+      "slug": "views",
+      "label": "Views",
+      "color": "#e0f2fe",
+      "textColor": "#075985"
+    },
+    {
+      "slug": "api",
+      "label": "API",
+      "color": "#f5f5f4",
+      "textColor": "#44403c"
+    }
+  ],
+  "authors": [
+    {
+      "key": "maya",
+      "name": "Maya Lindqvist",
+      "role": "Operations lead"
+    },
+    {
+      "key": "devon",
+      "name": "Devon Achebe",
+      "role": "Engineering manager"
+    },
+    {
+      "key": "priya",
+      "name": "Priya Raman",
+      "role": "Customer success"
+    },
+    {
+      "key": "tomas",
+      "name": "Tomás Herrera",
+      "role": "Agency founder"
+    },
+    {
+      "key": "ines",
+      "name": "Inês Duarte",
+      "role": "Data analyst"
+    },
+    {
+      "key": "team",
+      "name": "Sam Okafor",
+      "role": "Product, Your Brand"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "roadmap": {
+      "statusLabels": {
+        "SUBMITTED": "Under review",
+        "PLANNED": "Planned",
+        "IN_PROGRESS": "In progress",
+        "SHIPPED": "Complete"
+      },
+      "statusOrder": [
+        "SUBMITTED",
+        "PLANNED",
+        "IN_PROGRESS",
+        "SHIPPED",
+        "DECLINED"
+      ],
+      "hiddenStatuses": [
+        "SHIPPED",
+        "DECLINED"
+      ]
+    }
+  },
+  "roadmap": {
+    "categories": [],
+    "items": [
+      {
+        "slug": "gantt-view",
+        "title": "Timeline (Gantt) view",
+        "status": "SUBMITTED",
+        "tags": [
+          "planning",
+          "views"
+        ],
+        "author": "tomas",
+        "daysAgo": 9,
+        "fields": {
+          "theme": "Planning",
+          "effort": "Large"
+        },
+        "sections": {
+          "problem": "We plan launches across several teams and cannot see how the pieces line up in time.",
+          "proposal": "A timeline view of items with start and due dates, dependencies drawn as arrows, drag to reschedule."
+        },
+        "comments": [
+          {
+            "author": "tomas",
+            "hoursAfter": 9,
+            "markdown": "Dependencies are the part we need most — the bars alone we can fake with a spreadsheet."
+          }
+        ]
+      },
+      {
+        "slug": "recurring-tasks",
+        "title": "Recurring tasks",
+        "status": "SUBMITTED",
+        "tags": [
+          "planning"
+        ],
+        "author": "maya",
+        "daysAgo": 6,
+        "fields": {
+          "theme": "Planning",
+          "effort": "Medium"
+        },
+        "sections": {
+          "problem": "Weekly reviews and monthly invoicing are the same task every time. We recreate them by hand and sometimes forget.",
+          "proposal": "Repeat a task daily, weekly, monthly or on a custom rule. The next one is created when the current one is done."
+        },
+        "comments": [
+          {
+            "author": "maya",
+            "hoursAfter": 4,
+            "markdown": "Please support \"last working day of the month\" — that is when our payroll runs."
+          }
+        ]
+      },
+      {
+        "slug": "bulk-edit",
+        "title": "Edit many items at once",
+        "status": "SUBMITTED",
+        "tags": [
+          "interface"
+        ],
+        "author": "priya",
+        "daysAgo": 3,
+        "fields": {
+          "theme": "Interface",
+          "effort": "Medium"
+        },
+        "sections": {
+          "problem": "Moving forty items to a new owner after a reorganisation means forty separate edits.",
+          "proposal": "Select several items and change their owner, status, labels or due date in one go."
+        },
+        "comments": [
+          {
+            "author": "priya",
+            "hoursAfter": 6,
+            "markdown": "An undo for the bulk change would make people much less nervous to use it."
+          }
+        ]
+      },
+      {
+        "slug": "sso-okta",
+        "title": "Single sign-on with Okta and Entra ID",
+        "status": "PLANNED",
+        "tags": [
+          "admin",
+          "security"
+        ],
+        "author": "devon",
+        "daysAgo": 40,
+        "fields": {
+          "theme": "Admin",
+          "effort": "Large",
+          "target": "Q4"
+        },
+        "sections": {
+          "problem": "Our security policy requires every tool to sit behind our identity provider. Without SSO we cannot roll this out beyond a pilot team.",
+          "proposal": "SAML and OIDC sign-in, with just-in-time provisioning and the option to make SSO the only way in."
+        },
+        "comments": [
+          {
+            "author": "maya",
+            "hoursAfter": 12,
+            "markdown": "SCIM deprovisioning would be the second half of this for us — removing leavers by hand is a risk."
+          },
+          {
+            "author": "priya",
+            "hoursAfter": 20,
+            "markdown": "Same request from three of our larger customers this quarter."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 72,
+          "markdown": "This is planned for the autumn. We are starting with SAML and Okta, then Entra ID; SCIM follows in the same project."
+        }
+      },
+      {
+        "slug": "csv-export",
+        "title": "Export any report to CSV",
+        "status": "PLANNED",
+        "tags": [
+          "reporting"
+        ],
+        "author": "ines",
+        "daysAgo": 33,
+        "fields": {
+          "theme": "Reporting",
+          "effort": "Small",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Finance needs our numbers in a spreadsheet every month. Today someone copies tables by hand, and it is easy to miss a row.",
+          "proposal": "An Export button on every report that downloads exactly what is on screen, filters included."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 48,
+          "markdown": "Planned. Every report will get an Export button that respects the filters on screen."
+        }
+      },
+      {
+        "slug": "audit-log",
+        "title": "Audit log for admins",
+        "status": "PLANNED",
+        "tags": [
+          "admin",
+          "security"
+        ],
+        "author": "devon",
+        "daysAgo": 28,
+        "fields": {
+          "theme": "Admin",
+          "effort": "Medium",
+          "target": "Q4"
+        },
+        "sections": {
+          "problem": "When a setting changes, nobody can say who changed it or when. Our auditors ask for this every year.",
+          "proposal": "A searchable log of admin actions — who, what, when, from where — exportable for a date range."
+        },
+        "comments": [
+          {
+            "author": "devon",
+            "hoursAfter": 16,
+            "markdown": "Retention of at least a year would cover our SOC 2 window."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 96,
+          "markdown": "Planned, with a year of retention on every paid plan."
+        }
+      },
+      {
+        "slug": "slack-alerts",
+        "title": "Send alerts to a Slack channel",
+        "status": "IN_PROGRESS",
+        "tags": [
+          "integrations"
+        ],
+        "author": "devon",
+        "daysAgo": 52,
+        "fields": {
+          "theme": "Integrations",
+          "effort": "Small",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Our team lives in Slack. Email alerts get buried, so we find out about a failed sync hours later.",
+          "proposal": "Pick a channel per workspace, choose which events post there, and link each message back to the item."
+        },
+        "comments": [
+          {
+            "author": "devon",
+            "hoursAfter": 8,
+            "markdown": "Being able to pick events per channel would matter for us — #ops wants failures, #general does not."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 120,
+          "markdown": "We are building this now. Channels are chosen per workspace and each channel picks its own events."
+        },
+        "item": {
+          "pinned": true
+        }
+      },
+      {
+        "slug": "dark-mode",
+        "title": "Dark mode",
+        "status": "IN_PROGRESS",
+        "tags": [
+          "interface"
+        ],
+        "author": "ines",
+        "daysAgo": 64,
+        "fields": {
+          "theme": "Interface",
+          "effort": "Medium",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Many of us work late or in dim rooms, and the bright white canvas is tiring after a few hours. The browser extensions that force a dark theme break the charts and the editor.",
+          "proposal": "A dark scheme that follows the system setting, with a manual switch in your profile. Charts and the editor get their own dark palette rather than an inverted one."
+        },
+        "comments": [
+          {
+            "author": "ines",
+            "hoursAfter": 5,
+            "markdown": "Please make sure the chart colours are designed for dark, not just inverted. Inverted reds and greens are unreadable."
+          },
+          {
+            "author": "team",
+            "hoursAfter": 30,
+            "markdown": "Agreed — the charts get their own palette. We are testing it with a few colour-blind users first.",
+            "replyTo": 0
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 160,
+          "markdown": "In progress — the editor and navigation are done; charts are next."
+        }
+      },
+      {
+        "slug": "two-factor",
+        "title": "Two-factor authentication",
+        "status": "IN_PROGRESS",
+        "tags": [
+          "security"
+        ],
+        "author": "maya",
+        "daysAgo": 21,
+        "fields": {
+          "theme": "Admin",
+          "effort": "Small",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Accounts protected by a password alone are the first thing our security review flags.",
+          "proposal": "Authenticator-app codes and passkeys, with recovery codes and an admin switch to require it."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 36,
+          "markdown": "In progress: authenticator apps first, passkeys right after."
+        }
+      }
+    ]
+  }
+}

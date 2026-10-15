@@ -1,0 +1,164 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Ledgerwise Jobs",
+    "slug": "template-ledgerwise",
+    "description": "A bright, large-board jobs search: a slim hero, an “assess your fit” band, then one ruled table of roles — team, location and type as columns — with search, a filter bar and pages of twenty.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "careers",
+      "enterprise",
+      "table",
+      "template"
+    ],
+    "spaceTypes": [
+      "CAREERS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "primaryColor": "#635bff",
+    "primaryColorDark": "#8f89ff",
+    "accentColor": "#0a2540",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#f6f9fc",
+      "ink": "#425466",
+      "muted": "#697386",
+      "heading": "#0a2540",
+      "line": "#e3e8ee",
+      "header_background": "#ffffff",
+      "header_primary": "#0a2540"
+    },
+    "paletteDark": {
+      "background": "#0a1628",
+      "surface": "#0f2038",
+      "ink": "#c1cbd8",
+      "muted": "#8898aa",
+      "heading": "#ffffff",
+      "line": "#1f3352",
+      "header_background": "#0a1628",
+      "header_primary": "#ffffff"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 52,
+            "sm": 36
+          },
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": {
+            "lg": 28,
+            "sm": 24
+          },
+          "weight": 600,
+          "tracking": -0.01
+        },
+        "h3": {
+          "size": 18,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Jobs",
+          "href": "/jobs/your-org/your-careers"
+        },
+        {
+          "label": "Assess your fit",
+          "href": "/jobs/your-org/your-careers/assess-your-fit"
+        },
+        {
+          "label": "Emerging talent",
+          "href": "/jobs/your-org/your-careers/emerging-talent"
+        }
+      ],
+      "cta": {
+        "label": "Search roles",
+        "href": "/jobs/your-org/your-careers#open-roles"
+      },
+      "footerLinks": [
+        {
+          "label": "Accommodations",
+          "href": "mailto:accommodations@example.com"
+        },
+        {
+          "label": "Candidate privacy",
+          "href": "https://example.com/privacy"
+        },
+        {
+          "label": "Emerging talent",
+          "href": "/jobs/your-org/your-careers/emerging-talent"
+        }
+      ],
+      "copyright": "© 2026 Your Brand, Inc."
+    },
+    "components": {
+      "button": {
+        "radius": 999,
+        "weight": "regular"
+      },
+      "input": {
+        "radius": 6
+      }
+    },
+    "careers": {
+      "list": {
+        "layout": "table",
+        "fields": [
+          "team",
+          "location",
+          "employment"
+        ],
+        "facets": [
+          "team",
+          "location",
+          "employment",
+          "remote"
+        ],
+        "facetStyle": "select",
+        "filtersFrom": 0,
+        "pageSize": 20,
+        "density": "compact",
+        "divider": "rule",
+        "hover": "tint",
+        "rowAction": "none"
+      }
+    },
+    "docs": {
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "breadcrumb": {
+          "show": true
+        },
+        "contributors": false
+      },
+      "articleWidth": "46rem"
+    }
+  },
+  "components": []
+}

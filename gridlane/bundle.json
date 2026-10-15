@@ -1,0 +1,195 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Gridlane",
+    "slug": "template-gridlane",
+    "description": "A dense project-board roadmap: five grey lane panels that scroll sideways, open-ring status marks with count pills, compact outlined cards with many-coloured label chips, and tabs to filter by status — set in the system font.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "dense",
+      "board",
+      "engineering",
+      "template"
+    ],
+    "spaceTypes": [
+      "ROADMAP"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#0969da",
+    "accentColor": "#1f883d",
+    "palette": {
+      "ink": "#1f2328",
+      "line": "#d1d9e0",
+      "muted": "#59636e",
+      "heading": "#1f2328",
+      "surface": "#f6f8fa",
+      "background": "#ffffff",
+      "header_primary": "#1f2328",
+      "header_background": "#f6f8fa",
+      "footer_primary": "#59636e",
+      "footer_background": "#ffffff"
+    },
+    "typography": {
+      "baseSize": 14,
+      "levels": {
+        "h1": {
+          "size": 24,
+          "weight": 600
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "header": {
+        "border": "line",
+        "height": 56,
+        "borderColor": "#d1d9e0"
+      }
+    },
+    "components": {
+      "radius": 6,
+      "button": {
+        "radius": 6,
+        "weight": "medium",
+        "background": "#1f883d",
+        "ink": "#ffffff"
+      }
+    },
+    "layout": {
+      "widths": {
+        "max": "1680px"
+      }
+    },
+    "roadmap": {
+      "width": "full",
+      "lanes": {
+        "style": "panel",
+        "headerRule": false,
+        "glyph": "ring",
+        "overflow": "scroll",
+        "minWidth": 340,
+        "gap": 12,
+        "empty": "show",
+        "countStyle": "pill",
+        "phone": "swipe",
+        "tones": {
+          "submitted": {
+            "color": "#59636e"
+          },
+          "planned": {
+            "color": "#0969da"
+          },
+          "inProgress": {
+            "color": "#bf8700"
+          },
+          "shipped": {
+            "color": "#8250df"
+          },
+          "declined": {
+            "tone": "neutral"
+          }
+        },
+        "statuses": {
+          "submitted": {
+            "description": "Ideas we are researching"
+          },
+          "planned": {
+            "description": "Committed for the coming quarter"
+          },
+          "inProgress": {
+            "glyph": "half",
+            "description": "In development or preview"
+          },
+          "shipped": {
+            "glyph": "check",
+            "description": "Generally available"
+          }
+        }
+      },
+      "card": {
+        "frame": {
+          "surface": "outline",
+          "radius": 6,
+          "pad": 10
+        },
+        "density": "compact",
+        "eyebrow": "number",
+        "meta": [
+          "tags",
+          "target"
+        ],
+        "titleLines": 3,
+        "excerptLines": 0,
+        "numberPrefix": "roadmap"
+      },
+      "vote": {
+        "style": "inline",
+        "position": "footer",
+        "glyph": "arrow",
+        "votedFill": "brand"
+      },
+      "header": {
+        "subtitle": "What we are exploring, building and shipping. Labels show the release phase.",
+        "subtitlePlacement": "under-title",
+        "subscribe": true
+      },
+      "filters": {
+        "style": "tabs",
+        "sort": [
+          "new",
+          "top"
+        ],
+        "status": true,
+        "tags": true,
+        "search": true
+      },
+      "item": {
+        "rail": {
+          "layout": "side",
+          "items": [
+            "facts",
+            "vote",
+            "follow",
+            "actions"
+          ]
+        },
+        "actions": {
+          "items": [
+            "copyLink",
+            "copyMarkdown",
+            "viewMarkdown"
+          ],
+          "style": "icons"
+        },
+        "voters": "none",
+        "activity": true,
+        "response": true,
+        "shippedIn": true,
+        "replies": true,
+        "reactions": true,
+        "staffBadge": true,
+        "merged": "redirect"
+      },
+      "submit": {
+        "sections": [
+          "problem",
+          "proposal"
+        ],
+        "rich": true,
+        "similar": true,
+        "tags": true
+      }
+    }
+  },
+  "components": []
+}

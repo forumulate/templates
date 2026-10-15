@@ -1,0 +1,166 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "helmsway",
+  "type": "FAQ",
+  "name": "Helmsway",
+  "description": "A restrained support site: a left-aligned search hero, popular articles with their first line and topic chips, then a compact topic list and contact.",
+  "modelledOn": "A payments company’s support site",
+  "features": [
+    "Preset: help-centre, sections ordered popular → topics → contact",
+    "Left-aligned search hero, no picture, ⌘K",
+    "Popular articles: excerpt and topic chips, from the “Popular question” field",
+    "Popular topics as a compact list with counts",
+    "“Helped 93% of readers” under an answer once it has 20 votes",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "help-center",
+    "support",
+    "fintech"
+  ],
+  "thumbnail": "/templates/helmsway.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "help-centre",
+    "frontDoor": {
+      "sectionOrder": "featured,categories,intro,questions,contact"
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "faq": {
+    "collections": [
+      {
+        "slug": "payments",
+        "name": "Payments",
+        "description": "Accepting cards and wallets, declines, and refunds.",
+        "nav": {
+          "icon": "credit-card"
+        },
+        "pages": [
+          {
+            "slug": "why-declined",
+            "title": "Why was a customer’s payment declined?",
+            "markdown": "The card issuer decides, and most declines come back with a reason code — insufficient funds, a suspected fraud flag, or an incorrect security code. Open the payment in the dashboard to see the code and what the customer can do next.",
+            "fields": {
+              "featured": true
+            }
+          },
+          {
+            "slug": "refund-timing",
+            "title": "How long does a refund take to reach the customer?",
+            "markdown": "We send the refund to the card network straight away. Most customers see it on their statement in 5–10 business days; the exact time depends on their bank.",
+            "fields": {
+              "featured": true
+            }
+          },
+          {
+            "slug": "partial-refund",
+            "title": "Can I refund part of a payment?",
+            "markdown": "Yes. Open the payment, choose **Refund**, and enter an amount lower than the original. You can issue several partial refunds until the full amount is returned."
+          }
+        ]
+      },
+      {
+        "slug": "payouts",
+        "name": "Payouts",
+        "description": "When money lands in your bank account, and why it might not.",
+        "nav": {
+          "icon": "banknote"
+        },
+        "pages": [
+          {
+            "slug": "payout-schedule",
+            "title": "When will I receive my payouts?",
+            "markdown": "Payouts follow your schedule — daily, weekly or monthly — once your first payout has cleared. The dashboard shows the expected arrival date for every pending payout.",
+            "fields": {
+              "featured": true
+            }
+          },
+          {
+            "slug": "payout-failed",
+            "title": "What should I do if a payout failed?",
+            "markdown": "A failed payout usually means the bank details are out of date. Update them under **Settings → Payouts**; we retry automatically with the new details."
+          }
+        ]
+      },
+      {
+        "slug": "disputes",
+        "name": "Disputes and fraud",
+        "description": "Responding to chargebacks and preventing them.",
+        "nav": {
+          "icon": "shield-alert"
+        },
+        "pages": [
+          {
+            "slug": "respond-dispute",
+            "title": "How do I respond to a dispute?",
+            "markdown": "Open the dispute and choose **Submit evidence**. Include the receipt, proof of delivery and any messages with the customer. You have until the due date shown on the dispute.",
+            "fields": {
+              "featured": true
+            }
+          },
+          {
+            "slug": "reduce-fraud",
+            "title": "How can I reduce fraudulent payments?",
+            "markdown": "Turn on address and security-code checks, and add rules that block or review payments above an amount you choose. Rules apply to new payments only."
+          }
+        ]
+      },
+      {
+        "slug": "account",
+        "name": "Account and settings",
+        "description": "Verification, team access and tax details.",
+        "nav": {
+          "icon": "settings-2"
+        },
+        "pages": [
+          {
+            "slug": "verify-identity",
+            "title": "Why do you need to verify my identity?",
+            "markdown": "Financial regulations require us to know who we pay out to. Verification usually takes a few minutes; we will email you if we need another document."
+          },
+          {
+            "slug": "team-roles",
+            "title": "How do I give a teammate limited access?",
+            "markdown": "Invite them under **Settings → Team** and choose a role such as **Support** or **Analyst**. Roles decide what they can view, refund or change.",
+            "fields": {
+              "featured": true
+            }
+          }
+        ]
+      },
+      {
+        "slug": "tax",
+        "name": "Tax",
+        "description": "Collecting, reporting and invoicing tax.",
+        "nav": {
+          "icon": "receipt"
+        },
+        "pages": [
+          {
+            "slug": "tax-forms",
+            "title": "Where can I find my tax forms?",
+            "markdown": "Annual tax forms are under **Settings → Documents** once they are issued, usually by the end of January."
+          },
+          {
+            "slug": "collect-tax",
+            "title": "Can Your Brand calculate tax at checkout?",
+            "markdown": "Yes. Turn on automatic tax under **Settings → Tax** and add the places you are registered. Each payment then includes the right rate for the customer’s address."
+          }
+        ]
+      }
+    ]
+  }
+}

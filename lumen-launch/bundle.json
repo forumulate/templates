@@ -1,0 +1,406 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lumen Launch",
+    "slug": "template-lumen-launch",
+    "description": "A dark product homepage: gradient display type, a split hero with a product shot in perspective, a logo wall, alternating feature rows, a five-cell bento, a changelog teaser and a closing call to action under a blurred sticky header with a mega menu.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "landing",
+      "product",
+      "template"
+    ],
+    "spaceTypes": [
+      "CUSTOM"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "palette": {
+      "ink": "#d0d6e0",
+      "line": "#1f2023",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#101113",
+      "background": "#08090a",
+      "header_primary": "#f7f8f8",
+      "header_background": "#08090a",
+      "footer_primary": "#8a8f98",
+      "footer_background": "#08090a"
+    },
+    "paletteDark": {
+      "ink": "#d0d6e0",
+      "line": "#1f2023",
+      "muted": "#8a8f98",
+      "heading": "#f7f8f8",
+      "surface": "#101113",
+      "background": "#08090a",
+      "header_primary": "#f7f8f8",
+      "header_background": "#08090a",
+      "footer_primary": "#8a8f98",
+      "footer_background": "#08090a"
+    },
+    "primaryColor": "#6d78e7",
+    "accentColor": "#a5acf5",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "layout": {
+      "widths": {
+        "max": "1200px"
+      },
+      "gutter": {
+        "lg": 24,
+        "sm": 20
+      }
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "features": {
+        "body": "\"cv01\", \"ss03\"",
+        "heading": "\"cv01\", \"ss03\""
+      },
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 64,
+            "sm": 40
+          },
+          "weight": 600,
+          "tracking": -0.03,
+          "lineHeight": 1.05,
+          "gradient": {
+            "stops": [
+              "#ffffff",
+              "#8a8f98"
+            ],
+            "angle": 180
+          }
+        },
+        "h2": {
+          "size": {
+            "lg": 44,
+            "sm": 30
+          },
+          "weight": 600,
+          "tracking": -0.025,
+          "lineHeight": 1.1,
+          "gradient": {
+            "stops": [
+              "#ffffff",
+              "#8a8f98"
+            ],
+            "angle": 180
+          }
+        },
+        "h3": {
+          "size": 21,
+          "weight": 590,
+          "tracking": -0.012,
+          "lineHeight": 1.3
+        },
+        "body": {
+          "lineHeight": 1.6
+        },
+        "eyebrow": {
+          "color": "#a5acf5",
+          "size": 13,
+          "weight": 500,
+          "case": "none",
+          "tracking": 0
+        }
+      }
+    },
+    "components": {
+      "radius": 10,
+      "button": {
+        "background": "#f7f8f8",
+        "ink": "#08090a",
+        "radius": 8,
+        "weight": "medium"
+      },
+      "link": {
+        "color": "#f7f8f8",
+        "colorDark": "#f7f8f8",
+        "underline": "hover"
+      },
+      "code": {
+        "background": "#16171a",
+        "border": "#2a2c31",
+        "ink": "#e2e4e7",
+        "radius": 6
+      },
+      "selection": {
+        "background": "#2a2f5a",
+        "ink": "#ffffff"
+      },
+      "image": {
+        "radius": 12
+      }
+    },
+    "motion": {
+      "preset": "subtle",
+      "reveal": {
+        "effect": "fade-up",
+        "targets": [
+          "blocks"
+        ],
+        "distance": 24,
+        "stagger": 60,
+        "once": true
+      },
+      "hover": {
+        "card": "border",
+        "button": "none",
+        "link": "fade"
+      },
+      "header": {
+        "behavior": "sticky",
+        "blur": true
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "blur": 12,
+        "opacity": 0.8,
+        "border": "line",
+        "borderColor": "#1f2023",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 24,
+        "navInk": "#8a8f98",
+        "navInkDark": "#8a8f98",
+        "navSize": 14,
+        "navWeight": 400,
+        "logoHeight": 22
+      },
+      "headerLinks": [
+        {
+          "label": "Product",
+          "panel": {
+            "columns": [
+              {
+                "heading": "Core",
+                "links": [
+                  {
+                    "label": "Planning",
+                    "href": "/x/your-org/your-custom#features",
+                    "description": "Projects, milestones and owners"
+                  },
+                  {
+                    "label": "Issues",
+                    "href": "/x/your-org/your-custom#features",
+                    "description": "Fast, keyboard-first tracking"
+                  },
+                  {
+                    "label": "Cycles",
+                    "href": "/x/your-org/your-custom#features",
+                    "description": "A rhythm that runs itself"
+                  }
+                ]
+              },
+              {
+                "heading": "More",
+                "links": [
+                  {
+                    "label": "Insights",
+                    "href": "/x/your-org/your-custom#bento"
+                  },
+                  {
+                    "label": "Automations",
+                    "href": "/x/your-org/your-custom#bento"
+                  },
+                  {
+                    "label": "Agents",
+                    "href": "/x/your-org/your-custom#bento",
+                    "badge": "New"
+                  },
+                  {
+                    "label": "Integrations",
+                    "href": "/x/your-org/your-custom#bento"
+                  }
+                ]
+              }
+            ],
+            "featured": {
+              "image": "/api/assets/00000000-0000-4000-8000-000000000006",
+              "title": "What shipped this month",
+              "text": "Agents, faster search and a new timeline view.",
+              "href": "/x/your-org/your-custom#changelog"
+            }
+          }
+        },
+        {
+          "label": "Resources",
+          "children": [
+            {
+              "label": "Changelog",
+              "href": "/x/your-org/your-custom#changelog"
+            },
+            {
+              "label": "Customers",
+              "href": "/x/your-org/your-custom#logos"
+            },
+            {
+              "label": "Method",
+              "href": "/x/your-org/your-custom#features",
+              "description": "How we think teams should build"
+            }
+          ]
+        },
+        {
+          "label": "Customers",
+          "href": "/x/your-org/your-custom#logos"
+        },
+        {
+          "label": "Pricing",
+          "href": "/x/your-org/your-custom#start"
+        },
+        {
+          "label": "Contact",
+          "href": "/x/your-org/your-custom#start"
+        }
+      ],
+      "cta": {
+        "label": "Sign up",
+        "href": "/x/your-org/your-custom#start",
+        "showOnPhone": true
+      },
+      "ctaStyle": "pill",
+      "secondaryCta": {
+        "label": "Log in",
+        "href": "/x/your-org/your-custom#start",
+        "style": "link",
+        "underline": false,
+        "ink": "#8a8f98",
+        "showOnPhone": true
+      },
+      "footer": {
+        "columns": 5,
+        "linkGap": 10,
+        "linkSize": 13,
+        "bottomRule": false,
+        "headingGap": 24,
+        "headingInk": "#f7f8f8",
+        "headingInkDark": "#f7f8f8",
+        "headingStyle": "plain",
+        "headingWeight": 500
+      },
+      "footerColumns": [
+        {
+          "heading": "Product",
+          "links": [
+            {
+              "label": "Planning",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Issues",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Cycles",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Insights",
+              "href": "/x/your-org/your-custom#bento"
+            },
+            {
+              "label": "Changelog",
+              "href": "/x/your-org/your-custom#changelog"
+            }
+          ]
+        },
+        {
+          "heading": "Features",
+          "links": [
+            {
+              "label": "Automations",
+              "href": "/x/your-org/your-custom#bento"
+            },
+            {
+              "label": "Agents",
+              "href": "/x/your-org/your-custom#bento"
+            },
+            {
+              "label": "Git",
+              "href": "/x/your-org/your-custom#bento"
+            },
+            {
+              "label": "Integrations",
+              "href": "/x/your-org/your-custom#bento"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            {
+              "label": "About",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Customers",
+              "href": "/x/your-org/your-custom#logos"
+            },
+            {
+              "label": "Careers",
+              "href": "/x/your-org/your-custom#start"
+            },
+            {
+              "label": "Contact",
+              "href": "/x/your-org/your-custom#start"
+            }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            {
+              "label": "Method",
+              "href": "/x/your-org/your-custom#features"
+            },
+            {
+              "label": "Status",
+              "href": "/x/your-org/your-custom#changelog"
+            },
+            {
+              "label": "Security",
+              "href": "/x/your-org/your-custom#start"
+            },
+            {
+              "label": "Brand",
+              "href": "/x/your-org/your-custom#start"
+            }
+          ]
+        }
+      ],
+      "footerLinks": [
+        {
+          "label": "Privacy",
+          "href": "/x/your-org/your-custom#start"
+        },
+        {
+          "label": "Terms",
+          "href": "/x/your-org/your-custom#start"
+        }
+      ],
+      "copyright": "© 2026 Your Brand."
+    }
+  },
+  "components": []
+}

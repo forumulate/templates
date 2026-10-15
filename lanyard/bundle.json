@@ -1,0 +1,176 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lanyard",
+    "slug": "template-lanyard",
+    "description": "A feedback board’s public roadmap: three bordered lane panels with a coloured dot in each head, a square vote box on the left of every card, an uppercase theme eyebrow, and an item page with its voters in a left-hand rail.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "feedback",
+      "voting",
+      "board",
+      "template"
+    ],
+    "spaceTypes": [
+      "ROADMAP"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#525df9",
+    "accentColor": "#525df9",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "palette": {
+      "ink": "#33354a",
+      "line": "#e6e7ef",
+      "muted": "#7a7d93",
+      "heading": "#1b1c2b",
+      "surface": "#f8f9fc",
+      "background": "#ffffff",
+      "header_primary": "#1b1c2b",
+      "header_background": "#ffffff",
+      "footer_primary": "#7a7d93",
+      "footer_background": "#ffffff"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": 28,
+          "weight": 600,
+          "tracking": -0.015
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "header": {
+        "border": "line",
+        "height": 60,
+        "borderColor": "#e6e7ef"
+      }
+    },
+    "components": {
+      "radius": 6,
+      "button": {
+        "radius": 6,
+        "weight": "medium",
+        "background": "#525df9",
+        "ink": "#ffffff"
+      }
+    },
+    "layout": {
+      "widths": {
+        "board": "1080px"
+      }
+    },
+    "roadmap": {
+      "lanes": {
+        "style": "panel",
+        "headerRule": true,
+        "glyph": "dot",
+        "overflow": "fit",
+        "empty": "show",
+        "countStyle": "text",
+        "phone": "tabs",
+        "gap": 16,
+        "tones": {
+          "submitted": {
+            "color": "#14b8a6"
+          },
+          "planned": {
+            "color": "#3b82f6"
+          },
+          "inProgress": {
+            "color": "#8b5cf6"
+          },
+          "shipped": {
+            "tone": "success"
+          },
+          "declined": {
+            "tone": "neutral"
+          }
+        }
+      },
+      "card": {
+        "frame": {
+          "surface": "flat",
+          "pad": 12
+        },
+        "eyebrow": "theme",
+        "meta": [
+          "comments"
+        ],
+        "excerptLines": 0,
+        "titleLines": 3,
+        "density": "cozy"
+      },
+      "vote": {
+        "style": "box",
+        "position": "start",
+        "glyph": "chevron",
+        "votedFill": "brand"
+      },
+      "header": {
+        "subtitle": "See what we are working on, and tell us what you need next.",
+        "subtitlePlacement": "under-title",
+        "subscribe": true
+      },
+      "filters": {
+        "style": "pills",
+        "sort": [
+          "trending",
+          "top",
+          "new"
+        ],
+        "tags": true,
+        "search": true,
+        "mine": true
+      },
+      "item": {
+        "rail": {
+          "layout": "side",
+          "align": "start",
+          "items": [
+            "vote",
+            "voters",
+            "follow",
+            "facts",
+            "share"
+          ]
+        },
+        "voters": "list",
+        "activity": true,
+        "response": true,
+        "shippedIn": true,
+        "commentSort": "newest",
+        "commentSortControl": true,
+        "reactions": true,
+        "replies": true,
+        "staffBadge": true,
+        "merged": "notice",
+        "mergedRequests": true
+      },
+      "submit": {
+        "sections": [
+          "problem",
+          "proposal"
+        ],
+        "rich": true,
+        "similar": true,
+        "tags": true,
+        "theme": true
+      }
+    }
+  },
+  "components": []
+}

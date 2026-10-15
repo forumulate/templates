@@ -1,0 +1,552 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "gatherwell",
+  "type": "EVENTS",
+  "name": "Gatherwell",
+  "description": "A local group’s home: a warm banner, what the group is about, its numbers and its organizers, then the meetups as rows with seats left and who is going. Each event opens on a wide picture with the place, a map card and a sticky RSVP bar on phones.",
+  "modelledOn": "A local-groups platform’s group and event pages",
+  "features": [
+    "Group banner, about text, member stats and organizers on the front page",
+    "Rows grouped by month with an outlined date tile, seats left and “N going”",
+    "Past events behind one “Past events” link, so the page stays about what is next",
+    "Event page: wide cover, facts, a drawn map card, RSVP bar fixed to a phone’s screen",
+    "Guest +1 on every RSVP; the who’s-going list switched on",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "events",
+    "local-group",
+    "meetups",
+    "warm"
+  ],
+  "thumbnail": "/templates/gatherwell.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/gatherwell-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/gatherwell-banner.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/gatherwell-cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/gatherwell-cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/gatherwell-cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/gatherwell-cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/gatherwell-cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/gatherwell-cover-6.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/gatherwell-org-dp.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000010": "assets/gatherwell-org-ah.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000011": "assets/gatherwell-org-lm.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "community",
+    "frontDoor": {
+      "showTags": true,
+      "showSubscribe": true,
+      "subscribeStyle": "menu",
+      "showRss": true,
+      "showPast": true,
+      "showShare": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "meetup",
+      "label": "Monthly meetup",
+      "color": "#fde6df",
+      "textColor": "#a83a22"
+    },
+    {
+      "slug": "workshop",
+      "label": "Workshop",
+      "color": "#e3ecf8",
+      "textColor": "#2e5a96"
+    },
+    {
+      "slug": "beginner",
+      "label": "Beginner friendly",
+      "color": "#e5f2df",
+      "textColor": "#3d6e24"
+    },
+    {
+      "slug": "field-trip",
+      "label": "Field trip",
+      "color": "#fbefd9",
+      "textColor": "#8a5d10"
+    },
+    {
+      "slug": "social",
+      "label": "Social",
+      "color": "#f3e3f2",
+      "textColor": "#7a3a75"
+    }
+  ],
+  "authors": [
+    {
+      "key": "dana-price",
+      "name": "Dana Price",
+      "role": "Organizer",
+      "bio": "Started the group in a library basement.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000009"
+    },
+    {
+      "key": "amir-haddad",
+      "name": "Amir Haddad",
+      "role": "Co-organizer",
+      "bio": "Runs the workshops and the tool library.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000010"
+    },
+    {
+      "key": "lena-moss",
+      "name": "Lena Moss",
+      "role": "Event host",
+      "bio": "Fixes things that other people throw away.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000011"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "image",
+          "attrs": {
+            "src": "/api/assets/00000000-0000-4000-8000-000000000002",
+            "alt": "A warm red and orange banner reading “Gatherwell Makers & Tinkerers”",
+            "width": "wide"
+          }
+        },
+        {
+          "type": "columns",
+          "content": [
+            {
+              "type": "column",
+              "attrs": {
+                "width": 62
+              },
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Fix it, make it, show it"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "A local group for people who like to make and mend things. We meet once a month to fix what is broken, run small hands-on workshops and show each other what we have built. Everyone is welcome, whatever you know already."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Read the group guidelines",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "#guidelines"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " · "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Past events",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/e/your-org/your-events?when=past"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 38
+              },
+              "content": [
+                {
+                  "type": "stats",
+                  "attrs": {
+                    "layout": "cards",
+                    "animate": false,
+                    "items": [
+                      {
+                        "value": 1840,
+                        "label": "Members"
+                      },
+                      {
+                        "value": 126,
+                        "label": "Events hosted"
+                      },
+                      {
+                        "value": 4.9,
+                        "decimals": 1,
+                        "label": "Average rating"
+                      }
+                    ],
+                    "columns": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Organizers"
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "content": [
+            {
+              "type": "column",
+              "attrs": {
+                "width": 33
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Dana Price",
+                    "role": "Organizer",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000009",
+                    "layout": "row",
+                    "photoShape": "circle"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 33
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Amir Haddad",
+                    "role": "Co-organizer",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000010",
+                    "layout": "row",
+                    "photoShape": "circle"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 34
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Lena Moss",
+                    "role": "Event host",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000011",
+                    "layout": "row",
+                    "photoShape": "circle"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "events"
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3,
+            "anchor": "guidelines"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Group guidelines"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Be kind, share your tools, put them back. Ask before touching someone else’s project. Children are welcome with a grown-up. If something makes you uncomfortable, tell any organizer."
+            }
+          ]
+        }
+      ]
+    },
+    "width": 1040
+  },
+  "settings": {
+    "eventAttendance": {
+      "publicAttendees": true
+    }
+  },
+  "events": {
+    "events": [
+      {
+        "slug": "repair-cafe",
+        "title": "Repair Cafe",
+        "daysFromNow": 6,
+        "startTime": "10:00",
+        "durationHours": 3,
+        "event": {
+          "timezone": "America/Chicago",
+          "attendanceMode": "in_person",
+          "location": "Northside Library, Room B, Chicago",
+          "venue": {
+            "name": "Northside Library, Room B",
+            "street": "1200 Example Avenue",
+            "city": "Chicago",
+            "region": "IL",
+            "postalCode": "60600",
+            "country": "US",
+            "lat": 41.9484,
+            "lng": -87.6553
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+          "coverAlt": "",
+          "tags": [
+            "meetup"
+          ],
+          "hosts": [
+            {
+              "author": "lena-moss"
+            },
+            {
+              "author": "dana-price"
+            }
+          ],
+          "guestsMax": 1,
+          "capacity": 40,
+          "description": "Bring a broken lamp, a toaster that clicks but never toasts, a jacket with a stuck zip. Volunteers with tools and patience will help you fix it — and show you how, so next time you can.\n\n## Good to know\n\n- Free; donations to the tool library welcome\n- One item per person until 12:00, then as many as we have time for\n- No microwaves or anything gas-powered, please\n\nYou can bring one guest — add them when you RSVP."
+        }
+      },
+      {
+        "slug": "intro-to-soldering",
+        "title": "Intro to Soldering",
+        "daysFromNow": 20,
+        "startTime": "18:30",
+        "durationHours": 2,
+        "event": {
+          "timezone": "America/Chicago",
+          "attendanceMode": "in_person",
+          "location": "The Workbench Makerspace, Chicago",
+          "venue": {
+            "name": "The Workbench Makerspace",
+            "street": "455 Sample Street",
+            "city": "Chicago",
+            "region": "IL",
+            "postalCode": "60600",
+            "country": "US",
+            "lat": 41.9123,
+            "lng": -87.6776
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000004",
+          "coverAlt": "",
+          "tags": [
+            "workshop",
+            "beginner"
+          ],
+          "hosts": [
+            {
+              "author": "amir-haddad"
+            }
+          ],
+          "guestsMax": 1,
+          "capacity": 12,
+          "description": "A beginner workshop: you will solder a small blinking badge to take home. Every tool and part is provided.\n\n## Before you come\n\n- Closed-toe shoes, long hair tied back\n- No experience needed\n\nTwelve seats because there are twelve irons. If it is full, join the waitlist — people do drop out."
+        }
+      },
+      {
+        "slug": "makerspace-open-house",
+        "title": "Makerspace Open House",
+        "daysFromNow": 34,
+        "startTime": "13:00",
+        "durationHours": 4,
+        "event": {
+          "timezone": "America/Chicago",
+          "attendanceMode": "in_person",
+          "location": "The Workbench Makerspace, Chicago",
+          "venue": {
+            "name": "The Workbench Makerspace",
+            "street": "455 Sample Street",
+            "city": "Chicago",
+            "region": "IL",
+            "postalCode": "60600",
+            "country": "US",
+            "lat": 41.9123,
+            "lng": -87.6776
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+          "coverAlt": "",
+          "tags": [
+            "field-trip"
+          ],
+          "hosts": [
+            {
+              "author": "dana-price"
+            },
+            {
+              "author": "amir-haddad"
+            }
+          ],
+          "guestsMax": 1,
+          "description": "A drop-in afternoon at the makerspace that hosts our workshops: see the laser cutter, the 3D printers and the wood shop, and meet the people who run them."
+        }
+      },
+      {
+        "slug": "show-your-project",
+        "title": "Show Your Project",
+        "daysFromNow": -9,
+        "startTime": "18:30",
+        "durationHours": 2,
+        "event": {
+          "timezone": "America/Chicago",
+          "attendanceMode": "in_person",
+          "location": "Northside Library, Room B, Chicago",
+          "venue": {
+            "name": "Northside Library, Room B",
+            "street": "1200 Example Avenue",
+            "city": "Chicago",
+            "region": "IL",
+            "postalCode": "60600",
+            "country": "US",
+            "lat": 41.9484,
+            "lng": -87.6553
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+          "coverAlt": "",
+          "tags": [
+            "meetup"
+          ],
+          "hosts": [
+            {
+              "author": "dana-price"
+            }
+          ],
+          "guestsMax": 1,
+          "capacity": 40,
+          "description": "Members showed what they have been building since the last meetup. Eleven projects, from a weather station to a hand-bound notebook.",
+          "recordingUrl": "https://video.example.com/gatherwell/show-your-project"
+        }
+      },
+      {
+        "slug": "laser-cutting-basics",
+        "title": "Laser Cutting Basics",
+        "daysFromNow": -30,
+        "startTime": "18:30",
+        "durationHours": 2,
+        "event": {
+          "timezone": "America/Chicago",
+          "attendanceMode": "in_person",
+          "location": "The Workbench Makerspace, Chicago",
+          "venue": {
+            "name": "The Workbench Makerspace",
+            "street": "455 Sample Street",
+            "city": "Chicago",
+            "region": "IL",
+            "postalCode": "60600",
+            "country": "US",
+            "lat": 41.9123,
+            "lng": -87.6776
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+          "coverAlt": "",
+          "tags": [
+            "workshop",
+            "beginner"
+          ],
+          "hosts": [
+            {
+              "author": "amir-haddad"
+            }
+          ],
+          "guestsMax": 1,
+          "capacity": 10,
+          "description": "Ten people each designed and cut a coaster. The walkthrough is in the recording.",
+          "recordingUrl": "https://video.example.com/gatherwell/laser-cutting-basics"
+        }
+      },
+      {
+        "slug": "summer-picnic",
+        "title": "Summer Picnic",
+        "daysFromNow": -90,
+        "startTime": "12:00",
+        "durationHours": 4,
+        "event": {
+          "timezone": "America/Chicago",
+          "attendanceMode": "in_person",
+          "location": "Lakeview Park, north lawn, Chicago",
+          "venue": {
+            "name": "Lakeview Park, north lawn",
+            "city": "Chicago",
+            "region": "IL",
+            "country": "US",
+            "lat": 41.9405,
+            "lng": -87.638
+          },
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+          "coverAlt": "",
+          "tags": [
+            "social"
+          ],
+          "hosts": [
+            {
+              "author": "lena-moss"
+            },
+            {
+              "author": "dana-price"
+            }
+          ],
+          "guestsMax": 1,
+          "description": "The yearly picnic: sixty members, a lot of sandwiches, and a kite somebody built that actually flew.",
+          "recordingUrl": "https://video.example.com/gatherwell/summer-picnic"
+        }
+      }
+    ]
+  }
+}

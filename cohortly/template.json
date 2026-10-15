@@ -1,0 +1,470 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "cohortly",
+  "type": "COURSES",
+  "name": "Cohortly",
+  "description": "A cohort course landing: the pitch beside a sticky panel with the start date and the button, a \"Previously at\" logo row, what is included, a weekly syllabus that opens week by week, testimonials and a long FAQ, on a warm page with editorial serif headings.",
+  "modelledOn": "A live cohort-course platform",
+  "features": [
+    "Preset: Cohort landing — the pitch beside a sticky panel with the facts, the start date and the button",
+    "A cohort starting three weeks after you apply it; modules read as dated weeks",
+    "Weeks 2 and 3 open 7 and 14 days after a learner starts (drip), with the dates shown",
+    "“Previously at” logo row and a “What’s included” card grid",
+    "Syllabus as a folded accordion; testimonials one at a time; a long FAQ",
+    "Classic certificate with a double rule and the lead instructor’s signature",
+    "Warm page, Newsreader headings over Inter",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "course",
+    "cohort",
+    "light",
+    "editorial",
+    "warm"
+  ],
+  "thumbnail": "/templates/cohortly.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/cover.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logos.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/noor.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/theo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/q1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/q2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/q3.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "cohort",
+    "frontDoor": {
+      "showProgress": true,
+      "showContinue": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [
+    {
+      "key": "noor",
+      "name": "Noor Haddad",
+      "role": "Former VP Product, Northwind",
+      "bio": "Noor has led product teams through three pivots and one very public launch.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    },
+    {
+      "key": "theo",
+      "name": "Theo Brandt",
+      "role": "Product coach",
+      "bio": "Theo coaches product leaders on making decisions their teams can follow.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000005"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "hero"
+          }
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Previously at"
+            }
+          ],
+          "attrs": {
+            "size": 13,
+            "color": "muted"
+          }
+        },
+        {
+          "type": "image",
+          "attrs": {
+            "src": "/api/assets/00000000-0000-4000-8000-000000000003",
+            "alt": "Northwind, Lumio, Parcel & Co, Fathom and Kitecraft",
+            "width": 100
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outcomes"
+          }
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "What’s included"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "attrs": {
+            "columns": {
+              "lg": 4,
+              "md": 2,
+              "sm": 1
+            },
+            "variant": "compact"
+          },
+          "content": [
+            {
+              "type": "card",
+              "attrs": {
+                "title": "6 live sessions",
+                "description": "Two a week, recorded and posted the same day.",
+                "icon": "play"
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "title": "A small group",
+                "description": "Eight people working on real decisions.",
+                "icon": "users"
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "title": "Feedback on your work",
+                "description": "Written notes on every assignment.",
+                "icon": "message-circle"
+              }
+            },
+            {
+              "type": "card",
+              "attrs": {
+                "title": "A certificate",
+                "description": "Verifiable, and one click to your profile.",
+                "icon": "medal"
+              }
+            }
+          ]
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "schedule"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outline"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "instructors"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "testimonials"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "faq"
+          }
+        }
+      ]
+    },
+    "gap": "lg"
+  },
+  "course": {
+    "metadata": {
+      "subtitle": "A three-week, live cohort for product managers who have to make the call.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+      "coverAlt": "An illustrated workshop table with notes and three people",
+      "level": "intermediate",
+      "outcomes": [
+        "Frame a product decision as real options",
+        "Gather just enough evidence to choose",
+        "Write a one-page decision narrative people follow",
+        "Run the same process with your own team"
+      ],
+      "prerequisites": [
+        {
+          "text": "Two or more years working on a product team"
+        },
+        {
+          "text": "A real decision to work on during the cohort"
+        }
+      ],
+      "instructors": [
+        "noor",
+        "theo"
+      ],
+      "language": "en",
+      "estimatedDuration": 900,
+      "ctaLabel": "Join the next cohort",
+      "topics": [
+        "Product management",
+        "Strategy"
+      ],
+      "testimonials": [
+        {
+          "quote": "I walked in with a decision I had been avoiding for two months and walked out with a narrative my whole team signed up to.",
+          "name": "Ines Varga",
+          "role": "Senior PM, Lumio",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000006"
+        },
+        {
+          "quote": "The \"will not do\" list alone was worth it. We cut three projects the week after.",
+          "name": "Daniel Osei",
+          "role": "Head of Product, Parcel & Co",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000007"
+        },
+        {
+          "quote": "Small group, real feedback, no slides for the sake of slides.",
+          "name": "Clara Moretti",
+          "role": "Product lead, Kitecraft",
+          "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000008"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How much time does it take each week?",
+          "answer": "About five hours: two live sessions of 75 to 90 minutes and an assignment."
+        },
+        {
+          "question": "What if I miss a live session?",
+          "answer": "Every session is recorded and posted as a lesson the same day."
+        },
+        {
+          "question": "Do I get a certificate?",
+          "answer": "Yes. Complete every lesson and the final check to get a certificate with a link anyone can verify."
+        },
+        {
+          "question": "Can my company pay?",
+          "answer": "Yes. Most learners expense it as professional development. Ask us for an invoice."
+        },
+        {
+          "question": "Is there a refund policy?",
+          "answer": "If the first week is not for you, tell us before the second live session for a full refund."
+        }
+      ]
+    },
+    "cohortStartsInDays": 21,
+    "modules": [
+      {
+        "slug": "week-1",
+        "name": "Week 1 · Frame the decision",
+        "description": "From a vague problem to real options.",
+        "pages": [
+          {
+            "slug": "welcome",
+            "title": "Welcome and how the cohort works",
+            "fields": {
+              "duration": 8,
+              "kind": "Reading",
+              "objectives": "Know the weekly rhythm; Choose the decision you will work on",
+              "freePreview": true
+            },
+            "markdown": "Welcome to the cohort. For three weeks you will work through one product decision of your own, with a small group and two instructors.\n\n**Every week:** a live session on Tuesday, a working session on Thursday, and one assignment you share with your group by Sunday.\n\n**Before Tuesday:** pick the decision you want to work on. A good one is real, yours to make and due within the next quarter."
+          },
+          {
+            "slug": "the-strategy-stack",
+            "title": "Live session 1: the strategy stack",
+            "fields": {
+              "duration": 75,
+              "kind": "Video",
+              "objectives": "Describe strategy as a stack of choices; Write a \"will not do\" list"
+            },
+            "markdown": "The recording and slides from the first live session.\n\nStrategy is a stack of choices, each constraining the next: **where we play**, **how we win**, **what we will not do**. Most product teams skip the third, so every request looks equally important.\n\n**Discussion prompt:** what is one thing your team is doing now that a clear \"will not do\" would stop?"
+          },
+          {
+            "slug": "assignment-1",
+            "title": "Assignment: write your decision brief",
+            "fields": {
+              "duration": 45,
+              "kind": "Exercise",
+              "objectives": "Frame a decision as options; Define how you will judge it"
+            },
+            "markdown": "In one page, write:\n\n1. The decision, as a question with two or three real options.\n2. Who it affects, and how you will know it was right.\n3. What you will **not** do, whichever option you choose.\n\nShare it in your group's thread by Sunday. You will give feedback on two others in week 2."
+          }
+        ]
+      },
+      {
+        "slug": "week-2",
+        "name": "Week 2 · Gather evidence",
+        "description": "Just enough evidence to choose.",
+        "pages": [
+          {
+            "slug": "evidence-not-opinions",
+            "title": "Live session 2: evidence, not opinions",
+            "fields": {
+              "duration": 80,
+              "kind": "Video",
+              "objectives": "Plan five customer conversations; Set a result that would change your mind"
+            },
+            "markdown": "How to gather just enough evidence to choose between options — without a six-week research project.\n\n- Five customer conversations beat fifty survey responses for a new question.\n- Look for what people **did**, not what they say they would do.\n- Decide in advance what result would change your mind."
+          },
+          {
+            "slug": "working-session-2",
+            "title": "Working session: pressure-test a brief",
+            "fields": {
+              "duration": 60,
+              "kind": "Exercise",
+              "objectives": "Give structured feedback on a brief"
+            },
+            "markdown": "In pairs, read each other's brief and ask three questions:\n\n1. Which option would you choose today, and why?\n2. What evidence would make you choose differently?\n3. What is missing from the \"will not do\" list?\n\nWrite down the answers. They are the input to this week's assignment."
+          },
+          {
+            "slug": "assignment-2",
+            "title": "Assignment: your evidence plan",
+            "fields": {
+              "duration": 40,
+              "kind": "Exercise",
+              "objectives": "Write an evidence plan"
+            },
+            "markdown": "Turn the questions from the working session into a plan: who you will talk to, what you will ask, and the result that would change your mind. Keep it to half a page."
+          }
+        ]
+      },
+      {
+        "slug": "week-3",
+        "name": "Week 3 · Make the call",
+        "description": "Write it, present it, take questions.",
+        "pages": [
+          {
+            "slug": "the-narrative",
+            "title": "Live session 3: the narrative",
+            "fields": {
+              "duration": 75,
+              "kind": "Video",
+              "objectives": "Write a one-page decision narrative"
+            },
+            "markdown": "A decision nobody understands is a decision nobody follows. This session turns your brief into a one-page narrative: the situation, the choice, what it costs, and what happens next."
+          },
+          {
+            "slug": "demo-day",
+            "title": "Demo day",
+            "fields": {
+              "duration": 120,
+              "kind": "Video",
+              "objectives": "Present a decision and take questions"
+            },
+            "markdown": "Each person presents their decision in five minutes, followed by five minutes of questions from the group and the instructors. Bring the narrative and one slide at most."
+          },
+          {
+            "slug": "after-the-cohort",
+            "title": "After the cohort",
+            "fields": {
+              "duration": 5,
+              "kind": "Reading",
+              "objectives": "Keep using the materials after the cohort"
+            },
+            "markdown": "You keep access to every recording and the community after the cohort ends. Pass the final check to get your certificate, and add it to your profile."
+          }
+        ]
+      }
+    ],
+    "quizzes": [
+      {
+        "lesson": "the-strategy-stack",
+        "quiz": {
+          "title": "Check: the strategy stack",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "Which layer of the strategy stack do most product teams skip?",
+              "choices": [
+                "Where we play",
+                "How we win",
+                "What we will not do"
+              ],
+              "correctIndexes": [
+                2
+              ],
+              "explanation": "Without it, every request looks equally important."
+            }
+          ]
+        }
+      },
+      {
+        "module": "week-3",
+        "quiz": {
+          "title": "Final check",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "For a new question, which usually tells you more?",
+              "choices": [
+                "Five customer conversations",
+                "Fifty survey responses"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Conversations surface what people did; surveys mostly what they say."
+            },
+            {
+              "prompt": "When should you decide what result would change your mind?",
+              "choices": [
+                "Before gathering evidence",
+                "After seeing the results"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Deciding afterwards lets you explain away anything."
+            },
+            {
+              "prompt": "A decision narrative should cover…",
+              "choices": [
+                "The situation",
+                "The choice and what it costs",
+                "Every option ever considered"
+              ],
+              "correctIndexes": [
+                0,
+                1
+              ],
+              "explanation": "Keep it to one page: the situation, the choice, what it costs, what happens next."
+            }
+          ]
+        }
+      }
+    ],
+    "access": {
+      "drip": [
+        {
+          "module": "week-2",
+          "afterDays": 7
+        },
+        {
+          "module": "week-3",
+          "afterDays": 14
+        }
+      ]
+    },
+    "learning": {
+      "welcomeEmail": true,
+      "completionEmail": true,
+      "nudgeAfterDays": 5
+    }
+  }
+}

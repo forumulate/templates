@@ -1,0 +1,146 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Meadow",
+    "slug": "template-meadow",
+    "description": "A calm, editorial help centre: a serif headline over a landscape hero, a centred search, and three-up collection tiles with large icons.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "help-center",
+      "editorial",
+      "serif",
+      "template"
+    ],
+    "spaceTypes": [
+      "FAQ"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#2f4a35",
+    "accentColor": "#2f6f4e",
+    "palette": {
+      "ink": "#2a2a28",
+      "line": "#e6e2da",
+      "muted": "#6f6c66",
+      "heading": "#1c1c1a",
+      "surface": "#f7f5f0",
+      "background": "#fdfcf9",
+      "header_primary": "#1c1c1a",
+      "header_background": "#fdfcf9",
+      "footer_primary": "#6f6c66",
+      "footer_background": "#f7f5f0"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "headingFontFamily": "Newsreader",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": 48,
+          "weight": 500,
+          "tracking": -0.02
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "header": {
+        "border": "none",
+        "height": 64
+      }
+    },
+    "components": {
+      "radius": 14,
+      "input": {
+        "border": "#d9d4c8",
+        "radius": 12,
+        "background": "#ffffff"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#2f4a35"
+      },
+      "expandable": {
+        "border": "#e6e2da",
+        "pad": 16
+      }
+    },
+    "faq": {
+      "search": {
+        "placement": "hero",
+        "headline": "Advice and answers from the Your Brand team",
+        "placeholder": "Search for articles…",
+        "size": "lg",
+        "align": "center",
+        "shortcut": true,
+        "layers": [
+          {
+            "gradient": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "#00000000",
+                  "at": 40
+                },
+                {
+                  "color": "#1c1c1a66",
+                  "at": 100
+                }
+              ]
+            }
+          },
+          {
+            "image": "https://forumulate.com/api/assets/00000000-0000-4000-8000-000000000002",
+            "size": "cover",
+            "x": 50,
+            "y": 60
+          }
+        ],
+        "ink": "#ffffff",
+        "inkDark": "#ffffff",
+        "languages": true
+      },
+      "categories": {
+        "show": "always",
+        "layout": "tiles",
+        "columns": 3,
+        "icon": true,
+        "description": true,
+        "count": true
+      },
+      "featured": {
+        "show": "never"
+      },
+      "item": {
+        "style": "row",
+        "icon": "chevron",
+        "iconPosition": "end",
+        "feedback": "open-only"
+      },
+      "contact": {
+        "contact": true,
+        "community": true,
+        "docs": false,
+        "status": true
+      },
+      "follow": {
+        "sections": true
+      }
+    }
+  },
+  "components": []
+}

@@ -1,0 +1,351 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "reelhouse",
+  "type": "COURSES",
+  "name": "Reelhouse",
+  "description": "A dark, dense video course: a wide cover over a stats strip, the instructors with their companies, and the lessons as a timed table. Every lesson is a self-hosted video with chapters, a searchable transcript and a speed row.",
+  "modelledOn": "A video course platform for front-end engineers",
+  "features": [
+    "Preset: Video course — wide 21:9 cover over a stats strip (level, lessons, length, updated)",
+    "Instructors with portrait, role and company",
+    "Lessons as a timed table, numbered 1.1, 1.2 …",
+    "Self-hosted video lessons: chapters, open searchable transcript (WebVTT, also the captions), speed row, resume",
+    "A lesson completes once 90% has been watched",
+    "Dark only, Inter, dense type",
+    "Joins the \"Web Performance track\" learning path, listed in order under the landing",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "course",
+    "video",
+    "dark",
+    "developer",
+    "dense"
+  ],
+  "thumbnail": "/templates/reelhouse.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/cover.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/kenji.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/maren.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/lesson.mp4",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/poster.jpg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "video",
+    "frontDoor": {
+      "showProgress": true,
+      "showContinue": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [
+    {
+      "key": "kenji",
+      "name": "Kenji Ota",
+      "role": "Staff engineer, Northwind Labs",
+      "bio": "Kenji spends his days making large web apps fast on cheap phones.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+    },
+    {
+      "key": "maren",
+      "name": "Maren Lund",
+      "role": "Performance lead, Fathom",
+      "bio": "Maren built the field-data pipeline her team still uses to decide what to fix.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "hero"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outcomes"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outline"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "instructors"
+          }
+        },
+        {
+          "type": "spaceFeed",
+          "attrs": {
+            "source": "courses",
+            "path": "web-performance-track",
+            "layout": "rows",
+            "limit": 12,
+            "heading": {
+              "text": "The Web Performance track",
+              "subtitle": "This course is one stop on the path. Take them in order."
+            },
+            "emptyText": "More courses on this track are coming soon."
+          }
+        }
+      ]
+    },
+    "width": "board"
+  },
+  "course": {
+    "metadata": {
+      "subtitle": "Measure what real visitors feel, then make it fast — images, fonts, JavaScript and caching.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+      "coverAlt": "Two performance graphs falling over time behind a play button",
+      "level": "intermediate",
+      "outcomes": [
+        "Read Core Web Vitals and know the thresholds",
+        "Find long tasks in a performance trace",
+        "Fix slow images, fonts and scripts",
+        "Cache assets and pages correctly",
+        "Collect field data from real visitors"
+      ],
+      "prerequisites": [
+        {
+          "text": "You build websites with HTML, CSS and JavaScript"
+        }
+      ],
+      "instructors": [
+        "kenji",
+        "maren"
+      ],
+      "language": "en",
+      "ctaLabel": "Watch the course",
+      "showUpdated": true,
+      "topics": [
+        "Performance",
+        "JavaScript"
+      ]
+    },
+    "modules": [
+      {
+        "slug": "measure",
+        "name": "Measure",
+        "description": "What to measure, and how to read it.",
+        "pages": [
+          {
+            "slug": "introduction",
+            "title": "Introduction",
+            "fields": {
+              "duration": 4,
+              "kind": "Video",
+              "objectives": "Set up the exercise repository; Know what this course measures",
+              "freePreview": true
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 Welcome|0:08 What we will measure|0:16 Course setup\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQVdlbGNvbWUlMjB0byUyMHRoZSUyMGNvdXJzZS4lMjBJJTIwYW0lMjBnb2luZyUyMHRvJTIwc2hvdyUyMHlvdSUyMGhvdyUyMGZhc3QlMjBwYWdlcyUyMHJlYWxseSUyMGFyZS4lMEElMEEwMCUzQTAwJTNBMDQuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMDguMDAwJTBBTm90JTIwaG93JTIwZmFzdCUyMHRoZXklMjBmZWVsJTIwb24lMjB5b3VyJTIwbGFwdG9wJTJDJTIwYnV0JTIwb24lMjBhJTIwbWlkLXJhbmdlJTIwcGhvbmUuJTBBJTBBMDAlM0EwMCUzQTA4LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTEyLjAwMCUwQVdlJTIwd2lsbCUyMG1lYXN1cmUlMjBmaXJzdCUyQyUyMHRoZW4lMjBmaXglMjB0aGUlMjBiaWdnZXN0JTIwdGhpbmclMkMlMjB0aGVuJTIwbWVhc3VyZSUyMGFnYWluLiUwQSUwQTAwJTNBMDAlM0ExMi4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0ExNi4wMDAlMEFDbG9uZSUyMHRoZSUyMGNvdXJzZSUyMHJlcG9zaXRvcnklMjBhbmQlMjBvcGVuJTIwdGhlJTIwZmlyc3QlMjBleGVyY2lzZS4lMEElMEEwMCUzQTAwJTNBMTYuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMjAuMDAwJTBBUnVuJTIwdGhlJTIwZGV2JTIwc2VydmVyJTIwYW5kJTIwb3BlbiUyMHRoZSUyMHBlcmZvcm1hbmNlJTIwcGFuZWwuJTBBJTBBMDAlM0EwMCUzQTIwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTI0LjAwMCUwQVRoYXQlMjBpcyUyMGV2ZXJ5dGhpbmclMjB5b3UlMjBuZWVkLiUyMExldCUyMHVzJTIwc3RhcnQuJTBB\"}:::\n\n## Notes\n\n- Course repository: the `exercises/` folder holds one starting point per lesson.\n- Use a private window so extensions do not skew the numbers."
+          },
+          {
+            "slug": "core-web-vitals",
+            "title": "Core Web Vitals",
+            "fields": {
+              "duration": 11,
+              "kind": "Video",
+              "objectives": "Name the three Core Web Vitals; Know the good and poor thresholds",
+              "freePreview": true
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 Three numbers|0:08 Largest Contentful Paint|0:16 Layout shift and responsiveness\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQVRocmVlJTIwbnVtYmVycyUyMGRlc2NyaWJlJTIwaG93JTIwYSUyMHBhZ2UlMjBmZWVscyUyMHRvJTIwYSUyMHJlYWwlMjBwZXJzb24uJTBBJTBBMDAlM0EwMCUzQTA0LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA4LjAwMCUwQUxhcmdlc3QlMjBDb250ZW50ZnVsJTIwUGFpbnQlM0ElMjB3aGVuJTIwdGhlJTIwYmlnZ2VzdCUyMHRoaW5nJTIwYXBwZWFycy4lMEElMEEwMCUzQTAwJTNBMDguMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMTIuMDAwJTBBQ3VtdWxhdGl2ZSUyMExheW91dCUyMFNoaWZ0JTNBJTIwaG93JTIwbXVjaCUyMHRoZSUyMHBhZ2UlMjBqdW1wcyUyMHdoaWxlJTIwaXQlMjBsb2Fkcy4lMEElMEEwMCUzQTAwJTNBMTIuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMTYuMDAwJTBBSW50ZXJhY3Rpb24lMjB0byUyME5leHQlMjBQYWludCUzQSUyMGhvdyUyMHF1aWNrbHklMjBpdCUyMGFuc3dlcnMlMjBhJTIwdGFwLiUwQSUwQTAwJTNBMDAlM0ExNi4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0EyMC4wMDAlMEFFYWNoJTIwaGFzJTIwYSUyMHRocmVzaG9sZC4lMjBHb29kJTIwaXMlMjBncmVlbiUyQyUyMGFuZCUyMGdyZWVuJTIwaXMlMjB0aGUlMjBnb2FsLiUwQSUwQTAwJTNBMDAlM0EyMC4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0EyNC4wMDAlMEFJbiUyMHRoZSUyMG5leHQlMjBsZXNzb24lMjB3ZSUyMHJlYWQlMjB0aGVtJTIwZnJvbSUyMGElMjByZWFsJTIwdHJhY2UuJTBB\"}:::\n\n| Metric | Good | Poor |\n| --- | --- | --- |\n| LCP | under 2.5 s | over 4 s |\n| CLS | under 0.1 | over 0.25 |\n| INP | under 200 ms | over 500 ms |"
+          },
+          {
+            "slug": "reading-a-trace",
+            "title": "Reading a performance trace",
+            "fields": {
+              "duration": 14,
+              "kind": "Video",
+              "objectives": "Record a trace; Find the long tasks on the main thread"
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 Record|0:08 The main thread|0:16 Long tasks\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQUhpdCUyMHJlY29yZCUyQyUyMHJlbG9hZCUyQyUyMGFuZCUyMHN0b3AlMjBvbmNlJTIwdGhlJTIwcGFnZSUyMHNldHRsZXMuJTBBJTBBMDAlM0EwMCUzQTA0LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA4LjAwMCUwQVRoZSUyMG1haW4lMjB0aHJlYWQlMjBsYW5lJTIwaXMlMjB3aGVyZSUyMHRoZSUyMGJyb3dzZXIlMjBkb2VzJTIwaXRzJTIwd29yay4lMEElMEEwMCUzQTAwJTNBMDguMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMTIuMDAwJTBBQW55dGhpbmclMjBvdmVyJTIwZmlmdHklMjBtaWxsaXNlY29uZHMlMjBpcyUyMGElMjBsb25nJTIwdGFzayUyQyUyMGZsYWdnZWQlMjBpbiUyMHJlZC4lMEElMEEwMCUzQTAwJTNBMTIuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMTYuMDAwJTBBQ2xpY2slMjBvbmUlMjBhbmQlMjB0aGUlMjBib3R0b20lMjBwYW5lbCUyMG5hbWVzJTIwdGhlJTIwZnVuY3Rpb24lMjByZXNwb25zaWJsZS4lMEElMEEwMCUzQTAwJTNBMTYuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMjAuMDAwJTBBTW9zdCUyMHBhZ2VzJTIwaGF2ZSUyMHR3byUyMG9yJTIwdGhyZWUlMjBsb25nJTIwdGFza3MlMjB0aGF0JTIwbWF0dGVyLiUwQSUwQTAwJTNBMDAlM0EyMC4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0EyNC4wMDAlMEFGaW5kJTIwdGhlbSUyMGJlZm9yZSUyMHlvdSUyMGNoYW5nZSUyMGElMjBzaW5nbGUlMjBsaW5lLiUwQQ==\"}:::"
+          }
+        ]
+      },
+      {
+        "slug": "fix",
+        "name": "Fix",
+        "description": "Images, fonts and JavaScript.",
+        "pages": [
+          {
+            "slug": "images",
+            "title": "Images that load fast",
+            "fields": {
+              "duration": 12,
+              "kind": "Video",
+              "objectives": "Size images for their slot; Set width, height and priority"
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 The usual culprit|0:08 Sizes and formats|0:16 Priority hints\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQU9uJTIwbW9zdCUyMHBhZ2VzJTIwdGhlJTIwbGFyZ2VzdCUyMGVsZW1lbnQlMjBpcyUyMGElMjBwaWN0dXJlLiUwQSUwQTAwJTNBMDAlM0EwNC4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0EwOC4wMDAlMEFTZXJ2ZSUyMGl0JTIwYXQlMjB0aGUlMjBzaXplJTIwaXQlMjBpcyUyMHNob3duJTJDJTIwbm90JTIwdGhlJTIwc2l6ZSUyMGl0JTIwd2FzJTIwZXhwb3J0ZWQuJTBBJTBBMDAlM0EwMCUzQTA4LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTEyLjAwMCUwQU1vZGVybiUyMGZvcm1hdHMlMjBhcmUlMjBhJTIwdGhpcmQlMjBvZiUyMHRoZSUyMGJ5dGVzJTIwZm9yJTIwdGhlJTIwc2FtZSUyMHF1YWxpdHkuJTBBJTBBMDAlM0EwMCUzQTEyLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTE2LjAwMCUwQUdpdmUlMjB0aGUlMjBoZXJvJTIwaW1hZ2UlMjBhJTIwaGlnaCUyMGZldGNoJTIwcHJpb3JpdHkuJTBBJTBBMDAlM0EwMCUzQTE2LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTIwLjAwMCUwQUFuZCUyMGdpdmUlMjBldmVyeSUyMGltYWdlJTIwYSUyMHdpZHRoJTIwYW5kJTIwYSUyMGhlaWdodC4lMEElMEEwMCUzQTAwJTNBMjAuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMjQuMDAwJTBBVGhhdCUyMGFsb25lJTIwcmVtb3ZlcyUyMG1vc3QlMjBsYXlvdXQlMjBzaGlmdC4lMEE=\"}:::"
+          },
+          {
+            "slug": "fonts",
+            "title": "Fonts without the flash",
+            "fields": {
+              "duration": 9,
+              "kind": "Video",
+              "objectives": "Self-host a web font; Match fallback metrics"
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 Why text jumps|0:08 Self-hosting|0:16 Fallback metrics\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQVRleHQlMjBqdW1wcyUyMHdoZW4lMjB0aGUlMjB3ZWIlMjBmb250JTIwc3dhcHMlMjBpbiUyMHdpdGglMjBkaWZmZXJlbnQlMjBtZXRyaWNzLiUwQSUwQTAwJTNBMDAlM0EwNC4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0EwOC4wMDAlMEFIb3N0JTIweW91ciUyMGZvbnRzJTIweW91cnNlbGYlMkMlMjBvbiUyMHRoZSUyMHNhbWUlMjBvcmlnaW4lMjBhcyUyMHRoZSUyMHBhZ2UuJTBBJTBBMDAlM0EwMCUzQTA4LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTEyLjAwMCUwQVRoYXQlMjBzYXZlcyUyMGElMjBjb25uZWN0aW9uJTIwYW5kJTIwa2VlcHMlMjB5b3VyJTIwdmlzaXRvcnMlMjB0byUyMHlvdXJzZWxmLiUwQSUwQTAwJTNBMDAlM0ExMi4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0ExNi4wMDAlMEFUaGVuJTIwdHVuZSUyMHRoZSUyMGZhbGxiYWNrJTIwZm9udCUyMHNvJTIwaXQlMjB0YWtlcyUyMHRoZSUyMHNhbWUlMjBzcGFjZS4lMEElMEEwMCUzQTAwJTNBMTYuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMjAuMDAwJTBBVGhlJTIwc3dhcCUyMHN0aWxsJTIwaGFwcGVucyUyQyUyMGJ1dCUyMG5vdGhpbmclMjBtb3Zlcy4lMEElMEEwMCUzQTAwJTNBMjAuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMjQuMDAwJTBBTWVhc3VyZSUyMHRoZSUyMHNoaWZ0JTIwYWdhaW4lMjB0byUyMHByb3ZlJTIwaXQuJTBB\"}:::"
+          },
+          {
+            "slug": "javascript-cost",
+            "title": "The cost of JavaScript",
+            "fields": {
+              "duration": 15,
+              "kind": "Video",
+              "objectives": "Split a bundle by route; Break up a long task"
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 Bytes are not equal|0:08 Code splitting|0:16 Yielding to the browser\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQUElMjBraWxvYnl0ZSUyMG9mJTIwc2NyaXB0JTIwY29zdHMlMjBmYXIlMjBtb3JlJTIwdGhhbiUyMGElMjBraWxvYnl0ZSUyMG9mJTIwaW1hZ2UuJTBBJTBBMDAlM0EwMCUzQTA0LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA4LjAwMCUwQUl0JTIwaGFzJTIwdG8lMjBiZSUyMGRvd25sb2FkZWQlMkMlMjBwYXJzZWQlMkMlMjBjb21waWxlZCUyMGFuZCUyMHJ1bi4lMEElMEEwMCUzQTAwJTNBMDguMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMTIuMDAwJTBBU3BsaXQlMjB0aGUlMjBjb2RlJTIwc28lMjBlYWNoJTIwcGFnZSUyMGxvYWRzJTIwb25seSUyMHdoYXQlMjBpdCUyMHVzZXMuJTBBJTBBMDAlM0EwMCUzQTEyLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTE2LjAwMCUwQUJyZWFrJTIwbG9uZyUyMHdvcmslMjBpbnRvJTIwY2h1bmtzJTIwYW5kJTIweWllbGQlMjBiZXR3ZWVuJTIwdGhlbS4lMEElMEEwMCUzQTAwJTNBMTYuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMjAuMDAwJTBBUmVzcG9uc2l2ZW5lc3MlMjBpbXByb3ZlcyUyMHRoZSUyMG1vbWVudCUyMHRoZSUyMG1haW4lMjB0aHJlYWQlMjBpcyUyMGZyZWUuJTBBJTBBMDAlM0EwMCUzQTIwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTI0LjAwMCUwQUxldCUyMHVzJTIwY2hlY2slMjB0aGUlMjB0cmFjZSUyMGZyb20lMjBsZXNzb24lMjB0aHJlZSUyMGFnYWluLiUwQQ==\"}:::"
+          }
+        ]
+      },
+      {
+        "slug": "keep-it-fast",
+        "name": "Keep it fast",
+        "description": "Caching, field data and a release checklist.",
+        "pages": [
+          {
+            "slug": "caching",
+            "title": "Caching and the network",
+            "fields": {
+              "duration": 13,
+              "kind": "Video",
+              "objectives": "Set cache headers for assets and pages"
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 The fastest request|0:08 Cache headers|0:16 Stale while revalidate\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQVRoZSUyMGZhc3Rlc3QlMjByZXF1ZXN0JTIwaXMlMjB0aGUlMjBvbmUlMjB5b3UlMjBuZXZlciUyMG1ha2UuJTBBJTBBMDAlM0EwMCUzQTA0LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA4LjAwMCUwQUZpbmdlcnByaW50ZWQlMjBmaWxlcyUyMGNhbiUyMGJlJTIwY2FjaGVkJTIwZm9yJTIwYSUyMHllYXIuJTBBJTBBMDAlM0EwMCUzQTA4LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTEyLjAwMCUwQVBhZ2VzJTIwbmVlZCUyMHNob3J0ZXIlMjBsaWZldGltZXMlMjBhbmQlMjByZXZhbGlkYXRpb24uJTBBJTBBMDAlM0EwMCUzQTEyLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTE2LjAwMCUwQVN0YWxlJTIwd2hpbGUlMjByZXZhbGlkYXRlJTIwc2VydmVzJTIwdGhlJTIwb2xkJTIwY29weSUyMGluc3RhbnRseSUyMGFuZCUyMHJlZnJlc2hlcyUyMGl0JTIwYmVoaW5kLiUwQSUwQTAwJTNBMDAlM0ExNi4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0EyMC4wMDAlMEFDaGVjayUyMHRoZSUyMG5ldHdvcmslMjBwYW5lbCUyMGZvciUyMHdoYXQlMjBjb21lcyUyMGZyb20lMjB0aGUlMjBjYWNoZS4lMEElMEEwMCUzQTAwJTNBMjAuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMjQuMDAwJTBBVGhlbiUyMHRocm90dGxlJTIwdGhlJTIwY29ubmVjdGlvbiUyMGFuZCUyMGxvb2slMjBhZ2Fpbi4lMEE=\"}:::"
+          },
+          {
+            "slug": "measuring-in-the-field",
+            "title": "Measuring in the field",
+            "fields": {
+              "duration": 10,
+              "kind": "Video",
+              "objectives": "Collect Core Web Vitals from real visitors; Read the 75th percentile"
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 Lab versus field|0:08 Collecting vitals|0:16 Percentiles\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQVlvdXIlMjBsYXB0b3AlMjBpcyUyMHRoZSUyMGxhYi4lMjBZb3VyJTIwdmlzaXRvcnMlMjBhcmUlMjB0aGUlMjBmaWVsZC4lMEElMEEwMCUzQTAwJTNBMDQuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMDguMDAwJTBBQ29sbGVjdCUyMHRoZSUyMHZpdGFscyUyMGZyb20lMjByZWFsJTIwc2Vzc2lvbnMlMjB3aXRoJTIwYSUyMGZldyUyMGxpbmVzJTIwb2YlMjBzY3JpcHQuJTBBJTBBMDAlM0EwMCUzQTA4LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTEyLjAwMCUwQVNlbmQlMjB0aGVtJTIwdG8lMjB5b3VyJTIwb3duJTIwZW5kcG9pbnQlMkMlMjBub3QlMjB0byUyMGElMjB0aGlyZCUyMHBhcnR5LiUwQSUwQTAwJTNBMDAlM0ExMi4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0ExNi4wMDAlMEFMb29rJTIwYXQlMjB0aGUlMjBzZXZlbnR5LWZpZnRoJTIwcGVyY2VudGlsZSUyQyUyMG5vdCUyMHRoZSUyMGF2ZXJhZ2UuJTBBJTBBMDAlM0EwMCUzQTE2LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTIwLjAwMCUwQVRoYXQlMjBpcyUyMHRoZSUyMHZpc2l0b3IlMjBoYXZpbmclMjBhJTIwbm9ybWFsJTIwYmFkJTIwZGF5LiUwQSUwQTAwJTNBMDAlM0EyMC4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0EyNC4wMDAlMEFGaXglMjBmb3IlMjB0aGVtJTJDJTIwYW5kJTIwZXZlcnlvbmUlMjBlbHNlJTIwaXMlMjBmaW5lLiUwQQ==\"}:::"
+          },
+          {
+            "slug": "wrapping-up",
+            "title": "Wrapping up",
+            "fields": {
+              "duration": 5,
+              "kind": "Video",
+              "objectives": "Apply the release checklist"
+            },
+            "markdown": ":::video{src=\"/api/assets/00000000-0000-4000-8000-000000000005\" poster=\"/api/assets/00000000-0000-4000-8000-000000000006\" ratio=\"16:9\" chapters=\"0:00 What we fixed|0:08 A checklist|0:16 Where next\" transcript=\"V0VCVlRUJTBBJTBBMDAlM0EwMCUzQTAwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTA0LjAwMCUwQVdlJTIwbWVhc3VyZWQlMjBmaXJzdCUyQyUyMGZpeGVkJTIwdGhlJTIwYmlnZ2VzdCUyMHRoaW5nJTIwYW5kJTIwbWVhc3VyZWQlMjBhZ2Fpbi4lMEElMEEwMCUzQTAwJTNBMDQuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMDguMDAwJTBBSW1hZ2VzJTJDJTIwZm9udHMlMkMlMjBzY3JpcHQlMjBhbmQlMjBjYWNoaW5nJTIwY292ZXIlMjBtb3N0JTIwc2xvdyUyMHBhZ2VzLiUwQSUwQTAwJTNBMDAlM0EwOC4wMDAlMjAtLSUzRSUyMDAwJTNBMDAlM0ExMi4wMDAlMEFLZWVwJTIwdGhlJTIwY2hlY2tsaXN0JTIwZnJvbSUyMHRoZSUyMG5vdGVzJTIwbmV4dCUyMHRvJTIweW91ciUyMGVkaXRvci4lMEElMEEwMCUzQTAwJTNBMTIuMDAwJTIwLS0lM0UlMjAwMCUzQTAwJTNBMTYuMDAwJTBBUnVuJTIwaXQlMjBiZWZvcmUlMjBldmVyeSUyMHJlbGVhc2UuJTBBJTBBMDAlM0EwMCUzQTE2LjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTIwLjAwMCUwQVRha2UlMjB0aGUlMjBmaW5hbCUyMHF1aXolMjBmb3IlMjB5b3VyJTIwY2VydGlmaWNhdGUuJTBBJTBBMDAlM0EwMCUzQTIwLjAwMCUyMC0tJTNFJTIwMDAlM0EwMCUzQTI0LjAwMCUwQVRoYW5rcyUyMGZvciUyMHdhdGNoaW5nLiUwQQ==\"}:::\n\n## Checklist\n\n1. Hero image sized, modern format, high priority.\n2. Every image and embed has dimensions.\n3. Fonts self-hosted with tuned fallbacks.\n4. No long task over 200 ms on a mid-range phone.\n5. Assets cached for a year; pages revalidated."
+          }
+        ]
+      }
+    ],
+    "quizzes": [
+      {
+        "lesson": "core-web-vitals",
+        "quiz": {
+          "title": "Core Web Vitals",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "Which metric measures how much the page jumps while it loads?",
+              "choices": [
+                "LCP",
+                "CLS",
+                "INP"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Cumulative Layout Shift."
+            },
+            {
+              "prompt": "What is a good Largest Contentful Paint?",
+              "choices": [
+                "Under 2.5 seconds",
+                "Under 6 seconds",
+                "Under 10 seconds"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Above 4 seconds is poor."
+            }
+          ]
+        }
+      },
+      {
+        "module": "keep-it-fast",
+        "quiz": {
+          "title": "Final quiz",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "A long task is anything on the main thread longer than…",
+              "choices": [
+                "5 ms",
+                "50 ms",
+                "500 ms"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Fifty milliseconds is where a tap starts to feel late."
+            },
+            {
+              "prompt": "Which percentile should you fix for?",
+              "choices": [
+                "The average",
+                "The 75th percentile",
+                "The fastest visitor"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "The 75th percentile is a normal bad day."
+            },
+            {
+              "prompt": "Which files can be cached for a year?",
+              "choices": [
+                "Fingerprinted assets",
+                "HTML pages",
+                "API responses"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "A new version gets a new file name, so the old cache never goes stale."
+            }
+          ]
+        }
+      }
+    ],
+    "quizPolicy": {
+      "reveal": "pass",
+      "maxAttempts": 3
+    },
+    "paths": [
+      {
+        "slug": "web-performance-track",
+        "title": "The Web Performance track",
+        "description": "Measure, then make it fast: every Your Brand performance course in the order we teach them.",
+        "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+        "published": true
+      }
+    ]
+  }
+}

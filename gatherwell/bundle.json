@@ -1,0 +1,144 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Gatherwell",
+    "slug": "template-gatherwell",
+    "description": "A local group’s home: a warm banner, what the group is about, its numbers and its organizers, then the meetups as rows with seats left and who is going. Each event opens on a wide picture with the place, a map card and a sticky RSVP bar on phones.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "events",
+      "local-group",
+      "meetups",
+      "warm",
+      "template"
+    ],
+    "spaceTypes": [
+      "EVENTS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#d9482b",
+    "accentColor": "#f2a03d",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap",
+    "customFontFamily": "Nunito Sans",
+    "palette": {
+      "background": "#fffaf4",
+      "surface": "#ffffff",
+      "ink": "#3a2f28",
+      "heading": "#1f1712",
+      "muted": "#7d6e63",
+      "line": "#efe2d5",
+      "header_background": "#ffffff",
+      "header_primary": "#1f1712",
+      "footer_background": "#2a1f19",
+      "footer_primary": "#e9d9cb",
+      "success": "#3f8f5a",
+      "warning": "#d99a2b",
+      "danger": "#c0392b",
+      "info": "#4f79b8"
+    },
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 34,
+            "sm": 26
+          },
+          "weight": 800,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 24,
+          "weight": 800,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 10,
+      "button": {
+        "background": "#d9482b",
+        "ink": "#ffffff",
+        "radius": 10,
+        "weight": "bold"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 68,
+        "border": "line"
+      },
+      "showSignIn": true,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "events": {
+      "list": {
+        "layout": "rows",
+        "group": {
+          "by": "month",
+          "style": "eyebrow"
+        },
+        "pastMode": "link",
+        "dateTile": "outline",
+        "cover": "thumb-left",
+        "coverAspect": "16:9",
+        "showHosts": true,
+        "showAttendees": true,
+        "showCapacity": true,
+        "showLocation": true,
+        "density": "cozy"
+      },
+      "page": {
+        "layout": "hero-wide",
+        "registerCard": "sticky-bottom-mobile",
+        "phoneBar": true,
+        "cover": {
+          "aspect": "2:1",
+          "radius": 12
+        },
+        "facts": {
+          "look": "list"
+        },
+        "showMap": true,
+        "map": {
+          "style": "card",
+          "aspect": "2:1",
+          "linkTo": "google"
+        },
+        "showAttendees": true,
+        "showRelated": true,
+        "relatedCount": 3
+      },
+      "chips": {
+        "style": "outline"
+      },
+      "tones": {
+        "full": {
+          "tone": "danger"
+        },
+        "live": {
+          "tone": "success"
+        }
+      },
+      "dateTileTone": {
+        "color": "#d9482b"
+      }
+    }
+  },
+  "components": []
+}

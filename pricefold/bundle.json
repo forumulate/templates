@@ -1,0 +1,119 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Pricefold",
+    "slug": "template-pricefold",
+    "description": "The pricing-page FAQ: heading, intro and contact on the left, a single-open accordion with plus icons and muted answers on the right, in a dark scheme.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "pricing",
+      "accordion",
+      "minimal",
+      "template"
+    ],
+    "spaceTypes": [
+      "FAQ"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "primaryColor": "#f2f2f2",
+    "accentColor": "#8a8fff",
+    "palette": {
+      "ink": "#d4d4d8",
+      "line": "#26262b",
+      "muted": "#8b8b94",
+      "heading": "#f7f7f8",
+      "surface": "#111113",
+      "background": "#08080a",
+      "header_primary": "#f7f7f8",
+      "header_background": "#08080a",
+      "footer_primary": "#8b8b94",
+      "footer_background": "#08080a"
+    },
+    "paletteDark": {
+      "ink": "#d4d4d8",
+      "line": "#26262b",
+      "muted": "#8b8b94",
+      "heading": "#f7f7f8",
+      "surface": "#111113",
+      "background": "#08080a",
+      "header_primary": "#f7f7f8",
+      "header_background": "#08080a",
+      "footer_primary": "#8b8b94",
+      "footer_background": "#08080a"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Geist",
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": 32,
+          "weight": 600,
+          "tracking": -0.025
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": 60,
+        "borderColor": "#26262b"
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "ink": "#08080a",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#f2f2f2"
+      },
+      "expandable": {
+        "border": "#26262b",
+        "borderDark": "#26262b",
+        "pad": 18
+      }
+    },
+    "faq": {
+      "search": {
+        "placement": "none"
+      },
+      "categories": {
+        "show": "never"
+      },
+      "featured": {
+        "show": "never"
+      },
+      "item": {
+        "style": "row",
+        "icon": "plus",
+        "iconPosition": "end",
+        "answerInk": "muted",
+        "questionSize": 17,
+        "questionWeight": 500,
+        "singleOpen": true,
+        "feedback": "off"
+      },
+      "contact": {
+        "contact": true,
+        "community": false,
+        "docs": false,
+        "status": false,
+        "heading": "Still have questions?"
+      }
+    }
+  },
+  "components": []
+}

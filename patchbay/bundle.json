@@ -1,0 +1,130 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Patchbay",
+    "slug": "template-patchbay",
+    "description": "A plain-spoken support page: big title and lede, contact cards first, then the common issues as ruled rows with muted answers, all open. Dark.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "support",
+      "minimal",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "FAQ"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "primaryColor": "#3ddc97",
+    "accentColor": "#3ddc97",
+    "palette": {
+      "ink": "#c9d1cf",
+      "line": "#1f2a28",
+      "muted": "#7e8a87",
+      "heading": "#f2f5f4",
+      "surface": "#0f1514",
+      "background": "#0a0e0d",
+      "header_primary": "#f2f5f4",
+      "header_background": "#0a0e0d",
+      "footer_primary": "#7e8a87",
+      "footer_background": "#0a0e0d"
+    },
+    "paletteDark": {
+      "ink": "#c9d1cf",
+      "line": "#1f2a28",
+      "muted": "#7e8a87",
+      "heading": "#f2f5f4",
+      "surface": "#0f1514",
+      "background": "#0a0e0d",
+      "header_primary": "#f2f5f4",
+      "header_background": "#0a0e0d",
+      "footer_primary": "#7e8a87",
+      "footer_background": "#0a0e0d"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": 44,
+          "weight": 650,
+          "tracking": -0.025
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": 64,
+        "borderColor": "#1f2a28"
+      }
+    },
+    "components": {
+      "radius": 12,
+      "input": {
+        "border": "#24302e",
+        "radius": 10,
+        "background": "#0f1514"
+      },
+      "button": {
+        "ink": "#0a0e0d",
+        "radius": 10,
+        "weight": "semibold",
+        "background": "#3ddc97"
+      },
+      "expandable": {
+        "border": "#1f2a28",
+        "borderDark": "#1f2a28",
+        "pad": 18
+      }
+    },
+    "faq": {
+      "search": {
+        "placement": "hero",
+        "headline": "Support",
+        "lede": "Answers to the questions we hear most. If yours is not here, write to us — a person replies within one business day.",
+        "placeholder": "Search common issues…",
+        "size": "md",
+        "align": "start",
+        "shortcut": false
+      },
+      "categories": {
+        "show": "never"
+      },
+      "featured": {
+        "show": "never"
+      },
+      "item": {
+        "style": "row",
+        "icon": "none",
+        "answerInk": "muted",
+        "questionSize": 18,
+        "questionWeight": 600,
+        "gap": 4,
+        "feedback": "off"
+      },
+      "contact": {
+        "contact": true,
+        "community": false,
+        "docs": true,
+        "status": true,
+        "email": "support@example.com",
+        "heading": "Get in touch"
+      }
+    }
+  },
+  "components": []
+}

@@ -1,0 +1,457 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "fernway",
+  "type": "ROADMAP",
+  "name": "Fernway",
+  "description": "A product roadmap in four open columns — Planned, Next up, In progress, Done — each with its own mark and a one-line description, raised rounded cards with a vote pill in the corner, and a light or dark look that follows the reader.",
+  "modelledOn": "A product-feedback platform’s roadmap",
+  "features": [
+    "Preset: board — four plain columns, each head a mark, a name, a count and one line on what the lane means",
+    "A board-added status, “Next up”, between Planned and In progress (RM-4 custom statuses)",
+    "Raised 12px cards: tag eyebrow, two-line excerpt, author and comments in the footer, vote pill in the top corner",
+    "Tabs for Trending / Top / New, tags and search; phones swipe between lanes",
+    "Item page: Follow, vote and voters (faces) in a side rail, facts, share and copy actions",
+    "Follows the reader’s light or dark setting; Inter; soft shadows",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "dark",
+    "feedback",
+    "cards"
+  ],
+  "thumbnail": "/templates/fernway.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "board",
+    "frontDoor": {
+      "badgeStyle": "pill"
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "integrations",
+      "label": "Integrations",
+      "color": "#ecfeff",
+      "textColor": "#0e7490",
+      "colorDark": "#083344",
+      "textColorDark": "#67e8f9"
+    },
+    {
+      "slug": "reporting",
+      "label": "Reporting",
+      "color": "#eef2ff",
+      "textColor": "#4338ca",
+      "colorDark": "#1e1b4b",
+      "textColorDark": "#a5b4fc"
+    },
+    {
+      "slug": "admin",
+      "label": "Admin",
+      "color": "#faf5ff",
+      "textColor": "#7e22ce",
+      "colorDark": "#3b0764",
+      "textColorDark": "#d8b4fe"
+    },
+    {
+      "slug": "security",
+      "label": "Security",
+      "color": "#fff1f2",
+      "textColor": "#be123c",
+      "colorDark": "#4c0519",
+      "textColorDark": "#fda4af"
+    },
+    {
+      "slug": "mobile",
+      "label": "Mobile",
+      "color": "#fffbeb",
+      "textColor": "#b45309",
+      "colorDark": "#451a03",
+      "textColorDark": "#fcd34d"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning",
+      "color": "#f0fdf4",
+      "textColor": "#15803d",
+      "colorDark": "#052e16",
+      "textColorDark": "#86efac"
+    },
+    {
+      "slug": "interface",
+      "label": "Interface",
+      "color": "#f8fafc",
+      "textColor": "#475569",
+      "colorDark": "#1e293b",
+      "textColorDark": "#cbd5e1"
+    },
+    {
+      "slug": "views",
+      "label": "Views",
+      "color": "#f0f9ff",
+      "textColor": "#0369a1",
+      "colorDark": "#082f49",
+      "textColorDark": "#7dd3fc"
+    },
+    {
+      "slug": "api",
+      "label": "API",
+      "color": "#fafaf9",
+      "textColor": "#57534e",
+      "colorDark": "#292524",
+      "textColorDark": "#d6d3d1"
+    }
+  ],
+  "authors": [
+    {
+      "key": "maya",
+      "name": "Maya Lindqvist",
+      "role": "Operations lead"
+    },
+    {
+      "key": "devon",
+      "name": "Devon Achebe",
+      "role": "Engineering manager"
+    },
+    {
+      "key": "priya",
+      "name": "Priya Raman",
+      "role": "Customer success"
+    },
+    {
+      "key": "tomas",
+      "name": "Tomás Herrera",
+      "role": "Agency founder"
+    },
+    {
+      "key": "ines",
+      "name": "Inês Duarte",
+      "role": "Data analyst"
+    },
+    {
+      "key": "team",
+      "name": "Sam Okafor",
+      "role": "Product, Your Brand"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "roadmap": {
+      "statuses": [
+        {
+          "key": "NEXT_UP",
+          "label": "Next up",
+          "description": "Starting in the next few weeks",
+          "tone": {
+            "color": "#0ea5e9",
+            "colorDark": "#38bdf8"
+          },
+          "glyph": "dot"
+        }
+      ],
+      "statusLabels": {
+        "PLANNED": "Planned",
+        "IN_PROGRESS": "In progress",
+        "SHIPPED": "Done"
+      },
+      "statusOrder": [
+        "PLANNED",
+        "NEXT_UP",
+        "IN_PROGRESS",
+        "SHIPPED",
+        "SUBMITTED",
+        "DECLINED"
+      ],
+      "hiddenStatuses": [
+        "SUBMITTED",
+        "DECLINED"
+      ]
+    }
+  },
+  "roadmap": {
+    "categories": [],
+    "items": [
+      {
+        "slug": "gantt-view",
+        "title": "Timeline (Gantt) view",
+        "status": "PLANNED",
+        "tags": [
+          "planning",
+          "views"
+        ],
+        "author": "tomas",
+        "daysAgo": 30,
+        "fields": {
+          "theme": "Planning",
+          "effort": "Large",
+          "target": "Q4"
+        },
+        "sections": {
+          "problem": "We plan launches across several teams and cannot see how the pieces line up in time.",
+          "proposal": "A timeline view of items with start and due dates, dependencies drawn as arrows, drag to reschedule."
+        },
+        "comments": [
+          {
+            "author": "tomas",
+            "hoursAfter": 9,
+            "markdown": "Dependencies are the part we need most — the bars alone we can fake with a spreadsheet."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 96,
+          "markdown": "Committed. Dependencies come first; the bars follow."
+        }
+      },
+      {
+        "slug": "audit-log",
+        "title": "Audit log for admins",
+        "status": "PLANNED",
+        "tags": [
+          "admin",
+          "security"
+        ],
+        "author": "devon",
+        "daysAgo": 26,
+        "fields": {
+          "theme": "Admin",
+          "effort": "Medium",
+          "target": "Q4"
+        },
+        "sections": {
+          "problem": "When a setting changes, nobody can say who changed it or when. Our auditors ask for this every year.",
+          "proposal": "A searchable log of admin actions — who, what, when, from where — exportable for a date range."
+        },
+        "comments": [
+          {
+            "author": "devon",
+            "hoursAfter": 16,
+            "markdown": "Retention of at least a year would cover our SOC 2 window."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 60,
+          "markdown": "On the plan for later this year."
+        }
+      },
+      {
+        "slug": "mobile-offline",
+        "title": "Offline mode in the mobile app",
+        "status": "PLANNED",
+        "tags": [
+          "mobile"
+        ],
+        "author": "tomas",
+        "daysAgo": 44,
+        "fields": {
+          "theme": "Mobile",
+          "effort": "Large",
+          "target": "Q1 2027"
+        },
+        "sections": {
+          "problem": "Our field team visits sites with no signal. The app shows a spinner and they lose what they typed.",
+          "proposal": "Keep recent items on the device, let people edit offline, and sync when the connection comes back — with a clear note when something conflicts."
+        },
+        "comments": [
+          {
+            "author": "tomas",
+            "hoursAfter": 30,
+            "markdown": "Even read-only offline would already help most of our crews."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 200,
+          "markdown": "Planned, starting with read-only offline as suggested, then offline edits."
+        }
+      },
+      {
+        "slug": "recurring-tasks",
+        "title": "Recurring tasks",
+        "status": "NEXT_UP",
+        "tags": [
+          "planning"
+        ],
+        "author": "maya",
+        "daysAgo": 18,
+        "fields": {
+          "theme": "Planning",
+          "effort": "Medium",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Weekly reviews and monthly invoicing are the same task every time. We recreate them by hand and sometimes forget.",
+          "proposal": "Repeat a task daily, weekly, monthly or on a custom rule. The next one is created when the current one is done."
+        },
+        "comments": [
+          {
+            "author": "maya",
+            "hoursAfter": 4,
+            "markdown": "Please support \"last working day of the month\" — that is when our payroll runs."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 40,
+          "markdown": "Next up. Custom rules will include “last working day of the month”."
+        }
+      },
+      {
+        "slug": "csv-export",
+        "title": "Export any report to CSV",
+        "status": "NEXT_UP",
+        "tags": [
+          "reporting"
+        ],
+        "author": "ines",
+        "daysAgo": 22,
+        "fields": {
+          "theme": "Reporting",
+          "effort": "Small",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Finance needs our numbers in a spreadsheet every month. Today someone copies tables by hand, and it is easy to miss a row.",
+          "proposal": "An Export button on every report that downloads exactly what is on screen, filters included."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 30,
+          "markdown": "Next up — design is done."
+        }
+      },
+      {
+        "slug": "dark-mode",
+        "title": "Dark mode",
+        "status": "IN_PROGRESS",
+        "tags": [
+          "interface"
+        ],
+        "author": "ines",
+        "daysAgo": 61,
+        "fields": {
+          "theme": "Interface",
+          "effort": "Medium",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Many of us work late or in dim rooms, and the bright white canvas is tiring after a few hours. The browser extensions that force a dark theme break the charts and the editor.",
+          "proposal": "A dark scheme that follows the system setting, with a manual switch in your profile. Charts and the editor get their own dark palette rather than an inverted one."
+        },
+        "comments": [
+          {
+            "author": "ines",
+            "hoursAfter": 5,
+            "markdown": "Please make sure the chart colours are designed for dark, not just inverted. Inverted reds and greens are unreadable."
+          },
+          {
+            "author": "team",
+            "hoursAfter": 30,
+            "markdown": "Agreed — the charts get their own palette. We are testing it with a few colour-blind users first.",
+            "replyTo": 0
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 150,
+          "markdown": "Actively being built. Charts get their own dark palette."
+        },
+        "item": {
+          "featured": true
+        }
+      },
+      {
+        "slug": "slack-alerts",
+        "title": "Send alerts to a Slack channel",
+        "status": "IN_PROGRESS",
+        "tags": [
+          "integrations"
+        ],
+        "author": "devon",
+        "daysAgo": 47,
+        "fields": {
+          "theme": "Integrations",
+          "effort": "Small",
+          "target": "Q3"
+        },
+        "sections": {
+          "problem": "Our team lives in Slack. Email alerts get buried, so we find out about a failed sync hours later.",
+          "proposal": "Pick a channel per workspace, choose which events post there, and link each message back to the item."
+        },
+        "comments": [
+          {
+            "author": "devon",
+            "hoursAfter": 8,
+            "markdown": "Being able to pick events per channel would matter for us — #ops wants failures, #general does not."
+          }
+        ],
+        "response": {
+          "author": "team",
+          "hoursAfter": 90,
+          "markdown": "In progress — in beta with a handful of workspaces."
+        }
+      },
+      {
+        "slug": "two-factor",
+        "title": "Two-factor authentication",
+        "status": "SHIPPED",
+        "tags": [
+          "security"
+        ],
+        "author": "maya",
+        "daysAgo": 75,
+        "fields": {
+          "theme": "Admin",
+          "effort": "Small",
+          "target": "Q2"
+        },
+        "sections": {
+          "problem": "Accounts protected by a password alone are the first thing our security review flags.",
+          "proposal": "Authenticator-app codes and passkeys, with recovery codes and an admin switch to require it."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 300,
+          "markdown": "Done: authenticator apps and passkeys are live for everyone, with an admin switch to require them."
+        }
+      },
+      {
+        "slug": "saved-filters",
+        "title": "Saved filters",
+        "status": "SHIPPED",
+        "tags": [
+          "views"
+        ],
+        "author": "priya",
+        "daysAgo": 90,
+        "fields": {
+          "theme": "Interface",
+          "effort": "Small",
+          "target": "Q2"
+        },
+        "sections": {
+          "problem": "I rebuild the same three filters every morning.",
+          "proposal": "Save a filter with a name, pin it to the sidebar, and share it with the team."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 400,
+          "markdown": "Shipped. Pin a saved filter to your sidebar or share it with the team."
+        }
+      }
+    ]
+  }
+}

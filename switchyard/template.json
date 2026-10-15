@@ -1,0 +1,492 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "switchyard",
+  "type": "STATUS",
+  "name": "Switchyard",
+  "description": "An observability dashboard: pill tabs, a big centred headline with the time it was last checked, a card per group with its uptime, response-time charts under the bars, and a system-metrics panel with a Day / Week / Month switch.",
+  "modelledOn": "An observability vendor’s status page",
+  "features": [
+    "Pill tabs for Status, History, Uptime and Maintenance",
+    "A big centred headline with the time it was last checked",
+    "A card per group with its component count and uptime",
+    "Response-time charts under each checked component's bars",
+    "A system-metrics panel with a Day / Week / Month switch, seeded with clearly labelled sample series",
+    "Ribbon bars with three-decimal uptime"
+  ],
+  "tags": [
+    "status",
+    "dashboard",
+    "charts",
+    "metrics"
+  ],
+  "thumbnail": "/templates/switchyard.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/sw-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "intro"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "metrics",
+            "metrics": [
+              "ingest-latency",
+              "query-p95",
+              "alert-delivery"
+            ]
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        }
+      ]
+    },
+    "width": 960
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "ingest",
+        "name": "Ingestion",
+        "description": "Getting your logs, metrics and traces in."
+      },
+      {
+        "key": "query",
+        "name": "Query and dashboards",
+        "description": "Searching, charting and sharing what came in."
+      },
+      {
+        "key": "alerting",
+        "name": "Alerting and on-call",
+        "description": "Telling the right person, fast."
+      },
+      {
+        "key": "platform",
+        "name": "Platform",
+        "description": "Signing in, the API and the website."
+      }
+    ],
+    "components": [
+      {
+        "key": "log-ingest",
+        "monitor": {
+          "name": "Log ingestion",
+          "kind": "manual",
+          "description": "HTTP, syslog and agent shipping."
+        },
+        "startsDaysAgo": 120,
+        "group": "ingest"
+      },
+      {
+        "key": "metric-ingest",
+        "monitor": {
+          "name": "Metric ingestion",
+          "kind": "manual",
+          "description": "Prometheus remote write and OpenTelemetry."
+        },
+        "startsDaysAgo": 120,
+        "group": "ingest"
+      },
+      {
+        "key": "trace-ingest",
+        "monitor": {
+          "name": "Trace ingestion",
+          "kind": "manual",
+          "description": "Spans from the OpenTelemetry collector."
+        },
+        "startsDaysAgo": 120,
+        "group": "ingest"
+      },
+      {
+        "key": "live-tail",
+        "monitor": {
+          "name": "Live tail",
+          "kind": "manual",
+          "description": "Streaming new log lines as they arrive."
+        },
+        "startsDaysAgo": 120,
+        "group": "query"
+      },
+      {
+        "key": "query-api",
+        "monitor": {
+          "name": "Query API",
+          "kind": "manual",
+          "description": "Searches from the app, the CLI and the API."
+        },
+        "startsDaysAgo": 120,
+        "group": "query"
+      },
+      {
+        "key": "dashboards",
+        "monitor": {
+          "name": "Dashboards",
+          "kind": "manual",
+          "description": "Charts, saved views and shared links."
+        },
+        "startsDaysAgo": 120,
+        "group": "query"
+      },
+      {
+        "key": "uptime-checks",
+        "monitor": {
+          "name": "Uptime checks",
+          "kind": "manual",
+          "description": "Checks run from 12 regions."
+        },
+        "startsDaysAgo": 120,
+        "group": "alerting"
+      },
+      {
+        "key": "alert-routing",
+        "monitor": {
+          "name": "Alert routing",
+          "kind": "manual",
+          "description": "Escalation policies and schedules."
+        },
+        "startsDaysAgo": 120,
+        "group": "alerting"
+      },
+      {
+        "key": "phone-sms",
+        "monitor": {
+          "name": "Phone calls and SMS",
+          "kind": "manual",
+          "description": "Voice and text notifications."
+        },
+        "startsDaysAgo": 120,
+        "group": "alerting"
+      },
+      {
+        "key": "web-app",
+        "monitor": {
+          "name": "Web app",
+          "kind": "manual",
+          "description": "The dashboard you sign in to."
+        },
+        "startsDaysAgo": 120,
+        "group": "platform"
+      },
+      {
+        "key": "public-api",
+        "monitor": {
+          "name": "Public API",
+          "kind": "manual",
+          "description": "The REST API and its tokens."
+        },
+        "startsDaysAgo": 120,
+        "group": "platform"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "ingest-backlog",
+        "components": [
+          {
+            "key": "log-ingest",
+            "impact": "degraded"
+          },
+          {
+            "key": "live-tail",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Delayed log ingestion in one region",
+          "severity": "minor"
+        },
+        "daysAgo": 6,
+        "resolvedAfterHours": 2.5,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Logs shipped to our EU region are arriving with a delay of up to four minutes. Nothing is lost; live tail is behind by the same amount.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.7,
+            "body": "A storage node fell behind on compaction, so writes queued behind it. We have added capacity and the backlog is draining.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.6,
+            "body": "The delay is under ten seconds again. We are watching the backlog finish.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 2.5,
+            "body": "Resolved. Every queued log line has been written.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "sms-provider",
+        "components": [
+          "phone-sms"
+        ],
+        "incident": {
+          "title": "SMS notifications delayed for some carriers",
+          "severity": "major"
+        },
+        "daysAgo": 13,
+        "resolvedAfterHours": 1.2,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some text messages are arriving several minutes late. Phone calls, push and email alerts are on time.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "One of our SMS providers is degraded. We have moved traffic to the second provider.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "Messages are being delivered on time on every carrier we test. Resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "query-timeouts",
+        "components": [
+          {
+            "key": "query-api",
+            "impact": "partial_outage"
+          },
+          {
+            "key": "dashboards",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Slow and failing queries over long time ranges",
+          "severity": "major",
+          "markdown": "## Impact\n\nFor 70 minutes, about one in eight queries covering more than seven days timed out, and dashboards built on them showed empty charts. Shorter queries, ingestion and alerting were not affected.\n\n## Timeline\n\n1. 14:02 UTC — a schema migration starts on the query cluster\n2. 14:11 UTC — the long-range query latency alert fires\n3. 14:40 UTC — the migration is paused and its index build cancelled\n4. 15:12 UTC — query latency is back to normal\n\n## What caused it\n\nThe migration rebuilt an index on every node at once instead of one node at a time, so long-range queries lost the index they depend on.\n\n## What we changed\n\nMigrations on the query cluster now roll one node at a time and stop by themselves when query latency rises.\n"
+        },
+        "daysAgo": 24,
+        "resolvedAfterHours": 1.2,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Queries over long time ranges are slow or timing out. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.6,
+            "body": "A maintenance job on the query cluster is competing with queries. We have paused it.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1,
+            "body": "Query times are back to normal. We are monitoring.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "Resolved. A full write-up follows below.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "query-upgrade",
+        "components": [
+          "query-api",
+          "dashboards"
+        ],
+        "incident": {
+          "title": "Query cluster upgrade",
+          "markdown": "We are upgrading the query cluster one node at a time. Queries keep working; some may take a few seconds longer during the window. Ingestion and alerting are not affected."
+        },
+        "daysFromNow": 4,
+        "durationHours": 2
+      }
+    ],
+    "metrics": [
+      {
+        "key": "ingest-latency",
+        "metric": {
+          "name": "Ingestion latency (sample)",
+          "unit": "ms",
+          "decimals": 0,
+          "aggregate": "avg",
+          "description": "Sample data drawn by the template, not a measurement. Push your own points to this metric, or delete it, before you share the page.",
+          "sortKey": 1,
+          "component": "log-ingest"
+        },
+        "sample": {
+          "base": 180,
+          "daily": 45,
+          "noise": 22,
+          "min": 60,
+          "spikes": [
+            {
+              "hoursAgo": 141,
+              "hours": 3,
+              "add": 1400
+            }
+          ]
+        }
+      },
+      {
+        "key": "query-p95",
+        "metric": {
+          "name": "Query API p95 (sample)",
+          "unit": "ms",
+          "decimals": 0,
+          "aggregate": "max",
+          "description": "Sample data drawn by the template, not a measurement. Push your own points to this metric, or delete it, before you share the page.",
+          "sortKey": 2,
+          "component": "query-api"
+        },
+        "sample": {
+          "base": 420,
+          "daily": 110,
+          "noise": 55,
+          "min": 150,
+          "spikes": [
+            {
+              "hoursAgo": 572,
+              "hours": 2,
+              "add": 2600
+            }
+          ]
+        }
+      },
+      {
+        "key": "alert-delivery",
+        "metric": {
+          "name": "Alert delivery time (sample)",
+          "unit": "s",
+          "decimals": 1,
+          "aggregate": "avg",
+          "description": "Sample data drawn by the template, not a measurement. Push your own points to this metric, or delete it, before you share the page.",
+          "sortKey": 3,
+          "component": "alert-routing"
+        },
+        "sample": {
+          "base": 3.4,
+          "daily": 0.6,
+          "noise": 0.5,
+          "min": 1.2,
+          "spikes": [
+            {
+              "hoursAgo": 310,
+              "hours": 2,
+              "add": 9
+            }
+          ]
+        }
+      },
+      {
+        "key": "trace-latency",
+        "metric": {
+          "name": "Trace ingestion latency (sample)",
+          "unit": "ms",
+          "decimals": 0,
+          "aggregate": "avg",
+          "description": "Sample data drawn by the template, not a measurement. Push your own points to this metric, or delete it, before you share the page.",
+          "sortKey": 4,
+          "component": "trace-ingest"
+        },
+        "sample": {
+          "base": 180,
+          "daily": 40,
+          "noise": 15,
+          "min": 60,
+          "spikes": []
+        }
+      },
+      {
+        "key": "web-app-response",
+        "metric": {
+          "name": "Web app response time (sample)",
+          "unit": "ms",
+          "decimals": 0,
+          "aggregate": "avg",
+          "description": "Sample data drawn by the template, not a measurement. Push your own points to this metric, or delete it, before you share the page.",
+          "sortKey": 5,
+          "component": "web-app"
+        },
+        "sample": {
+          "base": 240,
+          "daily": 60,
+          "noise": 25,
+          "min": 80,
+          "spikes": []
+        }
+      },
+      {
+        "key": "public-api-response",
+        "metric": {
+          "name": "Public API response time (sample)",
+          "unit": "ms",
+          "decimals": 0,
+          "aggregate": "avg",
+          "description": "Sample data drawn by the template, not a measurement. Push your own points to this metric, or delete it, before you share the page.",
+          "sortKey": 6,
+          "component": "public-api"
+        },
+        "sample": {
+          "base": 120,
+          "daily": 30,
+          "noise": 10,
+          "min": 40,
+          "spikes": []
+        }
+      }
+    ]
+  }
+}

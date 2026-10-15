@@ -1,0 +1,266 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "meadow",
+  "type": "FAQ",
+  "name": "Meadow",
+  "description": "A calm, editorial help centre: a serif headline over a landscape hero, a centred search, and three-up collection tiles with large icons.",
+  "modelledOn": "A customer-messaging platform’s help centre",
+  "features": [
+    "Preset: help-centre — each collection on its own page",
+    "Picture hero with a serif headline (Newsreader) and ⌘K search",
+    "Language links in the hero: English and Español, every question translated",
+    "Collection rail on the left of every collection and question page; Follow on each collection",
+    "Collection tiles: large icon, description, article count (3 per row)",
+    "Contact cards for the org’s contact space, community and status page",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "help-center",
+    "editorial",
+    "serif"
+  ],
+  "thumbnail": "/templates/meadow.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/hero.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "help-centre"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "faq": {
+    "collections": [
+      {
+        "slug": "get-started",
+        "name": "Get started",
+        "description": "Everything you need to set up Your Brand in an afternoon.",
+        "nav": {
+          "icon": "compass"
+        },
+        "pages": [
+          {
+            "slug": "what-is",
+            "title": "What is Your Brand?",
+            "markdown": "Your Brand is one inbox for every customer conversation — email, chat and social — with a help centre your customers can search on their own.",
+            "fields": {
+              "featured": true
+            },
+            "translations": {
+              "es": {
+                "title": "¿Qué es Your Brand?",
+                "markdown": "Your Brand es una sola bandeja de entrada para cada conversación con tus clientes —correo, chat y redes sociales— con un centro de ayuda en el que tus clientes pueden buscar por su cuenta."
+              }
+            }
+          },
+          {
+            "slug": "install-messenger",
+            "title": "How do I add the chat messenger to my website?",
+            "markdown": "Copy the snippet from **Settings → Messenger → Install** and paste it before the closing `</body>` tag on every page. The launcher appears in the corner as soon as the page reloads.",
+            "translations": {
+              "es": {
+                "title": "¿Cómo añado el chat a mi sitio web?",
+                "markdown": "Copia el fragmento de **Ajustes → Messenger → Instalar** y pégalo antes de la etiqueta `</body>` en todas las páginas. El lanzador aparece en la esquina en cuanto se recarga la página."
+              }
+            }
+          },
+          {
+            "slug": "import-contacts",
+            "title": "Can I import my existing contacts?",
+            "markdown": "Yes. Upload a CSV under **Contacts → Import**. Map each column to a contact field, and we match rows to existing people by email so nobody is duplicated.",
+            "translations": {
+              "es": {
+                "title": "¿Puedo importar mis contactos?",
+                "markdown": "Sí. Sube un CSV en **Contactos → Importar**. Asigna cada columna a un campo del contacto; comparamos las filas con las personas que ya existen por su correo, así que nadie se duplica."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slug": "inbox",
+        "name": "Inbox",
+        "description": "Routing, assignment and working through conversations as a team.",
+        "nav": {
+          "icon": "inbox"
+        },
+        "pages": [
+          {
+            "slug": "routing-rules",
+            "title": "How do routing rules work?",
+            "markdown": "Rules run in order on every new conversation. The first rule whose conditions match decides the team or teammate it goes to; anything that matches nothing lands in the shared queue.",
+            "fields": {
+              "featured": true
+            },
+            "translations": {
+              "es": {
+                "title": "¿Cómo funcionan las reglas de asignación?",
+                "markdown": "Las reglas se aplican en orden a cada conversación nueva. La primera cuyas condiciones se cumplen decide a qué equipo o persona va; lo que no coincide con ninguna llega a la cola compartida."
+              }
+            }
+          },
+          {
+            "slug": "snooze",
+            "title": "What does snoozing a conversation do?",
+            "markdown": "It hides the conversation until the time you pick, then puts it back at the top of your queue. If the customer replies first, it comes back straight away.",
+            "translations": {
+              "es": {
+                "title": "¿Qué hace posponer una conversación?",
+                "markdown": "La oculta hasta la hora que elijas y luego la devuelve al principio de tu cola. Si el cliente responde antes, vuelve de inmediato."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slug": "help-centre",
+        "name": "Help centre",
+        "description": "Write articles, organise collections and publish in more than one language.",
+        "nav": {
+          "icon": "book-open"
+        },
+        "pages": [
+          {
+            "slug": "write-article",
+            "title": "How do I write my first article?",
+            "markdown": "Go to **Help centre → Articles → New article**. Give it a title your customers would search for, write the answer in the first sentence, and publish when you are ready.",
+            "translations": {
+              "es": {
+                "title": "¿Cómo escribo mi primer artículo?",
+                "markdown": "Ve a **Centro de ayuda → Artículos → Nuevo artículo**. Ponle un título que tus clientes buscarían, responde en la primera frase y publícalo cuando esté listo."
+              }
+            }
+          },
+          {
+            "slug": "translate",
+            "title": "Can my help centre be in more than one language?",
+            "markdown": "Yes. Turn on the languages you need under **Help centre → Languages**. Each article gets a version per language, and readers see the one that matches their browser.",
+            "fields": {
+              "featured": true
+            },
+            "translations": {
+              "es": {
+                "title": "¿Puede mi centro de ayuda estar en varios idiomas?",
+                "markdown": "Sí. Activa los idiomas que necesites en **Centro de ayuda → Idiomas**. Cada artículo tiene una versión por idioma y los lectores ven la que coincide con su navegador."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slug": "ai-agent",
+        "name": "AI agent",
+        "description": "Let the assistant answer common questions from your own content.",
+        "nav": {
+          "icon": "sparkles"
+        },
+        "pages": [
+          {
+            "slug": "agent-sources",
+            "title": "Where does the AI agent get its answers?",
+            "markdown": "Only from the sources you connect — your published articles, saved replies and any pages you add. It never answers from content you have not approved.",
+            "translations": {
+              "es": {
+                "title": "¿De dónde saca sus respuestas el agente de IA?",
+                "markdown": "Solo de las fuentes que conectes: tus artículos publicados, tus respuestas guardadas y las páginas que añadas. Nunca responde con contenido que no hayas aprobado."
+              }
+            }
+          },
+          {
+            "slug": "agent-handover",
+            "title": "What happens when the agent can’t answer?",
+            "markdown": "It says so, and hands the conversation to your team with a summary of what the customer asked. Nothing is lost in the handover.",
+            "translations": {
+              "es": {
+                "title": "¿Qué pasa cuando el agente no sabe responder?",
+                "markdown": "Lo dice y pasa la conversación a tu equipo con un resumen de lo que preguntó el cliente. No se pierde nada en el traspaso."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slug": "billing",
+        "name": "Billing",
+        "description": "Seats, plans and invoices.",
+        "nav": {
+          "icon": "receipt"
+        },
+        "pages": [
+          {
+            "slug": "seats",
+            "title": "How are seats counted?",
+            "markdown": "A seat is anyone who can reply to customers. Teammates with view-only access are free, and you can change seats at any time from the billing page.",
+            "translations": {
+              "es": {
+                "title": "¿Cómo se cuentan los puestos?",
+                "markdown": "Un puesto es cualquier persona que puede responder a clientes. Los compañeros con acceso de solo lectura son gratis, y puedes cambiar los puestos cuando quieras desde la página de facturación."
+              }
+            }
+          },
+          {
+            "slug": "cancel",
+            "title": "How do I cancel?",
+            "markdown": "Account owners can cancel under **Settings → Billing → Cancel plan**. You keep access until the end of the period you have paid for.",
+            "translations": {
+              "es": {
+                "title": "¿Cómo cancelo?",
+                "markdown": "Los propietarios de la cuenta pueden cancelar en **Ajustes → Facturación → Cancelar plan**. Mantienes el acceso hasta el final del periodo que ya has pagado."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "slug": "privacy",
+        "name": "Privacy and security",
+        "description": "How data is stored, exported and deleted.",
+        "nav": {
+          "icon": "lock-keyhole"
+        },
+        "pages": [
+          {
+            "slug": "data-location",
+            "title": "Where is my data stored?",
+            "markdown": "In the region you chose when the workspace was created. You can see it under **Settings → Workspace → Data location**.",
+            "translations": {
+              "es": {
+                "title": "¿Dónde se guardan mis datos?",
+                "markdown": "En la región que elegiste al crear el espacio de trabajo. Puedes verla en **Ajustes → Espacio de trabajo → Ubicación de los datos**."
+              }
+            }
+          },
+          {
+            "slug": "delete-contact",
+            "title": "How do I delete a customer’s data?",
+            "markdown": "Open the contact and choose **Delete permanently**. Their conversations and attachments are removed within 30 days, including from backups.",
+            "translations": {
+              "es": {
+                "title": "¿Cómo elimino los datos de un cliente?",
+                "markdown": "Abre el contacto y elige **Eliminar definitivamente**. Sus conversaciones y adjuntos se eliminan en un plazo de 30 días, también de las copias de seguridad."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "locales": [
+      {
+        "code": "es",
+        "label": "Español"
+      }
+    ]
+  },
+  "settings": {
+    "defaultLocaleLabel": "English"
+  }
+}

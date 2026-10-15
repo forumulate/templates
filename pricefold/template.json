@@ -1,0 +1,90 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "pricefold",
+  "type": "FAQ",
+  "name": "Pricefold",
+  "description": "The pricing-page FAQ: heading, intro and contact on the left, a single-open accordion with plus icons and muted answers on the right, in a dark scheme.",
+  "modelledOn": "A software company’s pricing-page FAQ",
+  "features": [
+    "Preset: two-column — heading, intro and contact left, questions right",
+    "Single-open accordion, plus icon at the end, hairline rules",
+    "Muted answer ink, no feedback row, no search",
+    "Dark scheme, Geist",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "pricing",
+    "accordion",
+    "minimal"
+  ],
+  "thumbnail": "/templates/pricefold.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "two-column",
+    "frontDoor": {
+      "showSearch": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "faq": {
+    "collections": [
+      {
+        "slug": "pricing",
+        "name": "Pricing questions",
+        "description": "Plans, seats, billing and what happens when you change your mind.",
+        "nav": {
+          "icon": "help-circle"
+        },
+        "pages": [
+          {
+            "slug": "free-plan",
+            "title": "Is there a free plan?",
+            "markdown": "Yes. The Free plan is free forever for up to three members, with every core feature. You only pay when your team grows or you need admin controls."
+          },
+          {
+            "slug": "what-counts",
+            "title": "What counts as a member?",
+            "markdown": "Anyone who can sign in to your workspace. Guests you invite to a single project are free and do not count toward your plan."
+          },
+          {
+            "slug": "change-anytime",
+            "title": "Can I change plans at any time?",
+            "markdown": "Yes. Upgrades apply immediately and are prorated to the day. Downgrades take effect at the end of your current billing period, so you never lose time you have paid for."
+          },
+          {
+            "slug": "annual-discount",
+            "title": "Do you offer a discount for paying yearly?",
+            "markdown": "Paying yearly costs the same as ten months — two months free — on every paid plan."
+          },
+          {
+            "slug": "nonprofit",
+            "title": "Do you have discounts for non-profits and education?",
+            "markdown": "Yes. Registered non-profits and schools get 50% off any paid plan. Write to us from your organisation’s address and we will apply it to your workspace."
+          },
+          {
+            "slug": "payment-methods",
+            "title": "Which payment methods do you accept?",
+            "markdown": "All major cards on every plan. Yearly Enterprise plans can also pay by invoice and bank transfer."
+          },
+          {
+            "slug": "cancel",
+            "title": "What happens to my data if I cancel?",
+            "markdown": "Your workspace becomes read-only on the Free plan’s limits. Nothing is deleted, and you can export everything or upgrade again whenever you like."
+          }
+        ]
+      }
+    ]
+  }
+}

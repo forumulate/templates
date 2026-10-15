@@ -1,0 +1,393 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "meridian-status",
+  "type": "STATUS",
+  "name": "Meridian",
+  "description": "A dark, bespoke page for a payments network: tiles that count components by state, the flagship group as a hero card beside the open incidents and maintenance, square bars, and times in UTC with a Local / UTC switch.",
+  "modelledOn": "A payments network’s status page",
+  "features": [
+    "Dark navy page, times in UTC with a Local / UTC switch beside the title",
+    "Tiles counting components by state",
+    "The flagship group as a hero card under a big “99.99%” headline, beside open incidents, maintenance and the last month",
+    "Every other group as its own card with its uptime",
+    "Square bars, a three-state legend on top, incidents with an accent rule and chips"
+  ],
+  "tags": [
+    "status",
+    "dark",
+    "two-column",
+    "bespoke"
+  ],
+  "thumbnail": "/templates/meridian-status.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/me-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "intro"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "kpis"
+          }
+        },
+        {
+          "type": "columns",
+          "content": [
+            {
+              "type": "column",
+              "attrs": {
+                "width": 60
+              },
+              "content": [
+                {
+                  "type": "spaceBand",
+                  "attrs": {
+                    "band": "components",
+                    "groups": [
+                      "Payments"
+                    ]
+                  }
+                },
+                {
+                  "type": "spaceBand",
+                  "attrs": {
+                    "band": "components",
+                    "groups": [
+                      "Money movement",
+                      "Global edge",
+                      "Developers"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 40
+              },
+              "content": [
+                {
+                  "type": "spaceBand",
+                  "attrs": {
+                    "band": "active",
+                    "only": "incidents"
+                  }
+                },
+                {
+                  "type": "spaceBand",
+                  "attrs": {
+                    "band": "active",
+                    "only": "maintenance"
+                  }
+                },
+                {
+                  "type": "spaceBand",
+                  "attrs": {
+                    "band": "history",
+                    "days": 30
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "width": 1120
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "payments",
+        "name": "Payments",
+        "description": "Taking payments, everywhere you sell."
+      },
+      {
+        "key": "money",
+        "name": "Money movement",
+        "description": "Getting funds where they need to be."
+      },
+      {
+        "key": "edge",
+        "name": "Global edge",
+        "description": "The network every request travels through."
+      },
+      {
+        "key": "developers",
+        "name": "Developers",
+        "description": "The tools you build with."
+      }
+    ],
+    "components": [
+      {
+        "key": "api",
+        "monitor": {
+          "name": "API",
+          "kind": "manual",
+          "description": "Every request to the payments API."
+        },
+        "startsDaysAgo": 120,
+        "group": "payments"
+      },
+      {
+        "key": "checkout",
+        "monitor": {
+          "name": "Hosted checkout",
+          "kind": "manual",
+          "description": "The payment page and its wallets."
+        },
+        "startsDaysAgo": 120,
+        "group": "payments"
+      },
+      {
+        "key": "card-auth",
+        "monitor": {
+          "name": "Card authorisation",
+          "kind": "manual",
+          "description": "Authorisations across the card networks."
+        },
+        "startsDaysAgo": 120,
+        "group": "payments"
+      },
+      {
+        "key": "bank-debits",
+        "monitor": {
+          "name": "Bank debits",
+          "kind": "manual",
+          "description": "Direct debits and account-to-account payments."
+        },
+        "startsDaysAgo": 120,
+        "group": "payments"
+      },
+      {
+        "key": "payouts",
+        "monitor": {
+          "name": "Payouts",
+          "kind": "manual",
+          "description": "Transfers to your bank account."
+        },
+        "startsDaysAgo": 120,
+        "group": "money"
+      },
+      {
+        "key": "fx",
+        "monitor": {
+          "name": "Currency conversion",
+          "kind": "manual",
+          "description": "Rates and conversions in 40 currencies."
+        },
+        "startsDaysAgo": 120,
+        "group": "money"
+      },
+      {
+        "key": "invoicing",
+        "monitor": {
+          "name": "Invoicing",
+          "kind": "manual",
+          "description": "Invoices, reminders and the hosted invoice page."
+        },
+        "startsDaysAgo": 120,
+        "group": "money"
+      },
+      {
+        "key": "edge-routing",
+        "monitor": {
+          "name": "Edge routing",
+          "kind": "manual",
+          "description": "Traffic through 60 points of presence."
+        },
+        "startsDaysAgo": 120,
+        "group": "edge"
+      },
+      {
+        "key": "dns",
+        "monitor": {
+          "name": "DNS",
+          "kind": "manual",
+          "description": "Resolution for custom checkout domains."
+        },
+        "startsDaysAgo": 120,
+        "group": "edge"
+      },
+      {
+        "key": "dashboard",
+        "monitor": {
+          "name": "Dashboard",
+          "kind": "manual",
+          "description": "The dashboard and its reports."
+        },
+        "startsDaysAgo": 120,
+        "group": "developers"
+      },
+      {
+        "key": "webhooks",
+        "monitor": {
+          "name": "Webhooks",
+          "kind": "manual",
+          "description": "Event delivery to your endpoints."
+        },
+        "startsDaysAgo": 120,
+        "group": "developers"
+      },
+      {
+        "key": "sandbox",
+        "monitor": {
+          "name": "Test mode",
+          "kind": "manual",
+          "description": "The sandbox and its test cards."
+        },
+        "startsDaysAgo": 120,
+        "group": "developers"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "webhook-delays",
+        "components": [
+          "webhooks"
+        ],
+        "incident": {
+          "title": "Delayed webhook delivery",
+          "severity": "minor"
+        },
+        "daysAgo": 3,
+        "resolvedAfterHours": 1.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some webhook events are reaching endpoints up to ten minutes late. Payments themselves are not affected, and no event will be lost.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.6,
+            "body": "A delivery queue in one region was under-provisioned after a traffic spike. We have added workers.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "The backlog has cleared and new events are delivered within seconds.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.75,
+            "body": "Resolved. Every delayed event has been delivered.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "card-auth-errors",
+        "components": [
+          {
+            "key": "card-auth",
+            "impact": "partial_outage"
+          },
+          {
+            "key": "api",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Elevated card authorisation errors for one network",
+          "severity": "major",
+          "markdown": "## Impact\n\nFor 38 minutes, about 4% of card authorisations on one card network failed with a processing error. Customers could retry, and most retries succeeded. Other networks, bank debits and payouts were unaffected.\n\n## Timeline\n\n1. 09:14 UTC — authorisation errors rise on one network\n2. 09:19 UTC — our error-rate alert fires\n3. 09:31 UTC — traffic moves to a second connection to the network\n4. 09:52 UTC — the error rate is back to normal\n\n## What caused it\n\nA certificate on one of our connections to the network was rotated on their side before ours, so a share of requests on that connection were refused.\n\n## What we changed\n\nWe now monitor every network connection’s certificate dates, and fail over to a second connection automatically when one starts refusing requests.\n"
+        },
+        "daysAgo": 11,
+        "resolvedAfterHours": 0.65,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "We are seeing elevated authorisation errors for one card network. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.3,
+            "body": "The errors come from one of our connections to the network. We are moving traffic to the other.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 0.65,
+            "body": "Authorisation rates are back to normal on every network. Resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "payout-reports",
+        "components": [
+          "dashboard"
+        ],
+        "incident": {
+          "title": "Payout reports loading slowly in the dashboard",
+          "severity": "minor"
+        },
+        "daysAgo": 27,
+        "resolvedAfterHours": 4,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Payout reports are taking a long time to load, or not loading. Payouts themselves are on schedule.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 2,
+            "body": "A reporting database is rebuilding an index. Reports will speed up as it finishes.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 4,
+            "body": "Reports load normally again. Resolved.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "fx-rates",
+        "components": [
+          "fx"
+        ],
+        "incident": {
+          "title": "Currency conversion provider migration",
+          "markdown": "We are moving currency conversion to a new rate provider. Conversions keep working; quoted rates may refresh less often for up to ten minutes during the window."
+        },
+        "daysFromNow": 5,
+        "durationHours": 1
+      }
+    ]
+  }
+}

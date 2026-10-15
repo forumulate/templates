@@ -1,0 +1,528 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "briefing-room",
+  "type": "EVENTS",
+  "name": "Briefing Room",
+  "description": "A webinar series: a calm white page with one blue call to action, the hosts, then each episode as a card with a wide cover; past episodes stay listed with their recordings. Each episode page opens on a wide cover with a sticky register card and every time shown in the host’s zone and the reader’s.",
+  "modelledOn": "An events platform’s webinar series pages",
+  "features": [
+    "Series intro with one call to action and the hosts on the front page",
+    "Episodes as three-up cards with 2:1 covers; past episodes listed under them with recordings",
+    "Episode page: wide cover, facts card, countdown, sticky register card",
+    "Every time in the host’s zone and the reader’s, with a switch",
+    "FAQ and the registration-and-cancellation policy in each episode’s description",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "events",
+    "webinar",
+    "series",
+    "light"
+  ],
+  "thumbnail": "/templates/briefing-room.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/briefing-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/briefing-cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/briefing-cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/briefing-cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/briefing-cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/briefing-cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/briefing-cover-6.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/briefing-host-gh.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/briefing-host-tm.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000010": "assets/briefing-host-np.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000011": "assets/briefing-host-cm.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "webinar",
+    "frontDoor": {
+      "showTags": true,
+      "showSubscribe": true,
+      "subscribeStyle": "button",
+      "showRss": true,
+      "showPast": true,
+      "showShare": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "growth",
+      "label": "Growth",
+      "color": "#e6f0fa",
+      "textColor": "#0a4f96"
+    },
+    {
+      "slug": "onboarding",
+      "label": "Onboarding",
+      "color": "#e5f4ec",
+      "textColor": "#16683f"
+    },
+    {
+      "slug": "customers",
+      "label": "Customers",
+      "color": "#f2e9f7",
+      "textColor": "#5e2c7e"
+    },
+    {
+      "slug": "panel",
+      "label": "Panel",
+      "color": "#f6f8fa",
+      "textColor": "#39414b"
+    },
+    {
+      "slug": "analytics",
+      "label": "Analytics",
+      "color": "#fbefe3",
+      "textColor": "#8a4a12"
+    },
+    {
+      "slug": "product",
+      "label": "Product",
+      "color": "#e3f3f7",
+      "textColor": "#0f5a70"
+    }
+  ],
+  "authors": [
+    {
+      "key": "grace-holloway",
+      "name": "Grace Holloway",
+      "role": "Host, Head of Customer Education",
+      "bio": "Hosts every episode and reads every question.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000008"
+    },
+    {
+      "key": "theo-marsh",
+      "name": "Theo Marsh",
+      "role": "Growth Lead",
+      "bio": "Runs experiments on pricing and onboarding.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000009"
+    },
+    {
+      "key": "nina-patel",
+      "name": "Nina Patel",
+      "role": "Customer Success Director",
+      "bio": "Talks to customers for a living.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000010"
+    },
+    {
+      "key": "carlos-mendez",
+      "name": "Carlos Mendez",
+      "role": "Product Analyst",
+      "bio": "Finds the story in the numbers.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000011"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "section",
+          "attrs": {
+            "key": "intro",
+            "role": "layout",
+            "contentAlign": "start",
+            "padding": {
+              "top": 48,
+              "bottom": 40
+            },
+            "background": {
+              "color": "#f3f7fb"
+            },
+            "radius": 16
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "THE BRIEFING ROOM",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ],
+              "attrs": {
+                "size": 13,
+                "color": "#0a66c2"
+              }
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2,
+                "size": {
+                  "lg": 40,
+                  "sm": 28
+                }
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Practical webinars for teams who grow with their customers"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A free live session every two weeks: one topic, one hour, real numbers, and fifteen minutes of your questions. Every episode is recorded."
+                }
+              ],
+              "attrs": {
+                "size": {
+                  "lg": 18,
+                  "sm": 16
+                },
+                "color": "muted"
+              }
+            },
+            {
+              "type": "buttons",
+              "attrs": {
+                "align": "start"
+              },
+              "content": [
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "Register for the next one",
+                    "href": "/e/your-org/your-events/pricing-pages-that-convert",
+                    "style": "primary"
+                  }
+                },
+                {
+                  "type": "button",
+                  "attrs": {
+                    "label": "Watch past episodes",
+                    "href": "/e/your-org/your-events?when=past",
+                    "style": "secondary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Your hosts"
+            }
+          ]
+        },
+        {
+          "type": "columns",
+          "content": [
+            {
+              "type": "column",
+              "attrs": {
+                "width": 25
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Grace Holloway",
+                    "role": "Host, Head of Customer Education",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000008",
+                    "layout": "row",
+                    "photoShape": "circle"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 25
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Theo Marsh",
+                    "role": "Growth Lead",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000009",
+                    "layout": "row",
+                    "photoShape": "circle"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 25
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Nina Patel",
+                    "role": "Customer Success Director",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000010",
+                    "layout": "row",
+                    "photoShape": "circle"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "attrs": {
+                "width": 25
+              },
+              "content": [
+                {
+                  "type": "person",
+                  "attrs": {
+                    "name": "Carlos Mendez",
+                    "role": "Product Analyst",
+                    "photo": "/api/assets/00000000-0000-4000-8000-000000000011",
+                    "layout": "row",
+                    "photoShape": "circle"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "events"
+          }
+        }
+      ]
+    },
+    "width": 1120
+  },
+  "settings": {
+    "eventAttendance": {
+      "emailRsvp": true
+    },
+    "eventNotices": {
+      "reminders": [
+        "1d",
+        "1h"
+      ],
+      "confirmations": true
+    }
+  },
+  "events": {
+    "events": [
+      {
+        "slug": "pricing-pages-that-convert",
+        "title": "Pricing Pages That Convert",
+        "daysFromNow": 8,
+        "startTime": "13:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "America/New_York",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://webinar.example.com/briefing-room/1",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+          "coverAlt": "",
+          "tags": [
+            "growth"
+          ],
+          "hosts": [
+            {
+              "author": "grace-holloway"
+            },
+            {
+              "author": "theo-marsh"
+            }
+          ],
+          "description": "What makes someone choose a plan? Theo walks through twelve pricing pages, the experiments behind them and the three changes that moved the most revenue.\n\n## You will learn\n\n- Which plan to highlight, and when not to\n- How to write plan names people understand\n- The annual-billing nudge that does not feel like a trick\n\n## Frequently asked questions\n\n**Is it free?** Yes. Register once and you get the link, a reminder and the recording.\n\n**Can’t make it live?** Register anyway — the recording is sent to everyone who registered, within a day.\n\n**Will there be time for questions?** The last fifteen minutes are always open Q&A.\n\n## Registration and cancellations\n\nRegistration is free and open until the session starts. Changed your mind? Use the link in your confirmation email to cancel, and your seat goes to the next person on the waitlist.",
+          "capacity": 500
+        }
+      },
+      {
+        "slug": "onboarding-in-five-emails",
+        "title": "Onboarding in Five Emails",
+        "daysFromNow": 22,
+        "startTime": "13:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "America/New_York",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://webinar.example.com/briefing-room/2",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+          "coverAlt": "",
+          "tags": [
+            "onboarding"
+          ],
+          "hosts": [
+            {
+              "author": "grace-holloway"
+            },
+            {
+              "author": "nina-patel"
+            }
+          ],
+          "description": "Five emails, sent at the right moments, do more than a twenty-step tour. Nina shares the sequence her team rebuilt last quarter, with the open and activation numbers.\n\n## Frequently asked questions\n\n**Is it free?** Yes. Register once and you get the link, a reminder and the recording.\n\n**Can’t make it live?** Register anyway — the recording is sent to everyone who registered, within a day.\n\n**Will there be time for questions?** The last fifteen minutes are always open Q&A.\n\n## Registration and cancellations\n\nRegistration is free and open until the session starts. Changed your mind? Use the link in your confirmation email to cancel, and your seat goes to the next person on the waitlist.",
+          "capacity": 500
+        }
+      },
+      {
+        "slug": "building-a-customer-council",
+        "title": "Building a Customer Council",
+        "daysFromNow": 36,
+        "startTime": "12:00",
+        "durationHours": 1.25,
+        "event": {
+          "timezone": "America/New_York",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://webinar.example.com/briefing-room/3",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000004",
+          "coverAlt": "",
+          "tags": [
+            "customers",
+            "panel"
+          ],
+          "hosts": [
+            {
+              "author": "grace-holloway"
+            },
+            {
+              "author": "nina-patel"
+            },
+            {
+              "author": "carlos-mendez"
+            }
+          ],
+          "description": "A panel on running a customer advisory council: who to invite, what to ask, and how to show members their feedback changed something.\n\n## Frequently asked questions\n\n**Is it free?** Yes. Register once and you get the link, a reminder and the recording.\n\n**Can’t make it live?** Register anyway — the recording is sent to everyone who registered, within a day.\n\n**Will there be time for questions?** The last fifteen minutes are always open Q&A.\n\n## Registration and cancellations\n\nRegistration is free and open until the session starts. Changed your mind? Use the link in your confirmation email to cancel, and your seat goes to the next person on the waitlist.",
+          "capacity": 500,
+          "questions": [
+            {
+              "name": "company",
+              "label": "Company",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "role",
+              "label": "Your role",
+              "type": "text",
+              "required": false
+            }
+          ]
+        }
+      },
+      {
+        "slug": "reading-your-churn-data",
+        "title": "Reading Your Churn Data",
+        "daysFromNow": -14,
+        "startTime": "13:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "America/New_York",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://webinar.example.com/briefing-room/4",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+          "coverAlt": "",
+          "tags": [
+            "analytics"
+          ],
+          "hosts": [
+            {
+              "author": "grace-holloway"
+            },
+            {
+              "author": "carlos-mendez"
+            }
+          ],
+          "description": "How to tell the churn you can fix from the churn you cannot, with three real dashboards.\n\n## Frequently asked questions\n\n**Is it free?** Yes. Register once and you get the link, a reminder and the recording.\n\n**Can’t make it live?** Register anyway — the recording is sent to everyone who registered, within a day.\n\n**Will there be time for questions?** The last fifteen minutes are always open Q&A.\n\n## Registration and cancellations\n\nRegistration is free and open until the session starts. Changed your mind? Use the link in your confirmation email to cancel, and your seat goes to the next person on the waitlist.",
+          "recordingUrl": "https://video.example.com/briefing-room/churn-data",
+          "slidesUrl": "https://slides.example.com/briefing-room/churn-data"
+        }
+      },
+      {
+        "slug": "writing-release-notes-people-read",
+        "title": "Writing Release Notes People Read",
+        "daysFromNow": -42,
+        "startTime": "13:00",
+        "durationHours": 1,
+        "event": {
+          "timezone": "America/New_York",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://webinar.example.com/briefing-room/5",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+          "coverAlt": "",
+          "tags": [
+            "product"
+          ],
+          "hosts": [
+            {
+              "author": "grace-holloway"
+            }
+          ],
+          "description": "Release notes are a marketing channel most teams waste. Six before-and-after rewrites and the template we use.\n\n## Frequently asked questions\n\n**Is it free?** Yes. Register once and you get the link, a reminder and the recording.\n\n**Can’t make it live?** Register anyway — the recording is sent to everyone who registered, within a day.\n\n**Will there be time for questions?** The last fifteen minutes are always open Q&A.\n\n## Registration and cancellations\n\nRegistration is free and open until the session starts. Changed your mind? Use the link in your confirmation email to cancel, and your seat goes to the next person on the waitlist.",
+          "recordingUrl": "https://video.example.com/briefing-room/release-notes"
+        }
+      },
+      {
+        "slug": "support-as-a-growth-channel",
+        "title": "Support as a Growth Channel",
+        "daysFromNow": -70,
+        "startTime": "12:00",
+        "durationHours": 1.25,
+        "event": {
+          "timezone": "America/New_York",
+          "attendanceMode": "online",
+          "location": "Online",
+          "url": "https://webinar.example.com/briefing-room/6",
+          "joinLinkVisibility": "attendees",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+          "coverAlt": "",
+          "tags": [
+            "customers",
+            "panel"
+          ],
+          "hosts": [
+            {
+              "author": "grace-holloway"
+            },
+            {
+              "author": "nina-patel"
+            },
+            {
+              "author": "theo-marsh"
+            }
+          ],
+          "description": "A panel on the support conversations that turn into upgrades — and how to measure them without making support a sales team.\n\n## Frequently asked questions\n\n**Is it free?** Yes. Register once and you get the link, a reminder and the recording.\n\n**Can’t make it live?** Register anyway — the recording is sent to everyone who registered, within a day.\n\n**Will there be time for questions?** The last fifteen minutes are always open Q&A.\n\n## Registration and cancellations\n\nRegistration is free and open until the session starts. Changed your mind? Use the link in your confirmation email to cancel, and your seat goes to the next person on the waitlist.",
+          "recordingUrl": "https://video.example.com/briefing-room/support-growth"
+        }
+      }
+    ]
+  }
+}

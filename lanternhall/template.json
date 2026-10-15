@@ -1,0 +1,356 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lanternhall",
+  "type": "EVENTS",
+  "name": "Lanternhall",
+  "description": "A community calendar in the day-by-day style: every event on a timeline under its date, a square cover beside it, the hosts and who is going; each event page puts the cover on the left over a sticky register card, with the place drawn as our own map card.",
+  "modelledOn": "A community events platform’s calendar and event pages",
+  "features": [
+    "Timeline grouped by day, the date in the left gutter, Upcoming and Past as tabs",
+    "Square covers beside each event, hosts and “N going” on every card",
+    "Event page: cover left with a sticky register card, date and place as tiles",
+    "Location as a drawn map card — no third-party map request",
+    "Gentle aurora background, rounded geometric headings, one violet accent, light or dark by visitor",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "events",
+    "community",
+    "meetups",
+    "timeline"
+  ],
+  "thumbnail": "/templates/lanternhall.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/lanternhall-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/lanternhall-banner.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/lanternhall-cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/lanternhall-cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/lanternhall-cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/lanternhall-cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/lanternhall-cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/lanternhall-cover-6.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/lanternhall-host-mo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000010": "assets/lanternhall-host-ji.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000011": "assets/lanternhall-host-rk.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "luma",
+    "frontDoor": {
+      "showTags": true,
+      "showSubscribe": true,
+      "subscribeStyle": "button",
+      "showRss": true,
+      "showPast": true,
+      "showShare": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "demo-night",
+      "label": "Demo night",
+      "color": "#ede8ff",
+      "textColor": "#4b2fd6",
+      "colorDark": "#2c2350",
+      "textColorDark": "#c7b9ff"
+    },
+    {
+      "slug": "workshop",
+      "label": "Workshop",
+      "color": "#dcf6f0",
+      "textColor": "#11775f",
+      "colorDark": "#14332c",
+      "textColorDark": "#8fe3cc"
+    },
+    {
+      "slug": "social",
+      "label": "Social",
+      "color": "#ffe3ec",
+      "textColor": "#b0234f",
+      "colorDark": "#3d1a26",
+      "textColorDark": "#ffa9c2"
+    },
+    {
+      "slug": "talk",
+      "label": "Talk",
+      "color": "#e3ebff",
+      "textColor": "#2c4fc2",
+      "colorDark": "#1c2647",
+      "textColorDark": "#a9bdff"
+    }
+  ],
+  "authors": [
+    {
+      "key": "maya-okafor",
+      "name": "Maya Okafor",
+      "role": "Community lead",
+      "bio": "Runs the calendar and the door list.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000009"
+    },
+    {
+      "key": "jun-ito",
+      "name": "Jun Ito",
+      "role": "Co-host",
+      "bio": "Designer; hosts the workshops.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000010"
+    },
+    {
+      "key": "rosa-kim",
+      "name": "Rosa Kim",
+      "role": "Co-host",
+      "bio": "Organises the socials.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000011"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "image",
+          "attrs": {
+            "src": "/api/assets/00000000-0000-4000-8000-000000000002",
+            "alt": "A soft gradient of violet, pink and teal behind the words “Evenings for people who make things”",
+            "width": "wide"
+          }
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Small evenings for people who make things — demos, hands-on workshops and the occasional rooftop. Free to attend, a handful of seats each, hosted by the community."
+            }
+          ],
+          "attrs": {
+            "size": {
+              "lg": 18,
+              "sm": 16
+            },
+            "color": "muted"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "events"
+          }
+        }
+      ]
+    },
+    "width": 760
+  },
+  "settings": {
+    "eventAttendance": {
+      "publicAttendees": true
+    }
+  },
+  "events": {
+    "events": [
+      {
+        "slug": "demo-night-things-we-made-this-month",
+        "title": "Demo Night: Things We Made This Month",
+        "daysFromNow": 9,
+        "startTime": "19:00",
+        "durationHours": 2.5,
+        "event": {
+          "timezone": "Europe/Lisbon",
+          "attendanceMode": "in_person",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000003",
+          "coverAlt": "",
+          "tags": [
+            "demo-night"
+          ],
+          "hosts": [
+            {
+              "author": "maya-okafor"
+            },
+            {
+              "author": "jun-ito"
+            }
+          ],
+          "location": "The Lantern Room, Lisbon",
+          "venue": {
+            "name": "The Lantern Room",
+            "street": "Rua do Exemplo 12",
+            "city": "Lisbon",
+            "postalCode": "1200-000",
+            "country": "PT",
+            "lat": 38.7107,
+            "lng": -9.1436
+          },
+          "capacity": 80,
+          "description": "Six people, five minutes each, one thing they built. Side projects, half-finished experiments, tools that only work on their laptop — all welcome.\n\n## How the evening runs\n\n- **19:00** Doors, drinks and name stickers\n- **19:30** Demos, five minutes each, two questions per demo\n- **20:30** Hang around and talk to the people who demoed\n\nWant to demo? Reply to your RSVP confirmation with a sentence about what you will show."
+        }
+      },
+      {
+        "slug": "prompt-craft-lab",
+        "title": "Prompt Craft Lab",
+        "daysFromNow": 23,
+        "startTime": "18:30",
+        "durationHours": 2,
+        "event": {
+          "timezone": "Europe/Lisbon",
+          "attendanceMode": "in_person",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000004",
+          "coverAlt": "",
+          "tags": [
+            "workshop"
+          ],
+          "hosts": [
+            {
+              "author": "jun-ito"
+            }
+          ],
+          "location": "The Lantern Room, Lisbon",
+          "venue": {
+            "name": "The Lantern Room",
+            "street": "Rua do Exemplo 12",
+            "city": "Lisbon",
+            "postalCode": "1200-000",
+            "country": "PT",
+            "lat": 38.7107,
+            "lng": -9.1436
+          },
+          "capacity": 30,
+          "description": "A hands-on workshop: bring a laptop and a task you keep doing by hand. We will work in pairs and leave with something that runs.\n\n## Bring\n\n- A laptop with a browser\n- One real task from your week\n\nThirty seats, because it is a workshop and the hosts want to get round every table."
+        }
+      },
+      {
+        "slug": "rooftop-mixer",
+        "title": "Rooftop Mixer",
+        "daysFromNow": 44,
+        "startTime": "18:00",
+        "durationHours": 3,
+        "event": {
+          "timezone": "Europe/Lisbon",
+          "attendanceMode": "in_person",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+          "coverAlt": "",
+          "tags": [
+            "social"
+          ],
+          "hosts": [
+            {
+              "author": "rosa-kim"
+            },
+            {
+              "author": "maya-okafor"
+            }
+          ],
+          "location": "Terraço Sete, Lisbon",
+          "venue": {
+            "name": "Terraço Sete",
+            "street": "Travessa da Amostra 7",
+            "city": "Lisbon",
+            "country": "PT",
+            "lat": 38.7139,
+            "lng": -9.1394
+          },
+          "description": "The end-of-season social. No talks, no slides — just the people from the calendar, on a roof, at sunset. Bring a friend who makes things."
+        }
+      },
+      {
+        "slug": "tiny-tools-big-ideas",
+        "title": "Tiny Tools, Big Ideas",
+        "daysFromNow": -12,
+        "startTime": "19:00",
+        "durationHours": 2,
+        "event": {
+          "timezone": "Europe/Lisbon",
+          "attendanceMode": "online",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+          "coverAlt": "",
+          "tags": [
+            "talk"
+          ],
+          "hosts": [
+            {
+              "author": "maya-okafor"
+            }
+          ],
+          "location": "Online",
+          "url": "https://meet.example.com/lanternhall-4",
+          "joinLinkVisibility": "attendees",
+          "description": "Three short talks on the small tools that changed how three people work, with questions after each.",
+          "recordingUrl": "https://video.example.com/lanternhall/tiny-tools"
+        }
+      },
+      {
+        "slug": "type-and-motion-workshop",
+        "title": "Type and Motion Workshop",
+        "daysFromNow": -40,
+        "startTime": "18:30",
+        "durationHours": 2,
+        "event": {
+          "timezone": "Europe/Lisbon",
+          "attendanceMode": "in_person",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+          "coverAlt": "",
+          "tags": [
+            "workshop"
+          ],
+          "hosts": [
+            {
+              "author": "jun-ito"
+            }
+          ],
+          "location": "The Lantern Room, Lisbon",
+          "venue": {
+            "name": "The Lantern Room",
+            "street": "Rua do Exemplo 12",
+            "city": "Lisbon",
+            "postalCode": "1200-000",
+            "country": "PT",
+            "lat": 38.7107,
+            "lng": -9.1436
+          },
+          "capacity": 30,
+          "description": "A workshop on animating type for the web without making anyone seasick. The slides and the recording are linked below.",
+          "recordingUrl": "https://video.example.com/lanternhall/type-and-motion",
+          "slidesUrl": "https://slides.example.com/lanternhall/type-and-motion"
+        }
+      },
+      {
+        "slug": "winter-potluck",
+        "title": "Winter Potluck",
+        "daysFromNow": -75,
+        "startTime": "19:00",
+        "durationHours": 3,
+        "event": {
+          "timezone": "Europe/Lisbon",
+          "attendanceMode": "in_person",
+          "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+          "coverAlt": "",
+          "tags": [
+            "social"
+          ],
+          "hosts": [
+            {
+              "author": "rosa-kim"
+            }
+          ],
+          "location": "The Lantern Room, Lisbon",
+          "venue": {
+            "name": "The Lantern Room",
+            "street": "Rua do Exemplo 12",
+            "city": "Lisbon",
+            "postalCode": "1200-000",
+            "country": "PT",
+            "lat": 38.7107,
+            "lng": -9.1436
+          },
+          "description": "Everyone brought one dish and one story. Thank you to the forty-two of you who came — the photos are in the recording link.",
+          "recordingUrl": "https://video.example.com/lanternhall/winter-potluck"
+        }
+      }
+    ]
+  }
+}

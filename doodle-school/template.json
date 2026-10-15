@@ -1,0 +1,291 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "doodle-school",
+  "type": "COURSES",
+  "name": "Doodle School",
+  "description": "An illustrated short course: a round, hand-drawn course badge beside the pitch, bite-sized lessons as cards with their length, kind and free-preview pills, a playful display face and soft pastel colours, in light and dark.",
+  "modelledOn": "An illustrated short-course site for front-end developers",
+  "features": [
+    "Round, illustrated course badge beside the pitch (hero-split, square cover, full radius)",
+    "Lessons as cards with their length, kind and free-preview pill",
+    "The first two lessons are free previews",
+    "Ring-style progress; code blocks with file names; reveal-the-answer asides",
+    "Fredoka headings over Figtree, soft pastels and shadows, light and dark",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "course",
+    "illustrated",
+    "playful",
+    "light",
+    "dark"
+  ],
+  "thumbnail": "/templates/doodle-school.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/cover.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/juno.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "showProgress": true,
+      "showContinue": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [
+    {
+      "key": "juno",
+      "name": "Juno Park",
+      "role": "Designer and CSS teacher",
+      "bio": "Juno draws every concept before she codes it, and thinks you should too.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "hero"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outline"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outcomes"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "instructors"
+          }
+        }
+      ]
+    },
+    "width": "board"
+  },
+  "course": {
+    "metadata": {
+      "subtitle": "CSS layout, drawn out — boxes, flexbox and grid in nine bite-sized lessons.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+      "coverAlt": "Hand-drawn coloured boxes arranged in a grid inside a circle",
+      "level": "beginner",
+      "outcomes": [
+        "Predict how boxes size and stack",
+        "Build rows and toolbars with flexbox",
+        "Build responsive layouts with grid"
+      ],
+      "instructors": [
+        "juno"
+      ],
+      "language": "en",
+      "ctaLabel": "Start doodling",
+      "showUpdated": true,
+      "topics": [
+        "CSS",
+        "Design"
+      ]
+    },
+    "modules": [
+      {
+        "slug": "boxes",
+        "name": "Boxes",
+        "description": "Everything is a box.",
+        "pages": [
+          {
+            "slug": "boxes-all-the-way-down",
+            "title": "Boxes all the way down",
+            "fields": {
+              "duration": 3,
+              "kind": "Video",
+              "objectives": "See every box on the page; Tell block boxes from inline ones",
+              "freePreview": true
+            },
+            "markdown": "Every element on a page is a box. Before you lay anything out, turn on an outline and **look** at the boxes:\n\n```css title=\"debug.css\"\n* { outline: 1px solid hotpink; }\n```\n\nBlock boxes stack down the page. Inline boxes flow along a line, like words. Most layout surprises are one of those two behaving exactly as designed.\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJXaGljaCUyMGtpbmQlMjBvZiUyMGJveCUyMGZsb3dzJTIwYWxvbmclMjBhJTIwbGluZSUyQyUyMGxpa2UlMjB3b3JkcyUzRiUyMiUyQyUyMmNob2ljZXMlMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyQmxvY2slMjIlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIySW5saW5lJTIyJTJDJTIyY29ycmVjdCUyMiUzQXRydWUlN0QlNUQlMkMlMjJleHBsYW5hdGlvbiUyMiUzQSUyMklubGluZSUyMGJveGVzJTIwc2l0JTIwc2lkZSUyMGJ5JTIwc2lkZSUyMHVudGlsJTIwdGhlJTIwbGluZSUyMGlzJTIwZnVsbC4lMjIlN0Q=\"}:::"
+          },
+          {
+            "slug": "the-box-model",
+            "title": "The box model, drawn out",
+            "fields": {
+              "duration": 4,
+              "kind": "Reading",
+              "objectives": "Name the four layers of a box; Use border-box sizing",
+              "freePreview": true
+            },
+            "markdown": "A box is four layers, inside out: **content**, **padding**, **border**, **margin**.\n\n```css title=\"card.css\"\n.card {\n  box-sizing: border-box; /* width includes padding and border */\n  width: 300px;\n  padding: 24px;\n  border: 2px solid;\n}\n```\n\nWith `border-box`, the card is exactly 300px wide. Without it, it is 352px — and that is where many overflowing layouts come from."
+          },
+          {
+            "slug": "margin-collapse",
+            "title": "The mystery of collapsing margins",
+            "fields": {
+              "duration": 3,
+              "kind": "Video",
+              "objectives": "Predict when margins collapse"
+            },
+            "markdown": "Two vertical margins that touch become **one** margin, the larger of the two.\n\nA heading with `margin-bottom: 32px` above a paragraph with `margin-top: 16px` has 32px between them, not 48px.\n\n:::expandable{title=\"Why does it not happen in flexbox?\" style=\"solution\"}\nMargins collapse only in normal flow, only vertically, and never inside a flex or grid container — which is one reason `gap` is so pleasant.\n:::"
+          }
+        ]
+      },
+      {
+        "slug": "flexbox",
+        "name": "Flexbox",
+        "description": "One direction at a time.",
+        "pages": [
+          {
+            "slug": "flex-in-one-picture",
+            "title": "Flexbox in one picture",
+            "fields": {
+              "duration": 4,
+              "kind": "Video",
+              "objectives": "Lay items out in a row; Push items apart with a growing spacer"
+            },
+            "markdown": "Flexbox lays children out along **one** line — a row or a column.\n\n```css title=\"toolbar.css\"\n.toolbar { display: flex; align-items: center; gap: 12px; }\n.toolbar .spacer { flex: 1; }\n```\n\nThe spacer grows to fill the leftover room, pushing everything after it to the far end."
+          },
+          {
+            "slug": "grow-shrink-basis",
+            "title": "Grow, shrink and basis",
+            "fields": {
+              "duration": 5,
+              "kind": "Exercise",
+              "objectives": "Read the flex shorthand"
+            },
+            "markdown": "`flex: 1` is shorthand for three numbers: grow `1`, shrink `1`, basis `0`.\n\n- **basis** is the starting size;\n- **grow** shares out the extra room;\n- **shrink** shares out the missing room.\n\n:::quiz{data=\"JTdCJTIycXVlc3Rpb24lMjIlM0ElMjJXaGF0JTIwZG9lcyUyMGZsZXgtZ3JvdyUyMGRlY2lkZSUzRiUyMiUyQyUyMmNob2ljZXMlMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIySG93JTIwdGhlJTIwZXh0cmElMjByb29tJTIwaXMlMjBzaGFyZWQlMjIlMkMlMjJjb3JyZWN0JTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJUaGUlMjBzdGFydGluZyUyMHNpemUlMjIlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyVGhlJTIwb3JkZXIlMjBvZiUyMGl0ZW1zJTIyJTdEJTVEJTJDJTIyZXhwbGFuYXRpb24lMjIlM0ElMjJCYXNpcyUyMGlzJTIwdGhlJTIwc3RhcnRpbmclMjBzaXplJTNCJTIwZ3JvdyUyMHNoYXJlcyUyMHRoZSUyMGV4dHJhLiUyMiU3RA==\"}:::"
+          },
+          {
+            "slug": "wrapping",
+            "title": "When things wrap",
+            "fields": {
+              "duration": 3,
+              "kind": "Reading",
+              "objectives": "Wrap flex items; Know when to reach for grid"
+            },
+            "markdown": "`flex-wrap: wrap` lets items fall onto a new line when there is no room. Each line is laid out on its own, so the last line can look lonely.\n\nWhen you want items to line up in **both** directions, you want grid — which is the next module."
+          }
+        ]
+      },
+      {
+        "slug": "grid",
+        "name": "Grid",
+        "description": "Two directions at once.",
+        "pages": [
+          {
+            "slug": "grid-tracks",
+            "title": "Rows, columns and tracks",
+            "fields": {
+              "duration": 5,
+              "kind": "Video",
+              "objectives": "Define grid tracks; Build a responsive gallery without media queries"
+            },
+            "markdown": "Grid lays children out in **two** directions at once.\n\n```css title=\"gallery.css\"\n.gallery {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));\n  gap: 16px;\n}\n```\n\nThat single line makes a gallery that fits as many 180px-or-wider columns as the screen allows."
+          },
+          {
+            "slug": "named-areas",
+            "title": "Named areas",
+            "fields": {
+              "duration": 4,
+              "kind": "Exercise",
+              "objectives": "Lay out a page with named areas"
+            },
+            "markdown": "Draw the layout as text, then place children by name:\n\n```css title=\"page.css\"\n.page {\n  display: grid;\n  grid-template-areas:\n    \"header header\"\n    \"nav    main\";\n  grid-template-columns: 220px 1fr;\n}\n.page > nav { grid-area: nav; }\n```"
+          },
+          {
+            "slug": "pick-the-right-tool",
+            "title": "Pick the right tool",
+            "fields": {
+              "duration": 2,
+              "kind": "Reading",
+              "objectives": "Choose between flexbox and grid"
+            },
+            "markdown": "- **One direction, content decides the size?** Flexbox.\n- **Two directions, the layout decides the size?** Grid.\n- **Just stacking things with space between?** Either — with `gap`.\n\nTake the final quiz to finish the course."
+          }
+        ]
+      }
+    ],
+    "quizzes": [
+      {
+        "lesson": "the-box-model",
+        "quiz": {
+          "title": "Box model check",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "With box-sizing: border-box, width includes…",
+              "choices": [
+                "Only the content",
+                "Content, padding and border",
+                "Everything including margin"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Margin is always outside the width."
+            }
+          ]
+        }
+      },
+      {
+        "module": "grid",
+        "quiz": {
+          "title": "Final quiz",
+          "passingScore": 70,
+          "questions": [
+            {
+              "prompt": "Items should line up in rows AND columns. Which do you reach for?",
+              "choices": [
+                "Flexbox",
+                "Grid"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Grid lays out in two directions."
+            },
+            {
+              "prompt": "What does flex: 1 set the basis to?",
+              "choices": [
+                "0",
+                "auto",
+                "100%"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Grow 1, shrink 1, basis 0."
+            },
+            {
+              "prompt": "Which margins collapse?",
+              "choices": [
+                "Touching vertical margins in normal flow",
+                "Horizontal margins",
+                "Margins inside a grid"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "Only vertical ones, only in normal flow."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

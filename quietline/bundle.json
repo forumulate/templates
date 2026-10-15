@@ -1,0 +1,202 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Quietline",
+    "slug": "template-quietline",
+    "description": "A calm, narrow status page that follows the visitor’s light or dark setting: a tinted banner, components folded into groups that say how many they hold, small rounded bars with the uptime beside each, and the incident history as a month calendar.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "status",
+      "minimal",
+      "dark",
+      "light",
+      "ai",
+      "template"
+    ],
+    "spaceTypes": [
+      "STATUS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "primaryColor": "#18181b",
+    "primaryColorDark": "#fafafa",
+    "accentColor": "#2bbd8e",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#ffffff",
+      "ink": "#3f3f46",
+      "heading": "#18181b",
+      "muted": "#71717a",
+      "line": "#e4e4e7",
+      "header_background": "#ffffff",
+      "header_primary": "#18181b",
+      "footer_background": "#ffffff",
+      "footer_primary": "#71717a",
+      "success": "#2bbd8e",
+      "warning": "#fbbf24",
+      "danger": "#f87171",
+      "info": "#60a5fa"
+    },
+    "paletteDark": {
+      "background": "#161618",
+      "surface": "#1c1c1f",
+      "ink": "#d4d4d8",
+      "heading": "#fafafa",
+      "muted": "#a1a1aa",
+      "line": "#2e2e33",
+      "header_background": "#161618",
+      "header_primary": "#fafafa",
+      "footer_background": "#161618",
+      "footer_primary": "#a1a1aa",
+      "success": "#2bbd8e",
+      "warning": "#fbbf24",
+      "danger": "#f87171",
+      "info": "#60a5fa"
+    },
+    "typography": {
+      "baseSize": 14,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 24,
+            "sm": 22
+          },
+          "weight": 600,
+          "tracking": -0.015,
+          "lineHeight": 1.25
+        },
+        "h2": {
+          "size": 16,
+          "weight": 600,
+          "lineHeight": 1.4
+        },
+        "body": {
+          "lineHeight": 1.55
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "background": "#18181b",
+        "ink": "#ffffff",
+        "radius": 8,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 60,
+        "border": "line"
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": true,
+        "style": "icon"
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "status": {
+      "colors": {
+        "operational": {
+          "color": "#2bbd8e"
+        },
+        "degraded": {
+          "color": "#fbbf24"
+        },
+        "partial": {
+          "color": "#fb923c"
+        },
+        "major": {
+          "color": "#f87171"
+        },
+        "maintenance": {
+          "color": "#60a5fa"
+        },
+        "noData": {
+          "color": "#eeeeee",
+          "colorDark": "#2e2e33"
+        }
+      },
+      "banner": {
+        "style": "tint",
+        "icon": true,
+        "align": "start",
+        "subline": true,
+        "showUpdated": true,
+        "radius": 8
+      },
+      "components": {
+        "layout": "list",
+        "container": "card",
+        "card": {
+          "surface": "outline",
+          "radius": 8,
+          "pad": 16
+        },
+        "dividers": true,
+        "statusStyle": "icon",
+        "rowMeta": "percent",
+        "groupCollapse": "collapsed",
+        "groupSummary": "count"
+      },
+      "bars": {
+        "shape": "pill",
+        "height": 22,
+        "gap": 2,
+        "radius": 2,
+        "days": 90,
+        "daysPhone": 30,
+        "fill": "solid",
+        "noData": "full",
+        "caption": false,
+        "percentDecimals": 2,
+        "tooltip": "styled"
+      },
+      "legend": {
+        "position": "hidden"
+      },
+      "incidents": {
+        "card": "tinted",
+        "chips": true,
+        "updates": "latest",
+        "time": "both",
+        "emptyStates": true,
+        "foldOutages": true
+      },
+      "page": {
+        "frame": "plain",
+        "emptyDays": 7,
+        "nav": "tabs"
+      },
+      "history": {
+        "view": "calendar",
+        "monthsPerPage": 3,
+        "perMonth": 5
+      },
+      "incident": {
+        "timeline": "rail",
+        "order": "desc"
+      },
+      "uptime": {
+        "months": 3,
+        "cell": "round"
+      },
+      "maintenance": {
+        "view": "list",
+        "showPast": true
+      }
+    }
+  },
+  "components": []
+}

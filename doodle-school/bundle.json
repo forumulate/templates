@@ -1,0 +1,164 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Doodle School",
+    "slug": "template-doodle-school",
+    "description": "An illustrated short course: a round, hand-drawn course badge beside the pitch, bite-sized lessons as cards with their length, kind and free-preview pills, a playful display face and soft pastel colours, in light and dark.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "course",
+      "illustrated",
+      "playful",
+      "light",
+      "dark",
+      "template"
+    ],
+    "spaceTypes": [
+      "COURSES"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "primaryColor": "#6c5ce7",
+    "primaryColorDark": "#a29bfe",
+    "accentColor": "#ff7aa8",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap",
+    "customFontFamily": "Figtree",
+    "headingFontFamily": "Fredoka",
+    "bodyFontFamily": "Figtree",
+    "palette": {
+      "background": "#fffaf3",
+      "surface": "#ffffff",
+      "ink": "#45426e",
+      "heading": "#2d2a5a",
+      "muted": "#7d7aa3",
+      "line": "#efe6f5",
+      "header_background": "#fffaf3",
+      "header_primary": "#2d2a5a",
+      "footer_background": "#fff1f6",
+      "footer_primary": "#7d7aa3",
+      "success": "#2ec4b6",
+      "warning": "#ffd166"
+    },
+    "paletteDark": {
+      "background": "#1d1b33",
+      "surface": "#26244a",
+      "ink": "#d9d6f5",
+      "heading": "#ffffff",
+      "muted": "#a29fcc",
+      "line": "#36345e",
+      "header_background": "#1d1b33",
+      "header_primary": "#ffffff",
+      "footer_background": "#1d1b33",
+      "footer_primary": "#a29fcc",
+      "success": "#2ec4b6",
+      "warning": "#ffd166"
+    },
+    "typography": {
+      "baseSize": 17,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 52,
+            "sm": 36
+          },
+          "weight": 700,
+          "tracking": -0.01,
+          "lineHeight": 1.08
+        },
+        "h2": {
+          "size": {
+            "lg": 30,
+            "sm": 25
+          },
+          "weight": 600,
+          "lineHeight": 1.2
+        },
+        "h3": {
+          "size": 20,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.7
+        }
+      }
+    },
+    "components": {
+      "radius": 16,
+      "shadow": "md",
+      "button": {
+        "background": "#6c5ce7",
+        "ink": "#ffffff",
+        "radius": 999,
+        "shadow": "sm",
+        "weight": "semibold"
+      },
+      "code": {
+        "background": "#fff1f6",
+        "border": "#ffd6e5",
+        "radius": 14,
+        "copy": "icon"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 64,
+        "border": "none"
+      },
+      "showSignIn": true,
+      "themeToggle": {
+        "show": true,
+        "style": "icon"
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "courses": {
+      "landing": {
+        "layout": "hero-split",
+        "coverAspect": "square",
+        "coverRadius": "full",
+        "showStats": true,
+        "showInstructors": true,
+        "showOutcomes": true,
+        "ctaStyle": "solid"
+      },
+      "outline": {
+        "style": "cards",
+        "showDurations": true,
+        "showKinds": true,
+        "showModuleProgress": true
+      },
+      "lesson": {
+        "sidebar": "curriculum",
+        "progressBar": "sidebar",
+        "completion": "complete-and-continue",
+        "endCard": "completed-next",
+        "objectivesBox": true
+      },
+      "progress": {
+        "style": "ring",
+        "doneMark": "check",
+        "tone": {
+          "tone": "brand"
+        }
+      },
+      "certificate": {
+        "layout": "modern",
+        "logo": true,
+        "border": "single",
+        "accent": {
+          "color": "#ff7aa8"
+        }
+      }
+    }
+  },
+  "components": []
+}

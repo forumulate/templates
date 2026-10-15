@@ -1,0 +1,156 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lanternhall",
+    "slug": "template-lanternhall",
+    "description": "A community calendar in the day-by-day style: every event on a timeline under its date, a square cover beside it, the hosts and who is going; each event page puts the cover on the left over a sticky register card, with the place drawn as our own map card.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "events",
+      "community",
+      "meetups",
+      "timeline",
+      "template"
+    ],
+    "spaceTypes": [
+      "EVENTS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "primaryColor": "#7c5cff",
+    "primaryColorDark": "#a996ff",
+    "accentColor": "#7c5cff",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "headingFontFamily": "Lexend",
+    "bodyFontFamily": "Inter",
+    "palette": {
+      "background": "#fbfaff",
+      "surface": "#ffffff",
+      "ink": "#3b3950",
+      "heading": "#161427",
+      "muted": "#76738c",
+      "line": "#e8e5f3",
+      "header_background": "#fbfaff",
+      "header_primary": "#161427",
+      "footer_background": "#fbfaff",
+      "footer_primary": "#76738c"
+    },
+    "paletteDark": {
+      "background": "#121019",
+      "surface": "#1b1825",
+      "ink": "#d6d3e4",
+      "heading": "#f6f4ff",
+      "muted": "#9893b0",
+      "line": "#2b2738",
+      "header_background": "#121019",
+      "header_primary": "#f6f4ff",
+      "footer_background": "#121019",
+      "footer_primary": "#9893b0"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 32,
+            "sm": 26
+          },
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 20,
+          "weight": 600,
+          "lineHeight": 1.3
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "components": {
+      "radius": 14,
+      "button": {
+        "background": "#7c5cff",
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "semibold"
+      }
+    },
+    "motion": {
+      "preset": "subtle",
+      "ambient": {
+        "background": "aurora"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 64,
+        "border": "none"
+      },
+      "showSignIn": true,
+      "themeToggle": {
+        "show": true,
+        "style": "icon"
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "events": {
+      "list": {
+        "layout": "timeline",
+        "group": {
+          "by": "day",
+          "style": "gutter-label"
+        },
+        "pastMode": "tabs",
+        "dateTile": "block",
+        "cover": "thumb-right",
+        "coverAspect": "1:1",
+        "showHosts": true,
+        "showAttendees": true,
+        "showCapacity": true,
+        "timeDisplay": "source",
+        "zoneToggle": true
+      },
+      "page": {
+        "layout": "split-cover-left",
+        "registerCard": "sticky-side",
+        "phoneBar": true,
+        "cover": {
+          "aspect": "1:1",
+          "radius": 18,
+          "shadow": "md"
+        },
+        "facts": {
+          "look": "tiles"
+        },
+        "showMap": true,
+        "map": {
+          "style": "card",
+          "linkTo": "openstreetmap"
+        },
+        "showAttendees": true,
+        "showRelated": true,
+        "relatedCount": 3,
+        "zoneToggle": true
+      },
+      "chips": {
+        "style": "pill"
+      },
+      "dateTileTone": {
+        "tone": "brand"
+      }
+    }
+  },
+  "components": []
+}

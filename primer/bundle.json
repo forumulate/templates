@@ -1,0 +1,161 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Primer",
+    "slug": "template-primer",
+    "description": "A chapter-by-chapter tutorial: numbered chapters, a chapter badge and an \"In this chapter\" box over every lesson, code with file names, Reveal-the-solution exercises, and a \"Next up\" card at the end of each chapter.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "course",
+      "tutorial",
+      "developer",
+      "light",
+      "dark",
+      "template"
+    ],
+    "spaceTypes": [
+      "COURSES"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "primaryColor": "#111111",
+    "primaryColorDark": "#ededed",
+    "accentColor": "#0a72ef",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "headingFontFamily": "Geist",
+    "bodyFontFamily": "Geist",
+    "monoFontFamily": "Geist Mono",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#fafafa",
+      "ink": "#3f3f46",
+      "heading": "#111111",
+      "muted": "#71717a",
+      "line": "#eaeaea",
+      "header_background": "#ffffff",
+      "header_primary": "#111111",
+      "footer_background": "#ffffff",
+      "footer_primary": "#71717a",
+      "success": "#16a34a",
+      "info": "#0a72ef"
+    },
+    "paletteDark": {
+      "background": "#0a0a0a",
+      "surface": "#111111",
+      "ink": "#d4d4d8",
+      "heading": "#ededed",
+      "muted": "#a1a1aa",
+      "line": "#262626",
+      "header_background": "#0a0a0a",
+      "header_primary": "#ededed",
+      "footer_background": "#0a0a0a",
+      "footer_primary": "#a1a1aa",
+      "success": "#22c55e",
+      "info": "#3b8cff"
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 34
+          },
+          "weight": 700,
+          "tracking": -0.04,
+          "lineHeight": 1.08
+        },
+        "h2": {
+          "size": {
+            "lg": 28,
+            "sm": 24
+          },
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.2
+        },
+        "h3": {
+          "size": 19,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.7
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "background": "#111111",
+        "ink": "#ffffff",
+        "radius": 8,
+        "weight": "medium"
+      },
+      "code": {
+        "background": "#fafafa",
+        "border": "#eaeaea",
+        "copy": "icon",
+        "radius": 8
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 64,
+        "border": "line"
+      },
+      "showSignIn": true,
+      "themeToggle": {
+        "show": true,
+        "style": "icon"
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "courses": {
+      "landing": {
+        "layout": "hero-split",
+        "showStats": true,
+        "showOutcomes": true,
+        "showPrereqs": true,
+        "showInstructors": true,
+        "ctaStyle": "solid",
+        "coverAspect": "classic",
+        "coverRadius": 12
+      },
+      "outline": {
+        "style": "numbered-chapters",
+        "numbering": "01",
+        "showDurations": true,
+        "showKinds": false,
+        "showModuleProgress": true
+      },
+      "lesson": {
+        "sidebar": "curriculum",
+        "progressBar": "sidebar",
+        "completion": "complete-and-continue",
+        "endCard": "completed-next",
+        "chapterBadge": true,
+        "objectivesBox": true
+      },
+      "progress": {
+        "style": "thin",
+        "doneMark": "check"
+      },
+      "certificate": {
+        "layout": "modern",
+        "logo": true,
+        "border": "single",
+        "line": "Nine chapters of hands-on full-stack development"
+      }
+    }
+  },
+  "components": []
+}

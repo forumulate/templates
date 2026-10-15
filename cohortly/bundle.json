@@ -1,0 +1,139 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Cohortly",
+    "slug": "template-cohortly",
+    "description": "A cohort course landing: the pitch beside a sticky panel with the start date and the button, a \"Previously at\" logo row, what is included, a weekly syllabus that opens week by week, testimonials and a long FAQ, on a warm page with editorial serif headings.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "course",
+      "cohort",
+      "light",
+      "editorial",
+      "warm",
+      "template"
+    ],
+    "spaceTypes": [
+      "COURSES"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#d9572b",
+    "accentColor": "#2b2622",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "headingFontFamily": "Newsreader",
+    "bodyFontFamily": "Inter",
+    "palette": {
+      "background": "#fbf7f0",
+      "surface": "#ffffff",
+      "ink": "#3a332d",
+      "heading": "#1c1814",
+      "muted": "#7d7166",
+      "line": "#e7dccd",
+      "header_background": "#fbf7f0",
+      "header_primary": "#1c1814",
+      "footer_background": "#f3e7d8",
+      "footer_primary": "#5c5248"
+    },
+    "typography": {
+      "baseSize": 17,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 56,
+            "sm": 38
+          },
+          "weight": 500,
+          "tracking": -0.02,
+          "lineHeight": 1.05
+        },
+        "h2": {
+          "size": {
+            "lg": 34,
+            "sm": 27
+          },
+          "weight": 500,
+          "tracking": -0.01,
+          "lineHeight": 1.15
+        },
+        "h3": {
+          "size": 21,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.65
+        }
+      }
+    },
+    "components": {
+      "radius": 14,
+      "button": {
+        "background": "#d9572b",
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "semibold"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 68,
+        "border": "none"
+      },
+      "showSignIn": true,
+      "copyright": "© 2026 Your Brand."
+    },
+    "courses": {
+      "landing": {
+        "layout": "cohort",
+        "showStats": true,
+        "showInstructors": true,
+        "showOutcomes": true,
+        "showPrereqs": true,
+        "ctaStyle": "solid",
+        "coverAspect": "video",
+        "coverRadius": 16
+      },
+      "outline": {
+        "style": "accordion",
+        "collapse": true,
+        "showDurations": true,
+        "showKinds": true,
+        "showModuleProgress": true
+      },
+      "cohort": {
+        "weekHeadings": true,
+        "showSessions": true
+      },
+      "access": {
+        "lockStyle": "icon",
+        "showDripDates": true
+      },
+      "social": {
+        "testimonials": "spotlight",
+        "linkedIn": true,
+        "shareLink": true,
+        "lessonComments": true
+      },
+      "certificate": {
+        "layout": "classic",
+        "logo": true,
+        "border": "double",
+        "signature": {
+          "name": "Noor Haddad",
+          "title": "Lead instructor"
+        }
+      }
+    }
+  },
+  "components": []
+}

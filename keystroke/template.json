@@ -1,0 +1,155 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "keystroke",
+  "type": "CHANGELOG",
+  "name": "Keystroke",
+  "description": "A dark, version-led changelog for an app on several platforms: the version in a red pill over the date in the gutter, platforms as a segmented switch, every release in full under New, Improvements and Fixes, and key caps inline.",
+  "modelledOn": "A desktop launcher app’s changelog",
+  "features": [
+    "Index layout: gutter, version first (tinted red pill) then the date",
+    "Platforms as a segmented tag switch, each with its own page",
+    "Full release notes on the index, sectioned New / Improvements / Fixes",
+    "Inline key caps (<kbd>)",
+    "Beta channel badge; breaking releases lead with their upgrade notes",
+    "Numbered pages and an email subscribe band",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "changelog",
+    "app",
+    "versions"
+  ],
+  "thumbnail": "/templates/keystroke.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000101": "assets/keystroke-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000102": "assets/keystroke-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000103": "assets/keystroke-command-bar.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000102",
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000101"
+  },
+  "layout": {
+    "preset": "gutter",
+    "frontDoor": {
+      "showRss": true,
+      "showDates": true,
+      "showVersionBadge": true,
+      "showSubtitle": false,
+      "showShare": true,
+      "subscribeStyle": "button"
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe",
+            "heading": "Never miss an update",
+            "body": "Release notes in your inbox, once a week.",
+            "layout": "inline-row",
+            "frame": "card"
+          }
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "macos",
+      "label": "macOS"
+    },
+    {
+      "slug": "windows",
+      "label": "Windows"
+    },
+    {
+      "slug": "ios",
+      "label": "iOS"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    }
+  ],
+  "authors": [],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "window-snapping-and-a-quicker-clipboard",
+      "title": "Window snapping and a quicker clipboard",
+      "tags": [
+        "macos"
+      ],
+      "daysAgo": 3,
+      "markdown": "Snap any window to a half, a third or a corner with one shortcut, and find anything you copied this week in under a second.\n\n### New\n\n![The command bar with window layouts](/api/assets/00000000-0000-4000-8000-000000000103)\n\n- **Window layouts** — press <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>←</kbd> to snap left; nine layouts in all.\n- **Pinned clips** stay at the top of clipboard history until you unpin them.\n\n### Improvements\n\n- Clipboard search is four times faster on large histories.\n- Settings open on the tab you used last.\n\n### Fixes\n\n- Fixed a crash when an extension returned an empty list.\n- The command bar no longer opens on the wrong display.\n\nPlaceholder release notes.",
+      "version": "1.84.0",
+      "fields": {
+        "type": "New"
+      }
+    },
+    {
+      "slug": "smoother-scrolling-in-long-lists",
+      "title": "Smoother scrolling in long lists",
+      "tags": [
+        "macos"
+      ],
+      "daysAgo": 10,
+      "markdown": "Lists with thousands of items now scroll at a steady frame rate, and the selection follows the keyboard without jumping.\n\n### Improvements\n\n- Images in lists load as they come into view.\n- <kbd>⌘</kbd> <kbd>K</kbd> shows the actions for the selected item.\n\n### Fixes\n\n- Fixed the search field losing focus after an action.\n\nPlaceholder release notes.",
+      "version": "1.83.2",
+      "fields": {
+        "type": "Improved"
+      }
+    },
+    {
+      "slug": "now-on-windows-in-beta",
+      "title": "Now on Windows, in beta",
+      "tags": [
+        "windows"
+      ],
+      "daysAgo": 16,
+      "markdown": "The launcher is now available for Windows 11 as a public beta, with the same extensions and the same shortcuts.\n\n### New\n\n- Install from the website; updates arrive in the background.\n- Press <kbd>Alt</kbd> <kbd>Space</kbd> to open it anywhere.\n\n### Known issues\n\n- Window layouts are not available yet on Windows.\n\nPlaceholder release notes.",
+      "version": "0.9.0",
+      "fields": {
+        "type": "New",
+        "channel": "Beta"
+      }
+    },
+    {
+      "slug": "extensions-api-2-0",
+      "title": "Extensions API 2.0",
+      "tags": [
+        "macos",
+        "api"
+      ],
+      "daysAgo": 25,
+      "markdown": "The extensions API is now version 2.0: faster startup, typed preferences, and background refresh for menu bar commands.\n\n## Upgrading\n\nExtensions built against API 1.x keep working until the date below. Rebuild with the new CLI and replace `useCachedState` with `useLocalStorage`; the migration guide lists every renamed call.\n\n### New\n\n- Background refresh on an interval you choose.\n- Typed preferences, checked when the extension loads.\n\nPlaceholder release notes.",
+      "version": "1.83.0",
+      "fields": {
+        "type": "Deprecated",
+        "breaking": true
+      }
+    },
+    {
+      "slug": "quick-notes-on-iphone",
+      "title": "Quick notes on iPhone",
+      "tags": [
+        "ios"
+      ],
+      "daysAgo": 38,
+      "markdown": "Capture a note from the lock screen and find it on your Mac a second later.\n\n### New\n\n- A lock screen widget for a new note.\n- Notes sync end to end encrypted.\n\n### Fixes\n\n- Fixed dark mode colours in the share sheet.\n\nPlaceholder release notes.",
+      "version": "1.4.0",
+      "fields": {
+        "type": "New"
+      }
+    }
+  ]
+}

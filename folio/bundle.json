@@ -1,0 +1,184 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Folio",
+    "slug": "template-folio",
+    "description": "A monochrome register in two columns: a large heading on the left, the documents ruled on the right with “Last updated” and a pill Read button each; documents are minimal, with an on-this-page rail.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "legal",
+      "minimal",
+      "monochrome",
+      "template"
+    ],
+    "spaceTypes": [
+      "LEGAL"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "logoIncludesName": true,
+    "colorScheme": "light",
+    "primaryColor": "#0a0a0a",
+    "accentColor": "#0a0a0a",
+    "palette": {
+      "ink": "#171717",
+      "line": "#eaeaea",
+      "muted": "#666666",
+      "heading": "#0a0a0a",
+      "surface": "#fafafa",
+      "background": "#ffffff",
+      "header_primary": "#0a0a0a",
+      "header_background": "#ffffff",
+      "footer_primary": "#666666",
+      "footer_background": "#fafafa"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "customFontFamily": "Geist",
+    "monoFontFamily": "Geist Mono",
+    "onThisPage": "always",
+    "headingAnchors": "hover",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 34
+          },
+          "weight": 600,
+          "tracking": -0.04
+        },
+        "h2": {
+          "size": 24,
+          "weight": 600,
+          "tracking": -0.02,
+          "spaceBefore": "48px"
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "radius": 999,
+        "weight": "medium"
+      },
+      "link": {
+        "underline": "hover"
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "align": "split",
+      "showSignIn": false,
+      "header": {
+        "border": "line",
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "navGap": 24,
+        "navSize": 14,
+        "navWeight": 500,
+        "logoHeight": 24
+      },
+      "headerLinks": [
+        {
+          "label": "Terms",
+          "href": "/legal/your-org/terms"
+        },
+        {
+          "label": "Privacy",
+          "href": "/legal/your-org/privacy"
+        },
+        {
+          "label": "DPA",
+          "href": "/legal/your-org/dpa"
+        },
+        {
+          "label": "SLA",
+          "href": "/legal/your-org/sla"
+        }
+      ],
+      "footer": {
+        "columns": 2,
+        "linkGap": 10,
+        "linkSize": 14,
+        "headingStyle": "plain"
+      },
+      "footerColumns": [
+        {
+          "heading": "Legal",
+          "links": [
+            {
+              "label": "Terms of Service",
+              "href": "/legal/your-org/terms"
+            },
+            {
+              "label": "Privacy Policy",
+              "href": "/legal/your-org/privacy"
+            },
+            {
+              "label": "All documents",
+              "href": "/legal/your-org"
+            }
+          ]
+        },
+        {
+          "heading": "Addenda",
+          "links": [
+            {
+              "label": "Data Processing Addendum",
+              "href": "/legal/your-org/dpa"
+            },
+            {
+              "label": "Service Level Agreement",
+              "href": "/legal/your-org/sla"
+            },
+            {
+              "label": "Sub-processors",
+              "href": "/legal/your-org/subprocessors"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand. Sample legal text — not legal advice."
+    },
+    "legal": {
+      "register": {
+        "group": "none",
+        "description": "hide",
+        "date": "updated",
+        "edition": false,
+        "readButton": true,
+        "search": "never"
+      },
+      "head": {
+        "lead": "effective",
+        "kicker": "none",
+        "rule": false
+      },
+      "date": {
+        "format": "long"
+      },
+      "numbering": {
+        "style": "decimal",
+        "levels": 1
+      },
+      "summary": {
+        "style": "callout"
+      },
+      "history": "disclosure",
+      "docNav": "none",
+      "definitions": "list"
+    }
+  },
+  "components": []
+}

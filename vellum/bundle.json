@@ -1,0 +1,430 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Vellum",
+    "slug": "template-vellum",
+    "description": "A light, airy changelog of summaries: each day once in a wide date gutter beside a hairline rail, big tight titles, the people who shipped it, tag pills and a round feed button — and a release page with its facts in a side column.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "changelog",
+      "minimal",
+      "developer",
+      "template"
+    ],
+    "spaceTypes": [
+      "CHANGELOG"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "logoIncludesName": true,
+    "colorScheme": "light",
+    "primaryColor": "#171717",
+    "accentColor": "#0070f3",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "customFontFamily": "Geist",
+    "monoFontFamily": "Geist Mono",
+    "palette": {
+      "ink": "#4d4d4d",
+      "line": "#ebebeb",
+      "muted": "#8f8f8f",
+      "heading": "#171717",
+      "surface": "#fafafa",
+      "background": "#ffffff",
+      "footer_primary": "#8f8f8f",
+      "header_primary": "#171717",
+      "footer_background": "#fafafa",
+      "header_background": "#ffffff",
+      "success": "#0a7d33",
+      "warning": "#a35200",
+      "danger": "#d32f2f",
+      "info": "#0070f3"
+    },
+    "paletteDark": {
+      "ink": "#a1a1a1",
+      "line": "#262626",
+      "muted": "#8f8f8f",
+      "heading": "#ededed",
+      "surface": "#0a0a0a",
+      "background": "#000000",
+      "footer_primary": "#8f8f8f",
+      "header_primary": "#ededed",
+      "footer_background": "#0a0a0a",
+      "header_background": "#000000",
+      "success": "#3ecf8e",
+      "warning": "#f5a623",
+      "danger": "#ff6166",
+      "info": "#52a8ff"
+    },
+    "onThisPage": "never",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 40,
+            "sm": 32
+          },
+          "weight": 600,
+          "tracking": -0.04,
+          "lineHeight": 1.15
+        },
+        "h2": {
+          "size": 24,
+          "weight": 600,
+          "tracking": -0.02,
+          "lineHeight": 1.3,
+          "spaceBefore": "40px"
+        },
+        "body": {
+          "lineHeight": 1.65
+        },
+        "indexTitle": {
+          "size": {
+            "lg": 48,
+            "sm": 36
+          },
+          "weight": 600,
+          "tracking": -0.05,
+          "lineHeight": 1
+        },
+        "entryTitle": {
+          "size": {
+            "lg": 32,
+            "sm": 24
+          },
+          "weight": 600,
+          "tracking": -0.04,
+          "lineHeight": 1.2
+        },
+        "eyebrow": {
+          "font": "mono",
+          "size": 13,
+          "color": "#8f8f8f"
+        }
+      }
+    },
+    "layout": {
+      "widths": {
+        "max": "1200px",
+        "list": "1080px",
+        "text": "720px"
+      }
+    },
+    "components": {
+      "radius": 8,
+      "code": {
+        "background": "#fafafa",
+        "border": "#ebebeb",
+        "ink": "#171717",
+        "radius": 6
+      },
+      "button": {
+        "background": "#171717",
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "medium"
+      },
+      "input": {
+        "background": "#ffffff",
+        "border": "#ebebeb",
+        "ink": "#171717",
+        "radius": 999
+      },
+      "link": {
+        "color": "#171717",
+        "colorDark": "#ededed",
+        "underline": "always",
+        "offset": 3,
+        "thickness": 1
+      }
+    },
+    "chrome": {
+      "align": "split",
+      "sticky": true,
+      "header": {
+        "height": {
+          "lg": 64,
+          "sm": 56
+        },
+        "border": "line",
+        "borderColor": "#ebebeb",
+        "navSize": 14,
+        "navInk": "#4d4d4d",
+        "navInkDark": "#a1a1a1",
+        "logoHeight": 24,
+        "blur": 12,
+        "opacity": 0.9
+      },
+      "headerLinks": [
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Products"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Resources"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Docs"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Pricing"
+        },
+        {
+          "href": "/c/your-org/your-changelog",
+          "label": "Changelog"
+        }
+      ],
+      "cta": {
+        "href": "/c/your-org/your-changelog",
+        "label": "Sign up",
+        "showOnPhone": true
+      },
+      "ctaStyle": "pill",
+      "secondaryCta": {
+        "href": "/c/your-org/your-changelog",
+        "label": "Log in",
+        "style": "outline",
+        "showOnPhone": false
+      },
+      "showSignIn": false,
+      "footerColumns": [
+        {
+          "heading": "Product",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Deployments"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Previews"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Observability"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Edge config"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "CLI"
+            }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Docs"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Guides"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Changelog"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Templates"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "About"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Blog"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Careers"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Contact"
+            }
+          ]
+        },
+        {
+          "heading": "Legal",
+          "links": [
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Privacy"
+            },
+            {
+              "href": "/c/your-org/your-changelog",
+              "label": "Terms"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Your Brand.",
+      "themeToggle": {
+        "show": true,
+        "modes": [
+          "light",
+          "dark"
+        ],
+        "style": "icon",
+        "position": "footer"
+      }
+    },
+    "changelog": {
+      "datePlacement": "gutter",
+      "gutterWidth": 260,
+      "stickyDate": true,
+      "dateFormat": "long",
+      "dateTone": "muted",
+      "group": {
+        "by": "day"
+      },
+      "rail": {
+        "show": true,
+        "width": 1,
+        "dot": false,
+        "color": "#ebebeb"
+      },
+      "entryGap": 120,
+      "indexWidth": 1080,
+      "typeBadge": {
+        "show": true,
+        "look": "pill",
+        "placement": "eyebrow",
+        "glyph": true
+      },
+      "breakingBadge": "badge",
+      "channelBadge": {
+        "show": true,
+        "look": "outline"
+      },
+      "tagStyle": "chip",
+      "tagOverflow": 2,
+      "entry": {
+        "body": "summary",
+        "authors": "avatars-names",
+        "cover": "none",
+        "readTime": false,
+        "titleAboveBody": true
+      },
+      "facts": {
+        "look": "chips",
+        "cta": "button"
+      },
+      "header": {
+        "right": [
+          "search",
+          "subscribe"
+        ],
+        "rightPhone": [
+          "subscribe"
+        ],
+        "rule": false,
+        "searchStyle": "compact",
+        "padBottom": 48
+      },
+      "filters": {
+        "tags": true,
+        "types": false,
+        "search": false,
+        "versions": false,
+        "style": "pills",
+        "overflow": "scroll"
+      },
+      "archive": {
+        "style": "months",
+        "paging": "load-more",
+        "counts": false
+      },
+      "release": {
+        "layout": "side",
+        "side": [
+          "back",
+          "date",
+          "readTime",
+          "actions"
+        ],
+        "sticky": true,
+        "metaAbove": false,
+        "align": "start",
+        "width": 1080,
+        "authors": "avatars-names",
+        "readTime": true,
+        "nav": "prev-next",
+        "actions": {
+          "items": [
+            "copyLink",
+            "copyMarkdown",
+            "share"
+          ],
+          "style": "row"
+        }
+      }
+    }
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "CHANGELOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "title"
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "tags",
+              "style": "pills",
+              "allLabel": "All",
+              "overflow": "scroll"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "space": "self",
+              "controls": true,
+              "limit": 20
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "archive"
+            }
+          }
+        ]
+      },
+      "paddingTop": {
+        "lg": "72px",
+        "sm": "48px"
+      }
+    }
+  ]
+}

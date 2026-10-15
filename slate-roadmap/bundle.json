@@ -1,0 +1,205 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Slate",
+    "slug": "template-slate-roadmap",
+    "description": "A dark, dense list roadmap: one column grouped by status under ring, half and check marks in grey, single-line rows with target and comments, a quiet vote at the end, and an item page that leads with its history.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "minimal",
+      "list",
+      "dense",
+      "template"
+    ],
+    "spaceTypes": [
+      "ROADMAP"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "primaryColor": "#e6e6e8",
+    "accentColor": "#7c82f0",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+    "customFontFamily": "Geist",
+    "monoFontFamily": "Geist Mono",
+    "palette": {
+      "ink": "#c9cbd1",
+      "line": "#232429",
+      "muted": "#80838d",
+      "heading": "#f2f2f3",
+      "surface": "#141518",
+      "background": "#0b0b0d",
+      "header_primary": "#f2f2f3",
+      "header_background": "#0b0b0d",
+      "footer_primary": "#80838d",
+      "footer_background": "#0b0b0d"
+    },
+    "paletteDark": {
+      "ink": "#c9cbd1",
+      "line": "#232429",
+      "muted": "#80838d",
+      "heading": "#f2f2f3",
+      "surface": "#141518",
+      "background": "#0b0b0d",
+      "header_primary": "#f2f2f3",
+      "header_background": "#0b0b0d",
+      "footer_primary": "#80838d",
+      "footer_background": "#0b0b0d"
+    },
+    "typography": {
+      "baseSize": 14,
+      "levels": {
+        "h1": {
+          "size": 26,
+          "weight": 600,
+          "tracking": -0.02
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": true,
+      "header": {
+        "border": "line",
+        "height": 56,
+        "borderColor": "#232429"
+      }
+    },
+    "components": {
+      "radius": 6,
+      "button": {
+        "radius": 6,
+        "weight": "medium",
+        "background": "#e6e6e8",
+        "ink": "#0b0b0d"
+      }
+    },
+    "layout": {
+      "widths": {
+        "list": "760px",
+        "board": "760px",
+        "text": "680px"
+      }
+    },
+    "roadmap": {
+      "lanes": {
+        "style": "plain",
+        "headerRule": true,
+        "empty": "hide",
+        "countStyle": "text",
+        "phone": "stack",
+        "tones": {
+          "submitted": {
+            "color": "#80838d"
+          },
+          "planned": {
+            "color": "#c9cbd1"
+          },
+          "inProgress": {
+            "color": "#e6e6e8"
+          },
+          "shipped": {
+            "color": "#e6e6e8"
+          },
+          "declined": {
+            "color": "#5a5d66"
+          }
+        },
+        "statuses": {
+          "submitted": {
+            "glyph": "ring"
+          },
+          "planned": {
+            "glyph": "ring"
+          },
+          "inProgress": {
+            "glyph": "half"
+          },
+          "shipped": {
+            "glyph": "check"
+          },
+          "declined": {
+            "glyph": "none"
+          }
+        }
+      },
+      "card": {
+        "frame": {
+          "surface": "flat",
+          "pad": 10
+        },
+        "density": "compact",
+        "meta": [
+          "target",
+          "comments"
+        ],
+        "titleLines": 1,
+        "excerptLines": 0,
+        "eyebrow": "none"
+      },
+      "vote": {
+        "style": "ghost",
+        "position": "end",
+        "glyph": "chevron",
+        "votedFill": "ink"
+      },
+      "header": {
+        "subtitle": "What we are building, in the order we are building it.",
+        "subtitlePlacement": "under-title",
+        "subscribe": true
+      },
+      "filters": {
+        "style": "segmented",
+        "sort": [
+          "new",
+          "top"
+        ],
+        "status": true
+      },
+      "item": {
+        "rail": {
+          "layout": "stacked",
+          "items": [
+            "vote",
+            "facts",
+            "follow",
+            "actions"
+          ]
+        },
+        "actions": {
+          "items": [
+            "copyLink",
+            "copyMarkdown"
+          ],
+          "style": "icons"
+        },
+        "voters": "none",
+        "activity": true,
+        "response": true,
+        "shippedIn": true,
+        "commentSort": "oldest",
+        "replies": true,
+        "reactions": false,
+        "staffBadge": true,
+        "merged": "redirect"
+      },
+      "submit": {
+        "sections": [
+          "problem",
+          "proposal"
+        ],
+        "rich": true,
+        "similar": true
+      }
+    }
+  },
+  "components": []
+}

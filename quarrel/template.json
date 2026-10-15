@@ -1,0 +1,172 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "quarrel",
+  "type": "CHANGELOG",
+  "name": "Quarrel",
+  "description": "A dark, dense changelog of typed rows: a grid-line hero, releases grouped under collapsible month headings, a mono date and an upper-case type label on every row, and a checkbox panel to narrow by type and tag.",
+  "modelledOn": "A code hosting platform’s changelog",
+  "features": [
+    "Index layout: rows (one ruled line per release)",
+    "Collapsible month headings",
+    "Upper-case, outlined change-type labels in mono (Release, Improvement, Security, Retired)",
+    "Filter panel: types, tags, Breaking, Any/All",
+    "Copy-the-feed and social links on the title row",
+    "Release page: centred, on-this-page outline, reading time, prev/next",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "changelog",
+    "developer",
+    "dense"
+  ],
+  "thumbnail": "/templates/quarrel.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000101": "assets/quarrel-mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000102": "assets/quarrel-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000103": "assets/quarrel-grid.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000104": "assets/quarrel-merge-queue.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000102",
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000101",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000101"
+  },
+  "layout": {
+    "preset": "rows",
+    "frontDoor": {
+      "showRss": true,
+      "showDates": true,
+      "showVersionBadge": true,
+      "showSubtitle": false,
+      "showShare": true,
+      "subscribeStyle": "menu"
+    }
+  },
+  "shape": {
+    "params": {
+      "set": {
+        "type": {
+          "options": [
+            "Release",
+            "Improvement",
+            "Security",
+            "Retired"
+          ]
+        }
+      }
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe",
+            "heading": "Get the changelog",
+            "body": "New releases, improvements and retirements in one weekly email.",
+            "layout": "inline-row",
+            "frame": "none"
+          }
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "pull-requests",
+      "label": "Pull requests"
+    },
+    {
+      "slug": "actions",
+      "label": "Actions"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    }
+  ],
+  "authors": [],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "merge-queue-is-generally-available",
+      "title": "Merge queue is generally available",
+      "tags": [
+        "pull-requests",
+        "actions"
+      ],
+      "daysAgo": 1,
+      "markdown": "Merge queue keeps your default branch green by testing every pull request against the changes queued ahead of it. After a public preview, it is available to every organization.\n\n## Added\n\n![The merge queue with three pull requests waiting](/api/assets/00000000-0000-4000-8000-000000000104)\n\n- Queue rules per branch: build concurrency, minimum group size and a timeout.\n- Jump the queue for a hotfix, with a reason recorded in the audit log.\n\n## Fixed\n\n- A pull request removed from the queue now re-runs its checks only once.\n\nPlaceholder release notes.",
+      "version": "v3.12",
+      "fields": {
+        "type": "Release",
+        "ctaUrl": "https://example.com/docs/merge-queue"
+      }
+    },
+    {
+      "slug": "required-reviewers-per-path",
+      "title": "Required reviewers per path",
+      "tags": [
+        "pull-requests",
+        "security"
+      ],
+      "daysAgo": 4,
+      "markdown": "Rulesets can now require a reviewer from a named team for changes under a path, so the people who own a directory see every change to it.\n\n## Changed\n\n- `CODEOWNERS` is still honoured; a ruleset adds to it, never replaces it.\n- The rule appears in the pull request's merge box with the team it is waiting for.\n\nPlaceholder release notes.",
+      "version": "v3.11.4",
+      "fields": {
+        "type": "Improvement"
+      }
+    },
+    {
+      "slug": "faster-log-search-in-workflow-runs",
+      "title": "Faster log search in workflow runs",
+      "tags": [
+        "actions"
+      ],
+      "daysAgo": 9,
+      "markdown": "Searching a workflow run's logs now returns matches across every step at once, and jumps straight to the line.\n\n## Fixed\n\n- Searching a run with more than 10,000 lines no longer times out.\n- Collapsed groups expand when they contain a match.\n\nPlaceholder release notes.",
+      "version": "v3.11.2",
+      "fields": {
+        "type": "Improvement"
+      }
+    },
+    {
+      "slug": "secret-scanning-for-private-keys-in-commits",
+      "title": "Secret scanning for private keys in commits",
+      "tags": [
+        "security"
+      ],
+      "daysAgo": 17,
+      "markdown": "Pushes that contain a private key are now blocked by default for new repositories, with a one-click bypass that records who made it and why.\n\n## Security\n\n- Detects RSA, EC and Ed25519 keys in every supported encoding.\n- Organization owners can turn the block on for existing repositories in one step.\n\nPlaceholder release notes.",
+      "version": "v3.11.0",
+      "fields": {
+        "type": "Security"
+      }
+    },
+    {
+      "slug": "classic-deploy-keys-are-retired",
+      "title": "Classic deploy keys are retired",
+      "tags": [
+        "security",
+        "api"
+      ],
+      "daysAgo": 36,
+      "markdown": "Classic deploy keys stop working on the date below. Fine-grained deploy keys replace them, scoped to a single repository and an expiry.\n\n## Upgrading\n\nReplace each classic key with a fine-grained one before the cut-off. Pipelines that still use a classic key will fail to clone with `403`. The settings page lists every classic key that is still in use, with its last use.\n\n## Removed\n\n- Creating classic deploy keys, in the settings and through the API.\n\nPlaceholder release notes.",
+      "version": "v3.10.0",
+      "fields": {
+        "type": "Retired",
+        "breaking": true
+      }
+    }
+  ]
+}

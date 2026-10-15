@@ -1,0 +1,147 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Hostboard",
+    "slug": "template-hostboard",
+    "description": "A neutral, hosted-style job board: the brand’s accent and nothing else, a left filter rail beside roles grouped by department with pill chips, and role pages with Overview and Application tabs and a full native apply form.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "careers",
+      "neutral",
+      "ats",
+      "template"
+    ],
+    "spaceTypes": [
+      "CAREERS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "primaryColor": "#4f46e5",
+    "primaryColorDark": "#a5a1ff",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#f7f7f8",
+      "ink": "#2b2d33",
+      "muted": "#6b6f78",
+      "heading": "#111216",
+      "line": "#e4e5e9",
+      "header_background": "#ffffff",
+      "header_primary": "#111216"
+    },
+    "paletteDark": {
+      "background": "#121317",
+      "surface": "#1a1b20",
+      "ink": "#d4d6dc",
+      "muted": "#9196a1",
+      "heading": "#ffffff",
+      "line": "#2b2d34",
+      "header_background": "#121317",
+      "header_primary": "#ffffff"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 32,
+            "sm": 26
+          },
+          "weight": 600,
+          "tracking": -0.01
+        },
+        "h2": {
+          "size": 22,
+          "weight": 600
+        },
+        "h3": {
+          "size": 16,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "chrome": {
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Company website",
+          "href": "https://example.com"
+        }
+      ],
+      "footerLinks": [
+        {
+          "label": "Candidate privacy",
+          "href": "https://example.com/privacy"
+        }
+      ],
+      "copyright": "© 2026 Your Brand"
+    },
+    "components": {
+      "button": {
+        "radius": 6,
+        "weight": "regular"
+      },
+      "input": {
+        "radius": 6
+      }
+    },
+    "careers": {
+      "list": {
+        "layout": "rows",
+        "group": {
+          "by": "field",
+          "field": "team",
+          "style": "eyebrow",
+          "counts": true
+        },
+        "chips": {
+          "style": "pill"
+        },
+        "facets": [
+          "team",
+          "location",
+          "employment",
+          "remote"
+        ],
+        "filterPlacement": "rail-left",
+        "filtersFrom": 0,
+        "density": "compact",
+        "divider": "rule",
+        "hover": "tint",
+        "rowAction": "none"
+      },
+      "role": {
+        "topApply": true,
+        "stickyApply": true,
+        "moreRoles": 0
+      },
+      "facts": {
+        "look": "chips"
+      }
+    },
+    "docs": {
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "breadcrumb": {
+          "show": true
+        },
+        "contributors": false
+      }
+    }
+  },
+  "components": []
+}

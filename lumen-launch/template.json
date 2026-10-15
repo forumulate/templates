@@ -1,0 +1,854 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lumen-launch",
+  "type": "CUSTOM",
+  "name": "Lumen Launch",
+  "description": "A dark product homepage: gradient display type, a split hero with a product shot in perspective, a logo wall, alternating feature rows, a five-cell bento, a changelog teaser and a closing call to action under a blurred sticky header with a mega menu.",
+  "modelledOn": "A product-planning tool’s dark homepage",
+  "features": [
+    "A landing page: the space’s address shows it, full width",
+    "Split hero with a perspective product shot",
+    "Logo wall, alternating feature rows, five-cell bento",
+    "Changelog teaser (pick your changelog in the feed’s settings)",
+    "Gradient display type and rise-in motion",
+    "Blurred sticky header with a mega menu, 4-column footer",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "landing",
+    "product",
+    "saas",
+    "gradient"
+  ],
+  "thumbnail": "/templates/lumen-launch.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark-light.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/hero-app.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/feature-plan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/feature-build.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/feature-ship.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/logo-northvale.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/logo-quarry.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/logo-brightfin.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/logo-copperline.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/logo-mosswood.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000c": "assets/logo-halden.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "landing"
+  },
+  "custom": {
+    "collections": [
+      {
+        "slug": "site",
+        "name": "Site",
+        "pages": [
+          {
+            "slug": "home",
+            "title": "Home",
+            "metadata": {
+              "hideTitle": true,
+              "seoTitle": "Your Brand — the calmer way to build products",
+              "seoDescription": "Plan, build and ship in one fast, keyboard-first tool. Free for small teams."
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "hero",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 128,
+                      "bottom": 80
+                    },
+                    "background": {
+                      "gradient": {
+                        "type": "radial",
+                        "stops": [
+                          {
+                            "color": "#1b1d3a",
+                            "at": 0
+                          },
+                          {
+                            "color": "#08090a",
+                            "at": 70
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "eyebrow": "New: agent workflows",
+                        "title": "Your Brand is the calmer way to build products",
+                        "level": 1,
+                        "sub": "Plan the work, track it as it moves and ship on a rhythm your whole team can feel. Built for the people who make software, and fast in every corner.",
+                        "actions": [
+                          {
+                            "label": "Start building",
+                            "href": "/x/your-org/your-custom#start",
+                            "style": "primary"
+                          },
+                          {
+                            "label": "See what’s new",
+                            "href": "/x/your-org/your-custom#changelog",
+                            "style": "link"
+                          }
+                        ],
+                        "media": {
+                          "kind": "image",
+                          "src": "/api/assets/00000000-0000-4000-8000-000000000003",
+                          "alt": "The Your Brand app: a list of issues beside a detail panel"
+                        },
+                        "layout": "split",
+                        "size": "xl"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "logos",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 40,
+                      "bottom": 56
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "logoWall",
+                      "attrs": {
+                        "title": "Powering product teams from first commit to IPO",
+                        "logos": [
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000007",
+                            "alt": "Northvale"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000008",
+                            "alt": "Quarry"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-000000000009",
+                            "alt": "Brightfin"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-00000000000a",
+                            "alt": "Copperline"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-00000000000b",
+                            "alt": "Mosswood"
+                          },
+                          {
+                            "src": "/api/assets/00000000-0000-4000-8000-00000000000c",
+                            "alt": "Halden"
+                          }
+                        ],
+                        "columns": 6,
+                        "grayscale": true,
+                        "size": "md"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "features",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 96
+                    },
+                    "anchor": "features"
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3,
+                        "variant": "eyebrow",
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Features"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Made for the way modern teams work"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "color": "muted",
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Three habits, one tool. Each one is fast on its own and better together."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "columns",
+                      "attrs": {
+                        "alternate": true,
+                        "valign": "center",
+                        "gap": "xl",
+                        "spaceAround": {
+                          "lg": 56,
+                          "sm": 24
+                        }
+                      },
+                      "content": [
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Plan"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Set direction without a meeting"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Write the plan where the work lives. Projects, milestones and owners stay in one place, so everyone can see what matters this cycle and why."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "buttons",
+                              "attrs": {
+                                "align": "start"
+                              },
+                              "content": [
+                                {
+                                  "type": "button",
+                                  "attrs": {
+                                    "label": "Plan with Your Brand",
+                                    "href": "/x/your-org/your-custom#start",
+                                    "style": "link"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "image",
+                              "attrs": {
+                                "src": "/api/assets/00000000-0000-4000-8000-000000000004",
+                                "alt": "A project timeline with milestones"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "columns",
+                      "attrs": {
+                        "alternate": true,
+                        "valign": "center",
+                        "gap": "xl",
+                        "spaceAround": {
+                          "lg": 56,
+                          "sm": 24
+                        }
+                      },
+                      "content": [
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Build"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Issues that move as fast as you do"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Keyboard-first boards, instant search and cycles that roll over on their own. Nothing waits on a page load."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "buttons",
+                              "attrs": {
+                                "align": "start"
+                              },
+                              "content": [
+                                {
+                                  "type": "button",
+                                  "attrs": {
+                                    "label": "Track the work",
+                                    "href": "/x/your-org/your-custom#start",
+                                    "style": "link"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "image",
+                              "attrs": {
+                                "src": "/api/assets/00000000-0000-4000-8000-000000000005",
+                                "alt": "A board of issues in four columns"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "columns",
+                      "attrs": {
+                        "alternate": true,
+                        "valign": "center",
+                        "gap": "xl",
+                        "spaceAround": {
+                          "lg": 56,
+                          "sm": 24
+                        }
+                      },
+                      "content": [
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "variant": "eyebrow"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Ship"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Release on a rhythm"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Every merged change lands in the changelog with the issue it closes. Customers see progress; your team sees momentum."
+                                }
+                              ]
+                            },
+                            {
+                              "type": "buttons",
+                              "attrs": {
+                                "align": "start"
+                              },
+                              "content": [
+                                {
+                                  "type": "button",
+                                  "attrs": {
+                                    "label": "Ship with confidence",
+                                    "href": "/x/your-org/your-custom#changelog",
+                                    "style": "link"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "content": [
+                            {
+                              "type": "image",
+                              "attrs": {
+                                "src": "/api/assets/00000000-0000-4000-8000-000000000006",
+                                "alt": "A release line rising through five milestones"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "bento",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 96
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Everything in reach"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "color": "muted",
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "The details that make a fast tool feel calm."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "grid",
+                      "attrs": {
+                        "cols": 12,
+                        "gap": "md"
+                      },
+                      "content": [
+                        {
+                          "type": "gridItem",
+                          "attrs": {
+                            "colSpan": 7,
+                            "mdSpan": 12,
+                            "smSpan": 12,
+                            "rowSpan": 2,
+                            "bg": "surface",
+                            "pad": "lg",
+                            "border": "#1f2023",
+                            "radius": "lg"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "icon": "zap",
+                                "iconStyle": "tile"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Instant everything"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Every view is local first. Search, filter and switch in under 50 ms, even on a train."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "gridItem",
+                          "attrs": {
+                            "colSpan": 5,
+                            "mdSpan": 6,
+                            "smSpan": 12,
+                            "rowSpan": 1,
+                            "bg": "surface",
+                            "pad": "lg",
+                            "border": "#1f2023",
+                            "radius": "lg"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "icon": "workflow",
+                                "iconStyle": "tile"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Automations"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Close issues on merge, assign on label, nudge on a stale review."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "gridItem",
+                          "attrs": {
+                            "colSpan": 5,
+                            "mdSpan": 6,
+                            "smSpan": 12,
+                            "rowSpan": 1,
+                            "bg": "surface",
+                            "pad": "lg",
+                            "border": "#1f2023",
+                            "radius": "lg"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "icon": "git-branch",
+                                "iconStyle": "tile"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Git, built in"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Branch names, pull requests and reviews link back to the issue."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "gridItem",
+                          "attrs": {
+                            "colSpan": 4,
+                            "mdSpan": 6,
+                            "smSpan": 12,
+                            "rowSpan": 1,
+                            "bg": "surface",
+                            "pad": "lg",
+                            "border": "#1f2023",
+                            "radius": "lg"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "icon": "bar-chart",
+                                "iconStyle": "tile"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Insights"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Cycle time and scope, without a spreadsheet."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "gridItem",
+                          "attrs": {
+                            "colSpan": 8,
+                            "mdSpan": 12,
+                            "smSpan": 12,
+                            "rowSpan": 1,
+                            "bg": "surface",
+                            "pad": "lg",
+                            "border": "#1f2023",
+                            "radius": "lg"
+                          },
+                          "content": [
+                            {
+                              "type": "heading",
+                              "attrs": {
+                                "level": 3,
+                                "icon": "sparkles",
+                                "iconStyle": "tile"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Agents that do the busywork"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "paragraph",
+                              "attrs": {
+                                "color": "muted"
+                              },
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Triage new issues, draft specs and write the release notes, then hand them to a person to approve."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "changelog",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 80,
+                      "bottom": 80
+                    },
+                    "anchor": "changelog"
+                  },
+                  "content": [
+                    {
+                      "type": "spaceFeed",
+                      "attrs": {
+                        "heading": "Changelog",
+                        "layout": "rows",
+                        "limit": 3,
+                        "moreLink": {
+                          "label": "See every release",
+                          "href": "/x/your-org/your-custom#changelog"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "cta",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 96,
+                      "bottom": 96,
+                      "x": 32
+                    },
+                    "anchor": "start",
+                    "contentAlign": "center",
+                    "radius": "lg",
+                    "scheme": "dark",
+                    "background": {
+                      "gradient": {
+                        "type": "linear",
+                        "angle": 180,
+                        "stops": [
+                          {
+                            "color": "#101113"
+                          },
+                          {
+                            "color": "#08090a"
+                          }
+                        ]
+                      }
+                    },
+                    "border": {
+                      "width": 1,
+                      "color": "#1f2023"
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2,
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Plan the present. Build the future."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "attrs": {
+                        "color": "muted",
+                        "textAlign": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Free for small teams. Set up in a minute, import from wherever you are now."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "buttons",
+                      "attrs": {
+                        "align": "center"
+                      },
+                      "content": [
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "label": "Start building",
+                            "href": "/x/your-org/your-custom#start",
+                            "style": "primary"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "attrs": {
+                            "label": "Talk to us",
+                            "href": "/x/your-org/your-custom#start",
+                            "style": "secondary"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

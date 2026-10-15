@@ -15,14 +15,17 @@ A sleek dark changelog: dates in the gutter, illustrated release notes, tag filt
 - Index layout: gutter
 - Light and dark palettes
 - Motion presets
+- Release page: “More releases” and an email subscribe after every release
+- No change-type badges; every release in full on the index
 - Zero custom CSS — every detail is a theme setting
-- Type: Inter (Google Fonts)
+- Type: Inter — self-hosted (mirrored onto our own CDN on apply; readers never fetch from a third party)
 - Colour scheme: dark
 
 ## What applying it creates
 
 - **The look** — `bundle.json`, a theme bundle: palette, type, header and footer, the composed front page. Published to the space straight away.
 - **The layout** — index layout `gutter`.
+- **The release page’s after-band** — `piecePage`: an email subscribe under every release, with “More releases” above it.
 - **Tags** — 5 tags with their labels.
 - **5 sample releases** — short, neutral placeholder copy so the space looks like the preview on day one:
   - Stacked branches

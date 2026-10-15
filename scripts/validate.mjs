@@ -19,7 +19,7 @@ for (const id of templates) {
     continue;
   }
   if (manifest.id !== id) problems.push(`${id}: template.json id is ${manifest.id}`);
-  if (!['BLOG', 'CHANGELOG', 'DOCS', 'FORUM'].includes(manifest.type))
+  if (!["BLOG","CHANGELOG","DOCS","FORUM","ROADMAP","STATUS","LEGAL","FAQ","CAREERS","CONTACT","EVENTS","COURSES","CUSTOM"].includes(manifest.type))
     problems.push(`${id}: unknown type ${manifest.type}`);
   for (const file of Object.values(manifest.assets ?? {}))
     if (!existsSync(join(dir, file))) problems.push(`${id}: missing asset ${file}`);
