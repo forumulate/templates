@@ -146,6 +146,14 @@
       },
       "facts": {
         "look": "chips"
+      },
+      "media": {
+        "aspect": "3/2",
+        "placeholder": "glyph"
+      },
+      "buttons": {
+        "size": "lg",
+        "shape": "pill"
       }
     },
     "docs": {

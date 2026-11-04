@@ -1,0 +1,1091 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "commonground",
+  "type": "CAREERS",
+  "name": "Commonground",
+  "description": "A nonprofit’s careers page in the default look: paid roles and volunteer places on one board, grouped by programme, with the mission up front, a weekly digest for supporters and the equal-opportunity statement in plain words.",
+  "modelledOn": "A charity’s jobs and volunteering page",
+  "features": [
+    "Paid roles, internships and volunteer places on one board, told apart by type",
+    "Departments preset: roles under their programme with counts",
+    "Volunteer places say what the hours are instead of a salary",
+    "Role layout: split — facts, Apply and share in a sticky column",
+    "Weekly digest offered to supporters on the job-alert control",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "careers",
+    "nonprofit",
+    "volunteer",
+    "departments"
+  ],
+  "thumbnail": "/templates/commonground.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/commonground-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/commonground-wordmark-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/commonground-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "departments",
+    "piecePreset": "split",
+    "frontDoor": {
+      "showLocation": true,
+      "showSalary": true,
+      "showSearch": true,
+      "showCounts": true,
+      "showShare": false,
+      "allTeamsLabel": "All teams",
+      "emptyText": "No openings match these filters.",
+      "eeoStatement": "Your Brand is an equal-opportunity employer. All qualified applicants will receive consideration for employment without regard to race, colour, religion, sex, sexual orientation, gender identity, national origin, disability or protected veteran status.",
+      "accommodations": "If you need a reasonable accommodation at any point in the process, email recruiting@example.com.",
+      "benefits": "A mission you can see the effect of\n25 days’ leave plus public holidays\nFlexible and part-time working welcome\nTraining and a supervision budget",
+      "showJobFeed": true,
+      "alertsDigest": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Careers at Your Brand"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Software that helps growing companies hire well. "
+            },
+            {
+              "type": "text",
+              "text": "Our hiring process",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/jobs/your-org/your-careers/how-we-hire"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " · "
+            },
+            {
+              "type": "text",
+              "text": "Company website",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://example.com"
+                  }
+                }
+              ]
+            }
+          ],
+          "attrs": {
+            "size": 17,
+            "color": "muted"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "roles"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "teams"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "benefits"
+          }
+        }
+      ]
+    },
+    "hideTitle": true,
+    "width": 1040,
+    "gap": "sm",
+    "paddingTop": 40
+  },
+  "settings": {
+    "careersForm": {
+      "fields": [
+        {
+          "name": "phone",
+          "type": "phone",
+          "label": "Phone"
+        },
+        {
+          "name": "linkedin",
+          "type": "url",
+          "label": "LinkedIn",
+          "placeholder": "https://www.linkedin.com/in/…"
+        },
+        {
+          "name": "github",
+          "type": "url",
+          "label": "GitHub",
+          "placeholder": "https://github.com/…"
+        },
+        {
+          "name": "portfolio",
+          "type": "url",
+          "label": "Portfolio or website",
+          "placeholder": "https://…"
+        },
+        {
+          "name": "work_authorization",
+          "type": "select",
+          "label": "Are you authorised to work in the country of this role?",
+          "required": true,
+          "options": [
+            "Yes",
+            "No",
+            "I will need sponsorship"
+          ]
+        },
+        {
+          "name": "how_heard",
+          "type": "select",
+          "label": "How did you hear about us?",
+          "options": [
+            "Job board",
+            "LinkedIn",
+            "Referral",
+            "Our website",
+            "Other"
+          ]
+        }
+      ],
+      "eeo": true,
+      "consentText": "I consent to Your Brand storing my application for 12 months for recruiting purposes.",
+      "retentionDays": 365,
+      "confirmation": true,
+      "successMessage": "Thanks for applying. You will get an email confirming we have your application."
+    }
+  },
+  "careers": {
+    "collections": [
+      {
+        "slug": "programmes",
+        "name": "Programmes",
+        "pages": [
+          {
+            "slug": "community-programme-manager",
+            "title": "Community Programme Manager",
+            "kind": "role",
+            "fields": {
+              "team": "Programmes",
+              "location": "Manchester",
+              "remote": "Hybrid",
+              "employment": "Full time",
+              "experienceLevel": "Senior",
+              "salary": {
+                "min": 38000,
+                "max": 44000,
+                "currency": "GBP",
+                "period": "year"
+              },
+              "featured": true,
+              "hiringManager": "Priya Nair, Director of Programmes"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Lead the programme that brings food, advice and company to people who are isolated, across six neighbourhoods."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Manage a team of four and a pool of volunteers"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Report on outcomes to funders and trustees"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Build partnerships with local services"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Experience managing community or youth work"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A real commitment to the people we serve"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "nice-to-have"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lived experience of the issues we work on"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "benefits"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Flexible hours"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Supervision and training"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "youth-worker",
+            "title": "Youth Worker (part time)",
+            "kind": "role",
+            "fields": {
+              "team": "Programmes",
+              "location": "Leeds",
+              "remote": "On-site",
+              "employment": "Part time",
+              "experienceLevel": "Mid",
+              "salary": {
+                "min": 24000,
+                "max": 27000,
+                "currency": "GBP",
+                "period": "year"
+              },
+              "workHours": "22 hours a week, some evenings"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Run our evening youth sessions and support each young person’s next step."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Plan and lead weekly sessions"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Keep careful safeguarding records"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A youth work or similar qualification"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Enhanced DBS check required"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "fundraising",
+        "name": "Fundraising",
+        "pages": [
+          {
+            "slug": "trusts-fundraiser",
+            "title": "Trusts and Foundations Fundraiser",
+            "kind": "role",
+            "fields": {
+              "team": "Fundraising",
+              "location": "Remote (UK)",
+              "remote": "Remote",
+              "employment": "Full time",
+              "experienceLevel": "Mid",
+              "salary": {
+                "min": 32000,
+                "max": 37000,
+                "currency": "GBP",
+                "period": "year"
+              },
+              "applicantLocations": "United Kingdom"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Win the grants that keep our programmes running."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Write and submit applications and reports"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Build relationships with funders"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Two years in charity fundraising"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Excellent writing"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "fundraising-intern",
+            "title": "Fundraising Intern",
+            "kind": "role",
+            "fields": {
+              "team": "Fundraising",
+              "location": "Manchester",
+              "remote": "Hybrid",
+              "employment": "Internship",
+              "experienceLevel": "Entry",
+              "compensation": "Paid at the Real Living Wage, three months"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Learn how a charity raises the money it spends, in a paid three-month placement."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Support campaigns and events"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Keep the supporter records in order"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Enthusiasm for our cause"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Careful with detail"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "volunteering",
+        "name": "Volunteering",
+        "pages": [
+          {
+            "slug": "food-project-volunteer",
+            "title": "Food Project Volunteer",
+            "kind": "role",
+            "fields": {
+              "team": "Volunteering",
+              "location": "Manchester; Leeds",
+              "remote": "On-site",
+              "employment": "Volunteer",
+              "experienceLevel": "Entry",
+              "compensation": "Unpaid; travel and lunch covered",
+              "workHours": "One shift a week, 3 hours"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Help cook and serve a free community meal once a week."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Prepare, serve and clear up"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Welcome everyone who comes through the door"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "No experience needed; we train you"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Over 16 (under 18 with a guardian’s consent)"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "trustee",
+            "title": "Trustee, Finance and Audit",
+            "kind": "role",
+            "fields": {
+              "team": "Volunteering",
+              "location": "Remote (UK)",
+              "remote": "Remote",
+              "employment": "Volunteer",
+              "experienceLevel": "Lead",
+              "compensation": "Unpaid; expenses covered",
+              "workHours": "Six meetings a year plus preparation",
+              "applicantLocations": "United Kingdom"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Join the board as the trustee who oversees our finances and audit."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Review the accounts and budgets"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Chair the finance and audit committee"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A financial qualification or board experience"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "name": "About",
+        "pages": [
+          {
+            "slug": "how-we-hire",
+            "title": "How we hire and welcome volunteers",
+            "kind": "page",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "We want our team and our volunteers to look like the people we serve."
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "A short application and a friendly conversation"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "For paid roles: an interview and a task"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "For volunteers: a visit, a reference and any checks the role needs"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "We reply to everyone, and we will always say what the next step is."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

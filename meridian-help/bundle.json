@@ -1,0 +1,85 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Meridian Help",
+    "slug": "template-meridian-help",
+    "description": "A support directory with topic cards, offices and channels.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "contact",
+      "support",
+      "directory",
+      "template"
+    ],
+    "spaceTypes": [
+      "CONTACT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#0b3b5c",
+    "accentColor": "#0e7490",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "bodyFontFamily": "Inter",
+    "headingFontFamily": "Inter",
+    "palette": {
+      "ink": "#1e293b",
+      "line": "#e2e8f0",
+      "muted": "#64748b",
+      "heading": "#0b3b5c",
+      "surface": "#f8fafc",
+      "background": "#ffffff",
+      "header_primary": "#0b3b5c",
+      "header_background": "#ffffff",
+      "footer_primary": "#64748b",
+      "footer_background": "#f1f5f9"
+    },
+    "components": {
+      "radius": 10
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand"
+    },
+    "contact": {
+      "look": "directory",
+      "head": {
+        "align": "center",
+        "size": "lg"
+      },
+      "offices": {
+        "card": {
+          "surface": "outline",
+          "radius": 12
+        }
+      },
+      "channels": {
+        "heading": "Find it yourself",
+        "links": [
+          {
+            "label": "Call us",
+            "url": "tel:+15555550100",
+            "description": "Weekdays, 8–18 local time"
+          }
+        ]
+      },
+      "density": "comfortable"
+    }
+  },
+  "components": []
+}

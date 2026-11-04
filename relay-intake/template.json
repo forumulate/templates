@@ -1,0 +1,187 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "relay-intake",
+  "type": "CONTACT",
+  "name": "Relay Intake",
+  "description": "A one-thing-at-a-time intake form: a bold card over a soft gradient, a progress bar across three pages, a scale, a country, a yes/no that opens a follow-up, a rating at the end — and a different thank-you for each topic.",
+  "modelledOn": "A form builder’s conversational intake page",
+  "features": [
+    "Bold look: centred head, raised card, big filled controls, a pill button",
+    "Three pages with a progress bar; a question that only appears for “yes”",
+    "Scale, country, yes/no and rating questions",
+    "Each topic ends on its own thank-you, with the sender’s name recalled",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "contact",
+    "intake",
+    "multi-step",
+    "bold"
+  ],
+  "thumbnail": "/templates/relay-intake.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "title": "Tell us what you’re building",
+      "subtitle": "Three short pages. A person reads every answer.",
+      "showChannels": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "contactForm": {
+      "submitLabel": "Send it over",
+      "successTitle": "Thanks, {name}",
+      "successMessage": "Your message is with the team.",
+      "nextSteps": [
+        {
+          "label": "Read the guides",
+          "url": "/"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "departments": [
+      {
+        "name": "A new project",
+        "description": "You’re starting something",
+        "icon": "rocket",
+        "successTitle": "Thanks, {name} — let’s build it",
+        "successMessage": "Someone who has shipped projects like yours will reply within a day.",
+        "accent": "#6d28d9"
+      },
+      {
+        "name": "A partnership",
+        "description": "Integrations, resellers, agencies",
+        "icon": "users",
+        "fields": [
+          "company",
+          "role",
+          "note",
+          "rating"
+        ],
+        "successTitle": "Thanks, {name}",
+        "successMessage": "Our partnerships team answers within two working days.",
+        "accent": "#0f766e"
+      }
+    ],
+    "formFields": [
+      {
+        "key": "company",
+        "label": "Company",
+        "type": "text",
+        "required": true,
+        "prefill": true
+      },
+      {
+        "key": "role",
+        "label": "Your role",
+        "type": "select",
+        "options": [
+          "Engineering",
+          "Product",
+          "Design",
+          "Leadership",
+          "Something else"
+        ]
+      },
+      {
+        "key": "fit",
+        "label": "A few questions so the right person answers",
+        "type": "page"
+      },
+      {
+        "key": "team_size",
+        "label": "How many people would use it?",
+        "type": "scale",
+        "min": 1,
+        "max": 5,
+        "lowLabel": "Just me",
+        "highLabel": "Hundreds"
+      },
+      {
+        "key": "country",
+        "label": "Where is your team based?",
+        "type": "country"
+      },
+      {
+        "key": "migrating",
+        "label": "Are you moving from another tool?",
+        "type": "yesno"
+      },
+      {
+        "key": "from_tool",
+        "label": "Which one?",
+        "type": "text",
+        "showIf": {
+          "field": "migrating",
+          "op": "equals",
+          "value": "yes"
+        }
+      },
+      {
+        "key": "experience",
+        "label": "Before you go",
+        "type": "page"
+      },
+      {
+        "key": "note",
+        "label": "One last thing",
+        "type": "statement",
+        "help": "We read every message. A sentence on what success looks like for you helps more than any form field."
+      },
+      {
+        "key": "rating",
+        "label": "How was this form?",
+        "type": "rating",
+        "max": 5
+      }
+    ],
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "start",
+              "title": "Start a conversation",
+              "hideFromNav": true,
+              "fields": {
+                "email": "hello@example.com",
+                "responseTarget": "one working day"
+              },
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pick what you’re here about, answer a few questions, and the person best placed to help writes back — not a queue."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

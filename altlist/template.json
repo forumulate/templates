@@ -1,0 +1,798 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "altlist",
+  "type": "COMPARE",
+  "name": "Altlist Alternatives",
+  "description": "A directory of “best alternatives to …” pages, each with a ranked list and a line on every product, and a front page that starts with search.",
+  "modelledOn": "A SaaS company’s “alternatives to X” hub",
+  "features": [
+    "One “best alternatives” page per rival, with a ranked list and a line on each",
+    "A directory front page: search, then a grid of products",
+    "The matrix underneath for the buyer who wants the detail",
+    "Your own product listed like any other, never scored by you",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "compare",
+    "alternatives",
+    "directory"
+  ],
+  "thumbnail": "/templates/altlist.png",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "directory",
+    "frontDoor": {
+      "title": "Alternatives, compared",
+      "subtitle": "Find the right tool, then see how it stacks up. Search by the product you are leaving."
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "compare": {
+    "catalog": {
+      "self": "your-brand",
+      "products": [
+        {
+          "id": "your-brand",
+          "name": "Your Brand",
+          "color": "#0f766e",
+          "tagline": "Project management that stays out of the way",
+          "category": "project management",
+          "url": "https://example.com/your-brand",
+          "freeTier": true,
+          "pros": [
+            "Fast to set up",
+            "Timelines included on every plan"
+          ],
+          "cons": [
+            "Smaller integration catalog than the largest tools"
+          ],
+          "bestFor": [
+            "Teams of 5 to 200 who want planning without a setup project"
+          ],
+          "pricing": {
+            "url": "https://example.com/your-brand/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 8.0,
+                  "period": "seat-month"
+                },
+                "annual": 7.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Your Brand pricing page",
+              "url": "https://example.com/your-brand/pricing"
+            }
+          ],
+          "verdict": "A good fit when your team wants plans and timelines without a long setup.",
+          "switching": "Export your projects from the old tool as CSV, import them from Settings, then invite your team."
+        },
+        {
+          "id": "tasklane",
+          "name": "Tasklane",
+          "color": "#e5484d",
+          "tagline": "Tasks, lists and timelines for busy teams",
+          "category": "project management",
+          "url": "https://example.com/tasklane",
+          "freeTier": true,
+          "pros": [
+            "Mature integrations",
+            "Generous free plan"
+          ],
+          "cons": [
+            "Timelines and time tracking are paid extras"
+          ],
+          "bestFor": [
+            "Teams that live in many other tools"
+          ],
+          "pricing": {
+            "url": "https://example.com/tasklane/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 10.0,
+                  "period": "seat-month"
+                },
+                "annual": 9.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Tasklane pricing page",
+              "url": "https://example.com/tasklane/pricing"
+            }
+          ]
+        },
+        {
+          "id": "boardwise",
+          "name": "Boardwise",
+          "color": "#f5a524",
+          "tagline": "Simple boards for small teams",
+          "category": "project management",
+          "url": "https://example.com/boardwise",
+          "freeTier": true,
+          "pros": [
+            "Very easy to learn",
+            "Lowest price here"
+          ],
+          "cons": [
+            "No timelines or dependencies",
+            "Few integrations"
+          ],
+          "bestFor": [
+            "Teams of under ten with simple work"
+          ],
+          "pricing": {
+            "url": "https://example.com/boardwise/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 6.0,
+                  "period": "seat-month"
+                },
+                "annual": 5.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Boardwise pricing page",
+              "url": "https://example.com/boardwise/pricing"
+            }
+          ]
+        },
+        {
+          "id": "plandrop",
+          "name": "Plandrop",
+          "color": "#24292f",
+          "tagline": "Enterprise planning with timelines at the centre",
+          "category": "project management",
+          "url": "https://example.com/plandrop",
+          "freeTier": false,
+          "pros": [
+            "Strongest timelines",
+            "Enterprise security"
+          ],
+          "cons": [
+            "No free plan",
+            "Heavier to set up"
+          ],
+          "bestFor": [
+            "Large organisations that plan in timelines"
+          ],
+          "pricing": {
+            "url": "https://example.com/plandrop/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 14.0,
+                  "period": "seat-month"
+                },
+                "annual": 13.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Plandrop pricing page",
+              "url": "https://example.com/plandrop/pricing"
+            }
+          ]
+        },
+        {
+          "id": "kanbanly",
+          "name": "Kanbanly",
+          "color": "#d6409f",
+          "tagline": "Boards and sprints for product teams",
+          "category": "project management",
+          "url": "https://example.com/kanbanly",
+          "freeTier": true,
+          "pros": [
+            "Good sprint tooling",
+            "Clean interface"
+          ],
+          "cons": [
+            "No webhooks yet",
+            "Timelines are still planned"
+          ],
+          "bestFor": [
+            "Product teams that run sprints"
+          ],
+          "pricing": {
+            "url": "https://example.com/kanbanly/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 9.0,
+                  "period": "seat-month"
+                },
+                "annual": 8.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Kanbanly pricing page",
+              "url": "https://example.com/kanbanly/pricing"
+            }
+          ]
+        }
+      ],
+      "criteria": {
+        "groups": [
+          {
+            "id": "planning",
+            "label": "Planning and work",
+            "criteria": [
+              {
+                "id": "kanban",
+                "label": "Kanban boards",
+                "kind": "boolean",
+                "key": true
+              },
+              {
+                "id": "gantt",
+                "label": "Gantt and timeline",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "time-tracking",
+                "label": "Time tracking",
+                "kind": "level"
+              },
+              {
+                "id": "dependencies",
+                "label": "Task dependencies",
+                "kind": "boolean"
+              },
+              {
+                "id": "sprints",
+                "label": "Sprints",
+                "kind": "boolean"
+              }
+            ]
+          },
+          {
+            "id": "integrations",
+            "label": "Integrations and API",
+            "criteria": [
+              {
+                "id": "public-api",
+                "label": "Public API",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "webhooks",
+                "label": "Webhooks",
+                "kind": "boolean"
+              },
+              {
+                "id": "integrations-count",
+                "label": "Native integrations",
+                "kind": "number",
+                "unit": "apps"
+              }
+            ]
+          },
+          {
+            "id": "security",
+            "label": "Security",
+            "criteria": [
+              {
+                "id": "sso",
+                "label": "Single sign-on (SAML/OIDC)",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "soc2",
+                "label": "SOC 2 report",
+                "kind": "boolean"
+              }
+            ]
+          },
+          {
+            "id": "pricing",
+            "label": "Pricing",
+            "criteria": [
+              {
+                "id": "free-plan",
+                "label": "Free plan",
+                "kind": "boolean",
+                "key": true
+              },
+              {
+                "id": "starting-price",
+                "label": "Starting price per seat per month",
+                "kind": "price",
+                "unit": "/seat/mo",
+                "key": true
+              }
+            ]
+          }
+        ]
+      },
+      "values": {
+        "your-brand": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 140,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 8,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "tasklane": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 90,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 10,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "boardwise": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 35,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 6,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "plandrop": {
+          "kanban": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 60,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 14,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "kanbanly": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "planned",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 45,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 9,
+            "verifiedAt": "2026-10-15"
+          }
+        }
+      },
+      "freshness": {
+        "verifyEveryDays": 90
+      }
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "comparisons",
+          "name": "Comparisons",
+          "pages": [
+            {
+              "slug": "tasklane-alternatives",
+              "title": "The best Tasklane alternatives",
+              "kind": "comparison",
+              "markdown": "Looking for an alternative to Tasklane? These are the tools teams most often compare it with, ranked by how many of the criteria that matter to most buyers they meet, with what each is best for.\n\n## Our verdict\n\nThere is no single best alternative to Tasklane: the right one depends on whether you need timelines, a free plan, or the lowest price. Read the one-line reasons below, then check the matrix against your own list.\n\n## Why teams switch\n\nThe usual reasons to leave Tasklane are cost at scale, a feature held back for a higher plan, or a tool that no longer fits how the team works.\n\n## How to switch\n\n1. Export your data from Tasklane.\n2. Import it into the alternative you picked and check the mapping.\n3. Move one project first, then the rest.\n\n## Frequently asked questions\n\n### What is the best free alternative to Tasklane?\n\nThe free-plan row of the matrix shows which of these have one.\n\n### Is it hard to switch from Tasklane?\n\nProjects and tasks move by CSV in a few minutes; automations have to be recreated by hand.\n\n## How we compared\n\nFacts come from each vendor's own documentation, with sources and dates shown. The ranking follows the number of key criteria each tool meets, not a score we award.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "alternatives",
+                  "products": [
+                    "tasklane",
+                    "your-brand",
+                    "boardwise",
+                    "plandrop",
+                    "kanbanly"
+                  ],
+                  "subject": "tasklane",
+                  "featured": "your-brand",
+                  "ranking": [
+                    {
+                      "product": "your-brand",
+                      "blurb": "Timelines, dependencies and sprints on every plan, with the shortest setup here.",
+                      "bestFor": "Teams that want planning without a project to set it up"
+                    },
+                    {
+                      "product": "boardwise",
+                      "blurb": "The simplest tool here and the lowest price.",
+                      "bestFor": "Small teams with simple work"
+                    },
+                    {
+                      "product": "plandrop",
+                      "blurb": "The strongest timelines and enterprise security, at a higher price.",
+                      "bestFor": "Large organisations"
+                    },
+                    {
+                      "product": "kanbanly",
+                      "blurb": "Good sprint tooling in a clean interface.",
+                      "bestFor": "Product teams that run sprints"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "slug": "boardwise-alternatives",
+              "title": "The best Boardwise alternatives",
+              "kind": "comparison",
+              "markdown": "Looking for an alternative to Boardwise? These are the tools teams most often compare it with, ranked by how many of the criteria that matter to most buyers they meet, with what each is best for.\n\n## Our verdict\n\nThere is no single best alternative to Boardwise: the right one depends on whether you need timelines, a free plan, or the lowest price. Read the one-line reasons below, then check the matrix against your own list.\n\n## Why teams switch\n\nThe usual reasons to leave Boardwise are cost at scale, a feature held back for a higher plan, or a tool that no longer fits how the team works.\n\n## How to switch\n\n1. Export your data from Boardwise.\n2. Import it into the alternative you picked and check the mapping.\n3. Move one project first, then the rest.\n\n## Frequently asked questions\n\n### What is the best free alternative to Boardwise?\n\nThe free-plan row of the matrix shows which of these have one.\n\n### Is it hard to switch from Boardwise?\n\nProjects and tasks move by CSV in a few minutes; automations have to be recreated by hand.\n\n## How we compared\n\nFacts come from each vendor's own documentation, with sources and dates shown. The ranking follows the number of key criteria each tool meets, not a score we award.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "alternatives",
+                  "products": [
+                    "boardwise",
+                    "your-brand",
+                    "tasklane",
+                    "plandrop",
+                    "kanbanly"
+                  ],
+                  "subject": "boardwise",
+                  "featured": "your-brand",
+                  "ranking": [
+                    {
+                      "product": "your-brand",
+                      "blurb": "Timelines, dependencies and sprints on every plan, with the shortest setup here.",
+                      "bestFor": "Teams that want planning without a project to set it up"
+                    },
+                    {
+                      "product": "tasklane",
+                      "blurb": "The largest integration catalog and a generous free plan.",
+                      "bestFor": "Teams that live in many other tools"
+                    },
+                    {
+                      "product": "plandrop",
+                      "blurb": "The strongest timelines and enterprise security, at a higher price.",
+                      "bestFor": "Large organisations"
+                    },
+                    {
+                      "product": "kanbanly",
+                      "blurb": "Good sprint tooling in a clean interface.",
+                      "bestFor": "Product teams that run sprints"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "slug": "plandrop-alternatives",
+              "title": "The best Plandrop alternatives",
+              "kind": "comparison",
+              "markdown": "Looking for an alternative to Plandrop? These are the tools teams most often compare it with, ranked by how many of the criteria that matter to most buyers they meet, with what each is best for.\n\n## Our verdict\n\nThere is no single best alternative to Plandrop: the right one depends on whether you need timelines, a free plan, or the lowest price. Read the one-line reasons below, then check the matrix against your own list.\n\n## Why teams switch\n\nThe usual reasons to leave Plandrop are cost at scale, a feature held back for a higher plan, or a tool that no longer fits how the team works.\n\n## How to switch\n\n1. Export your data from Plandrop.\n2. Import it into the alternative you picked and check the mapping.\n3. Move one project first, then the rest.\n\n## Frequently asked questions\n\n### What is the best free alternative to Plandrop?\n\nThe free-plan row of the matrix shows which of these have one.\n\n### Is it hard to switch from Plandrop?\n\nProjects and tasks move by CSV in a few minutes; automations have to be recreated by hand.\n\n## How we compared\n\nFacts come from each vendor's own documentation, with sources and dates shown. The ranking follows the number of key criteria each tool meets, not a score we award.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "alternatives",
+                  "products": [
+                    "plandrop",
+                    "your-brand",
+                    "tasklane",
+                    "boardwise",
+                    "kanbanly"
+                  ],
+                  "subject": "plandrop",
+                  "featured": "your-brand",
+                  "ranking": [
+                    {
+                      "product": "your-brand",
+                      "blurb": "Timelines, dependencies and sprints on every plan, with the shortest setup here.",
+                      "bestFor": "Teams that want planning without a project to set it up"
+                    },
+                    {
+                      "product": "tasklane",
+                      "blurb": "The largest integration catalog and a generous free plan.",
+                      "bestFor": "Teams that live in many other tools"
+                    },
+                    {
+                      "product": "boardwise",
+                      "blurb": "The simplest tool here and the lowest price.",
+                      "bestFor": "Small teams with simple work"
+                    },
+                    {
+                      "product": "kanbanly",
+                      "blurb": "Good sprint tooling in a clean interface.",
+                      "bestFor": "Product teams that run sprints"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "slug": "how-we-compare",
+              "title": "How we compare",
+              "kind": "page",
+              "markdown": "How we gather and check the facts on every comparison.\n\n## What we check\n\nEach cell of a comparison is a fact read from the vendor's own documentation or pricing page. We link the source and show the date we last checked it.\n\n## What we do not do\n\nWe do not publish our own scores for products, and we do not accept payment to change a fact. Where a link earns us a commission, it is marked as such.\n"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

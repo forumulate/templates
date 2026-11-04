@@ -1,0 +1,151 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "solo-notes",
+  "type": "ABOUT",
+  "name": "Solo Notes",
+  "description": "A narrow, personal page: the story first, the milestones newest first, where the work has been featured and how to reach the writer.",
+  "modelledOn": "An independent writer’s about page",
+  "features": [
+    "Personal preset: a narrow measure with the story, milestones and press",
+    "Minimal look: words first, no boxes, a rule between bands",
+    "Press as a plain list with the pull quote, and a single call to action",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "personal",
+    "creator",
+    "minimal",
+    "about"
+  ],
+  "thumbnail": "/templates/solo-notes.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/logo-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/logo-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-4.svg"
+  },
+  "brand": {},
+  "layout": {
+    "preset": "personal"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "about": {
+    "details": {
+      "hero": {
+        "eyebrow": "About",
+        "headline": "I write about how ordinary things get made",
+        "subheadline": "One piece a week, since 2017."
+      },
+      "mission": "To explain how ordinary things work, carefully enough that a curious person can follow along.",
+      "values": [
+        {
+          "title": "Corrections in public",
+          "text": "When I am wrong, the piece says so at the top."
+        },
+        {
+          "title": "No tracking",
+          "text": "There are no trackers on this site, and there never will be."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2024",
+          "title": "Collected in a book",
+          "text": "The first fifty pieces, revised."
+        },
+        {
+          "date": "2021",
+          "title": "Five thousand readers",
+          "text": "By word of mouth, with no ads."
+        },
+        {
+          "date": "2017",
+          "title": "The first note",
+          "text": "A weekly email to forty friends."
+        }
+      ],
+      "awards": [
+        {
+          "name": "Independent Publication of the Year",
+          "issuer": "Writers’ Guild",
+          "year": "2023"
+        }
+      ],
+      "press": [
+        {
+          "outlet": "The Reader",
+          "title": "The best newsletter you have not heard of",
+          "url": "https://example.com/press/the-reader",
+          "date": "2023-05",
+          "quote": "Patient, precise and quietly funny."
+        },
+        {
+          "outlet": "Longform",
+          "title": "Five newsletters worth your inbox",
+          "url": "https://example.com/press/longform",
+          "date": "2022-09"
+        },
+        {
+          "outlet": "Radio Local",
+          "title": "In conversation",
+          "url": "https://example.com/press/radio-local",
+          "date": "2022-02"
+        }
+      ],
+      "ctas": [
+        {
+          "heading": "Write to me",
+          "text": "I read everything and answer most of it.",
+          "label": "Email",
+          "href": "mailto:hello@example.com"
+        }
+      ],
+      "company": {
+        "tagline": "One piece a week, since 2017",
+        "description": "Your Brand is an independent weekly publication.",
+        "foundingDate": "2017",
+        "industry": "Publishing"
+      },
+      "logos": [
+        {
+          "name": "The Reader",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000001"
+        },
+        {
+          "name": "Longform",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000002"
+        },
+        {
+          "name": "Field Notes",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000003"
+        },
+        {
+          "name": "Radio Local",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000004"
+        }
+      ]
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "about",
+              "title": "About",
+              "hideFromNav": true,
+              "markdown": "## Hello\n\nI write about how ordinary things get made: bridges, bread, software, schedules. I started Your Brand as a weekly note in 2017 and it has grown, slowly, into a small independent publication.\n\n## How I work\n\nOne piece a week, researched in the open and corrected in public. No tracking, no paywall for the archive, and an email list that I write to myself.\n\n## Say hello\n\nThe best way to reach me is by email. I read everything and answer most of it."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

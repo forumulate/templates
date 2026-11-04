@@ -1,0 +1,424 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "clearline",
+  "type": "COURSES",
+  "name": "Clearline",
+  "description": "A corporate compliance refresher: a calm teal landing with a countdown to the enrolment deadline, lessons that open in order, true/false and short-answer checks, a timed assessment drawn from a question bank, and a minimal certificate with an expiry date and a QR code.",
+  "modelledOn": "A corporate learning platform’s compliance course",
+  "features": [
+    "Countdown to the enrolment deadline and a sticky start button on phones",
+    "Linear order, a lesson released a day after you start, access for a year",
+    "True/false, multi-select with partial credit and short-answer questions",
+    "A timed final assessment: 4 questions drawn from 6, shown one at a time",
+    "Completion requires every quiz passed; the certificate expires after 12 months and carries a QR code",
+    "Module pages with banners, a hidden archive lesson, a lesson that links out to the handbook",
+    "Joins the “Annual compliance” learning path, with its own public page",
+    "The minimal-text look — every detail a theme setting, zero custom CSS"
+  ],
+  "tags": [
+    "courses",
+    "compliance",
+    "corporate",
+    "certificate"
+  ],
+  "thumbnail": "/templates/clearline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/cover.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/mara.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/module-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/module-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/background.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "showProgress": true,
+      "showContinue": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [
+    {
+      "key": "mara",
+      "name": "Mara Lind",
+      "role": "Data protection officer",
+      "bio": "Mara answers the questions people are afraid to ask.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "hero"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outcomes"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "outline"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "instructors"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "faq"
+          }
+        }
+      ]
+    },
+    "gap": "lg"
+  },
+  "course": {
+    "metadata": {
+      "subtitle": "The yearly data-protection refresher every employee completes — forty minutes, four short modules, a certificate your auditor will accept.",
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+      "coverAlt": "A teal panel with a large tick mark",
+      "level": "all",
+      "outcomes": [
+        "Recognise personal data in the work you already do",
+        "Know the three questions to ask before sharing it",
+        "Report an incident within the hour, through the right door",
+        "Pass the annual assessment and keep your certificate current"
+      ],
+      "prerequisites": [
+        {
+          "text": "A work account — this course is for employees and contractors"
+        }
+      ],
+      "instructors": [
+        "mara"
+      ],
+      "language": "en",
+      "estimatedDuration": 40,
+      "ctaLabel": "Start the refresher",
+      "topics": [
+        "Compliance",
+        "Data protection"
+      ],
+      "faq": [
+        {
+          "question": "How long do I have?",
+          "answer": "Enrolment for this year closes on the date shown above, and your access lasts a year from the day you start."
+        },
+        {
+          "question": "What do I need to pass?",
+          "answer": "Every lesson read and every check passed. The final assessment draws 4 questions from a bank of 6, with a 10-minute limit; you can retake it."
+        },
+        {
+          "question": "How long is the certificate valid?",
+          "answer": "12 months. It shows its expiry date, and a QR code that opens its verification page."
+        }
+      ]
+    },
+    "modules": [
+      {
+        "slug": "what-counts",
+        "name": "Module 1 · What counts as personal data",
+        "description": "The data you handle every day, and the kinds that need more care.",
+        "pages": [
+          {
+            "slug": "welcome",
+            "title": "Welcome, and how this refresher works",
+            "fields": {
+              "duration": 3,
+              "kind": "Reading",
+              "objectives": "Know what you need to complete; Know how long the certificate lasts"
+            },
+            "markdown": "This is the yearly refresher. Read each lesson in order — the next opens when you finish the one before — answer the short checks, and finish with the assessment.\n\n**What you need to complete:** every lesson, every check passed, and the final assessment.\n\n**Your certificate** is valid for twelve months. We will remind you before it expires.",
+            "metadata": {
+              "subtitle": "Four modules, about forty minutes",
+              "badge": {
+                "text": "Start here",
+                "variant": "new"
+              }
+            }
+          },
+          {
+            "slug": "personal-data",
+            "title": "Personal data, in plain words",
+            "fields": {
+              "duration": 8,
+              "kind": "Reading",
+              "objectives": "Spot personal data in a spreadsheet, an email and a log file"
+            },
+            "markdown": "## Anything that identifies a person\n\nA name, an email address, a customer number, an IP address in a server log, a photo from a team event — all personal data, because each one points at a person.\n\n## Special categories\n\nHealth, beliefs, union membership, biometric data. These need an explicit reason to process and a smaller audience.\n\n> **Rule of thumb:** if you would mind it being forwarded to the whole company, it needs care.",
+            "metadata": {
+              "layout": "wide",
+              "keywords": [
+                "personal data",
+                "special categories"
+              ]
+            }
+          },
+          {
+            "slug": "where-it-lives",
+            "title": "Where it lives in our tools",
+            "fields": {
+              "duration": 6,
+              "kind": "Reading",
+              "objectives": "List the three places personal data piles up unnoticed"
+            },
+            "markdown": "Shared drives, chat threads and exported CSVs. Each is a copy nobody tracks. Before you export, ask whether a link to the system that already holds it would do."
+          },
+          {
+            "slug": "archive-2024",
+            "title": "Last year’s version of this module",
+            "fields": {
+              "duration": 4,
+              "kind": "Reading",
+              "objectives": "For reference only"
+            },
+            "markdown": "Kept for the record. The current module replaces it.",
+            "metadata": {
+              "hideFromNav": true
+            }
+          }
+        ]
+      },
+      {
+        "slug": "sharing",
+        "name": "Module 2 · Sharing and incidents",
+        "description": "The three questions before you share, and the hour after something goes wrong.",
+        "pages": [
+          {
+            "slug": "three-questions",
+            "title": "Three questions before you share",
+            "fields": {
+              "duration": 7,
+              "kind": "Reading",
+              "objectives": "Ask: who needs it, what is the least they need, how will it travel"
+            },
+            "markdown": "1. **Who needs it?** A person with a reason, not a channel.\n2. **What is the least they need?** A count instead of a list, a list without the email column.\n3. **How will it travel?** Through the system, not an attachment."
+          },
+          {
+            "slug": "incident-hour",
+            "title": "The first hour of an incident",
+            "fields": {
+              "duration": 8,
+              "kind": "Video",
+              "objectives": "Report within the hour; Keep the evidence"
+            },
+            "markdown": "Sent the file to the wrong person? Lost a laptop? **Report it within the hour** through the incident form — not by fixing it quietly. The clock for telling the regulator starts when we know, so the earlier the better.\n\nKeep the evidence: do not delete the email you sent by mistake."
+          },
+          {
+            "slug": "policy-handbook",
+            "title": "The full policy (handbook)",
+            "fields": {
+              "duration": 1,
+              "kind": "Reading",
+              "objectives": "Open the policy"
+            },
+            "markdown": "The full data-protection policy lives in the handbook.",
+            "metadata": {
+              "externalUrl": "https://example.com/handbook/data-protection"
+            }
+          }
+        ]
+      }
+    ],
+    "quizzes": [
+      {
+        "lesson": "personal-data",
+        "quiz": {
+          "title": "Check: what counts",
+          "passingScore": 100,
+          "questions": [
+            {
+              "type": "truefalse",
+              "prompt": "An IP address in a server log can be personal data.",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "correctIndexes": [
+                0
+              ],
+              "explanation": "It can point at a person, so it counts."
+            },
+            {
+              "prompt": "Which of these are special categories?",
+              "choices": [
+                "Health information",
+                "A work email address",
+                "Trade-union membership",
+                "A job title"
+              ],
+              "correctIndexes": [
+                0,
+                2
+              ],
+              "explanation": "Health and union membership need an explicit reason to process."
+            }
+          ],
+          "settings": {
+            "shuffleChoices": true,
+            "partialCredit": true
+          }
+        }
+      },
+      {
+        "lesson": "incident-hour",
+        "quiz": {
+          "title": "Check: the first hour",
+          "passingScore": 100,
+          "questions": [
+            {
+              "type": "short",
+              "prompt": "Within how many hours should you report an incident? (a number)",
+              "accepted": [
+                "1",
+                "one",
+                "1 hour",
+                "one hour"
+              ],
+              "explanation": "Within the hour."
+            }
+          ]
+        }
+      },
+      {
+        "module": "sharing",
+        "quiz": {
+          "title": "Annual assessment",
+          "passingScore": 75,
+          "questions": [
+            {
+              "prompt": "A colleague asks for the customer list to “check something”. What do you send first?",
+              "choices": [
+                "The full export",
+                "A question: what do you need it for?",
+                "Nothing, ever"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "points": 2
+            },
+            {
+              "type": "truefalse",
+              "prompt": "Deleting the wrongly-sent email is the right first step.",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "correctIndexes": [
+                1
+              ],
+              "explanation": "Keep the evidence and report."
+            },
+            {
+              "prompt": "Which travels personal data most safely?",
+              "choices": [
+                "An attachment",
+                "A link into the system that holds it",
+                "A screenshot"
+              ],
+              "correctIndexes": [
+                1
+              ]
+            },
+            {
+              "type": "short",
+              "prompt": "Name the form you use to report an incident (two words).",
+              "accepted": [
+                "incident form",
+                "the incident form"
+              ]
+            },
+            {
+              "prompt": "Which are personal data?",
+              "choices": [
+                "A team photo",
+                "A customer number",
+                "The office address"
+              ],
+              "correctIndexes": [
+                0,
+                1
+              ],
+              "points": 2
+            },
+            {
+              "type": "truefalse",
+              "prompt": "A count can often replace a list.",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "correctIndexes": [
+                0
+              ]
+            }
+          ],
+          "settings": {
+            "poolSize": 4,
+            "shuffleQuestions": true,
+            "shuffleChoices": true,
+            "timeLimitSeconds": 600,
+            "partialCredit": true
+          }
+        }
+      }
+    ],
+    "quizPolicy": {
+      "reveal": "pass",
+      "maxAttempts": 3,
+      "cooldownSeconds": 300
+    },
+    "access": {
+      "order": "linear",
+      "enrolClosesInDays": 45,
+      "accessDays": 365,
+      "completion": {
+        "minPercent": 100,
+        "requireQuizzes": true
+      },
+      "certificateValidMonths": 12,
+      "lessonDrip": [
+        {
+          "lesson": "incident-hour",
+          "afterDays": 1
+        }
+      ]
+    },
+    "learning": {
+      "welcomeEmail": true,
+      "completionEmail": true,
+      "nudgeAfterDays": 7
+    },
+    "paths": [
+      {
+        "slug": "annual-compliance",
+        "title": "Annual compliance",
+        "description": "Every refresher an employee completes in a year, in the order the auditors ask for them.",
+        "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+        "published": true
+      }
+    ]
+  }
+}

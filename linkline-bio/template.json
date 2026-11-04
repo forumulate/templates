@@ -1,0 +1,142 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "linkline-bio",
+  "type": "CUSTOM",
+  "name": "Linkline Bio",
+  "description": "A link-in-bio one-pager: your picture, one line about you, and a stack of big buttons to everywhere you are — centred, quick to load on a phone.",
+  "modelledOn": "A creator’s link-in-bio page",
+  "features": [
+    "Portfolio look: wide, centred, square corners",
+    "One page, no nav: the landing layout",
+    "Big buttons from the hero block’s actions",
+    "Zero third-party requests: no embedded widgets"
+  ],
+  "tags": [
+    "light",
+    "custom",
+    "link-in-bio",
+    "one-page"
+  ],
+  "thumbnail": "/templates/linkline-bio.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "landing"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "custom": {
+    "collections": [
+      {
+        "slug": "links",
+        "name": "Links",
+        "pages": [
+          {
+            "slug": "links",
+            "title": "Your Brand",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "me",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "image",
+                      "attrs": {
+                        "src": "/api/assets/00000000-0000-4000-8000-000000000001",
+                        "alt": "Your Brand",
+                        "align": "center",
+                        "width": "96px"
+                      }
+                    },
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "title": "Your Brand",
+                        "level": 1,
+                        "sub": "Designer, writer, maker of small useful things.",
+                        "layout": "center",
+                        "size": "md",
+                        "actions": [
+                          {
+                            "label": "Latest video",
+                            "href": "https://example.com/video",
+                            "style": "secondary"
+                          },
+                          {
+                            "label": "Newsletter",
+                            "href": "https://example.com/newsletter",
+                            "style": "secondary"
+                          },
+                          {
+                            "label": "Shop the kit",
+                            "href": "https://example.com/shop",
+                            "style": "secondary"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "more",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "title": "Work with me",
+                        "level": 1,
+                        "sub": "One-to-one sessions, booked a month ahead.",
+                        "layout": "center",
+                        "size": "md",
+                        "actions": [
+                          {
+                            "label": "Book a session",
+                            "href": "https://example.com/book",
+                            "style": "primary"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "layout": "narrow",
+              "hideTitle": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

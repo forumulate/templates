@@ -120,7 +120,9 @@
         "density": "compact",
         "divider": "rule",
         "hover": "tint",
-        "rowAction": "none"
+        "rowAction": "none",
+        "groupSize": "sm",
+        "frame": "panel"
       },
       "role": {
         "topApply": true,
@@ -129,6 +131,10 @@
       },
       "facts": {
         "look": "chips"
+      },
+      "header": {
+        "size": "lg",
+        "count": true
       }
     },
     "docs": {

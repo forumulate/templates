@@ -1,0 +1,287 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lumen-status",
+  "type": "STATUS",
+  "name": "Lumen Status",
+  "description": "A bold status page floating on a brand-coloured band: a centred banner that says it in one line, KPI tiles, a card per group with pill bars, an uppercase caption and the sub-pages as tabs.",
+  "modelledOn": "A collaboration app’s status page",
+  "features": [
+    "The page as a card floating on a brand-coloured band",
+    "Centred banner with its glyph and a line under it",
+    "Four KPI tiles: up, degraded, down and uptime",
+    "A card per group with pill bars and an uppercase caption",
+    "Sub-pages as tabs, at the board’s own width",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "status",
+    "bold",
+    "band",
+    "kpis"
+  ],
+  "thumbnail": "/templates/lumen-status.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/lumen-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "intro"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "kpis"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe"
+          }
+        }
+      ]
+    },
+    "width": 880
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "core",
+        "name": "Core",
+        "description": "The product people sign in to."
+      },
+      {
+        "key": "integrations",
+        "name": "Integrations",
+        "description": "Where the product meets other tools."
+      }
+    ],
+    "components": [
+      {
+        "key": "app",
+        "monitor": {
+          "name": "Web app",
+          "kind": "manual",
+          "description": "The product in the browser."
+        },
+        "startsDaysAgo": 120,
+        "group": "core"
+      },
+      {
+        "key": "sync",
+        "monitor": {
+          "name": "Real-time sync",
+          "kind": "manual",
+          "description": "Edits reaching everyone in the room."
+        },
+        "startsDaysAgo": 120,
+        "group": "core"
+      },
+      {
+        "key": "search",
+        "monitor": {
+          "name": "Search",
+          "kind": "manual",
+          "description": "Finding anything across a workspace."
+        },
+        "startsDaysAgo": 120,
+        "group": "core"
+      },
+      {
+        "key": "files",
+        "monitor": {
+          "name": "Files",
+          "kind": "manual",
+          "description": "Uploads and previews."
+        },
+        "startsDaysAgo": 120,
+        "group": "core"
+      },
+      {
+        "key": "api",
+        "monitor": {
+          "name": "Public API",
+          "kind": "manual",
+          "description": "Your own code calling ours."
+        },
+        "startsDaysAgo": 120,
+        "group": "integrations"
+      },
+      {
+        "key": "webhooks",
+        "monitor": {
+          "name": "Webhooks",
+          "kind": "manual",
+          "description": "Events we send to you."
+        },
+        "startsDaysAgo": 120,
+        "group": "integrations"
+      },
+      {
+        "key": "calendar",
+        "monitor": {
+          "name": "Calendar sync",
+          "kind": "manual",
+          "description": "Two-way calendar connections."
+        },
+        "startsDaysAgo": 120,
+        "group": "integrations"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "errors",
+        "components": [
+          {
+            "key": "app",
+            "impact": "partial_outage"
+          }
+        ],
+        "incident": {
+          "title": "Elevated error rates on Web app",
+          "severity": "major"
+        },
+        "daysAgo": 3,
+        "resolvedAfterHours": 1.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some requests to Web app are failing. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "We found a misconfigured load balancer and are rolling back the change.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "Error rates are back to normal and we are watching closely.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.75,
+            "body": "This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "slow",
+        "components": [
+          {
+            "key": "sync",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Real-time sync slower than usual",
+          "severity": "minor"
+        },
+        "daysAgo": 12,
+        "resolvedAfterHours": 0.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Real-time sync is responding more slowly than usual.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.75,
+            "body": "Response times are back to normal. This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "outage",
+        "components": [
+          {
+            "key": "search",
+            "impact": "major_outage"
+          }
+        ],
+        "incident": {
+          "title": "Search unavailable for some customers",
+          "severity": "critical"
+        },
+        "daysAgo": 26,
+        "resolvedAfterHours": 0.5,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Search is unavailable for some customers. We are on it.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "Service is restored for everyone. A write-up follows.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "upgrade",
+        "components": [
+          "calendar"
+        ],
+        "incident": {
+          "title": "Planned Calendar sync upgrade",
+          "markdown": "We are upgrading Calendar sync. It may be briefly unavailable during the window."
+        },
+        "daysFromNow": 5,
+        "durationHours": 2
+      }
+    ]
+  }
+}

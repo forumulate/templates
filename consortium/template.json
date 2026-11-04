@@ -1,0 +1,1156 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "consortium",
+  "type": "CAREERS",
+  "name": "Consortium",
+  "description": "An enterprise careers site in the board look with the table layout: every open role in one ruled table, a filter rail with team, place, type and level, team pages of their own, similar roles and previous/next on every role.",
+  "modelledOn": "A large company’s multi-team careers site",
+  "features": [
+    "Look: board — a ruled table, a column each for team, location, type and level",
+    "Filter rail on the left (team, location, type, where the work happens, level)",
+    "Team pages of their own, each with its feeds, and facet pages (“Jobs in Berlin”) in the sitemap",
+    "Role layout: tabs — Overview and Application; similar roles and previous/next under the form",
+    "Equal-opportunity statement and accommodations said once for the space",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "careers",
+    "enterprise",
+    "departments",
+    "table"
+  ],
+  "thumbnail": "/templates/consortium.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/consortium-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/consortium-wordmark-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/consortium-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "table",
+    "piecePreset": "tabs",
+    "frontDoor": {
+      "showLocation": true,
+      "showSalary": true,
+      "showSearch": true,
+      "showCounts": true,
+      "showShare": false,
+      "allTeamsLabel": "All teams",
+      "emptyText": "No openings match these filters.",
+      "eeoStatement": "Your Brand is an equal-opportunity employer. All qualified applicants will receive consideration for employment without regard to race, colour, religion, sex, sexual orientation, gender identity, national origin, disability or protected veteran status.",
+      "accommodations": "If you need a reasonable accommodation at any point in the process, email recruiting@example.com.",
+      "benefits": "Private health and dental cover\n28 days’ leave plus public holidays\nA pension with employer match\nSupport for study and certification",
+      "showJobFeed": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Careers at Your Brand"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Software that helps growing companies hire well. "
+            },
+            {
+              "type": "text",
+              "text": "Our hiring process",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/jobs/your-org/your-careers/our-hiring-process"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " · "
+            },
+            {
+              "type": "text",
+              "text": "Company website",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://example.com"
+                  }
+                }
+              ]
+            }
+          ],
+          "attrs": {
+            "size": 17,
+            "color": "muted"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "roles"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "teams"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "benefits"
+          }
+        }
+      ]
+    },
+    "hideTitle": true,
+    "width": 1040,
+    "gap": "sm",
+    "paddingTop": 40
+  },
+  "settings": {
+    "careersForm": {
+      "fields": [
+        {
+          "name": "phone",
+          "type": "phone",
+          "label": "Phone"
+        },
+        {
+          "name": "linkedin",
+          "type": "url",
+          "label": "LinkedIn",
+          "placeholder": "https://www.linkedin.com/in/…"
+        },
+        {
+          "name": "github",
+          "type": "url",
+          "label": "GitHub",
+          "placeholder": "https://github.com/…"
+        },
+        {
+          "name": "portfolio",
+          "type": "url",
+          "label": "Portfolio or website",
+          "placeholder": "https://…"
+        },
+        {
+          "name": "work_authorization",
+          "type": "select",
+          "label": "Are you authorised to work in the country of this role?",
+          "required": true,
+          "options": [
+            "Yes",
+            "No",
+            "I will need sponsorship"
+          ]
+        },
+        {
+          "name": "how_heard",
+          "type": "select",
+          "label": "How did you hear about us?",
+          "options": [
+            "Job board",
+            "LinkedIn",
+            "Referral",
+            "Our website",
+            "Other"
+          ]
+        }
+      ],
+      "eeo": true,
+      "consentText": "I consent to Your Brand storing my application for 12 months for recruiting purposes.",
+      "retentionDays": 365,
+      "confirmation": true,
+      "successMessage": "Thanks for applying. You will get an email confirming we have your application."
+    }
+  },
+  "careers": {
+    "collections": [
+      {
+        "slug": "engineering",
+        "name": "Engineering",
+        "pages": [
+          {
+            "slug": "principal-engineer-payments",
+            "title": "Principal Engineer, Payments",
+            "kind": "role",
+            "fields": {
+              "team": "Engineering",
+              "location": "Berlin; Dublin",
+              "remote": "Hybrid",
+              "employment": "Full time",
+              "experienceLevel": "Staff",
+              "salary": {
+                "min": 120000,
+                "max": 150000,
+                "currency": "EUR",
+                "period": "year"
+              },
+              "featured": true,
+              "hiringManager": "Jana Weiss, VP Engineering"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Set the technical direction for the payments platform that moves money for every business unit."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Own the architecture of the settlement and ledger services"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Mentor senior engineers across three sites"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Work with risk and compliance on controls"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Ten years in backend engineering, five on large systems"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Experience with regulated financial systems"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "site-reliability-engineer",
+            "title": "Site Reliability Engineer",
+            "kind": "role",
+            "fields": {
+              "team": "Engineering",
+              "location": "Dublin",
+              "remote": "Hybrid",
+              "employment": "Full time",
+              "experienceLevel": "Senior",
+              "salary": {
+                "min": 85000,
+                "max": 105000,
+                "currency": "EUR",
+                "period": "year"
+              }
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Keep the platform up, and make it easier to keep up."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Run on-call and improve what pages us"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Build the tooling that removes toil"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Production experience with Kubernetes and a major cloud"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "finance",
+        "name": "Finance",
+        "pages": [
+          {
+            "slug": "financial-controller",
+            "title": "Financial Controller",
+            "kind": "role",
+            "fields": {
+              "team": "Finance",
+              "location": "London",
+              "remote": "On-site",
+              "employment": "Full time",
+              "experienceLevel": "Lead",
+              "salary": {
+                "min": 95000,
+                "max": 115000,
+                "currency": "GBP",
+                "period": "year"
+              }
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Lead the month-end close and the controls around it for a group of seven entities."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Own the close, consolidation and audit support"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lead a team of six accountants"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Qualified accountant (ACA, ACCA or CIMA)"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Group reporting experience"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "accounts-payable-analyst",
+            "title": "Accounts Payable Analyst",
+            "kind": "role",
+            "fields": {
+              "team": "Finance",
+              "location": "Dublin",
+              "remote": "On-site",
+              "employment": "Contract",
+              "experienceLevel": "Entry",
+              "salary": {
+                "min": 34000,
+                "max": 40000,
+                "currency": "EUR",
+                "period": "year"
+              }
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "A twelve-month contract supporting the payables team through a system migration."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Process and reconcile supplier invoices"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Help test the new payables system"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A year in an accounts role"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Careful and good with numbers"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "operations",
+        "name": "Operations",
+        "pages": [
+          {
+            "slug": "supply-chain-planner",
+            "title": "Supply Chain Planner",
+            "kind": "role",
+            "fields": {
+              "team": "Operations",
+              "location": "Rotterdam",
+              "remote": "On-site",
+              "employment": "Full time",
+              "experienceLevel": "Mid",
+              "salary": {
+                "min": 48000,
+                "max": 60000,
+                "currency": "EUR",
+                "period": "year"
+              }
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Plan demand and supply for our European distribution network."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Forecast demand and set inventory levels"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Work with suppliers and carriers on lead times"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Experience in supply planning"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Fluent English; Dutch or German a plus"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "people",
+        "name": "People",
+        "pages": [
+          {
+            "slug": "talent-partner",
+            "title": "Talent Partner",
+            "kind": "role",
+            "fields": {
+              "team": "People",
+              "location": "Remote (EU)",
+              "remote": "Remote",
+              "employment": "Full time",
+              "experienceLevel": "Senior",
+              "salary": {
+                "min": 65000,
+                "max": 80000,
+                "currency": "EUR",
+                "period": "year"
+              },
+              "applicantLocations": "European Union"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Partner with hiring managers across the group to hire well and fairly."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Run structured searches end to end"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Report on pipeline, time to hire and quality"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Five years of in-house or agency recruiting"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "hr-intern",
+            "title": "People Operations Intern",
+            "kind": "role",
+            "fields": {
+              "team": "People",
+              "location": "Berlin",
+              "remote": "Hybrid",
+              "employment": "Internship",
+              "experienceLevel": "Entry",
+              "compensation": "€1,400 a month, six months"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Six months supporting onboarding and people operations."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Prepare onboarding for new starters"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Keep people records accurate"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Studying a relevant subject"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Discreet and well organised"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "name": "About",
+        "pages": [
+          {
+            "slug": "our-hiring-process",
+            "title": "Our hiring process",
+            "kind": "page",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Every role follows the same structured process, in every country we hire in."
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Application review"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Recruiter conversation (30 minutes)"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Structured interviews with the team"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Final conversation, references and offer"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "We keep every candidate informed at each step and aim to decide within four weeks."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "dropline",
+  "type": "BLOG",
+  "name": "Dropline",
+  "description": "A release newsroom in the sneaker-news genre: every drop with its release day, price, style code, retailers and regions, an “Out now” badge that turns itself on, a month and week release calendar, and a weekly roundup nobody edits.",
+  "modelledOn": "A sneaker and streetwear release newsroom",
+  "features": [
+    "Product release posts (the drop kind): typed release fields",
+    "Release details block with retailer buttons",
+    "“Out now” badge computed on the release day",
+    "Release calendar at /calendar (month, week, upcoming)",
+    "A roundup post that assembles itself every week",
+    "Region availability with a note for other regions",
+    "Product JSON-LD on every drop",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "releases",
+    "sneakers",
+    "news",
+    "calendar"
+  ],
+  "thumbnail": "/templates/dropline.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/mark-favicon.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/avatar-alex-morgan.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/avatar-sam-rivera.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/cover-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000006": "assets/cover-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000007": "assets/cover-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000008": "assets/cover-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000009": "assets/cover-5.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000a": "assets/cover-6.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000b": "assets/cover-7.svg",
+    "/api/assets/00000000-0000-4000-8000-00000000000c": "assets/cover-8.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "footerLogo": "/api/assets/00000000-0000-4000-8000-000000000002"
+  },
+  "layout": {
+    "preset": "grid",
+    "piecePreset": "article-clean",
+    "frontDoor": {
+      "showDate": true,
+      "showTags": true,
+      "badgeStyle": "pill",
+      "showAuthor": false,
+      "showSearch": true,
+      "showReadTime": false,
+      "showSubscribe": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "sneakers",
+      "label": "Sneakers"
+    },
+    {
+      "slug": "running",
+      "label": "Running"
+    },
+    {
+      "slug": "basketball",
+      "label": "Basketball"
+    },
+    {
+      "slug": "apparel",
+      "label": "Apparel"
+    },
+    {
+      "slug": "roundups",
+      "label": "Roundups"
+    }
+  ],
+  "authors": [
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "role": "Release editor",
+      "bio": "Tracks every date so you do not have to.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+    },
+    {
+      "key": "sam-rivera",
+      "name": "Sam Rivera",
+      "role": "Staff writer",
+      "bio": "Writes about what is worth the queue.",
+      "avatarUrl": "/api/assets/00000000-0000-4000-8000-000000000004"
+    }
+  ],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "air-runner-84-varsity-red",
+      "title": "Air Runner 84 “Varsity Red”",
+      "tags": [
+        "sneakers",
+        "running"
+      ],
+      "daysAgo": 4,
+      "markdown": "The Air Runner 84 comes back in the colours it launched in: varsity red suede over a black mesh base, with a sail midsole.\n\nPlaceholder release story — replace it with your own.",
+      "subtitle": "The 1984 trainer returns in its original red and black.",
+      "kind": "drop",
+      "fields": {
+        "releaseWindow": "Saturday morning",
+        "releaseStatus": "upcoming",
+        "retailPrice": {
+          "min": 180,
+          "currency": "USD"
+        },
+        "sku": "AR8401-600",
+        "colorway": "Varsity Red/Black-Sail",
+        "releaseCategory": "Sneakers",
+        "retailers": [
+          {
+            "label": "Nike SNKRS",
+            "url": "https://www.nike.com/launch",
+            "note": "10am ET"
+          },
+          {
+            "label": "END. Launches",
+            "url": "https://launches.endclothing.com",
+            "note": "Raffle"
+          },
+          {
+            "label": "Foot Locker",
+            "url": "https://www.footlocker.com"
+          }
+        ],
+        "regions": [
+          "US",
+          "EU",
+          "UK"
+        ],
+        "regionNote": "Not releasing where you are — END. ships to most countries."
+      },
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true,
+      "releaseInDays": 3,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000005",
+      "coverAlt": "Placeholder product illustration",
+      "featured": true
+    },
+    {
+      "slug": "court-classic-lo-ice",
+      "title": "Court Classic Lo “Ice”",
+      "tags": [
+        "sneakers",
+        "basketball"
+      ],
+      "daysAgo": 2,
+      "markdown": "An icy translucent sole under an all-white leather upper.\n\nPlaceholder release story.",
+      "subtitle": "A translucent outsole on the low-top everyone already owns.",
+      "kind": "drop",
+      "fields": {
+        "releaseStatus": "upcoming",
+        "retailPrice": {
+          "min": 120,
+          "currency": "USD"
+        },
+        "sku": "CC2210-100",
+        "colorway": "White/Ice Blue",
+        "releaseCategory": "Sneakers",
+        "retailers": [
+          {
+            "label": "Foot Locker",
+            "url": "https://www.footlocker.com"
+          },
+          {
+            "label": "size?",
+            "url": "https://www.size.co.uk"
+          }
+        ],
+        "regions": [
+          "WW"
+        ]
+      },
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true,
+      "releaseInDays": 8,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000006",
+      "coverAlt": "Placeholder product illustration"
+    },
+    {
+      "slug": "trail-shell-jacket-moss",
+      "title": "Trail Shell Jacket “Moss”",
+      "tags": [
+        "apparel"
+      ],
+      "daysAgo": 1,
+      "markdown": "A packable three-layer shell in a single moss colourway.\n\nPlaceholder release story.",
+      "subtitle": "Three-layer shell, taped seams, one colour.",
+      "kind": "drop",
+      "fields": {
+        "releaseStatus": "upcoming",
+        "retailPrice": {
+          "min": 260,
+          "currency": "EUR"
+        },
+        "sku": "TSJ-24-MOS",
+        "colorway": "Moss",
+        "releaseCategory": "Apparel",
+        "retailers": [
+          {
+            "label": "END. Launches",
+            "url": "https://launches.endclothing.com",
+            "note": "Raffle"
+          }
+        ],
+        "regions": [
+          "EU",
+          "UK"
+        ],
+        "regionNote": "EU and UK only at launch."
+      },
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true,
+      "releaseInDays": 12,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000007",
+      "coverAlt": "Placeholder product illustration"
+    },
+    {
+      "slug": "runner-v2-tokyo-night",
+      "title": "Runner V2 “Tokyo Night”",
+      "tags": [
+        "sneakers",
+        "running"
+      ],
+      "daysAgo": 6,
+      "markdown": "Reflective from toe to heel, released only in Japan.\n\nPlaceholder release story.",
+      "subtitle": "A Japan-exclusive pair, reflective all over.",
+      "kind": "drop",
+      "fields": {
+        "releaseStatus": "upcoming",
+        "retailPrice": {
+          "min": 24200,
+          "currency": "JPY"
+        },
+        "sku": "RV2-TKN-001",
+        "colorway": "Black/Reflective Silver",
+        "releaseCategory": "Sneakers",
+        "retailers": [
+          {
+            "label": "atmos",
+            "url": "https://www.atmos-tokyo.com",
+            "note": "JP only"
+          }
+        ],
+        "regions": [
+          "JP"
+        ],
+        "regionNote": "A Japan-only release; atmos does not ship abroad."
+      },
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true,
+      "releaseInDays": 20,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000008",
+      "coverAlt": "Placeholder product illustration"
+    },
+    {
+      "slug": "forum-mid-holiday-pack",
+      "title": "Forum Mid “Holiday Pack”",
+      "tags": [
+        "sneakers"
+      ],
+      "daysAgo": 9,
+      "markdown": "Three seasonal colourways are confirmed; the day is not.\n\nPlaceholder release story.",
+      "subtitle": "Three colourways, a date still to come.",
+      "kind": "drop",
+      "fields": {
+        "releaseWindow": "Holiday 2026",
+        "releaseStatus": "upcoming",
+        "retailPrice": {
+          "min": 110,
+          "currency": "USD"
+        },
+        "releaseCategory": "Sneakers",
+        "regions": [
+          "US",
+          "EU"
+        ]
+      },
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-000000000009",
+      "coverAlt": "Placeholder product illustration"
+    },
+    {
+      "slug": "low-pro-gum-sole",
+      "title": "Low Pro “Gum Sole”",
+      "tags": [
+        "sneakers"
+      ],
+      "daysAgo": 10,
+      "markdown": "Tan suede on a gum sole. The release day has passed, so the badge reads “Out now” on its own.\n\nPlaceholder release story.",
+      "subtitle": "Out now: suede, gum and nothing else.",
+      "kind": "drop",
+      "fields": {
+        "releaseStatus": "upcoming",
+        "retailPrice": {
+          "min": 100,
+          "currency": "USD"
+        },
+        "sku": "LP-GUM-02",
+        "colorway": "Tan/Gum",
+        "releaseCategory": "Sneakers",
+        "retailers": [
+          {
+            "label": "adidas Confirmed",
+            "url": "https://www.adidas.com/us/confirmed"
+          },
+          {
+            "label": "Foot Locker",
+            "url": "https://www.footlocker.com"
+          }
+        ],
+        "regions": [
+          "WW"
+        ]
+      },
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true,
+      "releaseInDays": -2,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000a",
+      "coverAlt": "Placeholder product illustration"
+    },
+    {
+      "slug": "heritage-hoodie-restock",
+      "title": "Heritage Hoodie restock",
+      "tags": [
+        "apparel"
+      ],
+      "daysAgo": 12,
+      "markdown": "Back in every size after selling out in an hour.\n\nPlaceholder release story.",
+      "subtitle": "The sold-out hoodie is back in every size.",
+      "kind": "drop",
+      "fields": {
+        "releaseStatus": "restocked",
+        "retailPrice": {
+          "min": 85,
+          "currency": "GBP"
+        },
+        "colorway": "Heather Grey",
+        "releaseCategory": "Apparel",
+        "retailers": [
+          {
+            "label": "size?",
+            "url": "https://www.size.co.uk"
+          }
+        ],
+        "regions": [
+          "UK",
+          "EU"
+        ]
+      },
+      "authors": [
+        "alex-morgan"
+      ],
+      "commentsEnabled": true,
+      "releaseInDays": -5,
+      "coverUrl": "/api/assets/00000000-0000-4000-8000-00000000000b",
+      "coverAlt": "Placeholder product illustration"
+    },
+    {
+      "slug": "this-weeks-drops",
+      "title": "This week’s drops",
+      "tags": [
+        "roundups"
+      ],
+      "daysAgo": 0,
+      "markdown": "Everything releasing this week, by day. This list assembles itself from the release dates on each post — nobody edits it.",
+      "subtitle": "Every release this week, updated on its own.",
+      "kind": "roundup",
+      "fields": {
+        "roundupRange": "this-week"
+      },
+      "authors": [
+        "sam-rivera"
+      ],
+      "commentsEnabled": true,
+      "pinned": true
+    }
+  ]
+}

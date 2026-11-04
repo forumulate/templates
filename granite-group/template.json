@@ -1,0 +1,252 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "granite-group",
+  "type": "ABOUT",
+  "name": "Granite Group",
+  "description": "Scale first: the numbers, the leadership, offices, awards, commitments and the legal entity, in a wide, restrained page with a rule between bands.",
+  "modelledOn": "A global software company’s corporate about page",
+  "features": [
+    "Enterprise preset: numbers, leadership, offices, awards, commitments, company facts",
+    "Leadership with a page each, and the legal entity as an imprint (register, VAT, LEI)",
+    "Commitments in four kinds: sustainability, diversity, accessibility, ethics",
+    "Wide measure and a quiet blue-grey palette",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "enterprise",
+    "corporate",
+    "about"
+  ],
+  "thumbnail": "/templates/granite-group.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/logo-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/logo-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/logo-5.svg"
+  },
+  "brand": {},
+  "layout": {
+    "preset": "enterprise"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "about": {
+    "details": {
+      "hero": {
+        "eyebrow": "Corporate",
+        "headline": "Infrastructure organizations can rely on",
+        "subheadline": "Your Brand runs the systems nine hundred of the world’s largest companies depend on every day."
+      },
+      "mission": "To build the dependable systems that large organizations run on, and to make them quieter every year.",
+      "stats": [
+        {
+          "value": "900+",
+          "label": "Enterprise customers"
+        },
+        {
+          "value": "120",
+          "label": "Countries"
+        },
+        {
+          "value": "9,400",
+          "label": "Employees"
+        },
+        {
+          "value": "26",
+          "label": "Years in business"
+        }
+      ],
+      "leadership": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Elena Marchetti",
+            "role": "Chief Executive Officer",
+            "bio": "Elena has led the company since 2016. She started in the support organization and still spends one day a quarter on the phones.",
+            "founder": true
+          },
+          {
+            "name": "Robert Adeyemi",
+            "role": "Chief Financial Officer",
+            "bio": "Robert oversees finance, audit and investor relations. He joined after fifteen years in banking and leads the company’s reporting on sustainability."
+          },
+          {
+            "name": "Hannah Lindqvist",
+            "role": "Chief Technology Officer",
+            "bio": "Hannah leads engineering and security. She is responsible for the product roadmap and for the company’s uptime commitments."
+          }
+        ]
+      },
+      "offices": [
+        {
+          "name": "Headquarters",
+          "street": "1 Market Square",
+          "city": "Zurich",
+          "country": "Switzerland",
+          "lat": 47.3769,
+          "lng": 8.5417
+        },
+        {
+          "name": "Americas",
+          "street": "500 Harbor Way",
+          "city": "Toronto",
+          "country": "Canada",
+          "lat": 43.6532,
+          "lng": -79.3832
+        },
+        {
+          "name": "Asia Pacific",
+          "street": "8 Marina Boulevard",
+          "city": "Singapore",
+          "country": "Singapore",
+          "lat": 1.2816,
+          "lng": 103.8636
+        }
+      ],
+      "awards": [
+        {
+          "name": "Best Enterprise Platform",
+          "issuer": "Enterprise Tech Review",
+          "year": "2024"
+        },
+        {
+          "name": "Top Employer",
+          "issuer": "Workplace Institute",
+          "year": "2024"
+        },
+        {
+          "name": "Climate Leadership Award",
+          "issuer": "Green Business Council",
+          "year": "2023"
+        }
+      ],
+      "impact": [
+        {
+          "kind": "sustainability",
+          "title": "Net zero by 2035",
+          "text": "We have cut our data-centre emissions by half since 2019 and publish the figures every year, audited."
+        },
+        {
+          "kind": "diversity",
+          "title": "Hiring and pay",
+          "text": "We publish pay-band data by level and review it twice a year. Hiring panels are mixed by default."
+        },
+        {
+          "kind": "accessibility",
+          "title": "Built for everyone",
+          "text": "Our products meet WCAG 2.2 AA, and every release is tested with assistive technology."
+        },
+        {
+          "kind": "ethics",
+          "title": "Code of conduct",
+          "text": "Our code of conduct applies to every employee, supplier and partner, and a confidential line is open to anyone."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "1998",
+          "title": "Founded in Zurich",
+          "text": "Four engineers and a contract with a regional bank."
+        },
+        {
+          "date": "2008",
+          "title": "Global expansion",
+          "text": "Offices in North America and Asia Pacific."
+        },
+        {
+          "date": "2016",
+          "title": "The platform era",
+          "text": "One platform for every product, and a published roadmap."
+        },
+        {
+          "date": "2024",
+          "title": "Nine hundred customers",
+          "text": "In a hundred and twenty countries."
+        }
+      ],
+      "press": [
+        {
+          "outlet": "Enterprise Tech Review",
+          "title": "Why the quiet platform won",
+          "url": "https://example.com/press/etr",
+          "date": "2024-04"
+        },
+        {
+          "outlet": "Business Daily",
+          "title": "A net-zero plan with the numbers attached",
+          "url": "https://example.com/press/business-daily",
+          "date": "2023-10"
+        }
+      ],
+      "pressKit": {
+        "boilerplate": "Your Brand builds the dependable systems that large organizations run on. Founded in 1998, it serves more than nine hundred enterprise customers in 120 countries.",
+        "email": "media@example.com"
+      },
+      "company": {
+        "tagline": "Infrastructure organizations can rely on",
+        "description": "Your Brand builds enterprise software for the world’s largest organizations.",
+        "legalName": "Your Brand AG",
+        "foundingDate": "1998-06",
+        "foundingLocation": "Zurich",
+        "employees": "5001-10000",
+        "industry": "Enterprise software",
+        "registrationNumber": "CHE-000.000.000",
+        "registry": "Commercial Register of the Canton of Zurich",
+        "vatId": "CHE-000.000.000 MWST",
+        "registeredAddress": {
+          "street": "1 Market Square",
+          "city": "Zurich",
+          "postcode": "8001",
+          "country": "Switzerland"
+        },
+        "areaServed": [
+          "Worldwide"
+        ]
+      },
+      "logos": [
+        {
+          "name": "Atlas Freight",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000001"
+        },
+        {
+          "name": "Meridian Bank",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000002"
+        },
+        {
+          "name": "Corvid Health",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000003"
+        },
+        {
+          "name": "Solstice Energy",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000004"
+        },
+        {
+          "name": "Harbor Retail",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000005"
+        }
+      ]
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "about",
+              "title": "About",
+              "hideFromNav": true,
+              "markdown": "## Our story\n\nYour Brand was founded in 1998 to give large organizations a single, dependable system to run on. Twenty-six years later, more than nine hundred of the world’s largest companies use it to move money, goods and information across borders.\n\n## How we work\n\nWe make long commitments: to customers, to employees and to the places we operate. Every product ships with a published roadmap, a support window measured in years and a named owner.\n\n## Where we are going\n\nThe next decade is about making critical infrastructure quieter: fewer incidents, less energy and nothing a customer has to think about on a Monday morning."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

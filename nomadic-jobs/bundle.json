@@ -1,0 +1,167 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Nomadic Jobs",
+    "slug": "template-nomadic-jobs",
+    "description": "A remote-first agency’s careers page in the paper look: roles as a plain list with where in the world each can be done, a time-zone note on every role, and remote and freelance roles easy to find.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "careers",
+      "template",
+      "remote",
+      "agency",
+      "paper"
+    ],
+    "spaceTypes": [
+      "CAREERS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "primaryColor": "#c2410c",
+    "primaryColorDark": "#fb923c",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#f7f7f8",
+      "ink": "#2b2d33",
+      "muted": "#6b6f78",
+      "heading": "#111216",
+      "line": "#e4e5e9",
+      "header_background": "#ffffff",
+      "header_primary": "#111216"
+    },
+    "paletteDark": {
+      "background": "#121317",
+      "surface": "#1a1b20",
+      "ink": "#d4d6dc",
+      "muted": "#9196a1",
+      "heading": "#ffffff",
+      "line": "#2b2d34",
+      "header_background": "#121317",
+      "header_primary": "#ffffff"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 32,
+            "sm": 26
+          },
+          "weight": 600,
+          "tracking": -0.01
+        },
+        "h2": {
+          "size": 22,
+          "weight": 600
+        },
+        "h3": {
+          "size": 16,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "chrome": {
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Company website",
+          "href": "https://example.com"
+        }
+      ],
+      "footerLinks": [
+        {
+          "label": "Candidate privacy",
+          "href": "https://example.com/privacy"
+        }
+      ],
+      "copyright": "© 2026 Your Brand"
+    },
+    "components": {
+      "button": {
+        "radius": 6,
+        "weight": "regular"
+      },
+      "input": {
+        "radius": 6
+      }
+    },
+    "careers": {
+      "list": {
+        "layout": "rows",
+        "chips": {
+          "style": "pill"
+        },
+        "facets": [
+          "remote",
+          "employment",
+          "location"
+        ],
+        "filtersFrom": 6,
+        "filterPlacement": "dropdowns",
+        "density": "comfortable",
+        "divider": "rule",
+        "hover": "tint",
+        "rowAction": "arrow",
+        "posted": "relative",
+        "teamPages": "own",
+        "frame": "panel",
+        "actionStyle": "link",
+        "empty": {
+          "style": "panel"
+        }
+      },
+      "role": {
+        "topApply": true,
+        "stickyApply": false,
+        "moreRoles": 3,
+        "more": {
+          "style": "list",
+          "by": "similar"
+        }
+      },
+      "facts": {
+        "look": "list"
+      },
+      "look": "paper",
+      "apply": {
+        "width": "narrow"
+      },
+      "header": {
+        "size": "lg",
+        "count": true
+      },
+      "background": {
+        "style": "tint"
+      },
+      "buttons": {
+        "size": "lg",
+        "shape": "pill"
+      }
+    },
+    "docs": {
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "breadcrumb": {
+          "show": true
+        },
+        "contributors": false
+      }
+    }
+  },
+  "components": []
+}

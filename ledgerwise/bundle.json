@@ -144,7 +144,17 @@
         "density": "compact",
         "divider": "rule",
         "hover": "tint",
-        "rowAction": "none"
+        "rowAction": "none",
+        "frame": "panel"
+      },
+      "media": {
+        "frame": {
+          "radius": 12,
+          "border": true
+        }
+      },
+      "background": {
+        "style": "plain"
       }
     },
     "docs": {

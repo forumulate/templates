@@ -1,0 +1,246 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "stillwater-status",
+  "type": "STATUS",
+  "name": "Stillwater Status",
+  "description": "A quiet, roomy status page that reads like a note from the team: a soft tinted banner without a glyph, sentence-case words, tinted incident cards with relative times, a subscribe card with a component picker and no legend.",
+  "modelledOn": "An incident-management company’s status page",
+  "features": [
+    "A soft tinted banner with a line under it, no glyph",
+    "Roomy spacing between every band",
+    "Tinted incident cards with “2 hours ago” times",
+    "The history as a plain list",
+    "A subscribe card with a component and kind picker",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "status",
+    "calm",
+    "roomy",
+    "light"
+  ],
+  "thumbnail": "/templates/stillwater-status.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/stillwater-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "intro"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe"
+          }
+        }
+      ]
+    },
+    "width": 720
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "product",
+        "name": "Product",
+        "description": "What your team uses every day."
+      }
+    ],
+    "components": [
+      {
+        "key": "dashboard",
+        "monitor": {
+          "name": "Dashboard",
+          "kind": "manual",
+          "description": "Where your team works."
+        },
+        "startsDaysAgo": 120,
+        "group": "product"
+      },
+      {
+        "key": "alerts",
+        "monitor": {
+          "name": "Alerting",
+          "kind": "manual",
+          "description": "Pages, calls and messages."
+        },
+        "startsDaysAgo": 120,
+        "group": "product"
+      },
+      {
+        "key": "on-call",
+        "monitor": {
+          "name": "On-call schedules",
+          "kind": "manual",
+          "description": "Who is on, and when."
+        },
+        "startsDaysAgo": 120,
+        "group": "product"
+      },
+      {
+        "key": "status-pages",
+        "monitor": {
+          "name": "Status pages",
+          "kind": "manual",
+          "description": "The pages your customers read."
+        },
+        "startsDaysAgo": 120,
+        "group": "product"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "errors",
+        "components": [
+          {
+            "key": "dashboard",
+            "impact": "partial_outage"
+          }
+        ],
+        "incident": {
+          "title": "Elevated error rates on Dashboard",
+          "severity": "major"
+        },
+        "daysAgo": 3,
+        "resolvedAfterHours": 1.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some requests to Dashboard are failing. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "We found a misconfigured load balancer and are rolling back the change.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "Error rates are back to normal and we are watching closely.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.75,
+            "body": "This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "slow",
+        "components": [
+          {
+            "key": "alerts",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "Alerting slower than usual",
+          "severity": "minor"
+        },
+        "daysAgo": 12,
+        "resolvedAfterHours": 0.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Alerting is responding more slowly than usual.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.75,
+            "body": "Response times are back to normal. This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "outage",
+        "components": [
+          {
+            "key": "on-call",
+            "impact": "major_outage"
+          }
+        ],
+        "incident": {
+          "title": "On-call schedules unavailable for some customers",
+          "severity": "critical"
+        },
+        "daysAgo": 26,
+        "resolvedAfterHours": 0.5,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "On-call schedules is unavailable for some customers. We are on it.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "Service is restored for everyone. A write-up follows.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "upgrade",
+        "components": [
+          "status-pages"
+        ],
+        "incident": {
+          "title": "Planned Status pages upgrade",
+          "markdown": "We are upgrading Status pages. It may be briefly unavailable during the window."
+        },
+        "daysFromNow": 5,
+        "durationHours": 2
+      }
+    ]
+  }
+}

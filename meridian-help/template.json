@@ -1,0 +1,173 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "meridian-help",
+  "type": "CONTACT",
+  "name": "Meridian Help",
+  "description": "A support directory: topic cards first (the router), then the form for the one picked, offices with “Open now”, and the other ways to get help — facts beside the form.",
+  "modelledOn": "A global company’s customer-support directory",
+  "features": [
+    "Directory look: wide page, cards in threes, facts beside the form",
+    "Router preset: pick a topic, then its form opens — each topic has its own address",
+    "Three offices with opening hours and a map link (no map tiles)",
+    "A “Find it yourself” band with your docs, status page and a phone line"
+  ],
+  "tags": [
+    "light",
+    "contact",
+    "support",
+    "directory",
+    "offices"
+  ],
+  "thumbnail": "/templates/meridian-help.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "router",
+    "frontDoor": {
+      "title": "How can we help?",
+      "subtitle": "Choose a topic and we’ll route you to the right team.",
+      "showOpenNow": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "contactForm": {
+      "submitLabel": "Send to support",
+      "successTitle": "Message received",
+      "successMessage": "We’ve opened a ticket. You’ll hear from us within four working hours."
+    }
+  },
+  "contact": {
+    "departments": [
+      {
+        "name": "Billing",
+        "description": "Invoices, refunds and plans",
+        "icon": "credit-card"
+      },
+      {
+        "name": "Technical support",
+        "description": "Something isn’t working",
+        "icon": "wrench",
+        "fields": [
+          "product",
+          "severity"
+        ],
+        "successMessage": "We’ve opened a ticket. A support engineer will reply within four working hours."
+      },
+      {
+        "name": "Account access",
+        "description": "Sign-in, SSO and two-factor",
+        "icon": "lock"
+      }
+    ],
+    "formFields": [
+      {
+        "key": "product",
+        "label": "Which product?",
+        "type": "select",
+        "options": [
+          "Web app",
+          "Mobile app",
+          "API"
+        ]
+      },
+      {
+        "key": "severity",
+        "label": "How bad is it?",
+        "type": "radio",
+        "options": [
+          "Annoying",
+          "Blocking my work",
+          "Blocking my whole team"
+        ]
+      }
+    ],
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "help",
+              "title": "Help",
+              "hideFromNav": true,
+              "fields": {
+                "email": "support@example.com",
+                "responseTarget": "four working hours",
+                "offices": [
+                  {
+                    "name": "Lisbon",
+                    "street": "Rua do Exemplo 10",
+                    "city": "Lisbon",
+                    "postcode": "1100-001",
+                    "country": "Portugal",
+                    "phone": "+351 210 000 000",
+                    "email": "lisbon@example.com"
+                  },
+                  {
+                    "name": "Toronto",
+                    "street": "100 Example Street",
+                    "city": "Toronto",
+                    "postcode": "M5V 0A1",
+                    "country": "Canada",
+                    "phone": "+1 416 555 0100",
+                    "email": "toronto@example.com"
+                  },
+                  {
+                    "name": "Singapore",
+                    "street": "1 Sample Road",
+                    "city": "Singapore",
+                    "postcode": "018989",
+                    "country": "Singapore",
+                    "phone": "+65 6000 0000",
+                    "email": "singapore@example.com"
+                  }
+                ],
+                "openingHours": {
+                  "tz": "Europe/Lisbon",
+                  "slots": [
+                    {
+                      "days": [
+                        "mo",
+                        "tu",
+                        "we",
+                        "th",
+                        "fr"
+                      ],
+                      "open": "08:00",
+                      "close": "18:00"
+                    }
+                  ]
+                }
+              },
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Most answers are already written down — try the guides first. If they don’t cover it, pick a topic below and the right team picks it up."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

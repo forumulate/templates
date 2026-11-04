@@ -1,0 +1,163 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lockstep",
+  "type": "FAQ",
+  "name": "Lockstep",
+  "description": "An internal IT help desk: categories with sections nested inside them, each section its own page of answers, related questions under every answer, and a request form for whatever is not covered.",
+  "modelledOn": "A company’s internal IT and workplace help desk",
+  "features": [
+    "Preset: help centre — search hero, category tiles, popular questions",
+    "Nested sections: Accounts › Passwords, Devices › Laptops and phones",
+    "Each section is its own page: an accordion of its questions, the trail back, its sub-sections listed",
+    "Under every answer: related questions, the rest of its section, and “email me when this changes”",
+    "Pinned and badged questions; an Updated chip on anything changed this fortnight",
+    "Slate and teal, Inter, square corners",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "internal",
+    "it",
+    "help-centre",
+    "nested"
+  ],
+  "thumbnail": "/templates/lockstep.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "help-centre"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "faq": {
+    "collections": [
+      {
+        "slug": "accounts",
+        "name": "Accounts and access",
+        "description": "Signing in, passwords, two-step codes and who can see what.",
+        "nav": {
+          "icon": "key"
+        },
+        "pages": [
+          {
+            "slug": "new-starter",
+            "title": "I am new — what do I need on day one?",
+            "markdown": "Your manager requests your accounts a week before you start. On day one, sign in with the temporary password in your welcome email, then set your own and enrol a two-step device.",
+            "fields": {
+              "featured": true,
+              "pinned": true
+            }
+          },
+          {
+            "slug": "request-access",
+            "title": "How do I get access to a shared drive or tool?",
+            "markdown": "Ask in the Access request form. The owner of the drive or tool approves it; most requests are done the same working day."
+          }
+        ]
+      },
+      {
+        "slug": "passwords",
+        "name": "Passwords and two-step",
+        "description": "Resets, lockouts and a new phone.",
+        "parent": "accounts",
+        "nav": {
+          "icon": "lock"
+        },
+        "pages": [
+          {
+            "slug": "reset-password",
+            "title": "How do I reset my password?",
+            "markdown": "Use “Forgot password” on the sign-in page. A reset link goes to your recovery email; it works for 30 minutes.",
+            "fields": {
+              "featured": true,
+              "badge": "Updated"
+            }
+          },
+          {
+            "slug": "new-phone",
+            "title": "I have a new phone — how do I move my two-step codes?",
+            "markdown": "Before you wipe the old phone, open Security settings and add the new device. If the old phone is gone, ask the help desk to reset two-step after a short identity check."
+          }
+        ]
+      },
+      {
+        "slug": "devices",
+        "name": "Devices",
+        "description": "Laptops, phones, monitors and what to do when one breaks.",
+        "nav": {
+          "icon": "code"
+        },
+        "pages": [
+          {
+            "slug": "broken-laptop",
+            "title": "My laptop is broken — what now?",
+            "markdown": "Save what you can to your drive and bring it to the IT desk. You get a loan laptop the same day while yours is repaired."
+          }
+        ]
+      },
+      {
+        "slug": "laptops",
+        "name": "Laptops",
+        "description": "Setup, updates and encryption.",
+        "parent": "devices",
+        "pages": [
+          {
+            "slug": "updates",
+            "title": "Why does my laptop keep asking to restart?",
+            "markdown": "Security updates install overnight and need one restart. Restart before 6 pm and it will not ask again that day."
+          },
+          {
+            "slug": "encryption",
+            "title": "Is my laptop encrypted?",
+            "markdown": "Yes. Every company laptop has full-disk encryption turned on before it reaches you; nothing for you to do."
+          }
+        ]
+      },
+      {
+        "slug": "phones",
+        "name": "Phones",
+        "description": "Work phones and using your own.",
+        "parent": "devices",
+        "pages": [
+          {
+            "slug": "own-phone",
+            "title": "Can I read work email on my own phone?",
+            "markdown": "Yes, through the managed mail app. It keeps work data in its own space, which we can wipe without touching your photos or apps."
+          }
+        ]
+      },
+      {
+        "slug": "workplace",
+        "name": "Workplace",
+        "description": "Wi-Fi, printing, meeting rooms and visitors.",
+        "nav": {
+          "icon": "life-buoy"
+        },
+        "pages": [
+          {
+            "slug": "guest-wifi",
+            "title": "How do visitors get on the Wi-Fi?",
+            "markdown": "Visitors join the Guest network and get a code from reception, valid for one day."
+          },
+          {
+            "slug": "printing",
+            "title": "How do I print?",
+            "markdown": "Send to “Office Printer” and release the job with your badge at any printer on any floor."
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "defaultLocaleLabel": "English"
+  }
+}

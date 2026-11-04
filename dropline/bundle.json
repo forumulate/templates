@@ -1,0 +1,282 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Dropline",
+    "slug": "template-dropline",
+    "description": "A release newsroom: drops with typed release details, “Out now” badges, a release calendar and roundups that assemble themselves.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "news",
+      "releases",
+      "sneakers",
+      "template"
+    ],
+    "spaceTypes": [
+      "BLOG"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#ff4d00",
+    "accentColor": "#d8ff3c",
+    "contentWidth": "wide",
+    "palette": {
+      "ink": "#0f0f10",
+      "heading": "#0f0f10",
+      "muted": "#5b5b5f",
+      "line": "#e2e0da",
+      "surface": "#f3f2ef",
+      "background": "#ffffff",
+      "highlight": "#d8ff3c",
+      "header_background": "#ffffff",
+      "header_primary": "#0f0f10",
+      "footer_background": "#0f0f10",
+      "footer_primary": "#ffffff"
+    },
+    "headingFontFamily": "Archivo",
+    "bodyFontFamily": "Inter",
+    "monoFontFamily": "IBM Plex Mono",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap",
+    "typography": {
+      "baseSize": 17,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 34
+          },
+          "weight": 900,
+          "tracking": -0.02,
+          "lineHeight": 1.04
+        },
+        "h2": {
+          "size": 28,
+          "weight": 800,
+          "lineHeight": 1.1
+        },
+        "h3": {
+          "size": 19,
+          "weight": 800,
+          "lineHeight": 1.2
+        }
+      }
+    },
+    "components": {
+      "radius": 0,
+      "button": {
+        "radius": 0,
+        "weight": "semibold"
+      },
+      "image": {
+        "radius": 0
+      },
+      "link": {
+        "color": "#ff4d00",
+        "underline": "hover"
+      },
+      "meta": {
+        "case": "upper",
+        "font": "mono",
+        "scope": "cards",
+        "tracking": 0.08
+      }
+    },
+    "post": {
+      "layout": "split-cover",
+      "header": {
+        "kicker": "firstTag",
+        "dateFormat": "medium"
+      },
+      "cover": {
+        "aspect": "3:2",
+        "radius": 0
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "copyright": "© 2026 Your Brand.",
+      "header": {
+        "border": "strong",
+        "borderColor": "#0f0f10",
+        "height": 72,
+        "navFont": "heading",
+        "navWeight": 800
+      },
+      "footerLinks": [
+        {
+          "href": "/b/your-org/your-blog/calendar",
+          "label": "Release calendar"
+        },
+        {
+          "href": "/b/your-org/your-blog/archive",
+          "label": "Archive"
+        },
+        {
+          "href": "/b/your-org/your-blog/subscribe",
+          "label": "Subscribe"
+        }
+      ]
+    },
+    "blog": {
+      "look": "magazine",
+      "release": {
+        "timeZone": "America/New_York",
+        "details": {
+          "position": "top",
+          "layout": "grid",
+          "frame": "rule",
+          "retailers": "buttons",
+          "accent": "#ff4d00",
+          "parts": [
+            "date",
+            "status",
+            "price",
+            "sku",
+            "colorway",
+            "regions",
+            "retailers"
+          ]
+        },
+        "badge": {
+          "style": "tag",
+          "colors": {
+            "out": "#00b37e",
+            "upcoming": "#ff4d00",
+            "restocked": "#2b59ff",
+            "delayed": "#b45309",
+            "cancelled": "#b91c1c"
+          }
+        },
+        "calendar": {
+          "enabled": true,
+          "view": "month",
+          "weekStart": "monday",
+          "todayColor": "#ff4d00",
+          "upcomingLimit": 12,
+          "width": "wide"
+        },
+        "regions": {
+          "style": "chips"
+        },
+        "roundup": {
+          "layout": "grid",
+          "groupBy": "day"
+        },
+        "structuredData": "product"
+      }
+    }
+  },
+  "components": [],
+  "frontPages": [
+    {
+      "target": "BLOG",
+      "doc": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "title"
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "releaseRoundup",
+              "releaseRange": "this-week",
+              "heading": "Dropping this week"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "heading": {
+                "text": "Upcoming releases",
+                "style": "rule-top",
+                "ruleColor": "#ff4d00",
+                "ruleWidth": "4px"
+              },
+              "sort": "release",
+              "filter": {
+                "release": {
+                  "when": "upcoming"
+                }
+              },
+              "limit": 6,
+              "layout": "grid",
+              "columns": {
+                "lg": 3,
+                "md": 2,
+                "sm": 1
+              },
+              "fields": [
+                "release",
+                "cover",
+                "title",
+                "standfirst"
+              ]
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "releaseCalendar",
+              "releaseView": "week",
+              "heading": "The week ahead"
+            }
+          },
+          {
+            "type": "spaceFeed",
+            "attrs": {
+              "heading": {
+                "text": "Out now",
+                "style": "rule-top",
+                "ruleColor": "#0f0f10",
+                "ruleWidth": "4px"
+              },
+              "filter": {
+                "release": {
+                  "when": "out"
+                }
+              },
+              "limit": 4,
+              "layout": "grid",
+              "columns": {
+                "lg": 4,
+                "md": 2,
+                "sm": 1
+              },
+              "fields": [
+                "release",
+                "cover",
+                "title"
+              ],
+              "dedupe": true
+            }
+          },
+          {
+            "type": "spaceBand",
+            "attrs": {
+              "band": "subscribe",
+              "heading": "Never miss a drop",
+              "body": "Release dates, restocks and raffles — one email a week.",
+              "layout": "inline-row",
+              "frame": "none",
+              "buttonLabel": "Subscribe"
+            }
+          }
+        ]
+      },
+      "width": "board"
+    }
+  ]
+}

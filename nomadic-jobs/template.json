@@ -1,0 +1,822 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "nomadic-jobs",
+  "type": "CAREERS",
+  "name": "Nomadic Jobs",
+  "description": "A remote-first agency’s careers page in the paper look: roles as a plain list with where in the world each can be done, a time-zone note on every role, and remote and freelance roles easy to find.",
+  "modelledOn": "A remote-first agency’s jobs page",
+  "features": [
+    "Look: paper — a quiet list with long, readable role titles",
+    "Place first: each role says where in the world it can be done, and “Remote” has a page of its own",
+    "Freelance and contract roles beside employed ones, filtered by type",
+    "Role layout: single — the role, then the apply form",
+    "Benefits said once for the space and shown under every role",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "careers",
+    "remote",
+    "agency",
+    "paper"
+  ],
+  "thumbnail": "/templates/nomadic-jobs.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/nomadic-jobs-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/nomadic-jobs-wordmark-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/nomadic-jobs-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "list",
+    "piecePreset": "single",
+    "frontDoor": {
+      "showLocation": true,
+      "showSalary": true,
+      "showSearch": true,
+      "showCounts": true,
+      "showShare": false,
+      "allTeamsLabel": "All teams",
+      "emptyText": "No openings match these filters.",
+      "eeoStatement": "Your Brand is an equal-opportunity employer. All qualified applicants will receive consideration for employment without regard to race, colour, religion, sex, sexual orientation, gender identity, national origin, disability or protected veteran status.",
+      "accommodations": "If you need a reasonable accommodation at any point in the process, email recruiting@example.com.",
+      "benefits": "Work from anywhere in the overlap hours\nA yearly meet-up somewhere sunny\nPaid for the hours you work, not the hours you sit\nA home-office budget",
+      "showJobFeed": true,
+      "alertsDigest": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Careers at Your Brand"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Software that helps growing companies hire well. "
+            },
+            {
+              "type": "text",
+              "text": "Our hiring process",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/jobs/your-org/your-careers/how-we-work"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " · "
+            },
+            {
+              "type": "text",
+              "text": "Company website",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://example.com"
+                  }
+                }
+              ]
+            }
+          ],
+          "attrs": {
+            "size": 17,
+            "color": "muted"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "roles"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "teams"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "benefits"
+          }
+        }
+      ]
+    },
+    "hideTitle": true,
+    "width": 1040,
+    "gap": "sm",
+    "paddingTop": 40
+  },
+  "settings": {
+    "careersForm": {
+      "fields": [
+        {
+          "name": "phone",
+          "type": "phone",
+          "label": "Phone"
+        },
+        {
+          "name": "linkedin",
+          "type": "url",
+          "label": "LinkedIn",
+          "placeholder": "https://www.linkedin.com/in/…"
+        },
+        {
+          "name": "github",
+          "type": "url",
+          "label": "GitHub",
+          "placeholder": "https://github.com/…"
+        },
+        {
+          "name": "portfolio",
+          "type": "url",
+          "label": "Portfolio or website",
+          "placeholder": "https://…"
+        },
+        {
+          "name": "work_authorization",
+          "type": "select",
+          "label": "Are you authorised to work in the country of this role?",
+          "required": true,
+          "options": [
+            "Yes",
+            "No",
+            "I will need sponsorship"
+          ]
+        },
+        {
+          "name": "how_heard",
+          "type": "select",
+          "label": "How did you hear about us?",
+          "options": [
+            "Job board",
+            "LinkedIn",
+            "Referral",
+            "Our website",
+            "Other"
+          ]
+        }
+      ],
+      "eeo": true,
+      "consentText": "I consent to Your Brand storing my application for 12 months for recruiting purposes.",
+      "retentionDays": 365,
+      "confirmation": true,
+      "successMessage": "Thanks for applying. You will get an email confirming we have your application."
+    }
+  },
+  "careers": {
+    "collections": [
+      {
+        "slug": "studio",
+        "name": "Studio",
+        "pages": [
+          {
+            "slug": "senior-brand-designer",
+            "title": "Senior Brand Designer",
+            "kind": "role",
+            "fields": {
+              "team": "Studio",
+              "location": "Remote (UTC−3 to UTC+3)",
+              "remote": "Remote",
+              "employment": "Full time",
+              "experienceLevel": "Senior",
+              "salary": {
+                "min": 70000,
+                "max": 90000,
+                "currency": "USD",
+                "period": "year"
+              },
+              "applicantLocations": "Americas, Europe, Africa",
+              "featured": true
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Lead identity and brand systems for clients from first workshop to final guidelines."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Run discovery workshops with clients"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Design identities, systems and launch assets"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Review the studio’s design work"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Seven years in brand or graphic design"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A portfolio of full identity projects"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Four hours’ overlap with UTC+0"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "motion-designer",
+            "title": "Motion Designer (freelance)",
+            "kind": "role",
+            "fields": {
+              "team": "Studio",
+              "location": "Remote (anywhere)",
+              "remote": "Remote",
+              "employment": "Contract",
+              "experienceLevel": "Mid",
+              "compensation": "£300–£400 a day, project by project"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Freelance motion work on client launches, a few weeks at a time."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Animate logos, titles and product films"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Hand over tidy, labelled source files"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A reel that shows pace and craft"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Fluent in After Effects"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "client-work",
+        "name": "Client work",
+        "pages": [
+          {
+            "slug": "producer",
+            "title": "Producer",
+            "kind": "role",
+            "fields": {
+              "team": "Client work",
+              "location": "Remote (Europe)",
+              "remote": "Remote",
+              "employment": "Full time",
+              "experienceLevel": "Mid",
+              "salary": {
+                "min": 45000,
+                "max": 58000,
+                "currency": "EUR",
+                "period": "year"
+              },
+              "applicantLocations": "Europe"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Keep projects on time, on budget and calm, across four time zones."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Plan and track the studio’s projects"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Be the day-to-day contact for clients"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Spot risks early and say so"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Three years producing creative or digital work"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Clear, friendly writing"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "front-end-developer",
+            "title": "Front-end Developer",
+            "kind": "role",
+            "fields": {
+              "team": "Client work",
+              "location": "Remote (UTC to UTC+3)",
+              "remote": "Remote",
+              "employment": "Part time",
+              "experienceLevel": "Mid",
+              "salary": {
+                "min": 30000,
+                "max": 38000,
+                "currency": "EUR",
+                "period": "year"
+              },
+              "workHours": "24 hours a week"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Build the sites our designers draw, three days a week."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Turn designs into fast, accessible sites"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Work in a shared component library"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Strong HTML, CSS and TypeScript"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "An eye for the detail in a design"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "name": "About",
+        "pages": [
+          {
+            "slug": "how-we-work",
+            "title": "How we work",
+            "kind": "page",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "We are fully remote and write things down, so hiring is too."
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "A written application and a short video hello"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "A conversation about your work"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "A paid trial project, then an offer"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "There are no office hours and no required location; we ask for a few hours of overlap with the team."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

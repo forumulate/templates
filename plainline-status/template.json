@@ -1,0 +1,234 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "plainline-status",
+  "type": "STATUS",
+  "name": "Plainline Status",
+  "description": "The least a status page can be and still say everything: a ruled banner, thin ribbon bars with only the percentage beside each row, no legend, no hero, a tab icon that turns colour when something is wrong, and compact type.",
+  "modelledOn": "An open-source status tool’s hosted pages",
+  "features": [
+    "A ruled banner, no glyph, no clutter",
+    "Ribbon bars with the uptime percentage beside each row",
+    "No legend: every bar still says what it was",
+    "A tab icon that turns the state’s colour",
+    "Prints without the colours",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "status",
+    "minimal",
+    "monochrome",
+    "compact"
+  ],
+  "thumbnail": "/templates/plainline-status.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/plainline-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        }
+      ]
+    },
+    "width": 640
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "services",
+        "name": "Services",
+        "description": "Everything we run."
+      }
+    ],
+    "components": [
+      {
+        "key": "website",
+        "monitor": {
+          "name": "Website",
+          "kind": "manual",
+          "description": "The marketing site."
+        },
+        "startsDaysAgo": 120,
+        "group": "services"
+      },
+      {
+        "key": "api",
+        "monitor": {
+          "name": "API",
+          "kind": "manual",
+          "description": "The public API."
+        },
+        "startsDaysAgo": 120,
+        "group": "services"
+      },
+      {
+        "key": "dashboard",
+        "monitor": {
+          "name": "Dashboard",
+          "kind": "manual",
+          "description": "Where customers sign in."
+        },
+        "startsDaysAgo": 120,
+        "group": "services"
+      },
+      {
+        "key": "email",
+        "monitor": {
+          "name": "Email delivery",
+          "kind": "manual",
+          "description": "Transactional email."
+        },
+        "startsDaysAgo": 120,
+        "group": "services"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "errors",
+        "components": [
+          {
+            "key": "website",
+            "impact": "partial_outage"
+          }
+        ],
+        "incident": {
+          "title": "Elevated error rates on Website",
+          "severity": "major"
+        },
+        "daysAgo": 3,
+        "resolvedAfterHours": 1.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some requests to Website are failing. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "We found a misconfigured load balancer and are rolling back the change.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "Error rates are back to normal and we are watching closely.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.75,
+            "body": "This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "slow",
+        "components": [
+          {
+            "key": "api",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "API slower than usual",
+          "severity": "minor"
+        },
+        "daysAgo": 12,
+        "resolvedAfterHours": 0.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "API is responding more slowly than usual.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.75,
+            "body": "Response times are back to normal. This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "outage",
+        "components": [
+          {
+            "key": "dashboard",
+            "impact": "major_outage"
+          }
+        ],
+        "incident": {
+          "title": "Dashboard unavailable for some customers",
+          "severity": "critical"
+        },
+        "daysAgo": 26,
+        "resolvedAfterHours": 0.5,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Dashboard is unavailable for some customers. We are on it.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "Service is restored for everyone. A write-up follows.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "upgrade",
+        "components": [
+          "email"
+        ],
+        "incident": {
+          "title": "Planned Email delivery upgrade",
+          "markdown": "We are upgrading Email delivery. It may be briefly unavailable during the window."
+        },
+        "daysFromNow": 5,
+        "durationHours": 2
+      }
+    ]
+  }
+}

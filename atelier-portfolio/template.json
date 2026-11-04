@@ -1,0 +1,421 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "atelier-portfolio",
+  "type": "CUSTOM",
+  "name": "Atelier Portfolio",
+  "description": "A designer’s portfolio on the `pages` layout: selected work on the home page, a page per project nested under Work, and an about page — wide, centred and quiet.",
+  "modelledOn": "An independent designer’s portfolio site",
+  "features": [
+    "Portfolio look: wide centred column, square corners, no dates",
+    "Projects nested under Work — the header shows them as a dropdown",
+    "About page marked up as a ProfilePage"
+  ],
+  "tags": [
+    "light",
+    "custom",
+    "portfolio",
+    "multi-page"
+  ],
+  "thumbnail": "/templates/atelier-portfolio.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "pages"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "custom": {
+    "collections": [
+      {
+        "slug": "site",
+        "name": "Site",
+        "pages": [
+          {
+            "slug": "home",
+            "title": "Selected work",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "intro",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "title": "Brand and product design for small, serious teams",
+                        "level": 1,
+                        "sub": "Twelve years, forty launches, one designer.",
+                        "layout": "center",
+                        "size": "lg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "work",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Northwind rebrand — case study"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Atlas mobile app — case study"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Field guide book — case study"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Harbor annual report — case study"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "layout": "wide",
+              "hideTitle": true
+            }
+          },
+          {
+            "slug": "work",
+            "title": "Work",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "A selection of recent projects. Each page covers the brief, the process and what changed."
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "layout": "wide"
+            }
+          },
+          {
+            "slug": "northwind-rebrand",
+            "title": "Northwind rebrand",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The brief"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What the client needed and why."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What we made"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The work, in pictures and words."
+                    }
+                  ]
+                }
+              ]
+            },
+            "parent": "work",
+            "metadata": {
+              "layout": "wide"
+            }
+          },
+          {
+            "slug": "atlas-mobile-app",
+            "title": "Atlas mobile app",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The brief"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What the client needed and why."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What we made"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The work, in pictures and words."
+                    }
+                  ]
+                }
+              ]
+            },
+            "parent": "work",
+            "metadata": {
+              "layout": "wide"
+            }
+          },
+          {
+            "slug": "field-guide-book",
+            "title": "Field guide book",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The brief"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What the client needed and why."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What we made"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The work, in pictures and words."
+                    }
+                  ]
+                }
+              ]
+            },
+            "parent": "work",
+            "metadata": {
+              "layout": "wide"
+            }
+          },
+          {
+            "slug": "harbor-annual-report",
+            "title": "Harbor annual report",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The brief"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What the client needed and why."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "What we made"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The work, in pictures and words."
+                    }
+                  ]
+                }
+              ]
+            },
+            "parent": "work",
+            "metadata": {
+              "layout": "wide"
+            }
+          },
+          {
+            "slug": "about",
+            "title": "About",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "I’m an independent designer working with founders and in-house teams. Say hello at hello@example.com."
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "schemaType": "ProfilePage"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

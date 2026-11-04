@@ -1,0 +1,152 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Milepost",
+    "slug": "template-milepost",
+    "description": "A product team’s public roadmap told as a timeline: lanes in the team’s own priority order, a dated rail down the page, quiet cards with no vote counts in front, and an item page that leads with the team’s answer.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "timeline",
+      "roadmap",
+      "editorial",
+      "template"
+    ],
+    "spaceTypes": [
+      "ROADMAP"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#9a3412",
+    "accentColor": "#9a3412",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "palette": {
+      "ink": "#3a3530",
+      "line": "#e7e0d6",
+      "muted": "#857b70",
+      "heading": "#211d19",
+      "surface": "#faf6ef",
+      "background": "#fffdf8",
+      "header_primary": "#211d19",
+      "header_background": "#fffdf8",
+      "footer_primary": "#857b70",
+      "footer_background": "#fffdf8"
+    },
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": 28,
+          "weight": 600,
+          "tracking": -0.015
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "header": {
+        "border": "line",
+        "height": 60,
+        "borderColor": "#e6e7ef"
+      }
+    },
+    "components": {
+      "radius": 6,
+      "button": {
+        "radius": 999,
+        "weight": "medium",
+        "background": "#9a3412",
+        "ink": "#ffffff"
+      }
+    },
+    "roadmap": {
+      "look": "minimal",
+      "width": "column",
+      "lanes": {
+        "glyph": "dot",
+        "empty": "hide",
+        "countStyle": "text",
+        "phone": "tabs"
+      },
+      "card": {
+        "pinMark": "pin",
+        "eyebrow": "theme",
+        "meta": [
+          "comments"
+        ],
+        "excerptLines": 2,
+        "titleLines": 2,
+        "density": "cozy",
+        "frame": {
+          "surface": "flat",
+          "pad": 14
+        }
+      },
+      "vote": {
+        "style": "pill",
+        "position": "end",
+        "glyph": "chevron"
+      },
+      "colors": {
+        "timeline": {
+          "color": "#9a3412"
+        },
+        "pin": {
+          "color": "#9a3412"
+        }
+      },
+      "header": {
+        "subtitle": "What we are building now, what comes next, and what we are still weighing.",
+        "subtitlePlacement": "under-title",
+        "subscribe": true
+      },
+      "filters": {
+        "style": "tabs",
+        "sort": [
+          "manual",
+          "top",
+          "new"
+        ],
+        "defaultSort": "manual",
+        "tags": true,
+        "search": true
+      },
+      "item": {
+        "rail": {
+          "layout": "side",
+          "align": "end",
+          "items": [
+            "vote",
+            "follow",
+            "facts",
+            "share"
+          ]
+        },
+        "response": true,
+        "activity": true,
+        "shippedIn": true,
+        "replies": true,
+        "staffBadge": true
+      },
+      "submit": {
+        "sections": [
+          "problem",
+          "proposal"
+        ],
+        "rich": true,
+        "similar": true,
+        "tags": true
+      }
+    }
+  },
+  "components": []
+}

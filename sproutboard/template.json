@@ -1,0 +1,973 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "sproutboard",
+  "type": "CAREERS",
+  "name": "Sproutboard",
+  "description": "A startup’s careers page in the bold look: a short pitch, a handful of roles as cards with their facts as chips, equity and pay said plainly, and the role as one column with an Apply bar that stays in reach.",
+  "modelledOn": "An early-stage startup’s “join us” page",
+  "features": [
+    "Look: bold — large role titles, pill chips, a brand-coloured Apply bar",
+    "Board preset cards: each role a card, two to a row, its place and type as chips",
+    "Featured roles pinned first; pay band and equity said on every role",
+    "Role layout: single — the role, then the apply form, with a sticky Apply bar",
+    "Weekly digest offered on the board’s job-alert control",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "careers",
+    "startup",
+    "cards"
+  ],
+  "thumbnail": "/templates/sproutboard.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/sproutboard-wordmark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/sproutboard-wordmark-dark.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/sproutboard-mark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "cards",
+    "piecePreset": "single",
+    "frontDoor": {
+      "showLocation": true,
+      "showSalary": true,
+      "showSearch": true,
+      "showCounts": true,
+      "showShare": false,
+      "allTeamsLabel": "All teams",
+      "emptyText": "No openings match these filters.",
+      "eeoStatement": "Your Brand is an equal-opportunity employer. All qualified applicants will receive consideration for employment without regard to race, colour, religion, sex, sexual orientation, gender identity, national origin, disability or protected veteran status.",
+      "accommodations": "If you need a reasonable accommodation at any point in the process, email recruiting@example.com.",
+      "benefits": "Real equity, not a token grant\nA team small enough to know everyone\nFlexible hours, remote-friendly\nA learning budget of your own",
+      "showJobFeed": true,
+      "alertsDigest": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Careers at Your Brand"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Software that helps growing companies hire well. "
+            },
+            {
+              "type": "text",
+              "text": "Our hiring process",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/jobs/your-org/your-careers/how-we-hire"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " · "
+            },
+            {
+              "type": "text",
+              "text": "Company website",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://example.com"
+                  }
+                }
+              ]
+            }
+          ],
+          "attrs": {
+            "size": 17,
+            "color": "muted"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "roles"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "teams"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "benefits"
+          }
+        }
+      ]
+    },
+    "hideTitle": true,
+    "width": 1040,
+    "gap": "sm",
+    "paddingTop": 40
+  },
+  "settings": {
+    "careersForm": {
+      "fields": [
+        {
+          "name": "phone",
+          "type": "phone",
+          "label": "Phone"
+        },
+        {
+          "name": "linkedin",
+          "type": "url",
+          "label": "LinkedIn",
+          "placeholder": "https://www.linkedin.com/in/…"
+        },
+        {
+          "name": "github",
+          "type": "url",
+          "label": "GitHub",
+          "placeholder": "https://github.com/…"
+        },
+        {
+          "name": "portfolio",
+          "type": "url",
+          "label": "Portfolio or website",
+          "placeholder": "https://…"
+        },
+        {
+          "name": "work_authorization",
+          "type": "select",
+          "label": "Are you authorised to work in the country of this role?",
+          "required": true,
+          "options": [
+            "Yes",
+            "No",
+            "I will need sponsorship"
+          ]
+        },
+        {
+          "name": "how_heard",
+          "type": "select",
+          "label": "How did you hear about us?",
+          "options": [
+            "Job board",
+            "LinkedIn",
+            "Referral",
+            "Our website",
+            "Other"
+          ]
+        }
+      ],
+      "eeo": true,
+      "consentText": "I consent to Your Brand storing my application for 12 months for recruiting purposes.",
+      "retentionDays": 365,
+      "confirmation": true,
+      "successMessage": "Thanks for applying. You will get an email confirming we have your application."
+    }
+  },
+  "careers": {
+    "collections": [
+      {
+        "slug": "founding-team",
+        "name": "Founding team",
+        "pages": [
+          {
+            "slug": "founding-engineer",
+            "title": "Founding Engineer",
+            "kind": "role",
+            "fields": {
+              "team": "Founding team",
+              "location": "London; Remote (UK)",
+              "remote": "Hybrid",
+              "employment": "Full time",
+              "experienceLevel": "Senior",
+              "salary": {
+                "min": 85000,
+                "max": 110000,
+                "currency": "GBP",
+                "period": "year"
+              },
+              "compensation": "£85,000 – £110,000 plus 0.5–1.0% equity",
+              "featured": true,
+              "hiringManager": "Alex Morgan, CEO"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You will build the first version of the product with the two people who started it, and decide how the rest of the engineering team works."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Ship features end to end, from schema to screen"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Set up the deploy, monitoring and testing habits we keep"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Talk to customers every week"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Five years building and shipping software"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "You have taken something from nothing to production"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "You are comfortable with a stack you did not choose"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "nice-to-have"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Experience in a seed-stage company"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "benefits"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Meaningful equity"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Flexible hours"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A laptop and desk of your choice"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "process"
+                  },
+                  "content": [
+                    {
+                      "type": "orderedList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A call with a founder (30 minutes)"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A paid build day on a real problem"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Meet the team and agree the offer"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "product-designer",
+            "title": "Product Designer",
+            "kind": "role",
+            "fields": {
+              "team": "Founding team",
+              "location": "Remote (Europe)",
+              "remote": "Remote",
+              "employment": "Full time",
+              "experienceLevel": "Mid",
+              "salary": {
+                "min": 60000,
+                "max": 80000,
+                "currency": "EUR",
+                "period": "year"
+              },
+              "applicantLocations": "Europe"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You will own how the product looks and feels, from the first sketch to the shipped detail."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Design flows, prototypes and the components behind them"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Work directly with engineers in the build"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Run short research sessions with customers"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "A portfolio that shows shipped product work"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "You can design in the browser as well as in a tool"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "growth",
+        "name": "Growth",
+        "pages": [
+          {
+            "slug": "growth-marketer",
+            "title": "Growth Marketer",
+            "kind": "role",
+            "fields": {
+              "team": "Growth",
+              "location": "Remote (Europe)",
+              "remote": "Remote",
+              "employment": "Full time",
+              "experienceLevel": "Mid",
+              "salary": {
+                "min": 55000,
+                "max": 72000,
+                "currency": "EUR",
+                "period": "year"
+              },
+              "applicantLocations": "Europe"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "You will find the first thousand customers and work out which channels are worth a second."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Run and measure experiments across channels"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Write the copy, landing pages and emails yourself"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Report what worked, and what did not, every week"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Two years in a growth or marketing role"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Comfortable with analytics and a spreadsheet"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "slug": "marketing-intern",
+            "title": "Marketing Intern",
+            "kind": "role",
+            "fields": {
+              "team": "Growth",
+              "location": "London",
+              "remote": "Hybrid",
+              "employment": "Internship",
+              "experienceLevel": "Entry",
+              "compensation": "£2,200 a month, three months"
+            },
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "summary"
+                  },
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "A three-month internship learning how an early-stage company finds its customers."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "responsibilities"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Support campaigns and content"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Keep the customer research notes in order"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "requirements"
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Studying or recently graduated"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Curious, organised and quick to learn"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "name": "About",
+        "pages": [
+          {
+            "slug": "how-we-hire",
+            "title": "How we hire",
+            "kind": "page",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "We are small, so hiring is quick and personal."
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "A conversation with a founder"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "A short paid exercise on a real problem"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Meet the team, then an offer"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "We aim to reply to every applicant within a week, and we tell you where you stand."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

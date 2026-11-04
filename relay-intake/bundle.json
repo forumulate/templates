@@ -1,0 +1,106 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Relay Intake",
+    "slug": "template-relay-intake",
+    "description": "A bold multi-page intake form over a soft gradient.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "contact",
+      "intake",
+      "multi-step",
+      "bold",
+      "template"
+    ],
+    "spaceTypes": [
+      "CONTACT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#111827",
+    "accentColor": "#6d28d9",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "bodyFontFamily": "Inter",
+    "headingFontFamily": "Inter",
+    "palette": {
+      "ink": "#1f2937",
+      "line": "#e5e7eb",
+      "muted": "#6b7280",
+      "heading": "#111827",
+      "surface": "#f5f3ff",
+      "background": "#ffffff",
+      "header_primary": "#111827",
+      "header_background": "#ffffff",
+      "footer_primary": "#6b7280",
+      "footer_background": "#faf5ff"
+    },
+    "components": {
+      "radius": 14,
+      "button": {
+        "radius": 999,
+        "weight": "medium",
+        "background": "#6d28d9",
+        "ink": "#ffffff"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand"
+    },
+    "contact": {
+      "look": "bold",
+      "head": {
+        "eyebrow": "Start a conversation"
+      },
+      "form": {
+        "progress": "bar"
+      },
+      "success": {
+        "reference": true
+      },
+      "mobile": {
+        "stickySubmit": true
+      },
+      "backdrop": {
+        "layers": [
+          {
+            "gradient": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "#ede9fe",
+                  "at": 0
+                },
+                {
+                  "color": "#ffffff",
+                  "at": 100
+                }
+              ]
+            }
+          }
+        ],
+        "extent": "top",
+        "height": 480,
+        "heightPhone": 320
+      }
+    }
+  },
+  "components": []
+}

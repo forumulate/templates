@@ -1,0 +1,620 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "vsline",
+  "type": "COMPARE",
+  "name": "Vsline Head-to-Head",
+  "description": "Head-to-head pages for your product against each rival: a quick verdict, the key criteria at a glance, the full matrix and the prices side by side, all drawn from one catalog.",
+  "modelledOn": "A project-management company’s “us vs them” pages",
+  "features": [
+    "One head-to-head page per rival, written from one catalog",
+    "Quick verdict, key criteria at a glance, then the full matrix",
+    "Prices made comparable per seat per month",
+    "Every fact carries the date it was checked",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "compare",
+    "versus",
+    "saas"
+  ],
+  "thumbnail": "/templates/vsline.png",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "product",
+    "frontDoor": {
+      "title": "How Your Brand compares",
+      "subtitle": "Honest side-by-sides with the rivals you are weighing us against — every fact sourced and dated."
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "compare": {
+    "catalog": {
+      "self": "your-brand",
+      "products": [
+        {
+          "id": "your-brand",
+          "name": "Your Brand",
+          "color": "#2f5be7",
+          "tagline": "Project management that stays out of the way",
+          "category": "project management",
+          "url": "https://example.com/your-brand",
+          "freeTier": true,
+          "pros": [
+            "Fast to set up",
+            "Timelines included on every plan"
+          ],
+          "cons": [
+            "Smaller integration catalog than the largest tools"
+          ],
+          "bestFor": [
+            "Teams of 5 to 200 who want planning without a setup project"
+          ],
+          "pricing": {
+            "url": "https://example.com/your-brand/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 8.0,
+                  "period": "seat-month"
+                },
+                "annual": 7.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Your Brand pricing page",
+              "url": "https://example.com/your-brand/pricing"
+            }
+          ],
+          "verdict": "A good fit when your team wants plans and timelines without a long setup.",
+          "switching": "Export your projects from the old tool as CSV, import them from Settings, then invite your team."
+        },
+        {
+          "id": "tasklane",
+          "name": "Tasklane",
+          "color": "#e5484d",
+          "tagline": "Tasks, lists and timelines for busy teams",
+          "category": "project management",
+          "url": "https://example.com/tasklane",
+          "freeTier": true,
+          "pros": [
+            "Mature integrations",
+            "Generous free plan"
+          ],
+          "cons": [
+            "Timelines and time tracking are paid extras"
+          ],
+          "bestFor": [
+            "Teams that live in many other tools"
+          ],
+          "pricing": {
+            "url": "https://example.com/tasklane/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 10.0,
+                  "period": "seat-month"
+                },
+                "annual": 9.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Tasklane pricing page",
+              "url": "https://example.com/tasklane/pricing"
+            }
+          ]
+        },
+        {
+          "id": "boardwise",
+          "name": "Boardwise",
+          "color": "#f5a524",
+          "tagline": "Simple boards for small teams",
+          "category": "project management",
+          "url": "https://example.com/boardwise",
+          "freeTier": true,
+          "pros": [
+            "Very easy to learn",
+            "Lowest price here"
+          ],
+          "cons": [
+            "No timelines or dependencies",
+            "Few integrations"
+          ],
+          "bestFor": [
+            "Teams of under ten with simple work"
+          ],
+          "pricing": {
+            "url": "https://example.com/boardwise/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 6.0,
+                  "period": "seat-month"
+                },
+                "annual": 5.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Boardwise pricing page",
+              "url": "https://example.com/boardwise/pricing"
+            }
+          ]
+        },
+        {
+          "id": "plandrop",
+          "name": "Plandrop",
+          "color": "#24292f",
+          "tagline": "Enterprise planning with timelines at the centre",
+          "category": "project management",
+          "url": "https://example.com/plandrop",
+          "freeTier": false,
+          "pros": [
+            "Strongest timelines",
+            "Enterprise security"
+          ],
+          "cons": [
+            "No free plan",
+            "Heavier to set up"
+          ],
+          "bestFor": [
+            "Large organisations that plan in timelines"
+          ],
+          "pricing": {
+            "url": "https://example.com/plandrop/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 14.0,
+                  "period": "seat-month"
+                },
+                "annual": 13.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Plandrop pricing page",
+              "url": "https://example.com/plandrop/pricing"
+            }
+          ]
+        }
+      ],
+      "criteria": {
+        "groups": [
+          {
+            "id": "planning",
+            "label": "Planning and work",
+            "criteria": [
+              {
+                "id": "kanban",
+                "label": "Kanban boards",
+                "kind": "boolean",
+                "key": true
+              },
+              {
+                "id": "gantt",
+                "label": "Gantt and timeline",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "time-tracking",
+                "label": "Time tracking",
+                "kind": "level"
+              },
+              {
+                "id": "dependencies",
+                "label": "Task dependencies",
+                "kind": "boolean"
+              },
+              {
+                "id": "sprints",
+                "label": "Sprints",
+                "kind": "boolean"
+              }
+            ]
+          },
+          {
+            "id": "integrations",
+            "label": "Integrations and API",
+            "criteria": [
+              {
+                "id": "public-api",
+                "label": "Public API",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "webhooks",
+                "label": "Webhooks",
+                "kind": "boolean"
+              },
+              {
+                "id": "integrations-count",
+                "label": "Native integrations",
+                "kind": "number",
+                "unit": "apps"
+              }
+            ]
+          },
+          {
+            "id": "security",
+            "label": "Security",
+            "criteria": [
+              {
+                "id": "sso",
+                "label": "Single sign-on (SAML/OIDC)",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "soc2",
+                "label": "SOC 2 report",
+                "kind": "boolean"
+              }
+            ]
+          },
+          {
+            "id": "pricing",
+            "label": "Pricing",
+            "criteria": [
+              {
+                "id": "free-plan",
+                "label": "Free plan",
+                "kind": "boolean",
+                "key": true
+              },
+              {
+                "id": "starting-price",
+                "label": "Starting price per seat per month",
+                "kind": "price",
+                "unit": "/seat/mo",
+                "key": true
+              }
+            ]
+          }
+        ]
+      },
+      "values": {
+        "your-brand": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 140,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 8,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "tasklane": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 90,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 10,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "boardwise": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 35,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 6,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "plandrop": {
+          "kanban": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 60,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 14,
+            "verifiedAt": "2026-10-15"
+          }
+        }
+      },
+      "freshness": {
+        "verifyEveryDays": 90
+      }
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "comparisons",
+          "name": "Comparisons",
+          "pages": [
+            {
+              "slug": "your-brand-vs-tasklane",
+              "title": "Your Brand vs Tasklane",
+              "kind": "comparison",
+              "markdown": "Your Brand and Tasklane both plan and track team work, but they make different trade-offs. This comparison puts the facts side by side, with the date each one was checked.\n\n## Our verdict\n\nPick Your Brand when you want timelines and planning on every plan without a long setup. Pick Tasklane when its strengths in the table above matter more to your team than the gaps. Neither is right for everyone, and the table shows where each one wins.\n\n## Why teams switch\n\nTeams usually move for one reason that shows up in the table: a missing capability, a plan that costs more than expected, or a tool that is heavier than the work needs.\n\n## How to switch\n\n1. Export your projects from Tasklane as CSV.\n2. Import the file into Your Brand from Settings, then check the columns it mapped.\n3. Recreate any automations by hand; they do not transfer between tools.\n4. Invite your team and run both side by side for a week.\n\n## Frequently asked questions\n\n### Is Your Brand cheaper than Tasklane?\n\nIt depends on the plan and the number of seats; the pricing section above shows both, converted to a monthly figure per seat.\n\n### Can I move my data from Tasklane to Your Brand?\n\nYes for projects and tasks, through a CSV export and import. Automations and comments do not carry across.\n\n## How we compared\n\nEvery fact comes from the vendor's own documentation or pricing page, linked in the sources, and carries the date it was last checked. Scores are not shown.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "versus",
+                  "products": [
+                    "your-brand",
+                    "tasklane"
+                  ],
+                  "subject": "tasklane",
+                  "featured": "your-brand"
+                }
+              }
+            },
+            {
+              "slug": "your-brand-vs-boardwise",
+              "title": "Your Brand vs Boardwise",
+              "kind": "comparison",
+              "markdown": "Your Brand and Boardwise both plan and track team work, but they make different trade-offs. This comparison puts the facts side by side, with the date each one was checked.\n\n## Our verdict\n\nPick Your Brand when you want timelines and planning on every plan without a long setup. Pick Boardwise when its strengths in the table above matter more to your team than the gaps. Neither is right for everyone, and the table shows where each one wins.\n\n## Why teams switch\n\nTeams usually move for one reason that shows up in the table: a missing capability, a plan that costs more than expected, or a tool that is heavier than the work needs.\n\n## How to switch\n\n1. Export your projects from Boardwise as CSV.\n2. Import the file into Your Brand from Settings, then check the columns it mapped.\n3. Recreate any automations by hand; they do not transfer between tools.\n4. Invite your team and run both side by side for a week.\n\n## Frequently asked questions\n\n### Is Your Brand cheaper than Boardwise?\n\nIt depends on the plan and the number of seats; the pricing section above shows both, converted to a monthly figure per seat.\n\n### Can I move my data from Boardwise to Your Brand?\n\nYes for projects and tasks, through a CSV export and import. Automations and comments do not carry across.\n\n## How we compared\n\nEvery fact comes from the vendor's own documentation or pricing page, linked in the sources, and carries the date it was last checked. Scores are not shown.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "versus",
+                  "products": [
+                    "your-brand",
+                    "boardwise"
+                  ],
+                  "subject": "boardwise",
+                  "featured": "your-brand"
+                }
+              }
+            },
+            {
+              "slug": "your-brand-vs-plandrop",
+              "title": "Your Brand vs Plandrop",
+              "kind": "comparison",
+              "markdown": "Your Brand and Plandrop both plan and track team work, but they make different trade-offs. This comparison puts the facts side by side, with the date each one was checked.\n\n## Our verdict\n\nPick Your Brand when you want timelines and planning on every plan without a long setup. Pick Plandrop when its strengths in the table above matter more to your team than the gaps. Neither is right for everyone, and the table shows where each one wins.\n\n## Why teams switch\n\nTeams usually move for one reason that shows up in the table: a missing capability, a plan that costs more than expected, or a tool that is heavier than the work needs.\n\n## How to switch\n\n1. Export your projects from Plandrop as CSV.\n2. Import the file into Your Brand from Settings, then check the columns it mapped.\n3. Recreate any automations by hand; they do not transfer between tools.\n4. Invite your team and run both side by side for a week.\n\n## Frequently asked questions\n\n### Is Your Brand cheaper than Plandrop?\n\nIt depends on the plan and the number of seats; the pricing section above shows both, converted to a monthly figure per seat.\n\n### Can I move my data from Plandrop to Your Brand?\n\nYes for projects and tasks, through a CSV export and import. Automations and comments do not carry across.\n\n## How we compared\n\nEvery fact comes from the vendor's own documentation or pricing page, linked in the sources, and carries the date it was last checked. Scores are not shown.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "versus",
+                  "products": [
+                    "your-brand",
+                    "plandrop"
+                  ],
+                  "subject": "plandrop",
+                  "featured": "your-brand"
+                }
+              }
+            },
+            {
+              "slug": "how-we-compare",
+              "title": "How we compare",
+              "kind": "page",
+              "markdown": "How we gather and check the facts on every comparison.\n\n## What we check\n\nEach cell of a comparison is a fact read from the vendor's own documentation or pricing page. We link the source and show the date we last checked it.\n\n## What we do not do\n\nWe do not publish our own scores for products, and we do not accept payment to change a fact. Where a link earns us a commission, it is marked as such.\n"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

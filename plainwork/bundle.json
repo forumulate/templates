@@ -128,7 +128,22 @@
         "divider": "rule",
         "density": "comfortable",
         "hover": "none",
-        "rowAction": "text"
+        "rowAction": "text",
+        "frame": "none",
+        "actionStyle": "link",
+        "empty": {
+          "style": "panel"
+        }
+      },
+      "header": {
+        "count": true
+      },
+      "background": {
+        "style": "plain"
+      },
+      "steps": {
+        "layout": "list",
+        "numbering": "plain"
       }
     },
     "docs": {

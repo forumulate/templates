@@ -10,8 +10,8 @@ A dark, culture-first careers page: a one-line hero with an anchor to the roles,
 
 ## What it uses
 
-- Composed front page: hero with an “Open roles ↓” anchor, film still, essay, 11 numbered principles, talks and interviews, the roles board
-- Board preset: departments — roles under their team with counts, “Learn more” at the end of each row
+- Composed front page: hero with an “Open roles ↓” anchor, a framed film still, essay, 11 principles as a grid of cards numbered 01–11, talks and interviews, the roles board
+- Board preset: departments — roles under their team with counts, in one panel per team, location and type as chips, “Learn more” at the end of each row
 - Role layout: single — the role, then the apply form, with an Apply bar that stays in reach
 - Two pages beside the roles (principles, how we hire) marked as pages, not openings
 - Dark, pinned colour scheme

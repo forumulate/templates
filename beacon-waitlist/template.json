@@ -1,0 +1,269 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "beacon-waitlist",
+  "type": "CUSTOM",
+  "name": "Beacon Waitlist",
+  "description": "A launch waitlist: a big promise, three reasons, and a short form — email, role and a 1–5 “how much do you need this” scale — on one page.",
+  "modelledOn": "A pre-launch product’s waitlist page",
+  "features": [
+    "Product look on the landing layout",
+    "A page form with a scale question",
+    "Social proof numbers from the stats block"
+  ],
+  "tags": [
+    "light",
+    "custom",
+    "waitlist",
+    "launch"
+  ],
+  "thumbnail": "/templates/beacon-waitlist.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "landing"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [
+    {
+      "id": "00000000-0000-4000-9000-000000000001",
+      "form": {
+        "name": "Waitlist",
+        "fields": [
+          {
+            "name": "email",
+            "type": "email",
+            "label": "Email",
+            "required": true,
+            "placeholder": "you@company.com"
+          },
+          {
+            "name": "role",
+            "type": "select",
+            "label": "What do you do?",
+            "options": [
+              "Engineering",
+              "Design",
+              "Product",
+              "Other"
+            ]
+          },
+          {
+            "name": "excitement",
+            "type": "scale",
+            "label": "How much do you need this?",
+            "min": 1,
+            "max": 5,
+            "lowLabel": "Curious",
+            "highLabel": "Yesterday"
+          }
+        ],
+        "submitLabel": "Join the waitlist",
+        "successMessage": "You’re on the list — we’ll write when your invite is ready.",
+        "layout": "stacked"
+      }
+    }
+  ],
+  "posts": [],
+  "custom": {
+    "collections": [
+      {
+        "slug": "launch",
+        "name": "Launch",
+        "pages": [
+          {
+            "slug": "waitlist",
+            "title": "Join the waitlist",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "hero",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "title": "Your notes, finally searchable",
+                        "level": 1,
+                        "sub": "Your Brand turns every meeting, doc and thread into one answerable place. Invites go out weekly.",
+                        "layout": "center",
+                        "size": "xl"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "why",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Ask in plain words, get the source."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Works with the tools you already use."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Private by default."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "join",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "form",
+                      "attrs": {
+                        "formId": "00000000-0000-4000-9000-000000000001",
+                        "fields": [
+                          {
+                            "name": "email",
+                            "type": "email",
+                            "label": "Email",
+                            "required": true,
+                            "placeholder": "you@company.com"
+                          },
+                          {
+                            "name": "role",
+                            "type": "select",
+                            "label": "What do you do?",
+                            "options": [
+                              "Engineering",
+                              "Design",
+                              "Product",
+                              "Other"
+                            ]
+                          },
+                          {
+                            "name": "excitement",
+                            "type": "scale",
+                            "label": "How much do you need this?",
+                            "min": 1,
+                            "max": 5,
+                            "lowLabel": "Curious",
+                            "highLabel": "Yesterday"
+                          }
+                        ],
+                        "submitLabel": "Join the waitlist",
+                        "successMessage": "You’re on the list — we’ll write when your invite is ready.",
+                        "layout": "stacked"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "proof",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "stats",
+                      "attrs": {
+                        "layout": "row",
+                        "columns": 3,
+                        "items": [
+                          {
+                            "value": 8400,
+                            "label": "People waiting"
+                          },
+                          {
+                            "value": 120,
+                            "label": "Teams in the beta"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "layout": "full",
+              "hideTitle": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

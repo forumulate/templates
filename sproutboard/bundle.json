@@ -1,0 +1,159 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Sproutboard",
+    "slug": "template-sproutboard",
+    "description": "A startup’s careers page in the bold look: a short pitch, a handful of roles as cards with their facts as chips, equity and pay said plainly, and the role as one column with an Apply bar that stays in reach.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "careers",
+      "template",
+      "startup",
+      "cards"
+    ],
+    "spaceTypes": [
+      "CAREERS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "primaryColor": "#16a34a",
+    "primaryColorDark": "#4ade80",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#f7f7f8",
+      "ink": "#2b2d33",
+      "muted": "#6b6f78",
+      "heading": "#111216",
+      "line": "#e4e5e9",
+      "header_background": "#ffffff",
+      "header_primary": "#111216"
+    },
+    "paletteDark": {
+      "background": "#121317",
+      "surface": "#1a1b20",
+      "ink": "#d4d6dc",
+      "muted": "#9196a1",
+      "heading": "#ffffff",
+      "line": "#2b2d34",
+      "header_background": "#121317",
+      "header_primary": "#ffffff"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+    "customFontFamily": "Inter",
+    "typography": {
+      "baseSize": 15,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 32,
+            "sm": 26
+          },
+          "weight": 600,
+          "tracking": -0.01
+        },
+        "h2": {
+          "size": 22,
+          "weight": 600
+        },
+        "h3": {
+          "size": 16,
+          "weight": 600
+        },
+        "body": {
+          "lineHeight": 1.6
+        }
+      }
+    },
+    "chrome": {
+      "showSignIn": false,
+      "headerLinks": [
+        {
+          "label": "Company website",
+          "href": "https://example.com"
+        }
+      ],
+      "footerLinks": [
+        {
+          "label": "Candidate privacy",
+          "href": "https://example.com/privacy"
+        }
+      ],
+      "copyright": "© 2026 Your Brand"
+    },
+    "components": {
+      "button": {
+        "radius": 6,
+        "weight": "regular"
+      },
+      "input": {
+        "radius": 6
+      }
+    },
+    "careers": {
+      "list": {
+        "layout": "cards",
+        "columns": 2,
+        "chips": {
+          "style": "pill"
+        },
+        "facets": [
+          "team",
+          "location",
+          "employment"
+        ],
+        "filtersFrom": 12,
+        "posted": "relative",
+        "featuredFirst": true,
+        "rowAction": "arrow",
+        "hover": "lift",
+        "teamPages": "own"
+      },
+      "role": {
+        "topApply": true,
+        "stickyApply": true,
+        "moreRoles": 3,
+        "more": {
+          "style": "cards",
+          "by": "similar"
+        }
+      },
+      "facts": {
+        "look": "chips"
+      },
+      "look": "bold",
+      "apply": {
+        "fullWidthSubmit": true
+      },
+      "steps": {
+        "columns": 2,
+        "card": {
+          "surface": "raised",
+          "radius": 16
+        }
+      },
+      "buttons": {
+        "shape": "pill"
+      }
+    },
+    "docs": {
+      "feedback": {
+        "show": false
+      },
+      "pageHead": {
+        "breadcrumb": {
+          "show": true
+        },
+        "contributors": false
+      }
+    }
+  },
+  "components": []
+}

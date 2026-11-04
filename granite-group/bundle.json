@@ -1,0 +1,152 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Granite Group",
+    "slug": "template-granite-group",
+    "description": "Scale first: the numbers, the leadership, offices, awards, commitments and the legal entity, in a wide, restrained page with a rule between bands.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "enterprise",
+      "corporate",
+      "about",
+      "template"
+    ],
+    "spaceTypes": [
+      "ABOUT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#1d4ed8",
+    "accentColor": "#1e40af",
+    "palette": {
+      "ink": "#334155",
+      "line": "#dbe1ea",
+      "muted": "#64748b",
+      "heading": "#0f172a",
+      "surface": "#f4f6f9",
+      "background": "#ffffff",
+      "header_primary": "#0f172a",
+      "header_background": "#ffffff",
+      "footer_primary": "#64748b",
+      "footer_background": "#ffffff"
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 48,
+            "sm": 32
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 26,
+          "weight": 650,
+          "tracking": -0.01,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.65
+        }
+      }
+    },
+    "components": {
+      "radius": 6,
+      "card": {
+        "background": "#f4f6f9",
+        "iconSize": 20,
+        "arrow": "none"
+      },
+      "button": {
+        "radius": 6,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "about": {
+      "look": "default",
+      "page": {
+        "width": "wide",
+        "measure": "wide"
+      },
+      "bands": {
+        "divider": "rule",
+        "headingSize": "md"
+      },
+      "hero": {
+        "layout": "split",
+        "align": "start",
+        "imageSide": "end"
+      },
+      "stats": {
+        "layout": "cards",
+        "size": "lg",
+        "accent": true
+      },
+      "leadership": {
+        "layout": "grid",
+        "columns": 3,
+        "photo": "square",
+        "size": "lg",
+        "aspect": "4:5",
+        "monogram": "neutral"
+      },
+      "offices": {
+        "look": "cards",
+        "columns": 3,
+        "map": "card"
+      },
+      "awards": {
+        "layout": "cards",
+        "columns": 3
+      },
+      "impact": {
+        "layout": "cards",
+        "columns": 2
+      },
+      "facts": {
+        "layout": "table"
+      },
+      "story": {
+        "layout": "split",
+        "sticky": true
+      },
+      "timeline": {
+        "style": "cards",
+        "marker": "ring"
+      },
+      "contact": {
+        "layout": "split"
+      },
+      "sections": {
+        "facts": {
+          "tone": "tint"
+        }
+      }
+    }
+  },
+  "components": []
+}

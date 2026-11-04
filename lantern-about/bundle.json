@@ -1,0 +1,160 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lantern About",
+    "slug": "template-lantern-about",
+    "description": "The mission first, then the story, the numbers, the team and who backs it: a warm, light startup page with greyscale customer logos and quotes in a grid.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "startup",
+      "product",
+      "about",
+      "template"
+    ],
+    "spaceTypes": [
+      "ABOUT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#d97706",
+    "accentColor": "#b45309",
+    "palette": {
+      "ink": "#44403c",
+      "line": "#e7e0d4",
+      "muted": "#78716c",
+      "heading": "#1c1917",
+      "surface": "#ffffff",
+      "background": "#fffdf8",
+      "header_primary": "#1c1917",
+      "header_background": "#fffdf8",
+      "footer_primary": "#78716c",
+      "footer_background": "#fffdf8"
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 44,
+            "sm": 32
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 26,
+          "weight": 650,
+          "tracking": -0.01,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.65
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "card": {
+        "background": "#ffffff",
+        "iconSize": 20,
+        "arrow": "none"
+      },
+      "button": {
+        "radius": 8,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "about": {
+      "look": "default",
+      "hero": {
+        "layout": "centered",
+        "size": "xl",
+        "eyebrow": "pill"
+      },
+      "mission": {
+        "size": "xl",
+        "align": "center",
+        "style": "marks"
+      },
+      "values": {
+        "layout": "cards",
+        "columns": 3,
+        "numbered": true,
+        "iconStyle": "tile"
+      },
+      "stats": {
+        "layout": "row",
+        "size": "xl",
+        "accent": true,
+        "dividers": true
+      },
+      "people": {
+        "layout": "grid",
+        "columns": 4,
+        "photo": "rounded",
+        "monogram": "tint"
+      },
+      "investors": {
+        "layout": "list",
+        "columns": 3,
+        "photo": "rounded",
+        "size": "sm",
+        "showBio": false,
+        "card": {
+          "surface": "outline",
+          "pad": 16
+        }
+      },
+      "testimonials": {
+        "layout": "grid",
+        "columns": 2
+      },
+      "timeline": {
+        "layout": "vertical",
+        "dates": "year",
+        "marker": "ring"
+      },
+      "story": {
+        "layout": "split",
+        "sticky": true
+      },
+      "logos": {
+        "layout": "grid",
+        "columns": 5,
+        "style": "tiles",
+        "grayscale": true
+      },
+      "contact": {
+        "layout": "split"
+      },
+      "sections": {
+        "stats": {
+          "tone": "tint"
+        }
+      }
+    }
+  },
+  "components": []
+}

@@ -1,0 +1,200 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "studiohaus",
+  "type": "ABOUT",
+  "name": "Studiohaus",
+  "description": "The work and who it was for: a full-bleed banner, a strip of client logos, featured quotes and a gallery of the studio at work.",
+  "modelledOn": "A design and engineering studio’s about page",
+  "features": [
+    "Agency preset: a banner, a logo grid, featured quotes and a gallery",
+    "Editorial look: a magazine-profile feel with an alternating timeline",
+    "A gallery band with alt text and captions for every picture slot",
+    "Press as a list with the pull quotes shown",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "agency",
+    "studio",
+    "editorial",
+    "about"
+  ],
+  "thumbnail": "/templates/studiohaus.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/logo-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/logo-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/logo-5.svg"
+  },
+  "brand": {},
+  "layout": {
+    "preset": "agency"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "about": {
+    "details": {
+      "hero": {
+        "eyebrow": "The studio",
+        "headline": "Design and engineering at one table",
+        "subheadline": "We make products people use every day, with the people who will run them.",
+        "ctaLabel": "Start a project",
+        "ctaHref": "mailto:studio@example.com"
+      },
+      "mission": "We make things that are simple to use and built to last, and we do it side by side with our clients.",
+      "values": [
+        {
+          "title": "One table",
+          "text": "Design and engineering sit together from the first sketch."
+        },
+        {
+          "title": "Show, don’t tell",
+          "text": "Friday reviews are working software, never a deck."
+        },
+        {
+          "title": "Built to hand over",
+          "text": "Every project ends with a team that can run it without us."
+        }
+      ],
+      "team": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Noor Haddad",
+            "role": "Founder, Design Director",
+            "bio": "Noor started the studio after ten years leading design at product companies. She still reviews every project at its first and last stage.",
+            "founder": true
+          },
+          {
+            "name": "Luca Bianchi",
+            "role": "Founder, Engineering Director",
+            "bio": "Luca leads engineering and the studio’s open-source work. He prefers small, boring technology and loud tests.",
+            "founder": true
+          },
+          {
+            "name": "Ife Adeleke",
+            "role": "Senior Product Designer",
+            "bio": "Ife leads research on the studio’s largest projects and runs the Friday review."
+          }
+        ]
+      },
+      "testimonials": [
+        {
+          "quote": "They shipped the first working version in three weeks and handed us a team that could carry it on.",
+          "name": "Rhea Kapoor",
+          "role": "Product Lead",
+          "company": "Fable"
+        },
+        {
+          "quote": "The only agency that asked to meet our support team before touching the designs.",
+          "name": "Anders Moe",
+          "role": "COO",
+          "company": "Orbit Labs"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2016",
+          "title": "The first table",
+          "text": "Two designers and an engineer in a shared office."
+        },
+        {
+          "date": "2019",
+          "title": "Ten of us",
+          "text": "A studio with a kitchen and a critique wall."
+        },
+        {
+          "date": "2023",
+          "title": "Fourteen of us",
+          "text": "Forty products shipped and a shelf of awards."
+        }
+      ],
+      "awards": [
+        {
+          "name": "Best Product Design",
+          "issuer": "Design Annual",
+          "year": "2024"
+        },
+        {
+          "name": "Studio of the Year",
+          "issuer": "Creative Review",
+          "year": "2023"
+        }
+      ],
+      "press": [
+        {
+          "outlet": "Design Annual",
+          "title": "How a fourteen-person studio ships forty products",
+          "url": "https://example.com/press/design-annual",
+          "date": "2024-02",
+          "quote": "The only studio that sends its engineers to the first meeting."
+        },
+        {
+          "outlet": "Creative Review",
+          "title": "Studio of the year",
+          "url": "https://example.com/press/creative-review",
+          "date": "2023-12"
+        }
+      ],
+      "ctas": [
+        {
+          "heading": "Have something to make?",
+          "text": "Tell us what it is and who it is for. We answer within two working days.",
+          "label": "Start a project",
+          "href": "mailto:studio@example.com"
+        }
+      ],
+      "company": {
+        "tagline": "Design and engineering at one table",
+        "description": "Your Brand is a fourteen-person design and engineering studio.",
+        "foundingDate": "2016",
+        "foundingLocation": "Rotterdam",
+        "employees": "11-50",
+        "industry": "Design and engineering"
+      },
+      "logos": [
+        {
+          "name": "Fable",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000001"
+        },
+        {
+          "name": "Orbit Labs",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000002"
+        },
+        {
+          "name": "Quill",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000003"
+        },
+        {
+          "name": "Marlow",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000004"
+        },
+        {
+          "name": "Kite Bank",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000005"
+        }
+      ]
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "about",
+              "title": "About",
+              "hideFromNav": true,
+              "markdown": "## Our story\n\nYour Brand began as two designers and an engineer sharing a table. We kept being asked to fix products that had been designed by one team and built by another, so we started a studio where both sit together from the first sketch.\n\n## How we work\n\nEvery project has a designer and an engineer on it from the first day, and a client who comes to the Friday review. We show working things, not decks.\n\n## Life here\n\nWe are fourteen people in one room. Lunch is shared, critiques are kind and the plants are real."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

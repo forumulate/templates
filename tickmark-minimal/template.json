@@ -1,0 +1,187 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "tickmark-minimal",
+  "type": "CHANGELOG",
+  "name": "Tickmark Minimal",
+  "description": "A minimal, GitHub-style release list: title rows, mono versions, no covers and plain tags, for a developer tool that ships often.",
+  "modelledOn": "A developer tool’s release list",
+  "features": [
+    "The `minimal` changelog look — a patch of independent `theme.changelog` keys, so any key you set still wins",
+    "Change types New, Improved, Fixed, Deprecated, Retired, Security with their tone colours",
+    "\"Latest\" chip on the newest stable release, pre-releases on their own channel",
+    "Was-this-helpful under every release, answers in Studio → Readers",
+    "Subscribe box under every release; RSS, Atom and JSON feeds",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "changelog",
+    "minimal",
+    "developer"
+  ],
+  "thumbnail": "/templates/tickmark-minimal.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/card.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/logo.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-dark.svg"
+  },
+  "brand": {
+    "logoUrl": "/api/assets/00000000-0000-4000-8000-000000000002",
+    "logoUrlDark": "/api/assets/00000000-0000-4000-8000-000000000003"
+  },
+  "layout": {
+    "preset": "rows",
+    "frontDoor": {
+      "showRss": true,
+      "showDates": true,
+      "showVersionBadge": true,
+      "showSubtitle": false,
+      "showShare": true,
+      "subscribeStyle": "menu"
+    }
+  },
+  "shape": {
+    "params": {
+      "set": {
+        "channel": {
+          "options": [
+            "Stable",
+            "Beta"
+          ]
+        }
+      }
+    }
+  },
+  "piecePage": {
+    "sidebar": null,
+    "after": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "subscribe",
+            "heading": "Get every release by email",
+            "body": "One short email when something ships.",
+            "layout": "inline-row",
+            "frame": "none"
+          }
+        }
+      ]
+    }
+  },
+  "tagInfo": [
+    {
+      "slug": "product",
+      "label": "Product"
+    },
+    {
+      "slug": "performance",
+      "label": "Performance"
+    },
+    {
+      "slug": "data",
+      "label": "Data"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    }
+  ],
+  "authors": [],
+  "forms": [],
+  "posts": [
+    {
+      "slug": "dark-mode",
+      "title": "Dark mode, everywhere",
+      "tags": [
+        "product"
+      ],
+      "daysAgo": 3,
+      "markdown": "Every screen now follows your system theme, and you can pin light or dark in Settings.\n\n## Added\n\n- A theme switch under Settings → Appearance.\n- Dark variants of every chart.\n\nPlaceholder release notes.",
+      "version": "2.4.0",
+      "fields": {
+        "type": "New",
+        "channel": "Stable"
+      }
+    },
+    {
+      "slug": "faster-search",
+      "title": "Search is three times faster",
+      "tags": [
+        "performance"
+      ],
+      "daysAgo": 10,
+      "markdown": "Results now arrive as you type, and filters no longer reload the page.\n\n## Changed\n\n- Search queries are answered from a new index.\n\nPlaceholder release notes.",
+      "version": "2.3.2",
+      "fields": {
+        "type": "Improved",
+        "channel": "Stable"
+      }
+    },
+    {
+      "slug": "export-fix",
+      "title": "Exports keep their column order",
+      "tags": [
+        "data"
+      ],
+      "daysAgo": 17,
+      "markdown": "A CSV export no longer reorders columns you arranged by hand.\n\n## Fixed\n\n- Column order in CSV and spreadsheet exports.\n\nPlaceholder release notes.",
+      "version": "2.3.1",
+      "fields": {
+        "type": "Fixed",
+        "channel": "Stable"
+      }
+    },
+    {
+      "slug": "api-v1-retired",
+      "title": "API v1 is retired",
+      "tags": [
+        "api"
+      ],
+      "daysAgo": 30,
+      "markdown": "Requests to v1 now answer 410. Every v1 call has a v2 twin.\n\n## Removed\n\n- `/v1/*` endpoints.\n\n## Upgrading\n\nMove to `/v2`; the migration guide maps each call.\n\nPlaceholder release notes.",
+      "version": "2.3.0",
+      "fields": {
+        "type": "Retired",
+        "channel": "Stable",
+        "breaking": true
+      }
+    },
+    {
+      "slug": "team-roles",
+      "title": "Custom roles for teams",
+      "tags": [
+        "product",
+        "security"
+      ],
+      "daysAgo": 45,
+      "markdown": "Make a role with exactly the permissions a team needs.\n\n## Added\n\n- Roles under Settings → Team.\n\nPlaceholder release notes.",
+      "version": "2.2.0",
+      "fields": {
+        "type": "New",
+        "channel": "Stable"
+      }
+    },
+    {
+      "slug": "beta-automations",
+      "title": "Automations (beta)",
+      "tags": [
+        "product"
+      ],
+      "daysAgo": 1,
+      "markdown": "Rules that run when something changes — in beta for teams who ask.\n\n## Added\n\n- An Automations tab.\n\nPlaceholder release notes.",
+      "version": "2.5.0-beta.1",
+      "fields": {
+        "type": "New",
+        "channel": "Beta",
+        "prerelease": true
+      }
+    }
+  ]
+}

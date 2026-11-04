@@ -1,0 +1,69 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Vsline Head-to-Head",
+    "slug": "template-vsline",
+    "description": "Head-to-head pages for your product against each rival: a quick verdict, the key criteria at a glance, the full matrix and the prices side by side, all drawn from one catalog.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "compare",
+      "versus",
+      "saas",
+      "template"
+    ],
+    "spaceTypes": [
+      "COMPARE"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#2f5be7",
+    "accentColor": "#2f5be7",
+    "headingFontFamily": "system-ui",
+    "bodyFontFamily": "system-ui",
+    "palette": {
+      "ink": "#161a2b",
+      "line": "#d9e0f7",
+      "muted": "#59607a",
+      "heading": "#161a2b",
+      "surface": "#eef2ff",
+      "background": "#fbfcff"
+    },
+    "paletteDark": {
+      "ink": "#cdd3ea",
+      "line": "#262c45",
+      "muted": "#9299b5",
+      "heading": "#eef1ff",
+      "surface": "#141829",
+      "background": "#0b0e1a"
+    },
+    "compare": {
+      "look": "clean",
+      "hero": {
+        "arrangement": "centered",
+        "background": "glow"
+      },
+      "buttons": {
+        "radius": "md"
+      },
+      "bands": {
+        "tinted": [
+          "pricing"
+        ]
+      },
+      "cta": {
+        "tone": "neutral",
+        "background": "glow"
+      }
+    }
+  },
+  "components": []
+}

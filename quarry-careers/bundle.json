@@ -135,11 +135,47 @@
           "counts": true
         },
         "fields": [
-          "location"
+          "location",
+          "employment"
         ],
         "divider": "rule",
         "hover": "tint",
-        "rowAction": "text"
+        "rowAction": "text",
+        "chips": {
+          "style": "pill"
+        },
+        "frame": "panel",
+        "actionStyle": "link",
+        "groupSize": "md"
+      },
+      "header": {
+        "size": "lg",
+        "count": true
+      },
+      "background": {
+        "style": "plain"
+      },
+      "steps": {
+        "layout": "grid",
+        "columns": 3,
+        "numbering": "padded",
+        "card": {
+          "surface": "outline",
+          "radius": 14,
+          "pad": 24
+        }
+      },
+      "media": {
+        "aspect": "16/9",
+        "placeholder": "glyph",
+        "frame": {
+          "radius": 16,
+          "border": true,
+          "shadow": "lg"
+        }
+      },
+      "buttons": {
+        "size": "lg"
       }
     },
     "docs": {

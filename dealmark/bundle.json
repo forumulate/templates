@@ -1,0 +1,63 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Dealmark Affiliate Roundups",
+    "slug": "template-dealmark",
+    "description": "Affiliate roundups that stay honest: sponsored links marked and disclosed, a dense matrix, and a page that explains how the site earns money.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "compare",
+      "affiliate",
+      "dense",
+      "template"
+    ],
+    "spaceTypes": [
+      "COMPARE"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#7c3aed",
+    "accentColor": "#7c3aed",
+    "headingFontFamily": "system-ui",
+    "bodyFontFamily": "system-ui",
+    "palette": {
+      "ink": "#1d1530",
+      "line": "#ddd3f5",
+      "muted": "#5f5678",
+      "heading": "#1d1530",
+      "surface": "#f1ecfd",
+      "background": "#fcfbff"
+    },
+    "paletteDark": {
+      "ink": "#d4cdea",
+      "line": "#2c2443",
+      "muted": "#9d94b8",
+      "heading": "#f3efff",
+      "surface": "#171228",
+      "background": "#0e0b19"
+    },
+    "compare": {
+      "look": "dense",
+      "logos": {
+        "style": "solid"
+      },
+      "matrix": {
+        "legend": true,
+        "featuredStyle": "ring"
+      },
+      "cards": {
+        "border": "strong"
+      }
+    }
+  },
+  "components": []
+}

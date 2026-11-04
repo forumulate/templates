@@ -1,0 +1,135 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Opencore",
+    "slug": "template-opencore",
+    "description": "The community leads: contribution links, the maintainers in a dense grid, who uses it and how it is run, in a dark developer palette.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "dark",
+      "open-source",
+      "developer",
+      "about",
+      "template"
+    ],
+    "spaceTypes": [
+      "ABOUT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "dark",
+    "primaryColor": "#22c55e",
+    "accentColor": "#16a34a",
+    "palette": {
+      "ink": "#cbd5e1",
+      "line": "#1f2937",
+      "muted": "#94a3b8",
+      "heading": "#f8fafc",
+      "surface": "#111827",
+      "background": "#0b0f14",
+      "header_primary": "#f8fafc",
+      "header_background": "#0b0f14",
+      "footer_primary": "#94a3b8",
+      "footer_background": "#0b0f14"
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 44,
+            "sm": 32
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 26,
+          "weight": 650,
+          "tracking": -0.01,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.65
+        }
+      }
+    },
+    "components": {
+      "radius": 6,
+      "card": {
+        "background": "#111827",
+        "iconSize": 20,
+        "arrow": "none"
+      },
+      "button": {
+        "radius": 6,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "about": {
+      "look": "default",
+      "hero": {
+        "layout": "centered",
+        "size": "lg"
+      },
+      "values": {
+        "layout": "list",
+        "iconStyle": "circle"
+      },
+      "people": {
+        "layout": "compact",
+        "columns": 6,
+        "photo": "circle",
+        "size": "sm"
+      },
+      "stats": {
+        "layout": "grid",
+        "size": "lg",
+        "accent": true
+      },
+      "logos": {
+        "layout": "grid",
+        "columns": 5,
+        "grayscale": false,
+        "style": "tiles",
+        "names": true
+      },
+      "timeline": {
+        "layout": "vertical",
+        "order": "newest",
+        "dates": "written"
+      },
+      "community": {
+        "layout": "cards"
+      },
+      "faq": {
+        "layout": "accordion"
+      },
+      "story": {
+        "layout": "stacked",
+        "rule": true
+      }
+    }
+  },
+  "components": []
+}

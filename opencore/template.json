@@ -1,0 +1,217 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "opencore",
+  "type": "ABOUT",
+  "name": "Opencore",
+  "description": "The community leads: contribution links, the maintainers in a dense grid, who uses it and how it is run, in a dark developer palette.",
+  "modelledOn": "An open-source infrastructure project’s about page",
+  "features": [
+    "Open-source preset: the community first, then maintainers in a dense grid",
+    "Contribution and governance links as a community band",
+    "Adopters as a logo grid, milestones newest first",
+    "Dark, quiet tokens in a developer palette",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "dark",
+    "open-source",
+    "developer",
+    "about"
+  ],
+  "thumbnail": "/templates/opencore.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/logo-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/logo-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/logo-5.svg"
+  },
+  "brand": {},
+  "layout": {
+    "preset": "open-source"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "about": {
+    "details": {
+      "hero": {
+        "eyebrow": "The project",
+        "headline": "Boring deployments, built in the open",
+        "subheadline": "Your Brand is a community-run, permissively licensed tool for shipping software without drama.",
+        "ctaLabel": "Contribute",
+        "ctaHref": "https://example.com/contribute"
+      },
+      "mission": "Make shipping software boring, and keep the project owned by the people who use it.",
+      "community": {
+        "text": "Everything happens in public. Pick an issue labelled “good first”, join the monthly call or just say hello.",
+        "links": [
+          {
+            "label": "Contributing guide",
+            "url": "https://example.com/contributing",
+            "description": "How to set up, propose a change and get it merged."
+          },
+          {
+            "label": "Governance",
+            "url": "https://example.com/governance",
+            "description": "How decisions are made and how maintainers are chosen."
+          },
+          {
+            "label": "Code of conduct",
+            "url": "https://example.com/conduct",
+            "description": "What we expect of everyone, and who to tell."
+          },
+          {
+            "label": "Chat",
+            "url": "https://example.com/chat",
+            "description": "Where the community talks, every day."
+          }
+        ]
+      },
+      "team": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Kai Nakamura",
+            "role": "Lead maintainer",
+            "bio": "Kai started the project and still triages most issues. He writes the release notes and answers the first question from every new contributor.",
+            "founder": true
+          },
+          {
+            "name": "Zoe Hartmann",
+            "role": "Maintainer, core",
+            "bio": "Zoe owns the scheduler and its tests. She joined as a contributor in 2019."
+          },
+          {
+            "name": "Omar Farouk",
+            "role": "Maintainer, docs",
+            "bio": "Omar keeps the documentation honest and translated. He runs the monthly design call."
+          },
+          {
+            "name": "Ines Duarte",
+            "role": "Maintainer, plugins",
+            "bio": "Ines leads the plugin interface and the compatibility suite."
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "1,400",
+          "label": "Contributors"
+        },
+        {
+          "value": "38k",
+          "label": "Stars"
+        },
+        {
+          "value": "212",
+          "label": "Releases"
+        },
+        {
+          "value": "12",
+          "label": "Maintainers"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2024-09",
+          "title": "2.0 release candidate",
+          "text": "A smaller core and a plugin interface."
+        },
+        {
+          "date": "2022-05",
+          "title": "Joined a foundation",
+          "text": "The trademark moved to a neutral home."
+        },
+        {
+          "date": "2020-02",
+          "title": "Ten thousand stars",
+          "text": "And the first corporate sponsor."
+        },
+        {
+          "date": "2018-07",
+          "title": "First release",
+          "text": "Released under a permissive licence."
+        }
+      ],
+      "faq": {
+        "from": "own",
+        "items": [
+          {
+            "question": "How is the project funded?",
+            "answer": "Through sponsorships and donations, held by a foundation. Maintainers are volunteers unless a sponsor funds their time, and we say which."
+          },
+          {
+            "question": "Can I use it commercially?",
+            "answer": "Yes. It is released under a permissive licence with no commercial restriction."
+          },
+          {
+            "question": "How do I become a maintainer?",
+            "answer": "Contribute steadily for a few months and ask. The governance document lists exactly what we look for."
+          }
+        ]
+      },
+      "ctas": [
+        {
+          "heading": "Make your first contribution",
+          "text": "Start with an issue labelled “good first”.",
+          "label": "Contributing guide",
+          "href": "https://example.com/contributing"
+        }
+      ],
+      "company": {
+        "tagline": "Boring deployments, built in the open",
+        "description": "Your Brand is a community-run open-source project for shipping software.",
+        "foundingDate": "2018-07",
+        "industry": "Open source software",
+        "memberOf": [
+          {
+            "label": "Open Infrastructure Foundation",
+            "url": "https://example.com/foundation"
+          }
+        ]
+      },
+      "logos": [
+        {
+          "name": "Helios",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000001"
+        },
+        {
+          "name": "Nimbus",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000002"
+        },
+        {
+          "name": "Cascade",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000003"
+        },
+        {
+          "name": "Vertex",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000004"
+        },
+        {
+          "name": "Lumen Cloud",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000005"
+        }
+      ]
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "about",
+              "title": "About",
+              "hideFromNav": true,
+              "markdown": "## Our story\n\nYour Brand started as a weekend project to make deployments boring. It was released under a permissive licence in 2018, and the first outside contribution arrived within an hour.\n\n## How we work\n\nDecisions are made in public, in issues and in the monthly design call. Anyone can propose a change; maintainers review and merge. The governance document says exactly how a contributor becomes a maintainer.\n\n## Where we are going\n\nA stable 2.0, a smaller core and a plugin interface that keeps the project small as it grows."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

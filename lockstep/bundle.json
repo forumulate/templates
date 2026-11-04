@@ -1,0 +1,142 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lockstep",
+    "slug": "template-lockstep",
+    "description": "An internal IT help desk: categories with sections nested inside them, each section its own page of answers, related questions under every answer, and a request form for whatever is not covered.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "internal",
+      "it",
+      "help-centre",
+      "nested",
+      "template"
+    ],
+    "spaceTypes": [
+      "FAQ"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#0f766e",
+    "accentColor": "#0f766e",
+    "palette": {
+      "ink": "#334155",
+      "line": "#e2e8f0",
+      "muted": "#64748b",
+      "heading": "#0f172a",
+      "surface": "#f8fafc",
+      "background": "#ffffff",
+      "header_primary": "#1c1c1a",
+      "header_background": "#fdfcf9",
+      "footer_primary": "#6f6c66",
+      "footer_background": "#f7f5f0"
+    },
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:wght@400;500;600;700&display=swap",
+    "customFontFamily": "Inter",
+    "headingFontFamily": "Newsreader",
+    "typography": {
+      "baseSize": 16,
+      "levels": {
+        "h1": {
+          "size": 48,
+          "weight": 500,
+          "tracking": -0.02
+        }
+      }
+    },
+    "chrome": {
+      "sticky": true,
+      "showSignIn": false,
+      "header": {
+        "border": "none",
+        "height": 64
+      }
+    },
+    "components": {
+      "radius": 14,
+      "input": {
+        "border": "#d9d4c8",
+        "radius": 12,
+        "background": "#ffffff"
+      },
+      "button": {
+        "ink": "#ffffff",
+        "radius": 999,
+        "weight": "medium",
+        "background": "#2f4a35"
+      },
+      "expandable": {
+        "border": "#e6e2da",
+        "pad": 16
+      }
+    },
+    "faq": {
+      "look": "support",
+      "search": {
+        "placement": "hero",
+        "headline": "IT help desk",
+        "placeholder": "Search for an answer…",
+        "size": "md",
+        "align": "start",
+        "shortcut": true,
+        "suggestions": [
+          "password",
+          "new phone",
+          "printing"
+        ]
+      },
+      "categories": {
+        "show": "always",
+        "layout": "tiles",
+        "columns": 3,
+        "icon": true,
+        "description": true,
+        "count": true
+      },
+      "featured": {
+        "show": "auto"
+      },
+      "item": {
+        "style": "row",
+        "icon": "chevron",
+        "iconPosition": "end",
+        "feedback": "open-only",
+        "badge": true,
+        "updatedBadge": 14,
+        "copyLink": true
+      },
+      "contact": {
+        "contact": true,
+        "community": false,
+        "docs": false,
+        "status": true
+      },
+      "follow": {
+        "sections": true
+      },
+      "sectionPage": {
+        "layout": "accordion",
+        "siblings": "chips",
+        "count": true,
+        "breadcrumb": true,
+        "search": true
+      },
+      "questionPage": {
+        "related": "auto",
+        "relatedCount": 4,
+        "siblings": true,
+        "follow": true
+      }
+    }
+  },
+  "components": []
+}

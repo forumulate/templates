@@ -1,0 +1,62 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Shortlist Roundups",
+    "slug": "template-shortlist",
+    "description": "An editorial site of category roundups and matrices for a publication with no product of its own, with the facts and their sources shown on every page.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "compare",
+      "roundup",
+      "editorial",
+      "template"
+    ],
+    "spaceTypes": [
+      "COMPARE"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#9a3412",
+    "accentColor": "#9a3412",
+    "headingFontFamily": "Georgia",
+    "bodyFontFamily": "system-ui",
+    "palette": {
+      "ink": "#241a14",
+      "line": "#ecd9c4",
+      "muted": "#6b5b4e",
+      "heading": "#241a14",
+      "surface": "#fbf1e6",
+      "background": "#fffdf9"
+    },
+    "paletteDark": {
+      "ink": "#e3d6ca",
+      "line": "#3a2c22",
+      "muted": "#b09d8d",
+      "heading": "#fbf1e6",
+      "surface": "#1f1712",
+      "background": "#15100c"
+    },
+    "compare": {
+      "look": "editorial",
+      "page": {
+        "background": "wash"
+      },
+      "buttons": {
+        "style": "outline"
+      },
+      "pricing": {
+        "highlightStyle": "tint"
+      }
+    }
+  },
+  "components": []
+}

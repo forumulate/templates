@@ -1,0 +1,770 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "dealmark",
+  "type": "COMPARE",
+  "name": "Dealmark Affiliate Roundups",
+  "description": "Affiliate roundups that stay honest: sponsored links marked and disclosed, a dense matrix, and a page that explains how the site earns money.",
+  "modelledOn": "An affiliate review site’s roundups with disclosed links",
+  "features": [
+    "Every call-to-action link marked rel=\"sponsored nofollow\" and disclosed on the page",
+    "A dense matrix look for readers who compare on the table",
+    "A “how we earn money” page the disclaimer links to",
+    "No scores in the markup: ratings only from third parties",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "compare",
+    "affiliate",
+    "dense"
+  ],
+  "thumbnail": "/templates/dealmark.png",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "editorial",
+    "frontDoor": {
+      "title": "Software picks, with the facts",
+      "subtitle": "Our roundups link to the vendors; some links earn us a commission, and we say so on every page."
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "compare": {
+    "catalog": {
+      "products": [
+        {
+          "id": "tasklane",
+          "name": "Tasklane",
+          "color": "#e5484d",
+          "tagline": "Tasks, lists and timelines for busy teams",
+          "category": "project management",
+          "url": "https://example.com/tasklane",
+          "freeTier": true,
+          "pros": [
+            "Mature integrations",
+            "Generous free plan"
+          ],
+          "cons": [
+            "Timelines and time tracking are paid extras"
+          ],
+          "bestFor": [
+            "Teams that live in many other tools"
+          ],
+          "pricing": {
+            "url": "https://example.com/tasklane/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 10.0,
+                  "period": "seat-month"
+                },
+                "annual": 9.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Tasklane pricing page",
+              "url": "https://example.com/tasklane/pricing"
+            }
+          ],
+          "cta": {
+            "label": "Try Tasklane",
+            "url": "https://example.com/go/tasklane",
+            "sponsored": true
+          }
+        },
+        {
+          "id": "boardwise",
+          "name": "Boardwise",
+          "color": "#f5a524",
+          "tagline": "Simple boards for small teams",
+          "category": "project management",
+          "url": "https://example.com/boardwise",
+          "freeTier": true,
+          "pros": [
+            "Very easy to learn",
+            "Lowest price here"
+          ],
+          "cons": [
+            "No timelines or dependencies",
+            "Few integrations"
+          ],
+          "bestFor": [
+            "Teams of under ten with simple work"
+          ],
+          "pricing": {
+            "url": "https://example.com/boardwise/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 6.0,
+                  "period": "seat-month"
+                },
+                "annual": 5.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Boardwise pricing page",
+              "url": "https://example.com/boardwise/pricing"
+            }
+          ],
+          "cta": {
+            "label": "Try Boardwise",
+            "url": "https://example.com/go/boardwise",
+            "sponsored": true
+          }
+        },
+        {
+          "id": "plandrop",
+          "name": "Plandrop",
+          "color": "#24292f",
+          "tagline": "Enterprise planning with timelines at the centre",
+          "category": "project management",
+          "url": "https://example.com/plandrop",
+          "freeTier": false,
+          "pros": [
+            "Strongest timelines",
+            "Enterprise security"
+          ],
+          "cons": [
+            "No free plan",
+            "Heavier to set up"
+          ],
+          "bestFor": [
+            "Large organisations that plan in timelines"
+          ],
+          "pricing": {
+            "url": "https://example.com/plandrop/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 14.0,
+                  "period": "seat-month"
+                },
+                "annual": 13.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Plandrop pricing page",
+              "url": "https://example.com/plandrop/pricing"
+            }
+          ],
+          "cta": {
+            "label": "Try Plandrop",
+            "url": "https://example.com/go/plandrop",
+            "sponsored": true
+          }
+        },
+        {
+          "id": "kanbanly",
+          "name": "Kanbanly",
+          "color": "#d6409f",
+          "tagline": "Boards and sprints for product teams",
+          "category": "project management",
+          "url": "https://example.com/kanbanly",
+          "freeTier": true,
+          "pros": [
+            "Good sprint tooling",
+            "Clean interface"
+          ],
+          "cons": [
+            "No webhooks yet",
+            "Timelines are still planned"
+          ],
+          "bestFor": [
+            "Product teams that run sprints"
+          ],
+          "pricing": {
+            "url": "https://example.com/kanbanly/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "free",
+                "name": "Free",
+                "price": {
+                  "amount": 0,
+                  "period": "seat-month"
+                }
+              },
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 9.0,
+                  "period": "seat-month"
+                },
+                "annual": 8.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Kanbanly pricing page",
+              "url": "https://example.com/kanbanly/pricing"
+            }
+          ],
+          "cta": {
+            "label": "Try Kanbanly",
+            "url": "https://example.com/go/kanbanly",
+            "sponsored": true
+          }
+        },
+        {
+          "id": "sprintly",
+          "name": "Sprintly",
+          "color": "#30a46c",
+          "tagline": "Sprint planning for engineering teams",
+          "category": "project management",
+          "url": "https://example.com/sprintly",
+          "freeTier": false,
+          "pros": [
+            "Deep engineering workflow",
+            "Strong time tracking"
+          ],
+          "cons": [
+            "Not built for non-engineering teams"
+          ],
+          "bestFor": [
+            "Engineering teams"
+          ],
+          "pricing": {
+            "url": "https://example.com/sprintly/pricing",
+            "currency": "USD",
+            "plans": [
+              {
+                "id": "team",
+                "name": "Team",
+                "price": {
+                  "amount": 12.0,
+                  "period": "seat-month"
+                },
+                "annual": 11.0,
+                "highlights": [
+                  "Unlimited projects",
+                  "Priority support"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            {
+              "label": "Sprintly pricing page",
+              "url": "https://example.com/sprintly/pricing"
+            }
+          ],
+          "cta": {
+            "label": "Try Sprintly",
+            "url": "https://example.com/go/sprintly",
+            "sponsored": true
+          }
+        }
+      ],
+      "criteria": {
+        "groups": [
+          {
+            "id": "planning",
+            "label": "Planning and work",
+            "criteria": [
+              {
+                "id": "kanban",
+                "label": "Kanban boards",
+                "kind": "boolean",
+                "key": true
+              },
+              {
+                "id": "gantt",
+                "label": "Gantt and timeline",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "time-tracking",
+                "label": "Time tracking",
+                "kind": "level"
+              },
+              {
+                "id": "dependencies",
+                "label": "Task dependencies",
+                "kind": "boolean"
+              },
+              {
+                "id": "sprints",
+                "label": "Sprints",
+                "kind": "boolean"
+              }
+            ]
+          },
+          {
+            "id": "integrations",
+            "label": "Integrations and API",
+            "criteria": [
+              {
+                "id": "public-api",
+                "label": "Public API",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "webhooks",
+                "label": "Webhooks",
+                "kind": "boolean"
+              },
+              {
+                "id": "integrations-count",
+                "label": "Native integrations",
+                "kind": "number",
+                "unit": "apps"
+              }
+            ]
+          },
+          {
+            "id": "security",
+            "label": "Security",
+            "criteria": [
+              {
+                "id": "sso",
+                "label": "Single sign-on (SAML/OIDC)",
+                "kind": "level",
+                "key": true
+              },
+              {
+                "id": "soc2",
+                "label": "SOC 2 report",
+                "kind": "boolean"
+              }
+            ]
+          },
+          {
+            "id": "pricing",
+            "label": "Pricing",
+            "criteria": [
+              {
+                "id": "free-plan",
+                "label": "Free plan",
+                "kind": "boolean",
+                "key": true
+              },
+              {
+                "id": "starting-price",
+                "label": "Starting price per seat per month",
+                "kind": "price",
+                "unit": "/seat/mo",
+                "key": true
+              }
+            ]
+          }
+        ]
+      },
+      "values": {
+        "tasklane": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 90,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 10,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "boardwise": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 35,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 6,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "plandrop": {
+          "kanban": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 60,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 14,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "kanbanly": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "planned",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "partial",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 45,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "addon",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 9,
+            "verifiedAt": "2026-10-15"
+          }
+        },
+        "sprintly": {
+          "kanban": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "gantt": {
+            "level": "no",
+            "verifiedAt": "2026-10-15"
+          },
+          "time-tracking": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "dependencies": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "sprints": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "public-api": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "webhooks": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "integrations-count": {
+            "value": 70,
+            "verifiedAt": "2026-10-15"
+          },
+          "sso": {
+            "level": "yes",
+            "verifiedAt": "2026-10-15"
+          },
+          "soc2": {
+            "value": true,
+            "verifiedAt": "2026-10-15"
+          },
+          "free-plan": {
+            "value": false,
+            "verifiedAt": "2026-10-15"
+          },
+          "starting-price": {
+            "value": 12,
+            "verifiedAt": "2026-10-15"
+          }
+        }
+      },
+      "freshness": {
+        "verifyEveryDays": 90
+      },
+      "methodology": {
+        "pageSlug": "how-we-compare"
+      }
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "comparisons",
+          "name": "Comparisons",
+          "pages": [
+            {
+              "slug": "best-project-management-software",
+              "title": "The best project management software",
+              "kind": "comparison",
+              "markdown": "Choosing project management software is mostly a question of which trade-offs you can live with. This roundup lists the tools we compared, what each is best for, and the facts behind it, checked against the vendors' own pages.\n\n## Our verdict\n\nStart with the tool whose \"best for\" matches your team, then look at the matrix for the one capability you cannot do without. Prices change often, so the date each fact was checked is shown.\n\n## Frequently asked questions\n\n### How did you choose these tools?\n\nWe included the tools that publish their pricing and documentation, so every fact can be checked.\n\n### How often is this updated?\n\nEvery fact is re-checked at least every 90 days; the date is on the page.\n\n## How we compared\n\nFacts come from each vendor's documentation and pricing pages, linked in the sources. We do not publish scores, and we say plainly where a product is the better choice for you.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "roundup",
+                  "products": [
+                    "tasklane",
+                    "plandrop",
+                    "kanbanly",
+                    "sprintly",
+                    "boardwise"
+                  ],
+                  "ranking": [
+                    {
+                      "product": "tasklane",
+                      "blurb": "The largest integration catalog and a generous free plan.",
+                      "bestFor": "Teams that live in many other tools"
+                    },
+                    {
+                      "product": "plandrop",
+                      "blurb": "The strongest timelines and enterprise security, at a higher price.",
+                      "bestFor": "Large organisations"
+                    },
+                    {
+                      "product": "kanbanly",
+                      "blurb": "Good sprint tooling in a clean interface.",
+                      "bestFor": "Product teams that run sprints"
+                    },
+                    {
+                      "product": "sprintly",
+                      "blurb": "A deep engineering workflow with built-in time tracking.",
+                      "bestFor": "Engineering teams"
+                    },
+                    {
+                      "product": "boardwise",
+                      "blurb": "The simplest tool here and the lowest price.",
+                      "bestFor": "Small teams with simple work"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "slug": "best-free-project-management-software",
+              "title": "The best free project management software",
+              "kind": "comparison",
+              "markdown": "Choosing free project management software is mostly a question of which trade-offs you can live with. This roundup lists the tools we compared, what each is best for, and the facts behind it, checked against the vendors' own pages.\n\n## Our verdict\n\nStart with the tool whose \"best for\" matches your team, then look at the matrix for the one capability you cannot do without. Prices change often, so the date each fact was checked is shown.\n\n## Frequently asked questions\n\n### How did you choose these tools?\n\nWe included the tools that publish their pricing and documentation, so every fact can be checked.\n\n### How often is this updated?\n\nEvery fact is re-checked at least every 90 days; the date is on the page.\n\n## How we compared\n\nFacts come from each vendor's documentation and pricing pages, linked in the sources. We do not publish scores, and we say plainly where a product is the better choice for you.\n",
+              "metadata": {
+                "comparison": {
+                  "kind": "roundup",
+                  "products": [
+                    "tasklane",
+                    "boardwise",
+                    "kanbanly"
+                  ],
+                  "criteria": {
+                    "keyOnly": true
+                  },
+                  "ranking": [
+                    {
+                      "product": "tasklane",
+                      "blurb": "The largest integration catalog and a generous free plan.",
+                      "bestFor": "Teams that live in many other tools"
+                    },
+                    {
+                      "product": "boardwise",
+                      "blurb": "The simplest tool here and the lowest price.",
+                      "bestFor": "Small teams with simple work"
+                    },
+                    {
+                      "product": "kanbanly",
+                      "blurb": "Good sprint tooling in a clean interface.",
+                      "bestFor": "Product teams that run sprints"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "slug": "how-we-compare",
+              "title": "How we earn money",
+              "kind": "page",
+              "markdown": "Some links on this site are affiliate links. If you buy through one, we may earn a commission at no extra cost to you.\n\n## How it affects what you read\n\nThe facts in each comparison come from the vendors' own pages and are not changed for payment. A product's position in a list follows the criteria it meets, and a sponsored link is always marked as one.\n"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

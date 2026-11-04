@@ -1,0 +1,66 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Beacon Waitlist",
+    "slug": "template-beacon-waitlist",
+    "description": "A launch waitlist page.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "custom",
+      "waitlist",
+      "template"
+    ],
+    "spaceTypes": [
+      "CUSTOM"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#111827",
+    "accentColor": "#f59e0b",
+    "customFontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+    "bodyFontFamily": "Inter",
+    "headingFontFamily": "Inter",
+    "palette": {
+      "ink": "#18181b",
+      "line": "#e4e4e7",
+      "muted": "#71717a",
+      "heading": "#09090b",
+      "surface": "#fafafa",
+      "background": "#ffffff",
+      "header_primary": "#09090b",
+      "header_background": "#ffffff",
+      "footer_primary": "#71717a",
+      "footer_background": "#fafafa"
+    },
+    "components": {
+      "button": {
+        "radius": 999,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand"
+    },
+    "custom": {
+      "look": "product"
+    }
+  },
+  "components": []
+}

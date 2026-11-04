@@ -1,0 +1,228 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "commonweal",
+  "type": "ABOUT",
+  "name": "Commonweal",
+  "description": "The mission as a pull quote, the impact in big numbers, the board and advisors, the charity’s registration and its commitments to donors.",
+  "modelledOn": "A clean-water charity’s about page",
+  "features": [
+    "Nonprofit preset: a pull-quote mission, big impact numbers, board and advisors",
+    "Bold look: a painted banner and raised cards, with a call to action in the brand colour",
+    "Commitments to donors in kinds (impact, ethics, accessibility)",
+    "The charity’s registration facts as an imprint",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "nonprofit",
+    "charity",
+    "bold",
+    "about"
+  ],
+  "thumbnail": "/templates/commonweal.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/logo-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/logo-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/logo-5.svg"
+  },
+  "brand": {},
+  "layout": {
+    "preset": "nonprofit"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "about": {
+    "details": {
+      "hero": {
+        "eyebrow": "Our mission",
+        "headline": "Clean water, run by the people who drink it",
+        "subheadline": "We build wells and water systems with communities, and stay until they run them alone.",
+        "ctaLabel": "Give today",
+        "ctaHref": "mailto:give@example.com"
+      },
+      "mission": "Every community should have clean water that it controls.",
+      "vision": "A world in which nobody walks hours for a drink.",
+      "stats": [
+        {
+          "value": "4,200",
+          "label": "Water points built"
+        },
+        {
+          "value": "1.3M",
+          "label": "People served"
+        },
+        {
+          "value": "19",
+          "label": "Countries"
+        },
+        {
+          "value": "91%",
+          "label": "Of every donation goes to projects"
+        }
+      ],
+      "leadership": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Dr. Amara Okoye",
+            "role": "Executive Director",
+            "bio": "Amara trained as a hydrologist and has led the organization since 2015. She spends two months of every year in the field.",
+            "founder": true
+          },
+          {
+            "name": "Daniel Whitaker",
+            "role": "Chair of the Board",
+            "bio": "Daniel is a retired civil engineer who chairs the board and the finance and audit committee."
+          }
+        ]
+      },
+      "advisors": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Prof. Lin Zhao",
+            "role": "Hydrology advisor",
+            "organization": "Institute of Water"
+          },
+          {
+            "name": "Marta Silva",
+            "role": "Community health advisor",
+            "organization": "Clinic Network"
+          }
+        ]
+      },
+      "impact": [
+        {
+          "kind": "impact",
+          "title": "Every dollar accounted for",
+          "text": "We publish an audited report every year and a project-by-project ledger every quarter."
+        },
+        {
+          "kind": "ethics",
+          "title": "Chosen with the community",
+          "text": "We only build where the community asks us to, and where it has agreed to run the system."
+        },
+        {
+          "kind": "accessibility",
+          "title": "Open to everyone",
+          "text": "Our reports are published in plain language and in five languages."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2009",
+          "title": "The first pump",
+          "text": "One village, one well and a promise to come back."
+        },
+        {
+          "date": "2014",
+          "title": "One thousand water points",
+          "text": "Reached in five countries."
+        },
+        {
+          "date": "2020",
+          "title": "Run by communities",
+          "text": "Every new project is managed by a local water committee."
+        },
+        {
+          "date": "2024",
+          "title": "Four thousand",
+          "text": "Water points built, and 91% still running."
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The pump is ours. When it broke, we fixed it ourselves the same day.",
+          "name": "Esther Mwangi",
+          "role": "Water committee chair",
+          "company": "Kilimani village"
+        },
+        {
+          "quote": "They are the rare charity that publishes what did not work.",
+          "name": "Peter Holm",
+          "role": "Programme officer",
+          "company": "Rivers Fund"
+        }
+      ],
+      "press": [
+        {
+          "outlet": "The Global Observer",
+          "title": "The charity that publishes its failures",
+          "url": "https://example.com/press/observer",
+          "date": "2024-03"
+        }
+      ],
+      "ctas": [
+        {
+          "heading": "Fund a water point",
+          "text": "A gift of any size builds the next one, and you can follow where it goes.",
+          "label": "Give today",
+          "href": "mailto:give@example.com"
+        }
+      ],
+      "pressKit": {
+        "boilerplate": "Your Brand builds clean water systems with communities and stays until they run them alone. Founded in 2009, it has built more than four thousand water points in 19 countries.",
+        "email": "press@example.com"
+      },
+      "company": {
+        "tagline": "Clean water, run by the people who drink it",
+        "description": "Your Brand is a charity that builds water systems with communities.",
+        "legalName": "Your Brand Foundation",
+        "foundingDate": "2009",
+        "foundingLocation": "Nairobi",
+        "employees": "51-200",
+        "industry": "Charity",
+        "registrationNumber": "0000000",
+        "registry": "Registered charity",
+        "areaServed": [
+          "East Africa",
+          "South Asia"
+        ]
+      },
+      "logos": [
+        {
+          "name": "Rivers Fund",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000001"
+        },
+        {
+          "name": "Hope Trust",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000002"
+        },
+        {
+          "name": "Clearwater Co",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000003"
+        },
+        {
+          "name": "Unity Bank",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000004"
+        },
+        {
+          "name": "Greenleaf",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000005"
+        }
+      ]
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "about",
+              "title": "About",
+              "hideFromNav": true,
+              "markdown": "## Our story\n\nYour Brand began in 2009, when a village well in the highlands failed for the third summer running. A group of engineers and teachers raised enough for one pump. Fifteen years later we have built more than four thousand.\n\n## How we work\n\nEvery project is chosen with the community that will keep it running, built with local crews and paid for in the open. We publish where each donation went and what it built.\n\n## Where we are going\n\nBy 2030 we want every community we work with to have water it manages itself, and to be one of fewer organizations the world needs."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

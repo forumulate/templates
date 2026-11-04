@@ -1,0 +1,270 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "gauge-status",
+  "type": "STATUS",
+  "name": "Gauge Status",
+  "description": "A dense, engineering-first status page: response time under every component's bars, square bars with three-decimal uptime, a big uptime headline, a 99.9% target and compact rows.",
+  "modelledOn": "An infrastructure monitoring company’s status page",
+  "features": [
+    "Response time drawn under every component",
+    "A large uptime headline over the first group",
+    "A 99.9% uptime target: anything below it reads red",
+    "Square bars with three-decimal uptime beside each row",
+    "Compact density, made for many components",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "status",
+    "dense",
+    "charts",
+    "sla"
+  ],
+  "thumbnail": "/templates/gauge-status.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/gauge-mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "standard",
+    "frontDoor": {
+      "subscribeStyle": "button",
+      "showSubscribe": true,
+      "showHistory": true
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "frontPage": {
+    "doc": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "banner"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "active"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "components"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "metrics"
+          }
+        },
+        {
+          "type": "spaceBand",
+          "attrs": {
+            "band": "history"
+          }
+        }
+      ]
+    },
+    "width": 1040
+  },
+  "status": {
+    "groups": [
+      {
+        "key": "edge",
+        "name": "Edge",
+        "description": "Traffic on its way in."
+      },
+      {
+        "key": "compute",
+        "name": "Compute",
+        "description": "Where your code runs."
+      },
+      {
+        "key": "data",
+        "name": "Data",
+        "description": "Where your data lives."
+      }
+    ],
+    "components": [
+      {
+        "key": "cdn",
+        "monitor": {
+          "name": "CDN",
+          "kind": "manual",
+          "description": "Cached responses from 40 regions."
+        },
+        "startsDaysAgo": 120,
+        "group": "edge"
+      },
+      {
+        "key": "dns",
+        "monitor": {
+          "name": "DNS",
+          "kind": "manual",
+          "description": "Authoritative name servers."
+        },
+        "startsDaysAgo": 120,
+        "group": "edge"
+      },
+      {
+        "key": "functions",
+        "monitor": {
+          "name": "Functions",
+          "kind": "manual",
+          "description": "Serverless functions."
+        },
+        "startsDaysAgo": 120,
+        "group": "compute"
+      },
+      {
+        "key": "builds",
+        "monitor": {
+          "name": "Builds",
+          "kind": "manual",
+          "description": "Deploys from git."
+        },
+        "startsDaysAgo": 120,
+        "group": "compute"
+      },
+      {
+        "key": "postgres",
+        "monitor": {
+          "name": "Managed Postgres",
+          "kind": "manual",
+          "description": "Primary and replica databases."
+        },
+        "startsDaysAgo": 120,
+        "group": "data"
+      },
+      {
+        "key": "kv",
+        "monitor": {
+          "name": "Key-value store",
+          "kind": "manual",
+          "description": "Low-latency reads at the edge."
+        },
+        "startsDaysAgo": 120,
+        "group": "data"
+      }
+    ],
+    "incidents": [
+      {
+        "slug": "errors",
+        "components": [
+          {
+            "key": "cdn",
+            "impact": "partial_outage"
+          }
+        ],
+        "incident": {
+          "title": "Elevated error rates on CDN",
+          "severity": "major"
+        },
+        "daysAgo": 3,
+        "resolvedAfterHours": 1.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Some requests to CDN are failing. We are investigating.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "We found a misconfigured load balancer and are rolling back the change.",
+            "state": "identified"
+          },
+          {
+            "hoursAfter": 1.2,
+            "body": "Error rates are back to normal and we are watching closely.",
+            "state": "monitoring"
+          },
+          {
+            "hoursAfter": 1.75,
+            "body": "This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "slow",
+        "components": [
+          {
+            "key": "dns",
+            "impact": "degraded"
+          }
+        ],
+        "incident": {
+          "title": "DNS slower than usual",
+          "severity": "minor"
+        },
+        "daysAgo": 12,
+        "resolvedAfterHours": 0.75,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "DNS is responding more slowly than usual.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.75,
+            "body": "Response times are back to normal. This incident is resolved.",
+            "state": "resolved"
+          }
+        ]
+      },
+      {
+        "slug": "outage",
+        "components": [
+          {
+            "key": "functions",
+            "impact": "major_outage"
+          }
+        ],
+        "incident": {
+          "title": "Functions unavailable for some customers",
+          "severity": "critical"
+        },
+        "daysAgo": 26,
+        "resolvedAfterHours": 0.5,
+        "updates": [
+          {
+            "hoursAfter": 0,
+            "body": "Functions is unavailable for some customers. We are on it.",
+            "state": "investigating"
+          },
+          {
+            "hoursAfter": 0.5,
+            "body": "Service is restored for everyone. A write-up follows.",
+            "state": "resolved"
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "slug": "upgrade",
+        "components": [
+          "kv"
+        ],
+        "incident": {
+          "title": "Planned Key-value store upgrade",
+          "markdown": "We are upgrading Key-value store. It may be briefly unavailable during the window."
+        },
+        "daysFromNow": 5,
+        "durationHours": 2
+      }
+    ]
+  }
+}

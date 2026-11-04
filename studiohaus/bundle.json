@@ -1,0 +1,150 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Studiohaus",
+    "slug": "template-studiohaus",
+    "description": "The work and who it was for: a full-bleed banner, a strip of client logos, featured quotes and a gallery of the studio at work.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "agency",
+      "studio",
+      "editorial",
+      "about",
+      "template"
+    ],
+    "spaceTypes": [
+      "ABOUT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#e11d48",
+    "accentColor": "#be123c",
+    "palette": {
+      "ink": "#262626",
+      "line": "#e5e5e5",
+      "muted": "#737373",
+      "heading": "#0a0a0a",
+      "surface": "#f5f5f4",
+      "background": "#ffffff",
+      "header_primary": "#0a0a0a",
+      "header_background": "#ffffff",
+      "footer_primary": "#737373",
+      "footer_background": "#ffffff"
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 56,
+            "sm": 32
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 26,
+          "weight": 650,
+          "tracking": -0.01,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.65
+        }
+      }
+    },
+    "components": {
+      "radius": 2,
+      "card": {
+        "background": "#f5f5f4",
+        "iconSize": 20,
+        "arrow": "none"
+      },
+      "button": {
+        "radius": 2,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "about": {
+      "look": "editorial",
+      "hero": {
+        "layout": "banner",
+        "align": "start",
+        "size": "xl"
+      },
+      "mission": {
+        "size": "xl",
+        "quote": true,
+        "align": "start",
+        "style": "bar"
+      },
+      "values": {
+        "layout": "list"
+      },
+      "team": {
+        "layout": "grid",
+        "columns": 3,
+        "photo": "rounded",
+        "size": "lg",
+        "aspect": "4:5",
+        "monogram": "neutral"
+      },
+      "logos": {
+        "layout": "grid",
+        "columns": 5,
+        "grayscale": true,
+        "style": "tiles"
+      },
+      "testimonials": {
+        "layout": "featured"
+      },
+      "timeline": {
+        "layout": "alternating",
+        "dates": "year",
+        "marker": "none",
+        "style": "cards"
+      },
+      "press": {
+        "layout": "list",
+        "showQuotes": true
+      },
+      "gallery": {
+        "layout": "masonry",
+        "columns": 3,
+        "captions": true
+      },
+      "story": {
+        "layout": "split",
+        "measure": "wide"
+      },
+      "sections": {
+        "testimonials": {
+          "tone": "tint"
+        }
+      }
+    }
+  },
+  "components": []
+}

@@ -1,0 +1,282 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "lantern-about",
+  "type": "ABOUT",
+  "name": "Lantern About",
+  "description": "The mission first, then the story, the numbers, the team and who backs it: a warm, light startup page with greyscale customer logos and quotes in a grid.",
+  "modelledOn": "A developer-tool startup’s about page",
+  "features": [
+    "Startup preset: mission, story, values, numbers, team, investors, milestones, logos",
+    "People with a bio get a page of their own and a people hub, with Person markup",
+    "Investors, customer quotes and press mentions told to search engines as markup",
+    "A Spanish translation of the headline, mission and values, to show a second language",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "startup",
+    "product",
+    "about"
+  ],
+  "thumbnail": "/templates/lantern-about.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/logo-1.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000002": "assets/logo-2.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000003": "assets/logo-3.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000004": "assets/logo-4.svg",
+    "/api/assets/00000000-0000-4000-8000-000000000005": "assets/logo-5.svg"
+  },
+  "brand": {},
+  "layout": {
+    "preset": "startup"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "about": {
+    "details": {
+      "hero": {
+        "eyebrow": "About us",
+        "headline": "We build the tool we wished we had",
+        "subheadline": "Your Brand helps small teams keep their numbers honest, without a spreadsheet nobody trusts.",
+        "ctaLabel": "Talk to us",
+        "ctaHref": "mailto:hello@example.com"
+      },
+      "mission": "Make the numbers a team runs on something everyone can trust and nobody has to babysit.",
+      "vision": "A world where small teams make big decisions with confidence.",
+      "values": [
+        {
+          "title": "Ship small",
+          "text": "A change you can explain in a sentence is a change you can undo in a minute.",
+          "icon": "rocket"
+        },
+        {
+          "title": "Write it down",
+          "text": "If it is not written, it was not decided. Docs beat meetings.",
+          "icon": "book-open"
+        },
+        {
+          "title": "Own the problem",
+          "text": "The person closest to a problem decides how to solve it, and answers for it.",
+          "icon": "target"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2019-03",
+          "title": "The first version",
+          "text": "Three people, one customer and one dashboard."
+        },
+        {
+          "date": "2020-09",
+          "title": "Public launch",
+          "text": "Open to everyone, with a free plan that is still there."
+        },
+        {
+          "date": "2022-05",
+          "title": "Teams of fifty",
+          "text": "Roles, audit history and single sign-on for larger teams."
+        },
+        {
+          "date": "2024-11",
+          "title": "Ten thousand teams",
+          "text": "A milestone we measure by the support inbox, not the dashboard."
+        }
+      ],
+      "stats": [
+        {
+          "value": "10k+",
+          "label": "Teams"
+        },
+        {
+          "value": "42",
+          "label": "Countries"
+        },
+        {
+          "value": "99.98%",
+          "label": "Uptime, last year"
+        },
+        {
+          "value": "4.8",
+          "label": "Support rating"
+        }
+      ],
+      "awards": [
+        {
+          "name": "Best Developer Tool",
+          "issuer": "Product Awards",
+          "year": "2024"
+        },
+        {
+          "name": "Fastest Growing Startup",
+          "issuer": "Founders Weekly",
+          "year": "2023"
+        }
+      ],
+      "team": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Alex Rivera",
+            "role": "Co-founder, Product",
+            "bio": "Alex designed the first dashboard on a train and still reviews every screen before it ships. Before this, Alex spent ten years in finance operations, which is where the spreadsheet came from.",
+            "founder": true
+          },
+          {
+            "name": "Sam Okafor",
+            "role": "Co-founder, Engineering",
+            "bio": "Sam wrote the first version in a fortnight and has been deleting code ever since. Sam leads the platform team and writes most of the internal docs.",
+            "founder": true
+          },
+          {
+            "name": "Mina Park",
+            "role": "Head of Design",
+            "bio": "Mina leads design and research. She talks to at least three customers a week and brings what she hears back to the whole team."
+          },
+          {
+            "name": "Jonas Weber",
+            "role": "Head of Support",
+            "bio": "Jonas built the support team around one rule: every message gets a person, not a script. He reads the inbox most mornings."
+          }
+        ]
+      },
+      "leadership": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Priya Nair",
+            "role": "Chief Operating Officer",
+            "bio": "Priya runs finance, people and legal. She joined from a logistics company that ran on spreadsheets and never wants to see one again."
+          }
+        ]
+      },
+      "investors": {
+        "source": "manual",
+        "people": [
+          {
+            "name": "Harbor Ventures",
+            "organization": "Harbor Ventures"
+          },
+          {
+            "name": "Dana Whitfield",
+            "role": "Angel investor"
+          }
+        ]
+      },
+      "testimonials": [
+        {
+          "quote": "We moved our whole finance review onto Your Brand in an afternoon. Nobody asked for the old spreadsheet back.",
+          "name": "Casey Lin",
+          "role": "Head of Finance",
+          "company": "Northwind"
+        },
+        {
+          "quote": "It does fewer things than the alternatives, and every one of them works.",
+          "name": "Tomás Herrera",
+          "role": "CTO",
+          "company": "Pinecrest"
+        }
+      ],
+      "press": [
+        {
+          "outlet": "The Daily Build",
+          "title": "The spreadsheet killer that stayed small",
+          "url": "https://example.com/press/daily-build",
+          "date": "2024-06"
+        },
+        {
+          "outlet": "Founders Weekly",
+          "title": "Ten thousand teams and no sales team",
+          "url": "https://example.com/press/founders-weekly",
+          "date": "2024-11"
+        }
+      ],
+      "ctas": [
+        {
+          "heading": "Work with us",
+          "text": "We are a small team and we hire slowly.",
+          "label": "Say hello",
+          "href": "mailto:hello@example.com"
+        }
+      ],
+      "pressKit": {
+        "intro": "Everything a journalist needs. Write to us for anything that is not here.",
+        "boilerplate": "Your Brand helps small teams keep their numbers honest. Founded in 2019, it serves more than ten thousand teams in 42 countries.",
+        "email": "press@example.com"
+      },
+      "company": {
+        "tagline": "The numbers a team runs on, honestly",
+        "description": "Your Brand makes software that keeps a team’s numbers in one place everyone trusts.",
+        "foundingDate": "2019-03",
+        "foundingLocation": "Lisbon",
+        "employees": "11-50",
+        "industry": "Software"
+      },
+      "translations": {
+        "es": {
+          "hero": {
+            "eyebrow": "Quiénes somos",
+            "headline": "Construimos la herramienta que nos habría gustado tener",
+            "subheadline": "Your Brand ayuda a los equipos pequeños a mantener sus cifras en orden, sin una hoja de cálculo en la que nadie confía."
+          },
+          "mission": "Hacer que las cifras con las que trabaja un equipo sean fiables para todos y no necesiten niñera.",
+          "values": [
+            {
+              "title": "Entregar poco a poco",
+              "text": "Un cambio que se explica en una frase se deshace en un minuto."
+            },
+            {
+              "title": "Ponerlo por escrito",
+              "text": "Si no está escrito, no se decidió. Los documentos ganan a las reuniones."
+            },
+            {
+              "title": "Hacerse cargo",
+              "text": "Quien está más cerca de un problema decide cómo resolverlo y responde de ello."
+            }
+          ]
+        }
+      },
+      "logos": [
+        {
+          "name": "Northwind",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000001"
+        },
+        {
+          "name": "Pinecrest",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000002"
+        },
+        {
+          "name": "Alder & Co",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000003"
+        },
+        {
+          "name": "Brightpath",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000004"
+        },
+        {
+          "name": "Tidewater",
+          "image": "/api/assets/00000000-0000-4000-8000-000000000005"
+        }
+      ]
+    },
+    "docs": {
+      "collections": [
+        {
+          "slug": "pages",
+          "name": "Pages",
+          "pages": [
+            {
+              "slug": "about",
+              "title": "About",
+              "hideFromNav": true,
+              "markdown": "## Our story\n\nYour Brand started with a spreadsheet nobody trusted. Three of us lost a week every quarter reconciling it, so we built the tool we wished we had: small, fast and honest about what it does not know. The first version had one customer and one dashboard. It still runs on the same idea.\n\n## How we work\n\nWe work in small teams that own a problem from the first sketch to the support inbox. Decisions are written down before they are argued about, and anything that takes more than a week gets cut in half.\n\n## Life here\n\nA week at Your Brand is mostly writing, building and talking to customers. We work from wherever people do their best work and meet in person twice a year.\n\n## Where we are going\n\nThe next chapter is making the product as good for a team of fifty as it is for a team of five, without making it heavier for either."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

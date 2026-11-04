@@ -1,0 +1,67 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Altlist Alternatives",
+    "slug": "template-altlist",
+    "description": "A directory of “best alternatives to …” pages, each with a ranked list and a line on every product, and a front page that starts with search.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "compare",
+      "alternatives",
+      "directory",
+      "template"
+    ],
+    "spaceTypes": [
+      "COMPARE"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#0f766e",
+    "accentColor": "#0f766e",
+    "headingFontFamily": "system-ui",
+    "bodyFontFamily": "system-ui",
+    "palette": {
+      "ink": "#10201e",
+      "line": "#cfe6e1",
+      "muted": "#4f6663",
+      "heading": "#10201e",
+      "surface": "#e8f5f2",
+      "background": "#fbfdfc"
+    },
+    "paletteDark": {
+      "ink": "#c8dcd8",
+      "line": "#21332f",
+      "muted": "#8ea7a2",
+      "heading": "#ecf7f4",
+      "surface": "#111c1a",
+      "background": "#0a1211"
+    },
+    "compare": {
+      "look": "bold",
+      "hero": {
+        "arrangement": "split",
+        "tone": "plain",
+        "background": "gradient"
+      },
+      "related": {
+        "columns": 3
+      },
+      "index": {
+        "hero": {
+          "align": "start",
+          "background": "gradient"
+        }
+      }
+    }
+  },
+  "components": []
+}

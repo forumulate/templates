@@ -1,0 +1,134 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Lumen Status",
+    "slug": "template-lumen-status",
+    "description": "A bold status page floating on a brand-coloured band: a centred banner that says it in one line, KPI tiles, a card per group with pill bars, an uppercase caption and the sub-pages as tabs.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "status",
+      "bold",
+      "band",
+      "kpis",
+      "template"
+    ],
+    "spaceTypes": [
+      "STATUS"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "system",
+    "primaryColor": "#4f46e5",
+    "primaryColorDark": "#fafafa",
+    "accentColor": "#2bbd8e",
+    "palette": {
+      "background": "#ffffff",
+      "surface": "#ffffff",
+      "ink": "#3f3f46",
+      "heading": "#18181b",
+      "muted": "#71717a",
+      "line": "#e4e4e7",
+      "header_background": "#ffffff",
+      "header_primary": "#18181b",
+      "footer_background": "#ffffff",
+      "footer_primary": "#71717a",
+      "success": "#2bbd8e",
+      "warning": "#fbbf24",
+      "danger": "#f87171",
+      "info": "#60a5fa"
+    },
+    "paletteDark": {
+      "background": "#161618",
+      "surface": "#1c1c1f",
+      "ink": "#d4d4d8",
+      "heading": "#fafafa",
+      "muted": "#a1a1aa",
+      "line": "#2e2e33",
+      "header_background": "#161618",
+      "header_primary": "#fafafa",
+      "footer_background": "#161618",
+      "footer_primary": "#a1a1aa",
+      "success": "#2bbd8e",
+      "warning": "#fbbf24",
+      "danger": "#f87171",
+      "info": "#60a5fa"
+    },
+    "typography": {
+      "baseSize": 14,
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 24,
+            "sm": 22
+          },
+          "weight": 600,
+          "tracking": -0.015,
+          "lineHeight": 1.25
+        },
+        "h2": {
+          "size": 16,
+          "weight": 600,
+          "lineHeight": 1.4
+        },
+        "body": {
+          "lineHeight": 1.55
+        }
+      }
+    },
+    "components": {
+      "radius": 8,
+      "button": {
+        "background": "#18181b",
+        "ink": "#ffffff",
+        "radius": 8,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "height": 60,
+        "border": "line"
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": true,
+        "style": "icon"
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "status": {
+      "look": "band",
+      "title": {
+        "tagline": "Live status of every Your Brand service"
+      },
+      "words": {
+        "board": {
+          "allSystemsOperational": "Everything is running smoothly"
+        },
+        "subscribe": {
+          "getToldWhenSomethingBreaks": "Hear about it the moment something changes"
+        }
+      },
+      "subpages": {
+        "hero": "compact",
+        "history": {
+          "intro": "Every incident and maintenance window, month by month.",
+          "parts": [
+            "intro",
+            "search",
+            "filter",
+            "archive"
+          ]
+        }
+      }
+    }
+  },
+  "components": []
+}

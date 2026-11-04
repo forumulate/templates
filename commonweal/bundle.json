@@ -1,0 +1,134 @@
+{
+  "format": "forumulate.theme-bundle",
+  "formatVersion": 1,
+  "meta": {
+    "name": "Commonweal",
+    "slug": "template-commonweal",
+    "description": "The mission as a pull quote, the impact in big numbers, the board and advisors, the charity’s registration and its commitments to donors.",
+    "author": {
+      "name": "Forumulate",
+      "url": "https://forumulate.com"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "tags": [
+      "light",
+      "nonprofit",
+      "charity",
+      "bold",
+      "about",
+      "template"
+    ],
+    "spaceTypes": [
+      "ABOUT"
+    ]
+  },
+  "requiredOrigins": {},
+  "theme": {
+    "colorScheme": "light",
+    "primaryColor": "#0891b2",
+    "accentColor": "#0e7490",
+    "palette": {
+      "ink": "#334155",
+      "line": "#cfe6ec",
+      "muted": "#5b7480",
+      "heading": "#083344",
+      "surface": "#f1f8fa",
+      "background": "#ffffff",
+      "header_primary": "#083344",
+      "header_background": "#ffffff",
+      "footer_primary": "#5b7480",
+      "footer_background": "#ffffff"
+    },
+    "typography": {
+      "baseSize": 16,
+      "headingWrap": "balance",
+      "levels": {
+        "h1": {
+          "size": {
+            "lg": 52,
+            "sm": 32
+          },
+          "weight": 700,
+          "tracking": -0.02,
+          "lineHeight": 1.1
+        },
+        "h2": {
+          "size": 26,
+          "weight": 650,
+          "tracking": -0.01,
+          "lineHeight": 1.25
+        },
+        "body": {
+          "lineHeight": 1.65
+        }
+      }
+    },
+    "components": {
+      "radius": 14,
+      "card": {
+        "background": "#f1f8fa",
+        "iconSize": 20,
+        "arrow": "none"
+      },
+      "button": {
+        "radius": 14,
+        "weight": "medium"
+      }
+    },
+    "chrome": {
+      "header": {
+        "border": "line",
+        "height": 64
+      },
+      "showSignIn": false,
+      "themeToggle": {
+        "show": false
+      },
+      "copyright": "© 2026 Your Brand."
+    },
+    "about": {
+      "look": "bold",
+      "hero": {
+        "layout": "banner",
+        "align": "center",
+        "size": "xl"
+      },
+      "mission": {
+        "size": "xl",
+        "align": "center",
+        "quote": true,
+        "style": "brand"
+      },
+      "stats": {
+        "layout": "cards",
+        "size": "xl"
+      },
+      "people": {
+        "layout": "grid",
+        "columns": 4,
+        "photo": "rounded",
+        "monogram": "brand",
+        "align": "center"
+      },
+      "impact": {
+        "layout": "cards",
+        "columns": 2
+      },
+      "cta": {
+        "layout": "band",
+        "align": "center",
+        "tone": "brand"
+      },
+      "timeline": {
+        "marker": "ring"
+      },
+      "sections": {
+        "impact": {
+          "tone": "gradient"
+        }
+      }
+    }
+  },
+  "components": []
+}

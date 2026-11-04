@@ -1,0 +1,459 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "harbor-site",
+  "type": "CUSTOM",
+  "name": "Harbor Site",
+  "description": "A small multi-page company site on the `pages` layout: home, product (with two sub-pages in a dropdown), pricing, about (with a team page) and contact — the header nav built from the page tree.",
+  "modelledOn": "A payroll company’s marketing site",
+  "features": [
+    "Pages layout: the header nav is the page tree, sub-pages in dropdowns",
+    "Product look: full-bleed sections aligned to the title",
+    "Per-page JSON-LD: the pricing page names a Product, about is an AboutPage",
+    "Short nav labels per page (`navTitle`)"
+  ],
+  "tags": [
+    "light",
+    "custom",
+    "site",
+    "multi-page",
+    "product"
+  ],
+  "thumbnail": "/templates/harbor-site.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "pages"
+  },
+  "piecePage": null,
+  "tagInfo": [],
+  "authors": [],
+  "forms": [],
+  "posts": [],
+  "custom": {
+    "collections": [
+      {
+        "slug": "site",
+        "name": "Site",
+        "pages": [
+          {
+            "slug": "home",
+            "title": "Home",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "hero",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "hero",
+                      "attrs": {
+                        "title": "Payroll that runs itself",
+                        "level": 1,
+                        "sub": "Your Brand pays your team on time in 40 countries, files the taxes and keeps the records — so the last day of the month is just a day.",
+                        "layout": "center",
+                        "size": "xl",
+                        "actions": [
+                          {
+                            "label": "See pricing",
+                            "href": "/x/your-org/your-custom/pricing",
+                            "style": "primary"
+                          },
+                          {
+                            "label": "Talk to us",
+                            "href": "/x/your-org/your-custom/contact",
+                            "style": "secondary"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "proof",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "stats",
+                      "attrs": {
+                        "layout": "row",
+                        "columns": 3,
+                        "items": [
+                          {
+                            "value": 40,
+                            "suffix": "+",
+                            "label": "Countries"
+                          },
+                          {
+                            "value": 12000,
+                            "label": "Teams paid"
+                          },
+                          {
+                            "value": 99.98,
+                            "decimals": 2,
+                            "suffix": "%",
+                            "label": "On-time runs"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "why",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Why teams switch"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "One run for every country and currency."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Taxes filed for you, with the receipts."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Every change logged and reversible."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "layout": "full",
+              "hideTitle": true
+            }
+          },
+          {
+            "slug": "product",
+            "title": "Product",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Everything payroll needs, in one place: runs, filings, contractors and the reports your accountant asks for."
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "layout": "wide"
+            }
+          },
+          {
+            "slug": "payroll",
+            "title": "Global payroll",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Pay everyone, everywhere"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Local entities, local filings, one approval."
+                    }
+                  ]
+                }
+              ]
+            },
+            "parent": "product",
+            "metadata": {
+              "navTitle": "Payroll"
+            }
+          },
+          {
+            "slug": "contractors",
+            "title": "Contractor payments",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Contractors in 150 countries"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Invoices in, payments out, compliance checked."
+                    }
+                  ]
+                }
+              ]
+            },
+            "parent": "product",
+            "metadata": {
+              "navTitle": "Contractors"
+            }
+          },
+          {
+            "slug": "pricing",
+            "title": "Pricing",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "section",
+                  "attrs": {
+                    "key": "plans",
+                    "role": "layout",
+                    "width": "boxed",
+                    "padding": {
+                      "top": 72,
+                      "bottom": 72,
+                      "x": 24
+                    }
+                  },
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Simple per-person pricing"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "bulletList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Starter — up to 10 people, every core feature."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Growth — multi-country runs and approvals."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Enterprise — SSO, audit export, a named manager."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "layout": "wide",
+              "schemaType": "Product"
+            }
+          },
+          {
+            "slug": "about",
+            "title": "About",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "We started Your Brand after one too many late payroll nights. Today we’re a team of 60 across four time zones."
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "schemaType": "AboutPage"
+            }
+          },
+          {
+            "slug": "team",
+            "title": "Team",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The people behind it"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Engineers, accountants and support specialists who have run payroll themselves."
+                    }
+                  ]
+                }
+              ]
+            },
+            "parent": "about"
+          },
+          {
+            "slug": "contact",
+            "title": "Contact",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Questions about a plan, a country or a migration? Write to hello@example.com and a person answers the same day."
+                    }
+                  ]
+                }
+              ]
+            },
+            "metadata": {
+              "schemaType": "ContactPage"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

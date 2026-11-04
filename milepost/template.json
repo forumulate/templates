@@ -1,0 +1,306 @@
+{
+  "format": "forumulate.space-template",
+  "formatVersion": 1,
+  "id": "milepost",
+  "type": "ROADMAP",
+  "name": "Milepost",
+  "description": "A product team’s public roadmap told as a timeline: lanes in the team’s own priority order, a dated rail down the page, quiet cards with no vote counts in front, and an item page that leads with the team’s answer.",
+  "modelledOn": "A developer tool’s public timeline roadmap",
+  "features": [
+    "Preset: timeline — Now / Next / Later down one dated rail, each lane in the team’s manual priority order",
+    "Board opens on the team’s order (`filters.defaultSort: manual`), with Top and New one click away",
+    "Pinned items carry a pin mark; the vote control is a quiet pill at the end of the card",
+    "Item page: the team’s answer first, then the conversation; facts and Follow on the right",
+    "Warm paper and ink, Source Serif headings, the site’s reading column",
+    "Zero custom CSS — every detail is a theme setting"
+  ],
+  "tags": [
+    "light",
+    "timeline",
+    "roadmap",
+    "editorial"
+  ],
+  "thumbnail": "/templates/milepost.jpg",
+  "assets": {
+    "/api/assets/00000000-0000-4000-8000-000000000001": "assets/mark.svg"
+  },
+  "brand": {
+    "logoMark": "/api/assets/00000000-0000-4000-8000-000000000001",
+    "faviconUrl": "/api/assets/00000000-0000-4000-8000-000000000001"
+  },
+  "layout": {
+    "preset": "timeline",
+    "frontDoor": {
+      "badgeStyle": "outline",
+      "showEmptyLanes": false
+    }
+  },
+  "piecePage": null,
+  "tagInfo": [
+    {
+      "slug": "integrations",
+      "label": "Integrations",
+      "color": "#e0f2f1",
+      "textColor": "#0f766e"
+    },
+    {
+      "slug": "reporting",
+      "label": "Reporting",
+      "color": "#e0e7ff",
+      "textColor": "#3730a3"
+    },
+    {
+      "slug": "admin",
+      "label": "Admin",
+      "color": "#f3e8ff",
+      "textColor": "#6b21a8"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning",
+      "color": "#dcfce7",
+      "textColor": "#166534"
+    },
+    {
+      "slug": "interface",
+      "label": "Interface",
+      "color": "#f1f5f9",
+      "textColor": "#334155"
+    },
+    {
+      "slug": "views",
+      "label": "Views",
+      "color": "#e0f2fe",
+      "textColor": "#075985"
+    },
+    {
+      "slug": "api",
+      "label": "API",
+      "color": "#f5f5f4",
+      "textColor": "#44403c"
+    }
+  ],
+  "authors": [
+    {
+      "key": "maya",
+      "name": "Maya Lindqvist",
+      "role": "Operations lead"
+    },
+    {
+      "key": "devon",
+      "name": "Devon Achebe",
+      "role": "Engineering manager"
+    },
+    {
+      "key": "priya",
+      "name": "Priya Raman",
+      "role": "Customer success"
+    },
+    {
+      "key": "tomas",
+      "name": "Tomás Herrera",
+      "role": "Agency founder"
+    },
+    {
+      "key": "ines",
+      "name": "Inês Duarte",
+      "role": "Data analyst"
+    },
+    {
+      "key": "team",
+      "name": "Sam Okafor",
+      "role": "Product, Your Brand"
+    }
+  ],
+  "forms": [],
+  "posts": [],
+  "settings": {
+    "roadmap": {
+      "statusLabels": {
+        "SUBMITTED": "Considering",
+        "PLANNED": "Next",
+        "IN_PROGRESS": "Now",
+        "SHIPPED": "Shipped"
+      },
+      "statusOrder": [
+        "IN_PROGRESS",
+        "PLANNED",
+        "SUBMITTED",
+        "SHIPPED",
+        "DECLINED"
+      ],
+      "hiddenStatuses": [
+        "DECLINED"
+      ]
+    }
+  },
+  "roadmap": {
+    "categories": [],
+    "items": [
+      {
+        "slug": "offline-mode",
+        "title": "Work offline and sync later",
+        "status": "IN_PROGRESS",
+        "tags": [
+          "interface"
+        ],
+        "author": "maya",
+        "daysAgo": 30,
+        "fields": {
+          "theme": "Interface",
+          "effort": "Large"
+        },
+        "sections": {
+          "problem": "Our field team loses signal on site visits and cannot open the app at all.",
+          "proposal": "Keep recent projects on the device, queue edits while offline and sync them when the connection returns, flagging any conflict."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 48,
+          "markdown": "In progress: reading offline works in the beta; queued edits are next."
+        },
+        "item": {
+          "pinned": true
+        }
+      },
+      {
+        "slug": "webhooks-v2",
+        "title": "Signed webhooks with retries",
+        "status": "IN_PROGRESS",
+        "tags": [
+          "api",
+          "integrations"
+        ],
+        "author": "devon",
+        "daysAgo": 24,
+        "fields": {
+          "theme": "Api",
+          "effort": "Medium"
+        },
+        "sections": {
+          "problem": "A missed webhook during an outage on our side means a silently missing record.",
+          "proposal": "Sign every delivery, retry with backoff for a day, and show a delivery log per endpoint."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 48,
+          "markdown": "Being built now; the delivery log ships first."
+        }
+      },
+      {
+        "slug": "saved-views",
+        "title": "Saved and shared views",
+        "status": "PLANNED",
+        "tags": [
+          "views"
+        ],
+        "author": "priya",
+        "daysAgo": 18,
+        "fields": {
+          "theme": "Views",
+          "effort": "Medium"
+        },
+        "sections": {
+          "problem": "Everyone rebuilds the same filters every morning.",
+          "proposal": "Save a filter and sort as a named view, share it with the team, and pin it to the sidebar."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 48,
+          "markdown": "Next up after offline mode."
+        }
+      },
+      {
+        "slug": "usage-reports",
+        "title": "Usage reports for admins",
+        "status": "PLANNED",
+        "tags": [
+          "reporting",
+          "admin"
+        ],
+        "author": "ines",
+        "daysAgo": 15,
+        "fields": {
+          "theme": "Reporting",
+          "effort": "Medium"
+        },
+        "sections": {
+          "problem": "We cannot tell which teams actually use the seats we pay for.",
+          "proposal": "A monthly report of active members per team, exportable, with a trend line."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 48,
+          "markdown": "Next; the export follows the same format as every other report."
+        }
+      },
+      {
+        "slug": "custom-fields",
+        "title": "Custom fields on records",
+        "status": "SUBMITTED",
+        "tags": [
+          "interface"
+        ],
+        "author": "tomas",
+        "daysAgo": 8,
+        "fields": {
+          "theme": "Interface",
+          "effort": "Large"
+        },
+        "sections": {
+          "problem": "Every client tracks one or two things we have no field for.",
+          "proposal": "Add text, number, date and choice fields per workspace, usable in filters and views."
+        },
+        "comments": []
+      },
+      {
+        "slug": "calendar-sync",
+        "title": "Two-way calendar sync",
+        "status": "SUBMITTED",
+        "tags": [
+          "integrations",
+          "planning"
+        ],
+        "author": "maya",
+        "daysAgo": 5,
+        "fields": {
+          "theme": "Integrations",
+          "effort": "Medium"
+        },
+        "sections": {
+          "problem": "Due dates live here and meetings live in the calendar; nothing connects them.",
+          "proposal": "Sync due dates to Google and Outlook calendars both ways."
+        },
+        "comments": []
+      },
+      {
+        "slug": "accessibility-audit",
+        "title": "Full keyboard and screen-reader support",
+        "status": "SHIPPED",
+        "tags": [
+          "interface"
+        ],
+        "author": "ines",
+        "daysAgo": 70,
+        "fields": {
+          "theme": "Interface",
+          "effort": "Large"
+        },
+        "sections": {
+          "problem": "Two of our colleagues navigate entirely by keyboard and kept getting stuck in dialogs.",
+          "proposal": "Every control reachable and labelled; focus never trapped; tested with screen readers."
+        },
+        "comments": [],
+        "response": {
+          "author": "team",
+          "hoursAfter": 48,
+          "markdown": "Shipped in 4.2 after an external audit."
+        }
+      }
+    ]
+  }
+}
